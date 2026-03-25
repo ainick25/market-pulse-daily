@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
@@ -10,23 +9,23 @@
 :root {
   --bg-primary: #0a0a0f;
   --bg-secondary: #111118;
-  --bg-card: #16161f;
-  --bg-card-hover: #1c1c28;
-  --text-primary: #e8e6f0;
-  --text-secondary: #9994b8;
-  --text-muted: #6b6580;
-  --accent-red: #ff3b5c;
-  --accent-red-glow: rgba(255,59,92,0.15);
-  --accent-green: #00e676;
-  --accent-green-glow: rgba(0,230,118,0.15);
-  --accent-gold: #ffd54f;
-  --accent-gold-glow: rgba(255,213,79,0.12);
-  --accent-blue: #40c4ff;
-  --accent-blue-glow: rgba(64,196,255,0.12);
-  --accent-orange: #ff9100;
-  --accent-purple: #b388ff;
-  --border: rgba(255,255,255,0.06);
-  --border-accent: rgba(255,255,255,0.1);
+  --bg-card: #181822;
+  --bg-card-hover: #20202e;
+  --text-primary: #eeecf5;
+  --text-secondary: #c4beda;
+  --text-muted: #918aab;
+  --accent-red: #ff4d6a;
+  --accent-red-glow: rgba(255,77,106,0.18);
+  --accent-green: #2eec8a;
+  --accent-green-glow: rgba(46,236,138,0.18);
+  --accent-gold: #ffe066;
+  --accent-gold-glow: rgba(255,224,102,0.15);
+  --accent-blue: #56ccff;
+  --accent-blue-glow: rgba(86,204,255,0.15);
+  --accent-orange: #ffab30;
+  --accent-purple: #c9a4ff;
+  --border: rgba(255,255,255,0.12);
+  --border-accent: rgba(255,255,255,0.2);
 }
 * { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior: smooth; }
@@ -35,373 +34,377 @@ body {
   background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.7;
-  font-weight: 300;
+  font-weight: 400;
   overflow-x: hidden;
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(–bg-primary); }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
 ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
 
 /* HERO */
 .hero {
-position: relative;
-min-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
 }
 .hero::before {
-content: ‘’;
-position: absolute;
-inset: 0;
-background:
-radial-gradient(ellipse at 20% 50%, rgba(255,59,92,0.08) 0%, transparent 50%),
-radial-gradient(ellipse at 80% 30%, rgba(64,196,255,0.06) 0%, transparent 50%),
-radial-gradient(ellipse at 50% 80%, rgba(255,213,79,0.05) 0%, transparent 50%);
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(255,59,92,0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 30%, rgba(64,196,255,0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(255,213,79,0.05) 0%, transparent 50%);
 }
 .hero-grid {
-position: absolute;
-inset: 0;
-background-image:
-linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-background-size: 60px 60px;
-animation: gridSlide 20s linear infinite;
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridSlide 20s linear infinite;
 }
 @keyframes gridSlide {
-0% { transform: translate(0,0); }
-100% { transform: translate(60px,60px); }
+  0% { transform: translate(0,0); }
+  100% { transform: translate(60px,60px); }
 }
 .hero-content {
-position: relative;
-z-index: 2;
-padding: 2rem;
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
 }
 .hero-date {
-font-family: ‘JetBrains Mono’, monospace;
-font-size: 0.85rem;
-color: var(–accent-gold);
-letter-spacing: 0.3em;
-margin-bottom: 1.5rem;
-text-transform: uppercase;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--accent-gold);
+  letter-spacing: 0.3em;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
 .hero h1 {
-font-family: ‘Noto Serif JP’, serif;
-font-size: clamp(2.2rem, 5vw, 4rem);
-font-weight: 700;
-letter-spacing: 0.05em;
-line-height: 1.3;
-margin-bottom: 1rem;
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+  margin-bottom: 1rem;
 }
 .hero h1 span {
-display: block;
-background: linear-gradient(135deg, var(–accent-gold), var(–accent-orange));
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  display: block;
+  background: linear-gradient(135deg, var(--accent-gold), var(--accent-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .hero-subtitle {
-color: var(–text-secondary);
-font-size: 1rem;
-max-width: 600px;
-margin: 0 auto 2.5rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
 }
 .hero-tags {
-display: flex;
-gap: 0.5rem;
-justify-content: center;
-flex-wrap: wrap;
-margin-bottom: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 .hero-tag {
-font-family: ‘JetBrains Mono’, monospace;
-font-size: 0.7rem;
-padding: 0.35rem 0.8rem;
-border: 1px solid var(–border-accent);
-border-radius: 20px;
-color: var(–text-secondary);
-letter-spacing: 0.05em;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 20px;
+  color: var(--text-primary);
+  letter-spacing: 0.05em;
+  background: rgba(255,255,255,0.06);
 }
 .hero-tag.alert {
-border-color: var(–accent-red);
-color: var(–accent-red);
-background: var(–accent-red-glow);
-animation: pulse 2s ease-in-out infinite;
+  border-color: var(--accent-red);
+  color: var(--accent-red);
+  background: var(--accent-red-glow);
+  animation: pulse 2s ease-in-out infinite;
 }
 @keyframes pulse {
-0%,100% { box-shadow: 0 0 0 0 rgba(255,59,92,0.3); }
-50% { box-shadow: 0 0 12px 2px rgba(255,59,92,0.15); }
+  0%,100% { box-shadow: 0 0 0 0 rgba(255,59,92,0.3); }
+  50% { box-shadow: 0 0 12px 2px rgba(255,59,92,0.15); }
 }
 .scroll-hint {
-position: absolute;
-bottom: 2rem;
-left: 50%;
-transform: translateX(-50%);
-color: var(–text-muted);
-font-size: 0.75rem;
-letter-spacing: 0.2em;
-animation: bounce 2s infinite;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  animation: bounce 2s infinite;
 }
 @keyframes bounce {
-0%,100% { transform: translateX(-50%) translateY(0); }
-50% { transform: translateX(-50%) translateY(8px); }
+  0%,100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
 }
 
 /* NAV */
 .nav {
-position: sticky;
-top: 0;
-z-index: 100;
-background: rgba(10,10,15,0.85);
-backdrop-filter: blur(20px);
-border-bottom: 1px solid var(–border);
-padding: 0.8rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10,10,15,0.92);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  padding: 0.8rem 0;
 }
 .nav-inner {
-max-width: 1200px;
-margin: 0 auto;
-display: flex;
-gap: 0.5rem;
-overflow-x: auto;
-padding: 0 1.5rem;
-scrollbar-width: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0 1.5rem;
+  scrollbar-width: none;
 }
 .nav-inner::-webkit-scrollbar { display: none; }
 .nav a {
-font-size: 0.75rem;
-color: var(–text-muted);
-text-decoration: none;
-padding: 0.4rem 0.9rem;
-border-radius: 6px;
-white-space: nowrap;
-transition: all 0.2s;
-font-weight: 500;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: all 0.2s;
+  font-weight: 500;
+  border: 1px solid transparent;
 }
 .nav a:hover, .nav a.active {
-color: var(–text-primary);
-background: rgba(255,255,255,0.06);
+  color: var(--text-primary);
+  background: rgba(255,255,255,0.1);
+  border-color: var(--border);
 }
 
 /* CONTAINER */
 .container {
-max-width: 1100px;
-margin: 0 auto;
-padding: 0 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 /* SECTION */
 section {
-padding: 4rem 0;
-border-bottom: 1px solid var(–border);
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--border);
 }
 .section-header {
-margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 .section-label {
-font-family: ‘JetBrains Mono’, monospace;
-font-size: 0.7rem;
-color: var(–accent-gold);
-letter-spacing: 0.3em;
-text-transform: uppercase;
-margin-bottom: 0.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--accent-gold);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 .section-title {
-font-family: ‘Noto Serif JP’, serif;
-font-size: 1.8rem;
-font-weight: 700;
-margin-bottom: 0.5rem;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 .section-desc {
-color: var(–text-secondary);
-font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
 }
 
 /* PRICE STRIP */
 .price-strip {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-gap: 1rem;
-margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 .price-card {
-background: var(–bg-card);
-border: 1px solid var(–border);
-border-radius: 12px;
-padding: 1.2rem;
-transition: all 0.3s;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.2rem;
+  transition: all 0.3s;
 }
 .price-card:hover {
-border-color: var(–border-accent);
-background: var(–bg-card-hover);
-transform: translateY(-2px);
+  border-color: var(--border-accent);
+  background: var(--bg-card-hover);
+  transform: translateY(-2px);
 }
 .price-label {
-font-family: ‘JetBrains Mono’, monospace;
-font-size: 0.7rem;
-color: var(–text-muted);
-letter-spacing: 0.1em;
-margin-bottom: 0.3rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
 }
 .price-value {
-font-family: ‘JetBrains Mono’, monospace;
-font-size: 1.4rem;
-font-weight: 700;
-margin-bottom: 0.2rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
 }
 .price-change {
-font-family: ‘JetBrains Mono’, monospace;
-font-size: 0.8rem;
-font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
-.up { color: var(–accent-green); }
-.down { color: var(–accent-red); }
+.up { color: var(--accent-green); }
+.down { color: var(--accent-red); }
 
 /* NEWS CARD */
 .news-list { display: flex; flex-direction: column; gap: 1.2rem; }
 .news-card {
-background: var(–bg-card);
-border: 1px solid var(–border);
-border-radius: 12px;
-padding: 1.5rem;
-transition: all 0.3s;
-position: relative;
-overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
 }
 .news-card:hover {
-border-color: var(–border-accent);
-background: var(–bg-card-hover);
+  border-color: var(--border-accent);
+  background: var(--bg-card-hover);
 }
 .news-card::before {
-content: ‘’;
-position: absolute;
-left: 0;
-top: 0;
-bottom: 0;
-width: 3px;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
 }
-.news-card.red::before { background: var(–accent-red); }
-.news-card.green::before { background: var(–accent-green); }
-.news-card.gold::before { background: var(–accent-gold); }
-.news-card.blue::before { background: var(–accent-blue); }
-.news-card.purple::before { background: var(–accent-purple); }
-.news-card.orange::before { background: var(–accent-orange); }
+.news-card.red::before { background: var(--accent-red); }
+.news-card.green::before { background: var(--accent-green); }
+.news-card.gold::before { background: var(--accent-gold); }
+.news-card.blue::before { background: var(--accent-blue); }
+.news-card.purple::before { background: var(--accent-purple); }
+.news-card.orange::before { background: var(--accent-orange); }
 .news-head {
-display: flex;
-align-items: center;
-gap: 0.6rem;
-margin-bottom: 0.6rem;
-flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
 }
 .news-badge {
-font-family: ‘JetBrains Mono’, monospace;
-font-size: 0.6rem;
-padding: 0.2rem 0.5rem;
-border-radius: 4px;
-letter-spacing: 0.05em;
-font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
 }
-.badge-fx { background: rgba(64,196,255,0.15); color: var(–accent-blue); }
-.badge-commodity { background: rgba(255,213,79,0.15); color: var(–accent-gold); }
-.badge-crypto { background: rgba(179,136,255,0.15); color: var(–accent-purple); }
-.badge-stock { background: rgba(0,230,118,0.15); color: var(–accent-green); }
-.badge-geo { background: rgba(255,59,92,0.15); color: var(–accent-red); }
-.badge-tech { background: rgba(255,145,0,0.15); color: var(–accent-orange); }
+.badge-fx { background: rgba(86,204,255,0.2); color: var(--accent-blue); border: 1px solid rgba(86,204,255,0.3); }
+.badge-commodity { background: rgba(255,224,102,0.2); color: var(--accent-gold); border: 1px solid rgba(255,224,102,0.3); }
+.badge-crypto { background: rgba(201,164,255,0.2); color: var(--accent-purple); border: 1px solid rgba(201,164,255,0.3); }
+.badge-stock { background: rgba(46,236,138,0.2); color: var(--accent-green); border: 1px solid rgba(46,236,138,0.3); }
+.badge-geo { background: rgba(255,77,106,0.2); color: var(--accent-red); border: 1px solid rgba(255,77,106,0.3); }
+.badge-tech { background: rgba(255,171,48,0.2); color: var(--accent-orange); border: 1px solid rgba(255,171,48,0.3); }
 .news-title {
-font-weight: 700;
-font-size: 1.05rem;
-line-height: 1.5;
-margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
 }
 .news-body {
-color: var(–text-secondary);
-font-size: 0.88rem;
-line-height: 1.8;
-margin-bottom: 0.8rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.85;
+  margin-bottom: 0.8rem;
 }
 .news-source {
-font-family: ‘JetBrains Mono’, monospace;
-font-size: 0.65rem;
-color: var(–text-muted);
-letter-spacing: 0.05em;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
 }
 
 /* ANALYSIS */
 .analysis-box {
-background: linear-gradient(135deg, rgba(255,213,79,0.05), rgba(255,145,0,0.05));
-border: 1px solid rgba(255,213,79,0.15);
-border-radius: 16px;
-padding: 2rem;
-margin-top: 1rem;
+  background: linear-gradient(135deg, rgba(255,213,79,0.05), rgba(255,145,0,0.05));
+  border: 1px solid rgba(255,213,79,0.15);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 1rem;
 }
 .analysis-pair {
-margin-bottom: 2rem;
-padding-bottom: 1.5rem;
-border-bottom: 1px solid var(–border);
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
 }
 .analysis-pair:last-child {
-margin-bottom: 0;
-padding-bottom: 0;
-border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
 }
 .pair-name {
-font-family: ‘JetBrains Mono’, monospace;
-font-size: 1.1rem;
-font-weight: 700;
-margin-bottom: 0.3rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
 }
 .pair-direction {
-display: inline-block;
-font-family: ‘JetBrains Mono’, monospace;
-font-size: 0.7rem;
-padding: 0.2rem 0.6rem;
-border-radius: 4px;
-margin-bottom: 0.6rem;
-font-weight: 700;
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
 }
-.dir-up { background: var(–accent-green-glow); color: var(–accent-green); border: 1px solid rgba(0,230,118,0.3); }
-.dir-down { background: var(–accent-red-glow); color: var(–accent-red); border: 1px solid rgba(255,59,92,0.3); }
-.dir-neutral { background: rgba(255,213,79,0.1); color: var(–accent-gold); border: 1px solid rgba(255,213,79,0.3); }
+.dir-up { background: var(--accent-green-glow); color: var(--accent-green); border: 1px solid rgba(0,230,118,0.3); }
+.dir-down { background: var(--accent-red-glow); color: var(--accent-red); border: 1px solid rgba(255,59,92,0.3); }
+.dir-neutral { background: rgba(255,213,79,0.1); color: var(--accent-gold); border: 1px solid rgba(255,213,79,0.3); }
 .pair-text {
-color: var(–text-secondary);
-font-size: 0.88rem;
-line-height: 1.8;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.85;
 }
 
 /* FOOTER */
 .footer {
-text-align: center;
-padding: 3rem 1.5rem;
-color: var(–text-muted);
-font-size: 0.75rem;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.75rem;
 }
 
 /* Fade-in animations */
 .fade-in {
-opacity: 0;
-transform: translateY(20px);
-transition: opacity 0.6s, transform 0.6s;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s, transform 0.6s;
 }
 .fade-in.visible {
-opacity: 1;
-transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Mobile */
 @media (max-width: 640px) {
-.price-strip { grid-template-columns: 1fr 1fr; }
-.hero h1 { font-size: 1.8rem; }
-section { padding: 2.5rem 0; }
+  .price-strip { grid-template-columns: 1fr 1fr; }
+  .hero h1 { font-size: 1.8rem; }
+  section { padding: 2.5rem 0; }
 }
 </style>
-
 </head>
 <body>
 
 <!-- HERO -->
-
 <div class="hero">
   <div class="hero-grid"></div>
   <div class="hero-content">
@@ -421,7 +424,6 @@ section { padding: 2.5rem 0; }
 </div>
 
 <!-- NAV -->
-
 <nav class="nav">
   <div class="nav-inner">
     <a href="#geopolitics">🌍 地政学</a>
@@ -437,7 +439,6 @@ section { padding: 2.5rem 0; }
 <div class="container">
 
 <!-- ==================== 地政学 ==================== -->
-
 <section id="geopolitics">
   <div class="section-header fade-in">
     <div class="section-label">GEOPOLITICS</div>
@@ -458,57 +459,53 @@ section { padding: 2.5rem 0; }
       <div class="news-source">出典: CNN, CNBC, Al Jazeera — 2026/3/23</div>
     </div>
 
-```
-<div class="news-card red fade-in">
-  <div class="news-head">
-    <span class="news-badge badge-geo">地政学</span>
-  </div>
-  <div class="news-title">ホルムズ海峡の封鎖 — 世界最大の供給途絶が継続</div>
-  <div class="news-body">
-    IEA（国際エネルギー機関）3月報告によると、ホルムズ海峡を通過する原油・石油製品は戦前の日量約2,000万バレルからほぼゼロに激減し、「世界石油市場史上最大の供給途絶」が発生。湾岸諸国は少なくとも日量1,000万バレルの生産を停止。IEA加盟国は3月11日、史上最大となる4億バレルの戦略備蓄放出で合意した。Xeneta社のアナリストは「ホルムズ海峡の航行は2026年末まで完全に不可能」との見方を示している。
-  </div>
-  <div class="news-source">出典: IEA Oil Market Report March 2026, CNN — 2026/3/23</div>
-</div>
+    <div class="news-card red fade-in">
+      <div class="news-head">
+        <span class="news-badge badge-geo">地政学</span>
+      </div>
+      <div class="news-title">ホルムズ海峡の封鎖 — 世界最大の供給途絶が継続</div>
+      <div class="news-body">
+        IEA（国際エネルギー機関）3月報告によると、ホルムズ海峡を通過する原油・石油製品は戦前の日量約2,000万バレルからほぼゼロに激減し、「世界石油市場史上最大の供給途絶」が発生。湾岸諸国は少なくとも日量1,000万バレルの生産を停止。IEA加盟国は3月11日、史上最大となる4億バレルの戦略備蓄放出で合意した。Xeneta社のアナリストは「ホルムズ海峡の航行は2026年末まで完全に不可能」との見方を示している。
+      </div>
+      <div class="news-source">出典: IEA Oil Market Report March 2026, CNN — 2026/3/23</div>
+    </div>
 
-<div class="news-card gold fade-in">
-  <div class="news-head">
-    <span class="news-badge badge-geo">日米</span>
-  </div>
-  <div class="news-title">高市首相の訪米 — 730億ドルの第2弾投資パッケージ発表</div>
-  <div class="news-body">
-    3月19日、高市早苗首相がワシントンでトランプ大統領と首脳会談。日米は5,500億ドル投資枠組みの第2弾として730億ドル規模のプロジェクトを発表。GE Vernova・日立によるSMR（小型モジュラー原子炉）建設に400億ドル、天然ガス発電施設に330億ドルなどが含まれる。トランプ大統領はホルムズ海峡確保への日本の軍事協力を求めたが、高市首相は海自派遣を明確には約束しなかった。日本の2026年度防衛予算は過去最大の580億ドルに達している。
-  </div>
-  <div class="news-source">出典: Japan Times, CNBC, Brookings Institution — 2026/3/18-20</div>
-</div>
+    <div class="news-card gold fade-in">
+      <div class="news-head">
+        <span class="news-badge badge-geo">日米</span>
+      </div>
+      <div class="news-title">高市首相の訪米 — 730億ドルの第2弾投資パッケージ発表</div>
+      <div class="news-body">
+        3月19日、高市早苗首相がワシントンでトランプ大統領と首脳会談。日米は5,500億ドル投資枠組みの第2弾として730億ドル規模のプロジェクトを発表。GE Vernova・日立によるSMR（小型モジュラー原子炉）建設に400億ドル、天然ガス発電施設に330億ドルなどが含まれる。トランプ大統領はホルムズ海峡確保への日本の軍事協力を求めたが、高市首相は海自派遣を明確には約束しなかった。日本の2026年度防衛予算は過去最大の580億ドルに達している。
+      </div>
+      <div class="news-source">出典: Japan Times, CNBC, Brookings Institution — 2026/3/18-20</div>
+    </div>
 
-<div class="news-card blue fade-in">
-  <div class="news-head">
-    <span class="news-badge badge-geo">金融政策</span>
-  </div>
-  <div class="news-title">FRB 3月会合：金利据え置き（3.50-3.75%）、年内1回利下げ見通し維持</div>
-  <div class="news-body">
-    FRBは3月18日、11対1で政策金利を据え置き。パウエル議長は中東紛争が米経済に及ぼす影響は「まだ分からない」と発言。2026年のインフレ見通しはPCE・コアPCEとも2.7%に上方修正（12月予想は2.4%/2.5%）。GDP成長率は2.4%に上方修正。パウエル議長は「長期間にわたるガソリン高は消費を圧迫する」と警告しつつ、「インフレで進展がなければ利下げはない」と明言した。
-  </div>
-  <div class="news-source">出典: Federal Reserve, CNBC, CBS News — 2026/3/18</div>
-</div>
+    <div class="news-card blue fade-in">
+      <div class="news-head">
+        <span class="news-badge badge-geo">金融政策</span>
+      </div>
+      <div class="news-title">FRB 3月会合：金利据え置き（3.50-3.75%）、年内1回利下げ見通し維持</div>
+      <div class="news-body">
+        FRBは3月18日、11対1で政策金利を据え置き。パウエル議長は中東紛争が米経済に及ぼす影響は「まだ分からない」と発言。2026年のインフレ見通しはPCE・コアPCEとも2.7%に上方修正（12月予想は2.4%/2.5%）。GDP成長率は2.4%に上方修正。パウエル議長は「長期間にわたるガソリン高は消費を圧迫する」と警告しつつ、「インフレで進展がなければ利下げはない」と明言した。
+      </div>
+      <div class="news-source">出典: Federal Reserve, CNBC, CBS News — 2026/3/18</div>
+    </div>
 
-<div class="news-card blue fade-in">
-  <div class="news-head">
-    <span class="news-badge badge-geo">金融政策</span>
-  </div>
-  <div class="news-title">日銀 3月会合：政策金利0.75%で据え置き — 田方委員は1%への利上げ提案</div>
-  <div class="news-body">
-    日銀は3月19日、政策金利を0.75%で据え置き。ただし田方審議委員は2会合連続で0.25%利上げを提案し反対票を投じた。植田総裁は「イラン紛争の景気減速が一時的であれば利上げは可能」と発言。原油高によるインフレ圧力に対処する引き締めバイアスを示唆しており、市場では年内利上げ観測が維持されている。
-  </div>
-  <div class="news-source">出典: Trading Economics, BOJ — 2026/3/19-20</div>
-</div>
-```
-
+    <div class="news-card blue fade-in">
+      <div class="news-head">
+        <span class="news-badge badge-geo">金融政策</span>
+      </div>
+      <div class="news-title">日銀 3月会合：政策金利0.75%で据え置き — 田方委員は1%への利上げ提案</div>
+      <div class="news-body">
+        日銀は3月19日、政策金利を0.75%で据え置き。ただし田方審議委員は2会合連続で0.25%利上げを提案し反対票を投じた。植田総裁は「イラン紛争の景気減速が一時的であれば利上げは可能」と発言。原油高によるインフレ圧力に対処する引き締めバイアスを示唆しており、市場では年内利上げ観測が維持されている。
+      </div>
+      <div class="news-source">出典: Trading Economics, BOJ — 2026/3/19-20</div>
+    </div>
   </div>
 </section>
 
 <!-- ==================== FX ==================== -->
-
 <section id="fx">
   <div class="section-header fade-in">
     <div class="section-label">FOREX</div>
@@ -549,31 +546,27 @@ section { padding: 2.5rem 0; }
       <div class="news-source">出典: Trading Economics — 2026/3/23</div>
     </div>
 
-```
-<div class="news-card blue fade-in">
-  <div class="news-head"><span class="news-badge badge-fx">AUD/JPY</span></div>
-  <div class="news-title">AUD/JPY — エネルギー関連のリスクオフで揺れる展開</div>
-  <div class="news-body">
-    AUD/JPYは110円台で推移。3月12日に113.4円の年初来高値をつけた後、中東情勢の悪化でリスクオフが進み反落。RBA（豪州準備銀行）のタカ派シグナルと豪州のコモディティ輸出国としての恩恵がAUDを支える一方、日銀の引き締めバイアスと安全通貨としての円買いが拮抗。Investing.comのアナリストは「107.89のレンジ下限を割るかが焦点」と指摘している。
-  </div>
-  <div class="news-source">出典: Investing.com, Wise — 2026/3/11-23</div>
-</div>
+    <div class="news-card blue fade-in">
+      <div class="news-head"><span class="news-badge badge-fx">AUD/JPY</span></div>
+      <div class="news-title">AUD/JPY — エネルギー関連のリスクオフで揺れる展開</div>
+      <div class="news-body">
+        AUD/JPYは110円台で推移。3月12日に113.4円の年初来高値をつけた後、中東情勢の悪化でリスクオフが進み反落。RBA（豪州準備銀行）のタカ派シグナルと豪州のコモディティ輸出国としての恩恵がAUDを支える一方、日銀の引き締めバイアスと安全通貨としての円買いが拮抗。Investing.comのアナリストは「107.89のレンジ下限を割るかが焦点」と指摘している。
+      </div>
+      <div class="news-source">出典: Investing.com, Wise — 2026/3/11-23</div>
+    </div>
 
-<div class="news-card blue fade-in">
-  <div class="news-head"><span class="news-badge badge-fx">GBP/JPY</span></div>
-  <div class="news-title">GBP/JPY — BOE据え置きで方向感乏しく</div>
-  <div class="news-body">
-    GBP/JPYは211円台で推移。イングランド銀行（BOE）も3月会合で政策金利を3.75%に据え置き。イラン戦争による原油・ガス価格急騰でインフレ再燃リスクがあり、各中央銀行とも利下げどころか利上げの可能性すら浮上している。円クロス全般でベアリッシュな反転シグナルが出ているが、ブルが押し戻す展開が続いている。
-  </div>
-  <div class="news-source">出典: Yahoo Finance, Investing.com — 2026/3/23</div>
-</div>
-```
-
+    <div class="news-card blue fade-in">
+      <div class="news-head"><span class="news-badge badge-fx">GBP/JPY</span></div>
+      <div class="news-title">GBP/JPY — BOE据え置きで方向感乏しく</div>
+      <div class="news-body">
+        GBP/JPYは211円台で推移。イングランド銀行（BOE）も3月会合で政策金利を3.75%に据え置き。イラン戦争による原油・ガス価格急騰でインフレ再燃リスクがあり、各中央銀行とも利下げどころか利上げの可能性すら浮上している。円クロス全般でベアリッシュな反転シグナルが出ているが、ブルが押し戻す展開が続いている。
+      </div>
+      <div class="news-source">出典: Yahoo Finance, Investing.com — 2026/3/23</div>
+    </div>
   </div>
 </section>
 
 <!-- ==================== COMMODITIES ==================== -->
-
 <section id="commodities">
   <div class="section-header fade-in">
     <div class="section-label">COMMODITIES</div>
@@ -609,31 +602,27 @@ section { padding: 2.5rem 0; }
       <div class="news-source">出典: Yahoo Finance, Fortune, LiteFinance — 2026/3/23</div>
     </div>
 
-```
-<div class="news-card orange fade-in">
-  <div class="news-head"><span class="news-badge badge-commodity">原油</span></div>
-  <div class="news-title">原油14%急落後に反発 — トランプの攻撃停止が引き金</div>
-  <div class="news-body">
-    月曜朝、ブレントは$114まで上昇した後、トランプ氏の5日間攻撃停止発表で一時14%超急落し$100割れ。その後$104前後で落ち着いた。Goldman Sachsはブレント予想を3-4月平均$110に大幅引き上げ。ホルムズ海峡の通行が5%以下の状態が10週間続けば、原油価格は2008年の記録的高値（約$147）を超える可能性があると警告した。EIA（米エネルギー情報局）はブレントが第3四半期に$80を下回り、年末$70前後と予想するが、これは海峡再開を前提としている。
-  </div>
-  <div class="news-source">出典: Bloomberg, CNBC, EIA, Goldman Sachs — 2026/3/23</div>
-</div>
+    <div class="news-card orange fade-in">
+      <div class="news-head"><span class="news-badge badge-commodity">原油</span></div>
+      <div class="news-title">原油14%急落後に反発 — トランプの攻撃停止が引き金</div>
+      <div class="news-body">
+        月曜朝、ブレントは$114まで上昇した後、トランプ氏の5日間攻撃停止発表で一時14%超急落し$100割れ。その後$104前後で落ち着いた。Goldman Sachsはブレント予想を3-4月平均$110に大幅引き上げ。ホルムズ海峡の通行が5%以下の状態が10週間続けば、原油価格は2008年の記録的高値（約$147）を超える可能性があると警告した。EIA（米エネルギー情報局）はブレントが第3四半期に$80を下回り、年末$70前後と予想するが、これは海峡再開を前提としている。
+      </div>
+      <div class="news-source">出典: Bloomberg, CNBC, EIA, Goldman Sachs — 2026/3/23</div>
+    </div>
 
-<div class="news-card orange fade-in">
-  <div class="news-head"><span class="news-badge badge-commodity">原油</span></div>
-  <div class="news-title">IEA加盟国が4億バレルの戦略備蓄放出で合意</div>
-  <div class="news-body">
-    IEA加盟32カ国は3月11日、中東紛争による供給途絶に対応するため史上最大の戦略石油備蓄放出で合意。米国はSPR（戦略石油備蓄）から1億7,200万バレル以上を放出。IEAのビロル事務局長は「世界経済は重大かつ深刻な脅威に直面している」と述べ、さらなる放出も検討中とした。トランプ政権はイラン制裁の一部緩和（海上にある原油の取引許可）も実施。
-  </div>
-  <div class="news-source">出典: IEA, NPR, CNN — 2026/3/11-21</div>
-</div>
-```
-
+    <div class="news-card orange fade-in">
+      <div class="news-head"><span class="news-badge badge-commodity">原油</span></div>
+      <div class="news-title">IEA加盟国が4億バレルの戦略備蓄放出で合意</div>
+      <div class="news-body">
+        IEA加盟32カ国は3月11日、中東紛争による供給途絶に対応するため史上最大の戦略石油備蓄放出で合意。米国はSPR（戦略石油備蓄）から1億7,200万バレル以上を放出。IEAのビロル事務局長は「世界経済は重大かつ深刻な脅威に直面している」と述べ、さらなる放出も検討中とした。トランプ政権はイラン制裁の一部緩和（海上にある原油の取引許可）も実施。
+      </div>
+      <div class="news-source">出典: IEA, NPR, CNN — 2026/3/11-21</div>
+    </div>
   </div>
 </section>
 
 <!-- ==================== CRYPTO ==================== -->
-
 <section id="crypto">
   <div class="section-header fade-in">
     <div class="section-label">CRYPTOCURRENCY</div>
@@ -664,22 +653,18 @@ section { padding: 2.5rem 0; }
       <div class="news-source">出典: CoinDesk — 2026/3/23</div>
     </div>
 
-```
-<div class="news-card purple fade-in">
-  <div class="news-head"><span class="news-badge badge-crypto">BTC</span></div>
-  <div class="news-title">BTCが「リスク資産の先行指標」 — 年初の暴落がS&P500に波及</div>
-  <div class="news-body">
-    CoinDeskの分析によると、BTCは年初に$90,000から$60,000近辺まで約33%暴落。当時S&P500は最高値圏にあったが、現在は株式市場が追随する形で下落。Bloombergのマクグローン氏は「BTCはリスク資産の氷山の頂点であり、その崩壊は広範なドローダウンの初期段階かもしれない」と指摘。BTCは$65,000-$75,000のレンジで推移しており、プットオプションのバイアスは過去最大級に達している。
-  </div>
-  <div class="news-source">出典: CoinDesk, Bloomberg — 2026/3/23</div>
-</div>
-```
-
+    <div class="news-card purple fade-in">
+      <div class="news-head"><span class="news-badge badge-crypto">BTC</span></div>
+      <div class="news-title">BTCが「リスク資産の先行指標」 — 年初の暴落がS&P500に波及</div>
+      <div class="news-body">
+        CoinDeskの分析によると、BTCは年初に$90,000から$60,000近辺まで約33%暴落。当時S&P500は最高値圏にあったが、現在は株式市場が追随する形で下落。Bloombergのマクグローン氏は「BTCはリスク資産の氷山の頂点であり、その崩壊は広範なドローダウンの初期段階かもしれない」と指摘。BTCは$65,000-$75,000のレンジで推移しており、プットオプションのバイアスは過去最大級に達している。
+      </div>
+      <div class="news-source">出典: CoinDesk, Bloomberg — 2026/3/23</div>
+    </div>
   </div>
 </section>
 
 <!-- ==================== STOCKS ==================== -->
-
 <section id="stocks">
   <div class="section-header fade-in">
     <div class="section-label">EQUITIES</div>
@@ -720,40 +705,36 @@ section { padding: 2.5rem 0; }
       <div class="news-source">出典: CNBC, TheStreet — 2026/3/23</div>
     </div>
 
-```
-<div class="news-card red fade-in">
-  <div class="news-head"><span class="news-badge badge-stock">テクニカル</span></div>
-  <div class="news-title">S&P500が200日移動平均線を2日連続で下回り — 「デッドキャット・バウンス」の可能性</div>
-  <div class="news-body">
-    S&P500は200日移動平均線（6,621）を2日連続で終値で下回る「2日ルール」が確定。これは2024年後半の景気回復開始以降初めてのことであり、機関投資家のトレンドフォロー型ファンドが売りに転じるシグナルとされる。アナリストは月曜の反発が「デッドキャットバウンス」（一時的反発）の可能性を警告。BofAのハートネット氏は6,600を「政策対応レベル」と位置づけている。
-  </div>
-  <div class="news-source">出典: FinancialContent — 2026/3/23</div>
-</div>
+    <div class="news-card red fade-in">
+      <div class="news-head"><span class="news-badge badge-stock">テクニカル</span></div>
+      <div class="news-title">S&P500が200日移動平均線を2日連続で下回り — 「デッドキャット・バウンス」の可能性</div>
+      <div class="news-body">
+        S&P500は200日移動平均線（6,621）を2日連続で終値で下回る「2日ルール」が確定。これは2024年後半の景気回復開始以降初めてのことであり、機関投資家のトレンドフォロー型ファンドが売りに転じるシグナルとされる。アナリストは月曜の反発が「デッドキャットバウンス」（一時的反発）の可能性を警告。BofAのハートネット氏は6,600を「政策対応レベル」と位置づけている。
+      </div>
+      <div class="news-source">出典: FinancialContent — 2026/3/23</div>
+    </div>
 
-<div class="news-card red fade-in">
-  <div class="news-head"><span class="news-badge badge-stock">日本株</span></div>
-  <div class="news-title">日経225が3.48%急落、51,515 — 2ヶ月超ぶり安値</div>
-  <div class="news-body">
-    月曜のアジア市場は中東戦争拡大懸念で大幅安。日経225は-3.48%で51,515に下落し、2026年1月以来の安値。TOPIXも-3.4%。韓国KOSPIは-6.5%でサーキットブレーカーが発動、上海CSI300は-3.3%、香港ハンセンは-3.5%。テクノロジー、金融、消費株が下落を主導し、キオクシア(-4.4%)、アドバンテスト(-5.4%)、東京エレクトロン(-3%)、三菱UFJ(-4.6%)、ファーストリテイリング(-3.6%)が大幅安。ただし、トランプ発言後の先物は+3.79%で反発している。
-  </div>
-  <div class="news-source">出典: Trading Economics, Yahoo Finance, CNBC — 2026/3/23</div>
-</div>
+    <div class="news-card red fade-in">
+      <div class="news-head"><span class="news-badge badge-stock">日本株</span></div>
+      <div class="news-title">日経225が3.48%急落、51,515 — 2ヶ月超ぶり安値</div>
+      <div class="news-body">
+        月曜のアジア市場は中東戦争拡大懸念で大幅安。日経225は-3.48%で51,515に下落し、2026年1月以来の安値。TOPIXも-3.4%。韓国KOSPIは-6.5%でサーキットブレーカーが発動、上海CSI300は-3.3%、香港ハンセンは-3.5%。テクノロジー、金融、消費株が下落を主導し、キオクシア(-4.4%)、アドバンテスト(-5.4%)、東京エレクトロン(-3%)、三菱UFJ(-4.6%)、ファーストリテイリング(-3.6%)が大幅安。ただし、トランプ発言後の先物は+3.79%で反発している。
+      </div>
+      <div class="news-source">出典: Trading Economics, Yahoo Finance, CNBC — 2026/3/23</div>
+    </div>
 
-<div class="news-card green fade-in">
-  <div class="news-head"><span class="news-badge badge-stock">注目</span></div>
-  <div class="news-title">ブラックロックCEO「投資し続けることがタイミングよりはるかに重要」</div>
-  <div class="news-body">
-    ブラックロックのラリー・フィンクCEOは年次会長書簡で「過去20年間、S&P500に投資した1ドルは8倍以上に成長した」と述べ、市場の混乱時にパニック売りを控えるよう投資家に呼びかけた。「最も不安なヘッドラインの中で、市場の最も強い日が訪れることがある」と強調。
-  </div>
-  <div class="news-source">出典: CNBC (BlackRock Annual Letter) — 2026/3/23</div>
-</div>
-```
-
+    <div class="news-card green fade-in">
+      <div class="news-head"><span class="news-badge badge-stock">注目</span></div>
+      <div class="news-title">ブラックロックCEO「投資し続けることがタイミングよりはるかに重要」</div>
+      <div class="news-body">
+        ブラックロックのラリー・フィンクCEOは年次会長書簡で「過去20年間、S&P500に投資した1ドルは8倍以上に成長した」と述べ、市場の混乱時にパニック売りを控えるよう投資家に呼びかけた。「最も不安なヘッドラインの中で、市場の最も強い日が訪れることがある」と強調。
+      </div>
+      <div class="news-source">出典: CNBC (BlackRock Annual Letter) — 2026/3/23</div>
+    </div>
   </div>
 </section>
 
 <!-- ==================== JAPAN TECH ==================== -->
-
 <section id="japan-tech">
   <div class="section-header fade-in">
     <div class="section-label">JAPAN INNOVATION</div>
@@ -771,40 +752,36 @@ section { padding: 2.5rem 0; }
       <div class="news-source">出典: Fujitsu Global Press Release — 2026/3/10</div>
     </div>
 
-```
-<div class="news-card orange fade-in">
-  <div class="news-head"><span class="news-badge badge-tech">ロボティクス</span></div>
-  <div class="news-title">JST「ムーンショット計画」 — NVIDIAと連携した高齢者介護ロボット開発</div>
-  <div class="news-body">
-    科学技術振興機構（JST）のムーンショット計画 Goal 3では、NVIDIA AIおよびロボティクス技術を活用し、2050年までにAI搭載自律学習ロボットを日本の日常生活に統合する研究を推進中。介護ロボット「AIREC（AI-Driven Robot for Embrace and Care）」は、料理・清掃・衛生ケアなどの介護タスクに対応し、東京大学の小林悦子教授らが中心となって開発。超高齢社会に対応する画期的な取り組みとして注目されている。
-  </div>
-  <div class="news-source">出典: NVIDIA Blog — 2026/1/8</div>
-</div>
+    <div class="news-card orange fade-in">
+      <div class="news-head"><span class="news-badge badge-tech">ロボティクス</span></div>
+      <div class="news-title">JST「ムーンショット計画」 — NVIDIAと連携した高齢者介護ロボット開発</div>
+      <div class="news-body">
+        科学技術振興機構（JST）のムーンショット計画 Goal 3では、NVIDIA AIおよびロボティクス技術を活用し、2050年までにAI搭載自律学習ロボットを日本の日常生活に統合する研究を推進中。介護ロボット「AIREC（AI-Driven Robot for Embrace and Care）」は、料理・清掃・衛生ケアなどの介護タスクに対応し、東京大学の小林悦子教授らが中心となって開発。超高齢社会に対応する画期的な取り組みとして注目されている。
+      </div>
+      <div class="news-source">出典: NVIDIA Blog — 2026/1/8</div>
+    </div>
 
-<div class="news-card orange fade-in">
-  <div class="news-head"><span class="news-badge badge-tech">バイオ</span></div>
-  <div class="news-title">日本政府、バイオスタートアップに3,500億円投入 — J-RISE構想発動</div>
-  <div class="news-body">
-    政府は「J-RISE（Japan Research & Innovation for Scientific Excellence）」構想を立ち上げ、トップ科学人材の日本誘致を推進。AMEDはVCの投資額を2倍にできるマッチンググラントを提供し、3,500億円（約23億ドル）規模のスタートアップ支援を展開。東大エッジキャピタルパートナーズ（UTEC）も470億円の第6号ファンドを組成し、AUM10億ドル超に到達。ヘルスケア・ライフサイエンス分野のディープテック投資が加速している。
-  </div>
-  <div class="news-source">出典: BioSpectrum Asia — 2026/1/3</div>
-</div>
+    <div class="news-card orange fade-in">
+      <div class="news-head"><span class="news-badge badge-tech">バイオ</span></div>
+      <div class="news-title">日本政府、バイオスタートアップに3,500億円投入 — J-RISE構想発動</div>
+      <div class="news-body">
+        政府は「J-RISE（Japan Research & Innovation for Scientific Excellence）」構想を立ち上げ、トップ科学人材の日本誘致を推進。AMEDはVCの投資額を2倍にできるマッチンググラントを提供し、3,500億円（約23億ドル）規模のスタートアップ支援を展開。東大エッジキャピタルパートナーズ（UTEC）も470億円の第6号ファンドを組成し、AUM10億ドル超に到達。ヘルスケア・ライフサイエンス分野のディープテック投資が加速している。
+      </div>
+      <div class="news-source">出典: BioSpectrum Asia — 2026/1/3</div>
+    </div>
 
-<div class="news-card orange fade-in">
-  <div class="news-head"><span class="news-badge badge-tech">SMR</span></div>
-  <div class="news-title">GE Vernova・日立による400億ドル規模のSMR建設 — AI時代のエネルギー需要に対応</div>
-  <div class="news-body">
-    日米首脳会談で発表された第2弾投資パッケージの目玉として、GE Vernovaと日立がテネシー・アラバマ州で小型モジュラー原子炉（SMR）を建設。投資額は最大400億ドルで、主にデータセンター向け電力供給を想定。AI時代のエネルギー需要爆発に対応する日本の原子力技術が米国市場で大きな存在感を示す形となった。
-  </div>
-  <div class="news-source">出典: Japan Times, White House Fact Sheet — 2026/3/20</div>
-</div>
-```
-
+    <div class="news-card orange fade-in">
+      <div class="news-head"><span class="news-badge badge-tech">SMR</span></div>
+      <div class="news-title">GE Vernova・日立による400億ドル規模のSMR建設 — AI時代のエネルギー需要に対応</div>
+      <div class="news-body">
+        日米首脳会談で発表された第2弾投資パッケージの目玉として、GE Vernovaと日立がテネシー・アラバマ州で小型モジュラー原子炉（SMR）を建設。投資額は最大400億ドルで、主にデータセンター向け電力供給を想定。AI時代のエネルギー需要爆発に対応する日本の原子力技術が米国市場で大きな存在感を示す形となった。
+      </div>
+      <div class="news-source">出典: Japan Times, White House Fact Sheet — 2026/3/20</div>
+    </div>
   </div>
 </section>
 
 <!-- ==================== ANALYSIS ==================== -->
-
 <section id="analysis" style="border-bottom: none;">
   <div class="section-header fade-in">
     <div class="section-label">OUTLOOK</div>
@@ -814,47 +791,45 @@ section { padding: 2.5rem 0; }
 
   <div class="analysis-box fade-in">
 
-```
-<div class="analysis-pair">
-  <div class="pair-name">USD/JPY</div>
-  <span class="pair-direction dir-neutral">▶ レンジ〜やや円安バイアス（158-161）</span>
-  <div class="pair-text">
-    <strong>上昇（円安）要因：</strong>日米金利差は依然として大きい（米3.50-3.75% vs 日0.75%）。FRBは利下げを急がず、原油高によるインフレ上振れで利下げ先送り観測が強まっている。日本はエネルギー輸入の90%以上を中東に依存しており、原油高は経常収支を悪化させ構造的な円売り圧力となる。<br><br>
-    <strong>下落（円高）要因：</strong>160円は2024年に政府・日銀が介入を実施した心理的防衛ライン。三村国際局長が介入を示唆する発言をしており、160円接近局面では介入警戒感が強まる。日銀の田方委員が利上げを提案し、植田総裁も条件付き利上げに言及しており、日銀の引き締めバイアスは円をサポート。トランプのイラン対話発言が実を結べば原油安→円高の可能性。<br><br>
-    <strong>結論：</strong>短期的には原油動向と中東情勢次第で高ボラティリティが継続。イラン対話が進展すれば155-157円方向への円高、頓挫すれば160円トライの展開。160円突破時は介入に警戒が必要。
-  </div>
-</div>
+    <div class="analysis-pair">
+      <div class="pair-name">USD/JPY</div>
+      <span class="pair-direction dir-neutral">▶ レンジ〜やや円安バイアス（158-161）</span>
+      <div class="pair-text">
+        <strong>上昇（円安）要因：</strong>日米金利差は依然として大きい（米3.50-3.75% vs 日0.75%）。FRBは利下げを急がず、原油高によるインフレ上振れで利下げ先送り観測が強まっている。日本はエネルギー輸入の90%以上を中東に依存しており、原油高は経常収支を悪化させ構造的な円売り圧力となる。<br><br>
+        <strong>下落（円高）要因：</strong>160円は2024年に政府・日銀が介入を実施した心理的防衛ライン。三村国際局長が介入を示唆する発言をしており、160円接近局面では介入警戒感が強まる。日銀の田方委員が利上げを提案し、植田総裁も条件付き利上げに言及しており、日銀の引き締めバイアスは円をサポート。トランプのイラン対話発言が実を結べば原油安→円高の可能性。<br><br>
+        <strong>結論：</strong>短期的には原油動向と中東情勢次第で高ボラティリティが継続。イラン対話が進展すれば155-157円方向への円高、頓挫すれば160円トライの展開。160円突破時は介入に警戒が必要。
+      </div>
+    </div>
 
-<div class="analysis-pair">
-  <div class="pair-name">AUD/JPY</div>
-  <span class="pair-direction dir-neutral">▶ レンジ（107-113）不安定な推移</span>
-  <div class="pair-text">
-    <strong>上昇要因：</strong>豪州はエネルギー・資源輸出国であり、原油・天然ガス高はAUDに追い風。RBAのタカ派姿勢と日豪金利差がキャリートレードを支える。中東混乱で代替エネルギー供給先としての豪州の重要性が増している。<br><br>
-    <strong>下落要因：</strong>リスクオフ時は安全通貨の円が選好されやすく、AUD/JPYは下落しやすい。日銀の利上げ観測もAUD/JPY下押し要因。株式市場の急落局面ではキャリートレードの巻き戻しが起こり得る。<br><br>
-    <strong>結論：</strong>イラン対話進展ならリスクオンで113円方向への上昇余地。紛争激化なら107-108円のレンジ下限テスト。方向感の定まらないレンジ相場が当面継続する可能性が高い。
-  </div>
-</div>
+    <div class="analysis-pair">
+      <div class="pair-name">AUD/JPY</div>
+      <span class="pair-direction dir-neutral">▶ レンジ（107-113）不安定な推移</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>豪州はエネルギー・資源輸出国であり、原油・天然ガス高はAUDに追い風。RBAのタカ派姿勢と日豪金利差がキャリートレードを支える。中東混乱で代替エネルギー供給先としての豪州の重要性が増している。<br><br>
+        <strong>下落要因：</strong>リスクオフ時は安全通貨の円が選好されやすく、AUD/JPYは下落しやすい。日銀の利上げ観測もAUD/JPY下押し要因。株式市場の急落局面ではキャリートレードの巻き戻しが起こり得る。<br><br>
+        <strong>結論：</strong>イラン対話進展ならリスクオンで113円方向への上昇余地。紛争激化なら107-108円のレンジ下限テスト。方向感の定まらないレンジ相場が当面継続する可能性が高い。
+      </div>
+    </div>
 
-<div class="analysis-pair">
-  <div class="pair-name">NASDAQ</div>
-  <span class="pair-direction dir-down">▼ 短期：下方リスク優勢</span>
-  <div class="pair-text">
-    <strong>懸念材料：</strong>S&P500が200日移動平均線を2日連続で下回り、テクニカル的に弱気シグナルが点灯。FRBの利下げ先送りは高PERのハイテク株に逆風。原油高→インフレ→金利高の連鎖がバリュエーション圧縮を招く。ビットコインの年初暴落が株式市場の先行指標であったという見方も強まっている。NVIDIA、Microsoftなどメガテック株への売り圧力が強まる可能性。<br><br>
-    <strong>支持材料：</strong>月曜の反発でナスダック+1.38%。トランプのイラン対話進展が確認されれば、原油安→インフレ期待後退→利下げ期待回復のポジティブ連鎖も期待できる。BlackRockのフィンクCEOは長期投資の重要性を強調。<br><br>
-    <strong>結論：</strong>イラン対話の「5日間」が焦点。実質的な停戦進展がなければ、エネルギーコスト上昇と金利上昇のダブルパンチで下落基調。200日線（6,621）を回復できるかがS&P500の分水嶺であり、ナスダックも連動する。20,000のサポートが次の防衛ライン。
-  </div>
-</div>
+    <div class="analysis-pair">
+      <div class="pair-name">NASDAQ</div>
+      <span class="pair-direction dir-down">▼ 短期：下方リスク優勢</span>
+      <div class="pair-text">
+        <strong>懸念材料：</strong>S&P500が200日移動平均線を2日連続で下回り、テクニカル的に弱気シグナルが点灯。FRBの利下げ先送りは高PERのハイテク株に逆風。原油高→インフレ→金利高の連鎖がバリュエーション圧縮を招く。ビットコインの年初暴落が株式市場の先行指標であったという見方も強まっている。NVIDIA、Microsoftなどメガテック株への売り圧力が強まる可能性。<br><br>
+        <strong>支持材料：</strong>月曜の反発でナスダック+1.38%。トランプのイラン対話進展が確認されれば、原油安→インフレ期待後退→利下げ期待回復のポジティブ連鎖も期待できる。BlackRockのフィンクCEOは長期投資の重要性を強調。<br><br>
+        <strong>結論：</strong>イラン対話の「5日間」が焦点。実質的な停戦進展がなければ、エネルギーコスト上昇と金利上昇のダブルパンチで下落基調。200日線（6,621）を回復できるかがS&P500の分水嶺であり、ナスダックも連動する。20,000のサポートが次の防衛ライン。
+      </div>
+    </div>
 
-<div class="analysis-pair">
-  <div class="pair-name">日経225</div>
-  <span class="pair-direction dir-down">▼ 短期：下方圧力が強い</span>
-  <div class="pair-text">
-    <strong>懸念材料：</strong>日本は中東原油に90%以上依存しており、ホルムズ海峡封鎖の影響は先進国中最も深刻。原油高はコスト増→企業収益圧迫→消費低迷の悪循環を生む。月曜は51,515まで下落し、1月以来の安値。直近4週間で-10.76%の急落。日銀の引き締めバイアスと円安抑制の介入リスクが外国人投資家の売りを誘発しやすい環境。<br><br>
-    <strong>支持材料：</strong>先物は+3.79%で反発しており、トランプのイラン対話発言が好感された。高市政権の5,500億ドル対米投資と日米関係強化は中長期的にポジティブ。日本企業の収益力は2025年を通じて改善しており、ファンダメンタルズは堅固。円安は輸出企業に恩恵。<br><br>
-    <strong>結論：</strong>イラン停戦の行方が最大の変数。5日間の攻撃停止が本格停戦につながれば急反発の可能性大（53,000-55,000方向）。ただし、トランプ発言の信頼性が低く（イラン側が対話を否定）、ホルムズ海峡の再開見通しが立たない限り、下方リスクが優勢。50,000の心理的サポートが重要。中長期的には日本のAI・防衛技術投資やバイオスタートアップ育成が株式市場の構造的な支えとなる。
-  </div>
-</div>
-```
+    <div class="analysis-pair">
+      <div class="pair-name">日経225</div>
+      <span class="pair-direction dir-down">▼ 短期：下方圧力が強い</span>
+      <div class="pair-text">
+        <strong>懸念材料：</strong>日本は中東原油に90%以上依存しており、ホルムズ海峡封鎖の影響は先進国中最も深刻。原油高はコスト増→企業収益圧迫→消費低迷の悪循環を生む。月曜は51,515まで下落し、1月以来の安値。直近4週間で-10.76%の急落。日銀の引き締めバイアスと円安抑制の介入リスクが外国人投資家の売りを誘発しやすい環境。<br><br>
+        <strong>支持材料：</strong>先物は+3.79%で反発しており、トランプのイラン対話発言が好感された。高市政権の5,500億ドル対米投資と日米関係強化は中長期的にポジティブ。日本企業の収益力は2025年を通じて改善しており、ファンダメンタルズは堅固。円安は輸出企業に恩恵。<br><br>
+        <strong>結論：</strong>イラン停戦の行方が最大の変数。5日間の攻撃停止が本格停戦につながれば急反発の可能性大（53,000-55,000方向）。ただし、トランプ発言の信頼性が低く（イラン側が対話を否定）、ホルムズ海峡の再開見通しが立たない限り、下方リスクが優勢。50,000の心理的サポートが重要。中長期的には日本のAI・防衛技術投資やバイオスタートアップ育成が株式市場の構造的な支えとなる。
+      </div>
+    </div>
 
   </div>
 
@@ -898,6 +873,5 @@ window.addEventListener('scroll', () => {
   });
 });
 </script>
-
 </body>
 </html>
