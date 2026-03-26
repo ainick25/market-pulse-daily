@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Pulse Daily — 2026.03.26</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-card: #181822;
+  --bg-card-hover: #20202e;
+  --text-primary: #eeecf5;
+  --text-secondary: #c4beda;
+  --text-muted: #918aab;
+  --accent-red: #ff4d6a;
+  --accent-green: #2eec8a;
+  --accent-gold: #ffe066;
+  --accent-blue: #56ccff;
+  --accent-purple: #c9a4ff;
+  --accent-orange: #ffab30;
+  --border: rgba(255,255,255,0.12);
+  --border-accent: rgba(255,255,255,0.2);
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* ========== HERO ========== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridSlide 20s linear infinite;
+}
+
+@keyframes gridSlide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(60px, 60px); }
+}
+
+.hero-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--accent-gold);
+  letter-spacing: 0.3em;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+}
+
+.hero-tag.alert {
+  border-color: var(--accent-red);
+  background: rgba(255,77,106,0.15);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,77,106,0.3); }
+  50% { box-shadow: 0 0 12px 4px rgba(255,77,106,0.15); }
+}
+
+/* ========== STICKY NAV ========== */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10,10,15,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0.6rem 1rem;
+  overflow-x: auto;
+}
+
+.sticky-nav ul {
+  display: flex;
+  gap: 0.3rem;
+  list-style: none;
+  justify-content: center;
+  min-width: max-content;
+}
+
+.sticky-nav a {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.sticky-nav a:hover,
+.sticky-nav a.active {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+  background: rgba(255,255,255,0.05);
+}
+
+/* ========== SECTIONS ========== */
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 2rem;
+}
+
+.section-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid var(--border);
+}
+
+/* ========== PRICE STRIP ========== */
+.price-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.price-card {
+  flex: 1;
+  min-width: 140px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  transition: background 0.2s;
+}
+
+.price-card:hover { background: var(--bg-card-hover); }
+
+.price-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.3rem;
+}
+
+.price-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.price-change {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 0.2rem;
+}
+
+.price-change.up { color: var(--accent-green); }
+.price-change.down { color: var(--accent-red); }
+
+/* ========== NEWS CARDS ========== */
+.news-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.2rem;
+  border-left: 3px solid transparent;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.news-card:hover { background: var(--bg-card-hover); }
+.news-card.blue { border-left-color: var(--accent-blue); }
+.news-card.red { border-left-color: var(--accent-red); }
+.news-card.gold { border-left-color: var(--accent-gold); }
+.news-card.green { border-left-color: var(--accent-green); }
+.news-card.purple { border-left-color: var(--accent-purple); }
+.news-card.orange { border-left-color: var(--accent-orange); }
+
+.news-head {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+}
+
+.news-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+}
+
+.badge-fx { background: rgba(86,204,255,0.2); color: var(--accent-blue); border: 1px solid rgba(86,204,255,0.3); }
+.badge-commodity { background: rgba(255,224,102,0.2); color: var(--accent-gold); border: 1px solid rgba(255,224,102,0.3); }
+.badge-crypto { background: rgba(201,164,255,0.2); color: var(--accent-purple); border: 1px solid rgba(201,164,255,0.3); }
+.badge-stock { background: rgba(46,236,138,0.2); color: var(--accent-green); border: 1px solid rgba(46,236,138,0.3); }
+.badge-geo { background: rgba(255,77,106,0.2); color: var(--accent-red); border: 1px solid rgba(255,77,106,0.3); }
+.badge-tech { background: rgba(255,171,48,0.2); color: var(--accent-orange); border: 1px solid rgba(255,171,48,0.3); }
+
+.news-title {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  margin-bottom: 0.6rem;
+}
+
+.news-body {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.news-source {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.8rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+
+/* ========== ANALYSIS ========== */
+.analysis-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.analysis-pair {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.analysis-pair:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.pair-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.pair-direction {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.2rem 0.7rem;
+  border-radius: 3px;
+  margin-bottom: 0.8rem;
+}
+
+.dir-up { background: rgba(46,236,138,0.2); color: var(--accent-green); border: 1px solid rgba(46,236,138,0.3); }
+.dir-down { background: rgba(255,77,106,0.2); color: var(--accent-red); border: 1px solid rgba(255,77,106,0.3); }
+.dir-neutral { background: rgba(255,224,102,0.2); color: var(--accent-gold); border: 1px solid rgba(255,224,102,0.3); }
+
+.pair-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.pair-text strong {
+  color: var(--text-primary);
+}
+
+/* ========== DISCLAIMER ========== */
+.disclaimer {
+  max-width: 900px;
+  margin: 2rem auto 4rem;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--accent-red);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.disclaimer-title {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--accent-red);
+  margin-bottom: 0.5rem;
+}
+
+/* ========== FADE IN ========== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 600px) {
+  .section { padding: 3rem 1rem 1.5rem; }
+  .hero h1 { font-size: 1.8rem; }
+  .price-card { min-width: 100px; }
+  .sticky-nav ul { justify-content: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-date">2026.03.26 THU</div>
+  <h1>マーケットニュースダイジェスト</h1>
+  <p class="hero-subtitle">米国15項目和平案をイランが拒否 — 停戦期待と地政学リスクが交錯し、原油急落・株反発・金反騰の一日</p>
+  <div class="hero-tags">
+    <span class="hero-tag alert">🔥 イラン和平案拒否</span>
+    <span class="hero-tag alert">🛢 Brent ≈$102 急落</span>
+    <span class="hero-tag">💱 USD/JPY ≈158.7</span>
+    <span class="hero-tag">🥇 Gold ≈$4,565</span>
+    <span class="hero-tag">₿ BTC ≈$71,500</span>
+    <span class="hero-tag">📈 S&P500 6,592</span>
+    <span class="hero-tag">🇯🇵 日経225 53,750</span>
+  </div>
+</section>
+
+<!-- ==================== STICKY NAV ==================== -->
+<nav class="sticky-nav">
+  <ul>
+    <li><a href="#geopolitics">🌍 地政学</a></li>
+    <li><a href="#fx">💱 為替</a></li>
+    <li><a href="#commodities">🛢 コモディティ</a></li>
+    <li><a href="#crypto">₿ 暗号資産</a></li>
+    <li><a href="#stocks">📈 株式</a></li>
+    <li><a href="#japan-tech">🇯🇵 日本テック</a></li>
+    <li><a href="#analysis">🔮 考察</a></li>
+  </ul>
+</nav>
+
+<!-- ==================== 地政学 ==================== -->
+<section id="geopolitics" class="section">
+  <h2 class="section-title fade-in">🌍 地政学・社会情勢</h2>
+
+  <div class="news-card red fade-in">
+    <div class="news-head">
+      <span class="news-badge badge-geo">IRAN WAR</span>
+      <span class="news-badge badge-geo">CEASEFIRE</span>
+    </div>
+    <div class="news-title">米国がイランに15項目和平案を提示 — イランは「過大要求」と拒否</div>
+    <div class="news-body">
+      トランプ大統領は3月25日、米国がイランと「現在交渉中」であると発言し、パキスタンを仲介として15項目の停戦提案をイランに送付したことが確認された。提案にはイランの核計画・弾道ミサイルの廃棄、ホルムズ海峡の航行自由確保、1か月間の停戦期間などが含まれるとされている。これに対しイランは国営メディアを通じ、提案を「極めて最大限主義的で不合理」と評し、正式な交渉には応じていないと主張。一方でイラン外相は仲介者を通じたメッセージのやり取りは認めつつも、「交渉ではない」と強調した。イラン側は独自の5条件（攻撃停止、再発防止メカニズム、戦争賠償、レバノン含む包括停戦、ホルムズ海峡の主権的管理権）を提示している。
+    </div>
+    <div class="news-source">出典: TIME — 2026/03/25 ｜ CNBC — 2026/03/25 ｜ Al Jazeera — 2026/03/25 ｜ Axios — 2026/03/25</div>
+  </div>
+
+  <div class="news-card red fade-in">
+    <div class="news-head">
+      <span class="news-badge badge-geo">ESCALATION</span>
+    </div>
+    <div class="news-title">軍事的緊張は継続 — 米軍増派と空爆が同時進行</div>
+    <div class="news-body">
+      和平交渉の動きと並行して、米国は中東へ空挺部隊と海兵隊の追加派遣を進めている。イスラエルはテヘランおよびレバノンへの空爆を継続しており、国連のグテーレス事務総長は「世界がより広範な戦争の瀬戸際にある」との警告を発した。2月28日の開戦以来、ホルムズ海峡の通行が実質的に遮断され、中東の原油生産量は日量700万〜1200万バレル規模で減少しているとされる。イランは米国の和平交渉を「偽装工作」と疑う声もあり、停戦実現には依然として高いハードルがある。
+    </div>
+    <div class="news-source">出典: Washington Post — 2026/03/25 ｜ Irish Times（国連引用） — 2026/03/25</div>
+  </div>
+
+  <div class="news-card red fade-in">
+    <div class="news-head">
+      <span class="news-badge badge-geo">BOJ</span>
+      <span class="news-badge badge-fx">MONETARY POLICY</span>
+    </div>
+    <div class="news-title">日銀3月会合：金利0.75%据え置き — 中東リスクを注視</div>
+    <div class="news-body">
+      BOJは3月19日の金融政策決定会合で、政策金利を0.75%に据え置いた（8対1の多数決）。高田委員は1.0%への利上げを提案したが否決された。声明では、日本経済は緩やかに回復しているものの、中東情勢のエスカレーションと原油価格高騰が見通しに影を落としていると指摘。植田総裁は原油高が「交易条件の悪化」と「インフレ上方圧力」の二重リスクを生んでいると述べた。IMFも日本に対して利上げ継続と財政規律の維持を求めている。
+    </div>
+    <div class="news-source">出典: Trading Economics — 2026/03/19 ｜ Fintech Observer — 2026/03/19 ｜ CNBC — 2026/01/23</div>
+  </div>
+
+  <div class="news-card red fade-in">
+    <div class="news-head">
+      <span class="news-badge badge-geo">FED</span>
+    </div>
+    <div class="news-title">FRBも金利据え置き — 年内利下げ見通しを縮小</div>
+    <div class="news-body">
+      FRBは3月のFOMCで金利を据え置き、2026年の利下げ回数見通しを2回から1回に引き下げた。2月の生産者物価指数（PPI）が前月比+0.7%と市場予想を大幅に上回り、ホルムズ海峡危機に起因する原油価格高騰がインフレの持続性を高めている。10年国債利回りは4.2%台まで上昇し、ドル指数も99台後半で推移した。Goldman Sachsは原油が10ドル上昇するごとに米国インフレが0.3%押し上げられると試算している。
+    </div>
+    <div class="news-source">出典: Finance Magnates — 2026/03/19 ｜ Barchart（Goldman Sachs引用） — 2026/03/19</div>
+  </div>
+</section>
+
+<!-- ==================== 為替 ==================== -->
+<section id="fx" class="section">
+  <h2 class="section-title fade-in">💱 為替</h2>
+
+  <div class="price-strip fade-in">
+    <div class="price-card">
+      <div class="price-label">USD/JPY</div>
+      <div class="price-value">≈158.7</div>
+      <div class="price-change up">+0.18%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">AUD/JPY</div>
+      <div class="price-value">≈101.4</div>
+      <div class="price-change down">-0.58%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">GBP/JPY</div>
+      <div class="price-value">≈211.3</div>
+      <div class="price-change down">-0.66%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">EUR/JPY</div>
+      <div class="price-value">≈182.4</div>
+      <div class="price-change down">-0.59%</div>
+    </div>
+  </div>
+
+  <div class="news-card blue fade-in">
+    <div class="news-head">
+      <span class="news-badge badge-fx">USD/JPY</span>
+    </div>
+    <div class="news-title">ドル円158円台後半で推移 — 原油安が円に追い風も介入警戒が重し</div>
+    <div class="news-body">
+      ドル円は3月25日に158.7円付近で推移した。週初めに原油価格が急落したことで、エネルギー輸入依存度の高い日本経済への圧力が一時的に緩和し、円が買われる場面があった。しかしイランが停戦交渉を否定したことで原油反発リスクが残り、158円台で一進一退となった。日本の通貨当局者・三村淳氏は「為替変動に対してあらゆる必要な措置を取る用意がある」と述べ、160円水準での介入への警戒感が市場に漂っている。
+    </div>
+    <div class="news-source">出典: Trading Economics — 2026/03/25 ｜ Yahoo Finance — 2026/03/25</div>
+  </div>
+
+  <div class="news-card blue fade-in">
+    <div class="news-head">
+      <span class="news-badge badge-fx">AUD/JPY</span>
+      <span class="news-badge badge-fx">GBP/JPY</span>
+    </div>
+    <div class="news-title">豪ドル・ポンドはクロス円で軟調 — リスクオフの円買い残る</div>
+    <div class="news-body">
+      豪ドル円は直近1週間で113.1円から110.5円のレンジで変動し、3月23日に最大の日次下落（-0.58%）を記録した。地政学的な不透明感を背景にリスク回避の円買いが入りやすい環境が続いている。ポンド円も211円台前半で-0.66%の下落となった。豪ドルは資源国通貨の性格から原油動向に影響されやすく、中東情勢が落ち着くまでは不安定な推移が予想される。
+    </div>
+    <div class="news-source">出典: Wise — 2026/03/25 ｜ Yahoo Finance（AUD/JPY） — 2026/03/25</div>
+  </div>
+
+  <div class="news-card blue fade-in">
+    <div class="news-head">
+      <span class="news-badge badge-fx">JPY</span>
+      <span class="news-badge badge-geo">INTERVENTION</span>
+    </div>
+    <div class="news-title">日本財務省が原油先物市場への介入を検討か</div>
+    <div class="news-body">
+      Trading Economicsによると、日本の財務省が原油先物市場の参加者に対して、円への影響を踏まえた介入の可能性について打診を行ったと報じられている。原油価格の高騰が円安圧力を増大させている状況を受けたもので、従来の為替市場での直接介入に加え、エネルギー市場を通じた間接的な通貨防衛策が検討されている可能性がある。
+    </div>
+    <div class="news-source">出典: Trading Economics — 2026/03/25</div>
+  </div>
+</section>
+
+<!-- ==================== コモディティ ==================== -->
+<section id="commodities" class="section">
+  <h2 class="section-title fade-in">🛢 コモディティ</h2>
+
+  <div class="price-strip fade-in">
+    <div class="price-card">
+      <div class="price-label">GOLD (XAU/USD)</div>
+      <div class="price-value">≈$4,565</div>
+      <div class="price-change up">+2.0%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">BRENT</div>
+      <div class="price-value">≈$102.2</div>
+      <div class="price-change down">-2.2%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">WTI</div>
+      <div class="price-value">≈$90.3</div>
+      <div class="price-change down">-2.2%</div>
+    </div>
+  </div>
+
+  <div class="news-card gold fade-in">
+    <div class="news-head">
+      <span class="news-badge badge-commodity">BRENT</span>
+      <span class="news-badge badge-commodity">WTI</span>
+    </div>
+    <div class="news-title">原油急落 — トランプ「イランと交渉中」発言で$100割れ接近</div>
+    <div class="news-body">
+      Brent原油は3月25日に前日比-2.2%の$102.22/バレルまで下落し、WTIも$90.32まで値を下げた。トランプ大統領がイランとの交渉進展を示唆したことで、ホルムズ海峡の通行正常化への期待が高まった。Goldman Sachsは、近い将来の価格変動は基本シナリオよりも「最悪のシナリオの確率変化」によって左右されると分析。EIAはBrent原油が向こう2カ月間は$95/bを上回るが、第3四半期には$80/b以下に低下すると予測している。ただしイランの停戦拒否が報じられた後、反発の可能性も残る。
+    </div>
+    <div class="news-source">出典: CNBC — 2026/03/25 ｜ EIA STEO — 2026/03/10 ｜ Investing.com — 2026/03/25</div>
+  </div>
+
+  <div class="news-card gold fade-in">
+    <div class="news-head">
+      <span class="news-badge badge-commodity">GOLD</span>
+    </div>
+    <div class="news-title">金は$4,565まで反騰 — 1月の最高値$5,595から約18%下落の水準</div>
+    <div class="news-body">
+      金価格は3月25日に$4,565付近まで上昇し、前日比+2%程度の反発を見せた。3月19日には$5,000の心理的節目を割り込み$4,700台まで急落していたが、停戦交渉の不透明感を背景に安全資産としての買いが入った。3月のFOMC後にFRBが利下げ見通しを縮小したことはゴールドにとって逆風だったが、地政学リスクの持続と中央銀行の買い需要（中国PBOCは15カ月連続で金を購入中）が下値を支えている。年初来の高値$5,595（1月29日）からは約18%の下落水準にある。
+    </div>
+    <div class="news-source">出典: Investing.com — 2026/03/25 ｜ LiteFinance — 2026/03/26 ｜ Finance Magnates — 2026/03/19</div>
+  </div>
+</section>
+
+<!-- ==================== 暗号資産 ==================== -->
+<section id="crypto" class="section">
+  <h2 class="section-title fade-in">₿ 暗号資産</h2>
+
+  <div class="price-strip fade-in">
+    <div class="price-card">
+      <div class="price-label">BTC/USD</div>
+      <div class="price-value">≈$71,500</div>
+      <div class="price-change up">+1.1%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">ETH/USD</div>
+      <div class="price-value">≈$2,170</div>
+      <div class="price-change up">+0.7%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">BTC 時価総額</div>
+      <div class="price-value">$1.43T</div>
+      <div class="price-change up">占有率 62.4%</div>
+    </div>
+  </div>
+
+  <div class="news-card purple fade-in">
+    <div class="news-head">
+      <span class="news-badge badge-crypto">BTC</span>
+    </div>
+    <div class="news-title">ビットコイン$71,500で安定推移 — 地政学ショックに「下がらない強さ」</div>
+    <div class="news-body">
+      ビットコインは3月25日に$71,500付近で取引され、$70,000の心理的節目を3日連続で上回った。CoinDeskは、イランが停戦を拒否した後もBTCが下落しなかった点に注目し、「悪材料で下がらない市場は潜在的な強さを示す」と分析している。2月6日に$60,000まで急落した後（ATH $126,080からの52%下落）、3月に入り$70,000台を回復。過去30日間のレンジは$62,650〜$75,991。ETF資金流入も$312M規模で再開しており、NASDAQとの相関が高まっている。
+    </div>
+    <div class="news-source">出典: CoinDesk — 2026/03/25 ｜ Techi.com — 2026/03/25 ｜ Fortune — 2026/03/25</div>
+  </div>
+
+  <div class="news-card purple fade-in">
+    <div class="news-head">
+      <span class="news-badge badge-crypto">BTC</span>
+      <span class="news-badge badge-commodity">GOLD</span>
+    </div>
+    <div class="news-title">BTC/ゴールドレシオが3月に23%回復 — 底入れシグナルか</div>
+    <div class="news-body">
+      CoinDeskによると、BTCのゴールド建て価格（BTC/Gold比率）は今月23%反発し、ビットコインのゴールドに対する相対的な強さを示している。ブラジル最大の暗号資産取引所Mercado Bitcoinのリサーチ責任者は、ゴールド建てでのBTC底打ちは2月頃に発生した可能性があり、3月以降は回復局面に入りうると分析。ただしドル建てでの弱気相場は依然として継続中との見方も併記されている。
+    </div>
+    <div class="news-source">出典: CoinDesk — 2026/03/01</div>
+  </div>
+</section>
+
+<!-- ==================== 株式 ==================== -->
+<section id="stocks" class="section">
+  <h2 class="section-title fade-in">📈 株式指数</h2>
+
+  <div class="price-strip fade-in">
+    <div class="price-card">
+      <div class="price-label">S&P 500</div>
+      <div class="price-value">6,591.90</div>
+      <div class="price-change up">+0.54%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">NASDAQ</div>
+      <div class="price-value">21,929.83</div>
+      <div class="price-change up">+0.77%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">Dow Jones</div>
+      <div class="price-value">46,429.49</div>
+      <div class="price-change up">+0.66%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">日経225</div>
+      <div class="price-value">53,749.62</div>
+      <div class="price-change up">+2.87%</div>
+    </div>
+  </div>
+
+  <div class="news-card green fade-in">
+    <div class="news-head">
+      <span class="news-badge badge-stock">S&P500</span>
+      <span class="news-badge badge-stock">NASDAQ</span>
+      <span class="news-badge badge-stock">DOW</span>
+    </div>
+    <div class="news-title">米国株続伸 — 停戦期待と原油安が買い材料に</div>
+    <div class="news-body">
+      3月25日の米国株式市場は、米国がイランへ停戦提案を送付したとの報道を受けて上昇した。S&P 500は+0.54%の6,591.90、NASDAQは+0.77%の21,929.83、ダウは+305.43ptの46,429.49で引けた。エネルギー以外の全セクターが上昇し、特にテクノロジー株に買いが集まった。VIX（恐怖指数）は25.33（-6.01%）に低下した。ただしS&P 500は直近4週連続の下落で年初来高値から約6%低い水準にあり、原油高による景気後退リスクがくすぶっている。MerckがTerns Pharmaceuticalsを$67億で買収合意したことも話題となった。
+    </div>
+    <div class="news-source">出典: CNBC — 2026/03/25 ｜ Yahoo Finance — 2026/03/25 ｜ Trading Economics — 2026/03/25</div>
+  </div>
+
+  <div class="news-card green fade-in">
+    <div class="news-head">
+      <span class="news-badge badge-stock">日経225</span>
+    </div>
+    <div class="news-title">日経平均+2.87%の大幅反発 — 半導体・AI関連がけん引</div>
+    <div class="news-body">
+      日経225は3月25日に+1,497ptの53,749.62で取引を終え、2日連続の上昇となった。中東停戦への期待から原油が下落し、エネルギー輸入国である日本にとって追い風となった。テクノロジー・AI関連株がけん引し、Kioxia Holdings（+6.4%）、藤倉（+11.48%）、SoftBank Group（+8.30%）、Advantest（+4.8%）、東京エレクトロン（+3.1%）などが大きく上昇。東京海上（+14.48%）は株式売出と自社株買いの発表を受けて急騰した。TOPIXも+2.57%の3,650.99だった。
+    </div>
+    <div class="news-source">出典: Trading Economics — 2026/03/25 ｜ CNBC（アジア市場） — 2026/03/25 ｜ Yahoo Finance — 2026/03/25</div>
+  </div>
+
+  <div class="news-card green fade-in">
+    <div class="news-head">
+      <span class="news-badge badge-stock">VIX</span>
+    </div>
+    <div class="news-title">VIXが29超え — 歴史的にはその後1年でS&P 500平均+24%</div>
+    <div class="news-body">
+      Motley Foolの分析によると、VIXが3月6日に29.5を記録した。過去15年間のデータでは、VIXが29を超えた後のS&P 500の12カ月間平均リターンは+24%であり、現在の水準から計算すると2027年3月にS&P 500は8,358に達する計算になる。ウォール街のコンセンサス予想（ボトムアップ）も同水準の8,338を示している。ただし、Moody'sのチーフエコノミストは「原油高がこれ以上長引けばリセッションは避けがたい」と警告しており、楽観一辺倒ではない。
+    </div>
+    <div class="news-source">出典: Motley Fool — 2026/03/24</div>
+  </div>
+</section>
+
+<!-- ==================== 日本テック ==================== -->
+<section id="japan-tech" class="section">
+  <h2 class="section-title fade-in">🇯🇵 日本発テクノロジー</h2>
+
+  <div class="news-card orange fade-in">
+    <div class="news-head">
+      <span class="news-badge badge-tech">KIOXIA</span>
+      <span class="news-badge badge-stock">日経225採用</span>
+    </div>
+    <div class="news-title">Kioxia — 2026年世界最高パフォーマンス銘柄、日経225にも新規採用</div>
+    <div class="news-body">
+      NANDフラッシュメモリ大手のKioxia Holdingsは、AI向けストレージ需要の急増を追い風に2026年年初来で株価約120%上昇し、MSCI World Indexの中で最もパフォーマンスの良い銘柄となった。3月5日に日経225構成銘柄に採用されたほか、3月17日にはAI GPU向けに最適化した新型SSDを発表。岩手県北上工場では次世代NANDフラッシュメモリの量産を2026年中に開始する計画で、AI需要の構造的拡大から恩恵を受ける見通し。
+    </div>
+    <div class="news-source">出典: Bloomberg — 2026/02/13 ｜ KIOXIA公式 — 2026/03/17 ｜ Nikkei Asia — 2025/12/11</div>
+  </div>
+
+  <div class="news-card orange fade-in">
+    <div class="news-head">
+      <span class="news-badge badge-tech">RAPIDUS</span>
+      <span class="news-badge badge-tech">2nm</span>
+    </div>
+    <div class="news-title">Rapidus — 2nm先端半導体工場のパイロット生産が始動</div>
+    <div class="news-body">
+      日本の先端半導体国策プロジェクト「Rapidus」は、IBMとの技術提携のもと、北海道千歳工場で2nm世代チップのパイロット生産（少量テストウエハー）を2025年末〜2026年初に開始した。トヨタ、ソニー、NTT、SoftBankなど8社のコンソーシアムにより設立され、政府支援は$65億超に達する。2027年の量産開始を目指しているが、業界アナリストからは「5年で10年分の能力を圧縮する」というスケジュールの実現可能性に疑問の声も上がっている。
+    </div>
+    <div class="news-source">出典: ABHS分析 — 2026/03（Rapidus現況レポート）</div>
+  </div>
+
+  <div class="news-card orange fade-in">
+    <div class="news-head">
+      <span class="news-badge badge-tech">AI国策</span>
+      <span class="news-badge badge-tech">SoftBank</span>
+    </div>
+    <div class="news-title">日本政府が5年間1兆円のAI基本計画を始動 — SoftBankが中核に</div>
+    <div class="news-body">
+      2025年12月に閣議決定された日本初のAI基本計画では、2026年度から5年間で約1兆円（$63.4億）の公的支援が投入される。官民協力によるAI基盤モデル開発企業の設立が柱で、SoftBank Groupやスタートアップの Preferred Networks など約10社が参画し、約100名のエンジニアが投入される見込み。また、SoftBankはOpenAIに$400億を投資して約11%の株式を取得しており、日本のAIインフラ構築においてSoftBankの存在感がますます高まっている。バイオテック分野でも政府は¥3,500億（$23億）のスタートアップ支援を打ち出し、UTEC（東大エッジキャピタル）が¥470億の6号ファンドをクローズするなど、日本のスタートアップエコシステム全体が活性化している。
+    </div>
+    <div class="news-source">出典: Ranking Generals — 2026/01/06 ｜ BioSpectrum Asia — 2026/03/23</div>
+  </div>
+</section>
+
+<!-- ==================== 考察 ==================== -->
+<section id="analysis" class="section">
+  <h2 class="section-title fade-in">🔮 考察</h2>
+
+  <div class="analysis-box fade-in">
+
+    <div class="analysis-pair">
+      <div class="pair-name">USD/JPY</div>
+      <span class="pair-direction dir-neutral">▶ レンジ継続（上方バイアス）</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>FRBが利下げ見通しを縮小したことで日米金利差が維持されている。原油高が継続すれば日本の貿易赤字が拡大し、構造的な円安要因となる。中東情勢の長期化は資源輸入国・日本にとって不利に働く可能性がある。<br><br>
+        <strong>下落要因：</strong>BOJが次回会合での利上げ（0.75%→1.0%）に踏み切る可能性がある。日本当局の為替介入への警戒感が160円を強い心理的レジスタンスにしている。中東停戦が実現すれば原油が急落し、円高要因となりうる。<br><br>
+        <strong>結論：</strong>短期的には157〜160円のレンジ内での推移が考えられる。停戦交渉の行方が最大の変動要因であり、合意に近づけば急速な円高、決裂すれば160円突破のリスクがある。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">AUD/JPY</div>
+      <span class="pair-direction dir-down">▼ やや弱気</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>豪州は資源国であり、原油・コモディティ高は中長期的には豪ドルを支える要因。中国経済の回復が確認されれば豪ドルにとって追い風。<br><br>
+        <strong>下落要因：</strong>地政学リスクが高まる局面ではリスク回避の円買い圧力が強まりやすく、直近1週間で113円台から110円台へ下落した。ホルムズ海峡問題はアジア太平洋地域全体の経済見通しを悪化させる可能性がある。<br><br>
+        <strong>結論：</strong>中東情勢が不安定な間は下方リスクが優勢と考えられる。100〜105円の水準がサポートとして意識される可能性がある。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">NASDAQ</div>
+      <span class="pair-direction dir-neutral">▶ 方向感模索</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>AI関連投資は構造的トレンドであり、Kioxia・Micron・NVIDIAなどへの需要は底堅い。VIXが29を超えた後の12カ月リターンは歴史的に+24%と高く、恐怖がピーク付近にあることを示唆。CitiグループはAmazonのAWS成長を+28%YoYと予測。<br><br>
+        <strong>下落要因：</strong>原油高がインフレを再加速させれば、FRBの利下げがさらに遅れテック株のバリュエーションに逆風。IT関連セクターは年初来高値から12%の下落圏にあり、AI投資の持続可能性への疑念がくすぶっている。Micronは好決算後にも5日連続で下落するなど、設備投資負担への懸念が見られる。<br><br>
+        <strong>結論：</strong>短期的には原油と地政学リスクに振り回される展開が続く可能性がある。中長期ではAI需要拡大が支えとなるが、停戦の行方次第で大きく方向性が変わりうる。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">日経225</div>
+      <span class="pair-direction dir-up">▲ やや強気（条件付き）</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>3月25日に+2.87%の大幅反発を見せ、半導体・AI関連が相場をけん引した。原油価格の下落は日本経済全体にとってプラス。BOJは利上げに慎重姿勢を維持しており、企業業績への悪影響は限定的。Kioxia・SoftBank・Advantestなどの構造的成長銘柄が指数を押し上げている。<br><br>
+        <strong>下落要因：</strong>中東停戦が実現しなければ原油が再び$100超を維持し、日本の交易条件がさらに悪化する可能性がある。2月26日の年初来高値59,332から約10%下落しており、調整局面が長引くリスク。円安が進行すれば海外投資家の売りを招きうる。<br><br>
+        <strong>結論：</strong>停戦期待が持続する限り、53,000〜55,000円のレンジでの推移が考えられる。原油が本格的に$80以下に下落する局面では、年初来高値への回帰も視野に入る可能性がある。
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== DISCLAIMER ==================== -->
+<div class="disclaimer">
+  <div class="disclaimer-title">⚠️ 免責事項</div>
+  本記事は情報提供を目的としたものであり、特定の金融商品の売買を推奨するものではありません。投資判断はご自身の責任において行ってください。本記事に含まれる価格データは各情報源から取得した概算値であり、リアルタイムの正確な値ではない場合があります。記事中の考察・分析は筆者の個人的見解であり、将来の市場動向を保証するものではありません。金融商品の取引にはリスクが伴い、元本割れの可能性があります。投資に関するご決定の前に、資格を持つ専門家にご相談ください。
+</div>
+
+<!-- ==================== JS ==================== -->
+<script>
+// Intersection Observer for fade-in
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+// Scroll spy for nav
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.sticky-nav a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    const top = s.offsetTop - 120;
+    if (scrollY >= top) current = s.getAttribute('id');
+  });
+  navLinks.forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>
