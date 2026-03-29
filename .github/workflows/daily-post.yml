@@ -1,0 +1,57 @@
+name: "\ud83d\udcf0 Daily Market Digest"
+
+on:
+  schedule:
+    - cron: '0 22 * * 0-4'
+  workflow_dispatch:
+    inputs:
+      custom_date:
+        description: '対象日(空=今日) 例: 2026-03-28'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  generate-post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+      - name: Determine date
+        id: date
+        run: |
+          if [ -n "${{ github.event.inputs.custom_date }}" ]; then
+            TARGET="${{ github.event.inputs.custom_date }}"
+          else
+            TARGET=$(TZ=Asia/Tokyo date +%Y-%m-%d)
+          fi
+          SLUG=$(echo $TARGET | tr -d '-')
+          echo "target=$TARGET" >> $GITHUB_OUTPUT
+          echo "slug=$SLUG" >> $GITHUB_OUTPUT
+      - name: Skip if exists
+        id: check
+        run: |
+          [ -f "posts/${{ steps.date.outputs.slug }}.html" ] && echo "exists=true" >> $GITHUB_OUTPUT || echo "exists=false" >> $GITHUB_OUTPUT
+      - name: Generate
+        if: steps.check.outputs.exists == 'false'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          claude -p "今日は${{ steps.date.outputs.target }}です。CLAUDE.mdを読み、Web検索でニュースを収集し、posts/${{ steps.date.outputs.slug }}.htmlを生成、data/posts.jsonを更新、node scripts/build-metadata.jsを実行してください。" --allowedTools "Bash(node*),Bash(bash*),Read,Write,Edit,WebFetch,WebSearch"
+      - name: Push
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          git config user.name "Market Pulse Bot"
+          git config user.email "ainick25@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "📰 ${{ steps.date.outputs.target }} マーケットダイジェスト"
+          git push origin main
