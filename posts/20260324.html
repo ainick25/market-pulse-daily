@@ -166,7 +166,7 @@ body {
   display: flex;
   gap: 0.5rem;
   overflow-x: auto;
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 0 4.5rem;
   scrollbar-width: none;
 }
 .nav-inner::-webkit-scrollbar { display: none; }
@@ -392,6 +392,10 @@ section {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (min-width: 601px) {
+  .nav-inner { padding-left: 11rem; }
 }
 
 /* Mobile */

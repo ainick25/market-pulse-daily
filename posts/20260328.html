@@ -134,7 +134,7 @@ body {
   background: rgba(10,10,15,0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 1rem 0.6rem 4.5rem;
   overflow-x: auto;
   white-space: nowrap;
   display: flex;
@@ -340,6 +340,10 @@ body {
   color: var(--text-muted);
   font-size: 0.72rem;
   border-top: 1px solid var(--border);
+}
+
+@media (min-width: 601px) {
+  .sticky-nav { padding-left: 11rem; }
 }
 
 /* ── RESPONSIVE ── */

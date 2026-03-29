@@ -140,6 +140,7 @@ body {
   display: flex;
   gap: 0.3rem;
   list-style: none;
+  padding-left: 4.5rem;
   justify-content: center;
   min-width: max-content;
 }
@@ -376,6 +377,10 @@ body {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (min-width: 601px) {
+  .sticky-nav ul { padding-left: 11rem; }
 }
 
 /* ========== RESPONSIVE ========== */
