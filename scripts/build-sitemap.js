@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const BASE_URL = 'https://ainick25.github.io/market-pulse-daily';
+const BASE_URL = 'https://marketpulse-daily.com';
 const postsDir = path.join(__dirname, '..', 'posts');
 const outFile = path.join(__dirname, '..', 'sitemap.xml');
 

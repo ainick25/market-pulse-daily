@@ -1,7 +1,7 @@
 # Market Pulse Daily — Claude Code プロジェクト設定
 
 ## サイト情報
-- URL: https://ainick25.github.io/market-pulse-daily/
+- URL: https://marketpulse-daily.com/
 - リポジトリ: ainick25/market-pulse-daily
 - ホスティング: GitHub Pages (mainブランチ)
 
@@ -35,7 +35,7 @@
 ## FABボタンHTML（全記事に必須）
 ```html
 <div class="fab-group">
-  <a href="https://ainick25.github.io/market-pulse-daily/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
+  <a href="https://marketpulse-daily.com/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
   <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
 </div>
 ```
