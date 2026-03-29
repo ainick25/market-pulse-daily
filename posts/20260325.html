@@ -349,9 +349,21 @@ body {
   .section-title { font-size: 1.3rem; }
   .sticky-nav-inner { justify-content: flex-start; }
 }
+
+/* Fixed Logo */
+.site-logo-fixed{position:fixed;top:1rem;left:1rem;z-index:9999;display:flex;align-items:center;gap:.5rem;text-decoration:none;padding:.5rem .8rem;background:rgba(10,10,15,.85);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);border-radius:6px;transition:all .3s}
+.site-logo-fixed:hover{border-color:rgba(255,224,102,.4);background:rgba(10,10,15,.95)}
+.logo-mark{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:.9rem;color:#ffe066;background:rgba(255,224,102,.12);padding:.15rem .4rem;border-radius:3px}
+.logo-text{font-family:"Noto Sans JP",sans-serif;font-size:.7rem;color:#c4beda;letter-spacing:.05em}
+@media(max-width:600px){.logo-text{display:none}}
 </style>
 </head>
 <body>
+
+<a href="https://ainick25.github.io/market-pulse-daily/" class="site-logo-fixed">
+  <span class="logo-mark">MP</span><span class="logo-text">Market Pulse Daily</span>
+</a>
+
 
 <!-- ===== HERO ===== -->
 <section class="hero">

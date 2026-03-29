@@ -163,6 +163,26 @@ body{
 .tag-stock{border-color:rgba(46,236,138,0.4);color:var(--accent-green);background:rgba(46,236,138,0.08);}
 .tag-commodity{border-color:rgba(240,165,0,0.4);color:var(--accent-amber);background:rgba(240,165,0,0.08);}
 
+/* ===== CALENDAR & TAG CLOUD ===== */
+.explore-section{margin-top:3rem;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+@media(max-width:640px){.explore-section{grid-template-columns:1fr}}
+.explore-box{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.5rem}
+.explore-box-title{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--accent-amber);letter-spacing:0.3em;text-transform:uppercase;margin-bottom:1rem}
+.cal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:0.8rem}
+.cal-header .month-label{font-family:'JetBrains Mono',monospace;font-size:0.85rem;color:var(--text-primary);font-weight:700}
+.cal-header button{background:none;border:1px solid var(--border);color:var(--text-secondary);border-radius:4px;padding:0.2rem 0.6rem;cursor:pointer;font-size:0.8rem;transition:all 0.2s}
+.cal-header button:hover{border-color:var(--accent-amber);color:var(--accent-amber)}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;text-align:center}
+.cal-dow{font-family:'JetBrains Mono',monospace;font-size:0.6rem;color:var(--text-muted);padding:0.3rem 0}
+.cal-day{font-family:'JetBrains Mono',monospace;font-size:0.72rem;padding:0.35rem 0;border-radius:4px;color:var(--text-muted);transition:all 0.2s}
+.cal-day.has-post{background:rgba(240,165,0,0.15);color:var(--accent-amber);cursor:pointer;font-weight:700}
+.cal-day.has-post:hover{background:rgba(240,165,0,0.3)}
+.cal-day.today{outline:2px solid var(--accent-blue);outline-offset:-2px}
+.cal-day.empty{visibility:hidden}
+.idx-tag-cloud{display:flex;flex-wrap:wrap;gap:0.4rem}
+.idx-tag-pill{font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.2rem 0.55rem;border:1px solid var(--border-accent);border-radius:3px;color:var(--text-secondary);text-decoration:none;transition:all 0.2s}
+.idx-tag-pill:hover{border-color:var(--accent-amber);color:var(--accent-amber);background:rgba(240,165,0,0.08)}
+
 /* ===== SIDEBAR AFFILIATE AREA ===== */
 .affiliate-section{
   margin-top:3rem;padding:2rem;
@@ -246,9 +266,10 @@ body{
     </a>
     <nav class="header-nav">
       <a href="index.html">ホーム</a>
+      <a href="archive.html">アーカイブ</a>
+      <a href="tags.html">タグ</a>
       <a href="about.html">このサイトについて</a>
       <a href="disclaimer.html">免責事項</a>
-      <a href="privacy.html">プライバシー</a>
     </nav>
   </div>
 </header>
@@ -383,6 +404,76 @@ body{
 
   </div>
 
+  <!-- CALENDAR & TAG CLOUD -->
+  <div class="explore-section">
+    <div class="explore-box">
+      <div class="explore-box-title">カレンダー — CALENDAR</div>
+      <div class="cal-header">
+        <button id="cal-prev">◀</button>
+        <span id="cal-month" class="month-label"></span>
+        <button id="cal-next">▶</button>
+      </div>
+      <div class="cal-grid" id="cal-grid"></div>
+    </div>
+    <div class="explore-box">
+      <div class="explore-box-title">タグ — TAGS</div>
+      <div class="idx-tag-cloud" id="idx-tags"></div>
+    </div>
+  </div>
+
+  <script>
+  (async()=>{
+    try{
+      const res=await fetch('data/posts.json');
+      const{posts}=await res.json();
+      const postDates={};
+      const tagCounts={};
+      posts.forEach(p=>{
+        postDates[p.date]=p.slug;
+        (p.tags||[]).forEach(t=>{tagCounts[t]=(tagCounts[t]||0)+1});
+      });
+
+      // Calendar
+      let curYear=new Date().getFullYear(),curMonth=new Date().getMonth();
+      const todayStr=new Date().toISOString().slice(0,10);
+      const renderCal=()=>{
+        const label=document.getElementById('cal-month');
+        const grid=document.getElementById('cal-grid');
+        const monthNames=['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+        label.textContent=`${curYear}年 ${monthNames[curMonth]}`;
+        const dows=['日','月','火','水','木','金','土'];
+        let html=dows.map(d=>`<div class="cal-dow">${d}</div>`).join('');
+        const first=new Date(curYear,curMonth,1);
+        const lastDay=new Date(curYear,curMonth+1,0).getDate();
+        for(let i=0;i<first.getDay();i++) html+=`<div class="cal-day empty"></div>`;
+        for(let d=1;d<=lastDay;d++){
+          const ds=`${curYear}-${String(curMonth+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+          const slug=postDates[ds];
+          const isToday=ds===todayStr;
+          const cls=['cal-day'];
+          if(slug) cls.push('has-post');
+          if(isToday) cls.push('today');
+          if(slug){
+            html+=`<div class="${cls.join(' ')}" onclick="location.href='posts/${slug}.html'">${d}</div>`;
+          }else{
+            html+=`<div class="${cls.join(' ')}">${d}</div>`;
+          }
+        }
+        grid.innerHTML=html;
+      };
+      document.getElementById('cal-prev').onclick=()=>{curMonth--;if(curMonth<0){curMonth=11;curYear--}renderCal()};
+      document.getElementById('cal-next').onclick=()=>{curMonth++;if(curMonth>11){curMonth=0;curYear++}renderCal()};
+      renderCal();
+
+      // Tag Cloud
+      const sorted=Object.entries(tagCounts).sort((a,b)=>b[1]-a[1]).slice(0,25);
+      document.getElementById('idx-tags').innerHTML=sorted.map(([tag])=>
+        `<a href="tags.html#${encodeURIComponent(tag)}" class="idx-tag-pill">${tag}</a>`
+      ).join('');
+    }catch(e){console.error(e)}
+  })();
+  </script>
+
   <!-- AFFILIATE AREA -->
   <div class="affiliate-section">
     <div class="affiliate-label">PR — 広告</div>
@@ -408,9 +499,10 @@ body{
   <div class="footer-inner">
     <nav class="footer-nav">
       <a href="index.html">ホーム</a>
+      <a href="archive.html">アーカイブ</a>
+      <a href="tags.html">タグ</a>
       <a href="about.html">このサイトについて</a>
       <a href="disclaimer.html">免責事項・投資リスク</a>
-      <a href="privacy.html">プライバシーポリシー</a>
     </nav>
     <div class="footer-copy">
       &copy; 2026 Market Pulse Daily. All rights reserved.
