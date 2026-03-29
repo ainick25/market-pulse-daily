@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アーカイブ — Market Pulse Daily</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg-primary:#0a0a0f;--bg-card:#181822;--bg-card-hover:#20202e;--text-primary:#eeecf5;--text-secondary:#c4beda;--text-muted:#918aab;--accent-red:#ff4d6a;--accent-green:#2eec8a;--accent-gold:#ffe066;--accent-blue:#56ccff;--accent-purple:#c9a4ff;--accent-orange:#ffab30;--border:rgba(255,255,255,0.12);--border-accent:rgba(255,255,255,0.2)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans JP',sans-serif;font-weight:400;background:var(--bg-primary);color:var(--text-secondary);line-height:1.75;font-size:16px}
+a{color:var(--accent-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:900px;margin:0 auto;padding:0 1.5rem}
+
+/* Header */
+.page-header{padding:4rem 0 2rem;text-align:center;border-bottom:1px solid var(--border)}
+.page-header h1{font-family:'Noto Serif JP',serif;font-weight:700;font-size:2rem;color:var(--text-primary);margin-bottom:0.5rem}
+.page-header p{color:var(--text-muted);font-size:0.9rem}
+
+/* Navigation */
+.site-nav{padding:1rem 0;border-bottom:1px solid var(--border);margin-bottom:2rem}
+.site-nav-inner{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap}
+.site-nav a{color:var(--text-secondary);font-size:0.85rem;padding:0.3rem 0.6rem;border-radius:4px;border:1px solid transparent;transition:all 0.2s}
+.site-nav a:hover,.site-nav a.active{border-color:var(--border-accent);color:var(--text-primary);background:rgba(255,255,255,0.04);text-decoration:none}
+
+/* Month Group */
+.month-group{margin-bottom:3rem}
+.month-title{font-family:'JetBrains Mono',monospace;font-size:1.1rem;font-weight:700;color:var(--accent-gold);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border)}
+.post-item{display:block;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.2rem 1.5rem;margin-bottom:0.6rem;text-decoration:none;transition:all 0.2s}
+.post-item:hover{background:var(--bg-card-hover);border-color:var(--border-accent);text-decoration:none}
+.post-date{font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:var(--accent-gold);letter-spacing:0.1em}
+.post-title-text{font-weight:700;font-size:0.95rem;color:var(--text-primary);margin:0.3rem 0}
+.post-excerpt{font-size:0.8rem;color:var(--text-muted)}
+.post-tags{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.5rem}
+.post-tags .tag{font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:3px;background:rgba(255,255,255,0.05);color:var(--text-muted);border:1px solid var(--border)}
+
+/* Loading / Empty */
+.loading{text-align:center;padding:4rem 0;color:var(--text-muted)}
+.spinner{display:inline-block;width:24px;height:24px;border:2px solid var(--border);border-top-color:var(--accent-gold);border-radius:50%;animation:spin 0.8s linear infinite;margin-bottom:1rem}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Footer */
+footer{text-align:center;padding:2rem;font-size:0.75rem;color:var(--text-muted);border-top:1px solid var(--border);margin-top:3rem}
+
+/* Fixed Logo */
+.site-logo-fixed{position:fixed;top:1rem;left:1rem;z-index:9999;display:flex;align-items:center;gap:0.5rem;text-decoration:none;padding:0.5rem 0.8rem;background:rgba(10,10,15,0.85);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1);border-radius:6px;transition:all 0.3s}
+.site-logo-fixed:hover{border-color:rgba(255,224,102,0.4);background:rgba(10,10,15,0.95);text-decoration:none}
+.logo-mark{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:0.9rem;color:#ffe066;background:rgba(255,224,102,0.12);padding:0.15rem 0.4rem;border-radius:3px}
+.logo-text{font-family:'Noto Sans JP',sans-serif;font-size:0.7rem;color:#c4beda;letter-spacing:0.05em}
+@media(max-width:600px){.logo-text{display:none}}
+</style>
+</head>
+<body>
+
+<a href="https://ainick25.github.io/market-pulse-daily/" class="site-logo-fixed">
+  <span class="logo-mark">MP</span>
+  <span class="logo-text">Market Pulse Daily</span>
+</a>
+
+<div class="container">
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="index.html">ホーム</a>
+      <a href="archive.html" class="active">アーカイブ</a>
+      <a href="tags.html">タグ</a>
+      <a href="about.html">このサイトについて</a>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <h1>📚 アーカイブ</h1>
+    <p>すべての記事を月別に表示</p>
+    <p id="post-count" style="margin-top:0.5rem;font-family:'JetBrains Mono',monospace;font-size:0.8rem;color:var(--accent-gold)"></p>
+  </header>
+
+  <main id="archive-content">
+    <div class="loading">
+      <div class="spinner"></div>
+      <p>記事データを読み込み中...</p>
+    </div>
+  </main>
+</div>
+
+<footer>
+  <p>© 2026 Market Pulse Daily. All rights reserved.</p>
+</footer>
+
+<script>
+(async () => {
+  const container = document.getElementById('archive-content');
+  const countEl = document.getElementById('post-count');
+
+  try {
+    const res = await fetch('data/posts.json');
+    const { posts } = await res.json();
+
+    countEl.textContent = `全 ${posts.length} 件`;
+
+    // 月別にグループ化
+    const groups = {};
+    posts.forEach(p => {
+      const month = p.date.slice(0, 7); // "2026-03"
+      if (!groups[month]) groups[month] = [];
+      groups[month].push(p);
+    });
+
+    // 月を新しい順に並べる
+    const sortedMonths = Object.keys(groups).sort().reverse();
+
+    let html = '';
+    sortedMonths.forEach(month => {
+      const [y, m] = month.split('-');
+      const monthNames = ['','1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+      html += `<section class="month-group">`;
+      html += `<h2 class="month-title">${y}年 ${monthNames[parseInt(m)]}（${groups[month].length}件）</h2>`;
+
+      groups[month].forEach(p => {
+        const days = ['日','月','火','水','木','金','土'];
+        const d = new Date(p.date + 'T00:00:00+09:00');
+        const dayStr = days[d.getDay()];
+        const tagsHtml = (p.tags || []).slice(0, 5).map(t =>
+          `<span class="tag">${t}</span>`
+        ).join('');
+
+        html += `
+          <a href="posts/${p.slug}.html" class="post-item">
+            <div class="post-date">${p.date} (${dayStr})</div>
+            <div class="post-title-text">${p.title || '(タイトルなし)'}</div>
+            <div class="post-excerpt">${p.excerpt || ''}</div>
+            ${tagsHtml ? `<div class="post-tags">${tagsHtml}</div>` : ''}
+          </a>`;
+      });
+
+      html += `</section>`;
+    });
+
+    container.innerHTML = html;
+  } catch (e) {
+    container.innerHTML = `<div class="loading"><p>データの読み込みに失敗しました。</p></div>`;
+    console.error(e);
+  }
+})();
+</script>
+</body>
+</html>
