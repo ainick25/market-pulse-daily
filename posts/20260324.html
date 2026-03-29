@@ -423,27 +423,6 @@ section {
   section { padding: 2.5rem 0; }
 }
 
-/* ===== FAB BUTTONS ===== */
-.fab-group {
-  position: fixed; bottom: 1.5rem; right: 1.5rem;
-  display: none; flex-direction: column; gap: 0.5rem;
-  z-index: 99;
-}
-.fab-btn {
-  width: 44px; height: 44px;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 50%;
-  color: var(--text-primary);
-  font-size: 1.1rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center; justify-content: center;
-  text-decoration: none;
-  transition: background 0.2s;
-}
-.fab-btn:hover { background: var(--bg-card-hover); }
-.fab-home { font-size: 1rem; }
 </style>
 </head>
 <body>
@@ -892,12 +871,6 @@ section {
   <p style="margin-top:0.3rem">Sources: CNBC, CNN, Bloomberg, Yahoo Finance, Reuters, IEA, Federal Reserve, BOJ, Trading Economics, CoinDesk, Fortune, Japan Times, Brookings, and others</p>
 </div>
 
-<div class="fab-group">
-  <a href="https://ainick25.github.io/market-pulse-daily/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
-  <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
-</div>
-
-<!-- FAB BUTTONS -->
 <div class="fab-group">
   <a href="https://ainick25.github.io/market-pulse-daily/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
   <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
