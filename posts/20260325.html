@@ -132,7 +132,7 @@ body {
   gap: 0.3rem;
   max-width: 1100px;
   margin: 0 auto;
-  padding-left: 6.5rem;
+  padding-left: 1rem;
   justify-content: center;
 }
 .sticky-nav a {
@@ -343,10 +343,6 @@ body {
   transform: translateY(0);
 }
 
-@media (min-width: 601px) {
-  .sticky-nav-inner { padding-left: 11rem; }
-}
-
 /* ========== RESPONSIVE ========== */
 @media (max-width: 640px) {
   .hero h1 { font-size: 1.8rem; }
@@ -355,20 +351,30 @@ body {
   .sticky-nav-inner { justify-content: flex-start; }
 }
 
-/* Fixed Logo */
-.site-logo-fixed{position:fixed;top:1rem;left:1rem;z-index:9999;display:flex;align-items:center;gap:.5rem;text-decoration:none;padding:.5rem .8rem;background:rgba(10,10,15,.85);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);border-radius:6px;transition:all .3s}
-.site-logo-fixed:hover{border-color:rgba(255,224,102,.4);background:rgba(10,10,15,.95)}
-.logo-mark{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:.9rem;color:#ffe066;background:rgba(255,224,102,.12);padding:.15rem .4rem;border-radius:3px}
-.logo-text{font-family:"Noto Sans JP",sans-serif;font-size:.7rem;color:#c4beda;letter-spacing:.05em}
-@media(max-width:600px){.logo-text{display:none}}
+/* ===== FAB BUTTONS ===== */
+.fab-group {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  display: none; flex-direction: column; gap: 0.5rem;
+  z-index: 99;
+}
+.fab-btn {
+  width: 44px; height: 44px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.fab-btn:hover { background: var(--bg-card-hover); }
+.fab-home { font-size: 1rem; }
 </style>
 </head>
 <body>
-
-<a href="https://ainick25.github.io/market-pulse-daily/" class="site-logo-fixed">
-  <span class="logo-mark">MP</span><span class="logo-text">Market Pulse Daily</span>
-</a>
-
 
 <!-- ===== HERO ===== -->
 <section class="hero">
@@ -753,6 +759,12 @@ body {
 
 </main>
 
+<!-- FAB BUTTONS -->
+<div class="fab-group">
+  <a href="https://ainick25.github.io/market-pulse-daily/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
+  <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
+</div>
+
 <script>
 // Intersection Observer for fade-in
 const obs = new IntersectionObserver((entries) => {
@@ -776,6 +788,11 @@ window.addEventListener('scroll', () => {
     if (a.getAttribute('href') === '#' + current) a.classList.add('active');
   });
 });
+  // FAB group
+  const fabGroup = document.querySelector('.fab-group');
+  if (fabGroup) {
+    if (window.scrollY > 600) { fabGroup.style.display = "flex"; } else { fabGroup.style.display = "none"; }
+  }
 </script>
 </body>
 </html>

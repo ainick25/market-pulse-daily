@@ -107,25 +107,6 @@ body {
   50% { opacity: 0.6; }
 }
 
-/* ── FLOATING LOGO ── */
-.floating-logo {
-  position: fixed;
-  top: 12px;
-  left: 16px;
-  z-index: 1000;
-  text-decoration: none;
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: 700;
-  font-size: 0.7rem;
-  color: var(--accent-gold);
-  letter-spacing: 0.15em;
-  background: rgba(10,10,15,0.85);
-  backdrop-filter: blur(8px);
-  padding: 6px 12px;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-}
-
 /* ── STICKY NAV ── */
 .sticky-nav {
   position: sticky;
@@ -134,7 +115,7 @@ body {
   background: rgba(10,10,15,0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
-  padding: 0.6rem 1rem 0.6rem 6.5rem;
+  padding: 0.6rem 1rem;
   overflow-x: auto;
   white-space: nowrap;
   display: flex;
@@ -342,10 +323,6 @@ body {
   border-top: 1px solid var(--border);
 }
 
-@media (min-width: 601px) {
-  .sticky-nav { padding-left: 11rem; }
-}
-
 /* ── RESPONSIVE ── */
 @media (max-width: 600px) {
   .sticky-nav { justify-content: flex-start; }
@@ -353,22 +330,30 @@ body {
   .section { padding: 2rem 1rem; }
 }
 
-/* Fixed Logo */
-.site-logo-fixed{position:fixed;top:1rem;left:1rem;z-index:9999;display:flex;align-items:center;gap:.5rem;text-decoration:none;padding:.5rem .8rem;background:rgba(10,10,15,.85);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);border-radius:6px;transition:all .3s}
-.site-logo-fixed:hover{border-color:rgba(255,224,102,.4);background:rgba(10,10,15,.95)}
-.logo-mark{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:.9rem;color:#ffe066;background:rgba(255,224,102,.12);padding:.15rem .4rem;border-radius:3px}
-.logo-text{font-family:"Noto Sans JP",sans-serif;font-size:.7rem;color:#c4beda;letter-spacing:.05em}
-@media(max-width:600px){.logo-text{display:none}}
+/* ===== FAB BUTTONS ===== */
+.fab-group {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  display: none; flex-direction: column; gap: 0.5rem;
+  z-index: 99;
+}
+.fab-btn {
+  width: 44px; height: 44px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.fab-btn:hover { background: var(--bg-card-hover); }
+.fab-home { font-size: 1rem; }
 </style>
 </head>
 <body>
-
-<a href="https://ainick25.github.io/market-pulse-daily/" class="site-logo-fixed">
-  <span class="logo-mark">MP</span><span class="logo-text">Market Pulse Daily</span>
-</a>
-
-
-<a href="../index.html" class="floating-logo">MPD</a>
 
 <!-- ═══ HERO ═══ -->
 <section class="hero">
@@ -699,6 +684,12 @@ body {
   <p>© 2026 Market Pulse Daily — All rights reserved</p>
 </footer>
 
+<!-- FAB BUTTONS -->
+<div class="fab-group">
+  <a href="https://ainick25.github.io/market-pulse-daily/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
+  <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
+</div>
+
 <script>
 // Intersection Observer for fade-in
 const observer = new IntersectionObserver((entries) => {
@@ -724,6 +715,11 @@ window.addEventListener('scroll', () => {
     if (a.getAttribute('href') === '#' + current) a.classList.add('active');
   });
 });
+  // FAB group
+  const fabGroup = document.querySelector('.fab-group');
+  if (fabGroup) {
+    if (window.scrollY > 600) { fabGroup.style.display = "flex"; } else { fabGroup.style.display = "none"; }
+  }
 </script>
 </body>
 </html>
