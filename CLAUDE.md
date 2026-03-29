@@ -22,7 +22,6 @@
 7. 共通ニュース
 
 ## 記事HTML必須要件
-- `<body>` 直後に固定ロゴヘッダー（後述）
 - ダークテーマ: --bg-primary: #0a0a0f
 - フォント: Noto Serif JP(見出し), Noto Sans JP(本文,fw400), JetBrains Mono(データ)
 - body font-weight: 400（300禁止）
@@ -31,20 +30,27 @@
 - 免責事項ボックス（赤枠border: 2px solid #ff4d6a）
 - アニメーション: fade-in(IntersectionObserver), gridSlide, pulse, nav highlight
 - すべて日本語、出典を全ニュースに明記、著作権遵守
+- **固定ロゴは廃止**。代わりに右下FABボタン（🏠ホーム / ↑トップ）を設置
 
-## 固定ロゴHTML（全記事に必須）
+## FABボタンHTML（全記事に必須）
 ```html
-<a href="https://ainick25.github.io/market-pulse-daily/" class="site-logo-fixed">
-  <span class="logo-mark">MP</span><span class="logo-text">Market Pulse Daily</span>
-</a>
+<div class="fab-group">
+  <a href="https://ainick25.github.io/market-pulse-daily/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
+  <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
+</div>
 ```
-CSS:
-```css
-.site-logo-fixed{position:fixed;top:1rem;left:1rem;z-index:9999;display:flex;align-items:center;gap:.5rem;text-decoration:none;padding:.5rem .8rem;background:rgba(10,10,15,.85);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);border-radius:6px;transition:all .3s}
-.site-logo-fixed:hover{border-color:rgba(255,224,102,.4);background:rgba(10,10,15,.95)}
-.logo-mark{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.9rem;color:#ffe066;background:rgba(255,224,102,.12);padding:.15rem .4rem;border-radius:3px}
-.logo-text{font-family:'Noto Sans JP',sans-serif;font-size:.7rem;color:#c4beda;letter-spacing:.05em}
-@media(max-width:600px){.logo-text{display:none}}
+
+## SEO必須要件（全ページ）
+- `<link rel="canonical" href="完全URL">`
+- `<meta name="description" content="150文字以内">`
+- OGPタグ: og:title, og:description, og:url, og:site_name, og:locale, og:type
+- Twitter Card: twitter:card, twitter:title, twitter:description
+- 構造化データ: JSON-LD (NewsArticle for posts, WebSite for index)
+
+## ビルドコマンド
+```bash
+node scripts/build-metadata.js   # posts.json 生成
+node scripts/build-sitemap.js    # sitemap.xml 生成
 ```
 
 ## posts.json メタデータ形式
@@ -60,7 +66,41 @@ CSS:
 }
 ```
 
+## 日曜コラム生成フロー（毎月日曜日）
+日曜日はニュースダイジェストの代わりに、投資教育・解説コラムを配信する。
+これはアフィリエイト収益の主要導線となるエバーグリーンコンテンツ。
+
+### コラム生成手順
+1. テーマに応じてWeb検索で最新情報を収集
+2. `posts/YYYYMMDD.html` をコラム用テンプレートで生成
+3. `data/posts.json` にメタデータを追加（tags にコラムテーマを含める）
+4. `node scripts/build-metadata.js` & `node scripts/build-sitemap.js` を実行
+5. git add -A → commit → push
+
+### コラムテーマ例（ローテーション）
+1. 🏦 FX口座比較ガイド — 主要FX業者の特徴・手数料・スプレッド比較
+2. 📊 証券口座の開設方法 — 初心者向け日本のネット証券比較
+3. ₿ ビットコインの仕組み — ブロックチェーン・マイニング・ウォレット解説
+4. 🥇 ゴールド投資入門 — 現物・ETF・CFDの違いと始め方
+5. 💱 FX初心者ガイド — レバレッジ・ロスカット・注文方法の基礎
+6. 📈 株式投資の始め方 — NISA・iDeCo活用法
+7. 🛢 コモディティ投資入門 — 原油・穀物ETFの仕組み
+8. 🔮 テクニカル分析入門 — 移動平均線・RSI・MACDの読み方
+9. 🌍 地政学リスクと投資 — 戦争・紛争が市場に与える影響
+10. 💰 リスク管理の基本 — ポジションサイズ・分散投資・損切りルール
+
+### コラムHTML要件
+- 日次記事と同じダークテーマ・フォント・アニメーション
+- hero-subtitle にコラムタイトル
+- hero-tag に `📝 コラム` `初心者向け` 等のタグ
+- 目次（sticky-nav）をセクションに合わせて設置
+- 免責事項ボックスは必須
+- FABボタン（🏠ホーム / ↑トップ）は必須
+- SEOメタタグ（canonical, OGP, Twitter Card, JSON-LD）は必須
+- 関連する日次記事への内部リンクを自然に配置
+
 ## コミットルール
 - ブランチ: main
 - 日次記事: "📰 YYYY-MM-DD マーケットダイジェスト"
+- 日曜コラム: "📝 YYYY-MM-DD コラム: タイトル"
 - セットアップ: "🏗️ 自動化基盤構築"

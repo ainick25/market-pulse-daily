@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ainick25.github.io/market-pulse-daily/sitemap.xml
