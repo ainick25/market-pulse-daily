@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- A8.net Link Manager -->
+<script src="//statics.a8.net/a8link/a8linkmgr.js"></script>
+<script>
+  a8linkmgr({
+    "config_id": "3FffsI9Y9VCBqU9ikTQJ"
+  });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KFT35KZZVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KFT35KZZVC');
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MARKETZ — 2026.03.30 マーケットニュースダイジェスト</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-card: #181822;
+  --bg-card-hover: #20202e;
+  --text-primary: #eeecf5;
+  --text-secondary: #c4beda;
+  --text-muted: #918aab;
+  --accent-red: #ff4d6a;
+  --accent-green: #2eec8a;
+  --accent-gold: #ffe066;
+  --accent-blue: #56ccff;
+  --accent-purple: #c9a4ff;
+  --accent-orange: #ffab30;
+  --border: rgba(255,255,255,0.12);
+  --border-accent: rgba(255,255,255,0.2);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.2rem; }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridSlide 20s linear infinite;
+}
+@keyframes gridSlide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(60px, 60px); }
+}
+.hero-content { position: relative; z-index: 1; padding: 2rem 1rem; }
+.hero-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--accent-gold);
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
+}
+.hero-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: var(--text-primary);
+  margin-bottom: 0.6rem;
+}
+.hero-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto; margin-right: auto;
+}
+.hero-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+.hero-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--text-primary);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+}
+.hero-tag.alert {
+  border-color: var(--accent-red);
+  background: rgba(255,77,106,0.12);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+/* ===== STICKY NAV ===== */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(10,10,15,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.sticky-nav ul {
+  display: flex; list-style: none;
+  max-width: 900px; margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+  gap: 0;
+}
+.sticky-nav a {
+  display: block;
+  padding: 0.75rem 0.8rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.sticky-nav a:hover, .sticky-nav a.active {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+  background: rgba(255,255,255,0.04);
+}
+
+/* ===== SECTION ===== */
+.section { padding: 3rem 0; }
+.section-header {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-accent);
+}
+
+/* ===== PRICE STRIP ===== */
+.price-strip {
+  display: flex; flex-wrap: wrap; gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.price-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  flex: 1 1 140px;
+  min-width: 130px;
+}
+.price-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+.price-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+.price-change {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 0.15rem;
+}
+.price-change.up { color: var(--accent-green); }
+.price-change.down { color: var(--accent-red); }
+
+/* ===== NEWS CARD ===== */
+.news-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+  border-left: 3px solid transparent;
+}
+.news-card:hover { background: var(--bg-card-hover); }
+.news-card.blue { border-left-color: var(--accent-blue); }
+.news-card.red { border-left-color: var(--accent-red); }
+.news-card.gold { border-left-color: var(--accent-gold); }
+.news-card.green { border-left-color: var(--accent-green); }
+.news-card.purple { border-left-color: var(--accent-purple); }
+.news-card.orange { border-left-color: var(--accent-orange); }
+
+.news-head { margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.news-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+}
+.badge-fx { background: rgba(86,204,255,0.2); color: var(--accent-blue); border: 1px solid rgba(86,204,255,0.3); }
+.badge-commodity { background: rgba(255,224,102,0.2); color: var(--accent-gold); border: 1px solid rgba(255,224,102,0.3); }
+.badge-crypto { background: rgba(201,164,255,0.2); color: var(--accent-purple); border: 1px solid rgba(201,164,255,0.3); }
+.badge-stock { background: rgba(46,236,138,0.2); color: var(--accent-green); border: 1px solid rgba(46,236,138,0.3); }
+.badge-geo { background: rgba(255,77,106,0.2); color: var(--accent-red); border: 1px solid rgba(255,77,106,0.3); }
+.badge-tech { background: rgba(255,171,48,0.2); color: var(--accent-orange); border: 1px solid rgba(255,171,48,0.3); }
+
+.news-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+.news-body {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.news-source {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+
+/* ===== ANALYSIS ===== */
+.analysis-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.analysis-pair { margin-bottom: 1.5rem; }
+.analysis-pair:last-child { margin-bottom: 0; }
+.pair-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+.pair-direction {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+.dir-up { background: rgba(46,236,138,0.15); color: var(--accent-green); border: 1px solid rgba(46,236,138,0.3); }
+.dir-down { background: rgba(255,77,106,0.15); color: var(--accent-red); border: 1px solid rgba(255,77,106,0.3); }
+.dir-neutral { background: rgba(255,224,102,0.15); color: var(--accent-gold); border: 1px solid rgba(255,224,102,0.3); }
+.pair-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.pair-text strong { color: var(--text-primary); }
+
+/* ===== DISCLAIMER ===== */
+.disclaimer {
+  background: var(--bg-card);
+  border: 2px solid var(--accent-red);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin: 2rem 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.disclaimer-title {
+  color: var(--accent-red);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== FADE IN ===== */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+.footer a { color: var(--accent-gold); text-decoration: none; }
+
+/* ===== FAB BUTTONS ===== */
+.fab-group {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  display: none; flex-direction: column; gap: 0.5rem;
+  z-index: 99;
+}
+.fab-btn {
+  width: 44px; height: 44px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.fab-btn:hover { background: var(--bg-card-hover); }
+.fab-home { font-size: 1rem; }
+
+@media (max-width: 600px) {
+  .price-card { flex: 1 1 100%; }
+  .sticky-nav a { font-size: 0.75rem; padding: 0.6rem 0.5rem; }
+}
+/* ===== COLUMN EXTRAS ===== */
+.compare-table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:0.85rem}
+.compare-table th{background:rgba(255,255,255,0.06);color:var(--text-primary);padding:0.7rem 0.6rem;text-align:left;cursor:pointer;user-select:none;border-bottom:2px solid var(--border-accent);white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:0.78rem}
+.compare-table th:hover{color:var(--accent-gold)}
+.compare-table th.sorted-asc::after{content:' ▲';color:var(--accent-gold)}
+.compare-table th.sorted-desc::after{content:' ▼';color:var(--accent-gold)}
+.compare-table td{padding:0.6rem;border-bottom:1px solid var(--border);color:var(--text-secondary)}
+.compare-table tr:hover td{background:rgba(255,255,255,0.03)}
+.compare-table .best{color:var(--accent-green);font-weight:700}
+.compare-table .warn{color:var(--accent-red)}
+.vs-box{display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;margin:1.5rem 0;align-items:start}
+.vs-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.2rem}
+.vs-card h4{color:var(--text-primary);font-size:0.95rem;margin-bottom:0.8rem}
+.vs-card li{color:var(--text-secondary);font-size:0.85rem;margin-bottom:0.4rem;line-height:1.6;list-style:none;padding-left:0}
+.vs-divider{display:flex;align-items:center;font-family:'JetBrains Mono',monospace;font-size:1.5rem;color:var(--accent-gold);font-weight:700}
+@media(max-width:600px){.vs-box{grid-template-columns:1fr}.vs-divider{justify-content:center}}
+.point-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem;margin-bottom:0.8rem;border-left:3px solid var(--accent-gold)}
+.point-card h4{color:var(--accent-gold);font-family:'JetBrains Mono',monospace;font-size:0.85rem;margin-bottom:0.4rem}
+.point-card p{font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin:0}
+.tv-badge{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:0.7rem;padding:0.15rem 0.5rem;border-radius:3px;font-weight:700}
+.tv-yes{background:rgba(46,236,138,0.15);color:var(--accent-green);border:1px solid rgba(46,236,138,0.3)}
+.tv-no{background:rgba(255,77,106,0.1);color:var(--text-muted);border:1px solid rgba(255,77,106,0.2)}
+.tv-tip{background:rgba(240,165,0,0.1);border:1px solid rgba(240,165,0,0.3);border-radius:8px;padding:1rem 1.2rem;margin:1rem 0}
+.tv-tip p{color:var(--text-secondary);font-size:0.88rem;margin:0}
+.tv-tip strong{color:var(--accent-gold)}
+.purpose-btns{display:flex;gap:0.5rem;flex-wrap:wrap;margin:1rem 0}
+.purpose-btn{font-size:0.82rem;padding:0.5rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:20px;color:var(--text-secondary);cursor:pointer;transition:all 0.2s}
+.purpose-btn.active,.purpose-btn:hover{color:var(--accent-gold);border-color:var(--accent-gold);background:rgba(240,165,0,0.08)}
+.highlight-row td{background:rgba(240,165,0,0.08)!important;border-left:3px solid var(--accent-gold)}
+.scalp-status{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:0.72rem;padding:0.15rem 0.5rem;border-radius:3px;font-weight:700}
+.scalp-ok{background:rgba(46,236,138,0.15);color:var(--accent-green);border:1px solid rgba(46,236,138,0.3)}
+.scalp-ng{background:rgba(255,77,106,0.15);color:var(--accent-red);border:1px solid rgba(255,77,106,0.3)}
+.scalp-unknown{background:rgba(255,224,102,0.1);color:var(--accent-gold);border:1px solid rgba(255,224,102,0.3)}
+</style>
+<meta name="description" content="FX口座の選び方を徹底解説。国内vs海外、スプレッド・スワップ・ツール・スキャルピング対応を8社比較。">
+<link rel="canonical" href="https://marketpulse-daily.com/posts/20260330-column.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FX口座の選び方 完全ガイド — MARKETZ">
+<meta property="og:description" content="国内vs海外、スプレッド・スワップ・ツール・スキャルピング対応を8社比較。">
+<meta property="og:url" content="https://marketpulse-daily.com/posts/20260330-column.html">
+<meta property="og:site_name" content="MARKETZ">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-03-30T00:00:00+09:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FX口座の選び方 完全ガイド — MARKETZ">
+<meta name="twitter:description" content="国内vs海外、スプレッド・スワップ・ツール・スキャルピング対応を8社比較。">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"FX口座の選び方 完全ガイド","datePublished":"2026-03-30T00:00:00+09:00","publisher":{"@type":"Organization","name":"MARKETZ"},"mainEntityOfPage":"https://marketpulse-daily.com/posts/20260330-column.html"}
+</script>
+</head>
+<body>
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-date">2026.03.30 — COLUMN</div>
+    <h1 class="hero-title">FX口座の選び方<br>完全ガイド</h1>
+    <p class="hero-subtitle">国内 vs 海外、スプレッド・スワップ・ツール・スキャルピング対応を8社徹底比較</p>
+    <div class="hero-tags">
+      <span class="hero-tag">📝 コラム</span>
+      <span class="hero-tag">初心者向け</span>
+      <span class="hero-tag">為替</span>
+      <span class="hero-tag">USD/JPY</span>
+      <span class="hero-tag">FX口座</span>
+    </div>
+  </div>
+</section>
+<nav class="sticky-nav">
+  <ul>
+    <li><a href="#domestic-vs-overseas">🌐海外vs国内</a></li>
+    <li><a href="#why-domestic">🏦なぜ国内か</a></li>
+    <li><a href="#checkpoints">✅5大ポイント</a></li>
+    <li><a href="#spread">💱スプレッド</a></li>
+    <li><a href="#swap">💰スワップ</a></li>
+    <li><a href="#tools">🛠ツール</a></li>
+    <li><a href="#scalping">⚡スキャル</a></li>
+    <li><a href="#recommend">🎯おすすめ</a></li>
+  </ul>
+</nav>
+<div class="container">
+<!-- ===== Section 1: 海外 vs 国内 ===== -->
+<section id="domestic-vs-overseas" class="section fade-in">
+  <h2 class="section-header">🌐 海外FX vs 国内FX — どちらを選ぶべきか</h2>
+
+  <div class="news-card red">
+    <div class="news-body">
+      FX口座を選ぶとき、まず直面するのが「海外口座か国内口座か」という問題です。結論から言えば、<strong style="color:var(--accent-gold)">国内口座一択</strong>です。その理由を、海外FX大手XMTradingと国内FXを比較しながら解説します。
+    </div>
+  </div>
+
+  <div class="vs-box">
+    <div class="vs-card" style="border-left:3px solid var(--accent-red)">
+      <h4>🌍 海外FX（例: XMTrading）</h4>
+      <ul>
+        <li>❌ レバレッジ最大<strong>1,000倍</strong>（ハイリスク）</li>
+        <li>❌ 税率: 総合課税<strong>最大55%</strong></li>
+        <li>✅ ゼロカットシステムあり</li>
+        <li>❌ 損失繰越<strong>不可</strong></li>
+        <li>❌ 信託保全<strong>義務なし</strong></li>
+        <li>❌ 金融庁<strong>未登録</strong></li>
+      </ul>
+    </div>
+    <div class="vs-divider">VS</div>
+    <div class="vs-card" style="border-left:3px solid var(--accent-green)">
+      <h4>🇯🇵 国内FX（金融庁登録業者）</h4>
+      <ul>
+        <li>✅ レバレッジ最大<strong>25倍</strong>（規制で安全）</li>
+        <li>✅ 税率: 申告分離課税<strong>一律20.315%</strong></li>
+        <li>❌ ゼロカットなし（追証あり）</li>
+        <li>✅ 損失<strong>3年間繰越</strong>可能</li>
+        <li>✅ 信託保全<strong>義務あり</strong></li>
+        <li>✅ 金融庁<strong>登録済み</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <table class="compare-table">
+    <thead>
+      <tr><th>比較項目</th><th>海外FX（XMTrading）</th><th>国内FX</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>最大レバレッジ</td><td>1,000倍</td><td>25倍</td></tr>
+      <tr><td>税率</td><td class="warn">総合課税 最大55%</td><td class="best">一律20.315%</td></tr>
+      <tr><td>損失繰越</td><td class="warn">不可</td><td class="best">3年間可能</td></tr>
+      <tr><td>ゼロカット</td><td>あり</td><td>なし（追証あり）</td></tr>
+      <tr><td>信託保全</td><td class="warn">義務なし</td><td class="best">義務あり</td></tr>
+      <tr><td>スプレッド</td><td>やや広い</td><td class="best">業界最狭水準</td></tr>
+      <tr><td>出金の安全性</td><td class="warn">トラブル報告あり</td><td class="best">国内銀行で安全</td></tr>
+    </tbody>
+  </table>
+
+  <div class="news-card gold">
+    <div class="news-body">
+      <strong style="color:var(--accent-gold)">税金の分岐点:</strong> 課税所得330万円以下なら海外FXの方がやや有利（税率20%）ですが、それ以上の利益では国内FXの一律20.315%が圧倒的に有利です。FXで安定して利益を出すことを目指すなら、最初から国内口座を選ぶべきです。
+    </div>
+  </div>
+</section>
+
+<!-- ===== Section 2: なぜ国内口座が安全か ===== -->
+<section id="why-domestic" class="section fade-in">
+  <h2 class="section-header">🏦 なぜ国内口座一択なのか — ゼロカット神話の危険性</h2>
+
+  <div class="news-card red">
+    <div class="news-body">
+      海外FXの最大の「売り」はゼロカットシステムです。口座残高がマイナスになっても業者が損失を補填してくれる仕組みです。一見安全に見えますが、<strong style="color:var(--accent-red)">ゼロカットを前提にしている時点で、リスク管理ができていない</strong>と言わざるを得ません。
+    </div>
+  </div>
+
+  <div class="point-card">
+    <h4>01 — ゼロカット = リスク管理の放棄</h4>
+    <p>ゼロカットが発動する状況とは、口座残高を超える損失が発生する異常事態です。そもそも適切な損切り注文を設定し、ポジションサイズを資金に対して適正に管理していれば、口座残高がゼロになる事態は起こりません。ゼロカットを「安全装置」として期待している時点で、FXで安定して稼ぐことは困難です。</p>
+  </div>
+
+  <div class="point-card">
+    <h4>02 — なぜ国内FXにゼロカットがないのか</h4>
+    <p>金融商品取引法第39条で「顧客の損失の全部又は一部を補填する行為」が明確に禁止されています。ゼロカットは法律上の「損失補填」に該当するため、国内業者は提供できません。これは投資家保護ではなく、むしろ「損失は自己責任」という健全な投資原則に基づいています。</p>
+  </div>
+
+  <div class="point-card">
+    <h4>03 — レバレッジ25倍で十分な理由</h4>
+    <p>100万円の資金でレバレッジ25倍なら2,500万円分の取引が可能です。USD/JPYで約15万通貨。1日の変動幅が1円（100pips）なら15万円の利益/損失。これは資金の15%に相当し、十分すぎるリスクです。レバレッジ1,000倍は「ギャンブル」であり、「トレード」ではありません。</p>
+  </div>
+
+  <div class="point-card">
+    <h4>04 — 税金面での圧倒的有利</h4>
+    <p>年間利益500万円の場合: 国内FXなら税金約101万円（20.315%）、海外FXなら約153万円（所得税20%+住民税10%+復興税）。差額52万円。利益が大きくなるほど差は広がり、1,000万円の利益なら差額は約150万円にもなります。さらに国内FXは損失を3年間繰り越せるため、不調の年の損失を翌年以降の利益と相殺できます。</p>
+  </div>
+
+  <div class="point-card">
+    <h4>05 — 信託保全で資金が守られる</h4>
+    <p>国内FX業者は顧客資金を信託銀行に分別管理する義務があります。万が一業者が破綻しても、顧客の資金は全額保護されます。海外FXにはこの義務がなく、業者の経営破綻時に資金を失うリスクがあります。</p>
+  </div>
+</section>
+
+<!-- ===== Section 3: 5大チェックポイント ===== -->
+<section id="checkpoints" class="section fade-in">
+  <h2 class="section-header">✅ 国内FX口座選びの5大チェックポイント</h2>
+
+  <div class="news-card blue">
+    <div class="news-body">
+      国内FX口座を選ぶ際に比較すべき5つの軸を解説します。以降のセクションで各項目を7社徹底比較します。
+    </div>
+  </div>
+
+  <div class="point-card"><h4>① スプレッド</h4><p>売値と買値の差。取引コストに直結。USD/JPYで0.1銭の差でも、年間1,000回取引すれば大きな差になります。「原則固定」の適用時間帯にも注意。</p></div>
+  <div class="point-card"><h4>② スワップポイント</h4><p>通貨間の金利差で毎日受け取れる収益。長期保有（スイングトレード）の場合は特に重要。業者によって同じ通貨ペアでも日額50円以上の差が出ます。</p></div>
+  <div class="point-card"><h4>③ 取引ツール・TradingView連携</h4><p>チャート分析の快適さ。TradingViewを普段使っている方は、業者ツールのチャートが多少見づらくても問題ありません。みんなのFXはTradingViewが無料で内蔵されています。</p></div>
+  <div class="point-card"><h4>④ スキャルピング可否</h4><p>超短期売買（数秒〜数分）を行うなら、スキャルピングが公認されている業者を選ぶ必要があります。禁止されている業者では口座凍結のリスクがあります。</p></div>
+  <div class="point-card"><h4>⑤ 最小取引単位</h4><p>1通貨（約6円）から取引できる業者もあれば、1万通貨（約60万円相当）が最低の業者もあります。少額で始めたい初心者は要チェック。</p></div>
+</section>
+
+<!-- ===== Section 4: スプレッド比較 ===== -->
+<section id="spread" class="section fade-in">
+  <h2 class="section-header">💱 スプレッド徹底比較</h2>
+  <div class="news-card blue">
+    <div class="news-body">スプレッドは取引コストに直結します。以下は主要3通貨ペアの比較です（原則固定、例外あり）。<strong>列ヘッダーをクリック</strong>するとソートできます。</div>
+  </div>
+  <div style="overflow-x:auto">
+  <table class="compare-table" id="spread-table">
+    <thead>
+      <tr>
+        <th onclick="sortTable(this.closest('table'),0,'text')">業者</th>
+        <th onclick="sortTable(this.closest('table'),1,'num')">USD/JPY</th>
+        <th onclick="sortTable(this.closest('table'),2,'num')">EUR/JPY</th>
+        <th onclick="sortTable(this.closest('table'),3,'num')">GBP/JPY</th>
+        <th onclick="sortTable(this.closest('table'),4,'text')">固定時間</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>DMM FX</td><td>0.2銭</td><td>0.4銭</td><td>0.9銭</td><td>9:00〜翌5:00</td></tr>
+      <tr><td>GMOクリック証券</td><td class="best">0.2銭※</td><td>0.4銭</td><td>0.9銭</td><td>9:00〜翌3:00</td></tr>
+      <tr><td>SBI FXトレード</td><td class="best">0.18銭</td><td>0.48銭</td><td>0.88銭</td><td>常時変動</td></tr>
+      <tr><td>みんなのFX</td><td class="best">0.15銭</td><td>0.38銭</td><td>—</td><td>8:00〜翌5:00</td></tr>
+      <tr><td>ヒロセ通商</td><td>0.2銭</td><td>0.4銭</td><td>0.9銭</td><td>9:00〜翌3:00</td></tr>
+      <tr><td>JFX</td><td>0.2銭</td><td>0.4銭</td><td>0.9銭</td><td>9:00〜翌3:00</td></tr>
+      <tr><td>外為どっとコム</td><td>0.2銭</td><td>0.4銭</td><td>0.9銭</td><td>9:00〜翌3:00</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="news-card gold" style="border-left-color:var(--accent-gold)">
+    <div class="news-body">
+      <strong style="color:var(--accent-gold)">※ GMOクリック証券</strong>は2024年末にUSD/JPYスプレッド0銭（ゼロ）を適用した実績あり。提示率95%超で安定性も高い。<br>
+      <strong style="color:var(--accent-gold)">※ みんなのFX</strong>の0.15銭はLIGHTペア適用時。通常ペアは0.2銭。LIGHTペアは建玉上限あり。<br>
+      <strong style="color:var(--accent-gold)">注意:</strong> 早朝（5:00〜9:00頃）、重要経済指標発表時、年末年始等はスプレッドが大幅に拡大します。
+    </div>
+  </div>
+</section>
+
+<!-- ===== Section 5: スワップ比較 ===== -->
+<section id="swap" class="section fade-in">
+  <h2 class="section-header">💰 スワップポイント比較</h2>
+  <div class="news-card blue">
+    <div class="news-body">スワップポイントは通貨間の金利差で毎日受け取れる収益です。長期保有（スイングトレード）の方は特に重視すべき項目。<strong>列ヘッダーをクリック</strong>でソート。</div>
+  </div>
+  <div style="overflow-x:auto">
+  <table class="compare-table" id="swap-table">
+    <thead>
+      <tr>
+        <th onclick="sortTable(this.closest('table'),0,'text')">業者</th>
+        <th onclick="sortTable(this.closest('table'),1,'num')">USD/JPY 買い</th>
+        <th onclick="sortTable(this.closest('table'),2,'text')">特徴</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>DMM FX</td><td>130円台</td><td>買い・売り同一の「一本値」方式。売りポジションが有利</td></tr>
+      <tr><td>GMOクリック証券</td><td>高水準</td><td>多通貨ペアで安定的に業界上位</td></tr>
+      <tr><td>SBI FXトレード</td><td>156円</td><td>安定した中〜高水準</td></tr>
+      <tr><td>みんなのFX</td><td class="best">197円</td><td>業界最高水準。ハンガリーフォリント円等マイナー通貨も充実</td></tr>
+      <tr><td>ヒロセ通商</td><td>—</td><td>54通貨ペア対応で選択肢が広い</td></tr>
+      <tr><td>JFX</td><td>—</td><td>スキャル向け。スワップはヒロセ通商と同等</td></tr>
+      <tr><td>外為どっとコム</td><td>—</td><td>キャンペーンでスワップ増量あり</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="point-card">
+    <h4>DMM FXの「一本値」方式とは？</h4>
+    <p>通常、買いスワップと売りスワップには差があり（買い200円 / 売り-230円 等）、業者がその差額を利益にしています。DMM FXは買い・売りが同額（例: 買い+130円 / 売り-130円）のため、売りポジションを持つトレーダーにとってはコストが低く有利です。ただし買いスワップは他社より低めに設定されています。</p>
+  </div>
+</section>
+
+<!-- ===== Section 6: ツール比較 + TradingView ===== -->
+<section id="tools" class="section fade-in">
+  <h2 class="section-header">🛠 取引ツール比較 & TradingView連携</h2>
+  <div style="overflow-x:auto">
+  <table class="compare-table">
+    <thead>
+      <tr><th>業者</th><th>PC主要ツール</th><th>TradingView</th><th>特徴</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>DMM FX</td><td>DMM PLUS</td><td><span class="tv-badge tv-no">非対応</span></td><td>レイアウト自由度高。初心者向き</td></tr>
+      <tr><td>GMOクリック証券</td><td>はっちゅう君FX / プラチナチャート</td><td><span class="tv-badge tv-no">非対応</span></td><td>直感的操作。スマホアプリも高評価</td></tr>
+      <tr><td>SBI FXトレード</td><td>Rich Client Next</td><td><span class="tv-badge tv-no">非対応</span></td><td>1通貨〜対応。初心者に最適</td></tr>
+      <tr><td>みんなのFX</td><td>FXトレーダー</td><td><span class="tv-badge tv-yes">内蔵（無料）</span></td><td>TradingView有料機能を無料で利用可。通貨強弱等の独自ツールも</td></tr>
+      <tr><td>ヒロセ通商</td><td>LION FX C2</td><td><span class="tv-badge tv-no">非対応</span></td><td>10秒足チャート。スキャル特化機能充実</td></tr>
+      <tr><td>JFX</td><td>MATRIX TRADER</td><td><span class="tv-badge tv-no">非対応</span></td><td>0.2秒更新チャート。分析用MT4無料提供</td></tr>
+      <tr><td>外為どっとコム</td><td>リッチアプリ / Web版</td><td><span class="tv-badge tv-no">非対応</span></td><td>情報量No.1。FXスクールで学べる</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="tv-tip">
+    <p><strong>💡 TradingViewユーザーへのアドバイス</strong><br><br>
+    普段TradingViewでチャート分析をしている方は、<strong>業者ツールのチャートの見やすさはそれほど重要ではありません</strong>。分析はTradingView側で行い、注文の発注だけ業者ツールで行う運用が実用的です。<br><br>
+    ただし<strong>みんなのFX</strong>はTradingViewが無料で内蔵されており、通常月額約8,000円の有料プラン相当の機能が使えます。TradingViewの有料プランを検討中の方は、みんなのFXの口座を開設するだけでコストを節約できます。<br><br>
+    一方、<strong>JFX</strong>は分析専用のMT4を無料提供しており、MT4派のトレーダーにも対応しています。</p>
+  </div>
+</section>
+
+<!-- ===== Section 7: スキャルピング ===== -->
+<section id="scalping" class="section fade-in">
+  <h2 class="section-header">⚡ スキャルピング対応比較</h2>
+  <div class="news-card blue">
+    <div class="news-body">スキャルピング（数秒〜数分の超短期売買）は業者によって対応が大きく異なります。<strong style="color:var(--accent-red)">禁止されている業者で行うと口座凍結のリスク</strong>があるため、必ず確認してください。</div>
+  </div>
+  <div style="overflow-x:auto">
+  <table class="compare-table">
+    <thead>
+      <tr><th>業者</th><th>スキャルピング</th><th>約定速度</th><th>備考</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>DMM FX</td><td><span class="scalp-status scalp-ng">禁止</span></td><td>—</td><td>約款で明記。口座凍結リスクあり</td></tr>
+      <tr><td>GMOクリック証券</td><td><span class="scalp-status scalp-unknown">不明確</span></td><td>—</td><td>明確な公認/禁止の言及なし</td></tr>
+      <tr><td>SBI FXトレード</td><td><span class="scalp-status scalp-unknown">不明確</span></td><td>—</td><td>明確な公認なし</td></tr>
+      <tr><td>みんなのFX</td><td><span class="scalp-status scalp-unknown">不明確</span></td><td>—</td><td>明確な公認なし</td></tr>
+      <tr><td>ヒロセ通商</td><td><span class="scalp-status scalp-ok">公認</span></td><td class="best">最速0.001秒</td><td>オリコン12年連続1位。カバー先23行</td></tr>
+      <tr><td>JFX</td><td><span class="scalp-status scalp-ok">公認</span></td><td class="best">最速0.001秒</td><td>約定率99.99%。連打注文OK</td></tr>
+      <tr><td>外為どっとコム</td><td><span class="scalp-status scalp-ok">公認</span></td><td>—</td><td>情報量×スキャルピングの組み合わせ</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="point-card">
+    <h4>なぜDMM FXはスキャルピング禁止なのか？</h4>
+    <p>国内FX業者の多くはDD（ディーリングデスク）方式を採用しており、顧客の注文を一旦業者が引き受けてからカバー取引を行います。大量の超短期注文はカバーが追いつかず業者の損失につながるため、DMM FXでは約款で「短時間での注文を繰り返し行う行為」を禁止しています。</p>
+  </div>
+</section>
+
+<!-- ===== Section 8: 目的別おすすめ ===== -->
+<section id="recommend" class="section fade-in">
+  <h2 class="section-header">🎯 目的別おすすめ口座</h2>
+  <div class="news-card blue">
+    <div class="news-body">あなたの投資スタイルに合った口座を見つけましょう。下のボタンをクリックすると、総合比較表で該当する業者がハイライトされます。</div>
+  </div>
+
+  <div class="purpose-btns">
+    <button class="purpose-btn" onclick="filterPurpose('beginner',this)">🔰 初心者</button>
+    <button class="purpose-btn" onclick="filterPurpose('swap',this)">💰 スワップ運用</button>
+    <button class="purpose-btn" onclick="filterPurpose('scalp',this)">⚡ スキャルピング</button>
+    <button class="purpose-btn" onclick="filterPurpose('allround',this)">🏆 総合力</button>
+    <button class="purpose-btn" onclick="filterPurpose('info',this)">📚 情報重視</button>
+    <button class="purpose-btn" onclick="filterPurpose('tv',this)">📊 TradingView</button>
+  </div>
+
+  <div class="news-card green" style="border-left-color:var(--accent-green)"><div class="news-title">🔰 初心者 → SBI FXトレード</div><div class="news-body">1通貨（約6円）から取引可能で実質デモトレードとして使える。オリコン初心者部門6年連続1位。全34通貨ペアが1通貨から対応。<br><a href="https://www.sbifxt.co.jp/" rel="nofollow noopener" target="_blank" style="color:var(--accent-gold)">SBI FXトレード公式サイト →</a></div></div>
+
+  <div class="news-card gold" style="border-left-color:var(--accent-gold)"><div class="news-title">💰 スワップ運用 → みんなのFX</div><div class="news-body">USD/JPY買いスワップ197円/日で業界最高水準。ハンガリーフォリント円やチェココルナ円など高金利マイナー通貨も充実。TradingView無料内蔵も魅力。<br><a href="https://min-fx.jp/" rel="nofollow noopener" target="_blank" style="color:var(--accent-gold)">みんなのFX公式サイト →</a></div></div>
+
+  <div class="news-card purple" style="border-left-color:var(--accent-purple)"><div class="news-title">⚡ スキャルピング → ヒロセ通商 / JFX</div><div class="news-body">どちらもスキャルピング完全公認で約定最速0.001秒。JFXは約定率99.99%で連打注文もOK。ヒロセ通商は54通貨ペア対応でオリコン12年連続1位。<br><a href="https://hirose-fx.co.jp/" rel="nofollow noopener" target="_blank" style="color:var(--accent-gold)">ヒロセ通商公式 →</a>&nbsp;&nbsp;<a href="https://www.jfx.co.jp/" rel="nofollow noopener" target="_blank" style="color:var(--accent-gold)">JFX公式 →</a></div></div>
+
+  <div class="news-card green" style="border-left-color:var(--accent-blue)"><div class="news-title">🏆 総合力 → GMOクリック証券</div><div class="news-body">スプレッド・ツール・安定性の三拍子が揃う。FX取引高世界1位を10年間維持。スプレッド提示率95%超で滑りにくい。東証プライム上場の信頼性。<br><a href="https://www.click-sec.com/" rel="nofollow noopener" target="_blank" style="color:var(--accent-gold)">GMOクリック証券公式サイト →</a></div></div>
+
+  <div class="news-card orange" style="border-left-color:var(--accent-orange)"><div class="news-title">📚 情報重視 → 外為どっとコム</div><div class="news-body">自社シンクタンク「外為どっとコム総合研究所」を持ち、情報量は業界No.1。マネ育FXスクールで初心者も段階的に学べる。HDI格付け7年連続三ツ星。<br><a href="https://www.gaitame.com/" rel="nofollow noopener" target="_blank" style="color:var(--accent-gold)">外為どっとコム公式サイト →</a></div></div>
+
+  <div class="news-card gold" style="border-left-color:var(--accent-gold)"><div class="news-title">📊 TradingViewユーザー → みんなのFX</div><div class="news-body">月額約8,000円相当のTradingView有料機能が無料で内蔵。通貨強弱やポジションブック等の独自分析ツールも。TradingViewの有料プランを節約できます。<br><a href="https://min-fx.jp/" rel="nofollow noopener" target="_blank" style="color:var(--accent-gold)">みんなのFX公式サイト →</a></div></div>
+</section>
+
+<!-- ===== Section 9: 総合比較表 ===== -->
+<section id="summary" class="section fade-in">
+  <h2 class="section-header">📊 総合比較表</h2>
+  <div style="overflow-x:auto">
+  <table class="compare-table" id="summary-table">
+    <thead>
+      <tr>
+        <th onclick="sortTable(this.closest('table'),0,'text')">業者</th>
+        <th onclick="sortTable(this.closest('table'),1,'num')">USD/JPY</th>
+        <th onclick="sortTable(this.closest('table'),2,'num')">スワップ</th>
+        <th onclick="sortTable(this.closest('table'),3,'text')">スキャル</th>
+        <th onclick="sortTable(this.closest('table'),4,'text')">最小単位</th>
+        <th onclick="sortTable(this.closest('table'),5,'text')">TV連携</th>
+        <th>公式サイト</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-purpose="allround"><td>DMM FX</td><td>0.2銭</td><td>130円</td><td><span class="scalp-status scalp-ng">禁止</span></td><td>1万通貨</td><td><span class="tv-badge tv-no">×</span></td><td><a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" rel="nofollow sponsored" target="_blank" style="color:var(--accent-gold)">【PR】公式</a></td></tr>
+      <tr data-purpose="allround"><td>GMOクリック証券</td><td>0.2銭</td><td>高水準</td><td><span class="scalp-status scalp-unknown">不明確</span></td><td>1,000通貨</td><td><span class="tv-badge tv-no">×</span></td><td><a href="https://www.click-sec.com/" rel="nofollow" target="_blank" style="color:var(--accent-gold)">公式</a></td></tr>
+      <tr data-purpose="beginner"><td>SBI FXトレード</td><td class="best">0.18銭</td><td>156円</td><td><span class="scalp-status scalp-unknown">不明確</span></td><td class="best">1通貨</td><td><span class="tv-badge tv-no">×</span></td><td><a href="https://www.sbifxt.co.jp/" rel="nofollow" target="_blank" style="color:var(--accent-gold)">公式</a></td></tr>
+      <tr data-purpose="swap tv"><td>みんなのFX</td><td class="best">0.15銭</td><td class="best">197円</td><td><span class="scalp-status scalp-unknown">不明確</span></td><td>1,000通貨</td><td><span class="tv-badge tv-yes">内蔵</span></td><td><a href="https://min-fx.jp/" rel="nofollow" target="_blank" style="color:var(--accent-gold)">公式</a></td></tr>
+      <tr data-purpose="scalp"><td>ヒロセ通商</td><td>0.2銭</td><td>—</td><td><span class="scalp-status scalp-ok">公認</span></td><td>1,000通貨</td><td><span class="tv-badge tv-no">×</span></td><td><a href="https://hirose-fx.co.jp/" rel="nofollow" target="_blank" style="color:var(--accent-gold)">公式</a></td></tr>
+      <tr data-purpose="scalp"><td>JFX</td><td>0.2銭</td><td>—</td><td><span class="scalp-status scalp-ok">公認</span></td><td>1,000通貨</td><td><span class="tv-badge tv-no">×</span></td><td><a href="https://www.jfx.co.jp/" rel="nofollow" target="_blank" style="color:var(--accent-gold)">公式</a></td></tr>
+      <tr data-purpose="info beginner"><td>外為どっとコム</td><td>0.2銭</td><td>—</td><td><span class="scalp-status scalp-ok">公認</span></td><td>1,000通貨</td><td><span class="tv-badge tv-no">×</span></td><td><a href="https://www.gaitame.com/" rel="nofollow" target="_blank" style="color:var(--accent-gold)">公式</a></td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ===== PR ===== -->
+<div class="news-card gold fade-in" style="border-left-color:var(--accent-gold);margin:2rem 0;padding:1.5rem;">
+  <div class="news-head"><span class="news-badge badge-commodity" style="background:rgba(255,224,102,0.25);color:var(--accent-gold);border:1px solid rgba(255,224,102,0.4);">PR — 広告</span></div>
+  <div class="news-title" style="margin-top:0.5rem;">FX取引を始めるなら</div>
+  <div class="news-body">FX取引高3年連続世界第1位のDMM FXなら、最短即日で口座開設が可能です。</div>
+  <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:0.8rem;">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:var(--accent-gold);color:#0a0a0f;font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;">【PR】DMM FX の詳細を見る →</a>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:transparent;color:var(--accent-gold);font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;border:1px solid var(--accent-gold);">【PR】DMM CFD の詳細を見る →</a>
+  </div>
+  <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" alt="">
+  <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" alt="">
+  <div class="news-source" style="margin-top:0.8rem;">※ 投資にはリスクが伴います。FX取引は元本を超える損失が発生する可能性があります。</div>
+</div>
+
+<!-- ===== 免責事項 ===== -->
+<div class="disclaimer fade-in">
+  <div class="disclaimer-title">⚠️ 免責事項・ディスクレーマー</div>
+  本記事は情報提供のみを目的としており、金融商品の売買の勧誘や投資助言を目的とするものではありません。掲載されている情報は作成時点のものであり、正確性、完全性、適時性を保証するものではありません。スプレッド・スワップポイント等の数値は変動します。最新の情報は各社公式サイトでご確認ください。投資判断は必ずご自身の責任において行ってください。本記事に基づく投資行動による損失について、筆者・サイト運営者は一切の責任を負いません。<br><br>
+  本記事に記載されている情報は、各FX業者の公式サイト、ザイFX!、みんかぶ、FXキーストン等の公開情報を参照し、筆者が独自に再構成したものです。<br><br>
+  金融商品取引法に基づく表記：本記事は金融商品取引法第2条に定める金融商品取引業に該当する行為を行うものではありません。
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>MARKETZ — <a href="https://marketpulse-daily.com/">ホームに戻る</a></p>
+  <p>© 2026 MARKETZ. All rights reserved.</p>
+</footer>
+</div>
+<div class="fab-group">
+  <a href="https://marketpulse-daily.com/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
+  <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
+</div>
+<script>
+const observer=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+const sections=document.querySelectorAll('section[id]');
+const navLinks=document.querySelectorAll('.sticky-nav a');
+window.addEventListener('scroll',()=>{
+  let current='';
+  sections.forEach(s=>{if(window.scrollY>=s.offsetTop-100)current=s.getAttribute('id')});
+  navLinks.forEach(a=>{a.classList.remove('active');if(a.getAttribute('href')==='#'+current)a.classList.add('active')});
+  const fg=document.querySelector('.fab-group');
+  if(fg){fg.style.display=window.scrollY>600?'flex':'none'}
+});
+function sortTable(table,col,type){
+  const tbody=table.querySelector('tbody');const rows=Array.from(tbody.querySelectorAll('tr'));
+  const th=table.querySelectorAll('th')[col];const asc=!th.classList.contains('sorted-asc');
+  table.querySelectorAll('th').forEach(h=>h.classList.remove('sorted-asc','sorted-desc'));
+  th.classList.add(asc?'sorted-asc':'sorted-desc');
+  rows.sort((a,b)=>{let va=a.cells[col].textContent.trim(),vb=b.cells[col].textContent.trim();
+    if(type==='num'){va=parseFloat(va.replace(/[^0-9.\-]/g,''))||999;vb=parseFloat(vb.replace(/[^0-9.\-]/g,''))||999}
+    return va<vb?(asc?-1:1):va>vb?(asc?1:-1):0});
+  rows.forEach(r=>tbody.appendChild(r));
+}
+function switchTab(group,id){
+  document.querySelectorAll('[data-tab-group="'+group+'"] .tab-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.tab-content[data-group="'+group+'"]').forEach(c=>c.classList.remove('active'));
+  document.querySelector('[data-tab-group="'+group+'"] [data-tab="'+id+'"]').classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+function filterPurpose(purpose,el){
+  document.querySelectorAll('.purpose-btn').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  document.querySelectorAll('#summary-table tbody tr').forEach(r=>{
+    r.classList.remove('highlight-row');
+    if(r.dataset.purpose&&r.dataset.purpose.includes(purpose))r.classList.add('highlight-row');
+  });
+}
+</script>
+</body>
+</html>
