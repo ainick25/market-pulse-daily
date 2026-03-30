@@ -375,6 +375,63 @@ body {
 .scalp-ok{background:rgba(46,236,138,0.15);color:var(--accent-green);border:1px solid rgba(46,236,138,0.3)}
 .scalp-ng{background:rgba(255,77,106,0.15);color:var(--accent-red);border:1px solid rgba(255,77,106,0.3)}
 .scalp-unknown{background:rgba(255,224,102,0.1);color:var(--accent-gold);border:1px solid rgba(255,224,102,0.3)}
+
+/* ===== VISUAL ENHANCEMENTS ===== */
+.section:nth-child(even){background:rgba(255,255,255,0.015);border-radius:12px;padding:2.5rem 1.5rem;margin:1rem -1.5rem}
+.section-header{display:flex;align-items:center;gap:0.6rem;border-bottom:2px solid var(--accent-gold);padding-bottom:0.6rem}
+
+/* Animated bar chart */
+.bar-chart{display:flex;flex-direction:column;gap:0.6rem;margin:1.5rem 0}
+.bar-row{display:flex;align-items:center;gap:0.8rem}
+.bar-label{font-family:'JetBrains Mono',monospace;font-size:0.78rem;color:var(--text-secondary);width:120px;flex-shrink:0;text-align:right}
+.bar-track{flex:1;height:28px;background:rgba(255,255,255,0.04);border-radius:4px;overflow:hidden;position:relative}
+.bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:8px;font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:#0a0a0f;font-weight:700;transition:width 1.5s ease;width:0}
+.bar-fill.animated{width:var(--w)}
+.bar-fill.gold{background:linear-gradient(90deg,var(--accent-gold),#ffcc33)}
+.bar-fill.green{background:linear-gradient(90deg,var(--accent-green),#4dff9f)}
+.bar-fill.red{background:linear-gradient(90deg,var(--accent-red),#ff6b8a)}
+.bar-fill.blue{background:linear-gradient(90deg,var(--accent-blue),#7dd8ff)}
+.bar-fill.purple{background:linear-gradient(90deg,var(--accent-purple),#d4b8ff)}
+
+/* Gauge meter */
+.gauge-row{display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0;justify-content:center}
+.gauge{text-align:center;width:120px}
+.gauge-ring{width:80px;height:80px;border-radius:50%;margin:0 auto 0.5rem;position:relative;display:flex;align-items:center;justify-content:center}
+.gauge-ring::before{content:'';position:absolute;inset:4px;border-radius:50%;background:var(--bg-primary)}
+.gauge-val{position:relative;z-index:1;font-family:'JetBrains Mono',monospace;font-size:0.85rem;font-weight:700;color:var(--text-primary)}
+.gauge-name{font-size:0.75rem;color:var(--text-secondary);margin-top:0.3rem}
+
+/* Callout box */
+.callout{background:linear-gradient(135deg,rgba(240,165,0,0.08),rgba(240,165,0,0.02));border:1px solid rgba(240,165,0,0.25);border-radius:10px;padding:1.2rem 1.5rem;margin:1.5rem 0;position:relative;overflow:hidden}
+.callout::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--accent-gold)}
+.callout h4{color:var(--accent-gold);font-family:'JetBrains Mono',monospace;font-size:0.85rem;margin-bottom:0.5rem}
+.callout p{color:var(--text-secondary);font-size:0.88rem;line-height:1.7;margin:0}
+.callout.red{background:linear-gradient(135deg,rgba(255,77,106,0.08),rgba(255,77,106,0.02));border-color:rgba(255,77,106,0.25)}
+.callout.red::before{background:var(--accent-red)}
+.callout.red h4{color:var(--accent-red)}
+.callout.green{background:linear-gradient(135deg,rgba(46,236,138,0.08),rgba(46,236,138,0.02));border-color:rgba(46,236,138,0.25)}
+.callout.green::before{background:var(--accent-green)}
+.callout.green h4{color:var(--accent-green)}
+
+/* Animated number counter */
+.big-number{font-family:'JetBrains Mono',monospace;font-size:2.5rem;font-weight:700;text-align:center;margin:1rem 0}
+.big-number .num{color:var(--accent-gold)}
+.big-number .unit{font-size:1rem;color:var(--text-muted);margin-left:0.3rem}
+.big-number .label{display:block;font-size:0.78rem;color:var(--text-secondary);font-weight:400;margin-top:0.3rem}
+
+/* Number cards row */
+.num-cards{display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0;justify-content:center}
+.num-card{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.2rem;text-align:center;flex:1;min-width:140px;max-width:200px}
+.num-card .val{font-family:'JetBrains Mono',monospace;font-size:1.8rem;font-weight:700}
+.num-card .desc{font-size:0.78rem;color:var(--text-muted);margin-top:0.4rem}
+
+/* Flow diagram */
+.flow{display:flex;align-items:center;gap:0;flex-wrap:wrap;justify-content:center;margin:1.5rem 0}
+.flow-step{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:0.8rem 1rem;text-align:center;min-width:100px}
+.flow-step .icon{font-size:1.5rem;margin-bottom:0.3rem}
+.flow-step .text{font-size:0.78rem;color:var(--text-secondary)}
+.flow-arrow{color:var(--accent-gold);font-family:'JetBrains Mono',monospace;font-size:1.2rem;padding:0 0.5rem}
+@media(max-width:600px){.flow-arrow{transform:rotate(90deg);padding:0.3rem 0}}
 </style>
 <meta name="description" content="FX口座の選び方を徹底解説。国内vs海外、スプレッド・スワップ・ツール・スキャルピング対応を8社比較。">
 <link rel="canonical" href="https://marketpulse-daily.com/posts/20260330-column.html">
@@ -472,10 +529,33 @@ body {
     </tbody>
   </table>
 
-  <div class="news-card gold">
-    <div class="news-body">
-      <strong style="color:var(--accent-gold)">税金の分岐点:</strong> 課税所得330万円以下なら海外FXの方がやや有利（税率20%）ですが、それ以上の利益では国内FXの一律20.315%が圧倒的に有利です。FXで安定して利益を出すことを目指すなら、最初から国内口座を選ぶべきです。
-    </div>
+  <!-- 数字で見る国内vs海外 -->
+  <div class="num-cards">
+    <div class="num-card"><div class="val" style="color:var(--accent-green)">20.3<span style="font-size:1rem">%</span></div><div class="desc">国内FX税率（一律）<br>利益額に関係なく固定</div></div>
+    <div class="num-card"><div class="val" style="color:var(--accent-red)">55<span style="font-size:1rem">%</span></div><div class="desc">海外FX最大税率<br>利益が増えるほど負担増</div></div>
+    <div class="num-card"><div class="val" style="color:var(--accent-green)">3<span style="font-size:1rem">年</span></div><div class="desc">国内FX損失繰越<br>不調の年もカバー</div></div>
+    <div class="num-card"><div class="val" style="color:var(--accent-red)">0<span style="font-size:1rem">年</span></div><div class="desc">海外FX損失繰越<br>繰越不可</div></div>
+  </div>
+
+  <!-- 税金差額シミュレーション（バーチャート） -->
+  <div class="callout green">
+    <h4>📊 年間利益別・税金シミュレーション</h4>
+    <p>国内FXと海外FXでどれだけ税金が違うか、バーチャートで比較します。</p>
+  </div>
+  <div class="bar-chart">
+    <div class="bar-row"><div class="bar-label">利益100万円</div><div class="bar-track"><div class="bar-fill green" style="--w:20%">国内 20万円</div></div></div>
+    <div class="bar-row"><div class="bar-label"></div><div class="bar-track"><div class="bar-fill red" style="--w:20%">海外 20万円</div></div></div>
+    <div class="bar-row"><div class="bar-label">利益500万円</div><div class="bar-track"><div class="bar-fill green" style="--w:25%">国内 101万円</div></div></div>
+    <div class="bar-row"><div class="bar-label"></div><div class="bar-track"><div class="bar-fill red" style="--w:38%">海外 153万円</div></div></div>
+    <div class="bar-row"><div class="bar-label">利益1,000万円</div><div class="bar-track"><div class="bar-fill green" style="--w:30%">国内 203万円</div></div></div>
+    <div class="bar-row"><div class="bar-label"></div><div class="bar-track"><div class="bar-fill red" style="--w:60%">海外 353万円</div></div></div>
+    <div class="bar-row"><div class="bar-label">利益2,000万円</div><div class="bar-track"><div class="bar-fill green" style="--w:35%">国内 406万円</div></div></div>
+    <div class="bar-row"><div class="bar-label"></div><div class="bar-track"><div class="bar-fill red" style="--w:85%">海外 806万円</div></div></div>
+  </div>
+
+  <div class="callout">
+    <h4>💡 結論: 国内口座一択</h4>
+    <p>利益が330万円を超えると海外FXの税率は国内を上回り始め、利益が大きくなるほど差は拡大します。2,000万円の利益なら<strong>差額400万円</strong>。FXで安定して利益を出すことを目指すなら、最初から国内口座を選ぶべきです。</p>
   </div>
 </section>
 
@@ -560,12 +640,26 @@ body {
     </tbody>
   </table>
   </div>
-  <div class="news-card gold" style="border-left-color:var(--accent-gold)">
-    <div class="news-body">
-      <strong style="color:var(--accent-gold)">※ GMOクリック証券</strong>は2024年末にUSD/JPYスプレッド0銭（ゼロ）を適用した実績あり。提示率95%超で安定性も高い。<br>
-      <strong style="color:var(--accent-gold)">※ みんなのFX</strong>の0.15銭はLIGHTペア適用時。通常ペアは0.2銭。LIGHTペアは建玉上限あり。<br>
-      <strong style="color:var(--accent-gold)">注意:</strong> 早朝（5:00〜9:00頃）、重要経済指標発表時、年末年始等はスプレッドが大幅に拡大します。
-    </div>
+  <!-- USD/JPY スプレッド ビジュアル比較 -->
+  <div class="callout">
+    <h4>📊 USD/JPY スプレッド ビジュアル比較（狭いほど有利）</h4>
+    <p>バーが短いほどコストが低く有利です。</p>
+  </div>
+  <div class="bar-chart">
+    <div class="bar-row"><div class="bar-label">みんなのFX</div><div class="bar-track"><div class="bar-fill green" style="--w:15%">0.15銭</div></div></div>
+    <div class="bar-row"><div class="bar-label">SBI FXトレード</div><div class="bar-track"><div class="bar-fill green" style="--w:18%">0.18銭</div></div></div>
+    <div class="bar-row"><div class="bar-label">DMM FX</div><div class="bar-track"><div class="bar-fill blue" style="--w:20%">0.2銭</div></div></div>
+    <div class="bar-row"><div class="bar-label">GMOクリック</div><div class="bar-track"><div class="bar-fill blue" style="--w:20%">0.2銭</div></div></div>
+    <div class="bar-row"><div class="bar-label">ヒロセ通商</div><div class="bar-track"><div class="bar-fill blue" style="--w:20%">0.2銭</div></div></div>
+    <div class="bar-row"><div class="bar-label">JFX</div><div class="bar-track"><div class="bar-fill blue" style="--w:20%">0.2銭</div></div></div>
+    <div class="bar-row"><div class="bar-label">外為どっとコム</div><div class="bar-track"><div class="bar-fill blue" style="--w:20%">0.2銭</div></div></div>
+  </div>
+
+  <div class="callout">
+    <h4>⚠️ スプレッドの注意点</h4>
+    <p>・GMOクリック証券は2024年末にUSD/JPY <strong>0銭（ゼロ）</strong>を適用した実績あり。提示率95%超<br>
+    ・みんなのFXの0.15銭はLIGHTペア適用時。通常ペアは0.2銭<br>
+    ・早朝（5:00〜9:00頃）、重要指標発表時、年末年始はスプレッドが大幅拡大</p>
   </div>
 </section>
 
@@ -595,9 +689,32 @@ body {
     </tbody>
   </table>
   </div>
-  <div class="point-card">
-    <h4>DMM FXの「一本値」方式とは？</h4>
-    <p>通常、買いスワップと売りスワップには差があり（買い200円 / 売り-230円 等）、業者がその差額を利益にしています。DMM FXは買い・売りが同額（例: 買い+130円 / 売り-130円）のため、売りポジションを持つトレーダーにとってはコストが低く有利です。ただし買いスワップは他社より低めに設定されています。</p>
+  <!-- USD/JPY スワップ ビジュアル比較 -->
+  <div class="callout">
+    <h4>📊 USD/JPY 買いスワップ ビジュアル比較（1万通貨/日）</h4>
+    <p>バーが長いほどスワップ収入が多く有利です。</p>
+  </div>
+  <div class="bar-chart">
+    <div class="bar-row"><div class="bar-label">みんなのFX</div><div class="bar-track"><div class="bar-fill gold" style="--w:95%">197円/日</div></div></div>
+    <div class="bar-row"><div class="bar-label">SBI FXトレード</div><div class="bar-track"><div class="bar-fill blue" style="--w:75%">156円/日</div></div></div>
+    <div class="bar-row"><div class="bar-label">GMOクリック</div><div class="bar-track"><div class="bar-fill blue" style="--w:70%">高水準</div></div></div>
+    <div class="bar-row"><div class="bar-label">DMM FX</div><div class="bar-track"><div class="bar-fill purple" style="--w:63%">130円台/日</div></div></div>
+  </div>
+
+  <div class="callout">
+    <h4>💡 DMM FXの「一本値」方式とは？</h4>
+    <p>通常、買いスワップと売りスワップには差があり（買い200円 / 売り-230円 等）、業者がその差額を利益にしています。DMM FXは買い・売りが同額（例: 買い+130円 / 売り-130円）のため、<strong>売りポジション</strong>を持つトレーダーにとってはコストが低く有利です。ただし買いスワップは他社より低め。</p>
+  </div>
+
+  <!-- 年間収益シミュレーション -->
+  <div class="num-cards">
+    <div class="num-card"><div class="val" style="color:var(--accent-gold)">71,905<span style="font-size:0.8rem">円</span></div><div class="desc">みんなのFX<br>197円 × 365日</div></div>
+    <div class="num-card"><div class="val" style="color:var(--accent-blue)">56,940<span style="font-size:0.8rem">円</span></div><div class="desc">SBI FXトレード<br>156円 × 365日</div></div>
+    <div class="num-card"><div class="val" style="color:var(--accent-purple)">47,450<span style="font-size:0.8rem">円</span></div><div class="desc">DMM FX<br>130円 × 365日</div></div>
+  </div>
+  <div class="callout green">
+    <h4>📈 スワップだけで年間7万円以上</h4>
+    <p>みんなのFXでUSD/JPYを1万通貨（約160万円分）保有するだけで、年間約<strong>71,905円</strong>のスワップ収入。10万通貨なら約<strong>72万円</strong>。寝ているだけで金利差益が入ります。</p>
   </div>
 </section>
 
@@ -662,6 +779,34 @@ body {
   <h2 class="section-header">🎯 目的別おすすめ口座</h2>
   <div class="news-card blue">
     <div class="news-body">あなたの投資スタイルに合った口座を見つけましょう。下のボタンをクリックすると、総合比較表で該当する業者がハイライトされます。</div>
+  </div>
+
+  <!-- 口座選び フローチャート -->
+  <div class="callout">
+    <h4>🗺️ 口座選びフローチャート</h4>
+    <p>あなたのトレードスタイルから最適な口座を導きます。</p>
+  </div>
+  <div class="flow">
+    <div class="flow-step"><div class="icon">🤔</div><div class="text">FXを<br>始めたい</div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step"><div class="icon">💰</div><div class="text">少額で<br>試したい？</div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step" style="border-color:var(--accent-green)"><div class="icon">✅</div><div class="text" style="color:var(--accent-green)">SBI FX<br>1通貨〜</div></div>
+  </div>
+  <div class="flow">
+    <div class="flow-step"><div class="icon">📊</div><div class="text">スワップで<br>稼ぎたい</div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step" style="border-color:var(--accent-gold)"><div class="icon">🏆</div><div class="text" style="color:var(--accent-gold)">みんなの<br>FX</div></div>
+  </div>
+  <div class="flow">
+    <div class="flow-step"><div class="icon">⚡</div><div class="text">スキャル<br>したい</div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step" style="border-color:var(--accent-purple)"><div class="icon">🎯</div><div class="text" style="color:var(--accent-purple)">ヒロセ通商<br>/ JFX</div></div>
+  </div>
+  <div class="flow">
+    <div class="flow-step"><div class="icon">📚</div><div class="text">勉強しながら<br>やりたい</div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step" style="border-color:var(--accent-orange)"><div class="icon">📖</div><div class="text" style="color:var(--accent-orange)">外為<br>どっとコム</div></div>
   </div>
 
   <div class="purpose-btns">
@@ -748,7 +893,13 @@ body {
   <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
 </div>
 <script>
-const observer=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.1});
+const observer=new IntersectionObserver(e=>{e.forEach(e=>{
+  if(e.isIntersecting){
+    e.target.classList.add('visible');
+    // Animate bar fills when section becomes visible
+    e.target.querySelectorAll('.bar-fill').forEach(bar=>{bar.classList.add('animated')});
+  }
+})},{threshold:0.1});
 document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
 const sections=document.querySelectorAll('section[id]');
 const navLinks=document.querySelectorAll('.sticky-nav a');
