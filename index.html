@@ -74,7 +74,7 @@ body{
   border-bottom:1px solid var(--border);
   padding:1.5rem 0;
   position:sticky;top:0;z-index:100;
-  background:rgba(8,8,12,0.94);
+  background:rgba(255,255,255,0.95);
   backdrop-filter:blur(20px);
 }
 .header-inner{
@@ -105,6 +105,8 @@ body{
   padding:5rem 1.5rem 3rem;
   text-align:center;
   position:relative;overflow:hidden;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color:#ffffff;
 }
 .hero::before{
   content:'';position:absolute;inset:0;
@@ -115,7 +117,7 @@ body{
 }
 .hero-eyebrow{
   font-family:'JetBrains Mono',monospace;
-  font-size:0.72rem;color:var(--accent-amber);
+  font-size:0.72rem;color:#ffe066;
   letter-spacing:0.35em;text-transform:uppercase;
   margin-bottom:1rem;position:relative;
 }
@@ -124,6 +126,7 @@ body{
   font-size:clamp(1.8rem,4vw,2.8rem);
   font-weight:700;line-height:1.4;
   margin-bottom:1rem;position:relative;
+  color:#ffffff;
 }
 .hero h1 em{
   font-style:normal;
@@ -131,7 +134,7 @@ body{
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
 }
 .hero-desc{
-  color:var(--text-secondary);font-size:0.95rem;
+  color:rgba(255,255,255,0.8);font-size:0.95rem;
   max-width:560px;margin:0 auto;position:relative;
   line-height:1.9;
 }
