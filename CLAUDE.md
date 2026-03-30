@@ -8,7 +8,7 @@
 ## 日次記事生成フロー
 1. Web検索で最新ニュースを網羅的に収集（全7カテゴリ）
 2. `posts/YYYYMMDD.html` を単一HTMLファイルとして生成
-3. `index.html` の記事カードリスト先頭に新記事カードを追加
+3. `index.html` の記事カードリスト先頭に新記事カードを追加（最新5件のみ表示、6件目以降は削除）
 4. `node scripts/build-metadata.js` を実行
 5. `node scripts/build-sitemap.js` を実行
 6. git add -A → commit → push
