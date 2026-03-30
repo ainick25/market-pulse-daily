@@ -1,4 +1,4 @@
-# Market Pulse Daily — Claude Code プロジェクト設定
+# MARKETZ — Claude Code プロジェクト設定
 
 ## サイト情報
 - URL: https://marketpulse-daily.com/
