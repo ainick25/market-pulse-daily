@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="'Helvetica Neue', Arial, sans-serif">
+  <rect width="800" height="380" fill="#f8f7f4" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">スワップポイントの仕組み</text>
+
+  <!-- Japan circle -->
+  <circle cx="180" cy="170" r="70" fill="#fff" stroke="rgba(0,0,0,0.1)" stroke-width="2"/>
+  <circle cx="180" cy="155" r="22" fill="#e63946"/>
+  <text x="180" y="210" text-anchor="middle" font-size="14" font-weight="600" fill="#1a1a2e">日本</text>
+  <text x="180" y="235" text-anchor="middle" font-size="28" font-weight="700" fill="#2176ff">0.5%</text>
+  <text x="180" y="255" text-anchor="middle" font-size="11" fill="#7a7a8e">低金利</text>
+
+  <!-- USA circle -->
+  <circle cx="620" cy="170" r="70" fill="#fff" stroke="rgba(0,0,0,0.1)" stroke-width="2"/>
+  <!-- US flag simplified -->
+  <rect x="600" y="133" width="40" height="26" rx="3" fill="#2176ff"/>
+  <rect x="600" y="133" width="40" height="4" fill="#e63946"/>
+  <rect x="600" y="141" width="40" height="4" fill="#e63946"/>
+  <rect x="600" y="149" width="40" height="4" fill="#e63946"/>
+  <text x="620" y="210" text-anchor="middle" font-size="14" font-weight="600" fill="#1a1a2e">米国</text>
+  <text x="620" y="235" text-anchor="middle" font-size="28" font-weight="700" fill="#d4880f">3.75%</text>
+  <text x="620" y="255" text-anchor="middle" font-size="11" fill="#7a7a8e">高金利</text>
+
+  <!-- Arrow with interest rate difference -->
+  <defs>
+    <marker id="arr1" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#06a77d"/>
+    </marker>
+  </defs>
+  <line x1="280" y1="170" x2="520" y2="170" stroke="#06a77d" stroke-width="4" marker-end="url(#arr1)"/>
+  <!-- Difference label -->
+  <rect x="340" y="145" width="120" height="30" rx="15" fill="#06a77d"/>
+  <text x="400" y="165" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">金利差 3.25%</text>
+
+  <!-- Daily income -->
+  <rect x="250" y="300" width="300" height="55" rx="10" fill="#fff" stroke="#06a77d" stroke-width="2"/>
+  <!-- Coin icons -->
+  <circle cx="280" cy="327" r="14" fill="#d4880f"/>
+  <text x="280" y="332" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">¥</text>
+  <circle cx="310" cy="327" r="14" fill="#f0a500"/>
+  <text x="310" y="332" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">¥</text>
+  <circle cx="340" cy="327" r="14" fill="#d4880f"/>
+  <text x="340" y="332" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">¥</text>
+  <text x="440" y="322" text-anchor="middle" font-size="12" fill="#7a7a8e">毎日受け取れる</text>
+  <text x="440" y="343" text-anchor="middle" font-size="16" font-weight="700" fill="#06a77d">197円 / 日</text>
+
+  <!-- Down arrow from main arrow to box -->
+  <line x1="400" y1="195" x2="400" y2="295" stroke="#06a77d" stroke-width="2" stroke-dasharray="6,3"/>
+  <polygon points="400,295 394,285 406,285" fill="#06a77d"/>
+</svg>

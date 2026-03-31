@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" font-family="'Helvetica Neue', Arial, sans-serif">
+  <rect width="800" height="350" fill="#f8f7f4" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">スプレッドとは</text>
+
+  <!-- Price scale background -->
+  <rect x="100" y="80" width="600" height="180" rx="8" fill="#fff" stroke="rgba(0,0,0,0.08)" stroke-width="1"/>
+
+  <!-- Bid bar -->
+  <rect x="150" y="110" width="200" height="120" rx="6" fill="#2176ff" opacity="0.15"/>
+  <rect x="150" y="110" width="200" height="120" rx="6" fill="none" stroke="#2176ff" stroke-width="2"/>
+  <text x="250" y="155" text-anchor="middle" font-size="13" font-weight="600" fill="#2176ff">売値 (Bid)</text>
+  <text x="250" y="200" text-anchor="middle" font-size="32" font-weight="700" fill="#2176ff">150.00</text>
+
+  <!-- Ask bar -->
+  <rect x="450" y="110" width="200" height="120" rx="6" fill="#e63946" opacity="0.1"/>
+  <rect x="450" y="110" width="200" height="120" rx="6" fill="none" stroke="#e63946" stroke-width="2"/>
+  <text x="550" y="155" text-anchor="middle" font-size="13" font-weight="600" fill="#e63946">買値 (Ask)</text>
+  <text x="550" y="200" text-anchor="middle" font-size="32" font-weight="700" fill="#e63946">150.02</text>
+
+  <!-- Spread gap -->
+  <rect x="350" y="120" width="100" height="100" rx="4" fill="#d4880f" opacity="0.12"/>
+  <!-- Double arrow -->
+  <line x1="358" y1="170" x2="442" y2="170" stroke="#d4880f" stroke-width="3"/>
+  <polygon points="358,170 368,164 368,176" fill="#d4880f"/>
+  <polygon points="442,170 432,164 432,176" fill="#d4880f"/>
+  <!-- Spread label -->
+  <rect x="365" y="140" width="70" height="24" rx="12" fill="#d4880f"/>
+  <text x="400" y="157" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">0.2銭</text>
+
+  <!-- Bottom annotation -->
+  <text x="400" y="310" text-anchor="middle" font-size="14" fill="#7a7a8e">この差額（スプレッド）＝ 取引コスト</text>
+  <text x="400" y="335" text-anchor="middle" font-size="13" font-weight="600" fill="#d4880f">狭いほどトレーダーに有利</text>
+</svg>
