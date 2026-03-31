@@ -1,36 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Helvetica Neue', Arial, sans-serif">
-  <rect width="800" height="420" fill="#f8f7f4" rx="12"/>
+  <rect width="800" height="420" fill="#ededed" rx="12"/>
 
   <!-- Title -->
   <text x="400" y="40" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">国内FX vs 海外FX</text>
 
   <!-- Left: Domestic (Green/Safe) -->
-  <rect x="30" y="65" width="350" height="310" rx="12" fill="#fff" stroke="#06a77d" stroke-width="2"/>
+  <rect x="30" y="65" width="350" height="310" rx="12" fill="#fff" stroke="#07e4dd" stroke-width="2"/>
   <!-- Header -->
-  <rect x="30" y="65" width="350" height="50" rx="12" fill="#06a77d"/>
-  <rect x="30" y="90" width="350" height="25" fill="#06a77d"/>
+  <rect x="30" y="65" width="350" height="50" rx="12" fill="#07e4dd"/>
+  <rect x="30" y="90" width="350" height="25" fill="#07e4dd"/>
   <text x="205" y="97" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">🇯🇵 国内FX</text>
 
   <!-- Shield icon -->
-  <circle cx="80" cy="160" r="20" fill="#06a77d" opacity="0.15"/>
+  <circle cx="80" cy="160" r="20" fill="#07e4dd" opacity="0.15"/>
   <text x="80" y="167" text-anchor="middle" font-size="20">🛡️</text>
   <text x="205" y="165" text-anchor="middle" font-size="14" font-weight="600" fill="#1a1a2e">金融庁登録・信託保全あり</text>
 
   <!-- Items -->
   <g font-size="14" fill="#3d3d56">
-    <text x="70" y="210">✅</text><text x="95" y="210" font-weight="600">レバレッジ</text><text x="280" y="210" text-anchor="end" font-size="20" font-weight="700" fill="#06a77d">25倍</text>
+    <text x="70" y="210">✅</text><text x="95" y="210" font-weight="600">レバレッジ</text><text x="280" y="210" text-anchor="end" font-size="20" font-weight="700" fill="#07e4dd">25倍</text>
     <line x1="60" y1="225" x2="360" y2="225" stroke="rgba(0,0,0,0.06)" stroke-width="1"/>
-    <text x="70" y="250">✅</text><text x="95" y="250" font-weight="600">税率</text><text x="280" y="250" text-anchor="end" font-size="20" font-weight="700" fill="#06a77d">20.3%</text>
+    <text x="70" y="250">✅</text><text x="95" y="250" font-weight="600">税率</text><text x="280" y="250" text-anchor="end" font-size="20" font-weight="700" fill="#07e4dd">20.3%</text>
     <line x1="60" y1="265" x2="360" y2="265" stroke="rgba(0,0,0,0.06)" stroke-width="1"/>
-    <text x="70" y="290">✅</text><text x="95" y="290" font-weight="600">損失繰越</text><text x="280" y="290" text-anchor="end" font-size="20" font-weight="700" fill="#06a77d">3年</text>
+    <text x="70" y="290">✅</text><text x="95" y="290" font-weight="600">損失繰越</text><text x="280" y="290" text-anchor="end" font-size="20" font-weight="700" fill="#07e4dd">3年</text>
     <line x1="60" y1="305" x2="360" y2="305" stroke="rgba(0,0,0,0.06)" stroke-width="1"/>
-    <text x="70" y="330">✅</text><text x="95" y="330" font-weight="600">信託保全</text><text x="280" y="330" text-anchor="end" font-size="16" font-weight="700" fill="#06a77d">義務あり</text>
+    <text x="70" y="330">✅</text><text x="95" y="330" font-weight="600">信託保全</text><text x="280" y="330" text-anchor="end" font-size="16" font-weight="700" fill="#07e4dd">義務あり</text>
     <line x1="60" y1="345" x2="360" y2="345" stroke="rgba(0,0,0,0.06)" stroke-width="1"/>
-    <text x="70" y="365">✅</text><text x="95" y="365" font-weight="600">出金</text><text x="280" y="365" text-anchor="end" font-size="16" font-weight="700" fill="#06a77d">安全</text>
+    <text x="70" y="365">✅</text><text x="95" y="365" font-weight="600">出金</text><text x="280" y="365" text-anchor="end" font-size="16" font-weight="700" fill="#07e4dd">安全</text>
   </g>
 
   <!-- Center VS -->
-  <circle cx="400" cy="220" r="28" fill="#d4880f"/>
+  <circle cx="400" cy="220" r="28" fill="#f0a500"/>
   <text x="400" y="228" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">VS</text>
 
   <!-- Right: Overseas (Red/Warning) -->
@@ -59,6 +59,6 @@
   </g>
 
   <!-- Bottom verdict -->
-  <rect x="250" y="390" width="300" height="28" rx="14" fill="#d4880f"/>
+  <rect x="250" y="390" width="300" height="28" rx="14" fill="#f0a500"/>
   <text x="400" y="409" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">結論：国内FX口座一択</text>
 </svg>
