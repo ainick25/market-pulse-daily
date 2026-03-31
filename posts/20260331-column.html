@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- A8.net Link Manager -->
+<script src="//statics.a8.net/a8link/a8linkmgr.js"></script>
+<script>
+  a8linkmgr({
+    "config_id": "3FffsI9Y9VCBqU9ikTQJ"
+  });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KFT35KZZVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KFT35KZZVC');
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NISA口座の選び方 完全ガイド — 生活圏×ポイント還元で最適な証券会社を見つける | MARKETZ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #f8f7f4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0efe8;
+  --text-primary: #1a1a2e;
+  --text-secondary: #3d3d56;
+  --text-muted: #7a7a8e;
+  --accent-red: #e63946;
+  --accent-green: #06a77d;
+  --accent-gold: #d4880f;
+  --accent-blue: #2176ff;
+  --accent-purple: #7b61ff;
+  --accent-orange: #e07b39;
+  --border: rgba(0,0,0,0.1);
+  --border-accent: rgba(0,0,0,0.18);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.2rem; }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridSlide 20s linear infinite;
+}
+@keyframes gridSlide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(60px, 60px); }
+}
+.hero-content { position: relative; z-index: 1; padding: 2rem 1rem; }
+.hero-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: #ffe066;
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
+}
+.hero-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+.hero-subtitle {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto; margin-right: auto;
+}
+.hero-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+.hero-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: #ffffff;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+}
+.hero-tag.alert {
+  border-color: var(--accent-red);
+  background: rgba(255,77,106,0.12);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+/* ===== STICKY NAV ===== */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+.sticky-nav ul {
+  display: flex; list-style: none;
+  max-width: 900px; margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+  gap: 0;
+}
+.sticky-nav a {
+  display: block;
+  padding: 0.75rem 0.8rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.sticky-nav a:hover, .sticky-nav a.active {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+  background: rgba(0,0,0,0.04);
+}
+
+/* ===== SECTION ===== */
+.section { padding: 3rem 0; }
+.section-header {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-accent);
+}
+
+/* ===== PRICE STRIP ===== */
+.price-strip {
+  display: flex; flex-wrap: wrap; gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.price-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  flex: 1 1 140px;
+  min-width: 130px;
+}
+.price-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+.price-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+.price-change {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 0.15rem;
+}
+.price-change.up { color: var(--accent-green); }
+.price-change.down { color: var(--accent-red); }
+
+/* ===== NEWS CARD ===== */
+.news-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s;
+  border-left: 3px solid transparent;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.news-card:hover { background: var(--bg-card-hover); box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+.news-card.blue { border-left-color: var(--accent-blue); }
+.news-card.red { border-left-color: var(--accent-red); }
+.news-card.gold { border-left-color: var(--accent-gold); }
+.news-card.green { border-left-color: var(--accent-green); }
+.news-card.purple { border-left-color: var(--accent-purple); }
+.news-card.orange { border-left-color: var(--accent-orange); }
+
+.news-head { margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.news-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+}
+.badge-fx { background: rgba(86,204,255,0.2); color: var(--accent-blue); border: 1px solid rgba(86,204,255,0.3); }
+.badge-commodity { background: rgba(255,224,102,0.2); color: var(--accent-gold); border: 1px solid rgba(255,224,102,0.3); }
+.badge-crypto { background: rgba(201,164,255,0.2); color: var(--accent-purple); border: 1px solid rgba(201,164,255,0.3); }
+.badge-stock { background: rgba(46,236,138,0.2); color: var(--accent-green); border: 1px solid rgba(46,236,138,0.3); }
+.badge-geo { background: rgba(255,77,106,0.2); color: var(--accent-red); border: 1px solid rgba(255,77,106,0.3); }
+.badge-tech { background: rgba(255,171,48,0.2); color: var(--accent-orange); border: 1px solid rgba(255,171,48,0.3); }
+
+.news-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+.news-body {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.news-source {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+
+/* ===== ANALYSIS ===== */
+.analysis-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.analysis-pair { margin-bottom: 1.5rem; }
+.analysis-pair:last-child { margin-bottom: 0; }
+.pair-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+.pair-direction {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+.dir-up { background: rgba(46,236,138,0.15); color: var(--accent-green); border: 1px solid rgba(46,236,138,0.3); }
+.dir-down { background: rgba(255,77,106,0.15); color: var(--accent-red); border: 1px solid rgba(255,77,106,0.3); }
+.dir-neutral { background: rgba(255,224,102,0.15); color: var(--accent-gold); border: 1px solid rgba(255,224,102,0.3); }
+.pair-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.pair-text strong { color: var(--text-primary); }
+
+/* ===== DISCLAIMER ===== */
+.disclaimer {
+  background: #fef2f2;
+  border: 2px solid var(--accent-red);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin: 2rem 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.disclaimer-title {
+  color: var(--accent-red);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== FADE IN ===== */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+.footer a { color: var(--accent-gold); text-decoration: none; }
+
+/* ===== FAB BUTTONS ===== */
+.fab-group {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  display: none; flex-direction: column; gap: 0.5rem;
+  z-index: 99;
+}
+.fab-btn {
+  width: 44px; height: 44px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.fab-btn:hover { background: var(--bg-card-hover); }
+.fab-home { font-size: 1rem; }
+
+@media (max-width: 600px) {
+  .price-card { flex: 1 1 100%; }
+  .sticky-nav a { font-size: 0.75rem; padding: 0.6rem 0.5rem; }
+}
+/* ===== COLUMN EXTRAS ===== */
+.compare-table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:0.85rem}
+.compare-table th{background:#f1f0eb;color:var(--text-primary);padding:0.7rem 0.6rem;text-align:left;cursor:pointer;user-select:none;border-bottom:2px solid var(--border-accent);white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:0.78rem}
+.compare-table th:hover{color:var(--accent-gold)}
+.compare-table th.sorted-asc::after{content:' ▲';color:var(--accent-gold)}
+.compare-table th.sorted-desc::after{content:' ▼';color:var(--accent-gold)}
+.compare-table td{padding:0.6rem;border-bottom:1px solid var(--border);color:var(--text-secondary)}
+.compare-table tr:hover td{background:rgba(0,0,0,0.02)}
+.compare-table .best{color:var(--accent-green);font-weight:700}
+.compare-table .warn{color:var(--accent-red)}
+.vs-box{display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;margin:1.5rem 0;align-items:start}
+.vs-card{background:#fff;border:1px solid var(--border);border-radius:8px;padding:1.2rem;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+.vs-card h4{color:var(--text-primary);font-size:0.95rem;margin-bottom:0.8rem}
+.vs-card li{color:var(--text-secondary);font-size:0.85rem;margin-bottom:0.4rem;line-height:1.6;list-style:none;padding-left:0}
+.vs-divider{display:flex;align-items:center;font-family:'JetBrains Mono',monospace;font-size:1.5rem;color:var(--accent-gold);font-weight:700}
+@media(max-width:600px){.vs-box{grid-template-columns:1fr}.vs-divider{justify-content:center}}
+.point-card{background:#fff;border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem;margin-bottom:0.8rem;border-left:3px solid var(--accent-gold);box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.point-card h4{color:var(--accent-gold);font-family:'JetBrains Mono',monospace;font-size:0.85rem;margin-bottom:0.4rem}
+.point-card p{font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin:0}
+.tv-badge{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:0.7rem;padding:0.15rem 0.5rem;border-radius:3px;font-weight:700}
+.tv-yes{background:rgba(46,236,138,0.15);color:var(--accent-green);border:1px solid rgba(46,236,138,0.3)}
+.tv-no{background:rgba(255,77,106,0.1);color:var(--text-muted);border:1px solid rgba(255,77,106,0.2)}
+.tv-tip{background:linear-gradient(135deg,#fef9ef,#fdf6e3);border:1px solid rgba(212,136,15,0.3);border-radius:8px;padding:1rem 1.2rem;margin:1rem 0}
+.tv-tip p{color:var(--text-secondary);font-size:0.88rem;margin:0}
+.tv-tip strong{color:var(--accent-gold)}
+.purpose-btns{display:flex;gap:0.5rem;flex-wrap:wrap;margin:1rem 0}
+.purpose-btn{font-size:0.82rem;padding:0.5rem 1rem;background:#fff;border:1px solid var(--border);border-radius:20px;color:var(--text-secondary);cursor:pointer;transition:all 0.2s;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+.purpose-btn.active,.purpose-btn:hover{color:#fff;border-color:var(--accent-gold);background:var(--accent-gold)}
+.highlight-row td{background:rgba(240,165,0,0.08)!important;border-left:3px solid var(--accent-gold)}
+.scalp-status{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:0.72rem;padding:0.15rem 0.5rem;border-radius:3px;font-weight:700}
+.scalp-ok{background:rgba(46,236,138,0.15);color:var(--accent-green);border:1px solid rgba(46,236,138,0.3)}
+.scalp-ng{background:rgba(255,77,106,0.15);color:var(--accent-red);border:1px solid rgba(255,77,106,0.3)}
+.scalp-unknown{background:rgba(255,224,102,0.1);color:var(--accent-gold);border:1px solid rgba(255,224,102,0.3)}
+
+/* ===== VISUAL ENHANCEMENTS ===== */
+.section:nth-child(even){background:#f1f0eb;border-radius:12px;padding:2.5rem 1.5rem;margin:1rem -1.5rem}
+.section-header{display:flex;align-items:center;gap:0.6rem;border-bottom:2px solid var(--accent-gold);padding-bottom:0.6rem}
+
+/* Animated bar chart */
+.bar-chart{display:flex;flex-direction:column;gap:0.6rem;margin:1.5rem 0}
+.bar-row{display:flex;align-items:center;gap:0.8rem}
+.bar-label{font-family:'JetBrains Mono',monospace;font-size:0.78rem;color:var(--text-secondary);width:120px;flex-shrink:0;text-align:right}
+.bar-track{flex:1;height:32px;background:rgba(0,0,0,0.05);border-radius:6px;overflow:hidden;position:relative}
+.bar-fill{height:100%;border-radius:6px;display:flex;align-items:center;padding-left:10px;font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:#fff;font-weight:700;transition:width 1.5s ease;width:0}
+.bar-fill.animated{width:var(--w)}
+.bar-fill.gold{background:linear-gradient(90deg,#d4880f,#f0a500)}
+.bar-fill.green{background:linear-gradient(90deg,#059669,#06a77d)}
+.bar-fill.red{background:linear-gradient(90deg,#dc2626,#e63946)}
+.bar-fill.blue{background:linear-gradient(90deg,#1d4ed8,#2176ff)}
+.bar-fill.purple{background:linear-gradient(90deg,#6d28d9,#7b61ff)}
+
+/* Gauge meter */
+.gauge-row{display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0;justify-content:center}
+.gauge{text-align:center;width:120px}
+.gauge-ring{width:80px;height:80px;border-radius:50%;margin:0 auto 0.5rem;position:relative;display:flex;align-items:center;justify-content:center}
+.gauge-ring::before{content:'';position:absolute;inset:4px;border-radius:50%;background:var(--bg-primary)}
+.gauge-val{position:relative;z-index:1;font-family:'JetBrains Mono',monospace;font-size:0.85rem;font-weight:700;color:var(--text-primary)}
+.gauge-name{font-size:0.75rem;color:var(--text-secondary);margin-top:0.3rem}
+
+/* Callout box */
+.callout{background:linear-gradient(135deg,#fef9ef,#fdf6e3);border:1px solid rgba(212,136,15,0.3);border-radius:10px;padding:1.2rem 1.5rem;margin:1.5rem 0;position:relative;overflow:hidden}
+.callout::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--accent-gold)}
+.callout h4{color:var(--accent-gold);font-family:'JetBrains Mono',monospace;font-size:0.85rem;margin-bottom:0.5rem}
+.callout p{color:var(--text-secondary);font-size:0.88rem;line-height:1.7;margin:0}
+.callout.red{background:linear-gradient(135deg,#fef2f2,#fde8e8);border-color:rgba(230,57,70,0.3)}
+.callout.red::before{background:var(--accent-red)}
+.callout.red h4{color:var(--accent-red)}
+.callout.green{background:linear-gradient(135deg,#ecfdf5,#d1fae5);border-color:rgba(6,167,125,0.3)}
+.callout.green::before{background:var(--accent-green)}
+.callout.green h4{color:var(--accent-green)}
+
+/* Animated number counter */
+.big-number{font-family:'JetBrains Mono',monospace;font-size:2.5rem;font-weight:700;text-align:center;margin:1rem 0}
+.big-number .num{color:var(--accent-gold)}
+.big-number .unit{font-size:1rem;color:var(--text-muted);margin-left:0.3rem}
+.big-number .label{display:block;font-size:0.78rem;color:var(--text-secondary);font-weight:400;margin-top:0.3rem}
+
+/* Number cards row */
+.num-cards{display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0;justify-content:center}
+.num-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:1.2rem;text-align:center;flex:1;min-width:140px;max-width:200px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.num-card .val{font-family:'JetBrains Mono',monospace;font-size:1.8rem;font-weight:700}
+.num-card .desc{font-size:0.78rem;color:var(--text-muted);margin-top:0.4rem}
+
+/* Flow diagram */
+.flow{display:flex;align-items:center;gap:0;flex-wrap:wrap;justify-content:center;margin:1.5rem 0}
+.flow-step{background:#fff;border:1px solid var(--border);border-radius:8px;padding:0.8rem 1rem;text-align:center;min-width:100px;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+.flow-step .icon{font-size:1.5rem;margin-bottom:0.3rem}
+.flow-step .text{font-size:0.78rem;color:var(--text-secondary)}
+.flow-arrow{color:var(--accent-gold);font-family:'JetBrains Mono',monospace;font-size:1.2rem;padding:0 0.5rem}
+@media(max-width:600px){.flow-arrow{transform:rotate(90deg);padding:0.3rem 0}}
+</style>
+<meta name="description" content="NISA口座はどこで開設すべき？楽天・SBI・au・マネックスをポイント還元・クレカ積立・生活圏で徹底比較。最適な証券会社が見つかる。">
+<link rel="canonical" href="https://marketpulse-daily.com/posts/20260331-column.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NISA口座の選び方 完全ガイド — MARKETZ">
+<meta property="og:description" content="楽天・SBI・au・マネックスをポイント還元・クレカ積立・生活圏で徹底比較。">
+<meta property="og:url" content="https://marketpulse-daily.com/posts/20260331-column.html">
+<meta property="og:site_name" content="MARKETZ">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-03-31T00:00:00+09:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="NISA口座の選び方 完全ガイド — MARKETZ">
+<meta name="twitter:description" content="国内vs海外、スプレッド・スワップ・ツール・スキャルピング対応を8社比較。">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"NISA口座の選び方 完全ガイド","datePublished":"2026-03-31T00:00:00+09:00","publisher":{"@type":"Organization","name":"MARKETZ"},"mainEntityOfPage":"https://marketpulse-daily.com/posts/20260331-column.html"}
+</script>
+</head>
+<body>
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-date">2026.03.31 — COLUMN</div>
+    <h1 class="hero-title">NISA口座の選び方<br>完全ガイド</h1>
+    <p class="hero-subtitle">楽天・SBI・au・マネックス — 生活圏×ポイント還元×クレカ積立で最適な証券会社を徹底比較</p>
+    <div class="hero-tags">
+      <span class="hero-tag">📝 コラム</span>
+      <span class="hero-tag">NISA</span>
+      <span class="hero-tag">初心者向け</span>
+      <span class="hero-tag">ポイント投資</span>
+      <span class="hero-tag">クレカ積立</span>
+    </div>
+  </div>
+</section>
+<nav class="sticky-nav">
+  <ul>
+    <li><a href="#nisa-basics">📋NISAとは</a></li>
+    <li><a href="#rakuten">🟥楽天</a></li>
+    <li><a href="#sbi">🟦SBI</a></li>
+    <li><a href="#au">🟧au</a></li>
+    <li><a href="#monex">🟩マネックス</a></li>
+    <li><a href="#creditcard">💳クレカ積立</a></li>
+    <li><a href="#holding-points">📊保有ポイント</a></li>
+    <li><a href="#recommend">🎯おすすめ</a></li>
+  </ul>
+</nav>
+<div class="container">
+
+<!-- ===== 導入 ===== -->
+<section class="section fade-in" style="padding-top:2rem">
+  <div class="callout" style="border:none;background:linear-gradient(135deg,rgba(240,165,0,0.06),rgba(240,165,0,0.02))">
+    <h4>📌 この記事でわかること</h4>
+    <ul style="list-style:none;padding:0;margin:0.8rem 0 0">
+      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary);border-bottom:1px solid rgba(0,0,0,0.05)">✅ 楽天・SBI・au・マネックスの<strong>クレカ積立ポイント還元率</strong>を完全比較</li>
+      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary);border-bottom:1px solid rgba(0,0,0,0.05)">✅ あなたの<strong>生活圏（楽天/Vポイント/Ponta/dポイント）</strong>に最適な証券会社がわかる</li>
+      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary)">✅ <strong>投信保有ポイント・銀行連携・SPU</strong>までフル活用する方法がわかる</li>
+    </ul>
+  </div>
+  <h3 style="font-size:1.1rem;font-weight:700;color:var(--text-primary);margin:2rem 0 1rem">📖 目次</h3>
+  <nav style="background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:10px;padding:1.2rem 1.5rem;box-shadow:0 1px 4px rgba(0,0,0,0.04)">
+    <ol style="margin:0;padding-left:1.2rem;list-style:decimal;color:var(--text-secondary);font-size:0.9rem;line-height:2.2">
+      <li><a href="#nisa-basics" style="color:var(--text-primary);text-decoration:none">新NISAの基本 — 年間360万円・生涯1,800万円の非課税枠</a></li>
+      <li><a href="#rakuten" style="color:var(--text-primary);text-decoration:none">楽天証券 — 楽天経済圏・楽天ポイント・SPU</a></li>
+      <li><a href="#sbi" style="color:var(--text-primary);text-decoration:none">SBI証券 — Olive・Vポイント・SBI新生銀行</a></li>
+      <li><a href="#au" style="color:var(--text-primary);text-decoration:none">三菱UFJ eスマート証券 — au経済圏・Pontaポイント</a></li>
+      <li><a href="#monex" style="color:var(--text-primary);text-decoration:none">マネックス証券 — ドコモ・dポイント・dカード</a></li>
+      <li><a href="#creditcard" style="color:var(--text-primary);text-decoration:none">クレカ積立ポイント還元率 徹底比較</a></li>
+      <li><a href="#holding-points" style="color:var(--text-primary);text-decoration:none">投信保有ポイント比較</a></li>
+      <li><a href="#recommend" style="color:var(--text-primary);text-decoration:none">生活圏別おすすめ口座</a></li>
+    </ol>
+  </nav>
+</section>
+
+
+<!-- ===== Section 1: NISAの基本 ===== -->
+<section id="nisa-basics" class="section fade-in">
+  <h2 class="section-header">📋 新NISAの基本 — 年間360万円・生涯1,800万円の非課税枠</h2>
+
+  <img src="../images/column/53371335_MotionElements_finance-banking-investment-and-money-management-en.jpg" alt="資産運用" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+
+  <div class="num-cards">
+    <div class="num-card"><div class="val" style="color:var(--accent-gold)">120<span style="font-size:0.8rem">万円</span></div><div class="desc">つみたて投資枠<br>年間上限</div></div>
+    <div class="num-card"><div class="val" style="color:#2176ff">240<span style="font-size:0.8rem">万円</span></div><div class="desc">成長投資枠<br>年間上限</div></div>
+    <div class="num-card"><div class="val" style="color:var(--accent-green)">360<span style="font-size:0.8rem">万円</span></div><div class="desc">合計<br>年間上限</div></div>
+    <div class="num-card"><div class="val" style="color:var(--accent-red)">1,800<span style="font-size:0.8rem">万円</span></div><div class="desc">生涯<br>非課税保有限度額</div></div>
+  </div>
+
+  <div class="callout green">
+    <h4>💡 NISAの最大のメリット</h4>
+    <p>運用益（値上がり益・配当金）が<strong>すべて非課税</strong>。通常なら約20%の税金がゼロに。非課税保有期間は<strong>無期限</strong>。売却すれば翌年に枠が復活し再利用可能。2026年度改正で未成年NISA（年60万円・上限600万円）も開始。</p>
+  </div>
+
+  <div class="callout">
+    <h4>🏦 NISA口座はどこで開設する？ — 答えは「あなたの生活圏」</h4>
+    <p>NISA口座は<strong>1人1口座</strong>。どこで開設しても非課税の仕組みは同じです。差がつくのは<strong>ポイント還元・クレカ積立・銀行連携</strong>。普段使っているポイント経済圏で選ぶのが最も合理的です。</p>
+  </div>
+</section>
+
+<!-- ===== Section 2: 楽天証券 ===== -->
+<section id="rakuten" class="section fade-in">
+  <h2 class="section-header">🟥 楽天証券 — 楽天経済圏ユーザーの最適解</h2>
+
+  <img src="../images/column/53556061_MotionElements_woman-managing-her-finances-on-smartphone-app-che.jpg" alt="スマホで資産管理" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+
+  <div class="callout">
+    <h4>こんな人におすすめ</h4>
+    <p>楽天カードで買い物 / 楽天市場をよく使う / 楽天モバイル契約中 / 楽天ポイントを貯めている</p>
+  </div>
+
+  <div class="news-card blue" style="border-left-color:#bf0000">
+    <div class="news-title">クレカ積立ポイント還元</div>
+    <div class="news-body">
+      <div style="overflow-x:auto"><table class="compare-table">
+        <thead><tr><th>カード</th><th>年会費</th><th>還元率</th><th>月10万で年間</th></tr></thead>
+        <tbody>
+          <tr><td>楽天カード</td><td class="best">無料</td><td>0.5%</td><td>6,000pt</td></tr>
+          <tr><td>楽天ゴールド</td><td>2,200円</td><td>0.75%</td><td>9,000pt</td></tr>
+          <tr><td>楽天プレミアム</td><td>11,000円</td><td>1.0%</td><td>12,000pt</td></tr>
+          <tr><td>楽天ブラック</td><td>33,000円</td><td class="best">2.0%</td><td class="best">24,000pt</td></tr>
+        </tbody>
+      </table></div>
+      <p style="font-size:0.82rem;color:var(--text-muted);margin-top:0.5rem">※ 代行手数料0.4%未満のファンド（eMAXIS Slim等）の場合。楽天キャッシュ併用で月15万円まで還元対象。</p>
+    </div>
+  </div>
+
+  <div class="point-card"><h4>🛒 SPU（楽天市場ポイントアップ）</h4><p>楽天証券でポイント投資（月3万円以上）→ SPU<strong>+0.5倍</strong>。楽天カード+楽天銀行+楽天モバイルと合わせて<strong>SPU最大18倍</strong>。楽天市場でのお買い物がどんどんお得に。</p></div>
+  <div class="point-card"><h4>🏦 楽天銀行マネーブリッジ</h4><p>楽天証券×楽天銀行を連携すると普通預金金利が<strong>最大年0.28%</strong>にアップ。資金移動も自動で手間なし。</p></div>
+  <div class="point-card"><h4>📊 投信保有ポイント</h4><p>対象は楽天投信投資顧問の<strong>6銘柄のみ</strong>。eMAXIS Slimシリーズ等は対象外。ここがSBI証券との最大の差。</p></div>
+</section>
+
+<!-- ===== Section 3: SBI証券 ===== -->
+<section id="sbi" class="section fade-in">
+  <h2 class="section-header">🟦 SBI証券 — Vポイント経済圏・投信保有ポイント最強</h2>
+
+  <img src="../images/column/53376836_MotionElements_finance-technology-fintech-for-digital-banking-and.jpg" alt="フィンテック" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+
+  <div class="callout">
+    <h4>こんな人におすすめ</h4>
+    <p>三井住友カード / Olive利用 / Vポイントを貯めている / 住信SBIネット銀行 or SBI新生銀行を使っている</p>
+  </div>
+
+  <div class="news-card blue" style="border-left-color:#2176ff">
+    <div class="news-title">クレカ積立ポイント還元</div>
+    <div class="news-body">
+      <div style="overflow-x:auto"><table class="compare-table">
+        <thead><tr><th>カード</th><th>年会費</th><th>還元率</th><th>月10万で年間</th></tr></thead>
+        <tbody>
+          <tr><td>三井住友カード(NL)</td><td class="best">無料</td><td>0.5%</td><td>6,000pt</td></tr>
+          <tr><td>三井住友ゴールド(NL)</td><td>5,500円※</td><td>1.0%</td><td>12,000pt</td></tr>
+          <tr><td>プラチナプリファード</td><td>33,000円</td><td>最大3.0%</td><td class="best">最大36,000pt</td></tr>
+          <tr><td>Visa Infinite</td><td>99,000円</td><td class="best">最大4.0%</td><td class="best">最大48,000pt</td></tr>
+        </tbody>
+      </table></div>
+      <p style="font-size:0.82rem;color:var(--text-muted);margin-top:0.5rem">※ ゴールドは年100万利用で翌年以降永年無料。Olive限定上乗せプラン（2026年4月〜）で+0.5%も。</p>
+    </div>
+  </div>
+
+  <div class="point-card"><h4>📊 投信マイレージ（保有ポイント）</h4><p>保有残高に応じて年率<strong>最大0.25%</strong>のVポイント付与。eMAXIS Slimシリーズも<strong>一律0.05%</strong>が付く。<strong>ほぼ全銘柄が対象</strong>で、楽天証券（6銘柄のみ）との最大の差。</p></div>
+  <div class="point-card"><h4>🏦 SBI新生銀行 SBIハイパー預金</h4><p>連携で普通預金金利<strong>年0.50%</strong>。預金残高がそのままSBI証券の買付余力に自動反映。</p></div>
+  <div class="point-card"><h4>🏦 住信SBIネット銀行 SBIハイブリッド預金</h4><p>金利<strong>年0.31%</strong>。アプリATMで入出金手数料無料。2026年8月に「ドコモSMTBネット銀行」に社名変更予定。SBI証券との連携は維持。</p></div>
+  <div class="point-card"><h4>🎯 Vポイントアッププログラム</h4><p>NISA口座の投信保有200万円以上でコンビニ・飲食店の還元率<strong>+0.5%</strong>。Olive登録なら100万円以上でさらに<strong>+0.5%</strong>。</p></div>
+</section>
+
+<!-- ===== Section 4: au経済圏 ===== -->
+<section id="au" class="section fade-in">
+  <h2 class="section-header">🟧 三菱UFJ eスマート証券 — au経済圏・Pontaポイント</h2>
+
+  <img src="../images/column/21473076_MotionElements_global-rate-currency-exchange-finance-trade-price.jpg" alt="金融" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+
+  <div class="callout">
+    <h4>こんな人におすすめ</h4>
+    <p>auスマホ契約 / Pontaポイントを貯めている / au PAYカードを持っている / auじぶん銀行を使っている</p>
+  </div>
+
+  <div class="news-card blue" style="border-left-color:#e07b39">
+    <div class="news-title">クレカ積立ポイント還元</div>
+    <div class="news-body">
+      <div style="overflow-x:auto"><table class="compare-table">
+        <thead><tr><th>カード</th><th>年会費</th><th>還元率</th><th>月10万で年間</th></tr></thead>
+        <tbody>
+          <tr><td>au PAYカード</td><td class="best">無料</td><td>0.5%</td><td>6,000pt</td></tr>
+          <tr><td>au PAYゴールド</td><td>11,000円</td><td>1.0%</td><td>12,000pt</td></tr>
+          <tr><td>au PAYゴールド<br>+ auマネ活プラン</td><td>—</td><td class="best">最大3.0%<br>(12ヶ月限定)</td><td class="best">最大36,000pt</td></tr>
+        </tbody>
+      </table></div>
+      <p style="font-size:0.82rem;color:var(--text-muted);margin-top:0.5rem">※ auマネ活プラン加入+NISA口座+au PAYゴールドで12ヶ月間最大3%、13ヶ月目以降は2%。</p>
+    </div>
+  </div>
+
+  <div class="point-card"><h4>🎁 Pontaポイント投資</h4><p>1ポイント＝1円で投資信託の購入に利用可能。NISA口座でも使える。100円から購入可能。</p></div>
+  <div class="point-card"><h4>📊 資産形成プログラム</h4><p>投信保有残高に応じて年率<strong>最大0.24%</strong>のPontaポイント。100万円保有で月100ポイント。</p></div>
+</section>
+
+<!-- ===== Section 5: マネックス証券 ===== -->
+<section id="monex" class="section fade-in">
+  <h2 class="section-header">🟩 マネックス証券 — ドコモ経済圏・dポイント最強還元</h2>
+
+  <img src="../images/column/24654615_MotionElements_finance-and-business-investment-digital-technology.jpg" alt="デジタル投資" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+
+  <div class="callout">
+    <h4>こんな人におすすめ</h4>
+    <p>ドコモスマホ契約 / dポイントを貯めている / dカードを持っている / d払いをよく使う</p>
+  </div>
+
+  <div class="news-card blue" style="border-left-color:var(--accent-green)">
+    <div class="news-title">クレカ積立ポイント還元</div>
+    <div class="news-body">
+      <div style="overflow-x:auto"><table class="compare-table">
+        <thead><tr><th>カード</th><th>年会費</th><th>NISA還元率</th><th>月10万で年間</th></tr></thead>
+        <tbody>
+          <tr><td>dカード</td><td class="best">無料</td><td class="best">1.0%</td><td class="best">12,000pt</td></tr>
+          <tr><td>dカード GOLD / GOLD U</td><td>11,000円 / 5,500円</td><td class="best">1.1%</td><td class="best">13,200pt</td></tr>
+          <tr><td>dカード PLATINUM</td><td>29,700円</td><td class="best">3.1%</td><td class="best">37,200pt</td></tr>
+        </tbody>
+      </table></div>
+      <p style="font-size:0.82rem;color:var(--text-muted);margin-top:0.5rem">※ NISA口座なら積立額に関わらず一律の還元率。ドコモポイ活プランで+1.0%（最大4.1%）。d払い併用で月15万円まで。</p>
+    </div>
+  </div>
+
+  <div class="callout green">
+    <h4>💡 年会費無料カードで最高還元率</h4>
+    <p>dカード（年会費無料）のNISA口座クレカ積立還元率は<strong>1.0%</strong>。他社の年会費無料カード（0.5%）の<strong>2倍</strong>。年会費を払わずに最も効率よくポイントを貯められる。</p>
+  </div>
+
+  <div class="point-card"><h4>📊 投信保有ポイント</h4><p>dアカウント連携で保有残高に応じて<strong>最大0.26%</strong>のdポイント。SBI証券と同水準の高還元。</p></div>
+  <div class="point-card"><h4>📱 d払い積立</h4><p>dカード月10万円 + d払い月5万円 = 合計<strong>月15万円</strong>までキャッシュレス積立可能。</p></div>
+</section>
+
+<!-- ===== Section 6: クレカ積立比較 ===== -->
+<section id="creditcard" class="section fade-in">
+  <h2 class="section-header">💳 クレカ積立ポイント還元率 — 年会費無料カード比較</h2>
+
+  <img src="../images/column/36353127_MotionElements_abstract-finance-charts-with-stock-market-data-and-jpeg.jpg" alt="金融データ" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+
+  <div class="callout">
+    <h4>📊 年会費無料カードで月10万円積立した場合</h4>
+    <p>最もコストゼロで効率的にポイントが貯まるのはどこか？</p>
+  </div>
+  <div class="bar-chart">
+    <div class="bar-row"><div class="bar-label">マネックス×dカード</div><div class="bar-track"><div class="bar-fill gold" style="--w:80%">1.0% → 年12,000pt</div></div></div>
+    <div class="bar-row"><div class="bar-label">楽天×楽天カード</div><div class="bar-track"><div class="bar-fill blue" style="--w:40%">0.5% → 年6,000pt</div></div></div>
+    <div class="bar-row"><div class="bar-label">SBI×三井住友(NL)</div><div class="bar-track"><div class="bar-fill blue" style="--w:40%">0.5% → 年6,000pt</div></div></div>
+    <div class="bar-row"><div class="bar-label">au×au PAYカード</div><div class="bar-track"><div class="bar-fill blue" style="--w:40%">0.5% → 年6,000pt</div></div></div>
+  </div>
+
+  <div class="callout green">
+    <h4>結論: 年会費無料カードならマネックス×dカードが2倍お得</h4>
+    <p>NISA口座での積立なら、dカード（無料）の<strong>1.0%</strong>は他社の0.5%の2倍。10年で<strong>6万ポイントの差</strong>になります。ただし生活圏で楽天/Vポイントを使うなら、トータルのメリットはそちらが上回る場合も。</p>
+  </div>
+</section>
+
+<!-- ===== Section 7: 投信保有ポイント ===== -->
+<section id="holding-points" class="section fade-in">
+  <h2 class="section-header">📊 投信保有ポイント比較 — 長期運用で差がつく</h2>
+
+  <img src="../images/column/53663658_MotionElements_gold-bars-stacking-up-representing-investment-weal.jpg" alt="資産蓄積" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+
+  <div style="overflow-x:auto"><table class="compare-table" id="holding-table">
+    <thead><tr>
+      <th onclick="sortTable(this.closest('table'),0,'text')">証券会社</th>
+      <th onclick="sortTable(this.closest('table'),1,'text')">対象銘柄</th>
+      <th onclick="sortTable(this.closest('table'),2,'text')">eMAXIS Slim</th>
+      <th onclick="sortTable(this.closest('table'),3,'text')">最大付与率</th>
+    </tr></thead>
+    <tbody>
+      <tr><td>SBI証券</td><td class="best">ほぼ全銘柄</td><td class="best">0.05%</td><td class="best">0.25%</td></tr>
+      <tr><td>マネックス証券</td><td>多数</td><td>0.03%</td><td>0.26%</td></tr>
+      <tr><td>三菱UFJ eスマート</td><td>多数</td><td>—</td><td>0.24%</td></tr>
+      <tr><td>楽天証券</td><td class="warn">6銘柄のみ</td><td class="warn">対象外</td><td>—</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="callout">
+    <h4>💡 長期保有なら投信マイレージが効く</h4>
+    <p>月10万円を20年積み立てると保有残高は約2,400万円（年利5%想定）。SBI証券の投信マイレージ（0.05%）なら年間<strong>約12,000ポイント</strong>。楽天証券は対象外。<strong>20年で約24万ポイントの差</strong>。</p>
+  </div>
+</section>
+
+<!-- ===== Section 8: 生活圏別おすすめ ===== -->
+<section id="recommend" class="section fade-in">
+  <h2 class="section-header">🎯 生活圏別おすすめ証券会社</h2>
+
+  <img src="../images/column/53349027_MotionElements_entrepreneur-global-ceo-speaking-at-a-professional.jpg" alt="選択" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+
+  <div class="purpose-btns">
+    <button class="purpose-btn" onclick="filterPurpose('rakuten',this)">🟥 楽天ポイント</button>
+    <button class="purpose-btn" onclick="filterPurpose('vpoint',this)">🟦 Vポイント</button>
+    <button class="purpose-btn" onclick="filterPurpose('ponta',this)">🟧 Pontaポイント</button>
+    <button class="purpose-btn" onclick="filterPurpose('dpoint',this)">🟩 dポイント</button>
+  </div>
+
+  <div style="overflow-x:auto"><table class="compare-table" id="summary-table">
+    <thead><tr>
+      <th>証券会社</th>
+      <th>ポイント</th>
+      <th>クレカ還元(無料)</th>
+      <th>投信保有pt</th>
+      <th>銀行金利</th>
+      <th>公式</th>
+    </tr></thead>
+    <tbody>
+      <tr data-purpose="rakuten"><td>楽天証券</td><td>楽天pt</td><td>0.5%</td><td class="warn">6銘柄のみ</td><td>0.28%</td><td><a href="https://www.rakuten-sec.co.jp/" rel="nofollow" target="_blank" style="color:var(--accent-gold)">公式</a></td></tr>
+      <tr data-purpose="vpoint"><td>SBI証券</td><td>Vポイント</td><td>0.5%</td><td class="best">最大0.25%</td><td class="best">0.50%</td><td><a href="https://www.sbisec.co.jp/" rel="nofollow" target="_blank" style="color:var(--accent-gold)">公式</a></td></tr>
+      <tr data-purpose="ponta"><td>三菱UFJ eスマート</td><td>Pontapt</td><td>0.5%</td><td>最大0.24%</td><td>—</td><td><a href="https://kabu.com/" rel="nofollow" target="_blank" style="color:var(--accent-gold)">公式</a></td></tr>
+      <tr data-purpose="dpoint"><td>マネックス証券</td><td>dポイント</td><td class="best">1.0%</td><td>最大0.26%</td><td>—</td><td><a href="https://www.monex.co.jp/" rel="nofollow" target="_blank" style="color:var(--accent-gold)">公式</a></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="news-card green" style="border-left-color:#bf0000"><div class="news-title">🟥 楽天ポイント派 → 楽天証券</div><div class="news-body">楽天市場SPU+0.5倍、楽天銀行マネーブリッジで金利0.28%、楽天キャッシュ併用で月15万還元。<strong>楽天経済圏のトータルメリットが最大。</strong></div></div>
+  <div class="news-card blue" style="border-left-color:#2176ff"><div class="news-title">🟦 Vポイント派 → SBI証券</div><div class="news-body">投信マイレージで長期保有ポイント最強。Olive連携で+0.5%上乗せ。SBI新生銀行で金利0.50%。<strong>長期×ポイントの最大化。</strong></div></div>
+  <div class="news-card orange" style="border-left-color:#e07b39"><div class="news-title">🟧 Pontaポイント派 → 三菱UFJ eスマート証券</div><div class="news-body">auマネ活プランで12ヶ月間最大3%還元。Pontaポイントで投信購入可能。<strong>auユーザーの最適解。</strong></div></div>
+  <div class="news-card green" style="border-left-color:var(--accent-green)"><div class="news-title">🟩 dポイント派 → マネックス証券</div><div class="news-body">年会費無料dカードで1.0%還元は業界最高。ドコモポイ活プランで最大4.1%。<strong>コストゼロで最高還元率。</strong></div></div>
+</section>
+
+<!-- ===== 免責事項 ===== -->
+<div class="disclaimer fade-in">
+  <div class="disclaimer-title">⚠️ 免責事項</div>
+  本記事は情報提供のみを目的としており、特定の金融商品の購入や証券口座の開設を推奨するものではありません。掲載されている情報は2026年3月時点のものであり、ポイント還元率・キャンペーン内容・手数料等は変更される場合があります。最新情報は各社公式サイトでご確認ください。投資判断はご自身の責任で行ってください。<br><br>
+  参照元: 楽天証券公式、SBI証券公式、三菱UFJ eスマート証券公式、マネックス証券公式、三井住友カード公式、金融庁NISA特設サイト、ザイ・オンライン、マイベスト等の公開情報を元に筆者が独自に再構成。
+</div>
+
+<footer class="footer">
+  <p>MARKETZ — <a href="https://marketpulse-daily.com/">ホームに戻る</a></p>
+  <p>© 2026 MARKETZ. All rights reserved.</p>
+</footer>
+
+</div>
+<div class="fab-group">
+  <a href="https://marketpulse-daily.com/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
+  <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
+</div>
+<script>
+const observer=new IntersectionObserver(e=>{e.forEach(e=>{
+  if(e.isIntersecting){
+    e.target.classList.add('visible');
+    // Animate bar fills when section becomes visible
+    e.target.querySelectorAll('.bar-fill').forEach(bar=>{bar.classList.add('animated')});
+  }
+})},{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+const sections=document.querySelectorAll('section[id]');
+const navLinks=document.querySelectorAll('.sticky-nav a');
+window.addEventListener('scroll',()=>{
+  let current='';
+  sections.forEach(s=>{if(window.scrollY>=s.offsetTop-100)current=s.getAttribute('id')});
+  navLinks.forEach(a=>{a.classList.remove('active');if(a.getAttribute('href')==='#'+current)a.classList.add('active')});
+  const fg=document.querySelector('.fab-group');
+  if(fg){fg.style.display=window.scrollY>600?'flex':'none'}
+});
+function sortTable(table,col,type){
+  const tbody=table.querySelector('tbody');const rows=Array.from(tbody.querySelectorAll('tr'));
+  const th=table.querySelectorAll('th')[col];const asc=!th.classList.contains('sorted-asc');
+  table.querySelectorAll('th').forEach(h=>h.classList.remove('sorted-asc','sorted-desc'));
+  th.classList.add(asc?'sorted-asc':'sorted-desc');
+  rows.sort((a,b)=>{let va=a.cells[col].textContent.trim(),vb=b.cells[col].textContent.trim();
+    if(type==='num'){va=parseFloat(va.replace(/[^0-9.\-]/g,''))||999;vb=parseFloat(vb.replace(/[^0-9.\-]/g,''))||999}
+    return va<vb?(asc?-1:1):va>vb?(asc?1:-1):0});
+  rows.forEach(r=>tbody.appendChild(r));
+}
+function switchTab(group,id){
+  document.querySelectorAll('[data-tab-group="'+group+'"] .tab-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.tab-content[data-group="'+group+'"]').forEach(c=>c.classList.remove('active'));
+  document.querySelector('[data-tab-group="'+group+'"] [data-tab="'+id+'"]').classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+function filterPurpose(purpose,el){
+  document.querySelectorAll('.purpose-btn').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  document.querySelectorAll('#summary-table tbody tr').forEach(r=>{
+    r.classList.remove('highlight-row');
+    if(r.dataset.purpose&&r.dataset.purpose.includes(purpose))r.classList.add('highlight-row');
+  });
+}
+</script>
+</body>
+</html>
