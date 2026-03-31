@@ -14,12 +14,12 @@
 6. git add -A → commit → push
 
 ## 必須カテゴリ
-1. 為替: USD/JPY, AUD/JPY, GBP/JPY
+1. 為替: USD/JPY, EUR/JPY, GBP/JPY, AUD/JPY
 2. コモディティ: Gold(XAU/USD), 原油(Brent/WTI)
 3. 暗号資産: Bitcoin(BTC/USD)
 4. 株式指数: S&P500, NASDAQ, 日経225
 5. 地政学: 中央銀行政策、紛争、貿易
-6. 日本テクノロジー: 日本企業のイノベーション
+6. 日本テクノロジー: 日本企業のイノベーション（※日本語ソースを優先して確認）
 7. 共通ニュース
 
 ## 記事HTML必須要件
