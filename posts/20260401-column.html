@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- A8.net Link Manager -->
+<script src="//statics.a8.net/a8link/a8linkmgr.js"></script>
+<script>
+  a8linkmgr({
+    "config_id": "3FffsI9Y9VCBqU9ikTQJ"
+  });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KFT35KZZVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KFT35KZZVC');
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原油価格はなぜ上がるのか — 仕組みから読み解く2026年の原油市場完全ガイド | MARKETZ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #f8f7f4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0efe8;
+  --text-primary: #1a1a2e;
+  --text-secondary: #3d3d56;
+  --text-muted: #7a7a8e;
+  --accent-red: #e63946;
+  --accent-green: #06a77d;
+  --accent-gold: #d4880f;
+  --accent-blue: #2176ff;
+  --accent-purple: #7b61ff;
+  --accent-orange: #e07b39;
+  --border: rgba(0,0,0,0.1);
+  --border-accent: rgba(0,0,0,0.18);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.2rem; }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridSlide 20s linear infinite;
+}
+@keyframes gridSlide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(60px, 60px); }
+}
+.hero-content { position: relative; z-index: 1; padding: 2rem 1rem; }
+.hero-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: #ffe066;
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
+}
+.hero-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+.hero-subtitle {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto; margin-right: auto;
+}
+.hero-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+.hero-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: #ffffff;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+}
+.hero-tag.alert {
+  border-color: var(--accent-red);
+  background: rgba(255,77,106,0.12);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+/* ===== STICKY NAV ===== */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+.sticky-nav ul {
+  display: flex; list-style: none;
+  max-width: 900px; margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+  gap: 0;
+}
+.sticky-nav a {
+  display: block;
+  padding: 0.75rem 0.8rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.sticky-nav a:hover, .sticky-nav a.active {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+  background: rgba(0,0,0,0.04);
+}
+
+/* ===== SECTION ===== */
+.section { padding: 3rem 0; }
+.section-header {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-accent);
+}
+
+/* ===== PRICE STRIP ===== */
+.price-strip {
+  display: flex; flex-wrap: wrap; gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.price-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  flex: 1 1 140px;
+  min-width: 130px;
+}
+.price-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+.price-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+.price-change {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 0.15rem;
+}
+.price-change.up { color: var(--accent-green); }
+.price-change.down { color: var(--accent-red); }
+
+/* ===== NEWS CARD ===== */
+.news-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s;
+  border-left: 3px solid transparent;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.news-card:hover { background: var(--bg-card-hover); box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+.news-card.blue { border-left-color: var(--accent-blue); }
+.news-card.red { border-left-color: var(--accent-red); }
+.news-card.gold { border-left-color: var(--accent-gold); }
+.news-card.green { border-left-color: var(--accent-green); }
+.news-card.purple { border-left-color: var(--accent-purple); }
+.news-card.orange { border-left-color: var(--accent-orange); }
+
+.news-head { margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.news-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+}
+.badge-fx { background: rgba(86,204,255,0.2); color: var(--accent-blue); border: 1px solid rgba(86,204,255,0.3); }
+.badge-commodity { background: rgba(255,224,102,0.2); color: var(--accent-gold); border: 1px solid rgba(255,224,102,0.3); }
+.badge-crypto { background: rgba(201,164,255,0.2); color: var(--accent-purple); border: 1px solid rgba(201,164,255,0.3); }
+.badge-stock { background: rgba(46,236,138,0.2); color: var(--accent-green); border: 1px solid rgba(46,236,138,0.3); }
+.badge-geo { background: rgba(255,77,106,0.2); color: var(--accent-red); border: 1px solid rgba(255,77,106,0.3); }
+.badge-tech { background: rgba(255,171,48,0.2); color: var(--accent-orange); border: 1px solid rgba(255,171,48,0.3); }
+
+.news-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+.news-body {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.news-source {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+
+/* ===== ANALYSIS ===== */
+.analysis-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.analysis-pair { margin-bottom: 1.5rem; }
+.analysis-pair:last-child { margin-bottom: 0; }
+.pair-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+.pair-direction {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+.dir-up { background: rgba(46,236,138,0.15); color: var(--accent-green); border: 1px solid rgba(46,236,138,0.3); }
+.dir-down { background: rgba(255,77,106,0.15); color: var(--accent-red); border: 1px solid rgba(255,77,106,0.3); }
+.dir-neutral { background: rgba(255,224,102,0.15); color: var(--accent-gold); border: 1px solid rgba(255,224,102,0.3); }
+.pair-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.pair-text strong { color: var(--text-primary); }
+
+/* ===== DISCLAIMER ===== */
+.disclaimer {
+  background: #fef2f2;
+  border: 2px solid var(--accent-red);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin: 2rem 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.disclaimer-title {
+  color: var(--accent-red);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== FADE IN ===== */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+.footer a { color: var(--accent-gold); text-decoration: none; }
+
+/* ===== FAB BUTTONS ===== */
+.fab-group {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  display: none; flex-direction: column; gap: 0.5rem;
+  z-index: 99;
+}
+.fab-btn {
+  width: 44px; height: 44px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.fab-btn:hover { background: var(--bg-card-hover); }
+.fab-home { font-size: 1rem; }
+
+@media (max-width: 600px) {
+  .price-card { flex: 1 1 100%; }
+  .sticky-nav a { font-size: 0.75rem; padding: 0.6rem 0.5rem; }
+}
+/* ===== COLUMN EXTRAS ===== */
+.compare-table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:0.85rem}
+.compare-table th{background:#f1f0eb;color:var(--text-primary);padding:0.7rem 0.6rem;text-align:left;cursor:pointer;user-select:none;border-bottom:2px solid var(--border-accent);white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:0.78rem}
+.compare-table th:hover{color:var(--accent-gold)}
+.compare-table th.sorted-asc::after{content:' ▲';color:var(--accent-gold)}
+.compare-table th.sorted-desc::after{content:' ▼';color:var(--accent-gold)}
+.compare-table td{padding:0.6rem;border-bottom:1px solid var(--border);color:var(--text-secondary)}
+.compare-table tr:hover td{background:rgba(0,0,0,0.02)}
+.compare-table .best{color:var(--accent-green);font-weight:700}
+.compare-table .warn{color:var(--accent-red)}
+.vs-box{display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;margin:1.5rem 0;align-items:start}
+.vs-card{background:#fff;border:1px solid var(--border);border-radius:8px;padding:1.2rem;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+.vs-card h4{color:var(--text-primary);font-size:0.95rem;margin-bottom:0.8rem}
+.vs-card li{color:var(--text-secondary);font-size:0.85rem;margin-bottom:0.4rem;line-height:1.6;list-style:none;padding-left:0}
+.vs-divider{display:flex;align-items:center;font-family:'JetBrains Mono',monospace;font-size:1.5rem;color:var(--accent-gold);font-weight:700}
+@media(max-width:600px){.vs-box{grid-template-columns:1fr}.vs-divider{justify-content:center}}
+.point-card{background:#fff;border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem;margin-bottom:0.8rem;border-left:3px solid var(--accent-gold);box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.point-card h4{color:var(--accent-gold);font-family:'JetBrains Mono',monospace;font-size:0.85rem;margin-bottom:0.4rem}
+.point-card p{font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin:0}
+.tv-badge{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:0.7rem;padding:0.15rem 0.5rem;border-radius:3px;font-weight:700}
+.tv-yes{background:rgba(46,236,138,0.15);color:var(--accent-green);border:1px solid rgba(46,236,138,0.3)}
+.tv-no{background:rgba(255,77,106,0.1);color:var(--text-muted);border:1px solid rgba(255,77,106,0.2)}
+.tv-tip{background:linear-gradient(135deg,#fef9ef,#fdf6e3);border:1px solid rgba(212,136,15,0.3);border-radius:8px;padding:1rem 1.2rem;margin:1rem 0}
+.tv-tip p{color:var(--text-secondary);font-size:0.88rem;margin:0}
+.tv-tip strong{color:var(--accent-gold)}
+.purpose-btns{display:flex;gap:0.5rem;flex-wrap:wrap;margin:1rem 0}
+.purpose-btn{font-size:0.82rem;padding:0.5rem 1rem;background:#fff;border:1px solid var(--border);border-radius:20px;color:var(--text-secondary);cursor:pointer;transition:all 0.2s;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+.purpose-btn.active,.purpose-btn:hover{color:#fff;border-color:var(--accent-gold);background:var(--accent-gold)}
+.highlight-row td{background:rgba(240,165,0,0.08)!important;border-left:3px solid var(--accent-gold)}
+.scalp-status{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:0.72rem;padding:0.15rem 0.5rem;border-radius:3px;font-weight:700}
+.scalp-ok{background:rgba(46,236,138,0.15);color:var(--accent-green);border:1px solid rgba(46,236,138,0.3)}
+.scalp-ng{background:rgba(255,77,106,0.15);color:var(--accent-red);border:1px solid rgba(255,77,106,0.3)}
+.scalp-unknown{background:rgba(255,224,102,0.1);color:var(--accent-gold);border:1px solid rgba(255,224,102,0.3)}
+
+/* ===== VISUAL ENHANCEMENTS ===== */
+.section:nth-child(even){background:#f1f0eb;border-radius:12px;padding:2.5rem 1.5rem;margin:1rem -1.5rem}
+.section-header{display:flex;align-items:center;gap:0.6rem;border-bottom:2px solid var(--accent-gold);padding-bottom:0.6rem}
+
+/* Animated bar chart */
+.bar-chart{display:flex;flex-direction:column;gap:0.6rem;margin:1.5rem 0}
+.bar-row{display:flex;align-items:center;gap:0.8rem}
+.bar-label{font-family:'JetBrains Mono',monospace;font-size:0.78rem;color:var(--text-secondary);width:120px;flex-shrink:0;text-align:right}
+.bar-track{flex:1;height:32px;background:rgba(0,0,0,0.05);border-radius:6px;overflow:hidden;position:relative}
+.bar-fill{height:100%;border-radius:6px;display:flex;align-items:center;padding-left:10px;font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:#fff;font-weight:700;transition:width 1.5s ease;width:0}
+.bar-fill.animated{width:var(--w)}
+.bar-fill.gold{background:linear-gradient(90deg,#d4880f,#f0a500)}
+.bar-fill.green{background:linear-gradient(90deg,#059669,#06a77d)}
+.bar-fill.red{background:linear-gradient(90deg,#dc2626,#e63946)}
+.bar-fill.blue{background:linear-gradient(90deg,#1d4ed8,#2176ff)}
+.bar-fill.purple{background:linear-gradient(90deg,#6d28d9,#7b61ff)}
+
+/* Gauge meter */
+.gauge-row{display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0;justify-content:center}
+.gauge{text-align:center;width:120px}
+.gauge-ring{width:80px;height:80px;border-radius:50%;margin:0 auto 0.5rem;position:relative;display:flex;align-items:center;justify-content:center}
+.gauge-ring::before{content:'';position:absolute;inset:4px;border-radius:50%;background:var(--bg-primary)}
+.gauge-val{position:relative;z-index:1;font-family:'JetBrains Mono',monospace;font-size:0.85rem;font-weight:700;color:var(--text-primary)}
+.gauge-name{font-size:0.75rem;color:var(--text-secondary);margin-top:0.3rem}
+
+/* Callout box */
+.callout{background:linear-gradient(135deg,#fef9ef,#fdf6e3);border:1px solid rgba(212,136,15,0.3);border-radius:10px;padding:1.2rem 1.5rem;margin:1.5rem 0;position:relative;overflow:hidden}
+.callout::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--accent-gold)}
+.callout h4{color:var(--accent-gold);font-family:'JetBrains Mono',monospace;font-size:0.85rem;margin-bottom:0.5rem}
+.callout p{color:var(--text-secondary);font-size:0.88rem;line-height:1.7;margin:0}
+.callout.red{background:linear-gradient(135deg,#fef2f2,#fde8e8);border-color:rgba(230,57,70,0.3)}
+.callout.red::before{background:var(--accent-red)}
+.callout.red h4{color:var(--accent-red)}
+.callout.green{background:linear-gradient(135deg,#ecfdf5,#d1fae5);border-color:rgba(6,167,125,0.3)}
+.callout.green::before{background:var(--accent-green)}
+.callout.green h4{color:var(--accent-green)}
+
+/* Animated number counter */
+.big-number{font-family:'JetBrains Mono',monospace;font-size:2.5rem;font-weight:700;text-align:center;margin:1rem 0}
+.big-number .num{color:var(--accent-gold)}
+.big-number .unit{font-size:1rem;color:var(--text-muted);margin-left:0.3rem}
+.big-number .label{display:block;font-size:0.78rem;color:var(--text-secondary);font-weight:400;margin-top:0.3rem}
+
+/* Number cards row */
+.num-cards{display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0;justify-content:center}
+.num-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:1.2rem;text-align:center;flex:1;min-width:140px;max-width:200px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.num-card .val{font-family:'JetBrains Mono',monospace;font-size:1.8rem;font-weight:700}
+.num-card .desc{font-size:0.78rem;color:var(--text-muted);margin-top:0.4rem}
+
+/* Flow diagram */
+.flow{display:flex;align-items:center;gap:0;flex-wrap:wrap;justify-content:center;margin:1.5rem 0}
+.flow-step{background:#fff;border:1px solid var(--border);border-radius:8px;padding:0.8rem 1rem;text-align:center;min-width:100px;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+.flow-step .icon{font-size:1.5rem;margin-bottom:0.3rem}
+.flow-step .text{font-size:0.78rem;color:var(--text-secondary)}
+.flow-arrow{color:var(--accent-gold);font-family:'JetBrains Mono',monospace;font-size:1.2rem;padding:0 0.5rem}
+@media(max-width:600px){.flow-arrow{transform:rotate(90deg);padding:0.3rem 0}}
+</style>
+<meta name="description" content="原油価格はなぜ上がるのか。WTI・Brent・ドバイの違い、ホルムズ海峡危機、OPEC+政策、ETF・CFDでの投資方法まで徹底解説。">
+<link rel="canonical" href="https://marketpulse-daily.com/posts/20260401-column.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="原油価格はなぜ上がるのか — 2026年の原油市場完全ガイド — MARKETZ">
+<meta property="og:description" content="国内vs海外、スプレッド・スワップ・ツール・スキャルピング対応を8社比較。">
+<meta property="og:url" content="https://marketpulse-daily.com/posts/20260401-column.html">
+<meta property="og:site_name" content="MARKETZ">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-04-01T00:00:00+09:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="原油価格はなぜ上がるのか — 2026年の原油市場完全ガイド — MARKETZ">
+<meta name="twitter:description" content="国内vs海外、スプレッド・スワップ・ツール・スキャルピング対応を8社比較。">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"原油価格はなぜ上がるのか — 2026年の原油市場完全ガイド","datePublished":"2026-04-01T00:00:00+09:00","publisher":{"@type":"Organization","name":"MARKETZ"},"mainEntityOfPage":"https://marketpulse-daily.com/posts/20260401-column.html"}
+</script>
+</head>
+<body>
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-date">2026.04.01 — COLUMN</div>
+    <h1 class="hero-title">原油価格はなぜ上がるのか</h1>
+    <p class="hero-subtitle">WTI・Brent・ドバイの違いからホルムズ海峡危機、投資方法まで — 2026年の原油市場を完全解説</p>
+    <div class="hero-tags">
+      <span class="hero-tag">📝 コラム</span>
+      <span class="hero-tag">原油</span>
+      <span class="hero-tag">コモディティ</span>
+      <span class="hero-tag">地政学</span>
+      <span class="hero-tag">初心者向け</span>
+    </div>
+  </div>
+</section>
+<nav class="sticky-nav">
+  <ul>
+    <li><a href="#basics">🛢基本</a></li>
+    <li><a href="#factors">📊変動要因</a></li>
+    <li><a href="#hormuz">🌊ホルムズ</a></li>
+    <li><a href="#timeline">📅2026年</a></li>
+    <li><a href="#opec">🏛OPEC+</a></li>
+    <li><a href="#japan">🇯🇵日本</a></li>
+    <li><a href="#invest">💰投資方法</a></li>
+    <li><a href="#forecast">🔮見通し</a></li>
+  </ul>
+</nav>
+<div class="container">
+
+<section class="section fade-in" style="padding-top:2rem">
+  <div class="callout" style="border:none;background:linear-gradient(135deg,rgba(240,165,0,0.06),rgba(240,165,0,0.02))">
+    <h4>📌 この記事でわかること</h4>
+    <ul style="list-style:none;padding:0;margin:0.8rem 0 0">
+      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary);border-bottom:1px solid rgba(0,0,0,0.05)">✅ <strong>WTI・Brent・ドバイ</strong>の3大指標原油の違いと価格の決まり方</li>
+      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary);border-bottom:1px solid rgba(0,0,0,0.05)">✅ <strong>2026年イラン戦争</strong>で原油が$67→$120に急騰した全経緯</li>
+      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary)">✅ 個人投資家が原油に投資する<strong>3つの方法</strong>（ETF・CFD・先物）とリスク</li>
+    </ul>
+  </div>
+  <h3 style="font-size:1.1rem;font-weight:700;color:var(--text-primary);margin:2rem 0 1rem">📖 目次</h3>
+  <nav style="background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:10px;padding:1.2rem 1.5rem;box-shadow:0 1px 4px rgba(0,0,0,0.04)">
+    <ol style="margin:0;padding-left:1.2rem;list-style:decimal;color:var(--text-secondary);font-size:0.9rem;line-height:2.2">
+      <li><a href="#basics" style="color:var(--text-primary);text-decoration:none">原油価格の基本 — WTI・Brent・ドバイの違い</a></li>
+      <li><a href="#factors" style="color:var(--text-primary);text-decoration:none">原油価格が動く4つの要因</a></li>
+      <li><a href="#hormuz" style="color:var(--text-primary);text-decoration:none">ホルムズ海峡 — なぜ世界を揺るがすのか</a></li>
+      <li><a href="#timeline" style="color:var(--text-primary);text-decoration:none">2026年イラン戦争と原油価格の全記録</a></li>
+      <li><a href="#opec" style="color:var(--text-primary);text-decoration:none">OPEC+の減産・増産の駆け引き</a></li>
+      <li><a href="#japan" style="color:var(--text-primary);text-decoration:none">日本への影響 — ガソリン・円安・インフレ</a></li>
+      <li><a href="#invest" style="color:var(--text-primary);text-decoration:none">原油に投資する3つの方法</a></li>
+      <li><a href="#forecast" style="color:var(--text-primary);text-decoration:none">アナリスト予測 — 2026〜2027年の見通し</a></li>
+    </ol>
+  </nav>
+</section>
+
+<section id="basics" class="section fade-in">
+  <h2 class="section-header">🛢 原油価格の基本 — WTI・Brent・ドバイの違い</h2>
+  <img src="../images/column/48893774_MotionElements_large-oil-pumpjack-extracting-crude-oil-in-an-arid.jpg" alt="原油採掘" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+  <div class="news-card blue"><div class="news-body">世界の原油取引には3つの「指標原油」があり、地域ごとに基準となる価格が異なります。</div></div>
+  <div style="overflow-x:auto">
+  <table class="compare-table">
+    <thead><tr><th>指標原油</th><th>産出地</th><th>取引所</th><th>特徴</th><th>価格形態</th></tr></thead>
+    <tbody>
+      <tr><td><strong>WTI</strong></td><td>米国テキサス</td><td>NYMEX（NY）</td><td>軽質・低硫黄。世界最大の取引量</td><td>先物価格</td></tr>
+      <tr><td><strong>Brent</strong></td><td>北海（英国）</td><td>ICE（ロンドン）</td><td>国際取引の実質的な基準</td><td>先物価格</td></tr>
+      <tr><td><strong>ドバイ</strong></td><td>中東</td><td>シンガポール等</td><td>重質・高硫黄。アジア向け基準</td><td>スポット価格</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="callout"><h4>💡 日本が参照するのはドバイ原油</h4><p>日本を含むアジア向けの原油価格は「ドバイ原油とオマーン原油の平均」を基準に決まります。ただしニュースで報じられるのはWTIとBrentが中心です。</p></div>
+</section>
+
+<section id="factors" class="section fade-in">
+  <h2 class="section-header">📊 原油価格が動く4つの要因</h2>
+  <img src="../images/column/36353127_MotionElements_abstract-finance-charts-with-stock-market-data-and-jpeg.jpg" alt="金融チャート" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+  <div class="point-card"><h4>① 需給バランス</h4><p>世界経済が好調→原油需要増→価格上昇。不況→需要減→価格下落。IEAは2026年の需要増を日量93万バレルと予測。</p></div>
+  <div class="point-card"><h4>② 地政学リスク</h4><p>戦争・紛争・制裁が供給を脅かすと「リスクプレミアム」が上乗せ。2026年はイラン戦争で1バレルあたり$14-18のプレミアム（Goldman Sachs推定）。</p></div>
+  <div class="point-card"><h4>③ OPEC+の政策</h4><p>サウジアラビアやロシアなどの産油国連合が減産・増産を決定。供給量をコントロールして価格を調整。</p></div>
+  <div class="point-card"><h4>④ 投機資金・為替</h4><p>原油先物市場には投資ファンドも参加。ドル高→原油安、ドル安→原油高の関係もある。円安は日本の輸入コストをさらに押し上げる。</p></div>
+</section>
+
+<section id="hormuz" class="section fade-in">
+  <h2 class="section-header">🌊 ホルムズ海峡 — なぜ世界を揺るがすのか</h2>
+  <img src="../images/column/53667846_MotionElements_crude-oil-tanker-sailing-through-narrow-strait-at.jpg" alt="タンカーとホルムズ海峡" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+  <div class="num-cards">
+    <div class="num-card"><div class="val" style="color:var(--accent-red)">2,000<span style="font-size:0.8rem">万bpd</span></div><div class="desc">海峡を通過する<br>1日の原油量</div></div>
+    <div class="num-card"><div class="val" style="color:var(--accent-red)">20<span style="font-size:0.8rem">%</span></div><div class="desc">世界の海上原油<br>貿易に占める割合</div></div>
+    <div class="num-card"><div class="val" style="color:var(--accent-red)">94<span style="font-size:0.8rem">%</span></div><div class="desc">日本の原油輸入の<br>中東依存度</div></div>
+    <div class="num-card"><div class="val" style="color:var(--accent-red)">97<span style="font-size:0.8rem">%減</span></div><div class="desc">封鎖後の<br>通航量の減少</div></div>
+  </div>
+  <div class="callout red"><h4>⚠️ IEA「歴史上最大のエネルギー安全保障上の課題」</h4><p>2026年3月4日以降、ホルムズ海峡は事実上封鎖され、日量2,000万バレルの原油流通が遮断。IEA長官は「1970年代以来最大の供給途絶」と表現。2,000隻以上が海峡の両側で立ち往生しています。</p></div>
+</section>
+
+<section id="timeline" class="section fade-in">
+  <h2 class="section-header">📅 2026年イラン戦争と原油価格の全記録</h2>
+  <img src="../images/column/32747166_MotionElements_war-themed-powerpoint-background.jpg" alt="戦争" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+  <div class="callout"><h4>📊 Brent原油 2026年3月の月間上昇率: +63%（1988年以来最大）</h4><p>WTIも+51%。ウクライナ侵攻時（2022年）を大きく上回る歴史的な急騰月となりました。</p></div>
+  <div style="overflow-x:auto">
+  <table class="compare-table">
+    <thead><tr><th>日付</th><th>Brent</th><th>WTI</th><th>出来事</th></tr></thead>
+    <tbody>
+      <tr><td>2月初旬</td><td>$67</td><td>$64</td><td>外交交渉が進行、市場は楽観</td></tr>
+      <tr><td>2/28</td><td>$72</td><td>—</td><td>米イスラエルがイランを攻撃開始</td></tr>
+      <tr><td>3/2</td><td>$80-82</td><td>—</td><td>初期の戦争プレミアム織り込み</td></tr>
+      <tr><td>3/4</td><td class="warn">$120超</td><td>—</td><td>ホルムズ海峡が事実上封鎖</td></tr>
+      <tr><td>3/8-9</td><td>$108-119</td><td>—</td><td>史上最大の1日変動（-32%→反発）</td></tr>
+      <tr><td>3/11</td><td>$92</td><td>$87</td><td>IEAが4億バレルのSPR放出発表</td></tr>
+      <tr><td>3/27</td><td class="warn">$113</td><td>$100</td><td>WTI初の$100超え。2022年以来最高</td></tr>
+      <tr><td>3/31</td><td>$118</td><td>$101</td><td>月末。イラン大統領「停戦に前向き」</td></tr>
+      <tr><td>4/1</td><td class="best">$100割れ</td><td class="best">$97</td><td>停戦期待で急落。4/6期限が焦点</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="opec" class="section fade-in">
+  <h2 class="section-header">🏛 OPEC+の減産・増産の駆け引き</h2>
+  <img src="../images/column/53349027_MotionElements_entrepreneur-global-ceo-speaking-at-a-professional.jpg" alt="国際会議" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+  <div class="point-card"><h4>協調減産 — 日量366万バレル（2026年末まで）</h4><p>OPEC+全体で2026年末まで日量366万バレルの減産を継続。世界供給の約3.5%に相当。</p></div>
+  <div class="point-card"><h4>有志8カ国の増産再開 — 4月から日量20.6万バレル</h4><p>サウジ・ロシアら有志8カ国が4月から増産を再開。2025年の自主減産（日量220万バレル）を急速に解消中。市場シェア確保を優先する姿勢。</p></div>
+  <div class="callout"><h4>🔑 なぜ増産するのか？</h4><p>原油高で米国シェールオイルの生産が拡大し、OPEC+の市場シェアが低下。価格維持よりシェア確保を優先する戦略に転換。次回会合は4月5日。</p></div>
+</section>
+
+<section id="japan" class="section fade-in">
+  <h2 class="section-header">🇯🇵 日本への影響 — ガソリン・円安・インフレ</h2>
+  <img src="../images/column/19521774_MotionElements_national-flag-of-japan-waving-3d-render-nisshoki.jpg" alt="日本国旗" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+  <div class="num-cards">
+    <div class="num-card"><div class="val" style="color:var(--accent-red)">190.8<span style="font-size:0.8rem">円/L</span></div><div class="desc">レギュラーガソリン<br>3月16日時点</div></div>
+    <div class="num-card"><div class="val" style="color:var(--accent-red)">+29<span style="font-size:0.8rem">円/L</span></div><div class="desc">1週間の<br>上昇幅</div></div>
+    <div class="num-card"><div class="val" style="color:var(--text-primary)">254<span style="font-size:0.8rem">日分</span></div><div class="desc">日本の<br>石油備蓄量</div></div>
+  </div>
+  <div class="callout red"><h4>⚠️ NRI試算: GDP -0.18%、物価 +0.31%</h4><p>野村総合研究所のベースシナリオでは、原油高により日本の実質GDPは1年間で0.18%押し下げ、物価は0.31%押し上げ。原油$140の最悪シナリオではGDP -0.65%でスタグフレーション突入。</p></div>
+  <div class="point-card"><h4>円安のダブルパンチ</h4><p>原油はドル建てで取引されるため、円安（$1=160円）が輸入コストをさらに押し上げ。原油高→貿易赤字拡大→さらなる円安の悪循環リスク。</p></div>
+</section>
+
+<section id="invest" class="section fade-in">
+  <h2 class="section-header">💰 原油に投資する3つの方法</h2>
+  <img src="../images/column/22031719_MotionElements_finance-and-money-technology-background-concept-of.jpg" alt="投資" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+  <div style="overflow-x:auto">
+  <table class="compare-table">
+    <thead><tr><th>方法</th><th>最低資金</th><th>レバレッジ</th><th>取引時間</th><th>メリット</th><th>注意点</th></tr></thead>
+    <tbody>
+      <tr><td><strong>原油ETF</strong><br>(証券コード1671)</td><td>約3,000円</td><td>1倍</td><td>東証時間のみ</td><td>株と同じ感覚で売買可能</td><td>コンタンゴで長期保有不利</td></tr>
+      <tr><td><strong>原油CFD</strong><br>(GMO/IG/楽天)</td><td>約5,000円</td><td>最大20倍</td><td>ほぼ24時間</td><td>売りからも入れる。少額で大きな取引</td><td>レバレッジリスク。ロスカット注意</td></tr>
+      <tr><td><strong>くりっく株365</strong><br>(原油ETFリセット付)</td><td>約6,000円</td><td>あり</td><td>ほぼ24時間</td><td>取引所取引で安心</td><td>リセット期限あり</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="callout red"><h4>⚠️ コンタンゴに注意 — 先物型ETFの落とし穴</h4><p>原油先物は「コンタンゴ」（期先ほど高い状態）になりやすく、ETFのロールオーバー時にコストが発生。原油価格が横ばいでもETF価格が下がることがあります。<strong>原油ETFは短期〜中期向け</strong>です。過去のデータではコンタンゴ発生確率は57.6%。</p></div>
+</section>
+
+<section id="forecast" class="section fade-in">
+  <h2 class="section-header">🔮 アナリスト予測 — 2026〜2027年の見通し</h2>
+  <img src="../images/column/26104383_MotionElements_finance-business-data-trending-chart-ai-generativ.jpg" alt="予測チャート" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+  <div style="overflow-x:auto">
+  <table class="compare-table">
+    <thead><tr><th onclick="sortTable(this.closest('table'),0,'text')">機関</th><th>Brent 2026年平均</th><th>Brent Q4 2026</th><th>2027年見通し</th></tr></thead>
+    <tbody>
+      <tr><td>Goldman Sachs</td><td>$64</td><td>$71</td><td>$65</td></tr>
+      <tr><td>JP Morgan</td><td>$58</td><td>—</td><td class="warn">$30台（最悪シナリオ）</td></tr>
+      <tr><td>EIA</td><td>$52-95（幅あり）</td><td>—</td><td>$64</td></tr>
+      <tr><td>Barclays</td><td>$65</td><td>—</td><td>$60-68</td></tr>
+      <tr><td>Macquarie</td><td colspan="3" class="warn">戦争6月まで長期化なら$200も視野</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="callout green"><h4>📌 結論: 4月6日が最大の分岐点</h4><p>停戦が実現すれば原油は$60-70台に急落。長期化なら$120-200。すべてはホルムズ海峡の再開時期にかかっています。戦争終結後も物流正常化には時間がかかるため、急落後もある程度の高値は維持される見通し。</p></div>
+</section>
+
+<!-- ===== PR ===== -->
+<div class="news-card gold fade-in" style="border-left-color:var(--accent-gold);margin:2rem 0;padding:1.5rem;">
+  <div class="news-head"><span class="news-badge badge-commodity" style="background:rgba(212,136,15,0.1);color:var(--accent-gold);border:1px solid rgba(212,136,15,0.3);">PR — 広告</span></div>
+  <div class="news-title" style="margin-top:0.5rem;">原油CFDを始めるなら</div>
+  <div class="news-body">原油価格の変動から利益を狙うなら、全銘柄取引手数料0円のDMM CFD。最短即日で口座開設可能。</div>
+  <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:0.8rem;">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:var(--accent-gold);color:#fff;font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;">【PR】DMM CFD の詳細を見る →</a>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:transparent;color:var(--accent-gold);font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;border:1px solid var(--accent-gold);">【PR】DMM FX の詳細を見る →</a>
+  </div>
+  <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" alt="">
+  <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" alt="">
+  <div class="news-source" style="margin-top:0.8rem;">※ 投資にはリスクが伴います。CFD取引は元本を超える損失が発生する可能性があります。</div>
+</div>
+
+<div class="disclaimer fade-in">
+  <div class="disclaimer-title">⚠️ 免責事項</div>
+  本記事は情報提供のみを目的としており、金融商品の売買の勧誘や投資助言を目的とするものではありません。原油価格は大きく変動するリスクがあります。掲載情報は作成時点のものであり、正確性を保証するものではありません。投資判断は必ずご自身の責任で行ってください。<br><br>
+  参考: OANDA, 石油連盟, 日本経済新聞, Wikipedia, CNBC, Bloomberg, IEA, JOGMEC, 野村総合研究所, Goldman Sachs, JP Morgan, EIA<br><br>
+  金融商品取引法に基づく表記：本記事は金融商品取引法第2条に定める金融商品取引業に該当する行為を行うものではありません。
+</div>
+
+<footer class="footer">
+  <p>MARKETZ — <a href="https://marketpulse-daily.com/">ホームに戻る</a></p>
+  <p>© 2026 MARKETZ. All rights reserved.</p>
+</footer>
+</div>
+
+<div class="fab-group">
+  <a href="https://marketpulse-daily.com/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
+  <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
+</div>
+<script>
+const observer=new IntersectionObserver(e=>{e.forEach(e=>{
+  if(e.isIntersecting){
+    e.target.classList.add('visible');
+    // Animate bar fills when section becomes visible
+    e.target.querySelectorAll('.bar-fill').forEach(bar=>{bar.classList.add('animated')});
+  }
+})},{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+const sections=document.querySelectorAll('section[id]');
+const navLinks=document.querySelectorAll('.sticky-nav a');
+window.addEventListener('scroll',()=>{
+  let current='';
+  sections.forEach(s=>{if(window.scrollY>=s.offsetTop-100)current=s.getAttribute('id')});
+  navLinks.forEach(a=>{a.classList.remove('active');if(a.getAttribute('href')==='#'+current)a.classList.add('active')});
+  const fg=document.querySelector('.fab-group');
+  if(fg){fg.style.display=window.scrollY>600?'flex':'none'}
+});
+function sortTable(table,col,type){
+  const tbody=table.querySelector('tbody');const rows=Array.from(tbody.querySelectorAll('tr'));
+  const th=table.querySelectorAll('th')[col];const asc=!th.classList.contains('sorted-asc');
+  table.querySelectorAll('th').forEach(h=>h.classList.remove('sorted-asc','sorted-desc'));
+  th.classList.add(asc?'sorted-asc':'sorted-desc');
+  rows.sort((a,b)=>{let va=a.cells[col].textContent.trim(),vb=b.cells[col].textContent.trim();
+    if(type==='num'){va=parseFloat(va.replace(/[^0-9.\-]/g,''))||999;vb=parseFloat(vb.replace(/[^0-9.\-]/g,''))||999}
+    return va<vb?(asc?-1:1):va>vb?(asc?1:-1):0});
+  rows.forEach(r=>tbody.appendChild(r));
+}
+function switchTab(group,id){
+  document.querySelectorAll('[data-tab-group="'+group+'"] .tab-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.tab-content[data-group="'+group+'"]').forEach(c=>c.classList.remove('active'));
+  document.querySelector('[data-tab-group="'+group+'"] [data-tab="'+id+'"]').classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+function filterPurpose(purpose,el){
+  document.querySelectorAll('.purpose-btn').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  document.querySelectorAll('#summary-table tbody tr').forEach(r=>{
+    r.classList.remove('highlight-row');
+    if(r.dataset.purpose&&r.dataset.purpose.includes(purpose))r.classList.add('highlight-row');
+  });
+}
+</script>
+</body>
+</html>
