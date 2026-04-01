@@ -46,6 +46,9 @@ a:hover{text-decoration:underline}
 .month-title{font-family:'JetBrains Mono',monospace;font-size:1.1rem;font-weight:700;color:var(--accent-gold);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border)}
 .post-item{display:block;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.2rem 1.5rem;margin-bottom:0.6rem;text-decoration:none;transition:all 0.2s}
 .post-item:hover{background:var(--bg-card-hover);border-color:var(--border-accent);text-decoration:none}
+.post-item.column-item{border-left:3px solid var(--accent-gold);background:linear-gradient(135deg,rgba(240,165,0,0.03),#fff)}
+.post-item.column-item:hover{background:linear-gradient(135deg,rgba(240,165,0,0.06),#fff)}
+.column-badge{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:0.65rem;font-weight:700;padding:0.1rem 0.5rem;border-radius:3px;background:var(--accent-gold);color:#fff;margin-left:0.5rem;vertical-align:middle}
 .post-date{font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:var(--accent-gold);letter-spacing:0.1em}
 .post-title-text{font-weight:700;font-size:0.95rem;color:var(--text-primary);margin:0.3rem 0}
 .post-excerpt{font-size:0.8rem;color:var(--text-muted)}
@@ -132,22 +135,42 @@ footer{text-align:center;padding:2rem;font-size:0.75rem;color:var(--text-muted);
       html += `<section class="month-group">`;
       html += `<h2 class="month-title">${y}年 ${monthNames[parseInt(m)]}（${groups[month].length}件）</h2>`;
 
-      groups[month].forEach(p => {
-        const days = ['日','月','火','水','木','金','土'];
-        const d = new Date(p.date + 'T00:00:00+09:00');
-        const dayStr = days[d.getDay()];
-        const tagsHtml = (p.tags || []).slice(0, 5).map(t =>
-          `<span class="tag">${t}</span>`
-        ).join('');
+      // コラムとニュースを分離
+      const columns = groups[month].filter(p => p.slug.includes('column'));
+      const news = groups[month].filter(p => !p.slug.includes('column'));
 
-        html += `
-          <a href="posts/${p.slug}.html" class="post-item">
-            <div class="post-date">${p.date} (${dayStr})</div>
-            <div class="post-title-text">${p.title || '(タイトルなし)'}</div>
-            <div class="post-excerpt">${p.excerpt || ''}</div>
-            ${tagsHtml ? `<div class="post-tags">${tagsHtml}</div>` : ''}
-          </a>`;
-      });
+      // コラムを先に表示
+      if (columns.length > 0) {
+        html += `<div style="font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:var(--accent-gold);margin:1rem 0 0.5rem;letter-spacing:0.1em">📝 コラム（${columns.length}件）</div>`;
+        columns.forEach(p => {
+          const tagsHtml = (p.tags || []).slice(0, 5).map(t => `<span class="tag">${t}</span>`).join('');
+          html += `
+            <a href="posts/${p.slug}.html" class="post-item column-item">
+              <div class="post-date">${p.date}<span class="column-badge">コラム</span></div>
+              <div class="post-title-text">${p.title || '(タイトルなし)'}</div>
+              <div class="post-excerpt">${p.excerpt || ''}</div>
+              ${tagsHtml ? `<div class="post-tags">${tagsHtml}</div>` : ''}
+            </a>`;
+        });
+      }
+
+      // ニュースを表示
+      if (news.length > 0) {
+        html += `<div style="font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:var(--text-muted);margin:1rem 0 0.5rem;letter-spacing:0.1em">📰 マーケットレポート（${news.length}件）</div>`;
+        news.forEach(p => {
+          const days = ['日','月','火','水','木','金','土'];
+          const d = new Date(p.date + 'T00:00:00+09:00');
+          const dayStr = days[d.getDay()];
+          const tagsHtml = (p.tags || []).slice(0, 5).map(t => `<span class="tag">${t}</span>`).join('');
+          html += `
+            <a href="posts/${p.slug}.html" class="post-item">
+              <div class="post-date">${p.date} (${dayStr})</div>
+              <div class="post-title-text">${p.title || '(タイトルなし)'}</div>
+              <div class="post-excerpt">${p.excerpt || ''}</div>
+              ${tagsHtml ? `<div class="post-tags">${tagsHtml}</div>` : ''}
+            </a>`;
+        });
+      }
 
       html += `</section>`;
     });
