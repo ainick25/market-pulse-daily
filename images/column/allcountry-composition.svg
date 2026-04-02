@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="'Helvetica Neue', Arial, sans-serif">
+  <rect width="800" height="380" fill="#ededed" rx="12"/>
+  <text x="400" y="35" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a2e">オルカンの中身 ≒ 米国株63%</text>
+
+  <!-- Pie chart (simplified as stacked bars) -->
+  <!-- US portion -->
+  <rect x="60" y="60" width="504" height="200" rx="8" fill="#2176ff" opacity="0.15"/>
+  <rect x="60" y="60" width="504" height="200" rx="8" fill="none" stroke="#2176ff" stroke-width="2"/>
+  <text x="312" y="140" text-anchor="middle" font-size="48" font-weight="700" fill="#2176ff">63%</text>
+  <text x="312" y="175" text-anchor="middle" font-size="16" font-weight="600" fill="#2176ff">米国株</text>
+  <text x="312" y="200" text-anchor="middle" font-size="11" fill="#7a7a8e">Apple, Microsoft, NVIDIA, Amazon...</text>
+
+  <!-- Japan portion -->
+  <rect x="574" y="60" width="38" height="200" rx="4" fill="#e63946" opacity="0.15"/>
+  <rect x="574" y="60" width="38" height="200" rx="4" fill="none" stroke="#e63946" stroke-width="1.5"/>
+  <text x="593" y="150" text-anchor="middle" font-size="14" font-weight="700" fill="#e63946">4.7%</text>
+  <text x="593" y="170" text-anchor="middle" font-size="9" fill="#e63946">日本</text>
+
+  <!-- Others -->
+  <rect x="622" y="60" width="118" height="200" rx="4" fill="#f0a500" opacity="0.1"/>
+  <rect x="622" y="60" width="118" height="200" rx="4" fill="none" stroke="#f0a500" stroke-width="1.5"/>
+  <text x="681" y="140" text-anchor="middle" font-size="14" font-weight="700" fill="#f0a500">32.3%</text>
+  <text x="681" y="162" text-anchor="middle" font-size="10" fill="#f0a500">欧州・新興国等</text>
+  <text x="681" y="180" text-anchor="middle" font-size="9" fill="#7a7a8e">英国,フランス,中国</text>
+  <text x="681" y="195" text-anchor="middle" font-size="9" fill="#7a7a8e">インド,台湾...</text>
+
+  <!-- Bottom warning -->
+  <rect x="100" y="285" width="600" height="70" rx="10" fill="#fff" stroke="#e63946" stroke-width="1.5"/>
+  <text x="400" y="312" text-anchor="middle" font-size="13" font-weight="700" fill="#e63946">⚠️ オルカン + S&P500 を併せ持つと → 米国株比率が80%超に</text>
+  <text x="400" y="335" text-anchor="middle" font-size="12" fill="#7a7a8e">相関係数 0.97〜0.99 → 分散効果はほぼなし</text>
+  <text x="400" y="352" text-anchor="middle" font-size="11" font-weight="600" fill="#f0a500">真の分散には日本株・債券・金などの組み合わせが必要</text>
+</svg>
