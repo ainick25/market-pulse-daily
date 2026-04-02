@@ -69,7 +69,8 @@ git push -u origin main
 ## コラムHTML必須要件
 - ライトテーマ（--bg-primary: #f8f7f4）
 - hero背景はダークグラデーション（#1a1a2e → #16213e → #0f3460）
-- フォント: Noto Serif JP(見出し), Noto Sans JP(本文,fw400), JetBrains Mono(データ)
+- フォント: Meiryo, Yu Gothic UI, Noto Sans JP(本文,fw400), Noto Serif JP(見出し), JetBrains Mono(データ)
+- SVGフォント: Yu Gothic UI, Meiryo
 - 導入文（この記事でわかること3点）→ 目次 → コンテンツセクション → PR → 免責
 - 免責事項ボックス（赤枠border: 2px solid var(--accent-red)）
 - FABボタン（🏠ホーム / ↑トップ）

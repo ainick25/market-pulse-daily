@@ -28,16 +28,25 @@
 6. 日本テクノロジー: 日本企業のイノベーション（※日本語ソースを優先して確認）
 7. 共通ニュース
 
+## ブランドカラー
+- ゴールド: #f0a500（アクセント・CTA）
+- ネイビー: #1a1a2e（見出し・ヒーロー背景）
+- 背景: #ededed（SVG背景）/ #f8f7f4（ページ背景）
+- シアン: #07e4dd（ポジティブ）
+- レッド: #e63946（警告・ネガティブ）
+
 ## 記事HTML必須要件
-- ダークテーマ: --bg-primary: #0a0a0f
-- フォント: Noto Serif JP(見出し), Noto Sans JP(本文,fw400), JetBrains Mono(データ)
+- **ライトテーマ**: --bg-primary: #f8f7f4（ヒーローのみダークグラデーション #1a1a2e → #16213e → #0f3460）
+- フォント: Meiryo, Yu Gothic UI, Noto Sans JP(本文,fw400), Noto Serif JP(見出し), JetBrains Mono(データ)
+- SVGフォント: Yu Gothic UI, Meiryo
 - body font-weight: 400（300禁止）
 - セクション: 地政学→為替→コモディティ→暗号資産→株式→日本テック→考察→免責
 - 考察: USD/JPY, AUD/JPY, NASDAQ, 日経225 の4ペア分析
-- 免責事項ボックス（赤枠border: 2px solid #ff4d6a）
+- 免責事項ボックス（赤枠border: 2px solid var(--accent-red)）
 - アニメーション: fade-in(IntersectionObserver), gridSlide, pulse, nav highlight
 - すべて日本語、出典を全ニュースに明記、著作権遵守
 - **固定ロゴは廃止**。代わりに右下FABボタン（🏠ホーム / ↑トップ）を設置
+- GA4タグ（G-KFT35KZZVC）とA8.netリンクマネージャーがheadに必須
 
 ## FABボタンHTML（全記事に必須）
 ```html
@@ -97,7 +106,7 @@ node scripts/build-sitemap.js    # sitemap.xml 生成
 10. 💰 リスク管理の基本 — ポジションサイズ・分散投資・損切りルール
 
 ### コラムHTML要件
-- 日次記事と同じダークテーマ・フォント・アニメーション
+- 日次記事と同じライトテーマ・フォント・アニメーション
 - hero-subtitle にコラムタイトル
 - hero-tag に `📝 コラム` `初心者向け` 等のタグ
 - 目次（sticky-nav）をセクションに合わせて設置
