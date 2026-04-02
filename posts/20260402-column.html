@@ -42,7 +42,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Meiryo', 'Yu Gothic UI', 'Noto Sans JP', sans-serif;
   font-weight: 400;
   background: var(--bg-primary);
   color: var(--text-secondary);
@@ -521,9 +521,7 @@ body {
 
 <section id="allcountry" class="section fade-in">
   <h2 class="section-header">🌍 オルカン — 全世界に1本で投資、でもその中身は…</h2>
-  <object data="../images/column/allcountry-composition.svg" type="image/svg+xml" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);" aria-label="オルカンの構成比率">
-    <p style="text-align:center;padding:2rem;background:#fff;border-radius:12px;border:1px solid rgba(0,0,0,0.08);">オルカンの構成: 米国株63% / 日本株4.7% / 欧州・新興国等32.3%</p>
-  </object>
+  <img src="../images/column/allcountry-composition.svg" alt="オルカンの構成比率: 米国株63% 日本株4.7% 欧州新興国32.3%" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
   <div class="num-cards">
     <div class="num-card"><div class="val" style="color:#f0a500">63<span style="font-size:0.8rem">%</span></div><div class="desc">米国株の割合</div></div>
     <div class="num-card"><div class="val" style="color:#e63946">4.7<span style="font-size:0.8rem">%</span></div><div class="desc">日本株の割合</div></div>
@@ -572,10 +570,23 @@ body {
   <div class="callout green"><h4>📌 「卵を1つのカゴに盛るな」の本当の意味</h4><p>分散投資とは<strong>異なる値動きをするものを組み合わせる</strong>こと。株式×株式ではなく、<strong>株式×債券×金×リート</strong>など異なる資産クラスを持つことで初めてリスク低減効果が生まれます。</p></div>
   <div class="point-card"><h4>GPIF（年金積立金管理運用独立行政法人）のお手本</h4><p>国内株式25%、国内債券25%、外国株式25%、外国債券25%。日本の年金を運用するGPIFは4資産均等配分。過去20年以上の運用で年率+4%の安定したリターンを実現しています。</p></div>
   <div class="point-card"><h4>分散の3つの軸</h4><p>① <strong>地域分散</strong>（米国だけでなく日本・欧州・新興国）② <strong>資産分散</strong>（株式だけでなく債券・金・リート）③ <strong>時間分散</strong>（一括投資ではなく毎月積立）</p></div>
-  <div class="callout" style="background:linear-gradient(135deg,rgba(7,228,221,0.06),rgba(7,228,221,0.02));border-color:rgba(7,228,221,0.3)"><h4>📝 NISAでは買えない資産クラスも知っておこう</h4><p>NISAの対象は主に株式・投資信託ですが、真の分散にはコモディティ（原油・金）や暗号資産の知識も重要です。MARKETZではこれらの資産クラスについても詳しく解説しています。<br><br>
-  → <a href="20260401-column.html" style="color:var(--accent-gold);font-weight:600">原油価格はなぜ上がるのか — 2026年の原油市場完全ガイド</a><br>
-  → <a href="20260401-column-btc.html" style="color:var(--accent-gold);font-weight:600">ビットコイン完全ガイド — 仕組み・買い方・税金・将来性</a><br>
-  → <a href="20260330-column.html" style="color:var(--accent-gold);font-weight:600">FX口座の選び方 完全ガイド — 国内vs海外、8社徹底比較</a></p></div>
+  <div class="callout" style="background:linear-gradient(135deg,rgba(7,228,221,0.06),rgba(7,228,221,0.02));border-color:rgba(7,228,221,0.3)"><h4>📝 NISAでは買えない資産クラスも知っておこう</h4><p>NISAの対象は主に株式・投資信託ですが、真の分散にはコモディティ（原油・金）や暗号資産の知識も重要です。</p></div>
+
+  <a href="20260401-column.html" style="display:block;background:#fff;border:1px solid rgba(0,0,0,0.08);border-left:4px solid #f0a500;border-radius:10px;padding:1rem 1.2rem;margin:0.8rem 0;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,0.04);transition:all 0.2s;">
+    <div style="font-size:0.7rem;color:#f0a500;font-weight:700;margin-bottom:0.3rem;">🛢 コモディティ</div>
+    <div style="font-size:0.95rem;font-weight:700;color:#1a1a2e;">原油価格はなぜ上がるのか — 2026年の原油市場完全ガイド</div>
+    <div style="font-size:0.82rem;color:#7a7a8e;margin-top:0.3rem;">WTI・Brent・ドバイの違い、ホルムズ海峡危機、ETF/CFDでの投資方法</div>
+  </a>
+  <a href="20260401-column-btc.html" style="display:block;background:#fff;border:1px solid rgba(0,0,0,0.08);border-left:4px solid #f0a500;border-radius:10px;padding:1rem 1.2rem;margin:0.8rem 0;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,0.04);transition:all 0.2s;">
+    <div style="font-size:0.7rem;color:#f0a500;font-weight:700;margin-bottom:0.3rem;">₿ 暗号資産</div>
+    <div style="font-size:0.95rem;font-weight:700;color:#1a1a2e;">ビットコイン完全ガイド — 仕組み・買い方・税金・将来性</div>
+    <div style="font-size:0.82rem;color:#7a7a8e;margin-top:0.3rem;">ブロックチェーン図解、販売所vs取引所、税制改正、2028年半減期</div>
+  </a>
+  <a href="20260330-column.html" style="display:block;background:#fff;border:1px solid rgba(0,0,0,0.08);border-left:4px solid #f0a500;border-radius:10px;padding:1rem 1.2rem;margin:0.8rem 0;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,0.04);transition:all 0.2s;">
+    <div style="font-size:0.7rem;color:#f0a500;font-weight:700;margin-bottom:0.3rem;">💱 為替</div>
+    <div style="font-size:0.95rem;font-weight:700;color:#1a1a2e;">FX口座の選び方 完全ガイド — 国内vs海外、8社徹底比較</div>
+    <div style="font-size:0.82rem;color:#7a7a8e;margin-top:0.3rem;">スプレッド・スワップ・TradingView連携・スキャルピング対応</div>
+  </a>
 </section>
 
 <section id="portfolio" class="section fade-in">
