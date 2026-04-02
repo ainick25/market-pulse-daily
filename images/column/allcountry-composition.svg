@@ -25,9 +25,9 @@
 
   <!-- Bottom warning -->
   <rect x="60" y="320" width="680" height="160" rx="12" fill="#fff" stroke="#e63946" stroke-width="2"/>
-  <text x="400" y="365" text-anchor="middle" font-size="18" font-weight="700" fill="#e63946">⚠️ オルカン + S&amp;P500 を併せ持つと</text>
-  <text x="400" y="395" text-anchor="middle" font-size="18" font-weight="700" fill="#e63946">→ 米国株比率が80%超に</text>
-  <text x="400" y="430" text-anchor="middle" font-size="15" fill="#7a7a8e">相関係数 0.97〜0.99 → 分散効果はほぼなし</text>
-  <text x="400" y="460" text-anchor="middle" font-size="14" font-weight="600" fill="#f0a500">真の分散には日本株・債券・金などの</text>
-  <text x="400" y="480" text-anchor="middle" font-size="14" font-weight="600" fill="#f0a500">組み合わせが必要</text>
+  <text x="400" y="355" text-anchor="middle" font-size="18" font-weight="700" fill="#e63946">⚠️ オルカン + S&amp;P500 を併せ持つと</text>
+  <text x="400" y="382" text-anchor="middle" font-size="18" font-weight="700" fill="#e63946">→ 米国株比率が80%超に</text>
+  <text x="400" y="415" text-anchor="middle" font-size="15" fill="#7a7a8e">相関係数 0.97〜0.99 → 分散効果はほぼなし</text>
+  <text x="400" y="445" text-anchor="middle" font-size="14" font-weight="600" fill="#f0a500">真の分散には日本株・債券・金などの</text>
+  <text x="400" y="465" text-anchor="middle" font-size="14" font-weight="600" fill="#f0a500">組み合わせが必要</text>
 </svg>
