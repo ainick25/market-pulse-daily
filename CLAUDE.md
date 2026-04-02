@@ -37,8 +37,8 @@
 
 ## 記事HTML必須要件
 - **ライトテーマ**: --bg-primary: #f8f7f4（ヒーローのみダークグラデーション #1a1a2e → #16213e → #0f3460）
-- フォント: Meiryo, Yu Gothic UI, Noto Sans JP(本文,fw400), Noto Serif JP(見出し), JetBrains Mono(データ)
-- SVGフォント: Yu Gothic UI, Meiryo
+- フォント: Meiryo(本文優先), Yu Gothic UI, Noto Sans JP(フォールバック), Noto Serif JP(見出し), JetBrains Mono(データ)
+- SVGフォント: Yu Gothic UI(優先), Meiryo(フォールバック)
 - body font-weight: 400（300禁止）
 - セクション: 地政学→為替→コモディティ→暗号資産→株式→日本テック→考察→免責
 - 考察: USD/JPY, AUD/JPY, NASDAQ, 日経225 の4ペア分析
