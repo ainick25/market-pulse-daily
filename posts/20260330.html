@@ -385,6 +385,13 @@ body {
 .related-card .rc-title{font-size:0.9rem;font-weight:700;color:var(--text-primary);margin-top:0.2rem;line-height:1.5}
 .related-card .rc-tags{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.4rem}
 .related-card .rc-tag{font-family:'JetBrains Mono',monospace;font-size:0.62rem;padding:0.15rem 0.4rem;border-radius:3px;background:rgba(0,0,0,0.04);color:var(--text-muted)}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb{max-width:900px;margin:0 auto;padding:0.6rem 1.2rem;font-size:0.75rem;color:var(--text-muted)}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.2s}
+.breadcrumb a:hover{color:var(--text-primary);text-decoration:none}
+.breadcrumb .sep{margin:0 0.4rem;opacity:0.5}
+.breadcrumb .current{color:var(--text-secondary)}
 </style>
 <meta name="description" content="イラン戦争31日目 — 4月6日期限迫る中パキスタンが米イラン仲介、WTI $101突破・S&P500は5週連続安 - MARKETZ">
 <link rel="canonical" href="https://marketpulse-daily.com/posts/20260330.html">
@@ -402,6 +409,7 @@ body {
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "MARKETZ — 2026.03.30 マーケットニュースダイジェスト", "datePublished": "2026-03-30T00:00:00+09:00", "publisher": {"@type": "Organization", "name": "MARKETZ", "logo": {"@type": "ImageObject", "url": "https://marketpulse-daily.com/images/og-default.svg"}}, "mainEntityOfPage": "https://marketpulse-daily.com/posts/20260330.html", "author": {"@type": "Organization", "name": "MARKETZ", "description": "ITコンサルタント×データドリブントレーダーによるマーケット分析メディア"}, "image": "https://marketpulse-daily.com/images/og-default.svg"}
 </script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://marketpulse-daily.com/"}, {"@type": "ListItem", "position": 2, "name": "アーカイブ", "item": "https://marketpulse-daily.com/archive.html"}, {"@type": "ListItem", "position": 3, "name": "MARKETZ — 2026.03.30 マーケットニュースダイジェスト"}]}</script>
 </head>
 <body>
 
@@ -423,6 +431,14 @@ body {
     </div>
   </div>
 </section>
+
+<div class="breadcrumb" aria-label="パンくずリスト">
+  <a href="https://marketpulse-daily.com/">ホーム</a>
+  <span class="sep">›</span>
+  <a href="https://marketpulse-daily.com/archive.html">アーカイブ</a>
+  <span class="sep">›</span>
+  <span class="current">MARKETZ — 2026.03.30 マーケットニュースダイジェスト</span>
+</div>
 
 <!-- STICKY NAV -->
 <nav class="sticky-nav">

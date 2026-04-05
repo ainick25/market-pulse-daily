@@ -205,13 +205,13 @@ body{
 .cal-header button:hover{border-color:var(--accent-amber);color:var(--accent-amber)}
 .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;text-align:center}
 .cal-dow{font-family:'JetBrains Mono',monospace;font-size:0.6rem;color:var(--text-muted);padding:0.3rem 0}
-.cal-day{font-family:'JetBrains Mono',monospace;font-size:0.72rem;padding:0.35rem 0;border-radius:4px;color:var(--text-muted);transition:all 0.2s}
+.cal-day{font-family:'JetBrains Mono',monospace;font-size:0.72rem;padding:0.35rem 0;border-radius:4px;color:var(--text-muted);transition:all 0.2s;min-height:44px;display:flex;align-items:center;justify-content:center}
 .cal-day.has-post{background:rgba(240,165,0,0.15);color:var(--accent-amber);cursor:pointer;font-weight:700}
 .cal-day.has-post:hover{background:rgba(240,165,0,0.3)}
 .cal-day.today{outline:2px solid var(--accent-blue);outline-offset:-2px}
 .cal-day.empty{visibility:hidden}
 .idx-tag-cloud{display:flex;flex-wrap:wrap;gap:0.4rem}
-.idx-tag-pill{font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.2rem 0.55rem;border:1px solid var(--border-accent);border-radius:3px;color:var(--text-secondary);text-decoration:none;transition:all 0.2s}
+.idx-tag-pill{font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.45rem 0.7rem;border:1px solid var(--border-accent);border-radius:3px;color:var(--text-secondary);text-decoration:none;transition:all 0.2s;min-height:36px;display:inline-flex;align-items:center}
 .idx-tag-pill:hover{border-color:var(--accent-amber);color:var(--accent-amber);background:rgba(212,136,15,0.06)}
 
 /* ===== SIDEBAR AFFILIATE AREA ===== */
