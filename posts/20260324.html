@@ -449,6 +449,20 @@ section {
 .author-title{font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--accent-gold);letter-spacing:0.03em;margin-bottom:0.5rem}
 .author-bio{font-size:0.82rem;color:var(--text-secondary);line-height:1.7}
 @media(max-width:600px){.author-box{flex-direction:column;align-items:center;text-align:center}.author-avatar{width:56px;height:56px;font-size:1.3rem}}
+
+/* ===== CTA BANNER ===== */
+.cta-banner{background:linear-gradient(135deg,#1a1a2e 0%,#0f3460 100%);border-radius:10px;padding:1.5rem;margin:2rem 0;position:relative;overflow:hidden}
+.cta-banner::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:40px 40px}
+.cta-banner-content{position:relative;z-index:1}
+.cta-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:#ffe066;letter-spacing:0.1em;margin-bottom:0.4rem}
+.cta-title{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:#fff;margin-bottom:0.5rem}
+.cta-desc{font-size:0.85rem;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:1rem}
+.cta-links{display:flex;flex-wrap:wrap;gap:0.6rem}
+.cta-link{display:inline-block;padding:0.5rem 1rem;border-radius:6px;font-size:0.82rem;font-weight:700;text-decoration:none;transition:all 0.2s}
+.cta-link.primary{background:var(--accent-gold);color:#0a0a0f}
+.cta-link.primary:hover{background:#ffe066}
+.cta-link.secondary{background:transparent;color:var(--accent-gold);border:1px solid rgba(240,165,0,0.4)}
+.cta-link.secondary:hover{border-color:var(--accent-gold);background:rgba(240,165,0,0.1)}
 </style>
 <meta name="description" content="中東イラン戦争、原油急騰、FRB据え置き —— 激動するグローバル市場の全貌をお届けします - MARKETZ">
 <link rel="canonical" href="https://marketpulse-daily.com/posts/20260324.html">
@@ -535,7 +549,22 @@ section {
       <div class="news-source">出典: IEA Oil Market Report March 2026, CNN — 2026/3/23</div>
     </div>
 
-    <div class="news-card gold fade-in">
+    
+<!-- ===== コラムCTA ===== -->
+<div class="cta-banner fade-in">
+  <div class="cta-banner-content">
+    <div class="cta-label">📝 COLUMN — 解説記事</div>
+    <div class="cta-title">ボラティリティ相場を乗り越える知識を身につけませんか？</div>
+    <div class="cta-desc">地政学リスクの読み方、FX口座の選び方、NISAポートフォリオの組み方など、投資判断の基盤となるコラムを公開中。</div>
+    <div class="cta-links">
+      <a href="20260405-column.html" class="cta-link primary">地政学リスクと投資 →</a>
+      <a href="20260330-column.html" class="cta-link secondary">FX口座比較ガイド</a>
+      <a href="20260402-column.html" class="cta-link secondary">NISAポートフォリオ</a>
+    </div>
+  </div>
+</div>
+
+<div class="news-card gold fade-in">
       <div class="news-head">
         <span class="news-badge badge-geo">日米</span>
       </div>
