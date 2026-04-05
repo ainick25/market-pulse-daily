@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- A8.net Link Manager -->
+<script src="//statics.a8.net/a8link/a8linkmgr.js"></script>
+<script>
+  a8linkmgr({
+    "config_id": "3FffsI9Y9VCBqU9ikTQJ"
+  });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KFT35KZZVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KFT35KZZVC');
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>地政学リスクと投資 — 戦争・紛争が市場に与える影響を徹底解説 | MARKETZ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #f8f7f4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0efe8;
+  --text-primary: #1a1a2e;
+  --text-secondary: #3d3d56;
+  --text-muted: #7a7a8e;
+  --accent-red: #e63946;
+  --accent-green: #06a77d;
+  --accent-gold: #d4880f;
+  --accent-blue: #2176ff;
+  --accent-purple: #7b61ff;
+  --accent-orange: #e07b39;
+  --border: rgba(0,0,0,0.1);
+  --border-accent: rgba(0,0,0,0.18);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Meiryo', 'Yu Gothic UI', 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.2rem; }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridSlide 20s linear infinite;
+}
+@keyframes gridSlide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(60px, 60px); }
+}
+.hero-content { position: relative; z-index: 1; padding: 2rem 1rem; }
+.hero-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: #ffe066;
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
+}
+.hero-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+.hero-subtitle {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto; margin-right: auto;
+}
+.hero-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+.hero-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: #ffffff;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+}
+.hero-tag.alert {
+  border-color: var(--accent-red);
+  background: rgba(255,77,106,0.12);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+/* ===== STICKY NAV ===== */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+.sticky-nav ul {
+  display: flex; list-style: none;
+  max-width: 900px; margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+  gap: 0;
+}
+.sticky-nav a {
+  display: block;
+  padding: 0.75rem 0.8rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.sticky-nav a:hover, .sticky-nav a.active {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+  background: rgba(0,0,0,0.04);
+}
+
+/* ===== SECTION ===== */
+.section { padding: 3rem 0; }
+.section-header {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-accent);
+}
+
+/* ===== PRICE STRIP ===== */
+.price-strip {
+  display: flex; flex-wrap: wrap; gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.price-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  flex: 1 1 140px;
+  min-width: 130px;
+}
+.price-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+.price-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+.price-change {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 0.15rem;
+}
+.price-change.up { color: var(--accent-green); }
+.price-change.down { color: var(--accent-red); }
+
+/* ===== NEWS CARD ===== */
+.news-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s;
+  border-left: 3px solid transparent;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.news-card:hover { background: var(--bg-card-hover); box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+.news-card.blue { border-left-color: var(--accent-blue); }
+.news-card.red { border-left-color: var(--accent-red); }
+.news-card.gold { border-left-color: var(--accent-gold); }
+.news-card.green { border-left-color: var(--accent-green); }
+.news-card.purple { border-left-color: var(--accent-purple); }
+.news-card.orange { border-left-color: var(--accent-orange); }
+
+.news-head { margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.news-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+}
+.badge-fx { background: rgba(86,204,255,0.2); color: var(--accent-blue); border: 1px solid rgba(86,204,255,0.3); }
+.badge-commodity { background: rgba(255,224,102,0.2); color: var(--accent-gold); border: 1px solid rgba(255,224,102,0.3); }
+.badge-crypto { background: rgba(201,164,255,0.2); color: var(--accent-purple); border: 1px solid rgba(201,164,255,0.3); }
+.badge-stock { background: rgba(46,236,138,0.2); color: var(--accent-green); border: 1px solid rgba(46,236,138,0.3); }
+.badge-geo { background: rgba(255,77,106,0.2); color: var(--accent-red); border: 1px solid rgba(255,77,106,0.3); }
+.badge-tech { background: rgba(255,171,48,0.2); color: var(--accent-orange); border: 1px solid rgba(255,171,48,0.3); }
+
+.news-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+.news-body {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.news-source {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+
+/* ===== ANALYSIS ===== */
+.analysis-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.analysis-pair { margin-bottom: 1.5rem; }
+.analysis-pair:last-child { margin-bottom: 0; }
+.pair-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+.pair-direction {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+.dir-up { background: rgba(46,236,138,0.15); color: var(--accent-green); border: 1px solid rgba(46,236,138,0.3); }
+.dir-down { background: rgba(255,77,106,0.15); color: var(--accent-red); border: 1px solid rgba(255,77,106,0.3); }
+.dir-neutral { background: rgba(255,224,102,0.15); color: var(--accent-gold); border: 1px solid rgba(255,224,102,0.3); }
+.pair-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.pair-text strong { color: var(--text-primary); }
+
+/* ===== DISCLAIMER ===== */
+.disclaimer {
+  background: #fef2f2;
+  border: 2px solid var(--accent-red);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin: 2rem 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.disclaimer-title {
+  color: var(--accent-red);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== FADE IN ===== */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+.footer a { color: var(--accent-gold); text-decoration: none; }
+
+/* ===== FAB BUTTONS ===== */
+.fab-group {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  display: none; flex-direction: column; gap: 0.5rem;
+  z-index: 99;
+}
+.fab-btn {
+  width: 44px; height: 44px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.fab-btn:hover { background: var(--bg-card-hover); }
+.fab-home { font-size: 1rem; }
+
+@media (max-width: 600px) {
+  .price-card { flex: 1 1 100%; }
+  .sticky-nav a { font-size: 0.75rem; padding: 0.6rem 0.5rem; }
+}
+/* ===== COLUMN EXTRAS ===== */
+.compare-table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:0.85rem}
+.compare-table th{background:#f1f0eb;color:var(--text-primary);padding:0.7rem 0.6rem;text-align:left;cursor:pointer;user-select:none;border-bottom:2px solid var(--border-accent);white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:0.78rem}
+.compare-table th:hover{color:var(--accent-gold)}
+.compare-table th.sorted-asc::after{content:' ▲';color:var(--accent-gold)}
+.compare-table th.sorted-desc::after{content:' ▼';color:var(--accent-gold)}
+.compare-table td{padding:0.6rem;border-bottom:1px solid var(--border);color:var(--text-secondary)}
+.compare-table tr:hover td{background:rgba(0,0,0,0.02)}
+.compare-table .best{color:var(--accent-green);font-weight:700}
+.compare-table .warn{color:var(--accent-red)}
+.vs-box{display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;margin:1.5rem 0;align-items:start}
+.vs-card{background:#fff;border:1px solid var(--border);border-radius:8px;padding:1.2rem;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+.vs-card h4{color:var(--text-primary);font-size:0.95rem;margin-bottom:0.8rem}
+.vs-card li{color:var(--text-secondary);font-size:0.85rem;margin-bottom:0.4rem;line-height:1.6;list-style:none;padding-left:0}
+.vs-divider{display:flex;align-items:center;font-family:'JetBrains Mono',monospace;font-size:1.5rem;color:var(--accent-gold);font-weight:700}
+@media(max-width:600px){.vs-box{grid-template-columns:1fr}.vs-divider{justify-content:center}}
+.point-card{background:#fff;border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem;margin-bottom:0.8rem;border-left:3px solid var(--accent-gold);box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.point-card h4{color:var(--accent-gold);font-family:'JetBrains Mono',monospace;font-size:0.85rem;margin-bottom:0.4rem}
+.point-card p{font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin:0}
+.tv-badge{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:0.7rem;padding:0.15rem 0.5rem;border-radius:3px;font-weight:700}
+.tv-yes{background:rgba(46,236,138,0.15);color:var(--accent-green);border:1px solid rgba(46,236,138,0.3)}
+.tv-no{background:rgba(255,77,106,0.1);color:var(--text-muted);border:1px solid rgba(255,77,106,0.2)}
+.tv-tip{background:linear-gradient(135deg,#fef9ef,#fdf6e3);border:1px solid rgba(212,136,15,0.3);border-radius:8px;padding:1rem 1.2rem;margin:1rem 0}
+.tv-tip p{color:var(--text-secondary);font-size:0.88rem;margin:0}
+.tv-tip strong{color:var(--accent-gold)}
+.purpose-btns{display:flex;gap:0.5rem;flex-wrap:wrap;margin:1rem 0}
+.purpose-btn{font-size:0.82rem;padding:0.5rem 1rem;background:#fff;border:1px solid var(--border);border-radius:20px;color:var(--text-secondary);cursor:pointer;transition:all 0.2s;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+.purpose-btn.active,.purpose-btn:hover{color:#fff;border-color:var(--accent-gold);background:var(--accent-gold)}
+.highlight-row td{background:rgba(240,165,0,0.08)!important;border-left:3px solid var(--accent-gold)}
+.scalp-status{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:0.72rem;padding:0.15rem 0.5rem;border-radius:3px;font-weight:700}
+.scalp-ok{background:rgba(46,236,138,0.15);color:var(--accent-green);border:1px solid rgba(46,236,138,0.3)}
+.scalp-ng{background:rgba(255,77,106,0.15);color:var(--accent-red);border:1px solid rgba(255,77,106,0.3)}
+.scalp-unknown{background:rgba(255,224,102,0.1);color:var(--accent-gold);border:1px solid rgba(255,224,102,0.3)}
+
+/* ===== VISUAL ENHANCEMENTS ===== */
+.section:nth-child(even){background:#f1f0eb;border-radius:12px;padding:2.5rem 1.5rem;margin:1rem -1.5rem}
+.section-header{display:flex;align-items:center;gap:0.6rem;border-bottom:2px solid var(--accent-gold);padding-bottom:0.6rem}
+
+/* Animated bar chart */
+.bar-chart{display:flex;flex-direction:column;gap:0.6rem;margin:1.5rem 0}
+.bar-row{display:flex;align-items:center;gap:0.8rem}
+.bar-label{font-family:'JetBrains Mono',monospace;font-size:0.78rem;color:var(--text-secondary);width:120px;flex-shrink:0;text-align:right}
+.bar-track{flex:1;height:32px;background:rgba(0,0,0,0.05);border-radius:6px;overflow:hidden;position:relative}
+.bar-fill{height:100%;border-radius:6px;display:flex;align-items:center;padding-left:10px;font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:#fff;font-weight:700;transition:width 1.5s ease;width:0}
+.bar-fill.animated{width:var(--w)}
+.bar-fill.gold{background:linear-gradient(90deg,#d4880f,#f0a500)}
+.bar-fill.green{background:linear-gradient(90deg,#059669,#06a77d)}
+.bar-fill.red{background:linear-gradient(90deg,#dc2626,#e63946)}
+.bar-fill.blue{background:linear-gradient(90deg,#1d4ed8,#2176ff)}
+.bar-fill.purple{background:linear-gradient(90deg,#6d28d9,#7b61ff)}
+
+/* Gauge meter */
+.gauge-row{display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0;justify-content:center}
+.gauge{text-align:center;width:120px}
+.gauge-ring{width:80px;height:80px;border-radius:50%;margin:0 auto 0.5rem;position:relative;display:flex;align-items:center;justify-content:center}
+.gauge-ring::before{content:'';position:absolute;inset:4px;border-radius:50%;background:var(--bg-primary)}
+.gauge-val{position:relative;z-index:1;font-family:'JetBrains Mono',monospace;font-size:0.85rem;font-weight:700;color:var(--text-primary)}
+.gauge-name{font-size:0.75rem;color:var(--text-secondary);margin-top:0.3rem}
+
+/* Callout box */
+.callout{background:linear-gradient(135deg,#fef9ef,#fdf6e3);border:1px solid rgba(212,136,15,0.3);border-radius:10px;padding:1.2rem 1.5rem;margin:1.5rem 0;position:relative;overflow:hidden}
+.callout::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--accent-gold)}
+.callout h4{color:var(--accent-gold);font-family:'JetBrains Mono',monospace;font-size:0.85rem;margin-bottom:0.5rem}
+.callout p{color:var(--text-secondary);font-size:0.88rem;line-height:1.7;margin:0}
+.callout.red{background:linear-gradient(135deg,#fef2f2,#fde8e8);border-color:rgba(230,57,70,0.3)}
+.callout.red::before{background:var(--accent-red)}
+.callout.red h4{color:var(--accent-red)}
+.callout.green{background:linear-gradient(135deg,#ecfdf5,#d1fae5);border-color:rgba(6,167,125,0.3)}
+.callout.green::before{background:var(--accent-green)}
+.callout.green h4{color:var(--accent-green)}
+
+/* Animated number counter */
+.big-number{font-family:'JetBrains Mono',monospace;font-size:2.5rem;font-weight:700;text-align:center;margin:1rem 0}
+.big-number .num{color:var(--accent-gold)}
+.big-number .unit{font-size:1rem;color:var(--text-muted);margin-left:0.3rem}
+.big-number .label{display:block;font-size:0.78rem;color:var(--text-secondary);font-weight:400;margin-top:0.3rem}
+
+/* Number cards row */
+.num-cards{display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0;justify-content:center}
+.num-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:1.2rem;text-align:center;flex:1;min-width:140px;max-width:200px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.num-card .val{font-family:'JetBrains Mono',monospace;font-size:1.8rem;font-weight:700}
+.num-card .desc{font-size:0.78rem;color:var(--text-muted);margin-top:0.4rem}
+
+/* Flow diagram */
+.flow{display:flex;align-items:center;gap:0;flex-wrap:wrap;justify-content:center;margin:1.5rem 0}
+.flow-step{background:#fff;border:1px solid var(--border);border-radius:8px;padding:0.8rem 1rem;text-align:center;min-width:100px;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+.flow-step .icon{font-size:1.5rem;margin-bottom:0.3rem}
+.flow-step .text{font-size:0.78rem;color:var(--text-secondary)}
+.flow-arrow{color:var(--accent-gold);font-family:'JetBrains Mono',monospace;font-size:1.2rem;padding:0 0.5rem}
+@media(max-width:600px){.flow-arrow{transform:rotate(90deg);padding:0.3rem 0}}
+</style>
+<meta name="description" content="地政学リスクとは何か？湾岸戦争・ウクライナ侵攻・2026年イラン戦争の実データで株価・為替・原油・ゴールドへの影響を徹底解説。個人投資家が取るべき具体的な対策も紹介。">
+<link rel="canonical" href="https://marketpulse-daily.com/posts/20260405-column.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="地政学リスクと投資 — 戦争・紛争が市場に与える影響を徹底解説 | MARKETZ">
+<meta property="og:description" content="湾岸戦争・ウクライナ侵攻・2026年イラン戦争の実データで株価・為替・原油・ゴールドへの影響を解説。個人投資家が取るべき具体的な対策も紹介。">
+<meta property="og:url" content="https://marketpulse-daily.com/posts/20260405-column.html">
+<meta property="og:site_name" content="MARKETZ">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-04-05T00:00:00+09:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="地政学リスクと投資 — 戦争・紛争が市場に与える影響を徹底解説 | MARKETZ">
+<meta name="twitter:description" content="湾岸戦争・ウクライナ侵攻・2026年イラン戦争の実データで株価・為替・原油・ゴールドへの影響を解説。個人投資家が取るべき具体的な対策も紹介。">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"地政学リスクと投資 — 戦争・紛争が市場に与える影響を徹底解説","description":"湾岸戦争・ウクライナ侵攻・2026年イラン戦争の実データで株価・為替・原油・ゴールドへの影響を解説","datePublished":"2026-04-05T00:00:00+09:00","publisher":{"@type":"Organization","name":"MARKETZ"},"mainEntityOfPage":"https://marketpulse-daily.com/posts/20260405-column.html","keywords":["地政学リスク","投資","戦争","株価","原油","ゴールド","為替","イラン戦争","湾岸戦争","ウクライナ侵攻"]}
+</script>
+</head>
+<body>
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-date">2026.04.05 — COLUMN</div>
+    <h1 class="hero-title">地政学リスクと投資</h1>
+    <p class="hero-subtitle">戦争・紛争が市場に与える影響 — 湾岸戦争からイラン戦争まで、過去データで読み解く株価・為替・原油・ゴールドの動き</p>
+    <div class="hero-tags">
+      <span class="hero-tag">📝 コラム</span>
+      <span class="hero-tag alert">地政学</span>
+      <span class="hero-tag">原油</span>
+      <span class="hero-tag">ゴールド</span>
+      <span class="hero-tag">為替</span>
+      <span class="hero-tag">初心者向け</span>
+    </div>
+  </div>
+</section>
+<nav class="sticky-nav">
+  <ul>
+    <li><a href="#what">❓地政学リスクとは</a></li>
+    <li><a href="#history">📜過去の事例</a></li>
+    <li><a href="#assets">📊資産別の反応</a></li>
+    <li><a href="#iran2026">🔥イラン戦争</a></li>
+    <li><a href="#faq">💬よくある疑問</a></li>
+    <li><a href="#strategy">🛡️対策</a></li>
+    <li><a href="#marketz">📰当サイト</a></li>
+  </ul>
+</nav>
+<div class="container">
+
+<section class="section fade-in" style="padding-top:2rem">
+  <div class="callout" style="border:none;background:linear-gradient(135deg,rgba(240,165,0,0.06),rgba(240,165,0,0.02))">
+    <h4>📌 この記事でわかること</h4>
+    <ul style="list-style:none;padding:0;margin:0.8rem 0 0">
+      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary);border-bottom:1px solid rgba(0,0,0,0.05)">✅ 地政学リスクとは何か — <strong>なぜ戦争が起きるとあなたの資産が減るのか</strong></li>
+      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary);border-bottom:1px solid rgba(0,0,0,0.05)">✅ 湾岸戦争・ウクライナ侵攻・イラン戦争の<strong>実データで見る株価・原油・ゴールドの動き</strong></li>
+      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary);border-bottom:1px solid rgba(0,0,0,0.05)">✅ 「有事の金」「有事のドル買い」は本当か — <strong>資産ごとの反応パターン</strong></li>
+      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary);border-bottom:1px solid rgba(0,0,0,0.05)">✅ 2026年イラン戦争の<strong>市場インパクトを時系列で完全整理</strong></li>
+      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary)">✅ 個人投資家が今すぐ取るべき<strong>具体的な5つの対策</strong></li>
+    </ul>
+  </div>
+  <h3 style="font-size:1.1rem;font-weight:700;color:var(--text-primary);margin:2rem 0 1rem">📖 目次</h3>
+  <nav style="background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:10px;padding:1.2rem 1.5rem;box-shadow:0 1px 4px rgba(0,0,0,0.04)">
+    <ol style="margin:0;padding-left:1.2rem;list-style:decimal;color:var(--text-secondary);font-size:0.9rem;line-height:2.2">
+      <li><a href="#what" style="color:var(--text-primary);text-decoration:none">地政学リスクとは — 「遠い国の戦争」があなたの資産を動かす理由</a></li>
+      <li><a href="#history" style="color:var(--text-primary);text-decoration:none">過去の事例に学ぶ — 湾岸戦争・同時多発テロ・ウクライナ侵攻</a></li>
+      <li><a href="#assets" style="color:var(--text-primary);text-decoration:none">資産クラス別の反応パターン — 株式・原油・ゴールド・為替・暗号資産</a></li>
+      <li><a href="#iran2026" style="color:var(--text-primary);text-decoration:none">2026年イラン戦争 — いま市場で何が起きているのか</a></li>
+      <li><a href="#faq" style="color:var(--text-primary);text-decoration:none">よくある疑問Q&A — 「売るべき？」「ゴールドを買うべき？」</a></li>
+      <li><a href="#strategy" style="color:var(--text-primary);text-decoration:none">個人投資家の具体的な5つの対策</a></li>
+      <li><a href="#marketz" style="color:var(--text-primary);text-decoration:none">MARKETZで地政学リスクをフォローする</a></li>
+    </ol>
+  </nav>
+</section>
+
+<section id="what" class="section fade-in">
+  <h2 class="section-header">❓ 地政学リスクとは — 「遠い国の戦争」があなたの資産を動かす理由</h2>
+
+  <div class="callout"><h4>💡 地政学リスクの定義</h4><p>地政学リスクとは、<strong>特定の地域における政治的・軍事的・社会的な緊張</strong>が、地理的な位置関係を通じて周辺地域や世界経済の先行きを不透明にしたり、金融商品の価格を大きく変動させたりするリスクのことです。</p></div>
+
+  <div class="news-card red fade-in">
+    <div class="news-head"><span class="news-badge badge-geo">Q. なぜ遠い国の戦争で自分のお金が減るの？</span></div>
+    <div class="news-title">3つの経路であなたの資産に影響する</div>
+    <div class="news-body">
+      <strong>① サプライチェーンの断絶</strong> — 中東で紛争が起きるとホルムズ海峡（世界の原油輸送の約20%が通過）が脅かされ、原油価格が急騰。ガソリン代・電気代・食品価格まで連鎖的に上昇します。<br><br>
+      <strong>② リスクオフの連鎖売り</strong> — 不確実性が高まると、機関投資家は「まず株を売って現金化」します。世界中の株式市場が同時に下落する「リスクオフ」が発生します。<br><br>
+      <strong>③ 為替の急変動</strong> — 有事には「安全通貨」とされる米ドルやスイスフラン、日本円が買われ、新興国通貨が売られます。為替変動は輸出入企業の業績を直撃し、株価にも波及します。
+    </div>
+  </div>
+
+  <div class="flow">
+    <div class="flow-step"><div class="icon">⚔️</div><div class="text">紛争発生</div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step"><div class="icon">🚢</div><div class="text">供給不安</div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step"><div class="icon">⛽</div><div class="text">原油急騰</div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step"><div class="icon">📈</div><div class="text">インフレ</div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step"><div class="icon">📉</div><div class="text">株価下落</div></div>
+  </div>
+
+  <div class="callout red"><h4>⚠️ 日本は特に脆弱</h4><p>日本のエネルギー自給率はわずか<strong>約13%</strong>。原油輸入の約90%を中東に依存しています。ホルムズ海峡が封鎖されれば、日本経済への打撃は欧米以上に深刻です。実際、2026年3月の日経225は<strong>-13.2%</strong>と2008年以来最悪の月間下落を記録しました。</p></div>
+</section>
+
+<section id="history" class="section fade-in">
+  <h2 class="section-header">📜 過去の事例に学ぶ — 湾岸戦争・同時多発テロ・ウクライナ侵攻</h2>
+
+  <div class="callout green"><h4>📌 過去40年のデータが示す事実</h4><p>第二次大戦後の主要な20の軍事衝突において、S&P500は平均<strong>-6%</strong>下落しましたが、<strong>19回中19回で平均28日後に回復</strong>しています。戦争は一時的なショックであり、長期的には経済のファンダメンタルズが市場を動かします。</p></div>
+
+  <h3 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin:1.5rem 0 1rem">🕐 主な紛争と市場の反応</h3>
+
+  <div style="overflow-x:auto"><table class="compare-table"><thead><tr><th>紛争</th><th>年</th><th>S&P500下落幅</th><th>回復期間</th><th>原油の反応</th></tr></thead><tbody>
+    <tr><td><strong>ヨム・キプール戦争</strong></td><td>1973</td><td class="warn">-16.1%</td><td>約2年</td><td class="warn">+300%（石油危機）</td></tr>
+    <tr><td><strong>湾岸戦争</strong></td><td>1990</td><td class="warn">-15.9%</td><td>約6ヶ月</td><td class="warn">+100%（$20→$40）</td></tr>
+    <tr><td><strong>米同時多発テロ</strong></td><td>2001</td><td class="warn">-11.6%</td><td>約1ヶ月</td><td>-24%（需要減懸念）</td></tr>
+    <tr><td><strong>イラク戦争</strong></td><td>2003</td><td>-4.6%</td><td class="best">約2週間</td><td>開戦で下落</td></tr>
+    <tr><td><strong>クリミア危機</strong></td><td>2014</td><td>-3.0%</td><td class="best">約1週間</td><td>小幅上昇</td></tr>
+    <tr><td><strong>ウクライナ侵攻</strong></td><td>2022</td><td class="warn">-13.0%</td><td>約6ヶ月</td><td class="warn">+50%</td></tr>
+    <tr><td><strong>イラン戦争</strong></td><td>2026</td><td class="warn">-9.1%（3月末時点）</td><td>進行中</td><td class="warn">+45%（$77→$112）</td></tr>
+  </tbody></table></div>
+
+  <div class="news-card red fade-in">
+    <div class="news-head"><span class="news-badge badge-geo">Q. 株は戦争のたびに暴落するの？</span></div>
+    <div class="news-title">「暴落」は稀。大半は一時的な調整で終わる</div>
+    <div class="news-body">
+      過去データから見えるパターンがあります。<strong>石油ショックを伴う戦争</strong>（ヨム・キプール戦争、湾岸戦争、2026年イラン戦争）は二桁%の下落と長い回復期間を要します。一方、<strong>石油供給に影響しない紛争</strong>（イラク戦争、クリミア危機）は比較的小幅な調整にとどまり、短期間で回復します。<br><br>つまり、地政学リスクの投資への影響は<strong>「原油に波及するかどうか」が最大の分かれ目</strong>です。
+    </div>
+    <div class="news-source">出典: RBC Wealth Management, 三井住友DSアセットマネジメント, 第一生命経済研究所</div>
+  </div>
+
+  <div class="news-card gold fade-in">
+    <div class="news-head"><span class="news-badge badge-commodity">湾岸戦争（1990-91年）</span></div>
+    <div class="news-title">原油が3ヶ月で倍増 → 開戦と同時に急落した「噂で買って事実で売る」の典型</div>
+    <div class="news-body">
+      1990年8月、イラクがクウェートに侵攻。原油価格は$20から$40に急騰しました。しかし<strong>1991年1月の多国籍軍開戦と同時に原油は急落</strong>し、株価は反転上昇。S&P500は開戦後6ヶ月で-15.9%の下落分を全て回復しました。<br><br>これは地政学リスクの典型パターン: <strong>「不確実性が最大のときに底値をつけ、戦況が明確になると回復する」</strong>という法則を示しています。
+    </div>
+    <div class="news-source">出典: マネックス証券 米国株マスターへの道, 東洋経済オンライン</div>
+  </div>
+
+  <div class="news-card blue fade-in">
+    <div class="news-head"><span class="news-badge badge-fx">ウクライナ侵攻（2022年）</span></div>
+    <div class="news-title">エネルギー危機と世界的インフレの引き金に</div>
+    <div class="news-body">
+      2022年2月24日のロシアによるウクライナ侵攻は、天然ガス供給の断絶を通じて欧州に深刻なエネルギー危機をもたらしました。日経平均は侵攻から営業日10日後に底値をつけ、下落率は-7%。<br><br>しかし、その後もインフレ圧力が続き、各国中央銀行は急速な利上げを実施。<strong>地政学リスクが金融政策の変更を引き起こし、景気後退リスクに転化した</strong>初めての現代的事例となりました。
+    </div>
+    <div class="news-source">出典: NEXT FUNDS, ダイヤモンドZAi, 三井住友DSアセットマネジメント</div>
+  </div>
+</section>
+
+<section id="assets" class="section fade-in">
+  <h2 class="section-header">📊 資産クラス別の反応パターン — 株式・原油・ゴールド・為替・暗号資産</h2>
+
+  <div class="callout"><h4>💡 地政学リスクが起きたとき、どの資産がどう動くのか？</h4><p>「有事の金」「有事のドル買い」といった格言は本当でしょうか。過去のデータから、<strong>各資産クラスの典型的な反応パターン</strong>を整理します。</p></div>
+
+  <div style="overflow-x:auto"><table class="compare-table"><thead><tr><th>資産</th><th>典型的な反応</th><th>理由</th><th>持続期間</th></tr></thead><tbody>
+    <tr><td><strong>株式（先進国）</strong></td><td class="warn">下落 ↓</td><td>リスクオフで売られる</td><td>平均28日で回復</td></tr>
+    <tr><td><strong>株式（新興国）</strong></td><td class="warn">大幅下落 ↓↓</td><td>資金逃避が加速</td><td>回復に数ヶ月〜</td></tr>
+    <tr><td><strong>原油</strong></td><td class="warn">急騰 ↑↑</td><td>供給不安の織り込み</td><td>紛争収束まで</td></tr>
+    <tr><td><strong>ゴールド</strong></td><td class="best">上昇 ↑</td><td>安全資産への逃避</td><td>長期的に継続</td></tr>
+    <tr><td><strong>米ドル</strong></td><td class="best">上昇 ↑</td><td>基軸通貨への逃避</td><td>数週間〜数ヶ月</td></tr>
+    <tr><td><strong>日本円</strong></td><td>状況次第 ⇔</td><td>有事の円買い vs 原油高の円売り</td><td>ケースバイケース</td></tr>
+    <tr><td><strong>暗号資産</strong></td><td class="warn">下落 ↓</td><td>リスク資産として売られる</td><td>株式と連動</td></tr>
+    <tr><td><strong>国債（米国）</strong></td><td class="best">価格上昇（利回り低下）</td><td>安全資産への資金流入</td><td>数週間〜</td></tr>
+  </tbody></table></div>
+
+  <div class="news-card gold fade-in">
+    <div class="news-head"><span class="news-badge badge-commodity">Q. 「有事の金」は本当？</span></div>
+    <div class="news-title">はい、歴史的にゴールドは地政学リスクで最も安定して上昇する資産です</div>
+    <div class="news-body">
+      ゴールドは<strong>どの国の政府にも属さない</strong>資産であり、通貨の信用が揺らぐ有事に買われます。2025年には中央銀行が863トンを購入（過去最高水準）し、2026年4月には<strong>$5,200/オンス</strong>を突破しました。<br><br>ただし注意点もあります。<strong>紛争が鎮静化すると「巻き戻し」</strong>が起きやすく、短期的な「一時避難」としての買いは利益確定で急落するリスクがあります。長期保有であれば、インフレヘッジとしても有効です。
+    </div>
+    <div class="news-source">出典: World Gold Council, 楽天証券トウシル, 東洋経済オンライン</div>
+  </div>
+
+  <div class="news-card blue fade-in">
+    <div class="news-head"><span class="news-badge badge-fx">Q. 「有事の円買い」はもう古い？</span></div>
+    <div class="news-title">2026年のイラン戦争では「有事の円売り」が発生した</div>
+    <div class="news-body">
+      かつて日本円は「安全通貨」として有事に買われてきましたが、2026年のイラン戦争では<strong>USD/JPYが151円→160円台へ円安が進行</strong>しました。理由は明確です。日本はエネルギー輸入の約90%を中東に依存しており、<strong>原油高は日本の貿易赤字を拡大</strong>させるためです。<br><br>「有事の円買い」は過去の話になりつつあります。エネルギー価格に直結する中東の紛争では、<strong>円はむしろ売られる通貨</strong>になっています。
+    </div>
+    <div class="news-source">出典: K2 College, SBI証券</div>
+  </div>
+
+  <div class="news-card purple fade-in">
+    <div class="news-head"><span class="news-badge badge-crypto">Q. ビットコインは「デジタルゴールド」として機能する？</span></div>
+    <div class="news-title">現時点では「ノー」— ビットコインはリスク資産として売られる</div>
+    <div class="news-body">
+      ビットコインは「デジタルゴールド」と呼ばれることがありますが、2026年のイラン戦争では<strong>株式と同様にリスクオフで下落</strong>しました。3月のBTC価格は$83,000から$60,000台まで下落し、暗号資産の恐怖・強欲指数は「極度の恐怖」に。<br><br>ビットコインの値動きはゴールドよりもNASDAQとの相関が高く、<strong>地政学リスクの避難先としては機能していない</strong>のが現状です。長期的なインフレヘッジとしての議論は続いていますが、有事の短期避難先としては不適切です。
+    </div>
+    <div class="news-source">出典: CNN Business, Bloomberg</div>
+  </div>
+</section>
+
+<section id="iran2026" class="section fade-in">
+  <h2 class="section-header">🔥 2026年イラン戦争 — いま市場で何が起きているのか</h2>
+
+  <div class="callout red"><h4>⚠️ 史上最大の石油供給途絶</h4><p>IEA（国際エネルギー機関）は今回のホルムズ海峡封鎖を<strong>「世界石油市場史上最大の供給途絶」</strong>と表現しています。世界の海上原油・LNG輸出の約20%がホルムズ海峡を通過しており、その封鎖は1970年代の石油危機に匹敵するインパクトがあります。</p></div>
+
+  <h3 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin:1.5rem 0 1rem">📅 イラン戦争の市場インパクト — 時系列まとめ</h3>
+
+  <div class="news-card red fade-in">
+    <div class="news-head"><span class="news-badge badge-geo">2月28日 — 開戦</span></div>
+    <div class="news-title">米国・イスラエルがイランへの空爆を開始</div>
+    <div class="news-body">
+      Brent原油は<strong>10〜13%急騰</strong>し$80〜82/バレルに。世界の株式市場は一斉に下落。イランは報復としてイスラエル・米軍基地・湾岸の石油施設に弾道ミサイルを発射。
+    </div>
+    <div class="news-source">出典: CNN Business, NPR — 2026年3月2日</div>
+  </div>
+
+  <div class="news-card red fade-in">
+    <div class="news-head"><span class="news-badge badge-geo">3月中旬 — ホルムズ海峡封鎖</span></div>
+    <div class="news-title">原油$100突破、ガソリン$4/ガロンに急騰</div>
+    <div class="news-body">
+      イランがホルムズ海峡の封鎖を実施。世界の原油供給の約20%が脅かされ、<strong>Brent原油は$100を突破</strong>。米国のガソリン価格は<strong>$4/ガロン</strong>（30%上昇）に。カリフォルニアでは$5を超えました。
+    </div>
+    <div class="news-source">出典: Al Jazeera, Morgan Stanley — 2026年3月</div>
+  </div>
+
+  <div class="news-card red fade-in">
+    <div class="news-head"><span class="news-badge badge-geo">3月23日 — トランプ大統領が攻撃一時停止を表明</span></div>
+    <div class="news-title">停戦期待で原油反落、株価反発</div>
+    <div class="news-body">
+      トランプ大統領が「生産的な対話」を示唆し、5日間の攻撃一時停止を命令。市場は停戦期待で<strong>原油が反落、株価は反発</strong>。しかしイランは15項目の和平案を拒否し、交渉は難航。
+    </div>
+    <div class="news-source">出典: CNN — 2026年3月23日</div>
+  </div>
+
+  <div class="news-card red fade-in">
+    <div class="news-head"><span class="news-badge badge-geo">3月31日 — トランプ大統領「施設を破壊する」と警告</span></div>
+    <div class="news-title">4月6日の期限を設定、市場に再び緊張走る</div>
+    <div class="news-body">
+      トランプ大統領が「発電所、石油施設を破壊する」と警告し、<strong>4月6日を期限</strong>として設定。Brent原油は$112に急騰。S&P500とNASDAQは3月として2022年以来最悪の月間パフォーマンスを記録。
+    </div>
+    <div class="news-source">出典: Bloomberg — 2026年3月31日</div>
+  </div>
+
+  <div class="news-card green fade-in">
+    <div class="news-head"><span class="news-badge badge-stock">4月1日 — イラン大統領が停戦受け入れを示唆</span></div>
+    <div class="news-title">S&P500が+2.9%の急反発</div>
+    <div class="news-body">
+      イラン大統領が「停戦に前向き」と発言。市場は楽観ムードに転じ、<strong>S&P500は+2.9%</strong>の急反発。しかし日経225は-1.58%と逆行。エネルギー依存の日本市場は回復が遅れています。
+    </div>
+    <div class="news-source">出典: Fortune — 2026年4月1日</div>
+  </div>
+
+  <div class="news-card red fade-in">
+    <div class="news-head"><span class="news-badge badge-geo">4月2日 — トランプ大統領演説「あと2〜3週間激しく攻撃する」</span></div>
+    <div class="news-title">市場の楽観が一転、原油再び$110超え</div>
+    <div class="news-body">
+      トランプ大統領が国民向け演説で「tremendous progress（大きな進展）」と述べつつも、<strong>「あと2〜3週間、極めて激しく攻撃する」</strong>と宣言。ウォール街は「エスカレーション」と解釈し、原油は$107に急騰。韓国KOSPI -4.47%、日経225 -2.38%、欧州Stoxx600 -0.96%と世界同時株安に。
+    </div>
+    <div class="news-source">出典: CNBC, Fortune, Euronews — 2026年4月2日</div>
+  </div>
+
+  <div class="num-cards">
+    <div class="num-card"><div class="val" style="color:#e63946">+45<span style="font-size:0.8rem">%</span></div><div class="desc">Brent原油<br>開戦来上昇率</div></div>
+    <div class="num-card"><div class="val" style="color:#e63946">-13.2<span style="font-size:0.8rem">%</span></div><div class="desc">日経225<br>3月月間下落</div></div>
+    <div class="num-card"><div class="val" style="color:#06a77d">+18<span style="font-size:0.8rem">%</span></div><div class="desc">ゴールド<br>年初来上昇</div></div>
+    <div class="num-card"><div class="val" style="color:#e63946">-20<span style="font-size:0.8rem">%</span></div><div class="desc">ビットコイン<br>3月下落率</div></div>
+  </div>
+</section>
+
+<section id="faq" class="section fade-in">
+  <h2 class="section-header">💬 よくある疑問Q&A — 「売るべき？」「ゴールドを買うべき？」</h2>
+
+  <div class="news-card red fade-in">
+    <div class="news-head"><span class="news-badge badge-geo">Q1</span></div>
+    <div class="news-title">戦争が始まったら、持っている株をすぐ売るべき？</div>
+    <div class="news-body">
+      <strong>A. 原則「売らない」が正解です。</strong><br><br>
+      過去の20の軍事衝突で、S&P500は19回、平均28日で回復しています。パニック売りをすると<strong>底値で売って回復に乗れない</strong>という最悪のパターンに陥ります。<br><br>
+      ただし例外があります。<strong>生活防衛資金（6ヶ月分の生活費）が確保できていない場合</strong>は、リスク資産を一部現金化することを検討してください。投資は「余裕資金」で行うのが大前提です。
+    </div>
+  </div>
+
+  <div class="news-card gold fade-in">
+    <div class="news-head"><span class="news-badge badge-commodity">Q2</span></div>
+    <div class="news-title">今からゴールドを買うのは遅い？</div>
+    <div class="news-body">
+      <strong>A. 短期トレードとしては注意が必要。長期保有なら検討の価値あり。</strong><br><br>
+      ゴールドは2026年4月時点で$5,200/オンスと史上最高値圏です。<strong>紛争が鎮静化すると短期的な「巻き戻し」</strong>が起きるリスクがあります。<br><br>
+      一方、長期的にはインフレヘッジ・通貨分散として有効です。ポートフォリオの<strong>5〜15%</strong>をゴールドに配分するのがセオリー。投資手段としては金ETF（例: SPDRゴールドシェアーズ、三菱UFJ純金ファンド）が手軽です。
+    </div>
+  </div>
+
+  <div class="news-card blue fade-in">
+    <div class="news-head"><span class="news-badge badge-fx">Q3</span></div>
+    <div class="news-title">円安が進んでいるけど、外貨預金に逃げるべき？</div>
+    <div class="news-body">
+      <strong>A. 慌てて為替ポジションを変えるのは危険です。</strong><br><br>
+      有事の為替変動は激しく、トランプ大統領の一言で数円動きます。<strong>為替ヘッジ付きの投資信託</strong>を活用するか、そもそも長期投資であれば為替変動は平均化されるため、無理にヘッジする必要はありません。<br><br>
+      ただし、<strong>FXでレバレッジをかけている場合は注意</strong>。有事の急変動でロスカットが発生する恐れがあります。ポジションサイズの見直しを推奨します。
+    </div>
+  </div>
+
+  <div class="news-card green fade-in">
+    <div class="news-head"><span class="news-badge badge-stock">Q4</span></div>
+    <div class="news-title">戦争中に「買い」を入れるのはアリ？</div>
+    <div class="news-body">
+      <strong>A. 長期投資家にとっては歴史的に「買い場」であることが多いです。</strong><br><br>
+      過去の事例では、<strong>不確実性が最も高い時期に株価は底値をつけ、戦況が明確になると回復</strong>しています。湾岸戦争では開戦と同時に株価が反転上昇しました。<br><br>
+      ただし「底値を正確に当てる」のは不可能です。<strong>毎月の積立投資を淡々と継続する</strong>のが最もリスクの低い方法です。まとまった資金がある場合は、一括ではなく<strong>3〜6ヶ月に分けて分割投入</strong>することで時間分散できます。
+    </div>
+  </div>
+
+  <div class="news-card orange fade-in">
+    <div class="news-head"><span class="news-badge badge-tech">Q5</span></div>
+    <div class="news-title">NISAの積立を一旦止めたほうがいい？</div>
+    <div class="news-body">
+      <strong>A. 絶対に止めないでください。</strong><br><br>
+      積立投資の最大のメリットは<strong>「安い時に多く買える」ドルコスト平均法</strong>です。株価が下落しているいまこそ、同じ金額で多くの口数を買えるチャンス。<strong>下落局面で積立を止めることは、バーゲンセールに参加しないのと同じ</strong>です。<br><br>
+      過去にウクライナ侵攻で積立を止めた人と継続した人では、1年後のリターンに大きな差が出ています。
+    </div>
+  </div>
+
+  <div class="news-card red fade-in">
+    <div class="news-head"><span class="news-badge badge-geo">Q6</span></div>
+    <div class="news-title">防衛関連株は買い？</div>
+    <div class="news-body">
+      <strong>A. 短期的には注目されますが、長期投資の観点では慎重に。</strong><br><br>
+      日本の防衛関連株（三菱重工、川崎重工、IHIなど）は2026年初頭から堅調です。しかし、<strong>紛争終結とともに「期待剥落」で下落する</strong>リスクがあります。個別株投資はリスクが高いため、分散されたETFや投資信託を中心にポートフォリオを組むのが安全です。
+    </div>
+    <div class="news-source">出典: Bloomberg — 2026年1月7日</div>
+  </div>
+</section>
+
+<section id="strategy" class="section fade-in">
+  <h2 class="section-header">🛡️ 個人投資家の具体的な5つの対策</h2>
+
+  <div class="point-card"><h4>対策① 積立投資を絶対に止めない</h4><p>ドルコスト平均法は下落局面でこそ威力を発揮します。NISA枠での毎月積立は<strong>最強の時間分散</strong>です。過去の全ての戦争・金融危機を通じて、積立を継続した投資家が最も良い結果を得ています。</p></div>
+
+  <div class="point-card"><h4>対策② ゴールドをポートフォリオの5〜15%組み入れる</h4><p>ゴールドは地政学リスクに対する<strong>最も信頼性の高いヘッジ</strong>です。金ETF（SPDRゴールドシェアーズ等）やNISA対象の三菱UFJ純金ファンドで手軽に投資可能。ただし短期売買ではなく、長期保有が前提です。</p></div>
+
+  <div class="point-card"><h4>対策③ 生活防衛資金（6ヶ月分）を確保する</h4><p>有事に慌てて投資資産を切り崩さないために、<strong>最低6ヶ月分の生活費を預貯金で確保</strong>してから投資しましょう。これがあれば、株価が-20%下落しても冷静に「待つ」ことができます。</p></div>
+
+  <div class="point-card"><h4>対策④ 資産クラスの分散を見直す</h4><p>株式100%のポートフォリオは地政学リスクに脆弱です。<strong>債券・ゴールド・リート</strong>など異なる値動きをする資産を組み入れましょう。GPIFの4資産均等配分（国内株25%・国内債25%・外国株25%・外国債25%）は参考になるモデルです。</p></div>
+
+  <div class="point-card"><h4>対策⑤ FXのレバレッジとポジションサイズを見直す</h4><p>有事の為替市場はトランプ大統領の一言で数円動きます。<strong>レバレッジは通常時の半分以下</strong>に抑え、ロスカットラインに余裕を持たせてください。USD/JPYのボラティリティは通常の2〜3倍に達しています。</p></div>
+
+  <div class="callout green"><h4>📌 まとめ: 地政学リスクへの最善の対応は「準備」</h4><p>地政学リスクは<strong>予測できません</strong>。いつ・どこで・何が起きるかは誰にもわかりません。しかし<strong>「備えること」はできます</strong>。<br><br>積立投資の継続、資産クラスの分散、生活防衛資金の確保 — この3つができていれば、どんな有事が来ても冷静に対応できます。最も危険なのは「何も考えていなかった」状態で有事を迎えることです。</p></div>
+
+  <h3 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:1.5rem 0 1rem">📚 関連コラム</h3>
+  <a href="20260401-column.html" style="display:block;background:#fff;border:1px solid rgba(0,0,0,0.08);border-left:4px solid #f0a500;border-radius:10px;padding:1rem 1.2rem;margin:0.8rem 0;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,0.04);transition:all 0.2s;">
+    <div style="font-size:0.7rem;color:#f0a500;font-weight:700;margin-bottom:0.3rem;">🛢 コモディティ</div>
+    <div style="font-size:0.95rem;font-weight:700;color:#1a1a2e;">原油価格はなぜ上がるのか — 2026年の原油市場完全ガイド</div>
+    <div style="font-size:0.82rem;color:#7a7a8e;margin-top:0.3rem;">WTI・Brent・ドバイの違い、ホルムズ海峡危機、ETF/CFDでの投資方法</div>
+  </a>
+  <a href="20260402-column.html" style="display:block;background:#fff;border:1px solid rgba(0,0,0,0.08);border-left:4px solid #f0a500;border-radius:10px;padding:1rem 1.2rem;margin:0.8rem 0;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,0.04);transition:all 0.2s;">
+    <div style="font-size:0.7rem;color:#f0a500;font-weight:700;margin-bottom:0.3rem;">📈 投資信託</div>
+    <div style="font-size:0.95rem;font-weight:700;color:#1a1a2e;">NISAで選ぶべき投資信託完全ガイド — S&P500・オルカン・分散投資の本質</div>
+    <div style="font-size:0.82rem;color:#7a7a8e;margin-top:0.3rem;">相関係数の罠、GPIFモデル、具体的なポートフォリオ例</div>
+  </a>
+  <a href="20260330-column.html" style="display:block;background:#fff;border:1px solid rgba(0,0,0,0.08);border-left:4px solid #f0a500;border-radius:10px;padding:1rem 1.2rem;margin:0.8rem 0;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,0.04);transition:all 0.2s;">
+    <div style="font-size:0.7rem;color:#f0a500;font-weight:700;margin-bottom:0.3rem;">💱 為替</div>
+    <div style="font-size:0.95rem;font-weight:700;color:#1a1a2e;">FX口座の選び方 完全ガイド — 国内vs海外、8社徹底比較</div>
+    <div style="font-size:0.82rem;color:#7a7a8e;margin-top:0.3rem;">スプレッド・スワップ・TradingView連携・スキャルピング対応</div>
+  </a>
+</section>
+
+
+<section id="marketz" class="section fade-in">
+  <h2 class="section-header">📰 MARKETZで地政学リスクをフォローする</h2>
+  <div class="callout" style="background:linear-gradient(135deg,rgba(240,165,0,0.08),rgba(240,165,0,0.02));border-color:rgba(240,165,0,0.3)">
+    <h4>📈 毎日のマーケットダイジェスト</h4>
+    <p>MARKETZでは、<strong>為替・原油・金・ビットコイン・S&P500・NASDAQ・日経225</strong>の7カテゴリと<strong>地政学ニュース</strong>を毎日配信。イラン戦争の最新動向とトランプ大統領の発言が市場に与える影響をリアルタイムでフォローできます。</p>
+  </div>
+  <div class="callout" style="background:linear-gradient(135deg,rgba(230,57,70,0.06),rgba(230,57,70,0.02));border-color:rgba(230,57,70,0.3)">
+    <h4>🌍 地政学リスクの専門解説</h4>
+    <p>戦争・紛争・制裁・貿易摩擦が市場に与える影響を、<strong>過去の事例データと現在の市場データ</strong>を組み合わせて解説。ニュースの「読み方」を身につけ、パニック売りに巻き込まれない投資判断力を養えます。</p>
+  </div>
+  <div class="callout" style="background:linear-gradient(135deg,rgba(7,228,221,0.06),rgba(7,228,221,0.02));border-color:rgba(7,228,221,0.3)">
+    <h4>🏦 投資の基礎知識コラム</h4>
+    <p>FX口座比較、NISA口座選び、ビットコイン入門、原油市場ガイドなど、<strong>初心者から中級者まで役立つ解説記事</strong>を定期配信。地政学リスクに振り回されない投資の基盤を作りましょう。</p>
+  </div>
+  <div style="text-align:center;margin:1.5rem 0"><a href="https://marketpulse-daily.com/" style="display:inline-block;padding:0.8rem 2rem;background:var(--accent-gold);color:#fff;font-weight:700;border-radius:8px;text-decoration:none;font-size:1rem;">MARKETZのトップページへ →</a></div>
+</section>
+
+<!-- PR -->
+<div class="news-card gold fade-in" style="border-left-color:var(--accent-gold);margin:2rem 0;padding:1.5rem;">
+  <div class="news-head"><span class="news-badge badge-commodity" style="background:rgba(212,136,15,0.1);color:var(--accent-gold);border:1px solid rgba(212,136,15,0.3);">PR — 広告</span></div>
+  <div class="news-title" style="margin-top:0.5rem;">FX・CFD取引を始めるなら</div>
+  <div style="margin-top:0.8rem;display:flex;flex-wrap:wrap;gap:0.8rem;">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:var(--accent-gold);color:#fff;font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;">【PR】DMM FX →</a>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:transparent;color:var(--accent-gold);font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;border:1px solid var(--accent-gold);">【PR】DMM CFD →</a>
+  </div>
+  <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" alt=""><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" alt="">
+  <div class="news-source" style="margin-top:0.5rem;">※ 投資にはリスクが伴います。</div>
+</div>
+<div class="disclaimer fade-in"><div class="disclaimer-title">⚠️ 免責事項</div>本記事は情報提供のみを目的とし、特定の金融商品の購入や売却を推奨するものではありません。投資には元本を下回るリスクが伴います。投資判断はご自身の責任で行ってください。<br>参考: RBC Wealth Management, 三井住友DSアセットマネジメント, 第一生命経済研究所, マネックス証券, QUICK Money World, マネイロ, SBI証券, K2 College, World Gold Council, Bloomberg, CNN Business, CNBC, Fortune, Morgan Stanley, Al Jazeera, NPR, 東洋経済オンライン, ダイヤモンドZAi, PwC Japan</div>
+<footer class="footer"><p>MARKETZ — <a href="https://marketpulse-daily.com/">ホームに戻る</a></p><p>© 2026 MARKETZ.</p></footer>
+</div>
+<div class="fab-group">
+  <a href="https://marketpulse-daily.com/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
+  <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
+</div>
+<script>
+const observer=new IntersectionObserver(e=>{e.forEach(e=>{
+  if(e.isIntersecting){
+    e.target.classList.add('visible');
+    // Animate bar fills when section becomes visible
+    e.target.querySelectorAll('.bar-fill').forEach(bar=>{bar.classList.add('animated')});
+  }
+})},{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+const sections=document.querySelectorAll('section[id]');
+const navLinks=document.querySelectorAll('.sticky-nav a');
+window.addEventListener('scroll',()=>{
+  let current='';
+  sections.forEach(s=>{if(window.scrollY>=s.offsetTop-100)current=s.getAttribute('id')});
+  navLinks.forEach(a=>{a.classList.remove('active');if(a.getAttribute('href')==='#'+current)a.classList.add('active')});
+  const fg=document.querySelector('.fab-group');
+  if(fg){fg.style.display=window.scrollY>600?'flex':'none'}
+});
+function sortTable(table,col,type){
+  const tbody=table.querySelector('tbody');const rows=Array.from(tbody.querySelectorAll('tr'));
+  const th=table.querySelectorAll('th')[col];const asc=!th.classList.contains('sorted-asc');
+  table.querySelectorAll('th').forEach(h=>h.classList.remove('sorted-asc','sorted-desc'));
+  th.classList.add(asc?'sorted-asc':'sorted-desc');
+  rows.sort((a,b)=>{let va=a.cells[col].textContent.trim(),vb=b.cells[col].textContent.trim();
+    if(type==='num'){va=parseFloat(va.replace(/[^0-9.\-]/g,''))||999;vb=parseFloat(vb.replace(/[^0-9.\-]/g,''))||999}
+    return va<vb?(asc?-1:1):va>vb?(asc?1:-1):0});
+  rows.forEach(r=>tbody.appendChild(r));
+}
+function switchTab(group,id){
+  document.querySelectorAll('[data-tab-group="'+group+'"] .tab-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.tab-content[data-group="'+group+'"]').forEach(c=>c.classList.remove('active'));
+  document.querySelector('[data-tab-group="'+group+'"] [data-tab="'+id+'"]').classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+function filterPurpose(purpose,el){
+  document.querySelectorAll('.purpose-btn').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  document.querySelectorAll('#summary-table tbody tr').forEach(r=>{
+    r.classList.remove('highlight-row');
+    if(r.dataset.purpose&&r.dataset.purpose.includes(purpose))r.classList.add('highlight-row');
+  });
+}
+</script>
+</body>
+</html>
