@@ -1,19 +1,20 @@
 CLAUDE.mdの「日次記事生成フロー」に従って、今日の日付のマーケットニュースダイジェストを作成してください。
 
+## 引数
+- `/daily-news [ファイルパス]` — リサーチファイルのパスを指定（省略時: `research.md`）
+
 ## 手順（必ずこの順序で実行）
 
-### Step 1: ニュース収集
-WebSearchで以下10件を**並列**で検索:
-- "USD/JPY EUR/JPY GBP/JPY AUD/JPY exchange rate [今日の日付]"
-- "gold price XAU/USD oil Brent WTI [今日の日付]"
-- "Bitcoin BTC price [今日の日付]"
-- "S&P 500 NASDAQ Nikkei 225 [今日の日付]"
-- "Iran war Hormuz strait latest [今日の日付]"
-- "Trump tariffs trade war [今日の日付]"
-- "Federal Reserve Bank of Japan policy [今月] 2026"
-- "日本 テクノロジー ニュース 最新 [今日の日付]"（※日本語で検索し日本語ソースを優先）
-- "Japan technology innovation news [今日の日付]"
-- "global markets today [今日の日付]"
+### Step 1: リサーチファイル読み込み
+1. 指定されたマークダウンファイル（デフォルト: プロジェクトルートの `research.md`）をReadツールで読み込む
+2. 読み込んだ内容から、全7カテゴリ（為替・コモディティ・暗号資産・株式指数・地政学・日本テクノロジー・共通ニュース）の情報を抽出・整理する
+3. **情報不足チェック**: 以下の必須データが欠けている場合のみ、WebSearchで補完する
+   - 為替レート（USD/JPY, EUR/JPY, GBP/JPY, AUD/JPY）
+   - コモディティ価格（Gold, Brent, WTI）
+   - Bitcoin価格
+   - 株式指数（S&P 500, NASDAQ, 日経225）
+   - 地政学ニュース
+   - 日本テクノロジーニュース（※日本語ソースを優先）
 
 ### Step 2: テンプレートコピー
 直近の記事HTMLをコピーして新ファイルを作成:
