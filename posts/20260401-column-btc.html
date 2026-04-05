@@ -445,6 +445,22 @@ body {
 .author-title{font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--accent-gold);letter-spacing:0.03em;margin-bottom:0.5rem}
 .author-bio{font-size:0.82rem;color:var(--text-secondary);line-height:1.7}
 @media(max-width:600px){.author-box{flex-direction:column;align-items:center;text-align:center}.author-avatar{width:56px;height:56px;font-size:1.3rem}}
+
+/* ===== SVG RESPONSIVE ===== */
+.svg-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1rem 0}
+.svg-scroll img{min-width:500px;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08)}
+.compare-table{font-size:0.82rem}
+@media(max-width:600px){
+  .compare-table{font-size:0.75rem}
+  .compare-table th,.compare-table td{padding:0.45rem 0.4rem}
+  .num-cards{gap:0.5rem}
+  .num-card{min-width:100px;padding:0.8rem}
+  .num-card .val{font-size:1.3rem}
+  .flow{gap:0.3rem}
+  .flow-step{min-width:70px;padding:0.5rem 0.6rem}
+  .flow-step .text{font-size:0.7rem}
+  .flow-arrow{font-size:0.9rem;padding:0 0.2rem}
+}
 </style>
 <meta name="description" content="ビットコインの仕組みからブロックチェーン、買い方、国内外取引所比較、税制改正、将来性まで初心者向けに徹底解説。">
 <link rel="canonical" href="https://marketpulse-daily.com/posts/20260401-column-btc.html">
@@ -532,11 +548,9 @@ body {
 </section>
 
 <section id="blockchain" class="section fade-in">
-  <h2 class="section-header">🔗 ブロックチェーンの仕組み（図解）</h2>
-  <img src="../images/column/blockchain.svg" alt="ブロックチェーン図解" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+  <h2 class="section-header">🔗 ブロックチェーンの仕組み（図解）</h2><div class="svg-scroll"><img src="../images/column/blockchain.svg" alt="ブロックチェーン図解" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);"></div>
   <div class="point-card"><h4>① ブロック = 取引の束</h4><p>複数の取引をまとめたもの。「A→Bに1.5BTC送金」などの記録が入っています。</p></div>
-  <div class="point-card"><h4>② ハッシュ値 = デジタル指紋</h4><p>各ブロックの固有ID。1文字変えると全く異なる値になるため、改ざんが即座にバレます。</p></div>
-  <img src="../images/column/hash.svg" alt="ハッシュ値の仕組み" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+  <div class="point-card"><h4>② ハッシュ値 = デジタル指紋</h4><p>各ブロックの固有ID。1文字変えると全く異なる値になるため、改ざんが即座にバレます。</p></div><div class="svg-scroll"><img src="../images/column/hash.svg" alt="ハッシュ値の仕組み" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);"></div>
   <div class="point-card"><h4>③ マイニング = 取引の承認作業</h4><p>世界中のコンピュータが計算競争。正しいナンスを見つけた人がブロック追加の権利と報酬（3.125 BTC）を得ます。</p></div>
   <div class="callout green"><h4>✅ なぜ改ざんできないのか？</h4><p>1ブロックの改ざん→後続の<strong>全ブロックのハッシュ値も書き換え必要</strong>。世界中のコンピュータの過半数を掌握しない限り不可能です。</p></div>
 </section>

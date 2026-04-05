@@ -445,6 +445,22 @@ body {
 .author-title{font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--accent-gold);letter-spacing:0.03em;margin-bottom:0.5rem}
 .author-bio{font-size:0.82rem;color:var(--text-secondary);line-height:1.7}
 @media(max-width:600px){.author-box{flex-direction:column;align-items:center;text-align:center}.author-avatar{width:56px;height:56px;font-size:1.3rem}}
+
+/* ===== SVG RESPONSIVE ===== */
+.svg-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1rem 0}
+.svg-scroll img{min-width:500px;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08)}
+.compare-table{font-size:0.82rem}
+@media(max-width:600px){
+  .compare-table{font-size:0.75rem}
+  .compare-table th,.compare-table td{padding:0.45rem 0.4rem}
+  .num-cards{gap:0.5rem}
+  .num-card{min-width:100px;padding:0.8rem}
+  .num-card .val{font-size:1.3rem}
+  .flow{gap:0.3rem}
+  .flow-step{min-width:70px;padding:0.5rem 0.6rem}
+  .flow-step .text{font-size:0.7rem}
+  .flow-arrow{font-size:0.9rem;padding:0 0.2rem}
+}
 </style>
 <meta name="description" content="S&P500・オルカン・日経225・NASDAQ100・FANG+をNISAで比較。相関係数の罠と真の分散投資を具体的なポートフォリオ例とともに解説。">
 <link rel="canonical" href="https://marketpulse-daily.com/posts/20260402-column.html">
@@ -530,8 +546,7 @@ body {
 </section>
 
 <section id="allcountry" class="section fade-in">
-  <h2 class="section-header">🌍 オルカン — 全世界に1本で投資、でもその中身は…</h2>
-  <img src="../images/column/allcountry-composition.svg" alt="オルカンの構成比率: 米国株63% 日本株4.7% 欧州新興国32.3%" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+  <h2 class="section-header">🌍 オルカン — 全世界に1本で投資、でもその中身は…</h2><div class="svg-scroll"><img src="../images/column/allcountry-composition.svg" alt="オルカンの構成比率: 米国株63% 日本株4.7% 欧州新興国32.3%" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);"></div>
   <div class="num-cards">
     <div class="num-card"><div class="val" style="color:#f0a500">63<span style="font-size:0.8rem">%</span></div><div class="desc">米国株の割合</div></div>
     <div class="num-card"><div class="val" style="color:#e63946">4.7<span style="font-size:0.8rem">%</span></div><div class="desc">日本株の割合</div></div>
@@ -565,8 +580,7 @@ body {
 </section>
 
 <section id="correlation" class="section fade-in">
-  <h2 class="section-header">🔗 オルカンとS&P500の相関の罠</h2>
-  <img src="../images/column/allcountry-composition.svg" alt="オルカン構成" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+  <h2 class="section-header">🔗 オルカンとS&P500の相関の罠</h2><div class="svg-scroll"><img src="../images/column/allcountry-composition.svg" alt="オルカン構成" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);"></div>
   <div class="num-cards">
     <div class="num-card"><div class="val" style="color:#e63946">0.97</div><div class="desc">相関係数<br>（ほぼ同じ動き）</div></div>
     <div class="num-card"><div class="val" style="color:#e63946">80<span style="font-size:0.8rem">%超</span></div><div class="desc">併せ持ち時の<br>米国比率</div></div>
