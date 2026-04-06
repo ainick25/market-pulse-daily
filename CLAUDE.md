@@ -12,12 +12,14 @@
 - 米国の祝日（Good Friday等）は日本の日付で表記（例: 米国4/4金→日本では4/4土の早朝まで影響）
 
 ## 日次記事生成フロー
-1. Web検索で最新ニュースを網羅的に収集（全7カテゴリ）。情報不足がないよう徹底的にリサーチする
-2. `posts/YYYYMMDD.html` を単一HTMLファイルとして生成
-3. `index.html` の記事カードリスト先頭に新記事カードを追加（最新5件のみ表示、6件目以降は削除）
-4. `node scripts/build-metadata.js` を実行
-5. `node scripts/build-sitemap.js` を実行
-6. git add -A → commit → push
+1. Web検索で最新ニュースを網羅的に収集（全7カテゴリ）。**全データはWebSearchから正確に抽出し、推測・記憶・補間は絶対禁止**
+2. ファクトチェック: 全ての価格・ニュース・数値をWebSearch出典で裏付け確認
+3. `posts/YYYYMMDD.html` を単一HTMLファイルとして生成（Editで1セクションずつ差し替え）
+4. `index.html` の**ハイライト欄（日付・テキスト・数値バッジ）**と記事カードリストを更新（最新5件のみ、6件目以降は削除）
+5. `node scripts/build-metadata.js` を実行（コラムのメタデータが消えていないか確認）
+6. `node scripts/build-sitemap.js` を実行（contact.html・コラムが消えていないか確認）
+7. grepで旧テンプレートの数値残留がないことを検証
+8. git add -A → commit → push
 
 ## 必須カテゴリ
 1. 為替: USD/JPY, EUR/JPY, GBP/JPY, AUD/JPY
