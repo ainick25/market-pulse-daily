@@ -29,6 +29,7 @@
 <meta property="og:url" content="https://marketpulse-daily.com/">
 <meta property="og:site_name" content="MARKETZ">
 <meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://marketpulse-daily.com/images/og-default.svg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MARKETZ — グローバル市場ニュースダイジェスト">
 <meta name="twitter:description" content="FX・株式・コモディティ・暗号資産の最新ニュースを毎日配信。">
@@ -204,13 +205,13 @@ body{
 .cal-header button:hover{border-color:var(--accent-amber);color:var(--accent-amber)}
 .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;text-align:center}
 .cal-dow{font-family:'JetBrains Mono',monospace;font-size:0.6rem;color:var(--text-muted);padding:0.3rem 0}
-.cal-day{font-family:'JetBrains Mono',monospace;font-size:0.72rem;padding:0.35rem 0;border-radius:4px;color:var(--text-muted);transition:all 0.2s}
+.cal-day{font-family:'JetBrains Mono',monospace;font-size:0.72rem;padding:0.35rem 0;border-radius:4px;color:var(--text-muted);transition:all 0.2s;min-height:44px;display:flex;align-items:center;justify-content:center}
 .cal-day.has-post{background:rgba(240,165,0,0.15);color:var(--accent-amber);cursor:pointer;font-weight:700}
 .cal-day.has-post:hover{background:rgba(240,165,0,0.3)}
 .cal-day.today{outline:2px solid var(--accent-blue);outline-offset:-2px}
 .cal-day.empty{visibility:hidden}
 .idx-tag-cloud{display:flex;flex-wrap:wrap;gap:0.4rem}
-.idx-tag-pill{font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.2rem 0.55rem;border:1px solid var(--border-accent);border-radius:3px;color:var(--text-secondary);text-decoration:none;transition:all 0.2s}
+.idx-tag-pill{font-family:'JetBrains Mono',monospace;font-size:0.65rem;padding:0.45rem 0.7rem;border:1px solid var(--border-accent);border-radius:3px;color:var(--text-secondary);text-decoration:none;transition:all 0.2s;min-height:36px;display:inline-flex;align-items:center}
 .idx-tag-pill:hover{border-color:var(--accent-amber);color:var(--accent-amber);background:rgba(212,136,15,0.06)}
 
 /* ===== SIDEBAR AFFILIATE AREA ===== */
@@ -320,15 +321,15 @@ body{
   <!-- ===== 📌 本日のハイライト ===== -->
   <div class="section-label">📌 本日のハイライト — TODAY'S HIGHLIGHT</div>
   <div style="background:#fff;border:1px solid rgba(0,0,0,0.08);border-left:4px solid var(--accent-amber);border-radius:10px;padding:1.2rem 1.5rem;margin-bottom:2.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-    <div style="font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--text-muted);margin-bottom:0.5rem;">2026.04.03 — FRIDAY</div>
-    <div style="font-size:1.05rem;font-weight:700;color:var(--text-primary);line-height:1.6;margin-bottom:0.6rem;">トランプ演説「2-3週間猛攻撃」でWTI $111急騰。S&P500 -1.3%でラリー帳消し。本日Good Friday休場。雇用統計は今夜21:30。</div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--text-muted);margin-bottom:0.5rem;">2026.04.08 — WEDNESDAY</div>
+    <div style="font-size:1.05rem;font-weight:700;color:var(--text-primary);line-height:1.6;margin-bottom:0.6rem;">トランプ「一つの文明が今夜滅ぶ」— ホルムズ期限迫る。WTI $115に急騰。USD/JPY 159.81円。BTC $68,416に下落。日経53,430。</div>
     <div style="display:flex;flex-wrap:wrap;gap:1rem;font-family:'JetBrains Mono',monospace;font-size:0.78rem;color:var(--text-muted);">
-      <span>USD/JPY <strong style="color:var(--text-primary)">159.70</strong></span>
-      <span>Gold <strong style="color:var(--accent-red)">$4,633</strong></span>
-      <span>WTI <strong style="color:var(--accent-red)">$111.29 ↑</strong></span>
-      <span>BTC <strong style="color:var(--accent-red)">$66,246</strong></span>
-      <span>S&P500 <strong style="color:var(--accent-red)">6,504</strong></span>
-      <span>日経 <strong style="color:var(--accent-green)">54,100 ↑</strong></span>
+      <span>USD/JPY <strong style="color:var(--accent-red)">159.81</strong></span>
+      <span>Gold <strong style="color:var(--accent-green)">$4,655 ↑</strong></span>
+      <span>WTI <strong style="color:var(--accent-red)">$115.21 ↑</strong></span>
+      <span>BTC <strong style="color:var(--accent-red)">$68,416 ↓</strong></span>
+      <span>S&P500 <strong style="color:var(--accent-green)">5,593 ↑</strong></span>
+      <span>日経 <strong style="color:var(--accent-green)">53,430 ↑</strong></span>
     </div>
   </div>
 
@@ -336,6 +337,32 @@ body{
   <div class="section-label">📰 最新マーケットレポート — LATEST REPORT</div>
 
   <div class="article-list">
+    <a href="posts/20260408.html" class="article-card">
+      <div class="article-date">2026.04.08 WED</div>
+      <div class="article-title">トランプ「一つの文明が今夜滅ぶ」— ホルムズ期限迫る、WTI $115急騰、BTC $68,416に下落</div>
+      <div class="article-excerpt">イラン戦争39日目。ハルグ島空爆。パキスタンが2週間延長を仲介中。日経53,430で小幅続伸。Japan IT Week開幕。</div>
+      <div class="article-tags">
+        <span class="tag tag-alert">地政学</span>
+        <span class="tag tag-fx">USD/JPY</span>
+        <span class="tag tag-commodity">原油</span>
+        <span class="tag tag-stock">米国株</span>
+        <span class="tag tag-stock">日本テック</span>
+      </div>
+    </a>
+
+    <a href="posts/20260406.html" class="article-card">
+      <div class="article-date">2026.04.06 MON</div>
+      <div class="article-title">イランが停戦案拒否、トランプ「火曜は発電所の日」— 雇用統計+17.8万人、BTC $69,706に反発</div>
+      <div class="article-excerpt">イランが45日間停戦案を拒否。期限は日本時間4/9水曜9:00。雇用統計+17.8万人。BTC停戦期待で+4%。日経53,413。</div>
+      <div class="article-tags">
+        <span class="tag tag-alert">地政学</span>
+        <span class="tag tag-fx">USD/JPY</span>
+        <span class="tag tag-stock">日本テック</span>
+        <span class="tag tag-stock">米国株</span>
+        <span class="tag tag-commodity">ゴールド</span>
+      </div>
+    </a>
+
     <a href="posts/20260403.html" class="article-card">
       <div class="article-date">2026.04.03 FRI</div>
       <div class="article-title">トランプ演説「猛攻撃」でWTI $111急騰 — S&P500 -1.3%、Good Friday前にリスクオフ</div>
@@ -349,19 +376,6 @@ body{
       </div>
     </a>
 
-    <a href="posts/20260402.html" class="article-card">
-      <div class="article-date">2026.04.02 THU</div>
-      <div class="article-title">日経+5.24%の大幅反発 — 世界株ラリー、Brent$101に下落、訪中延期</div>
-      <div class="article-excerpt">「ホルムズ・ホープ」で日経+5.24%、韓国+8.1%。円158円台に急伸。日立フィジカルAI開設。</div>
-      <div class="article-tags">
-        <span class="tag tag-alert">地政学</span>
-        <span class="tag tag-fx">USD/JPY</span>
-        <span class="tag tag-commodity">原油</span>
-        <span class="tag tag-stock">米国株</span>
-        <span class="tag tag-fx">FRB</span>
-      </div>
-    </a>
-
     <a href="archive.html" class="article-card" style="text-align:center;color:var(--accent-amber);font-weight:700;">
       <div class="article-title">📚 過去のレポートをすべて見る → アーカイブ</div>
     </a>
@@ -371,6 +385,18 @@ body{
   <div class="section-label" style="margin-top:2.5rem;">📝 コラム・解説記事 — COLUMN</div>
 
   <div class="article-list">
+    <a href="posts/20260406-iran-war.html" class="article-card" style="border-left:3px solid var(--accent-red)">
+      <div class="article-date">2026.04.06 — 🔥 特集</div>
+      <div class="article-title">2026年イラン戦争 完全解説 — 開戦から38日、トランプ発言と市場の全記録</div>
+      <div class="article-excerpt">2/28開戦から4/6現在までの全タイムライン。トランプ大統領の発言と市場反応、ホルムズ海峡封鎖の影響をデータで徹底分析。</div>
+      <div class="article-tags">
+        <span class="tag tag-alert">地政学</span>
+        <span class="tag tag-commodity">原油</span>
+        <span class="tag tag-commodity">ゴールド</span>
+        <span class="tag tag-fx">為替</span>
+      </div>
+    </a>
+
     <a href="posts/20260405-column.html" class="article-card" style="border-left:3px solid var(--accent-amber)">
       <div class="article-date">2026.04.05 — 📝 コラム</div>
       <div class="article-title">地政学リスクと投資 — 戦争・紛争が市場に与える影響を徹底解説</div>
@@ -541,6 +567,8 @@ body{
       <a href="tags.html">タグ</a>
       <a href="about.html">このサイトについて</a>
       <a href="disclaimer.html">免責事項・投資リスク</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="contact.html">お問い合わせ</a>
     </nav>
     <div class="footer-copy">
       &copy; 2026 MARKETZ. All rights reserved.
