@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- A8.net Link Manager -->
+<script src="//statics.a8.net/a8link/a8linkmgr.js"></script>
+<script>
+  a8linkmgr({
+    "config_id": "3FffsI9Y9VCBqU9ikTQJ"
+  });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KFT35KZZVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KFT35KZZVC');
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MARKETZ — 2026.04.11 マーケットニュースダイジェスト</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #f8f7f4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0efe8;
+  --text-primary: #1a1a2e;
+  --text-secondary: #3d3d56;
+  --text-muted: #7a7a8e;
+  --accent-red: #e63946;
+  --accent-green: #06a77d;
+  --accent-gold: #d4880f;
+  --accent-blue: #2176ff;
+  --accent-purple: #7b61ff;
+  --accent-orange: #e07b39;
+  --border: rgba(0,0,0,0.08);
+  --border-accent: rgba(0,0,0,0.12);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Meiryo', 'Yu Gothic UI', 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.2rem; }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridSlide 20s linear infinite;
+}
+@keyframes gridSlide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(60px, 60px); }
+}
+.hero-content { position: relative; z-index: 1; padding: 2rem 1rem; }
+.hero-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: #d4880f;
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
+}
+.hero-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+.hero-subtitle {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto; margin-right: auto;
+}
+.hero-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+.hero-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: #ffffff;
+  background: rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.15);
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+}
+.hero-tag.alert {
+  border-color: rgba(255,100,120,0.6);
+  background: rgba(255,100,120,0.2);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+/* ===== STICKY NAV ===== */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.sticky-nav ul {
+  display: flex; list-style: none;
+  max-width: 900px; margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+  gap: 0;
+}
+.sticky-nav a {
+  display: block;
+  padding: 0.75rem 0.8rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.sticky-nav a:hover, .sticky-nav a.active {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+  background: rgba(0,0,0,0.04);
+}
+
+/* ===== SECTION ===== */
+.section { padding: 3rem 0; }
+.section-header {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-accent);
+}
+
+/* ===== PRICE STRIP ===== */
+.price-strip {
+  display: flex; flex-wrap: wrap; gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.price-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  flex: 1 1 140px;
+  min-width: 130px;
+}
+.price-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+.price-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+.price-change {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 0.15rem;
+}
+.price-change.up { color: var(--accent-green); }
+.price-change.down { color: var(--accent-red); }
+
+/* ===== NEWS CARD ===== */
+.news-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+  border-left: 3px solid transparent;
+}
+.news-card:hover { background: var(--bg-card-hover); }
+.news-card.blue { border-left-color: var(--accent-blue); }
+.news-card.red { border-left-color: var(--accent-red); }
+.news-card.gold { border-left-color: var(--accent-gold); }
+.news-card.green { border-left-color: var(--accent-green); }
+.news-card.purple { border-left-color: var(--accent-purple); }
+.news-card.orange { border-left-color: var(--accent-orange); }
+
+.news-head { margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.news-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+}
+.badge-fx { background: rgba(33,118,255,0.1); color: var(--accent-blue); border: 1px solid rgba(33,118,255,0.2); }
+.badge-commodity { background: rgba(212,136,15,0.1); color: var(--accent-gold); border: 1px solid rgba(212,136,15,0.2); }
+.badge-crypto { background: rgba(123,97,255,0.1); color: var(--accent-purple); border: 1px solid rgba(123,97,255,0.2); }
+.badge-stock { background: rgba(6,167,125,0.1); color: var(--accent-green); border: 1px solid rgba(6,167,125,0.2); }
+.badge-geo { background: rgba(230,57,70,0.1); color: var(--accent-red); border: 1px solid rgba(230,57,70,0.2); }
+.badge-tech { background: rgba(224,123,57,0.1); color: var(--accent-orange); border: 1px solid rgba(224,123,57,0.2); }
+
+.news-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+.news-body {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.news-source {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+.news-source a{color:var(--accent-gold);text-decoration:none;transition:color 0.2s}
+.news-source a:hover{color:var(--text-primary);text-decoration:underline}
+
+/* ===== ANALYSIS ===== */
+.analysis-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.analysis-pair { margin-bottom: 1.5rem; }
+.analysis-pair:last-child { margin-bottom: 0; }
+.pair-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+.pair-direction {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+.dir-up { background: rgba(6,167,125,0.1); color: var(--accent-green); border: 1px solid rgba(6,167,125,0.2); }
+.dir-down { background: rgba(230,57,70,0.1); color: var(--accent-red); border: 1px solid rgba(230,57,70,0.2); }
+.dir-neutral { background: rgba(212,136,15,0.1); color: var(--accent-gold); border: 1px solid rgba(212,136,15,0.2); }
+.pair-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.pair-text strong { color: var(--text-primary); }
+
+/* ===== DISCLAIMER ===== */
+.disclaimer {
+  background: var(--bg-card);
+  border: 2px solid var(--accent-red);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin: 2rem 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.disclaimer-title {
+  color: var(--accent-red);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== FADE IN ===== */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+.footer a { color: var(--accent-gold); text-decoration: none; }
+
+/* ===== FAB BUTTONS ===== */
+.fab-group {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  display: none; flex-direction: column; gap: 0.5rem;
+  z-index: 99;
+}
+.fab-btn {
+  width: 44px; height: 44px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.fab-btn:hover { background: var(--bg-card-hover); }
+.fab-home { font-size: 1rem; }
+
+@media (max-width: 600px) {
+  .price-card { flex: 1 1 100%; }
+  .sticky-nav a { font-size: 0.75rem; padding: 0.6rem 0.5rem; }
+}
+
+
+/* ===== AUTHOR BOX ===== */
+.author-box{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.5rem;margin:2rem 0;display:flex;gap:1.2rem;align-items:flex-start;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+.author-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#1a1a2e,#0f3460);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.5rem;color:#ffe066;font-family:'JetBrains Mono',monospace;font-weight:700}
+.author-info{flex:1;min-width:0}
+.author-name{font-weight:700;font-size:0.95rem;color:var(--text-primary);margin-bottom:0.2rem}
+.author-title{font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--accent-gold);letter-spacing:0.03em;margin-bottom:0.5rem}
+.author-bio{font-size:0.82rem;color:var(--text-secondary);line-height:1.7}
+@media(max-width:600px){.author-box{flex-direction:column;align-items:center;text-align:center}.author-avatar{width:56px;height:56px;font-size:1.3rem}}
+
+/* ===== CTA BANNER ===== */
+.cta-banner{background:linear-gradient(135deg,#1a1a2e 0%,#0f3460 100%);border-radius:10px;padding:1.5rem;margin:2rem 0;position:relative;overflow:hidden}
+.cta-banner::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:40px 40px}
+.cta-banner-content{position:relative;z-index:1}
+.cta-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:#ffe066;letter-spacing:0.1em;margin-bottom:0.4rem}
+.cta-title{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:#fff;margin-bottom:0.5rem}
+.cta-desc{font-size:0.85rem;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:1rem}
+.cta-links{display:flex;flex-wrap:wrap;gap:0.6rem}
+.cta-link{display:inline-block;padding:0.5rem 1rem;border-radius:6px;font-size:0.82rem;font-weight:700;text-decoration:none;transition:all 0.2s}
+.cta-link.primary{background:var(--accent-gold);color:#0a0a0f}
+.cta-link.primary:hover{background:#ffe066}
+.cta-link.secondary{background:transparent;color:var(--accent-gold);border:1px solid rgba(240,165,0,0.4)}
+.cta-link.secondary:hover{border-color:var(--accent-gold);background:rgba(240,165,0,0.1)}
+
+/* ===== ARTICLE NAV (Next/Prev) ===== */
+.article-nav{display:flex;gap:1rem;margin:2rem 0;flex-wrap:wrap}
+.article-nav a{flex:1;min-width:200px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.article-nav a:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.article-nav .nav-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--text-muted);letter-spacing:0.05em;margin-bottom:0.3rem}
+.article-nav .nav-title{font-size:0.85rem;font-weight:700;color:var(--text-primary);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.article-nav .nav-next{text-align:right;margin-left:auto}
+/* ===== RELATED ARTICLES ===== */
+.related-section{margin:2rem 0}
+.related-heading{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:var(--text-primary);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--border-accent)}
+.related-list{display:flex;flex-direction:column;gap:0.6rem}
+.related-card{display:block;background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--accent-gold);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.related-card:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.related-card .rc-date{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--accent-gold);letter-spacing:0.05em}
+.related-card .rc-title{font-size:0.9rem;font-weight:700;color:var(--text-primary);margin-top:0.2rem;line-height:1.5}
+.related-card .rc-tags{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.4rem}
+.related-card .rc-tag{font-family:'JetBrains Mono',monospace;font-size:0.62rem;padding:0.15rem 0.4rem;border-radius:3px;background:rgba(0,0,0,0.04);color:var(--text-muted)}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb{max-width:900px;margin:0 auto;padding:0.6rem 1.2rem;font-size:0.75rem;color:var(--text-muted)}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.2s}
+.breadcrumb a:hover{color:var(--text-primary);text-decoration:none}
+.breadcrumb .sep{margin:0 0.4rem;opacity:0.5}
+.breadcrumb .current{color:var(--text-secondary)}
+</style>
+<meta name="description" content="日経+1,029円で56,924円に急反発（一時57,000円突破）、米3月CPI +3.3%は予想下回る、アジア株2022年以来最高の週 — 2026年4月11日">
+<link rel="canonical" href="https://marketpulse-daily.com/posts/20260411.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MARKETZ — 2026.04.11 マーケットニュースダイジェスト">
+<meta property="og:description" content="日経+1,029円で56,924円に急反発、米3月CPI +3.3%は予想下回る、アジア株2022年以来最高の週">
+<meta property="og:url" content="https://marketpulse-daily.com/posts/20260411.html">
+<meta property="og:site_name" content="MARKETZ">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://marketpulse-daily.com/images/og-default.svg">
+<meta property="article:published_time" content="2026-04-11T00:00:00+09:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MARKETZ — 2026.04.11 マーケットニュースダイジェスト">
+<meta name="twitter:description" content="日経+1,029円で56,924円に急反発、米3月CPI +3.3%は予想下回る、アジア株2022年以来最高の週">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NewsArticle","headline":"MARKETZ — 2026.04.11 マーケットニュースダイジェスト","datePublished":"2026-04-11T00:00:00+09:00","publisher":{"@type":"Organization","name":"MARKETZ","logo":{"@type":"ImageObject","url":"https://marketpulse-daily.com/images/og-default.svg"}},"mainEntityOfPage":"https://marketpulse-daily.com/posts/20260411.html","author":{"@type":"Organization","name":"MARKETZ","description":"ITコンサルタント×データドリブントレーダーによるマーケット分析メディア"},"image":"https://marketpulse-daily.com/images/og-default.svg"}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://marketpulse-daily.com/"},{"@type":"ListItem","position":2,"name":"アーカイブ","item":"https://marketpulse-daily.com/archive.html"},{"@type":"ListItem","position":3,"name":"2026.04.11 マーケットニュースダイジェスト"}]}</script>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-date">2026.04.11 — SATURDAY</div>
+    <h1 class="hero-title">マーケットニュースダイジェスト</h1>
+    <p class="hero-subtitle">日経+1,029円で56,924円に急反発、一時57,000円突破 — 米3月CPI +3.3%は予想下回る、アジア株は2022年以来最高の週</p>
+    <div class="hero-tags">
+      <span class="hero-tag alert">CPI</span>
+      <span class="hero-tag">USD/JPY</span>
+      <span class="hero-tag">原油</span>
+      <span class="hero-tag">ゴールド</span>
+      <span class="hero-tag">米国株</span>
+      <span class="hero-tag">日本株</span>
+      <span class="hero-tag">ビットコイン</span>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb" aria-label="パンくずリスト">
+  <a href="https://marketpulse-daily.com/">ホーム</a>
+  <span class="sep">›</span>
+  <a href="https://marketpulse-daily.com/archive.html">アーカイブ</a>
+  <span class="sep">›</span>
+  <span class="current">2026.04.11 マーケットニュースダイジェスト</span>
+</div>
+
+<!-- STICKY NAV -->
+<nav class="sticky-nav">
+  <ul>
+    <li><a href="#geopolitics">🌍地政学</a></li>
+    <li><a href="#fx">💱為替</a></li>
+    <li><a href="#commodities">🛢コモディティ</a></li>
+    <li><a href="#crypto">₿暗号資産</a></li>
+    <li><a href="#stocks">📈株式</a></li>
+    <li><a href="#japan-tech">🇯🇵日本テック</a></li>
+    <li><a href="#analysis">🔮考察</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+<!-- ===== 地政学 ===== -->
+<section id="geopolitics" class="section fade-in">
+  <h2 class="section-header">🌍 地政学・社会情勢</h2>
+
+  <div class="news-card green">
+    <div class="news-head">
+      <span class="news-badge badge-geo">CPI</span>
+      <span class="news-badge badge-stock">米国株</span>
+    </div>
+    <div class="news-title">米3月CPI +3.3%は予想下回る — ガソリン+21.2%もコアCPI +2.6%で鈍化、市場は冷静</div>
+    <div class="news-body">
+      4月10日発表の米3月CPIは<strong>前年比+3.3%</strong>（2年ぶり高水準）だったが、<strong>市場予想を下回り</strong>ディスインフレ継続が確認された。前月比は<strong>+0.9%</strong>で、イラン戦争によるエネルギーコスト急騰（エネルギー<strong>+10.9%</strong>、うちガソリン価格は月間<strong>+21.2%</strong>の記録的上昇）が押し上げた。一方、コアCPI（食品・エネルギー除く）は前月比+0.2%、<strong>前年比+2.6%</strong>（前月+2.5%から小幅加速）にとどまった。株式先物は小幅高で反応は限定的、米国債利回りはまちまちの展開。
+    </div>
+    <div class="news-source">出典: <a href="https://www.cnbc.com/2026/04/10/cpi-inflation-report-march-2026.html" target="_blank" rel="noopener">CNBC</a>, <a href="https://www.bls.gov/news.release/cpi.nr0.htm" target="_blank" rel="noopener">BLS</a>, <a href="https://www.cnn.com/2026/04/10/economy/us-cpi-inflation-march" target="_blank" rel="noopener">CNN Business</a> — 2026年4月10日</div>
+  </div>
+
+  <div class="news-card green">
+    <div class="news-head">
+      <span class="news-badge badge-geo">和平協議</span>
+      <span class="news-badge badge-stock">アジア株</span>
+    </div>
+    <div class="news-title">米・イラン協議控えアジア株は2022年以来最高の週 — 米国株は「希望の光」</div>
+    <div class="news-body">
+      米イラン停戦合意から3日、週末にかけて<strong>アジア株は2022年以来最高の週</strong>となった。Reutersは「米・イラン協議を控え、アジア株は2022年以来最高の週となる」と報じ、停戦が恒久化に向かうとの期待感が継続。4/10のNYセッション終盤には為替市場でドルが<strong>「最高値を更新」</strong>する局面もあり、Reutersは米国株の週足を「<strong>希望の光</strong>」と総括した。週間為替展望では<strong>米・イラン和平協議</strong>を最重要テーマに挙げている。原油相場は週間ベースで下落し、停戦の恩恵が定着しつつある。
+    </div>
+    <div class="news-source">出典: <a href="https://www.reuters.com/" target="_blank" rel="noopener">Reuters</a>, <a href="https://www.bloomberg.com/" target="_blank" rel="noopener">Bloomberg</a> — 2026年4月10-11日</div>
+  </div>
+</section>
+
+<!-- ===== 為替 ===== -->
+<section id="fx" class="section fade-in">
+  <h2 class="section-header">💱 為替</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">USD/JPY</div>
+      <div class="price-value">159.27</div>
+      <div class="price-change up">+0.17%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">EUR/JPY</div>
+      <div class="price-value">186.76</div>
+      <div class="price-change up">+0.40%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">GBP/JPY</div>
+      <div class="price-value">214.39</div>
+      <div class="price-change up">+0.35%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">AUD/JPY</div>
+      <div class="price-value">112.50</div>
+      <div class="price-change down">-0.10%</div>
+    </div>
+  </div>
+
+  <div class="news-card blue">
+    <div class="news-head">
+      <span class="news-badge badge-fx">USD/JPY</span>
+      <span class="news-badge badge-geo">介入警戒</span>
+    </div>
+    <div class="news-title">USD/JPY 159.27円で続伸 — 予想下回るCPIで21日線を巡る攻防、14日RSI 68%台</div>
+    <div class="news-body">
+      USD/JPYは<strong>159.27円</strong>（+0.17%）と続伸し、NY終値ベースでも<strong>159.27円</strong>で引けた。米3月CPI発表直後は<strong>159.02円前後</strong>まで下押ししたが、予想を下回る結果後に買い戻しが入り高値を更新。テクニカル面では<strong>159円前半の21日線を巡る攻防</strong>となり、14日RSIは<strong>68%台</strong>まで上昇。東京セッションでは日経平均の大幅高（+1,028円）に連動してドル買い・円売りが進んだ。次回の<strong>日銀会合は4月27-28日</strong>。
+    </div>
+    <div class="news-source">出典: <a href="https://www.cnbc.com/2026/04/07/iran-war-trump-deadline.html" target="_blank" rel="noopener">CNBC</a>, <a href="https://tradingeconomics.com/japan/currency" target="_blank" rel="noopener">Trading Economics</a> — 2026年4月7-8日</div>
+  </div>
+
+  <div class="news-card blue">
+    <div class="news-head">
+      <span class="news-badge badge-fx">クロス円</span>
+      <span class="news-badge badge-fx">EUR/JPY</span>
+    </div>
+    <div class="news-title">EUR/JPY 186.76円・GBP/JPY 214.39円で高値更新 — 欧州通貨が堅調、ユーロ円は2カ月ぶり高値</div>
+    <div class="news-body">
+      <strong>EUR/JPY 186.76円</strong>（+0.40%）と約2カ月ぶり高値を更新、4/10のレンジは<strong>186.88-185.95</strong>。<strong>GBP/JPY 214.39円</strong>（+0.35%）も上昇。AUD/JPYは<strong>112.50円</strong>（-0.10%）と小幅安。欧州通貨が総じて堅調で、FISCOは「欧州通貨は堅調」と報じた。豪ドル円は<strong>112.70-80円</strong>から売りオーダーが並び上値が重い展開。
+    </div>
+    <div class="news-source">出典: <a href="https://www.japantimes.co.jp/business/2026/04/08/markets/stocks-rise-ceasefire/" target="_blank" rel="noopener">Japan Times</a> — 2026年4月8-9日</div>
+  </div>
+</section>
+
+<!-- ===== コモディティ ===== -->
+<section id="commodities" class="section fade-in">
+  <h2 class="section-header">🛢 コモディティ</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">GOLD (XAU/USD)</div>
+      <div class="price-value">$4,750</div>
+      <div class="price-change down">-0.33%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">BRENT</div>
+      <div class="price-value">$95.20</div>
+      <div class="price-change down">-0.75%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">WTI</div>
+      <div class="price-value">$96.57</div>
+      <div class="price-change down">-1.33%</div>
+    </div>
+  </div>
+
+  <div class="news-card gold">
+    <div class="news-head">
+      <span class="news-badge badge-commodity">WTI</span>
+      <span class="news-badge badge-commodity">BRENT</span>
+    </div>
+    <div class="news-title">WTI $96.57（-1.33%）で週間下落 — 米・イラン和平協議進展で売り優勢に転じる</div>
+    <div class="news-body">
+      4/10（金）の原油市場は週間ベースで下落。WTIは<strong>$96.57（-1.33%）</strong>、Brentは<strong>$95.20（-0.75%）</strong>で引け、いずれも$100を大きく割り込んだ水準で取引された。Reutersは「米・イラン協議控え株高、<strong>原油は週間で下落へ</strong>」と報じ、和平協議の進展期待が原油売りを誘った。一時はホルムズ海峡未開放を懸念する買いが入ったが、引けにかけて「停戦恒久化」シナリオの織り込みが優勢。戦前水準（$73）からは依然+30%高だが、ピーク時の$118からは<strong>-20%</strong>の調整局面入り。
+    </div>
+    <div class="news-source">出典: <a href="https://markets.financialcontent.com/stocks/article/marketminute-2026-4-7-oil-tops-110bbl-as-markets-face-trumps-8-pm-deadline-for-iran-to-reopen-hormuz" target="_blank" rel="noopener">FinancialContent</a>, <a href="https://www.fxstreet.com/news/wti-oil-drifts-to-10200-level-amid-hopes-of-a-peace-deal-in-iran-202604061010" target="_blank" rel="noopener">FXStreet</a>, <a href="https://energynow.com/2026/04/oil-prices-fall-after-us-and-iran-receive-framework-ceasefire-proposal/" target="_blank" rel="noopener">EnergyNow</a> — 2026年4月7-8日</div>
+  </div>
+
+  <div class="news-card gold">
+    <div class="news-head">
+      <span class="news-badge badge-commodity">GOLD</span>
+    </div>
+    <div class="news-title">金$4,750（-0.33%）— CPI後のドル高で上値重く小幅安、$4,700台を維持</div>
+    <div class="news-body">
+      金価格（XAU/USD）は<strong>$4,750</strong>（-$16、-0.33%）と小幅安。予想を下回る米3月CPIで利下げ観測がやや後退し、ドル買いが進んだ影響で上値が重い。ただし$4,700台のサポートは維持されており、停戦後の調整局面でもリスクヘッジ需要は底堅い。FOMCは<strong>4月28-29日</strong>開催予定で、インフレ沈静化が確認されれば利下げ観測が復活し金には追い風。
+    </div>
+    <div class="news-source">出典: <a href="https://www.investing.com/currencies/xau-usd" target="_blank" rel="noopener">Investing.com</a>, <a href="https://www.litefinance.org/blog/analysts-opinions/gold-price-prediction-forecast/daily-and-weekly/" target="_blank" rel="noopener">LiteFinance</a> — 2026年4月8日</div>
+  </div>
+</section>
+
+<!-- ===== 暗号資産 ===== -->
+<section id="crypto" class="section fade-in">
+  <h2 class="section-header">₿ 暗号資産</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">BTC/USD</div>
+      <div class="price-value">$73,051</div>
+      <div class="price-change up">+1.74%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">ETH/USD</div>
+      <div class="price-value">$2,249</div>
+      <div class="price-change up">+2.70%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">Fear & Greed</div>
+      <div class="price-value" style="color:var(--accent-gold);">40/100</div>
+      <div class="price-change down">Fear</div>
+    </div>
+  </div>
+
+  <div class="news-card purple">
+    <div class="news-head">
+      <span class="news-badge badge-crypto">BTC</span>
+      <span class="news-badge badge-geo">イラン期限</span>
+    </div>
+    <div class="news-title">BTC $73,051（+1.74%）— $73,000台に上昇、今月初の上昇基調も1指標が半減</div>
+    <div class="news-body">
+      BTCは<strong>$73,051</strong>（+1.74%）に続伸し、$73,000台に到達。停戦楽観と予想下回りのCPIを受けたリスクオンムードで上昇が継続。Beincryptoは「BTCは<strong>今月初の上昇基調</strong>も1指標が半減」と報じており、価格は上昇基調だが一部オンチェーン指標は慎重な動き。$70,000のサポートが固まり、次の抵抗は$75,000付近。
+    </div>
+    <div class="news-source">出典: <a href="https://www.coindesk.com/price/bitcoin" target="_blank" rel="noopener">CoinDesk</a>, <a href="https://fortune.com/article/price-of-bitcoin-04-07-2026/" target="_blank" rel="noopener">Fortune</a> — 2026年4月7-8日</div>
+  </div>
+
+  <div class="news-card purple">
+    <div class="news-head">
+      <span class="news-badge badge-crypto">ETH</span>
+    </div>
+    <div class="news-title">ETH $2,249（+2.70%）— BTCを上回る上昇率、$2,250台に到達</div>
+    <div class="news-body">
+      ETHは<strong>$2,249</strong>（+2.70%）とBTC（+1.74%）を上回る上昇率で大幅高。リスクオン回帰でアルトコインへの資金流入が加速し、$2,250台に到達。財団の5,000ETH TWAP売却の影響は市場に完全に吸収され、上値追いの展開となった。次の抵抗は$2,300付近で、突破すれば$2,400台も視野に入る。
+    </div>
+    <div class="news-source">出典: <a href="https://fortune.com/article/price-of-ethereum-04-07-2026/" target="_blank" rel="noopener">Fortune</a>, <a href="https://www.coindesk.com/price/ethereum" target="_blank" rel="noopener">CoinDesk</a> — 2026年4月7-8日</div>
+  </div>
+</section>
+
+<!-- ===== 株式 ===== -->
+<section id="stocks" class="section fade-in">
+  <h2 class="section-header">📈 株式指数</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">S&P 500</div>
+      <div class="price-value">6,817</div>
+      <div class="price-change down">-0.11%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">NASDAQ</div>
+      <div class="price-value">22,903</div>
+      <div class="price-change up">+0.35%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">日経225</div>
+      <div class="price-value">56,924</div>
+      <div class="price-change up">+1.84%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">VIX</div>
+      <div class="price-value">24.17</div>
+      <div class="price-change down">-1.5%</div>
+    </div>
+  </div>
+
+  <div class="news-card green">
+    <div class="news-head">
+      <span class="news-badge badge-stock">S&P500</span>
+      <span class="news-badge badge-stock">NASDAQ</span>
+    </div>
+    <div class="news-title">S&P500 6,817（-0.11%）で8日続伸ストップ、NASDAQ +0.35%はハイテク株主導で最高値圏</div>
+    <div class="news-body">
+      4月10日（金）の米国市場は、S&P500が<strong>6,816.89（-0.11%）</strong>と小幅反落し<strong>7日続伸がストップ</strong>（10月以来の最長連騰）。一方NASDAQは<strong>22,902.88（+0.35%）</strong>とハイテク株主導で続伸し最高値圏。Reutersは「S&P500、ナスダックはインフレ指標後のハイテク株上昇で上昇、中東情勢の緊迫化が焦点」と報じた。週末にかけてReutersは米国株の週足を<strong>「希望の光」</strong>と総括。CPIが予想を下回ったことで利下げ期待が下支え。
+    </div>
+    <div class="news-source">出典: <a href="https://www.reuters.com/" target="_blank" rel="noopener">Reuters</a>, <a href="https://www.cnbc.com/2026/04/10/cpi-inflation-report-march-2026.html" target="_blank" rel="noopener">CNBC</a> — 2026年4月10日</div>
+    </div>
+    <div class="news-source">出典: <a href="https://ca.finance.yahoo.com/news/stock-market-today-sp-500-nasdaq-close-slightly-higher-on-hopes-of-iran-deadline-extension-200445471.html" target="_blank" rel="noopener">Yahoo Finance</a>, <a href="https://www.cnbc.com/2026/04/07/apple-stock-foldable-iphone-report.html" target="_blank" rel="noopener">CNBC (Apple)</a>, <a href="https://asia.nikkei.com/spotlight/supply-chain/foldable-iphone-hits-engineering-snags-shipment-delays-possible-sources" target="_blank" rel="noopener">Nikkei Asia</a> — 2026年4月7日</div>
+  </div>
+
+  <div class="news-card green">
+    <div class="news-head">
+      <span class="news-badge badge-stock">日経225</span>
+    </div>
+    <div class="news-title">日経225が56,924円で+1,028円の大幅反発 — 一時57,000円突破、13週線上方に復帰</div>
+    <div class="news-body">
+      4月10日（金）の日経225は<strong>56,924.11円（+1,028.79、+1.84%）</strong>で大引け。一時<strong>57,000円を超える展開</strong>となり、前場から<strong>+1,054円高</strong>と上昇幅を拡大。テクニカル面では<strong>13週線上方に復帰</strong>し大幅反発の形となった。企業決算や米経済指標への期待、米・イラン協議控えのリスクオンが追い風。<strong>日経VI（ボラティリティ指数）は低下</strong>し警戒感が緩和。Reutersによるとアジア株は<strong>2022年以来最高の週</strong>となった。
+    </div>
+    <div class="news-source">出典: <a href="https://www.fisco.co.jp/" target="_blank" rel="noopener">FISCO</a>, <a href="https://www.reuters.com/" target="_blank" rel="noopener">Reuters</a> — 2026年4月10日</div>
+  </div>
+</section>
+
+<!-- ===== 日本テック ===== -->
+<section id="japan-tech" class="section fade-in">
+  <h2 class="section-header">🇯🇵 日本テクノロジー</h2>
+
+  <div class="news-card orange">
+    <div class="news-head">
+      <span class="news-badge badge-tech">半導体</span>
+      <span class="news-badge badge-tech">再編</span>
+    </div>
+    <div class="news-title">三菱電機・東芝・ロームがパワー半導体事業の統合協議 — 実現すれば世界2位</div>
+    <div class="news-body">
+      三菱電機、東芝、ロームの3社は<strong>パワー半導体事業の統合</strong>に向けた覚書（MOU）段階の協議に入った。統合が実現すれば独インフィニオンに次ぐ<strong>世界2位</strong>のパワー半導体メーカーが誕生する。三菱電機はSiC MOSFETやドライバIC、ロームはMCU・電力管理IC・センサーを持ち寄る構想。デンソーによるローム買収提案（<strong>$83億</strong>）との競合も注目される。AI・データセンター市場の急拡大を背景に、日本の半導体産業の再編が加速している。
+    </div>
+    <div class="news-source">出典: <a href="https://asia.nikkei.com/business/tech/semiconductors/mitsubishi-electric-rohm-toshiba-mull-merging-power-chip-businesses" target="_blank" rel="noopener">Nikkei Asia</a>, <a href="https://www.japantimes.co.jp/business/2026/04/06/japan-power-chip-sector/" target="_blank" rel="noopener">Japan Times</a> — 2026年4月</div>
+  </div>
+
+  <div class="news-card orange">
+    <div class="news-head">
+      <span class="news-badge badge-tech">Rapidus</span>
+      <span class="news-badge badge-tech">富士通</span>
+    </div>
+    <div class="news-title">Rapidusが2nmパイロットライン稼働、富士通は1.4nm AIチップを国内設計・製造へ</div>
+    <div class="news-body">
+      国産先端半導体ファウンドリの<strong>Rapidus</strong>が、IBMと共同開発した<strong>2nmプロセスのパイロットライン</strong>を稼働させた。同時期に<strong>富士通</strong>は設計から製造まで100%国内で完結する<strong>1.4nm AIチップ</strong>の開発計画を発表。経産省はFY2026の半導体・AI予算を<strong>約1.23兆円</strong>（前年比約4倍）に拡大しており、Japan IT Week春2026（東京ビッグサイト、4/8-10）では組込みAI・エッジコンピューティングの最新技術が展示された。
+    </div>
+    <div class="news-source">出典: <a href="https://www.rapidus.inc/en/news_topics/information/rapidus-unveils-new-ai-design-tools-for-advanced-semiconductor-manufacturing/" target="_blank" rel="noopener">Rapidus</a>, <a href="https://www.digitimes.com/news/a20251226PD237/rapidus-budget-industrial-semiconductors-expansion.html" target="_blank" rel="noopener">DigiTimes</a> — 2026年4月</div>
+  </div>
+</section>
+
+<!-- ===== 考察 ===== -->
+<section id="analysis" class="section fade-in">
+  <h2 class="section-header">🔮 考察</h2>
+  <div class="analysis-box">
+
+    <div class="analysis-pair">
+      <div class="pair-name">USD/JPY</div>
+      <span class="pair-direction dir-up">▲ 159.27円で続伸、14日RSI 68%台 — 21日線を巡る攻防</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>米3月CPI +3.3%は予想下回るもコアCPI +2.6%で前月から加速。ドル買いが再燃。日経平均の大幅高（+1,028円）連動。日銀利上げ観測は残るが慎重姿勢。<br><br>
+        <strong>下落要因：</strong>和平協議恒久化シナリオ→原油安継続→貿易赤字縮小→<strong>円高</strong>。14日RSI 68%台で買われすぎ水準接近。<br><br>
+        <strong>結論：</strong>158-161円。21日線（159円前半）を巡る攻防継続。米・イラン和平協議の進展度合いが最大の材料。次回<strong>日銀会合4/27-28</strong>までは方向感乏しい展開か。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">AUD/JPY</div>
+      <span class="pair-direction dir-neutral">▶ 112.50円で112円後半の売りオーダーに上値抑制</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>5日線（111円後半）が支持線として機能。リスクオンムードで豪ドル買い継続。<br><br>
+        <strong>下落要因：</strong>112.70-80円帯に売りオーダー集中、14日RSI 60%台で上昇余地はあるが抵抗線が厚い。原油安は豪ドルに中立〜マイナス。<br><br>
+        <strong>結論：</strong>111-114円。112.80円の抵抗突破なら113円台、割れれば111円台へ。ボリバン上限付近でのもみ合い継続か。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">NASDAQ</div>
+      <span class="pair-direction dir-up">▲ 22,903（+0.35%）最高値圏 — CPI下振れでハイテク株に買い集中</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>予想下回るCPI（+3.3%）でFRB利下げ期待が下支え。ハイテク株への買い集中で最高値圏を維持。S&P500は続伸停止も22,903は強い。週足は「希望の光」。<br><br>
+        <strong>下落要因：</strong>原油$95-97レンジで下げ止まりインフレ懸念はなお残る。停戦の脆弱性と恒久化の不透明感。<br><br>
+        <strong>結論：</strong>22,500-23,500。CPIの鈍化継続 + 停戦恒久化なら23,500突破。停戦決裂+原油再騰なら22,000割れリスク。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">日経225</div>
+      <span class="pair-direction dir-up">▲ 56,924円で+1,028円の大幅反発 — 一時57,000円突破、13週線上方復帰</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>原油が週間ベースで下落しエネルギーコスト懸念が後退。13週線上方復帰で<strong>テクニカル面も強気転換</strong>。日経VIは低下し警戒感緩和。半導体再編（三菱電機/東芝/ローム）、Rapidus 2nm稼働などの個別材料が継続。<br><br>
+        <strong>下落要因：</strong>57,000円は強い抵抗線。急騰後の利益確定売り。日銀4月利上げ観測で円高リスク。<br><br>
+        <strong>結論：</strong>55,500-58,000。57,000円を明確に突破すれば58,000台も視野。アジア株が2022年以来最高の週となっており、モメンタムは強い。次回<strong>日銀4/27-28会合</strong>が最大のイベントリスク。
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== コラムCTA ===== -->
+<div class="cta-banner fade-in">
+  <div class="cta-banner-content">
+    <div class="cta-label">📝 COLUMN — 解説記事</div>
+    <div class="cta-title">ボラティリティ相場を乗り越える知識を身につけませんか？</div>
+    <div class="cta-desc">地政学リスクの読み方、FX口座の選び方、NISAポートフォリオの組み方など、投資判断の基盤となるコラムを公開中。</div>
+    <div class="cta-links">
+      <a href="20260405-column.html" class="cta-link primary">地政学リスクと投資 →</a>
+      <a href="20260330-column.html" class="cta-link secondary">FX口座比較ガイド</a>
+      <a href="20260402-column.html" class="cta-link secondary">NISAポートフォリオ</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PR ===== -->
+<div class="news-card gold fade-in" style="border-left-color:var(--accent-gold);margin:2rem 0;padding:1.5rem;">
+  <div class="news-head"><span class="news-badge badge-commodity" style="background:rgba(255,224,102,0.25);color:var(--accent-gold);border:1px solid rgba(212,136,15,0.3);">PR — 広告</span></div>
+  <div class="news-title" style="margin-top:0.5rem;">FX取引を始めるなら</div>
+  <div class="news-body">当サイトの為替分析を参考に実際の取引をお考えの方へ。FX取引高3年連続世界第1位のDMM FXなら、最短即日で口座開設が可能です。</div>
+  <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:0.8rem;">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:var(--accent-gold);color:#f8f7f4;font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;">【PR】DMM FX の詳細を見る →</a>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:transparent;color:var(--accent-gold);font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;border:1px solid var(--accent-gold);">【PR】DMM CFD の詳細を見る →</a>
+  </div>
+  <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" alt="">
+  <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" alt="">
+  <div class="news-source" style="margin-top:0.8rem;">※ 投資にはリスクが伴います。FX取引は元本を超える損失が発生する可能性があります。</div>
+</div>
+
+
+<!-- ===== 著者情報 ===== -->
+<div class="author-box fade-in">
+  <div class="author-avatar">M</div>
+  <div class="author-info">
+    <div class="author-name">MARKETZ 編集部</div>
+    <div class="author-title">IT CONSULTANT × DATA-DRIVEN TRADER</div>
+    <div class="author-bio">現役ITコンサルタント・元エンジニアが運営。複雑なグローバル市場をシステム思考で俯瞰し、テクニカル分析とファンダメンタルズ分析を組み合わせたデータドリブンな市場解説をお届けしています。</div>
+  </div>
+</div>
+
+<!-- ===== 免責事項 ===== -->
+<div class="disclaimer fade-in">
+  <div class="disclaimer-title">⚠️ 免責事項・ディスクレーマー</div>
+  本記事は情報提供のみを目的としており、金融商品の売買の勧誘や投資助言を目的とするものではありません。掲載されている情報は作成時点のものであり、正確性、完全性、適時性を保証するものではありません。投資判断は必ずご自身の責任において行ってください。本記事に基づく投資行動による損失について、筆者・サイト運営者は一切の責任を負いません。<br><br>
+  本記事に記載されているニュースは、CNBC、Bloomberg、Reuters、CNN、Al Jazeera、Trading Economics、Yahoo Finance、Investing.com、The Japan Times、EIA等の公開情報を参照し、筆者が独自に再構成したものです。各出典元の著作物をそのまま転載・翻訳したものではありません。<br><br>
+  金融商品取引法に基づく表記：本記事は金融商品取引法第2条に定める金融商品取引業に該当する行為を行うものではありません。
+</div>
+
+
+<!-- ===== 前後記事ナビ + 関連記事 ===== -->
+<nav class="article-nav" id="article-nav"></nav>
+<div class="related-section" id="related-articles"></div>
+
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>MARKETZ — <a href="https://marketpulse-daily.com/">ホームに戻る</a></p>
+  <p>© 2026 MARKETZ. All rights reserved.</p>
+</footer>
+
+<!-- FAB BUTTONS -->
+<div class="fab-group">
+  <a href="https://marketpulse-daily.com/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
+  <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
+</div>
+
+<script>
+// Fade-in Observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); }});
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Sticky nav highlight
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.sticky-nav a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id');
+  });
+  navLinks.forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+  // FAB group
+  const fabGroup = document.querySelector('.fab-group');
+  if (fabGroup) {
+    if (window.scrollY > 600) { fabGroup.style.display = 'flex'; } else { fabGroup.style.display = 'none'; }
+  }
+});
+
+// Article navigation & related articles
+(function(){
+  const slug = location.pathname.split('/').pop().replace('.html','');
+  fetch('../data/posts.json').then(r=>r.json()).then(data=>{
+    const posts = data.posts;
+    const idx = posts.findIndex(p=>p.slug===slug);
+    // Next/Prev nav
+    const nav = document.getElementById('article-nav');
+    if(nav && idx!==-1){
+      let html='';
+      if(idx<posts.length-1){
+        const prev=posts[idx+1];
+        html+='<a href="'+prev.slug+'.html"><div class="nav-label">← 前の記事</div><div class="nav-title">'+prev.title+'</div></a>';
+      }
+      if(idx>0){
+        const next=posts[idx-1];
+        html+='<a href="'+next.slug+'.html" class="nav-next"><div class="nav-label">次の記事 →</div><div class="nav-title">'+next.title+'</div></a>';
+      }
+      nav.innerHTML=html;
+    }
+    // Related articles (same tags, excluding self, max 3)
+    const rel = document.getElementById('related-articles');
+    if(rel && idx!==-1){
+      const myTags=new Set(posts[idx].tags||[]);
+      const scored=posts.filter((_,i)=>i!==idx).map(p=>{
+        const common=(p.tags||[]).filter(t=>myTags.has(t)).length;
+        return{...p,score:common};
+      }).filter(p=>p.score>0).sort((a,b)=>b.score-a.score).slice(0,3);
+      if(scored.length){
+        let html='<div class="related-heading">📰 関連記事</div><div class="related-list">';
+        scored.forEach(p=>{
+          html+='<a href="'+p.slug+'.html" class="related-card"><div class="rc-date">'+p.date+'</div><div class="rc-title">'+p.title+'</div><div class="rc-tags">'+(p.tags||[]).slice(0,4).map(t=>'<span class="rc-tag">'+t+'</span>').join('')+'</div></a>';
+        });
+        html+='</div>';
+        rel.innerHTML=html;
+      }
+    }
+  }).catch(()=>{});
+})();
+
+</script>
+</body>
+</html>
