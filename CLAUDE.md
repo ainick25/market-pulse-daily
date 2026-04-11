@@ -17,10 +17,9 @@
 3. **ファクトチェック**: 価格の出典、ニュース日付、数値、人名漢字等を検証。**推測・記憶・補間は絶対禁止**
 4. `posts/YYYYMMDD.html` を単一HTMLファイルとして生成（Editで1セクションずつ差し替え）
 5. `index.html` の**ハイライト欄（日付・テキスト・数値バッジ）**と記事カードリストを更新（ニュース記事は**最新2件**、コラム記事は**最新5件**のみ表示、超過分は削除しアーカイブで閲覧）
-6. `node scripts/build-metadata.js` を実行（data/posts.json と archive.html の `<noscript>` フォールバックを自動再生成。コラム記事も含む全記事が対象）
-7. `node scripts/build-sitemap.js` を実行（sitemap.xml に全記事＋静的ページを自動追加）
-8. **grepで検証**: 旧テンプレートの数値残留がないか、archive.html/sitemap.xml/posts.jsonに新記事が含まれているか
-9. git add -A → commit → push
+6. **`./scripts/publish.sh YYYYMMDD` を実行**（build-metadata.js + build-sitemap.js + 整合性検証を一括実行。個別コマンドは禁止）
+7. **grepで検証**: 旧テンプレートの数値残留がないことを確認（publish.shが整合性検証は済ませている）
+8. git add -A → commit → push
 
 ### SEO自動化（手動作業不要）
 - **sitemap.xml**: `build-sitemap.js` が全記事（daily + column）を自動的に含める
@@ -73,8 +72,23 @@
 - 構造化データ: JSON-LD (NewsArticle for posts, WebSite for index)
 
 ## ビルドコマンド
+
+**記事作成後は必ずこの1コマンドを実行:**
 ```bash
-node scripts/build-metadata.js   # posts.json 生成
+./scripts/publish.sh YYYYMMDD         # 日次ニュース記事の場合
+./scripts/publish.sh YYYYMMDD-column  # コラム記事の場合
+```
+
+このスクリプトが以下を自動実行します：
+- `build-metadata.js`: posts.json + archive.html `<noscript>` 自動再生成
+- `build-sitemap.js`: sitemap.xml 自動再生成
+- **整合性チェック**: posts/ == posts.json == archive.html == sitemap.xml の件数一致
+- **新記事の存在確認**: 全ファイルに含まれているかチェック
+- エラーがあれば非ゼロで終了し、コミット前に気付ける
+
+**個別実行も可能（デバッグ時）:**
+```bash
+node scripts/build-metadata.js   # posts.json + archive.html <noscript> 生成
 node scripts/build-sitemap.js    # sitemap.xml 生成
 ```
 
@@ -97,9 +111,9 @@ node scripts/build-sitemap.js    # sitemap.xml 生成
 
 ### コラム生成手順
 1. テーマに応じてWeb検索で最新情報を収集
-2. `posts/YYYYMMDD.html` をコラム用テンプレートで生成
-3. `data/posts.json` にメタデータを追加（tags にコラムテーマを含める）
-4. `node scripts/build-metadata.js` & `node scripts/build-sitemap.js` を実行
+2. `posts/YYYYMMDD-column.html` をコラム用テンプレートで生成
+3. index.htmlのコラムセクションに新記事を追加（最新5件のみ表示）
+4. **`./scripts/publish.sh YYYYMMDD-column` を実行**（メタデータ・サイトマップ・archive.htmlを自動更新 + 整合性検証）
 5. git add -A → commit → push
 
 ### コラムテーマ例（ローテーション）

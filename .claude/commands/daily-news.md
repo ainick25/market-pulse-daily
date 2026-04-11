@@ -88,34 +88,39 @@ grep -n '159\.27\|73,051' posts/YYYYMMDD.html  # ← 旧値で検索して該当
 grep -n '新しい値' posts/YYYYMMDD.html
 ```
 
-### Step 8: ビルド
+### Step 8: 【最重要】統合ビルド＆検証（絶対に省略しない）
+
+**必ずこの1コマンドを実行してください。** 個別に `build-metadata.js` や `build-sitemap.js` を実行するのは禁止です。
+
 ```bash
-node scripts/build-metadata.js   # posts.json + archive.html <noscript> を自動再生成（コラムも含む）
-node scripts/build-sitemap.js    # sitemap.xml 自動再生成（全記事 + 静的ページ）
+./scripts/publish.sh YYYYMMDD
 ```
 
-**自動化済み（手動作業不要）:**
-- `data/posts.json`: 全記事（コラム含む）を自動的に抽出
-- `archive.html <noscript>`: Googlebot向けフォールバックを自動再生成
-- `sitemap.xml`: 全記事 + 静的ページを自動生成
-- `dayOfWeek`: UTC基準で正しく計算（TZバグ修正済み）
+このスクリプトは以下を**自動で**実行します（1つでも失敗すればエラー終了）:
+1. `build-metadata.js` 実行 — data/posts.json + archive.html `<noscript>` 自動再生成
+2. `build-sitemap.js` 実行 — sitemap.xml 自動再生成
+3. **整合性チェック**:
+   - posts/ディレクトリ数 == posts.json == archive.html `<noscript>` == sitemap.xml の記事URL数
+   - コラム記事が1件以上存在
+4. **新記事の存在確認** (引数にslugを指定した場合):
+   - posts/YYYYMMDD.html が存在
+   - data/posts.json に含まれる
+   - archive.html `<noscript>` に含まれる
+   - sitemap.xml に含まれる
+   - index.html に含まれる (最新2件枠に入っているか)
 
-### Step 9: ビルド後検証
-```bash
-# 1. posts.jsonに新記事＋全コラムが含まれるか
-grep -c '"slug"' data/posts.json   # 記事数確認
-
-# 2. archive.html <noscript> に新記事が含まれるか
-grep -c 'posts/YYYYMMDD.html' archive.html   # 新記事URLが存在すること
-
-# 3. sitemap.xml に新記事が含まれるか
-grep 'posts/YYYYMMDD.html' sitemap.xml   # 存在確認
-
-# 4. index.html に新記事のハイライト・カードが反映されているか
-grep 'YYYY.MM.DD' index.html
+**成功時の期待出力:**
+```
+✅ 全ての検証に合格しました
+   コミット・プッシュして問題ありません
 ```
 
-### Step 10: コミット・プッシュ（main直接）
+**エラーが出た場合:**
+- 件数不一致 → ファイルの欠落・重複を確認
+- 新記事が含まれない → 該当ファイルを手動で確認・修正
+- コミット禁止。必ず修正してから再実行
+
+### Step 9: コミット・プッシュ（main直接）
 ```bash
 git add -A
 git commit -m "📰 YYYY-MM-DD マーケットダイジェスト"
@@ -168,10 +173,10 @@ git push -u origin main
 - [ ] コラムCTAバナー・著者情報・og:image・JSON-LDが存在
 
 ### ファイル整合性（重要）
+- [ ] **`./scripts/publish.sh YYYYMMDD` を実行し、「✅ 全ての検証に合格しました」が表示されたか**（これが通れば以下は自動確認済み）
+  - posts/ == posts.json == archive.html <noscript> == sitemap.xml の件数一致
+  - コラム記事7件以上存在
+  - 新記事が全ファイルに含まれる
 - [ ] `grep -n '[前日の価格値]' posts/YYYYMMDD.html` で旧値残留なし
-- [ ] `grep -c '"slug"' data/posts.json` で記事数が +1 されている
-- [ ] `grep 'posts/YYYYMMDD.html' archive.html` で新記事URLが <noscript> に含まれる
-- [ ] `grep 'posts/YYYYMMDD.html' sitemap.xml` で新記事URLが含まれる
-- [ ] `grep -c '"isColumn": true' data/posts.json` で **コラム記事が7件以上**（消えていない）
 - [ ] index.htmlのハイライト欄（日付・テキスト・数値バッジ）が更新
 - [ ] index.htmlの記事カードがニュース最新2件・コラム最新5件になっている
