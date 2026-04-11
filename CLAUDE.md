@@ -16,10 +16,16 @@
 2. ファクトチェック: 全ての価格・ニュース・数値をWebSearch出典で裏付け確認
 3. `posts/YYYYMMDD.html` を単一HTMLファイルとして生成（Editで1セクションずつ差し替え）
 4. `index.html` の**ハイライト欄（日付・テキスト・数値バッジ）**と記事カードリストを更新（ニュース記事は**最新2件**、コラム記事は**最新5件**のみ表示、超過分は削除しアーカイブで閲覧）
-5. `node scripts/build-metadata.js` を実行（コラムのメタデータが消えていないか確認）
-6. `node scripts/build-sitemap.js` を実行（contact.html・コラムが消えていないか確認）
+5. `node scripts/build-metadata.js` を実行（data/posts.json と archive.html の `<noscript>` フォールバックを自動再生成。コラム記事も含む全記事が対象）
+6. `node scripts/build-sitemap.js` を実行（sitemap.xml に全記事＋静的ページを自動追加。contact.html・コラム記事も含む）
 7. grepで旧テンプレートの数値残留がないことを検証
 8. git add -A → commit → push
+
+### SEO自動化（手動作業不要）
+- **sitemap.xml**: `build-sitemap.js` が全記事（daily + column）を自動的に含める
+- **archive.html**: `build-metadata.js` が `<noscript>` フォールバックを自動再生成（Googlebot がJS実行前でも全記事リンクを検出可能）
+- **data/posts.json**: archive.htmlのJavaScriptが参照するデータソース。build-metadata.jsで自動生成
+- Google Search Consoleへのサイトマップ送信は**初回のみ手動**で実施。以降は自動クロール・インデックス
 
 ## 必須カテゴリ
 1. 為替: USD/JPY, EUR/JPY, GBP/JPY, AUD/JPY
