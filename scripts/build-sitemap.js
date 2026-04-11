@@ -11,13 +11,14 @@ const staticPages = [
   { loc: '/archive.html', priority: '0.7', changefreq: 'daily' },
   { loc: '/tags.html', priority: '0.6', changefreq: 'weekly' },
   { loc: '/about.html', priority: '0.4', changefreq: 'monthly' },
+  { loc: '/contact.html', priority: '0.4', changefreq: 'monthly' },
   { loc: '/disclaimer.html', priority: '0.3', changefreq: 'monthly' },
   { loc: '/privacy.html', priority: '0.3', changefreq: 'monthly' },
 ];
 
-// Post pages
+// Post pages: daily news (20260411.html) + column posts (20260405-column.html, etc.)
 const postFiles = fs.readdirSync(postsDir)
-  .filter(f => /^\d{8}\.html$/.test(f))
+  .filter(f => /^\d{8}(-[a-z0-9-]+)?\.html$/.test(f))
   .sort()
   .reverse();
 
@@ -38,15 +39,16 @@ staticPages.forEach(p => {
 `;
 });
 
-// Post pages
+// Post pages (news + columns)
 postFiles.forEach(file => {
   const slug = file.replace('.html', '');
   const dateStr = `${slug.slice(0,4)}-${slug.slice(4,6)}-${slug.slice(6,8)}`;
+  const isColumn = slug.includes('-');
   xml += `  <url>
     <loc>${BASE_URL}/posts/${file}</loc>
     <lastmod>${dateStr}</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.8</priority>
+    <changefreq>${isColumn ? 'monthly' : 'never'}</changefreq>
+    <priority>${isColumn ? '0.7' : '0.8'}</priority>
   </url>
 `;
 });
