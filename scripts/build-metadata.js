@@ -74,21 +74,32 @@ console.log(`✅ ${posts.length}件の記事メタデータを生成しました
 // ========================================
 // archive.html の <noscript> フォールバックを自動生成
 // Googlebot が JavaScript を実行しない場合でも全記事を発見できるように
+// コラムとニュースを分離して表示
 // ========================================
 if (fs.existsSync(archiveFile)) {
   const archiveHtml = fs.readFileSync(archiveFile, 'utf-8');
 
-  // noscript内の記事リストを生成
-  const listItems = posts.map(p => {
-    const label = p.isColumn ? p.title : 'マーケットニュースダイジェスト';
-    return `    <li><a href="posts/${p.slug}.html">${p.date} — ${label}</a></li>`;
-  }).join('\n');
+  const newsPosts = posts.filter(p => !p.isColumn);
+  const columnPosts = posts.filter(p => p.isColumn);
+
+  const newsItems = newsPosts.map(p =>
+    `    <li><a href="posts/${p.slug}.html">${p.date} — マーケットニュースダイジェスト</a></li>`
+  ).join('\n');
+
+  const columnItems = columnPosts.map(p =>
+    `    <li><a href="posts/${p.slug}.html">${p.date} — 📝 ${p.title}</a></li>`
+  ).join('\n');
 
   const newNoscript = `<noscript>
   <div style="max-width:900px;margin:0 auto;padding:2rem 1.5rem">
-  <h2 style="font-size:1.2rem;margin-bottom:1rem">全記事一覧</h2>
+  <h2 style="font-size:1.2rem;margin-bottom:1rem">全記事一覧（全${posts.length}件）</h2>
+  <h3 style="font-size:1rem;margin:1.5rem 0 0.5rem;color:#d4880f">📝 コラム・解説記事（${columnPosts.length}件）</h3>
   <ul style="list-style:none;padding:0;line-height:2.2">
-${listItems}
+${columnItems}
+  </ul>
+  <h3 style="font-size:1rem;margin:1.5rem 0 0.5rem;color:#3d3d56">📰 マーケットレポート（${newsPosts.length}件）</h3>
+  <ul style="list-style:none;padding:0;line-height:2.2">
+${newsItems}
   </ul>
   </div>
 </noscript>`;
@@ -100,6 +111,6 @@ ${listItems}
 
   if (updatedArchive !== archiveHtml) {
     fs.writeFileSync(archiveFile, updatedArchive, 'utf-8');
-    console.log(`✅ archive.html の <noscript> フォールバックを更新しました（${posts.length}件）`);
+    console.log(`✅ archive.html の <noscript> を更新しました（コラム${columnPosts.length}件 + ニュース${newsPosts.length}件）`);
   }
 }

@@ -12,14 +12,15 @@
 - 米国の祝日（Good Friday等）は日本の日付で表記（例: 米国4/4金→日本では4/4土の早朝まで影響）
 
 ## 日次記事生成フロー
-1. Web検索で最新ニュースを網羅的に収集（全7カテゴリ）。**全データはWebSearchから正確に抽出し、推測・記憶・補間は絶対禁止**
-2. ファクトチェック: 全ての価格・ニュース・数値をWebSearch出典で裏付け確認
-3. `posts/YYYYMMDD.html` を単一HTMLファイルとして生成（Editで1セクションずつ差し替え）
-4. `index.html` の**ハイライト欄（日付・テキスト・数値バッジ）**と記事カードリストを更新（ニュース記事は**最新2件**、コラム記事は**最新5件**のみ表示、超過分は削除しアーカイブで閲覧）
-5. `node scripts/build-metadata.js` を実行（data/posts.json と archive.html の `<noscript>` フォールバックを自動再生成。コラム記事も含む全記事が対象）
-6. `node scripts/build-sitemap.js` を実行（sitemap.xml に全記事＋静的ページを自動追加。contact.html・コラム記事も含む）
-7. grepで旧テンプレートの数値残留がないことを検証
-8. git add -A → commit → push
+1. **価格データ取得**: TradingViewスクショを最優先ソースとする（ユーザー提供）。スクショがない場合はユーザーに依頼、もしくはWebSearchで補完（信頼性注意）
+2. **ニュース本文リサーチ**: WebSearchで並列検索（価格ではなくニュース本文・文脈専用）
+3. **ファクトチェック**: 価格の出典、ニュース日付、数値、人名漢字等を検証。**推測・記憶・補間は絶対禁止**
+4. `posts/YYYYMMDD.html` を単一HTMLファイルとして生成（Editで1セクションずつ差し替え）
+5. `index.html` の**ハイライト欄（日付・テキスト・数値バッジ）**と記事カードリストを更新（ニュース記事は**最新2件**、コラム記事は**最新5件**のみ表示、超過分は削除しアーカイブで閲覧）
+6. `node scripts/build-metadata.js` を実行（data/posts.json と archive.html の `<noscript>` フォールバックを自動再生成。コラム記事も含む全記事が対象）
+7. `node scripts/build-sitemap.js` を実行（sitemap.xml に全記事＋静的ページを自動追加）
+8. **grepで検証**: 旧テンプレートの数値残留がないか、archive.html/sitemap.xml/posts.jsonに新記事が含まれているか
+9. git add -A → commit → push
 
 ### SEO自動化（手動作業不要）
 - **sitemap.xml**: `build-sitemap.js` が全記事（daily + column）を自動的に含める
