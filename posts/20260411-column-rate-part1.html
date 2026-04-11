@@ -531,6 +531,7 @@ body {
 </div>
 <nav class="sticky-nav">
   <ul>
+    <li><a href="#basics">💴 金利とは</a></li>
     <li><a href="#what">❓ 政策金利とは</a></li>
     <li><a href="#how">⚙️ 決まり方</a></li>
     <li><a href="#mechanism">🔄 利上げvs利下げ</a></li>
@@ -545,7 +546,8 @@ body {
   <div class="callout" style="border:none;background:linear-gradient(135deg,rgba(240,165,0,0.06),rgba(240,165,0,0.02))">
     <h4>📌 この記事でわかること</h4>
     <ul style="list-style:none;padding:0;margin:0.8rem 0 0">
-      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary);border-bottom:1px solid rgba(0,0,0,0.05)">✅ 政策金利の仕組みと、<strong>日銀・FRBの違い</strong>（無担保コール翌日物 vs FF金利）</li>
+      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary);border-bottom:1px solid rgba(0,0,0,0.05)">✅ <strong>金利・政策金利の基礎</strong>（初心者OK／たとえ話で解説）</li>
+      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary);border-bottom:1px solid rgba(0,0,0,0.05)">✅ 日銀とFRBの違い（<strong>無担保コール翌日物 vs FF金利</strong>）</li>
       <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary);border-bottom:1px solid rgba(0,0,0,0.05)">✅ 利上げ・利下げで経済がどう動くか、<strong>中立金利(R*)</strong>の考え方</li>
       <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary)">✅ 政策金利が<strong>株・債券・為替・コモディティ・暗号資産</strong>に与える影響</li>
     </ul>
@@ -553,6 +555,7 @@ body {
   <h3 style="font-size:1.1rem;font-weight:700;color:var(--text-primary);margin:2rem 0 1rem">📖 目次</h3>
   <nav style="background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:10px;padding:1.2rem 1.5rem;box-shadow:0 1px 4px rgba(0,0,0,0.04)">
     <ol style="margin:0;padding-left:1.2rem;list-style:decimal;color:var(--text-secondary);font-size:0.9rem;line-height:2.2">
+      <li><a href="#basics" style="color:var(--text-primary);text-decoration:none">まず「金利」とは？ — お金のレンタル料</a></li>
       <li><a href="#what" style="color:var(--text-primary);text-decoration:none">政策金利とは？ 中央銀行の役割と日米の違い</a></li>
       <li><a href="#how" style="color:var(--text-primary);text-decoration:none">金利はどう決まる？ 決定会合とテイラールール</a></li>
       <li><a href="#mechanism" style="color:var(--text-primary);text-decoration:none">利上げ vs 利下げ と中立金利(R*)</a></li>
@@ -563,15 +566,24 @@ body {
   </nav>
 </section>
 
+<section id="basics" class="section fade-in">
+  <h2 class="section-header">💴 まず「金利」とは？ — お金の「レンタル料」</h2>
+  <p>お金を借りたら利息を払う、というのは誰もが知っている。この<strong>利息の割合</strong>が「金利」だ。つまり金利とは、ひとことで言えば<strong>「お金のレンタル料」</strong>のようなもの。レンタカーを借りれば1日あたり○○円の料金がかかるように、お金を借りれば「借りた額に対して年○○%」の料金がかかる。100万円を年5%で借りれば、1年後に5万円の利息を払う計算だ。</p>
+
+  <div class="callout"><h4>💡 金利は「1つ」ではない</h4><p>大切なのは、金利は世の中にたくさんあるということ。<strong>住宅ローン金利、企業の借入金利、預金金利、国債利回り、クレジットカードのリボ払い金利</strong>…それぞれ水準は違う。しかしこれらすべては、<strong>中央銀行が決める「大元の1本の金利」</strong>を基準にして、各金融機関がコスト・リスク・期間を上乗せして決めている。この大元の金利こそが、これから解説する<strong>「政策金利」</strong>だ。</p></div>
+</section>
+
 <section id="what" class="section fade-in">
   <h2 class="section-header">❓ 政策金利とは？ — 中央銀行の役割と日米の違い</h2>
-  <p>政策金利（Policy Rate）とは、中央銀行が金融政策の操作目標として設定する基準金利のこと。中央銀行は「物価の安定」と「経済の健全な発展」を使命とし、この一本の金利を通じて経済全体の資金の流れを制御する。金利が動けば、銀行の貸出金利、企業の借入コスト、個人の住宅ローン、為替、株価、債券利回り、そしてあなたの投資ポートフォリオまで、ドミノ倒しのように影響を受ける。</p>
+  <p>政策金利（Policy Rate）とは、中央銀行が金融政策の操作目標として設定する「大元の金利」のこと。イメージは<strong>「経済全体に流れるお金の量を調節する水道の元栓」</strong>だ。元栓を締める（＝利上げ）と世の中に出回るお金の流れが細くなり、緩める（＝利下げ）と太くなる。</p>
 
-  <div class="callout"><h4>🇯🇵 日本の政策金利 — 無担保コール翌日物</h4><p>日本の政策金利は<strong>「無担保コール翌日物金利」</strong>。銀行同士が担保なしで翌営業日返済を条件に短期資金を貸し借りする際の金利で、日銀は公開市場操作（オペレーション）を通じてこの金利を目標水準に誘導する。1998年以降、日銀は「無担保コール翌日物を<strong>〇〇%前後で推移させる</strong>」という形で政策運営の軸としている。</p></div>
+  <p>中央銀行は「物価の安定」と「経済の健全な発展」を使命とし、この一本の元栓を通じて経済全体を制御する。金利が動けば、銀行の貸出金利、企業の借入コスト、個人の住宅ローン、為替、株価、債券利回り、そしてあなたの投資ポートフォリオまで、ドミノ倒しのように影響を受ける。</p>
 
-  <div class="callout"><h4>🇺🇸 米国の政策金利 — FF金利（Federal Funds Rate）</h4><p>米国の政策金利は<strong>「FFレート（Federal Funds Rate）」</strong>。米銀行間で翌日物の準備預金を融通する金利で、FRB（連邦準備制度）のFOMC（連邦公開市場委員会）が<strong>0.25%幅のターゲットレンジ</strong>で設定する。例えば「3.50〜3.75%」といった形で上限・下限を示し、IORB（準備預金付利）やON RRP（翌日物リバースレポ）を用いてこの範囲内に誘導する。</p></div>
+  <div class="callout"><h4>🇯🇵 日本の政策金利 — 無担保コール翌日物</h4><p>日本の政策金利は<strong>「無担保コール翌日物金利」</strong>という。難しそうな名前だが、分解すれば中身は単純だ:</p><ul style="margin:0.5rem 0 0.5rem 1.2rem;padding:0;font-size:0.9rem;line-height:1.9"><li><strong>無担保</strong> = 担保（借金の保証）なし</li><li><strong>コール</strong> = 「call（呼ぶ）」ように、電話一本で素早く貸し借りする市場</li><li><strong>翌日物</strong> = 今日借りて翌営業日に返す</li></ul><p>つまり<strong>「銀行同士が『明日返すから少し貸して』と電話一本で融通し合う、超短期の無担保資金」</strong>の金利のこと。日銀はこの金利を目標水準に誘導することで、元栓を締めたり緩めたりしている。</p></div>
 
-  <p>どちらも「銀行間の翌日物金利」という点は共通だが、日本は<strong>単一の目標水準</strong>、米国は<strong>幅（レンジ）</strong>で設定する点が大きな違いだ。</p>
+  <div class="callout"><h4>🇺🇸 米国の政策金利 — FFレート（Federal Funds Rate）</h4><p>米国の政策金利は<strong>「FFレート（Federal Funds Rate）」</strong>。仕組みは日本と似ており、<strong>米銀行同士が翌日物の資金を融通し合う際の金利</strong>だ。違いは目標の立て方。FRB（連邦準備制度）のFOMC（連邦公開市場委員会）は<strong>0.25%幅のターゲットレンジ</strong>（例: 3.50〜3.75%）で上限・下限を示し、その範囲内に誘導する。</p></div>
+
+  <p>日米どちらも「銀行間の翌日物金利」を政策金利とする点は共通。違いは、<strong>日本は単一の目標水準、米国は幅（レンジ）で設定</strong>する点だけだ。</p>
 </section>
 
 <section id="how" class="section fade-in">
@@ -587,7 +599,7 @@ body {
 
 <section id="mechanism" class="section fade-in">
   <h2 class="section-header">🔄 利上げ vs 利下げ のメカニズムと中立金利(R*)</h2>
-  <p>中央銀行の金利政策は、景気サイクルに合わせて「アクセル」と「ブレーキ」を踏み分ける行為に例えられる。景気が過熱してインフレが高まりすぎれば<strong>利上げ</strong>で需要を冷却し、景気が冷え込み失業が増えれば<strong>利下げ</strong>で需要を刺激する。</p>
+  <p>中央銀行の金利政策は、景気サイクルに合わせて<strong>「アクセル」と「ブレーキ」を踏み分ける運転</strong>に例えられる。景気が過熱してインフレが高まりすぎれば<strong>利上げ＝ブレーキ</strong>で需要を冷却し、景気が冷え込み失業が増えれば<strong>利下げ＝アクセル</strong>で需要を刺激する。お金を借りる「料金」が上がれば消費・投資は減り、下がれば増える。このシンプルな仕組みで経済全体が動く。</p>
 
   <div class="svg-scroll"><img src="../images/column/rate-cycle-loop.svg" alt="景気サイクルと金利の関係ループ図: 景気過熱→利上げ→景気冷却→景気後退→利下げ→景気回復→再び景気過熱へ" style="width:100%;max-width:800px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);"></div>
 
@@ -595,7 +607,7 @@ body {
 
   <div class="callout"><h4>🔽 利下げ局面 — 景気のアクセル</h4><p>借入コスト低下 → 投資・消費が活発化 → 需要増 → 景気刺激・デフレ脱却。通貨は売られて<strong>通貨安</strong>に振れ、株価・債券価格は上昇しやすい。リスク資産への資金流入が加速する「リスクオン」のフェーズ。</p></div>
 
-  <div class="callout" style="background:linear-gradient(135deg,rgba(7,228,221,0.08),rgba(7,228,221,0.02))"><h4>⚖️ 中立金利 R*（Natural Rate of Interest）</h4><p>景気を刺激も抑制もしない「均衡水準」の金利を<strong>中立金利（R*、アール・スター）</strong>と呼ぶ。現在の政策金利がR*より高ければ「引き締め的」、低ければ「緩和的」と評価される。</p><p style="margin-top:0.6rem">FRBは米国のR*を名目で<strong>約2.5〜3.5%</strong>と推定（2026年3月ドットプロット）。一方、日銀の植田総裁は日本のR*を<strong>1.0〜2.5%</strong>と広めに提示している。この「R*の位置」が、次の金利政策の方向性を読み解くうえで最も重要な羅針盤となる。</p></div>
+  <div class="callout" style="background:linear-gradient(135deg,rgba(7,228,221,0.08),rgba(7,228,221,0.02))"><h4>⚖️ 中立金利 R*（Natural Rate of Interest）</h4><p>景気を刺激も抑制もしない「均衡水準」の金利を<strong>中立金利（R*、アール・スター）</strong>と呼ぶ。たとえるなら<strong>自動車のニュートラルギア</strong>。アクセル（利下げ）もブレーキ（利上げ）も踏まず、経済が自然体で走る状態の金利水準だ。現在の政策金利がR*より高ければ「ブレーキを踏んでいる（引き締め的）」、低ければ「アクセルを踏んでいる（緩和的）」と評価される。</p><p style="margin-top:0.6rem">FRBは米国のR*を名目で<strong>約2.5〜3.5%</strong>と推定（2026年3月ドットプロット）。一方、日銀の植田総裁は日本のR*を<strong>1.0〜2.5%</strong>と広めに提示している。この「R*の位置」こそが、次の金利政策の方向性を読み解くうえで最も重要な羅針盤となる。</p></div>
 </section>
 
 <section id="now" class="section fade-in">
