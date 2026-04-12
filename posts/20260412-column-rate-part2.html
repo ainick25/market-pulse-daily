@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- A8.net Link Manager -->
+<script src="//statics.a8.net/a8link/a8linkmgr.js"></script>
+<script>
+  a8linkmgr({
+    "config_id": "3FffsI9Y9VCBqU9ikTQJ"
+  });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KFT35KZZVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KFT35KZZVC');
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【後編】金利差が為替を動かす — 高市・トランプ政権のジレンマとスタグフレーションリスク | MARKETZ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #f8f7f4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0efe8;
+  --text-primary: #1a1a2e;
+  --text-secondary: #3d3d56;
+  --text-muted: #7a7a8e;
+  --accent-red: #e63946;
+  --accent-green: #06a77d;
+  --accent-gold: #d4880f;
+  --accent-blue: #2176ff;
+  --accent-purple: #7b61ff;
+  --accent-orange: #e07b39;
+  --border: rgba(0,0,0,0.1);
+  --border-accent: rgba(0,0,0,0.18);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Meiryo', 'Yu Gothic UI', 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.2rem; }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridSlide 20s linear infinite;
+}
+@keyframes gridSlide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(60px, 60px); }
+}
+.hero-content { position: relative; z-index: 1; padding: 2rem 1rem; }
+.hero-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: #ffe066;
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
+}
+.hero-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+.hero-subtitle {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto; margin-right: auto;
+}
+.hero-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+.hero-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: #ffffff;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+}
+.hero-tag.alert {
+  border-color: var(--accent-red);
+  background: rgba(255,77,106,0.12);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+/* ===== STICKY NAV ===== */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+.sticky-nav ul {
+  display: flex; list-style: none;
+  max-width: 900px; margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+  gap: 0;
+}
+.sticky-nav a {
+  display: block;
+  padding: 0.75rem 0.8rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.sticky-nav a:hover, .sticky-nav a.active {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+  background: rgba(0,0,0,0.04);
+}
+
+/* ===== SECTION ===== */
+.section { padding: 3rem 0; }
+.section-header {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-accent);
+}
+
+/* ===== PRICE STRIP ===== */
+.price-strip {
+  display: flex; flex-wrap: wrap; gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.price-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  flex: 1 1 140px;
+  min-width: 130px;
+}
+.price-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+.price-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+.price-change {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 0.15rem;
+}
+.price-change.up { color: var(--accent-green); }
+.price-change.down { color: var(--accent-red); }
+
+/* ===== NEWS CARD ===== */
+.news-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s;
+  border-left: 3px solid transparent;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.news-card:hover { background: var(--bg-card-hover); box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+.news-card.blue { border-left-color: var(--accent-blue); }
+.news-card.red { border-left-color: var(--accent-red); }
+.news-card.gold { border-left-color: var(--accent-gold); }
+.news-card.green { border-left-color: var(--accent-green); }
+.news-card.purple { border-left-color: var(--accent-purple); }
+.news-card.orange { border-left-color: var(--accent-orange); }
+
+.news-head { margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.news-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+}
+.badge-fx { background: rgba(86,204,255,0.2); color: var(--accent-blue); border: 1px solid rgba(86,204,255,0.3); }
+.badge-commodity { background: rgba(255,224,102,0.2); color: var(--accent-gold); border: 1px solid rgba(255,224,102,0.3); }
+.badge-crypto { background: rgba(201,164,255,0.2); color: var(--accent-purple); border: 1px solid rgba(201,164,255,0.3); }
+.badge-stock { background: rgba(46,236,138,0.2); color: var(--accent-green); border: 1px solid rgba(46,236,138,0.3); }
+.badge-geo { background: rgba(255,77,106,0.2); color: var(--accent-red); border: 1px solid rgba(255,77,106,0.3); }
+.badge-tech { background: rgba(255,171,48,0.2); color: var(--accent-orange); border: 1px solid rgba(255,171,48,0.3); }
+
+.news-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+.news-body {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.news-source {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+
+/* ===== ANALYSIS ===== */
+.analysis-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.analysis-pair { margin-bottom: 1.5rem; }
+.analysis-pair:last-child { margin-bottom: 0; }
+.pair-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+.pair-direction {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+.dir-up { background: rgba(46,236,138,0.15); color: var(--accent-green); border: 1px solid rgba(46,236,138,0.3); }
+.dir-down { background: rgba(255,77,106,0.15); color: var(--accent-red); border: 1px solid rgba(255,77,106,0.3); }
+.dir-neutral { background: rgba(255,224,102,0.15); color: var(--accent-gold); border: 1px solid rgba(255,224,102,0.3); }
+.pair-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.pair-text strong { color: var(--text-primary); }
+
+/* ===== DISCLAIMER ===== */
+.disclaimer {
+  background: #fef2f2;
+  border: 2px solid var(--accent-red);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin: 2rem 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.disclaimer-title {
+  color: var(--accent-red);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== FADE IN ===== */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+.footer a { color: var(--accent-gold); text-decoration: none; }
+
+/* ===== FAB BUTTONS ===== */
+.fab-group {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  display: none; flex-direction: column; gap: 0.5rem;
+  z-index: 99;
+}
+.fab-btn {
+  width: 44px; height: 44px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.fab-btn:hover { background: var(--bg-card-hover); }
+.fab-home { font-size: 1rem; }
+
+@media (max-width: 600px) {
+  .price-card { flex: 1 1 100%; }
+  .sticky-nav a { font-size: 0.75rem; padding: 0.6rem 0.5rem; }
+}
+/* ===== COLUMN EXTRAS ===== */
+.compare-table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:0.85rem}
+.compare-table th{background:#f1f0eb;color:var(--text-primary);padding:0.7rem 0.6rem;text-align:left;cursor:pointer;user-select:none;border-bottom:2px solid var(--border-accent);white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:0.78rem}
+.compare-table th:hover{color:var(--accent-gold)}
+.compare-table th.sorted-asc::after{content:' ▲';color:var(--accent-gold)}
+.compare-table th.sorted-desc::after{content:' ▼';color:var(--accent-gold)}
+.compare-table td{padding:0.6rem;border-bottom:1px solid var(--border);color:var(--text-secondary)}
+.compare-table tr:hover td{background:rgba(0,0,0,0.02)}
+.compare-table .best{color:var(--accent-green);font-weight:700}
+.compare-table .warn{color:var(--accent-red)}
+.vs-box{display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;margin:1.5rem 0;align-items:start}
+.vs-card{background:#fff;border:1px solid var(--border);border-radius:8px;padding:1.2rem;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+.vs-card h4{color:var(--text-primary);font-size:0.95rem;margin-bottom:0.8rem}
+.vs-card li{color:var(--text-secondary);font-size:0.85rem;margin-bottom:0.4rem;line-height:1.6;list-style:none;padding-left:0}
+.vs-divider{display:flex;align-items:center;font-family:'JetBrains Mono',monospace;font-size:1.5rem;color:var(--accent-gold);font-weight:700}
+@media(max-width:600px){.vs-box{grid-template-columns:1fr}.vs-divider{justify-content:center}}
+.point-card{background:#fff;border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem;margin-bottom:0.8rem;border-left:3px solid var(--accent-gold);box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.point-card h4{color:var(--accent-gold);font-family:'JetBrains Mono',monospace;font-size:0.85rem;margin-bottom:0.4rem}
+.point-card p{font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin:0}
+.tv-badge{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:0.7rem;padding:0.15rem 0.5rem;border-radius:3px;font-weight:700}
+.tv-yes{background:rgba(46,236,138,0.15);color:var(--accent-green);border:1px solid rgba(46,236,138,0.3)}
+.tv-no{background:rgba(255,77,106,0.1);color:var(--text-muted);border:1px solid rgba(255,77,106,0.2)}
+.tv-tip{background:linear-gradient(135deg,#fef9ef,#fdf6e3);border:1px solid rgba(212,136,15,0.3);border-radius:8px;padding:1rem 1.2rem;margin:1rem 0}
+.tv-tip p{color:var(--text-secondary);font-size:0.88rem;margin:0}
+.tv-tip strong{color:var(--accent-gold)}
+.purpose-btns{display:flex;gap:0.5rem;flex-wrap:wrap;margin:1rem 0}
+.purpose-btn{font-size:0.82rem;padding:0.5rem 1rem;background:#fff;border:1px solid var(--border);border-radius:20px;color:var(--text-secondary);cursor:pointer;transition:all 0.2s;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+.purpose-btn.active,.purpose-btn:hover{color:#fff;border-color:var(--accent-gold);background:var(--accent-gold)}
+.highlight-row td{background:rgba(240,165,0,0.08)!important;border-left:3px solid var(--accent-gold)}
+.scalp-status{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:0.72rem;padding:0.15rem 0.5rem;border-radius:3px;font-weight:700}
+.scalp-ok{background:rgba(46,236,138,0.15);color:var(--accent-green);border:1px solid rgba(46,236,138,0.3)}
+.scalp-ng{background:rgba(255,77,106,0.15);color:var(--accent-red);border:1px solid rgba(255,77,106,0.3)}
+.scalp-unknown{background:rgba(255,224,102,0.1);color:var(--accent-gold);border:1px solid rgba(255,224,102,0.3)}
+
+/* ===== VISUAL ENHANCEMENTS ===== */
+.section:nth-child(even){background:#f1f0eb;border-radius:12px;padding:2.5rem 1.5rem;margin:1rem -1.5rem}
+.section-header{display:flex;align-items:center;gap:0.6rem;border-bottom:2px solid var(--accent-gold);padding-bottom:0.6rem}
+
+/* Animated bar chart */
+.bar-chart{display:flex;flex-direction:column;gap:0.6rem;margin:1.5rem 0}
+.bar-row{display:flex;align-items:center;gap:0.8rem}
+.bar-label{font-family:'JetBrains Mono',monospace;font-size:0.78rem;color:var(--text-secondary);width:120px;flex-shrink:0;text-align:right}
+.bar-track{flex:1;height:32px;background:rgba(0,0,0,0.05);border-radius:6px;overflow:hidden;position:relative}
+.bar-fill{height:100%;border-radius:6px;display:flex;align-items:center;padding-left:10px;font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:#fff;font-weight:700;transition:width 1.5s ease;width:0}
+.bar-fill.animated{width:var(--w)}
+.bar-fill.gold{background:linear-gradient(90deg,#d4880f,#f0a500)}
+.bar-fill.green{background:linear-gradient(90deg,#059669,#06a77d)}
+.bar-fill.red{background:linear-gradient(90deg,#dc2626,#e63946)}
+.bar-fill.blue{background:linear-gradient(90deg,#1d4ed8,#2176ff)}
+.bar-fill.purple{background:linear-gradient(90deg,#6d28d9,#7b61ff)}
+
+/* Gauge meter */
+.gauge-row{display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0;justify-content:center}
+.gauge{text-align:center;width:120px}
+.gauge-ring{width:80px;height:80px;border-radius:50%;margin:0 auto 0.5rem;position:relative;display:flex;align-items:center;justify-content:center}
+.gauge-ring::before{content:'';position:absolute;inset:4px;border-radius:50%;background:var(--bg-primary)}
+.gauge-val{position:relative;z-index:1;font-family:'JetBrains Mono',monospace;font-size:0.85rem;font-weight:700;color:var(--text-primary)}
+.gauge-name{font-size:0.75rem;color:var(--text-secondary);margin-top:0.3rem}
+
+/* Callout box */
+.callout{background:linear-gradient(135deg,#fef9ef,#fdf6e3);border:1px solid rgba(212,136,15,0.3);border-radius:10px;padding:1.2rem 1.5rem;margin:1.5rem 0;position:relative;overflow:hidden}
+.callout::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--accent-gold)}
+.callout h4{color:var(--accent-gold);font-family:'JetBrains Mono',monospace;font-size:0.85rem;margin-bottom:0.5rem}
+.callout p{color:var(--text-secondary);font-size:0.88rem;line-height:1.7;margin:0}
+.callout.red{background:linear-gradient(135deg,#fef2f2,#fde8e8);border-color:rgba(230,57,70,0.3)}
+.callout.red::before{background:var(--accent-red)}
+.callout.red h4{color:var(--accent-red)}
+.callout.green{background:linear-gradient(135deg,#ecfdf5,#d1fae5);border-color:rgba(6,167,125,0.3)}
+.callout.green::before{background:var(--accent-green)}
+.callout.green h4{color:var(--accent-green)}
+
+/* Animated number counter */
+.big-number{font-family:'JetBrains Mono',monospace;font-size:2.5rem;font-weight:700;text-align:center;margin:1rem 0}
+.big-number .num{color:var(--accent-gold)}
+.big-number .unit{font-size:1rem;color:var(--text-muted);margin-left:0.3rem}
+.big-number .label{display:block;font-size:0.78rem;color:var(--text-secondary);font-weight:400;margin-top:0.3rem}
+
+/* Number cards row */
+.num-cards{display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0;justify-content:center}
+.num-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:1.2rem;text-align:center;flex:1;min-width:140px;max-width:200px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.num-card .val{font-family:'JetBrains Mono',monospace;font-size:1.8rem;font-weight:700}
+.num-card .desc{font-size:0.78rem;color:var(--text-muted);margin-top:0.4rem}
+
+/* Flow diagram */
+.flow{display:flex;align-items:center;gap:0;flex-wrap:wrap;justify-content:center;margin:1.5rem 0}
+.flow-step{background:#fff;border:1px solid var(--border);border-radius:8px;padding:0.8rem 1rem;text-align:center;min-width:100px;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+.flow-step .icon{font-size:1.5rem;margin-bottom:0.3rem}
+.flow-step .text{font-size:0.78rem;color:var(--text-secondary)}
+.flow-arrow{color:var(--accent-gold);font-family:'JetBrains Mono',monospace;font-size:1.2rem;padding:0 0.5rem}
+@media(max-width:600px){.flow-arrow{transform:rotate(90deg);padding:0.3rem 0}}
+
+/* ===== AUTHOR BOX ===== */
+.author-box{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.5rem;margin:2rem 0;display:flex;gap:1.2rem;align-items:flex-start;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+.author-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#1a1a2e,#0f3460);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.5rem;color:#ffe066;font-family:'JetBrains Mono',monospace;font-weight:700}
+.author-info{flex:1;min-width:0}
+.author-name{font-weight:700;font-size:0.95rem;color:var(--text-primary);margin-bottom:0.2rem}
+.author-title{font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--accent-gold);letter-spacing:0.03em;margin-bottom:0.5rem}
+.author-bio{font-size:0.82rem;color:var(--text-secondary);line-height:1.7}
+@media(max-width:600px){.author-box{flex-direction:column;align-items:center;text-align:center}.author-avatar{width:56px;height:56px;font-size:1.3rem}}
+
+/* ===== SVG RESPONSIVE ===== */
+.svg-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1rem 0}
+.svg-scroll img{min-width:500px;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08)}
+.compare-table{font-size:0.82rem}
+@media(max-width:600px){
+  .compare-table{font-size:0.75rem}
+  .compare-table th,.compare-table td{padding:0.45rem 0.4rem}
+  .num-cards{gap:0.5rem}
+  .num-card{min-width:100px;padding:0.8rem}
+  .num-card .val{font-size:1.3rem}
+  .flow{gap:0.3rem}
+  .flow-step{min-width:70px;padding:0.5rem 0.6rem}
+  .flow-step .text{font-size:0.7rem}
+  .flow-arrow{font-size:0.9rem;padding:0 0.2rem}
+}
+
+/* ===== ARTICLE NAV (Next/Prev) ===== */
+.article-nav{display:flex;gap:1rem;margin:2rem 0;flex-wrap:wrap}
+.article-nav a{flex:1;min-width:200px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.article-nav a:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.article-nav .nav-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--text-muted);letter-spacing:0.05em;margin-bottom:0.3rem}
+.article-nav .nav-title{font-size:0.85rem;font-weight:700;color:var(--text-primary);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.article-nav .nav-next{text-align:right;margin-left:auto}
+/* ===== RELATED ARTICLES ===== */
+.related-section{margin:2rem 0}
+.related-heading{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:var(--text-primary);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--border-accent)}
+.related-list{display:flex;flex-direction:column;gap:0.6rem}
+.related-card{display:block;background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--accent-gold);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.related-card:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.related-card .rc-date{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--accent-gold);letter-spacing:0.05em}
+.related-card .rc-title{font-size:0.9rem;font-weight:700;color:var(--text-primary);margin-top:0.2rem;line-height:1.5}
+.related-card .rc-tags{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.4rem}
+.related-card .rc-tag{font-family:'JetBrains Mono',monospace;font-size:0.62rem;padding:0.15rem 0.4rem;border-radius:3px;background:rgba(0,0,0,0.04);color:var(--text-muted)}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb{max-width:900px;margin:0 auto;padding:0.6rem 1.2rem;font-size:0.75rem;color:var(--text-muted)}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.2s}
+.breadcrumb a:hover{color:var(--text-primary);text-decoration:none}
+.breadcrumb .sep{margin:0 0.4rem;opacity:0.5}
+.breadcrumb .current{color:var(--text-secondary)}
+</style>
+<meta name="description" content="日米金利差2.75%がUSD/JPYを動かすメカニズム、高市政権の¥122兆円財政出動と日銀の引き締め必要性、トランプ政権の関税vsFRB利下げのジレンマ、1970年代型スタグフレーションリスクを解説。">
+<link rel="canonical" href="https://marketpulse-daily.com/posts/20260412-column-rate-part2.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【後編】金利差が為替を動かす — 高市・トランプ政権のジレンマとスタグフレーションリスク | MARKETZ">
+<meta property="og:description" content="日銀0.75%、FRB 3.50-3.75%。政策金利の基礎から日米の違い、金利と5つの金融商品の関係までプロのトレーダー視点で解説。">
+<meta property="og:url" content="https://marketpulse-daily.com/posts/20260412-column-rate-part2.html">
+<meta property="og:site_name" content="MARKETZ">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://marketpulse-daily.com/images/og-default.svg">
+<meta property="article:published_time" content="2026-04-12T00:00:00+09:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【後編】金利差が為替を動かす — 高市・トランプ政権のジレンマとスタグフレーションリスク | MARKETZ">
+<meta name="twitter:description" content="日米金利差が為替を動かすメカニズム。高市政権の財政出動と日銀の引き締め、トランプ政権のジレンマ、スタグフレーションリスクを解説。">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "【後編】金利差が為替を動かす — 高市・トランプ政権のジレンマとスタグフレーションリスク", "datePublished": "2026-04-12T00:00:00+09:00", "publisher": {"@type": "Organization", "name": "MARKETZ", "logo": {"@type": "ImageObject", "url": "https://marketpulse-daily.com/images/og-default.svg"}}, "mainEntityOfPage": "https://marketpulse-daily.com/posts/20260412-column-rate-part2.html", "author": {"@type": "Organization", "name": "MARKETZ", "description": "ITコンサルタント×データドリブントレーダーによるマーケット分析メディア"}, "image": "https://marketpulse-daily.com/images/og-default.svg"}
+</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://marketpulse-daily.com/"}, {"@type": "ListItem", "position": 2, "name": "アーカイブ", "item": "https://marketpulse-daily.com/archive.html"}, {"@type": "ListItem", "position": 3, "name": "【後編】金利差が為替を動かす — 高市・トランプ政権のジレンマとスタグフレーションリスク"}]}</script>
+</head>
+<body>
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-date">2026.04.12 — COLUMN</div>
+    <h1 class="hero-title">【後編】金利差が為替を動かす</h1>
+    <p class="hero-subtitle">日米金利差2.75%とUSD/JPY 159円 — 高市政権の財政出動、トランプ政権のジレンマ、そしてスタグフレーションリスク</p>
+    <div class="hero-tags">
+      <span class="hero-tag">📝 コラム</span>
+      <span class="hero-tag">金利差</span>
+      <span class="hero-tag">USD/JPY</span>
+      <span class="hero-tag">高市政権</span>
+      <span class="hero-tag">トランプ</span>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb" aria-label="パンくずリスト">
+  <a href="https://marketpulse-daily.com/">ホーム</a>
+  <span class="sep">›</span>
+  <a href="https://marketpulse-daily.com/archive.html">アーカイブ</a>
+  <span class="sep">›</span>
+  <span class="current">【後編】金利差が為替を動かす</span>
+</div>
+<nav class="sticky-nav">
+  <ul>
+    <li><a href="#carry">💱 金利差と為替</a></li>
+    <li><a href="#takaichi">🇯🇵 高市政権</a></li>
+    <li><a href="#trump">🇺🇸 トランプ</a></li>
+    <li><a href="#stagflation">🔥 スタグフレーション</a></li>
+    <li><a href="#investor">📋 投資家への示唆</a></li>
+    <li><a href="#summary">📝 まとめ</a></li>
+  </ul>
+</nav>
+<div class="container">
+
+<section class="section fade-in" style="padding-top:2rem">
+  <div class="callout" style="border:none;background:linear-gradient(135deg,rgba(240,165,0,0.06),rgba(240,165,0,0.02))">
+    <h4>📌 この記事でわかること</h4>
+    <ul style="list-style:none;padding:0;margin:0.8rem 0 0">
+      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary);border-bottom:1px solid rgba(0,0,0,0.05)">✅ 日米金利差が<strong>USD/JPY（ドル円）を動かすメカニズム</strong>（キャリートレード）</li>
+      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary);border-bottom:1px solid rgba(0,0,0,0.05)">✅ 高市政権の<strong>¥122兆円の財政出動</strong>と、日銀が今後直面する金融引き締めの必要性</li>
+      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary);border-bottom:1px solid rgba(0,0,0,0.05)">✅ トランプ政権の<strong>関税政策 vs FRB利下げ圧力</strong>というジレンマ</li>
+      <li style="padding:0.4rem 0;font-size:0.92rem;color:var(--text-primary)">✅ 2026年の<strong>スタグフレーションリスク</strong>と投資家への示唆</li>
+    </ul>
+  </div>
+  <div class="callout" style="background:rgba(7,228,221,0.06);border-color:rgba(7,228,221,0.3)"><h4>📖 前編をまだ読んでいない方へ</h4><p>この記事は<a href="20260411-column-rate-part1.html" style="color:var(--accent-gold);font-weight:700">【前編】政策金利の教科書</a>の続きです。「政策金利とは何か」「利上げ/利下げの仕組み」「中立金利(R*)」「金利と5資産の関係」を前編で解説していますので、未読の方はぜひそちらからお読みください。</p></div>
+  <h3 style="font-size:1.1rem;font-weight:700;color:var(--text-primary);margin:2rem 0 1rem">📖 目次</h3>
+  <nav style="background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:10px;padding:1.2rem 1.5rem;box-shadow:0 1px 4px rgba(0,0,0,0.04)">
+    <ol style="margin:0;padding-left:1.2rem;list-style:decimal;color:var(--text-secondary);font-size:0.9rem;line-height:2.2">
+      <li><a href="#carry" style="color:var(--text-primary);text-decoration:none">日米金利差とUSD/JPY — キャリートレードの仕組み</a></li>
+      <li><a href="#takaichi" style="color:var(--text-primary);text-decoration:none">高市政権の財政出動 — そして今後必要になる金融引き締め</a></li>
+      <li><a href="#trump" style="color:var(--text-primary);text-decoration:none">トランプ政権のジレンマ — 関税 vs FRBの利下げ</a></li>
+      <li><a href="#stagflation" style="color:var(--text-primary);text-decoration:none">2026年のスタグフレーションリスク</a></li>
+      <li><a href="#investor" style="color:var(--text-primary);text-decoration:none">投資家への示唆</a></li>
+      <li><a href="#summary" style="color:var(--text-primary);text-decoration:none">まとめ</a></li>
+    </ol>
+  </nav>
+</section>
+
+<section id="carry" class="section fade-in">
+  <h2 class="section-header">💱 日米金利差とUSD/JPY — キャリートレードの仕組み</h2>
+  <p>前編で確認した通り、2026年4月現在の日米金利差は<strong>約2.75〜3.0%ポイント</strong>です。この「差」が為替相場を動かす最大のエンジンとなっています。</p>
+
+  <div class="callout"><h4>💡 キャリートレードとは？</h4><p>金利の<strong>低い</strong>通貨で借りて、金利の<strong>高い</strong>通貨で運用し、その金利差（＝キャリー）を利益にする取引手法です。たとえるなら「年利0.75%の日本の銀行で借りたお金を、年利3.5%のアメリカの銀行に預けて、差額の2.75%を毎日チャリンチャリンと稼ぐ」イメージです。</p><p style="margin-top:0.5rem">この取引が大規模に行われると、日本円が売られてドルが買われるため、<strong>USD/JPYは上昇（円安ドル高）</strong>します。これが「金利差が為替を動かす」メカニズムの正体です。</p></div>
+
+  <div class="callout red"><h4>⚠️ キャリートレードの巻き戻しリスク</h4><p>日銀が利上げして金利差が縮小すると、キャリートレードの旨みが減り、ポジションの<strong>巻き戻し（円買い・ドル売り）</strong>が一気に起きます。2024年7月には日銀の利上げをきっかけに円キャリー巻き戻しが発生し、<strong>日経平均が歴代最大の暴落</strong>を記録しました。金利差の縮小は為替だけでなく<strong>株式市場にも波及する</strong>という点を覚えておいてください。</p></div>
+
+  <div style="overflow-x:auto"><table class="compare-table"><thead><tr><th>要素</th><th>金利差拡大の場合</th><th>金利差縮小の場合</th></tr></thead><tbody>
+    <tr><td><strong>USD/JPY</strong></td><td class="warn">上昇（円安）</td><td class="best">下落（円高）</td></tr>
+    <tr><td>キャリートレード</td><td>活発化（円売りドル買い）</td><td class="warn">巻き戻し（円買いドル売り）</td></tr>
+    <tr><td>日本株</td><td>円安メリットで輸出企業↑</td><td class="warn">巻き戻し急落リスク</td></tr>
+    <tr><td>米国債</td><td>日本からの資金流入で安定</td><td>資金流出で利回り上昇</td></tr>
+  </tbody></table></div>
+</section>
+
+<section id="takaichi" class="section fade-in">
+  <h2 class="section-header">🇯🇵 高市政権の財政出動 — そして今後必要になる金融引き締め</h2>
+  <p>高市早苗首相は就任以来、<strong>「積極財政」</strong>を政策の柱に据えてきました。FY2026の一般会計予算は過去最大の<strong>¥122.3兆円</strong>（前年比+7.1兆円）。半導体・AIに<strong>¥1.23兆円</strong>（前年比約4倍）、防衛費増額、そして¥21.3兆円規模の経済対策を打ち出しています。</p>
+
+  <div style="overflow-x:auto"><table class="compare-table"><thead><tr><th>項目</th><th>金額</th><th>前年比</th></tr></thead><tbody>
+    <tr><td><strong>一般会計予算</strong></td><td class="warn">¥122.3兆円</td><td>+7.1兆円</td></tr>
+    <tr><td>半導体・AI（METI）</td><td>¥1.23兆円</td><td class="warn">約4倍</td></tr>
+    <tr><td>うちRapidus</td><td>¥1,500億円</td><td>累計¥2,500億</td></tr>
+    <tr><td>新規国債発行</td><td class="warn">¥29.6兆円</td><td>—</td></tr>
+    <tr><td><strong>国債利払い</strong></td><td class="warn">¥31.3兆円</td><td>過去最大</td></tr>
+  </tbody></table></div>
+
+  <div class="callout red"><h4>🔥 なぜ今後、金融引き締めが必要になるのか</h4><p>問題は、この大規模な財政出動が<strong>インフレ圧力を高める</strong>ことです。政府が大量にお金を使えば景気は良くなりますが、その分モノの値段が上がりやすくなります。さらに、新規国債の大量発行でJGB（国債）の供給が増え、10年JGB利回りは<strong>2.4%</strong>（1996年以来の高水準）に到達しました。</p><p style="margin-top:0.5rem">こうしたインフレ圧力を抑えるために、日銀は<strong>利上げ（金融引き締め）</strong>を続ける必要に迫られます。しかし利上げすれば国債利払いがさらに膨らみ、財政を圧迫するという<strong>「財政支配（Fiscal Dominance）」のジレンマ</strong>に陥ります。アクセル（財政出動）を踏みながらブレーキ（利上げ）も踏まなければならない——これが高市政権と日銀が直面する最大の課題です。</p></div>
+
+  <div class="callout"><h4>📊 債務/GDP比 約250%の現実</h4><p>日本の政府債務はGDP比<strong>約250%</strong>でG7最悪です。金利が1%上昇するだけで利払い費が数兆円規模で増加します。高市政権の積極財政が成長に結びつけば問題ありませんが、<strong>成長なき財政拡張は財政危機の導火線</strong>になりかねません。</p></div>
+</section>
+
+<section id="trump" class="section fade-in">
+  <h2 class="section-header">🇺🇸 トランプ政権のジレンマ — 関税 vs FRBの利下げ</h2>
+  <p>一方の米国も「金利政策のジレンマ」に直面しています。トランプ大統領は景気を支えるために<strong>FRBに利下げ圧力</strong>をかけていますが、自身の<strong>関税政策がインフレを押し上げ</strong>、利下げを困難にしているという矛盾構造です。</p>
+
+  <div class="callout"><h4>📦 トランプの関税政策</h4><p>トランプ政権はSection 301調査を発動し、中国・日本・EU・ベトナム・台湾など数十カ国を対象に新たな関税を検討しています。現在の対中関税は相互10%（2025年11月の米中合意で125%から引き下げ、2026年11月まで有効）。5月には8年ぶりの訪中で習近平主席と会談予定です。</p></div>
+
+  <div class="callout red"><h4>⚡ 利下げしたい。でもインフレが上がる。</h4><p>トランプ大統領はFRBのパウエル議長に<strong>繰り返し利下げを要求</strong>し、FRB理事の解任を試み、司法省にFRBの調査を命じたとも報じられています。しかしパウエル議長は「<strong>関税がインフレを押し上げている</strong>」と指摘。FOMCも「<strong>高失業と高インフレのリスクが共に上昇</strong>」と警告しています。</p><p style="margin-top:0.5rem">たとえるなら、トランプ大統領は「<strong>暖房（関税で物価を上げる）をつけながら、同時にエアコン（利下げで景気を冷まさず温める）もつけろ</strong>」と言っている状態です。暖房とエアコンの同時稼働は電気代（＝経済コスト）がかさむばかりで、部屋の温度（＝インフレ）は下がりません。</p></div>
+
+  <div style="overflow-x:auto"><table class="compare-table"><thead><tr><th>トランプが望む政策</th><th>期待する効果</th><th>実際に起きること</th></tr></thead><tbody>
+    <tr><td><strong>関税引き上げ</strong></td><td>国内産業保護</td><td class="warn">輸入物価上昇 → インフレ圧力</td></tr>
+    <tr><td><strong>FRB利下げ</strong></td><td>景気刺激・ドル安</td><td class="warn">すでにインフレ圧力があるため利下げ困難</td></tr>
+    <tr><td>両方同時実施</td><td>—</td><td class="warn">スタグフレーション（景気停滞+インフレ）リスク</td></tr>
+  </tbody></table></div>
+</section>
+
+<section id="stagflation" class="section fade-in">
+  <h2 class="section-header">🔥 2026年のスタグフレーションリスク — 1970年代の教訓</h2>
+  <p>「スタグフレーション」とは、<strong>景気停滞（Stagnation）とインフレーション（Inflation）が同時に起きる</strong>最悪のシナリオです。通常、景気が悪ければ物価は下がりますが、スタグフレーションではその常識が通用しません。</p>
+
+  <div class="callout"><h4>📜 1970年代オイルショックの教訓</h4><p>1973年の第一次オイルショックでは原油価格が<strong>4倍（$2.90→$11.65/bbl）</strong>に急騰。米国のCPIは<strong>14.5%</strong>（1980年）、失業率は<strong>7.5%</strong>に達しました。FRBのボルカー議長はFF金利を<strong>21%</strong>まで引き上げ、16カ月のリセッションと<strong>失業率10.8%</strong>という痛みを伴って、ようやくインフレを鎮圧しました。</p></div>
+
+  <div class="callout red"><h4>⚠️ 2026年の状況が1970年代と似ている点</h4><ul style="margin:0.5rem 0 0 1.2rem;padding:0;font-size:0.9rem;line-height:1.9"><li>🛢 <strong>原油価格の急騰</strong>: イラン戦争でBrentが$73→$118に急騰（停戦後も$95台で高止まり）</li><li>📦 <strong>サプライショック</strong>: ホルムズ海峡封鎖で世界の石油供給の20%が途絶</li><li>📈 <strong>インフレ再加速</strong>: 米3月CPI +3.3%（2年ぶり高水準）、ガソリン+21.2%</li><li>🏭 <strong>政治的インフレ圧力</strong>: トランプの関税が消費者物価を押し上げ</li><li>⏳ <strong>FRBのジレンマ</strong>: 利下げしたいがインフレが邪魔、利上げすれば景気後退</li></ul></div>
+
+  <p>もちろん、2026年が1970年代の再来になるとは限りません。停戦が恒久化して原油が$73に戻れば、インフレ圧力は大幅に緩和されます。しかし、<strong>停戦の不確実性+関税+労働市場の堅調さ</strong>が重なる限り、スタグフレーションの「種」は確実に蒔かれているのです。</p>
+</section>
+
+<section id="investor" class="section fade-in">
+  <h2 class="section-header">📋 投資家への示唆 — 各資産クラスの戦略</h2>
+  <div class="callout" style="background:linear-gradient(135deg,rgba(33,118,255,0.08),rgba(33,118,255,0.02))"><h4>💱 FX: 円キャリー巻き戻しに備える</h4><p>日米金利差は今後<strong>縮小方向</strong>（日銀利上げ+FRB利下げ）が見込まれています。USD/JPYの159円は、金利差縮小が進めば<strong>150円台前半</strong>への調整もあり得ます。キャリートレードの巻き戻し発生時には短期的に急速な円高が起きるため、円売りポジションのリスク管理が重要です。</p></div>
+
+  <div class="callout" style="background:linear-gradient(135deg,rgba(6,167,125,0.08),rgba(6,167,125,0.02))"><h4>📈 株式: セクター選別がカギ</h4><p>スタグフレーション環境では<strong>ディフェンシブ銘柄</strong>（公益・ヘルスケア・生活必需品）が相対的に強くなります。エネルギー株は原油高で恩恵を受けますが、停戦で急落するリスクもあります。日本株は円安メリット銘柄の選別が重要で、エネルギーコスト感応度の低い半導体・ソフトウェアセクターに注目です。</p></div>
+
+  <div class="callout" style="background:linear-gradient(135deg,rgba(240,165,0,0.08),rgba(240,165,0,0.02))"><h4>🥇 金（ゴールド）: インフレヘッジの本命</h4><p>1970年代のスタグフレーション期には金価格が<strong>約24倍</strong>に上昇しました。2026年もXAU/USDは$4,700台の高水準を維持しています。インフレが長期化するシナリオに備え、<strong>ポートフォリオの5〜15%をゴールドに配分</strong>することは有効なヘッジ戦略といえます。</p></div>
+
+  <div class="callout" style="background:linear-gradient(135deg,rgba(123,97,255,0.08),rgba(123,97,255,0.02))"><h4>📉 債券: 短期 vs 長期の選択</h4><p>金利上昇局面では長期債は下落しますが、<strong>短期債</strong>は利回りを享受しつつ価格変動リスクが小さいという利点があります。日本のJGB 10年利回りは2.4%と20年ぶりの高水準にあり、「金利のある世界」への回帰を意識した債券ポートフォリオの再構築が求められています。</p></div>
+</section>
+
+<section id="summary" class="section fade-in">
+  <h2 class="section-header">📝 まとめ</h2>
+  <div class="callout green"><h4>✅ 後編の要点</h4><ul style="margin:0.6rem 0 0 1.2rem;padding:0"><li style="padding:0.2rem 0">日米金利差<strong>約2.75-3.0%ポイント</strong>がキャリートレードを通じてUSD/JPYを押し上げています</li><li style="padding:0.2rem 0">高市政権の<strong>¥122.3兆円</strong>の積極財政は成長を促しますが、インフレ圧力と国債利払い増で<strong>財政支配リスク</strong>を高めています</li><li style="padding:0.2rem 0">トランプ政権は<strong>関税でインフレを押し上げながらFRBに利下げを迫る</strong>という矛盾構造を抱えています</li><li style="padding:0.2rem 0">原油高+関税+賃金上昇が重なり、<strong>1970年代型スタグフレーション</strong>の「種」が蒔かれています</li><li style="padding:0.2rem 0">投資家は<strong>金利差縮小（円高）への備え、セクター選別、ゴールドのヘッジ活用</strong>を検討すべきです</li></ul></div>
+
+  <h3 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:2rem 0 1rem">📰 関連記事</h3>
+  <a href="20260411-column-rate-part1.html" style="display:block;background:#fff;border:1px solid rgba(0,0,0,0.08);border-left:4px solid #f0a500;border-radius:10px;padding:1rem 1.2rem;margin:0.8rem 0;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,0.04);transition:all 0.2s;">
+    <div style="font-size:0.7rem;color:#f0a500;font-weight:700;margin-bottom:0.3rem;">📝 コラム【前編】</div>
+    <div style="font-size:0.95rem;font-weight:700;color:#1a1a2e;">政策金利の教科書 — 日米の金利政策が金融市場を動かす仕組み</div>
+    <div style="font-size:0.82rem;color:#7a7a8e;margin-top:0.3rem;">金利とは？政策金利とは？利上げvs利下げのメカニズム、中立金利R*まで基礎を解説</div>
+  </a>
+  <a href="20260405-column.html" style="display:block;background:#fff;border:1px solid rgba(0,0,0,0.08);border-left:4px solid #e63946;border-radius:10px;padding:1rem 1.2rem;margin:0.8rem 0;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,0.04);transition:all 0.2s;">
+    <div style="font-size:0.7rem;color:#e63946;font-weight:700;margin-bottom:0.3rem;">🌍 地政学</div>
+    <div style="font-size:0.95rem;font-weight:700;color:#1a1a2e;">地政学リスクと投資 — 戦争・紛争が市場に与える影響を徹底解説</div>
+    <div style="font-size:0.82rem;color:#7a7a8e;margin-top:0.3rem;">湾岸戦争・ウクライナ侵攻・イラン戦争の実データで株・原油・金・為替を分析</div>
+  </a>
+</section>
+
+
+<!-- PR -->
+<div class="news-card gold fade-in" style="border-left-color:var(--accent-gold);margin:2rem 0;padding:1.5rem;">
+  <div class="news-head"><span class="news-badge badge-commodity" style="background:rgba(212,136,15,0.1);color:var(--accent-gold);border:1px solid rgba(212,136,15,0.3);">PR — 広告</span></div>
+  <div class="news-title" style="margin-top:0.5rem;">FX・CFD取引を始めるなら</div>
+  <div style="margin-top:0.8rem;display:flex;flex-wrap:wrap;gap:0.8rem;">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:var(--accent-gold);color:#fff;font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;">【PR】DMM FX →</a>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:transparent;color:var(--accent-gold);font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;border:1px solid var(--accent-gold);">【PR】DMM CFD →</a>
+  </div>
+  <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" alt=""><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" alt="">
+  <div class="news-source" style="margin-top:0.5rem;">※ 投資にはリスクが伴います。</div>
+</div>
+
+<!-- ===== 著者情報 ===== -->
+<div class="author-box fade-in">
+  <div class="author-avatar">M</div>
+  <div class="author-info">
+    <div class="author-name">MARKETZ 編集部</div>
+    <div class="author-title">IT CONSULTANT × DATA-DRIVEN TRADER</div>
+    <div class="author-bio">現役ITコンサルタント・元エンジニアが運営。複雑なグローバル市場をシステム思考で俯瞰し、テクニカル分析とファンダメンタルズ分析を組み合わせたデータドリブンな市場解説をお届けしています。</div>
+  </div>
+</div>
+
+<div class="disclaimer fade-in"><div class="disclaimer-title">⚠️ 免責事項</div>本記事は情報提供のみを目的とし、特定の金融商品の購入を推奨するものではありません。政策金利や経済指標は日々変動します。投資判断はご自身の責任で行ってください。<br>参考: 日本銀行, 米連邦準備制度（Federal Reserve）, Japan Times, Bloomberg, CNBC, NPR, CNN Business, Federal Reserve History, MacroMicro</div>
+<footer class="footer"><p>MARKETZ — <a href="https://marketpulse-daily.com/">ホームに戻る</a></p><p>© 2026 MARKETZ.</p></footer>
+</div>
+<div class="fab-group">
+  <a href="https://marketpulse-daily.com/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
+  <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
+</div>
+<script>
+const observer=new IntersectionObserver(e=>{e.forEach(e=>{
+  if(e.isIntersecting){
+    e.target.classList.add('visible');
+    // Animate bar fills when section becomes visible
+    e.target.querySelectorAll('.bar-fill').forEach(bar=>{bar.classList.add('animated')});
+  }
+})},{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+const sections=document.querySelectorAll('section[id]');
+const navLinks=document.querySelectorAll('.sticky-nav a');
+window.addEventListener('scroll',()=>{
+  let current='';
+  sections.forEach(s=>{if(window.scrollY>=s.offsetTop-100)current=s.getAttribute('id')});
+  navLinks.forEach(a=>{a.classList.remove('active');if(a.getAttribute('href')==='#'+current)a.classList.add('active')});
+  const fg=document.querySelector('.fab-group');
+  if(fg){fg.style.display=window.scrollY>600?'flex':'none'}
+});
+function sortTable(table,col,type){
+  const tbody=table.querySelector('tbody');const rows=Array.from(tbody.querySelectorAll('tr'));
+  const th=table.querySelectorAll('th')[col];const asc=!th.classList.contains('sorted-asc');
+  table.querySelectorAll('th').forEach(h=>h.classList.remove('sorted-asc','sorted-desc'));
+  th.classList.add(asc?'sorted-asc':'sorted-desc');
+  rows.sort((a,b)=>{let va=a.cells[col].textContent.trim(),vb=b.cells[col].textContent.trim();
+    if(type==='num'){va=parseFloat(va.replace(/[^0-9.\-]/g,''))||999;vb=parseFloat(vb.replace(/[^0-9.\-]/g,''))||999}
+    return va<vb?(asc?-1:1):va>vb?(asc?1:-1):0});
+  rows.forEach(r=>tbody.appendChild(r));
+}
+function switchTab(group,id){
+  document.querySelectorAll('[data-tab-group="'+group+'"] .tab-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.tab-content[data-group="'+group+'"]').forEach(c=>c.classList.remove('active'));
+  document.querySelector('[data-tab-group="'+group+'"] [data-tab="'+id+'"]').classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+function filterPurpose(purpose,el){
+  document.querySelectorAll('.purpose-btn').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  document.querySelectorAll('#summary-table tbody tr').forEach(r=>{
+    r.classList.remove('highlight-row');
+    if(r.dataset.purpose&&r.dataset.purpose.includes(purpose))r.classList.add('highlight-row');
+  });
+}
+
+// Article navigation & related articles
+(function(){
+  const slug = location.pathname.split('/').pop().replace('.html','');
+  fetch('../data/posts.json').then(r=>r.json()).then(data=>{
+    const posts = data.posts;
+    const idx = posts.findIndex(p=>p.slug===slug);
+    // Next/Prev nav
+    const nav = document.getElementById('article-nav');
+    if(nav && idx!==-1){
+      let html='';
+      if(idx<posts.length-1){
+        const prev=posts[idx+1];
+        html+='<a href="'+prev.slug+'.html"><div class="nav-label">← 前の記事</div><div class="nav-title">'+prev.title+'</div></a>';
+      }
+      if(idx>0){
+        const next=posts[idx-1];
+        html+='<a href="'+next.slug+'.html" class="nav-next"><div class="nav-label">次の記事 →</div><div class="nav-title">'+next.title+'</div></a>';
+      }
+      nav.innerHTML=html;
+    }
+    // Related articles (same tags, excluding self, max 3)
+    const rel = document.getElementById('related-articles');
+    if(rel && idx!==-1){
+      const myTags=new Set(posts[idx].tags||[]);
+      const scored=posts.filter((_,i)=>i!==idx).map(p=>{
+        const common=(p.tags||[]).filter(t=>myTags.has(t)).length;
+        return{...p,score:common};
+      }).filter(p=>p.score>0).sort((a,b)=>b.score-a.score).slice(0,3);
+      if(scored.length){
+        let html='<div class="related-heading">📰 関連記事</div><div class="related-list">';
+        scored.forEach(p=>{
+          html+='<a href="'+p.slug+'.html" class="related-card"><div class="rc-date">'+p.date+'</div><div class="rc-title">'+p.title+'</div><div class="rc-tags">'+(p.tags||[]).slice(0,4).map(t=>'<span class="rc-tag">'+t+'</span>').join('')+'</div></a>';
+        });
+        html+='</div>';
+        rel.innerHTML=html;
+      }
+    }
+  }).catch(()=>{});
+})();
+
+</script>
+</body>
+</html>
