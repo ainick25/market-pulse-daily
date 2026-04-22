@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- A8.net Link Manager -->
+<script src="//statics.a8.net/a8link/a8linkmgr.js"></script>
+<script>
+  a8linkmgr({
+    "config_id": "3FffsI9Y9VCBqU9ikTQJ"
+  });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KFT35KZZVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KFT35KZZVC');
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MARKETZ — 2026.04.23 マーケットニュースダイジェスト｜停戦延長でS&P/NASDAQ最高値更新、Brent $101突破、BTC+3.17%で$78K台、日経3日続伸59,585円最高値</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #f8f7f4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0efe8;
+  --text-primary: #1a1a2e;
+  --text-secondary: #3d3d56;
+  --text-muted: #7a7a8e;
+  --accent-red: #e63946;
+  --accent-green: #06a77d;
+  --accent-gold: #d4880f;
+  --accent-blue: #2176ff;
+  --accent-purple: #7b61ff;
+  --accent-orange: #e07b39;
+  --border: rgba(0,0,0,0.08);
+  --border-accent: rgba(0,0,0,0.12);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Meiryo', 'Yu Gothic UI', 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.2rem; }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridSlide 20s linear infinite;
+}
+@keyframes gridSlide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(60px, 60px); }
+}
+.hero-content { position: relative; z-index: 1; padding: 2rem 1rem; }
+.hero-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: #d4880f;
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
+}
+.hero-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+.hero-subtitle {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto; margin-right: auto;
+}
+.hero-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+.hero-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: #ffffff;
+  background: rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.15);
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+}
+.hero-tag.alert {
+  border-color: rgba(255,100,120,0.6);
+  background: rgba(255,100,120,0.2);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+/* ===== STICKY NAV ===== */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.sticky-nav ul {
+  display: flex; list-style: none;
+  max-width: 900px; margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+  gap: 0;
+}
+.sticky-nav a {
+  display: block;
+  padding: 0.75rem 0.8rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.sticky-nav a:hover, .sticky-nav a.active {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+  background: rgba(0,0,0,0.04);
+}
+
+/* ===== SECTION ===== */
+.section { padding: 3rem 0; }
+.section-header {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-accent);
+}
+
+/* ===== PRICE STRIP ===== */
+.price-strip {
+  display: flex; flex-wrap: wrap; gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.price-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  flex: 1 1 140px;
+  min-width: 130px;
+}
+.price-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+.price-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+.price-change {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 0.15rem;
+}
+.price-change.up { color: var(--accent-green); }
+.price-change.down { color: var(--accent-red); }
+
+/* ===== NEWS CARD ===== */
+.news-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+  border-left: 3px solid transparent;
+}
+.news-card:hover { background: var(--bg-card-hover); }
+.news-card.blue { border-left-color: var(--accent-blue); }
+.news-card.red { border-left-color: var(--accent-red); }
+.news-card.gold { border-left-color: var(--accent-gold); }
+.news-card.green { border-left-color: var(--accent-green); }
+.news-card.purple { border-left-color: var(--accent-purple); }
+.news-card.orange { border-left-color: var(--accent-orange); }
+
+.news-head { margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.news-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+}
+.badge-fx { background: rgba(33,118,255,0.1); color: var(--accent-blue); border: 1px solid rgba(33,118,255,0.2); }
+.badge-commodity { background: rgba(212,136,15,0.1); color: var(--accent-gold); border: 1px solid rgba(212,136,15,0.2); }
+.badge-crypto { background: rgba(123,97,255,0.1); color: var(--accent-purple); border: 1px solid rgba(123,97,255,0.2); }
+.badge-stock { background: rgba(6,167,125,0.1); color: var(--accent-green); border: 1px solid rgba(6,167,125,0.2); }
+.badge-geo { background: rgba(230,57,70,0.1); color: var(--accent-red); border: 1px solid rgba(230,57,70,0.2); }
+.badge-tech { background: rgba(224,123,57,0.1); color: var(--accent-orange); border: 1px solid rgba(224,123,57,0.2); }
+
+.news-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+.news-body {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.news-source {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+.news-source a{color:var(--accent-gold);text-decoration:none;transition:color 0.2s}
+.news-source a:hover{color:var(--text-primary);text-decoration:underline}
+
+/* ===== ANALYSIS ===== */
+.analysis-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.analysis-pair { margin-bottom: 1.5rem; }
+.analysis-pair:last-child { margin-bottom: 0; }
+.pair-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+.pair-direction {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+.dir-up { background: rgba(6,167,125,0.1); color: var(--accent-green); border: 1px solid rgba(6,167,125,0.2); }
+.dir-down { background: rgba(230,57,70,0.1); color: var(--accent-red); border: 1px solid rgba(230,57,70,0.2); }
+.dir-neutral { background: rgba(212,136,15,0.1); color: var(--accent-gold); border: 1px solid rgba(212,136,15,0.2); }
+.pair-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.pair-text strong { color: var(--text-primary); }
+
+/* ===== DISCLAIMER ===== */
+.disclaimer {
+  background: var(--bg-card);
+  border: 2px solid var(--accent-red);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin: 2rem 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.disclaimer-title {
+  color: var(--accent-red);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== FADE IN ===== */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+.footer a { color: var(--accent-gold); text-decoration: none; }
+
+/* ===== FAB BUTTONS ===== */
+.fab-group {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  display: none; flex-direction: column; gap: 0.5rem;
+  z-index: 99;
+}
+.fab-btn {
+  width: 44px; height: 44px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.fab-btn:hover { background: var(--bg-card-hover); }
+.fab-home { font-size: 1rem; }
+
+@media (max-width: 600px) {
+  .price-card { flex: 1 1 100%; }
+  .sticky-nav a { font-size: 0.75rem; padding: 0.6rem 0.5rem; }
+}
+
+
+/* ===== AUTHOR BOX ===== */
+.author-box{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.5rem;margin:2rem 0;display:flex;gap:1.2rem;align-items:flex-start;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+.author-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#1a1a2e,#0f3460);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.5rem;color:#ffe066;font-family:'JetBrains Mono',monospace;font-weight:700}
+.author-info{flex:1;min-width:0}
+.author-name{font-weight:700;font-size:0.95rem;color:var(--text-primary);margin-bottom:0.2rem}
+.author-title{font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--accent-gold);letter-spacing:0.03em;margin-bottom:0.5rem}
+.author-bio{font-size:0.82rem;color:var(--text-secondary);line-height:1.7}
+@media(max-width:600px){.author-box{flex-direction:column;align-items:center;text-align:center}.author-avatar{width:56px;height:56px;font-size:1.3rem}}
+
+/* ===== CTA BANNER ===== */
+.cta-banner{background:linear-gradient(135deg,#1a1a2e 0%,#0f3460 100%);border-radius:10px;padding:1.5rem;margin:2rem 0;position:relative;overflow:hidden}
+.cta-banner::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:40px 40px}
+.cta-banner-content{position:relative;z-index:1}
+.cta-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:#ffe066;letter-spacing:0.1em;margin-bottom:0.4rem}
+.cta-title{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:#fff;margin-bottom:0.5rem}
+.cta-desc{font-size:0.85rem;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:1rem}
+.cta-links{display:flex;flex-wrap:wrap;gap:0.6rem}
+.cta-link{display:inline-block;padding:0.5rem 1rem;border-radius:6px;font-size:0.82rem;font-weight:700;text-decoration:none;transition:all 0.2s}
+.cta-link.primary{background:var(--accent-gold);color:#0a0a0f}
+.cta-link.primary:hover{background:#ffe066}
+.cta-link.secondary{background:transparent;color:var(--accent-gold);border:1px solid rgba(240,165,0,0.4)}
+.cta-link.secondary:hover{border-color:var(--accent-gold);background:rgba(240,165,0,0.1)}
+
+/* ===== ARTICLE NAV (Next/Prev) ===== */
+.article-nav{display:flex;gap:1rem;margin:2rem 0;flex-wrap:wrap}
+.article-nav a{flex:1;min-width:200px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.article-nav a:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.article-nav .nav-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--text-muted);letter-spacing:0.05em;margin-bottom:0.3rem}
+.article-nav .nav-title{font-size:0.85rem;font-weight:700;color:var(--text-primary);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.article-nav .nav-next{text-align:right;margin-left:auto}
+/* ===== RELATED ARTICLES ===== */
+.related-section{margin:2rem 0}
+.related-heading{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:var(--text-primary);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--border-accent)}
+.related-list{display:flex;flex-direction:column;gap:0.6rem}
+.related-card{display:block;background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--accent-gold);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.related-card:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.related-card .rc-date{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--accent-gold);letter-spacing:0.05em}
+.related-card .rc-title{font-size:0.9rem;font-weight:700;color:var(--text-primary);margin-top:0.2rem;line-height:1.5}
+.related-card .rc-tags{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.4rem}
+.related-card .rc-tag{font-family:'JetBrains Mono',monospace;font-size:0.62rem;padding:0.15rem 0.4rem;border-radius:3px;background:rgba(0,0,0,0.04);color:var(--text-muted)}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb{max-width:900px;margin:0 auto;padding:0.6rem 1.2rem;font-size:0.75rem;color:var(--text-muted)}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.2s}
+.breadcrumb a:hover{color:var(--text-primary);text-decoration:none}
+.breadcrumb .sep{margin:0 0.4rem;opacity:0.5}
+.breadcrumb .current{color:var(--text-secondary)}
+</style>
+<meta name="description" content="トランプが停戦を無期限延長。S&P 7,137(+1.05%)・NASDAQ 24,657(+1.64%)揃って史上最高値更新、Tesla Q1好決算で時間外+4%、Boeing損失縮小。Brent $101.91(+3.48%)で$100突破、イラン3隻発砲・2隻拿捕。BTC+3.17%で$78,769台、BlackRock IBIT 80万BTC過去最高。日経22日59,585円(+0.40%)3日続伸最高値 — 2026年4月23日">
+<link rel="canonical" href="https://marketpulse-daily.com/posts/20260423.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MARKETZ — 2026.04.23 マーケットニュースダイジェスト｜停戦延長で米株最高値更新、Brent $101、BTC $78K、日経3日続伸最高値">
+<meta property="og:description" content="トランプ停戦無期限延長でS&P +1.05%・NASDAQ +1.64%揃って最高値更新。Tesla Q1好決算AH+4%。Brent $101.91で$100突破もイラン3隻発砲・2隻拿捕。BTC $78,769(+3.17%)、BlackRock IBIT 80万BTC過去最高。日経59,585円最高値更新3日続伸">
+<meta property="og:url" content="https://marketpulse-daily.com/posts/20260423.html">
+<meta property="og:site_name" content="MARKETZ">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://marketpulse-daily.com/images/og-default.svg">
+<meta property="article:published_time" content="2026-04-23T00:00:00+09:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MARKETZ — 2026.04.23 マーケットニュースダイジェスト｜停戦延長で米株最高値、Brent $101、BTC $78K">
+<meta name="twitter:description" content="トランプ停戦無期限延長でS&P/NASDAQ最高値更新、Tesla好決算。Brent $101突破もイラン3隻発砲拿捕。BTC $78,769(+3.17%)でBlackRock ETF 80万BTC過去最高">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NewsArticle","headline":"MARKETZ — 2026.04.23 マーケットニュースダイジェスト｜停戦延長で米株最高値、Brent $101、BTC $78K、日経3日続伸最高値","datePublished":"2026-04-23T00:00:00+09:00","publisher":{"@type":"Organization","name":"MARKETZ","logo":{"@type":"ImageObject","url":"https://marketpulse-daily.com/images/og-default.svg"}},"mainEntityOfPage":"https://marketpulse-daily.com/posts/20260423.html","author":{"@type":"Organization","name":"MARKETZ","description":"ITコンサルタント×データドリブントレーダーによるマーケット分析メディア"},"image":"https://marketpulse-daily.com/images/og-default.svg"}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://marketpulse-daily.com/"},{"@type":"ListItem","position":2,"name":"アーカイブ","item":"https://marketpulse-daily.com/archive.html"},{"@type":"ListItem","position":3,"name":"2026.04.23 マーケットニュースダイジェスト"}]}</script>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-date">2026.04.23 — THURSDAY</div>
+    <h1 class="hero-title">マーケットニュースダイジェスト</h1>
+    <p class="hero-subtitle">トランプが停戦を無期限延長、S&P500 7,137（+1.05%）・NASDAQ 24,657（+1.64%）揃って史上最高値更新、Tesla Q1好決算AH+4%・Boeing損失縮小 — Brent$101.91（+3.48%）で$100突破、イランが海峡で3隻発砲・2隻拿捕。BTC+3.17%で$78,769、BlackRock IBITの保有BTC過去最高。日経22日59,585円（+236/+0.40%）3日続伸で終値ベース史上最高値更新</p>
+    <div class="hero-tags">
+      <span class="hero-tag alert">停戦無期限延長</span>
+      <span class="hero-tag alert">S&P/NASDAQ最高値</span>
+      <span class="hero-tag">Brent $100突破</span>
+      <span class="hero-tag">BTC $78K</span>
+      <span class="hero-tag">Tesla Q1好決算</span>
+      <span class="hero-tag">Boeing損失縮小</span>
+      <span class="hero-tag">日経3日続伸</span>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb" aria-label="パンくずリスト">
+  <a href="https://marketpulse-daily.com/">ホーム</a>
+  <span class="sep">›</span>
+  <a href="https://marketpulse-daily.com/archive.html">アーカイブ</a>
+  <span class="sep">›</span>
+  <span class="current">2026.04.23 マーケットニュースダイジェスト</span>
+</div>
+
+<!-- STICKY NAV -->
+<nav class="sticky-nav">
+  <ul>
+    <li><a href="#geopolitics">🌍地政学</a></li>
+    <li><a href="#fx">💱為替</a></li>
+    <li><a href="#commodities">🛢コモディティ</a></li>
+    <li><a href="#crypto">₿暗号資産</a></li>
+    <li><a href="#stocks">📈株式</a></li>
+    <li><a href="#japan-tech">🇯🇵日本テック</a></li>
+    <li><a href="#analysis">🔮考察</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+<!-- ===== 地政学 ===== -->
+<section id="geopolitics" class="section fade-in">
+  <h2 class="section-header">🌍 地政学・社会情勢</h2>
+
+  <div class="news-card green">
+    <div class="news-head">
+      <span class="news-badge badge-geo">停戦無期限延長</span>
+      <span class="news-badge badge-stock">米株最高値</span>
+    </div>
+    <div class="news-title">トランプが停戦を無期限延長、米株が最高値更新ラリー再開 — S&P +1.05%・NASDAQ +1.64%で揃って史上最高値、テック主導</div>
+    <div class="news-body">
+      トランプ大統領は<strong>4/22、イランとの停戦を無期限延長</strong>することを正式発表しました（Yahoo Finance: "Trump extended a ceasefire in the Iran-US war indefinitely"）。これは火曜の「延長望まない」発言からの反転Truth Social声明を公式化したもので、市場は「テール・リスク（最悪シナリオ）の一時的回避」と解釈。<strong>S&P500は7,137.90（+73.89、+1.05%）、NASDAQは24,657.56（+397.59、+1.64%）でともに史上最高値を更新</strong>。NASDAQは13連騰終了後の2日続落から<strong>V字回復</strong>で新記録。Yahoo Financeは「<strong>tech led the markets higher after President Trump extended a ceasefire indefinitely</strong>」と報じています。Reuters（4/23 05:32）も「<strong>停戦期待で株高、試される停戦で原油上昇</strong>」と速報。ただしトランプは「<strong>米軍にホルムズ封鎖の継続を命じた</strong>」と表明しており、完全な和平合意ではなく「時間稼ぎ」の色彩が強い。ウォーシュ次期FRB議長も「<strong>体制変更（regime change）</strong>」公約で指名公聴会を乗り切り（4/21）、4/23のテスラ・IBM決算も追い風に。
+    </div>
+    <div class="news-source">出典: <a href="https://finance.yahoo.com/markets/stocks/live/stock-market-today-wednesday-april-22-dow-sp-500-nasdaq-trump-us-iran-ceasefire-230429476.html" target="_blank" rel="noopener">Yahoo Finance（4/22 停戦延長・最高値）</a>, <a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank" rel="noopener">Schwab Market Update</a>, Reuters（4/22 4/23 04:10 / 05:32 停戦緩和で株高）, DZH（4/23 04:06 / 07:06） — 2026年4月22-23日</div>
+  </div>
+
+  <div class="news-card red">
+    <div class="news-head">
+      <span class="news-badge badge-geo">ホルムズ発砲</span>
+      <span class="news-badge badge-commodity">Brent $100突破</span>
+    </div>
+    <div class="news-title">「試される停戦」 — イランがホルムズ海峡で3隻発砲・2隻拿捕、Brent $101.91（+3.48%）で$100大台を突破</div>
+    <div class="news-body">
+      停戦延長と並行して、<strong>イランは4/22にホルムズ海峡で船舶3隻に発砲し、うち2隻を拿捕</strong>する新たな挑発行為を実施しました（local10 / Bloomberg: "Iran fired on three ships in the strait and seized two of them on Wednesday"）。トランプの「封鎖継続」発言への反撃とみられ、<strong>Brent原油は$101.91（+3.48%、+$3.43）で$100の大台を突破</strong>。Reuters（4/23 04:10）は「<strong>停戦緩和で株価上昇、停戦が試される中、原油は上昇</strong>」と報じ、米株最高値と原油$100突破の<strong>逆相関パラドックス</strong>が発生。WTI（CL1）は$92.61（-0.38%、-$0.35）と小反落しスプレッドは$9.30で依然拡大、国際エネルギー供給リスクが米国内の在庫状況を上回っていることを示します。ホルムズ通過船舶は依然として低調で、Bloomberg表現の「<strong>blockade keeps flows locked up（封鎖で流れが止まっている）</strong>」状態が続きます。米EIA週次在庫統計（日本時間4/23深夜）、および本日4/23のテスラ・IBM決算が次の材料。
+    </div>
+    <div class="news-source">出典: <a href="https://www.local10.com/business/2026/04/22/us-stocks-rally-to-records-but-brent-oil-also-tops-100-on-worries-about-the-iran-war/" target="_blank" rel="noopener">local10（Brent $100突破）</a>, <a href="https://www.bloomberg.com/news/articles/2026-04-22/oil-steady-after-rally-as-ceasefire-tested" target="_blank" rel="noopener">Bloomberg（イラン発砲）</a>, Reuters（4/23 04:10 / 05:32）, <a href="https://www.iea.org/reports/oil-market-report-april-2026" target="_blank" rel="noopener">IEA Oil Market Report</a>, TradingView — 2026年4月22-23日</div>
+  </div>
+</section>
+
+<!-- ===== 為替 ===== -->
+<section id="fx" class="section fade-in">
+  <h2 class="section-header">💱 為替</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">USD/JPY</div>
+      <div class="price-value">159.45</div>
+      <div class="price-change down">-0.02%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">EUR/JPY</div>
+      <div class="price-value">186.67</div>
+      <div class="price-change down">-0.02%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">GBP/JPY</div>
+      <div class="price-value">215.31</div>
+      <div class="price-change down">-0.02%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">AUD/JPY</div>
+      <div class="price-value">114.15</div>
+      <div class="price-change down">-0.04%</div>
+    </div>
+  </div>
+
+  <div class="news-card blue">
+    <div class="news-head">
+      <span class="news-badge badge-fx">USD/JPY</span>
+      <span class="news-badge badge-fx">159円台高止まり</span>
+    </div>
+    <div class="news-title">USD/JPY 159.45円で159円台で高止まり — 159.00円サポート・159.50円レジスタンスの狭いレンジ、30日NYカットが上値の壁</div>
+    <div class="news-body">
+      USD/JPYは<strong>159.45円（-0.02%、-0.025円）</strong>と前日比ほぼ変わらずで<strong>159円台中盤でこう着</strong>。FISCO（4/22 18:24）「<strong>ドル・円は小高い、原油相場の上昇で</strong>」、DZH（21:03）「<strong>リアルタイムオーダー=159.00円 買い・割り込むとストップロス売り</strong>」と、<strong>159.00円がサポート</strong>として機能する展開。NY時間に入ると停戦延長・米株最高値で円売り優勢となり、DZH（4/23 02:05）「<strong>NY概況・2時、じり高</strong>」→04:06「<strong>4時、上昇一服</strong>」と緩やかな上値トライ。4/23 06:28のオーダー情報では<strong>159.50円にOP30日NYカット</strong>と新たな上値抵抗が形成されています。Warsh次期FRB議長のタカ派「体制変更」観測とBrent $100突破のインフレ連想で米長期金利は上昇方向。片山財務相の介入警戒と日銀会合（4/27-28）前のポジション調整で<strong>159円台でのレンジ定着</strong>がメインシナリオ。160円接近は要警戒水準。
+    </div>
+    <div class="news-source">出典: FISCO（4/22 18:24 / 19:25 / 19:26 / 4/23）, DZH Financial Research（4/22 20:08 / 21:03 / 4/23 02:05 / 04:06 / 06:28 / 07:06） — 2026年4月22-23日</div>
+  </div>
+
+  <div class="news-card blue">
+    <div class="news-head">
+      <span class="news-badge badge-fx">EUR/JPY</span>
+      <span class="news-badge badge-fx">AUD/JPY RSI 70接近</span>
+    </div>
+    <div class="news-title">EUR/JPY 186.67円で21日線付近攻防、AUD/JPY 114.15円で豪NZ 20日線乖離+1σ維持・RSIはさらに70%へ接近</div>
+    <div class="news-body">
+      クロス円は小動きでの推移。<strong>EUR/JPY 186.67円（-0.02%、-0.032円）</strong>はDZH（4/23 02:15）「<strong>テクニカル一覧＝21日線付近の攻防</strong>」、02:35「<strong>5日線付近が重い</strong>」と上値圧力継続。4/22 21:22のオーダー情報は<strong>186.60-70円に買い小さめ・ストップロス売り小さめ混在</strong>、4/23 06:48には<strong>186.90円に売り</strong>と上下に売買が混在。<strong>GBP/JPY 215.31円（-0.02%、-0.042円）</strong>もほぼ横ばい。<strong>AUD/JPY 114.15円（-0.04%、-0.046円）</strong>はDZH（4/23 02:55）「<strong>豪RSI 買われすぎ目安70%へさらにじわりと近づく</strong>」、04:23「<strong>豪・NZ 20日線乖離ともに+1σ水準を維持</strong>」、04:15「<strong>ポンド・スイス5・20日線乖離、いずれも中立レンジ維持</strong>」と過熱感継続。DZH（4/22 21:44）では「<strong>113.80円割れでストップロス売り</strong>」、18:54「<strong>114.30円 売り厚め</strong>」と上下の分岐点が明確化しています。
+    </div>
+    <div class="news-source">出典: DZH Financial Research（4/22 18:30 / 18:54 / 21:22 / 21:44 / 4/23 02:15 / 02:35 / 02:55 / 03:05 / 04:15 / 04:23 / 06:48） — 2026年4月22-23日</div>
+  </div>
+</section>
+
+<!-- ===== コモディティ ===== -->
+<section id="commodities" class="section fade-in">
+  <h2 class="section-header">🛢 コモディティ</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">GOLD (XAU/USD)</div>
+      <div class="price-value">$4,737.79</div>
+      <div class="price-change down">-0.06%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">BRENT</div>
+      <div class="price-value">$101.91</div>
+      <div class="price-change up">+3.48%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">WTI</div>
+      <div class="price-value">$92.61</div>
+      <div class="price-change down">-0.38%</div>
+    </div>
+  </div>
+
+  <div class="news-card gold">
+    <div class="news-head">
+      <span class="news-badge alert">Brent $100突破</span>
+      <span class="news-badge badge-commodity">WTIスプレッド$9.30</span>
+    </div>
+    <div class="news-title">Brent $101.91（+3.48%）で$100大台を明確に突破 — WTI $92.61で小反落、スプレッド$9.30維持でホルムズ供給プレミアム健在</div>
+    <div class="news-body">
+      Brent原油は<strong>$101.91（+3.48%、+$3.43）で$100の大台を明確に突破</strong>しました。local10は「<strong>Brent crude oil jumped 3% to top $100 per barrel</strong>」と速報、米株最高値更新と同時進行した点が注目されます。WTI（CL1）は<strong>$92.61（-0.38%、-$0.35）</strong>と小反落で、<strong>WTI-Brentスプレッドは$9.30</strong>と高水準を維持。<strong>Brent>WTI のスプレッド拡大は、ホルムズ海峡経由の国際供給リスクが米国内の需給緩和を上回っていることを示します</strong>。Reuters（4/23 05:32）「<strong>停戦期待で株高、試される停戦で原油上昇</strong>」という矛盾した相場環境は、「Peace Deal Hope」と「Tangible Supply Disruption」が共存する異例の状況。ホルムズ通過船舶は低調で、4/22にイランは3隻発砲・2隻拿捕（Bloomberg）と挑発的な行動を継続。米EIA週次在庫統計（日本時間4/23深夜）、米欧の長期需要見通し、OPEC+のバランス維持能力が今後の材料です。
+    </div>
+    <div class="news-source">出典: <a href="https://www.local10.com/business/2026/04/22/us-stocks-rally-to-records-but-brent-oil-also-tops-100-on-worries-about-the-iran-war/" target="_blank" rel="noopener">local10（Brent $100突破）</a>, <a href="https://www.bloomberg.com/news/articles/2026-04-22/oil-steady-after-rally-as-ceasefire-tested" target="_blank" rel="noopener">Bloomberg（ホルムズ発砲）</a>, Reuters（4/23 04:10 / 05:32）, <a href="https://www.iea.org/reports/oil-market-report-april-2026" target="_blank" rel="noopener">IEA Oil Market Report</a>, TradingView — 2026年4月22-23日</div>
+  </div>
+
+  <div class="news-card gold">
+    <div class="news-head">
+      <span class="news-badge badge-commodity">GOLD横ばい</span>
+      <span class="news-badge badge-commodity">$4,737</span>
+    </div>
+    <div class="news-title">金$4,737.79（-0.06%）でほぼ横ばい — 前日-2.06%の大幅下落から下げ止まり、「死蔵資産」批判（Beincrypto）にも底堅く</div>
+    <div class="news-body">
+      金価格（XAU/USD）は<strong>$4,737.79（-0.06%、-$2.66）</strong>とほぼ横ばい。前日の-2.06%大幅反落（Warsh「体制変更」タカ派観測＋ドル高＋原油高）から<strong>下げ止まり</strong>、$4,700のサポート攻防をクリアした格好。米株最高値でリスクオン一色のなか金が下げ止まった理由は、①ホルムズ発砲・2隻拿捕という追加地政学リスク、②米実質金利の上昇が一服、③新興国中央銀行の構造的買いの継続、の三重要因。Beincrypto（4/22 19:49）は「<strong>ETH 25万ドル予想 — ビットコインと金は『死蔵資産』</strong>」と挑発的な見出しでETH優位論を展開しているものの、金市場では$4,700-$4,800のレンジ推移が続く見通し。トランプの停戦延長が持続しても、ホルムズでのイラン挑発行為が続く限り、安全資産需要は底堅く推移すると見られます。
+    </div>
+    <div class="news-source">出典: TradingView, <a href="https://www.investing.com/currencies/xau-usd" target="_blank" rel="noopener">Investing.com</a>, <a href="https://beincrypto.com/" target="_blank" rel="noopener">Beincrypto（4/22 19:49 ETH優位論）</a> — 2026年4月22-23日</div>
+  </div>
+</section>
+
+<!-- ===== 暗号資産 ===== -->
+<section id="crypto" class="section fade-in">
+  <h2 class="section-header">₿ 暗号資産</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">BTC/USD</div>
+      <div class="price-value">$78,769</div>
+      <div class="price-change up">+3.17%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">ETH/USD</div>
+      <div class="price-value">$2,402.01</div>
+      <div class="price-change up">+3.18%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">Fear & Greed</div>
+      <div class="price-value" style="color:var(--accent-green);">—</div>
+      <div class="price-change">リスクオン回帰</div>
+    </div>
+  </div>
+
+  <div class="news-card purple">
+    <div class="news-head">
+      <span class="news-badge badge-crypto">BTC +3.17%</span>
+      <span class="news-badge alert">BlackRock IBIT 80万BTC過去最高</span>
+    </div>
+    <div class="news-title">BTC $78,769（+3.17%）で急反発 — BlackRock IBITの保有BTCが80万6,700BTCで過去最高、機関投資家の蓄積継続</div>
+    <div class="news-body">
+      BTCは<strong>$78,769.49（+3.17%、+$2,420.91）</strong>と大幅反発。前日の$75,567から一気に<strong>$78K台を突破</strong>し、$80Kの心理節目が視野に入りました。牽引役は機関投資家の継続蓄積で、Beincrypto（4/23 05:30）は「<strong>ブラックロックのビットコインETF（IBIT）、保有量80万6,700BTCで過去最高</strong>」と速報。前日まで「1年ぶりの最良売り場」と警告されていたなか、<strong>トランプ停戦延長でリスクオン回帰</strong>と<strong>IBITのETF需要不変</strong>が重なりショートスクイーズが発生。なお同時期、Strategy社（MSTR、旧MicroStrategy）がIBITを超えてBitcoin最大保有者に返り咲いた（CoinDesk 4/21）など、機関・企業層のBTC囲い込みは激化の一途。$80K突破なら過去最高値更新も視野に。取引所BTC準備金は7年ぶり低水準を維持し、構造的な供給逼迫がベース。
+    </div>
+    <div class="news-source">出典: TradingView, <a href="https://beincrypto.com/" target="_blank" rel="noopener">Beincrypto（4/23 05:30 IBIT 80万6700BTC過去最高）</a>, <a href="https://www.ishares.com/us/products/333011/ishares-bitcoin-trust-etf" target="_blank" rel="noopener">BlackRock iShares IBIT</a>, <a href="https://www.coindesk.com/markets/2026/04/21/strategy-overtakes-blackrock-ibit-in-bitcoin-holdings-after-bear-market-buying" target="_blank" rel="noopener">CoinDesk（Strategy vs IBIT）</a>, <a href="https://cryptoquant.com/asset/btc/chart/exchange-flows/exchange-netflow-total" target="_blank" rel="noopener">CryptoQuant</a> — 2026年4月22-23日</div>
+  </div>
+
+  <div class="news-card purple">
+    <div class="news-head">
+      <span class="news-badge badge-crypto">ETH +3.18%</span>
+      <span class="news-badge badge-crypto">25万ドル予想</span>
+    </div>
+    <div class="news-title">ETH $2,402.01（+3.18%）でBTCと同率反発、$2,400突破 — 「ETH 25万ドル予想」強気論も登場</div>
+    <div class="news-body">
+      ETHは<strong>$2,402.01（+3.18%、+$74.01）</strong>でBTCとほぼ同率の反発。月曜の$2,260から$2,400台への急反発で<strong>$2,400の抵抗ラインを突破</strong>。Beincrypto（4/22 19:49）は「<strong>ETH 25万ドル予想 — ビットコインと金は『死蔵資産』</strong>」という挑発的な見出しで、一部のアルト強気派の見解を紹介。ETHがBTCと異なり<strong>生産的な利回りを生むステーキング資産</strong>であり、L2エコシステム・ステーブルコイン決済・RWA（実物資産トークン化）の基盤として「死蔵」されない点を評価する論理。Reuters（4/22 01:54）「<strong>AIがメモリーサイクルを手なずける</strong>」の解説もETHエコシステム（オンチェーンAIエージェント等）への中長期的な追い風と見られ、$2,400を上抜けてきたことは短期的なモメンタム転換のシグナル。次の抵抗は$2,500、中期目標は$3,000帯。
+    </div>
+    <div class="news-source">出典: TradingView, <a href="https://beincrypto.com/" target="_blank" rel="noopener">Beincrypto（4/22 19:49 ETH 25万ドル予想）</a>, <a href="https://www.reuters.com/technology/artificial-intelligence/taming-boom-lessening-bust-ai-tames-memory-cycle-2026-04-21/" target="_blank" rel="noopener">Reuters（4/22 AIメモリサイクル）</a>, <a href="https://www.coindesk.com/price/ethereum" target="_blank" rel="noopener">CoinDesk</a> — 2026年4月22-23日</div>
+  </div>
+</section>
+
+<!-- ===== 株式 ===== -->
+<section id="stocks" class="section fade-in">
+  <h2 class="section-header">📈 株式指数</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">S&P 500</div>
+      <div class="price-value">7,137.90</div>
+      <div class="price-change up">+1.05%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">NASDAQ</div>
+      <div class="price-value">24,657.56</div>
+      <div class="price-change up">+1.64%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">日経225</div>
+      <div class="price-value">59,585.86</div>
+      <div class="price-change up">+0.40%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">Tesla AH</div>
+      <div class="price-value" style="color:var(--accent-green);">Q1好決算</div>
+      <div class="price-change up">+4%（時間外）</div>
+    </div>
+  </div>
+
+  <div class="news-card green">
+    <div class="news-head">
+      <span class="news-badge badge-stock">S&P +1.05%</span>
+      <span class="news-badge badge-stock">NASDAQ +1.64%</span>
+    </div>
+    <div class="news-title">S&P 7,137（+1.05%）・NASDAQ 24,657（+1.64%）で揃って史上最高値更新 — 停戦延長でテック主導、Tesla Q1好決算AH+4%・Boeing損失縮小・Avis短期史上最高値</div>
+    <div class="news-body">
+      水曜4/22の米国株は<strong>トランプ停戦無期限延長</strong>を好感して全面高。<strong>S&P500は7,137.90（+73.89、+1.05%）</strong>、<strong>NASDAQは24,657.56（+397.59、+1.64%）</strong>でともに<strong>史上最高値を更新</strong>。NASDAQは13連騰終了後の2日続落から<strong>V字回復</strong>で新記録更新という反発力。Yahoo Financeは「<strong>tech led the markets higher</strong>」と総括。個別では、<strong>Tesla Q1決算</strong>でEPS $0.41（予想$0.37超）・売上$22.39B（予想$21.92B超）を発表、Optimus初の量産ライン準備開始（100万台/年）で時間外+4%。<strong>Boeing Q1は調整後EPS -$0.20（予想-$0.83より大幅改善）</strong>、売上$22.2B（+14% YoY）、143機引渡（+10%）で<strong>予想を下回る四半期損失で上昇</strong>（Reuters 4/22 20:39）。<strong>Avis Budget Group（CAR）が大幅ショートスクイーズで史上最高値更新</strong>（Reuters 4/22 23:38）、HSBC（Reuters 4/22 22:21）「<strong>新興市場におけるAIの効率性に投資家はまだ気づいていない</strong>」と強気コメント。GE Vernova・Boston Scientificも好決算。本日4/23はIBM・T-Mobileなどの決算が続きます。
+    </div>
+    <div class="news-source">出典: <a href="https://finance.yahoo.com/markets/stocks/live/stock-market-today-wednesday-april-22-dow-sp-500-nasdaq-trump-us-iran-ceasefire-230429476.html" target="_blank" rel="noopener">Yahoo Finance（4/22 米株最高値）</a>, <a href="https://electrek.co/2026/04/22/tesla-tsla-q1-2026-financial-results/" target="_blank" rel="noopener">Electrek（Tesla Q1）</a>, <a href="https://www.cnbc.com/2026/04/22/boeing-ba-q1-2026-earnings.html" target="_blank" rel="noopener">CNBC（Boeing Q1）</a>, Reuters（4/22 20:39 Boeing / 22:21 HSBC / 23:38 Avis / 4/23 03:31 航空株）, TradingView — 2026年4月22-23日</div>
+  </div>
+
+  <div class="news-card green">
+    <div class="news-head">
+      <span class="news-badge badge-stock">日経225 3日続伸</span>
+      <span class="news-badge alert">59,585円最高値</span>
+    </div>
+    <div class="news-title">日経225 水曜引け59,585.86円（+236.69、+0.40%）3日続伸で終値ベース史上最高値更新 — 朝安もSBG牽引で反発、TOPIXは2日続落で乖離継続</div>
+    <div class="news-body">
+      水曜4/22の日経平均株価は<strong>59,585.86円（+236.69、+0.40%）で3日続伸、終値ベースの史上最高値を更新</strong>しました。日本経済新聞は「<strong>日経平均株価が最高値5万9585円 高値警戒感を打ち消すSBG株急伸</strong>」と報じ、朝日新聞も「終値5万9585円で最高値を更新 AI・半導体株に買い」と速報。日中の値動きは<strong>始値59,104・高値59,708・安値59,005</strong>と、朝安から大幅に切り返しての引け。牽引役は前日同様に<strong>ソフトバンクグループ・アドバンテストなどAI・半導体関連株</strong>で、ディスコも好決算見通しで物色。ただし<strong>TOPIXは2日連続下落</strong>と、日経平均との乖離が継続。NT倍率は引き続き極めて高水準で、「<strong>指数最高値 vs 実態軟調</strong>」の二極化相場が続いています。木曜4/23の東京市場は、米株最高値・停戦延長・Tesla Q1好決算を追い風に寄り付きは強めのスタートが予想されるが、Brent $100突破のインフレ連想は重石。
+    </div>
+    <div class="news-source">出典: <a href="https://www.nikkei.com/article/DGXZQOUB221P4TS6A420C2000000/" target="_blank" rel="noopener">日本経済新聞（59585円最高値・SBG）</a>, <a href="https://news.yahoo.co.jp/articles/6c28845143b7cde11ee7fbd5812024a174d55bf0" target="_blank" rel="noopener">朝日新聞（最高値AI半導体）</a>, <a href="https://finance.yahoo.co.jp/news/detail/a4fc30535aacab0b5a72b9708843994a039703d6" target="_blank" rel="noopener">Yahoo（3日続伸）</a>, <a href="https://kabushiki.jp/news/745681" target="_blank" rel="noopener">株式新聞Web（大引け詳細）</a>, TradingView — 2026年4月22日</div>
+  </div>
+</section>
+
+<!-- ===== 日本テック ===== -->
+<section id="japan-tech" class="section fade-in">
+  <h2 class="section-header">🇯🇵 日本テクノロジー</h2>
+
+  <div class="news-card orange">
+    <div class="news-head">
+      <span class="news-badge badge-tech">Tesla Q1</span>
+      <span class="news-badge badge-tech">Optimus 100万台/年</span>
+    </div>
+    <div class="news-title">Tesla Q1好決算AH+4%、Optimus初の大規模量産工場準備Q2開始 — 「年産100万台」目標、日本ロボティクス・サーボ関連への波及</div>
+    <div class="news-body">
+      Teslaが水曜引け後に発表したQ1 2026決算は、<strong>調整後EPS $0.41（予想$0.37）、売上$22.39B（予想$21.92B超）</strong>の予想上回り、時間外取引で<strong>+4%</strong>上昇しました（Electrek / CNBC）。デリバリーは<strong>358,023台（+6.3% YoY）</strong>と期待を下回ったものの、マージン・キャッシュフローが改善。最も注目されたのは<strong>Optimusロボット</strong>で、同社は「<strong>最初の大規模Optimus工場の準備が近くQ2に開始される</strong>」「第一世代ラインは<strong>年産100万台</strong>を目標」と発表。これは日本の<strong>サーボモーター（安川電機・ハーモニック・ドライブ）、減速機（ナブテスコ・住友重機械）、ロボットアーム（ファナック・川崎重工）、センサー（ソニー・オムロン）</strong>等の関連銘柄へ中長期的な波及が見込まれます。NVIDIAのRobotaxiコンピュート増強、Megapack 3量産、CybercabとTesla Semi生産ライン準備も同時進行で、サプライチェーン全体が動き始める局面に。HSBCの「<strong>新興市場におけるAIの効率性に投資家はまだ気づいていない</strong>」（Reuters 4/22 22:21）とも呼応。
+    </div>
+    <div class="news-source">出典: <a href="https://electrek.co/2026/04/22/tesla-tsla-q1-2026-financial-results/" target="_blank" rel="noopener">Electrek（Tesla Q1）</a>, <a href="https://www.cnbc.com/2026/04/22/tesla-tsla-q1-2026-earnings-report.html" target="_blank" rel="noopener">CNBC（Tesla Q1）</a>, <a href="https://ir.tesla.com/" target="_blank" rel="noopener">Tesla IR</a>, <a href="https://www.shacknews.com/article/148805/tesla-tsla-q1-2026-earnings-call-transcript" target="_blank" rel="noopener">Shacknews（決算コール）</a>, Reuters（4/22 22:21 HSBC） — 2026年4月22-23日</div>
+  </div>
+
+  <div class="news-card orange">
+    <div class="news-head">
+      <span class="news-badge badge-tech">ソフトバンクG</span>
+      <span class="news-badge badge-tech">AI半導体国策</span>
+    </div>
+    <div class="news-title">ソフトバンクG（9984）が日経最高値を牽引継続、アドバンテストも買い — 国策AI1兆円支援＋Reuters「AIメモリサイクル終焉論」の追い風</div>
+    <div class="news-body">
+      日経平均を<strong>3日連続で牽引したソフトバンクグループ</strong>は、高値警戒感を打ち消す株価急伸で火曜4/21に単独+327円押し上げ、水曜4/22も日経最高値更新を支えました（日本経済新聞）。追い風となっているのは ①<strong>OpenAI出資評価益2.8兆円</strong>計上のQ3決算（通期純利益予想5,430億円に上方修正）、②経産省による<strong>5年間1兆円規模のAI新会社支援計画</strong>、③ARM・Infrinia AI Cloud OS（1/21発表）などAIクラウドへの転換、④Apple Ternus新CEO体制でのシリコンネイティブ強化見通し。加えて、Reuters（4/22 01:54）「<strong>AIがメモリーサイクルを手なずける</strong>」（HBM・DDR5の構造需要で景気循環から「平準化フェーズ」へ）という産業構造変化は、日本のメモリ・装置関連（<strong>アドバンテスト、ディスコ、東京エレクトロン、SCREEN HD、キオクシア</strong>）にとって中長期的な業績安定化要因。ラピダス民間出資1,600億円超の国策支援も継続で、<strong>国策オールJAPAN体制</strong>のAI半導体サプライチェーンは磐石。
+    </div>
+    <div class="news-source">出典: <a href="https://www.nikkei.com/article/DGXZQOUB221P4TS6A420C2000000/" target="_blank" rel="noopener">日本経済新聞（SBG株急伸）</a>, <a href="https://www.reuters.com/technology/artificial-intelligence/taming-boom-lessening-bust-ai-tames-memory-cycle-2026-04-21/" target="_blank" rel="noopener">Reuters（AIメモリサイクル）</a>, <a href="https://diamond.jp/articles/-/380511" target="_blank" rel="noopener">ダイヤモンド・オンライン（国産AI1兆円）</a>, <a href="https://www.softbank.jp/corp/ir/documents/presentations/fy2025/q3_earnings_summary/" target="_blank" rel="noopener">ソフトバンク Q3決算資料</a> — 2026年4月</div>
+  </div>
+</section>
+
+<!-- ===== 考察 ===== -->
+<section id="analysis" class="section fade-in">
+  <h2 class="section-header">🔮 考察</h2>
+  <div class="analysis-box">
+
+    <div class="analysis-pair">
+      <div class="pair-name">USD/JPY</div>
+      <span class="pair-direction dir-up">▲ 159.45円で159円台高止まり — 159.50円OP壁と160円介入警戒の狭間</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>停戦延長でリスクオン、Brent $100突破のインフレ連想で米長期金利が底堅く推移。Warsh次期FRB議長の「<strong>体制変更</strong>」公約によるタカ派観測継続。FISCO「<strong>ドル・円は小高い、原油相場の上昇で</strong>」（4/22 18:24）、DZH（4/23 02:05）「<strong>NY概況・2時、じり高</strong>」と、じり高基調を維持。<strong>159.00円のオプション買いサポート</strong>（DZH 21:03）が下値を固める。<br><br>
+        <strong>下落要因：</strong>4/23 06:28の<strong>159.50円にOP30日NYカット</strong>が直近の上値抵抗。片山財務相の介入警戒は160円接近でさらに強まり、口先介入リスクが高まる状況。BTC急反発でリスク資産にドル・金・円から資金が分散する局面も。<br><br>
+        <strong>結論：</strong>159.00-159.80円。<strong>159.50円OPが直近の天井</strong>で、突破できれば160円、できなければ159.00円サポートまでの往復相場。Tesla決算の好感ムード、米EIA原油在庫統計、本日4/23以降の決算シーズン展開が材料。日銀会合（4/27-28）前のポジション調整意識。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">AUD/JPY</div>
+      <span class="pair-direction dir-neutral">◆ 114.15円でRSI 70%目前 — 114.30-50円売り厚めの上値攻防</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>豪・NZともに「<strong>20日線乖離+1σ水準を維持</strong>」（DZH 4/23 04:23）で中期トレンド健在。Brent $100突破・米株最高値でコモディティ通貨連動買い。DZH（4/23 03:05）「<strong>NZテクニカル一覧=5日線を上回るレンジで底堅く推移</strong>」でオセアニア通貨全般が堅調。ETH 25万ドル予想・BTC $78K台反発のリスクオン全開。<br><br>
+        <strong>下落要因：</strong>DZH（4/22 18:54）「<strong>豪114.30円 売り厚め</strong>」、4/23 冒頭「豪オーダー=114.30-50円 売り・ストップロス買い混在」、4/22 21:44「<strong>113.80円割れでストップロス売り</strong>」と売り抵抗が厚い。DZH（4/23 02:55）「<strong>豪RSI 買われすぎ目安70%へさらにじわりと近づく</strong>」で過熱感継続。<br><br>
+        <strong>結論：</strong>113.80-114.50円。<strong>114.30-50円の売り抵抗</strong>がメインシナリオの天井。RSI 70%超え接近で機械的売り圧力は強まるが、停戦延長継続でリスクオンが続けば突破可能。113.80円割れはストップロス発動で114円崩壊のリスクあり。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">NASDAQ</div>
+      <span class="pair-direction dir-up">▲ 24,657で史上最高値更新 — 停戦延長＋Tesla好決算でV字回復、AI構造需要継続</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>NASDAQは<strong>13連騰終了後の2日続落から一気にV字回復で新高値</strong>。Tesla Q1好決算（AH +4%）、Optimus 100万台/年量産計画、NVIDIA/Robotaxiコンピュート増強、HSBC「新興市場AI効率性」強気論、Reuters「AIがメモリサイクルを手なずける」構造変化と<strong>AI主導ラリー再加速</strong>の条件が揃う。Avis Budget Group（CAR）のショートスクイーズも短期的なリスクオンシグナル。<br><br>
+        <strong>下落要因：</strong>Brent $100突破のインフレ連想で米長期金利上昇→グロース株バリュエーション圧迫。Warsh「体制変更」タカ派観測は継続。ホルムズ3隻発砲・2隻拿捕の実態悪化で「停戦無期限延長」の実効性に疑問。$24,700は未踏領域で新規買いの慎重姿勢も。<br><br>
+        <strong>結論：</strong>24,400-24,900。<strong>新高値更新モード継続</strong>が基本シナリオ。本日4/23のIBM・T-Mobile決算、4/24-25のアルファベット・マイクロソフト決算が次の起爆剤。$25,000の節目は心理的ターゲット。ホルムズ事態が本格軍事化すれば全面反落リスクあり。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">日経225</div>
+      <span class="pair-direction dir-up">▲ 59,585円で3日続伸・終値最高値更新 — 米株最高値追随で60,000円視野もTOPIXとの乖離継続警戒</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>火曜・水曜と連続で終値最高値更新（4/22: 59,585円）で3日続伸。米株最高値更新・Tesla Q1好決算を追い風に、4/23寄り付きは<strong>60,000円の大台</strong>を意識する展開へ。SBG・アドバンテスト・ディスコなどAI・半導体株が継続牽引。Apple Ternus新CEO体制での日本サプライヤー追い風、Tesla Optimus量産で<strong>安川電機・ハーモニック・ファナック・ナブテスコ</strong>などロボティクス関連に波及。Reuters「AIがメモリサイクルを手なずける」も中期追い風。<br><br>
+        <strong>下落要因：</strong>TOPIX 2日続落で<strong>NT倍率の歪み継続</strong>が懸念。Brent $100突破・ホルムズ挑発行為継続で日本のエネルギー輸入コスト増大、海運・航空・素材にはマイナス。日経VIの高止まり状態もヘッジコスト負担増。<strong>60,000円の大台到達後の利益確定売り</strong>は常に警戒。<br><br>
+        <strong>結論：</strong>59,400-60,500円。<strong>60,000円の大台突破</strong>がメインシナリオ。ただしSBG主導の歪んだ構造は変わらず、セクターローテーション（半導体→内需・金融への資金移動）で健全化が望まれる。米株の勢い次第で上下両方向に大きく動く。
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== コラムCTA ===== -->
+<div class="cta-banner fade-in">
+  <div class="cta-banner-content">
+    <div class="cta-label">📝 COLUMN — 解説記事</div>
+    <div class="cta-title">ボラティリティ相場を乗り越える知識を身につけませんか？</div>
+    <div class="cta-desc">地政学リスクの読み方、FX口座の選び方、NISAポートフォリオの組み方など、投資判断の基盤となるコラムを公開中。</div>
+    <div class="cta-links">
+      <a href="20260405-column.html" class="cta-link primary">地政学リスクと投資 →</a>
+      <a href="20260330-column.html" class="cta-link secondary">FX口座比較ガイド</a>
+      <a href="20260402-column.html" class="cta-link secondary">NISAポートフォリオ</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PR ===== -->
+<div class="news-card gold fade-in" style="border-left-color:var(--accent-gold);margin:2rem 0;padding:1.5rem;">
+  <div class="news-head"><span class="news-badge badge-commodity" style="background:rgba(255,224,102,0.25);color:var(--accent-gold);border:1px solid rgba(212,136,15,0.3);">PR — 広告</span></div>
+  <div class="news-title" style="margin-top:0.5rem;">FX取引を始めるなら</div>
+  <div class="news-body">当サイトの為替分析を参考に実際の取引をお考えの方へ。FX取引高3年連続世界第1位のDMM FXなら、最短即日で口座開設が可能です。</div>
+  <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:0.8rem;">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:var(--accent-gold);color:#f8f7f4;font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;">【PR】DMM FX の詳細を見る →</a>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:transparent;color:var(--accent-gold);font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;border:1px solid var(--accent-gold);">【PR】DMM CFD の詳細を見る →</a>
+  </div>
+  <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" alt="">
+  <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" alt="">
+  <div class="news-source" style="margin-top:0.8rem;">※ 投資にはリスクが伴います。FX取引は元本を超える損失が発生する可能性があります。</div>
+</div>
+
+
+<!-- ===== 著者情報 ===== -->
+<div class="author-box fade-in">
+  <div class="author-avatar">M</div>
+  <div class="author-info">
+    <div class="author-name">MARKETZ 編集部</div>
+    <div class="author-title">IT CONSULTANT × DATA-DRIVEN TRADER</div>
+    <div class="author-bio">現役ITコンサルタント・元エンジニアが運営。複雑なグローバル市場をシステム思考で俯瞰し、テクニカル分析とファンダメンタルズ分析を組み合わせたデータドリブンな市場解説をお届けしています。</div>
+  </div>
+</div>
+
+<!-- ===== 免責事項 ===== -->
+<div class="disclaimer fade-in">
+  <div class="disclaimer-title">⚠️ 免責事項・ディスクレーマー</div>
+  本記事は情報提供のみを目的としており、金融商品の売買の勧誘や投資助言を目的とするものではありません。掲載されている情報は作成時点のものであり、正確性、完全性、適時性を保証するものではありません。投資判断は必ずご自身の責任において行ってください。本記事に基づく投資行動による損失について、筆者・サイト運営者は一切の責任を負いません。<br><br>
+  本記事に記載されているニュースは、CNBC、Bloomberg、Reuters、CNN、Al Jazeera、Trading Economics、Yahoo Finance、Investing.com、The Japan Times、EIA等の公開情報を参照し、筆者が独自に再構成したものです。各出典元の著作物をそのまま転載・翻訳したものではありません。<br><br>
+  金融商品取引法に基づく表記：本記事は金融商品取引法第2条に定める金融商品取引業に該当する行為を行うものではありません。
+</div>
+
+
+<!-- ===== 前後記事ナビ + 関連記事 ===== -->
+<nav class="article-nav" id="article-nav"></nav>
+<div class="related-section" id="related-articles"></div>
+
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>MARKETZ — <a href="https://marketpulse-daily.com/">ホームに戻る</a></p>
+  <p>© 2026 MARKETZ. All rights reserved.</p>
+</footer>
+
+<!-- FAB BUTTONS -->
+<div class="fab-group">
+  <a href="https://marketpulse-daily.com/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
+  <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
+</div>
+
+<script>
+// Fade-in Observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); }});
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Sticky nav highlight
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.sticky-nav a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id');
+  });
+  navLinks.forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+  // FAB group
+  const fabGroup = document.querySelector('.fab-group');
+  if (fabGroup) {
+    if (window.scrollY > 600) { fabGroup.style.display = 'flex'; } else { fabGroup.style.display = 'none'; }
+  }
+});
+
+// Article navigation & related articles
+(function(){
+  const slug = location.pathname.split('/').pop().replace('.html','');
+  fetch('../data/posts.json').then(r=>r.json()).then(data=>{
+    const posts = data.posts;
+    const idx = posts.findIndex(p=>p.slug===slug);
+    // Next/Prev nav
+    const nav = document.getElementById('article-nav');
+    if(nav && idx!==-1){
+      let html='';
+      if(idx<posts.length-1){
+        const prev=posts[idx+1];
+        html+='<a href="'+prev.slug+'.html"><div class="nav-label">← 前の記事</div><div class="nav-title">'+prev.title+'</div></a>';
+      }
+      if(idx>0){
+        const next=posts[idx-1];
+        html+='<a href="'+next.slug+'.html" class="nav-next"><div class="nav-label">次の記事 →</div><div class="nav-title">'+next.title+'</div></a>';
+      }
+      nav.innerHTML=html;
+    }
+    // Related articles (same tags, excluding self, max 3)
+    const rel = document.getElementById('related-articles');
+    if(rel && idx!==-1){
+      const myTags=new Set(posts[idx].tags||[]);
+      const scored=posts.filter((_,i)=>i!==idx).map(p=>{
+        const common=(p.tags||[]).filter(t=>myTags.has(t)).length;
+        return{...p,score:common};
+      }).filter(p=>p.score>0).sort((a,b)=>b.score-a.score).slice(0,3);
+      if(scored.length){
+        let html='<div class="related-heading">📰 関連記事</div><div class="related-list">';
+        scored.forEach(p=>{
+          html+='<a href="'+p.slug+'.html" class="related-card"><div class="rc-date">'+p.date+'</div><div class="rc-title">'+p.title+'</div><div class="rc-tags">'+(p.tags||[]).slice(0,4).map(t=>'<span class="rc-tag">'+t+'</span>').join('')+'</div></a>';
+        });
+        html+='</div>';
+        rel.innerHTML=html;
+      }
+    }
+  }).catch(()=>{});
+})();
+
+</script>
+</body>
+</html>
