@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- A8.net Link Manager -->
+<script src="//statics.a8.net/a8link/a8linkmgr.js"></script>
+<script>
+  a8linkmgr({
+    "config_id": "3FffsI9Y9VCBqU9ikTQJ"
+  });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KFT35KZZVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KFT35KZZVC');
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MARKETZ — 2026.04.30 マーケットニュースダイジェスト｜USD/JPY 160円突破(年初来高値160.46円)、FOMC据置でも4人反対(1992年以来)、Big Tech全社クラウド予想超え、WTI $107急騰、パウエル残留意向</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #f8f7f4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0efe8;
+  --text-primary: #1a1a2e;
+  --text-secondary: #3d3d56;
+  --text-muted: #7a7a8e;
+  --accent-red: #e63946;
+  --accent-green: #06a77d;
+  --accent-gold: #d4880f;
+  --accent-blue: #2176ff;
+  --accent-purple: #7b61ff;
+  --accent-orange: #e07b39;
+  --border: rgba(0,0,0,0.08);
+  --border-accent: rgba(0,0,0,0.12);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Meiryo', 'Yu Gothic UI', 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.2rem; }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridSlide 20s linear infinite;
+}
+@keyframes gridSlide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(60px, 60px); }
+}
+.hero-content { position: relative; z-index: 1; padding: 2rem 1rem; }
+.hero-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: #d4880f;
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
+}
+.hero-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+.hero-subtitle {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto; margin-right: auto;
+}
+.hero-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+.hero-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: #ffffff;
+  background: rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.15);
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+}
+.hero-tag.alert {
+  border-color: rgba(255,100,120,0.6);
+  background: rgba(255,100,120,0.2);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+/* ===== STICKY NAV ===== */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.sticky-nav ul {
+  display: flex; list-style: none;
+  max-width: 900px; margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+  gap: 0;
+}
+.sticky-nav a {
+  display: block;
+  padding: 0.75rem 0.8rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.sticky-nav a:hover, .sticky-nav a.active {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+  background: rgba(0,0,0,0.04);
+}
+
+/* ===== SECTION ===== */
+.section { padding: 3rem 0; }
+.section-header {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-accent);
+}
+
+/* ===== PRICE STRIP ===== */
+.price-strip {
+  display: flex; flex-wrap: wrap; gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.price-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  flex: 1 1 140px;
+  min-width: 130px;
+}
+.price-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+.price-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+.price-change {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 0.15rem;
+}
+.price-change.up { color: var(--accent-green); }
+.price-change.down { color: var(--accent-red); }
+
+/* ===== NEWS CARD ===== */
+.news-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+  border-left: 3px solid transparent;
+}
+.news-card:hover { background: var(--bg-card-hover); }
+.news-card.blue { border-left-color: var(--accent-blue); }
+.news-card.red { border-left-color: var(--accent-red); }
+.news-card.gold { border-left-color: var(--accent-gold); }
+.news-card.green { border-left-color: var(--accent-green); }
+.news-card.purple { border-left-color: var(--accent-purple); }
+.news-card.orange { border-left-color: var(--accent-orange); }
+
+.news-head { margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.news-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+}
+.badge-fx { background: rgba(33,118,255,0.1); color: var(--accent-blue); border: 1px solid rgba(33,118,255,0.2); }
+.badge-commodity { background: rgba(212,136,15,0.1); color: var(--accent-gold); border: 1px solid rgba(212,136,15,0.2); }
+.badge-crypto { background: rgba(123,97,255,0.1); color: var(--accent-purple); border: 1px solid rgba(123,97,255,0.2); }
+.badge-stock { background: rgba(6,167,125,0.1); color: var(--accent-green); border: 1px solid rgba(6,167,125,0.2); }
+.badge-geo { background: rgba(230,57,70,0.1); color: var(--accent-red); border: 1px solid rgba(230,57,70,0.2); }
+.badge-tech { background: rgba(224,123,57,0.1); color: var(--accent-orange); border: 1px solid rgba(224,123,57,0.2); }
+
+.news-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+.news-body {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.news-source {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+.news-source a{color:var(--accent-gold);text-decoration:none;transition:color 0.2s}
+.news-source a:hover{color:var(--text-primary);text-decoration:underline}
+
+/* ===== ANALYSIS ===== */
+.analysis-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.analysis-pair { margin-bottom: 1.5rem; }
+.analysis-pair:last-child { margin-bottom: 0; }
+.pair-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+.pair-direction {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+.dir-up { background: rgba(6,167,125,0.1); color: var(--accent-green); border: 1px solid rgba(6,167,125,0.2); }
+.dir-down { background: rgba(230,57,70,0.1); color: var(--accent-red); border: 1px solid rgba(230,57,70,0.2); }
+.dir-neutral { background: rgba(212,136,15,0.1); color: var(--accent-gold); border: 1px solid rgba(212,136,15,0.2); }
+.pair-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.pair-text strong { color: var(--text-primary); }
+
+/* ===== DISCLAIMER ===== */
+.disclaimer {
+  background: var(--bg-card);
+  border: 2px solid var(--accent-red);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin: 2rem 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.disclaimer-title {
+  color: var(--accent-red);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== FADE IN ===== */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+.footer a { color: var(--accent-gold); text-decoration: none; }
+
+/* ===== FAB BUTTONS ===== */
+.fab-group {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  display: none; flex-direction: column; gap: 0.5rem;
+  z-index: 99;
+}
+.fab-btn {
+  width: 44px; height: 44px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.fab-btn:hover { background: var(--bg-card-hover); }
+.fab-home { font-size: 1rem; }
+
+@media (max-width: 600px) {
+  .price-card { flex: 1 1 100%; }
+  .sticky-nav a { font-size: 0.75rem; padding: 0.6rem 0.5rem; }
+}
+
+
+/* ===== AUTHOR BOX ===== */
+.author-box{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.5rem;margin:2rem 0;display:flex;gap:1.2rem;align-items:flex-start;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+.author-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#1a1a2e,#0f3460);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.5rem;color:#ffe066;font-family:'JetBrains Mono',monospace;font-weight:700}
+.author-info{flex:1;min-width:0}
+.author-name{font-weight:700;font-size:0.95rem;color:var(--text-primary);margin-bottom:0.2rem}
+.author-title{font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--accent-gold);letter-spacing:0.03em;margin-bottom:0.5rem}
+.author-bio{font-size:0.82rem;color:var(--text-secondary);line-height:1.7}
+@media(max-width:600px){.author-box{flex-direction:column;align-items:center;text-align:center}.author-avatar{width:56px;height:56px;font-size:1.3rem}}
+
+/* ===== CTA BANNER ===== */
+.cta-banner{background:linear-gradient(135deg,#1a1a2e 0%,#0f3460 100%);border-radius:10px;padding:1.5rem;margin:2rem 0;position:relative;overflow:hidden}
+.cta-banner::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:40px 40px}
+.cta-banner-content{position:relative;z-index:1}
+.cta-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:#ffe066;letter-spacing:0.1em;margin-bottom:0.4rem}
+.cta-title{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:#fff;margin-bottom:0.5rem}
+.cta-desc{font-size:0.85rem;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:1rem}
+.cta-links{display:flex;flex-wrap:wrap;gap:0.6rem}
+.cta-link{display:inline-block;padding:0.5rem 1rem;border-radius:6px;font-size:0.82rem;font-weight:700;text-decoration:none;transition:all 0.2s}
+.cta-link.primary{background:var(--accent-gold);color:#0a0a0f}
+.cta-link.primary:hover{background:#ffe066}
+.cta-link.secondary{background:transparent;color:var(--accent-gold);border:1px solid rgba(240,165,0,0.4)}
+.cta-link.secondary:hover{border-color:var(--accent-gold);background:rgba(240,165,0,0.1)}
+
+/* ===== ARTICLE NAV (Next/Prev) ===== */
+.article-nav{display:flex;gap:1rem;margin:2rem 0;flex-wrap:wrap}
+.article-nav a{flex:1;min-width:200px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.article-nav a:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.article-nav .nav-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--text-muted);letter-spacing:0.05em;margin-bottom:0.3rem}
+.article-nav .nav-title{font-size:0.85rem;font-weight:700;color:var(--text-primary);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.article-nav .nav-next{text-align:right;margin-left:auto}
+/* ===== RELATED ARTICLES ===== */
+.related-section{margin:2rem 0}
+.related-heading{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:var(--text-primary);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--border-accent)}
+.related-list{display:flex;flex-direction:column;gap:0.6rem}
+.related-card{display:block;background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--accent-gold);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.related-card:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.related-card .rc-date{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--accent-gold);letter-spacing:0.05em}
+.related-card .rc-title{font-size:0.9rem;font-weight:700;color:var(--text-primary);margin-top:0.2rem;line-height:1.5}
+.related-card .rc-tags{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.4rem}
+.related-card .rc-tag{font-family:'JetBrains Mono',monospace;font-size:0.62rem;padding:0.15rem 0.4rem;border-radius:3px;background:rgba(0,0,0,0.04);color:var(--text-muted)}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb{max-width:900px;margin:0 auto;padding:0.6rem 1.2rem;font-size:0.75rem;color:var(--text-muted)}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.2s}
+.breadcrumb a:hover{color:var(--text-primary);text-decoration:none}
+.breadcrumb .sep{margin:0 0.4rem;opacity:0.5}
+.breadcrumb .current{color:var(--text-secondary)}
+</style>
+<meta name="description" content="USD/JPY 160円突破で年初来高値160.46円、原油急騰WTI$107.55(+$2.55急騰)・Brent$111台。FOMC金利3.5-3.75%据置も4人反対(1992年以来)、パウエル「Trumpの法的攻撃で残留やむなし」。Big Tech 4社引け後決算で全社クラウド予想超え(Azure+40%・Google Cloud+63%・AWS+28%、Meta通期Capex$125-145Bに上方修正)。日経-560円で59,356円 — 2026年4月30日">
+<link rel="canonical" href="https://marketpulse-daily.com/posts/20260430.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MARKETZ — 2026.04.30 マーケットニュースダイジェスト｜USD/JPY 160円突破、FOMC据置で4人反対、Big Tech全社好決算、WTI $107、パウエル残留">
+<meta property="og:description" content="USD/JPY 160円突破で年初来高値160.46円。FOMC据置も4人反対(1992年以来)・パウエル残留示唆。Big Tech 4社引け後決算で全社クラウド予想超え(Azure+40%・Google Cloud+63%・AWS+28%)。WTI$107・Brent$111急騰、日経-560円で59,356円">
+<meta property="og:url" content="https://marketpulse-daily.com/posts/20260430.html">
+<meta property="og:site_name" content="MARKETZ">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://marketpulse-daily.com/images/og-default.svg">
+<meta property="article:published_time" content="2026-04-30T00:00:00+09:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MARKETZ — 2026.04.30 マーケットニュースダイジェスト｜USD/JPY 160円突破、FOMC・Big Tech・WTI $107">
+<meta name="twitter:description" content="USD/JPY 160円突破年初来高値、FOMC据置4人反対パウエル残留、Big Tech全社クラウド予想超え、WTI $107急騰、日経-560円で59,356円">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NewsArticle","headline":"MARKETZ — 2026.04.30 マーケットニュースダイジェスト｜USD/JPY 160円突破、FOMC据置4人反対、Big Tech全社好決算、WTI $107、パウエル残留","datePublished":"2026-04-30T00:00:00+09:00","publisher":{"@type":"Organization","name":"MARKETZ","logo":{"@type":"ImageObject","url":"https://marketpulse-daily.com/images/og-default.svg"}},"mainEntityOfPage":"https://marketpulse-daily.com/posts/20260430.html","author":{"@type":"Organization","name":"MARKETZ","description":"ITコンサルタント×データドリブントレーダーによるマーケット分析メディア"},"image":"https://marketpulse-daily.com/images/og-default.svg"}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://marketpulse-daily.com/"},{"@type":"ListItem","position":2,"name":"アーカイブ","item":"https://marketpulse-daily.com/archive.html"},{"@type":"ListItem","position":3,"name":"2026.04.30 マーケットニュースダイジェスト"}]}</script>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-date">2026.04.30 — THURSDAY（GW中・日本市場再開）</div>
+    <h1 class="hero-title">マーケットニュースダイジェスト</h1>
+    <p class="hero-subtitle">USD/JPY 160円突破で年初来高値160.46円、原油急騰WTI$107.55・Brent$111.16。FOMC金利3.5-3.75%据置も4人反対（1992年以来）、パウエル議長「Trumpの法的攻撃で残留やむなし」と示唆。Big Tech 4社引け後決算で<strong>全社クラウドが予想超え</strong>（Azure+40%・Google Cloud+63%・AWS+28%、Meta通期Capex $125-145Bに上方修正）。日経-560円で59,356円、本日Apple決算</p>
+    <div class="hero-tags">
+      <span class="hero-tag alert">USD/JPY 160円突破</span>
+      <span class="hero-tag alert">FOMC据置4人反対</span>
+      <span class="hero-tag alert">パウエル残留</span>
+      <span class="hero-tag">Big Tech全社好決算</span>
+      <span class="hero-tag">WTI $107</span>
+      <span class="hero-tag">Apple決算今夜</span>
+      <span class="hero-tag">介入警戒</span>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb" aria-label="パンくずリスト">
+  <a href="https://marketpulse-daily.com/">ホーム</a>
+  <span class="sep">›</span>
+  <a href="https://marketpulse-daily.com/archive.html">アーカイブ</a>
+  <span class="sep">›</span>
+  <span class="current">2026.04.30 マーケットニュースダイジェスト</span>
+</div>
+
+<!-- STICKY NAV -->
+<nav class="sticky-nav">
+  <ul>
+    <li><a href="#geopolitics">🌍地政学</a></li>
+    <li><a href="#fx">💱為替</a></li>
+    <li><a href="#commodities">🛢コモディティ</a></li>
+    <li><a href="#crypto">₿暗号資産</a></li>
+    <li><a href="#stocks">📈株式</a></li>
+    <li><a href="#japan-tech">🇯🇵日本テック</a></li>
+    <li><a href="#analysis">🔮考察</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+<!-- ===== 地政学 ===== -->
+<section id="geopolitics" class="section fade-in">
+  <h2 class="section-header">🌍 地政学・社会情勢</h2>
+
+  <div class="news-card red">
+    <div class="news-head">
+      <span class="news-badge alert">FOMC据置4人反対</span>
+      <span class="news-badge alert">パウエル残留示唆</span>
+    </div>
+    <div class="news-title">FOMC金利3.5-3.75%据置、4人反対（1992年10月以来）でインフレ高水準・原油急騰を明記 — パウエル議長「Trumpの法的攻撃で選択肢ない」、Boardに無期限残留意向</div>
+    <div class="news-body">
+      米FRBは4/29のFOMC会合で<strong>政策金利を3.5-3.75%で据え置き</strong>と決定。CNBCによれば<strong>投票結果は8-4の異例の4人反対</strong>で、これは<strong>1992年10月以来約34年ぶり</strong>の規模。Stephen Miran理事は0.25%利下げを主張、他の3人の反対者は声明の<strong>緩和バイアス（easing bias）削除</strong>を求めた立場で、利下げに前向きでない姿勢を示しました。声明では<strong>「インフレは高水準で、世界エネルギー価格の最近の上昇を一部反映」</strong>と明記、パウエル議長は会見で「<strong>中東紛争による世界的な原油急騰</strong>でインフレ高止まり」と発言。今回はドット・プロット（経済予測）公表なしで、声明と会見が次回6月会合まで唯一の解釈材料に。さらに大きなニュースとして、<strong>パウエル議長は「Federal Reserve Boardに無期限残留する」意向を示唆</strong>（CNBC）。トランプ大統領による法的攻撃を受け、「<strong>選択肢はない（left me no choice）</strong>」と発言、後任ウォーシュ氏との並行体制という異例の展開も視野に。市場は「インフレ再燃示唆＋金利据え置き」（Beincrypto 4/30 03:08）と評価し、<strong>BTCも下落</strong>。Reuters「<strong>S&Pとナスダックは横ばい。パウエル議長は辞任しない意向を示唆</strong>」と速報。
+    </div>
+    <div class="news-source">出典: <a href="https://www.cnbc.com/2026/04/29/fed-interest-rate-decision-april-2026.html" target="_blank" rel="noopener">CNBC（FOMC据置・8-4の4人反対）</a>, <a href="https://www.cnbc.com/2026/04/29/fed-meeting-today-live-updates-warsh-powell.html" target="_blank" rel="noopener">CNBC（パウエル残留・Trump法的攻撃で選択肢ない）</a>, <a href="https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-april-29-2026" target="_blank" rel="noopener">Fox Business（FOMC据置・パウエル任期終盤）</a>, <a href="https://www.usbank.com/investing/financial-perspectives/market-news/federal-reserve-interest-rate.html" target="_blank" rel="noopener">U.S. Bank（FRBインフレ不確実性）</a>, Reuters（4/30 05:01 / 05:19 / 05:34 FRB決定後）, Beincrypto（4/30 03:08 FOMCインフレ再燃示唆） — 2026年4月29-30日</div>
+  </div>
+
+  <div class="news-card alert">
+    <div class="news-head">
+      <span class="news-badge alert">USD/JPY 160円突破</span>
+      <span class="news-badge alert">年初来高値160.46円</span>
+    </div>
+    <div class="news-title">USD/JPY 160円大台突破、年初来高値160.46円更新 — Bloomberg「Yen Hits Key 160-Per-Dollar Level」、原油急騰でドル買い・有事のドル買い加速、片山財務相が介入準備再表明</div>
+    <div class="news-body">
+      USD/JPYは4/29のNY時間に<strong>160円大台を突破し、年初来高値160.46円を記録</strong>しました（DZH 4/30 01:31「上昇一服、年初来高値160.46円がレジスタンス」）。Bloomberg「<strong>Yen Hits Key 160-Per-Dollar Level as Traders Eye BOJ Next Steps</strong>」が速報、4/28の日銀タカ派的据置でも植田総裁が次回利上げ時期を明示しなかったことが円安加速の起点。さらに<strong>WTI $107・Brent $111台への原油急騰</strong>がエネルギー輸入国通貨の円売りを後押し、DZH（4/30 00:58）は「<strong>強含み、有事のドル買いで160.32円まで上昇</strong>」、03:07「<strong>神経質、160.31円付近で推移</strong>」と160円台での攻防を記録。FISCO（4/29 18:54）「<strong>米ドル・円は159円84銭まで値上り</strong>」、20:00「<strong>節目の160円を意識</strong>」を経て、<strong>FOMC据え置き＋パウエル残留示唆＋原油急騰の三重材料</strong>でドル買い加速。<strong>片山さつき財務相は介入準備を再表明</strong>（TradingKey）、4/30 06:22のDZHオーダー情報では<strong>160.50円に売り・ストップロス、OP30日NYカット大きめ</strong>。介入警戒水準で本日4/30の取引は神経質な展開が必至。本日米時間にはAppleの決算も控え、米株続伸シナリオならドル買い継続も視野。
+    </div>
+    <div class="news-source">出典: <a href="https://www.bloomberg.com/news/articles/2026-04-29/yen-hits-key-160-per-dollar-level-as-traders-eye-boj-next-steps" target="_blank" rel="noopener">Bloomberg（Yen 160 per dollar level）</a>, <a href="https://www.investing.com/analysis/usdjpy-near-160-as-rate-gap-and-oil-costs-pressure-the-yen-200679068" target="_blank" rel="noopener">Investing.com（USD/JPY 160 rate gap & oil）</a>, <a href="https://www.ebc.com/forex/usd-jpy-forecast-the-bojs-160-intervention-danger-zone" target="_blank" rel="noopener">EBC Financial Group（160円介入危険ゾーン）</a>, <a href="https://www.tradingkey.com/analysis/economic/central-banks/261830302-japan-boj-yen-intervention-rates-inflation-oil-forex-usdjpy-week-tradingkey" target="_blank" rel="noopener">TradingKey（片山財務相 介入準備）</a>, FISCO（4/29 18:54 / 19:24 / 20:00 / 20:02）, DZH Financial Research（4/30 00:06 / 00:58 / 01:31 / 03:07 / 06:22） — 2026年4月29-30日</div>
+  </div>
+</section>
+
+<!-- ===== 為替 ===== -->
+<section id="fx" class="section fade-in">
+  <h2 class="section-header">💱 為替</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">USD/JPY</div>
+      <div class="price-value">160.26</div>
+      <div class="price-change down">-0.12%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">EUR/JPY</div>
+      <div class="price-value">187.10</div>
+      <div class="price-change down">-0.10%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">GBP/JPY</div>
+      <div class="price-value">216.06</div>
+      <div class="price-change down">-0.07%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">AUD/JPY</div>
+      <div class="price-value">114.21</div>
+      <div class="price-change up">+0.03%</div>
+    </div>
+  </div>
+
+  <div class="news-card blue">
+    <div class="news-head">
+      <span class="news-badge alert">USD/JPY 160円台</span>
+      <span class="news-badge alert">介入警戒</span>
+    </div>
+    <div class="news-title">USD/JPY 160.26円で160円台定着、年初来高値160.46円更新 — Bloomberg「Yen Hits Key 160 Level」、原油急騰でドル買い、片山財務相が介入準備再表明</div>
+    <div class="news-body">
+      USD/JPYは<strong>160.257円（-0.12%、-0.193円）</strong>と<strong>160円大台で定着</strong>、年初来高値160.46円更新後の小休止局面。4/29 NY時間にFOMC据置・パウエル残留示唆・原油急騰の三重材料で円安加速、DZH（4/30 00:58）「<strong>強含み、有事のドル買いで160.32円まで上昇</strong>」、01:31「<strong>上昇一服、年初来高値160.46円がレジスタンス</strong>」、03:07「<strong>神経質、160.31円付近で推移</strong>」と荒い動き。NY概況・29日は<strong>3日続伸</strong>（DZH 06:04）。Bloomberg「<strong>Yen Hits Key 160-Per-Dollar Level as Traders Eye BOJ Next Steps</strong>」と一斉報道、TradingKeyによれば<strong>片山さつき財務相が介入準備を再表明</strong>。EBC Financial Group「<strong>USD/JPY: BOJの160円介入危険ゾーン</strong>」と前回介入実績水準にリスクが集中する展開。4/30 06:22のオーダー情報では<strong>160.50円に売り・ストップロス、OP30日NYカット大きめ</strong>と上値抵抗が形成され、介入警戒で短期上値は限定的。本日Apple決算でリスクオン続けば再上昇、ハト派サプライズなら円買い、介入実施なら-2~3円急落の三分岐シナリオ。
+    </div>
+    <div class="news-source">出典: <a href="https://www.bloomberg.com/news/articles/2026-04-29/yen-hits-key-160-per-dollar-level-as-traders-eye-boj-next-steps" target="_blank" rel="noopener">Bloomberg（Yen 160 per dollar level）</a>, <a href="https://www.investing.com/analysis/usdjpy-near-160-as-rate-gap-and-oil-costs-pressure-the-yen-200679068" target="_blank" rel="noopener">Investing.com（USD/JPY 160）</a>, <a href="https://www.ebc.com/forex/usd-jpy-forecast-the-bojs-160-intervention-danger-zone" target="_blank" rel="noopener">EBC Financial Group（160円介入危険ゾーン）</a>, <a href="https://www.tradingkey.com/analysis/economic/central-banks/261830302-japan-boj-yen-intervention-rates-inflation-oil-forex-usdjpy-week-tradingkey" target="_blank" rel="noopener">TradingKey（片山財務相 介入準備）</a>, DZH Financial Research（4/30 00:06 / 00:58 / 01:31 / 03:07 / 06:04 / 06:22） — 2026年4月29-30日</div>
+  </div>
+
+  <div class="news-card blue">
+    <div class="news-head">
+      <span class="news-badge badge-fx">EUR/JPY 187円台</span>
+      <span class="news-badge badge-fx">AUD/JPY 失速</span>
+    </div>
+    <div class="news-title">EUR/JPY 187.10円でボリンジャー上限を上回るも上値重く、AUD/JPY 114.21円はRSI 69%から失速・5日線前後まで調整</div>
+    <div class="news-body">
+      クロス円は強含みもピーク感が出始めました。<strong>EUR/JPY 187.096円（-0.10%、-0.186円）</strong>は4/29 18:29のオーダー情報で「<strong>187.00-10円売り・ストップ</strong>」が上値抵抗として機能、DZH（4/30 02:20）「<strong>テクニカル一覧=ボリバン上限を上回る</strong>」、02:35「<strong>すう勢を示す5日線は上昇</strong>」と中期トレンドは健在も短期過熱感。<strong>GBP/JPY 216.061円（-0.07%、-0.157円）</strong>は216円台で底堅さを示しつつも上値重く。<strong>AUD/JPY 114.210円（+0.03%、+0.030円）</strong>はDZH（4/30 02:50）「<strong>豪テクニカル一覧=5日線前後まで失速</strong>」、04:27「<strong>豪 20日線かい離、+1σ水準から中立水準へ</strong>」と過熱感巻き戻しが進行。4/29 18:56「<strong>豪114.00円 買い・ストップ</strong>」が下値の重要な分岐点で、介入警戒のドル円調整がクロス円全般に波及するリスク。NZドルもDZH（4/30 02:55）「<strong>NZテクニカル一覧=5日線を下回って推移</strong>」と弱含み、コモディティ通貨は材料インパクト次第。
+    </div>
+    <div class="news-source">出典: DZH Financial Research（4/29 18:29 / 18:56 / 4/30 02:20 / 02:35 / 02:50 / 02:55 / 04:27）, FISCO（4/29 18:54 / 19:24 / 20:00 / 20:02） — 2026年4月29-30日</div>
+  </div>
+</section>
+
+<!-- ===== コモディティ ===== -->
+<section id="commodities" class="section fade-in">
+  <h2 class="section-header">🛢 コモディティ</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">GOLD (XAU/USD)</div>
+      <div class="price-value">$4,578.46</div>
+      <div class="price-change up">+0.76%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">BRENT</div>
+      <div class="price-value">$111.16</div>
+      <div class="price-change up">+0.65%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">WTI</div>
+      <div class="price-value">$107.55</div>
+      <div class="price-change up">+0.63%</div>
+    </div>
+  </div>
+
+  <div class="news-card alert">
+    <div class="news-head">
+      <span class="news-badge alert">WTI $107急騰</span>
+      <span class="news-badge alert">Brent $111台</span>
+    </div>
+    <div class="news-title">原油急騰WTI $107.55・Brent $111.16 — UAE OPEC離脱発効＋FOMCインフレ言及で「8日連続上昇」、Reuters「原油価格が急騰、イラン情勢への懸念」</div>
+    <div class="news-body">
+      原油市場は<strong>歴史的水準への上昇トレンドが加速</strong>。WTI（CL1）は<strong>$107.55（+0.63%、+$0.67）</strong>で$107台に到達、Brentは<strong>$111.16（+0.65%、+$0.72）</strong>で$111台に達しました。前日$99.37→$107.55への+8%急騰は1日でほぼ$8の大幅上昇で、<strong>本日4/30（金）からのUAE OPEC離脱の正式発効</strong>＋<strong>FOMC声明での「インフレは高水準で世界エネルギー価格上昇を反映」明記</strong>が複合材料に。Reuters（4/30 06:32）「<strong>原油価格が急騰、イラン情勢への懸念から米株式市場は小幅な動きで引ける</strong>」が現状を端的に表現。<strong>Goldman Sachs Brent予測$90</strong>、<strong>Citi Brent最大$150・Q3平均$130</strong>のシナリオが実現に近づいており、ペルシャ湾の14.5百万バレル/日生産停止というIEA「史上最大の供給ショック」（Wikipedia: 2026 Strait of Hormuz crisis）が長期化することへの織り込みが進んでいます。WTI-Brentスプレッドは$3.61で縮小傾向、両油種が同方向で動く構造。日本のエネルギー輸入コスト直撃で<strong>USD/JPY 160円突破の主因</strong>にもなっており、本日Apple決算後の市場反応次第では原油株（XOM/CVX等）への資金流入で一段高シナリオも視野。
+    </div>
+    <div class="news-source">出典: Reuters（4/30 06:32 原油急騰・イラン懸念）, <a href="https://www.npr.org/2026/04/28/nx-s1-5802735/uae-leaves-opec-oil" target="_blank" rel="noopener">NPR（UAE 60年ぶりOPEC離脱・4/30発効）</a>, <a href="https://www.washingtonpost.com/business/2026/04/28/uae-opec-oil-prices/21c75a22-4337-11f1-b19d-32431046b5b4_story.html" target="_blank" rel="noopener">Washington Post（Goldman $90・Citi $150シナリオ）</a>, <a href="https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis" target="_blank" rel="noopener">Wikipedia: 2026 Strait of Hormuz crisis</a>, <a href="https://www.iea.org/reports/oil-market-report-april-2026" target="_blank" rel="noopener">IEA Oil Market Report</a>, TradingView — 2026年4月29-30日</div>
+  </div>
+
+  <div class="news-card gold">
+    <div class="news-head">
+      <span class="news-badge badge-commodity">GOLD +0.76%</span>
+      <span class="news-badge badge-commodity">$4,578反発</span>
+    </div>
+    <div class="news-title">金$4,578.46（+0.76%、+$34.75）で大幅反発 — FOMCインフレ高水準明記＋原油$107急騰でインフレヘッジ需要回帰、ドル高に逆らう底堅さ</div>
+    <div class="news-body">
+      金価格（XAU/USD）は<strong>$4,578.46（+0.76%、+$34.75）</strong>と大幅反発、前日の$4,599から一時下落も持ち直し、<strong>$4,580台で底堅い</strong>動き。注目すべきは<strong>USD/JPY 160円突破のドル高局面でも金が上昇</strong>している点で、これは①FOMC声明の「<strong>インフレは高水準で世界エネルギー価格を反映</strong>」明記がインフレヘッジ需要を再燃、②WTI $107台への原油急騰がインフレ連想を強化、③パウエル「Trumpの法的攻撃で残留」の<strong>FRB独立性巡る政治リスク</strong>がドル長期信認に疑念を生んだ、の三重要因と推測されます。新興国中央銀行の構造的買いも継続中で、Citiの「Brent最大$150」シナリオが実現すれば実質金利低下＋インフレ高止まりで金にとって理想的な環境。本日Apple決算次第ではリスクオン局面でも金は底堅さを維持しそうです。$4,500のサポートと$4,650のレジスタンスを意識したレンジ推移。
+    </div>
+    <div class="news-source">出典: TradingView, <a href="https://www.investing.com/currencies/xau-usd" target="_blank" rel="noopener">Investing.com</a>, Reuters（4/30 06:32 原油急騰）, <a href="https://www.kitco.com/news/" target="_blank" rel="noopener">Kitco News</a>, CNBC（FOMC声明） — 2026年4月29-30日</div>
+  </div>
+</section>
+
+<!-- ===== 暗号資産 ===== -->
+<section id="crypto" class="section fade-in">
+  <h2 class="section-header">₿ 暗号資産</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">BTC/USD</div>
+      <div class="price-value">$76,301</div>
+      <div class="price-change up">+0.72%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">ETH/USD</div>
+      <div class="price-value">$2,272.50</div>
+      <div class="price-change up">+0.92%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">Fear & Greed</div>
+      <div class="price-value" style="color:var(--text-muted);">—</div>
+      <div class="price-change">FOMC消化</div>
+    </div>
+  </div>
+
+  <div class="news-card purple">
+    <div class="news-head">
+      <span class="news-badge badge-crypto">BTC $76K戻り</span>
+      <span class="news-badge alert">FOMCインフレ示唆で下落</span>
+    </div>
+    <div class="news-title">BTC $76,301.94（+0.72%）で持ち直し — Beincrypto「FOMCインフレ再燃示唆・金利据え置きでビットコイン下落」、米時間中に下押しも引け後Big Tech好決算で反発</div>
+    <div class="news-body">
+      BTCは<strong>$76,301.94（+0.72%、+$549.06）</strong>と$76K台で持ち直し。米時間中はFOMC決定後に下落圧力を受けたものの、引け後のBig Tech好決算でリスクセンチメント改善し反発。Beincrypto（4/30 03:08）「<strong>ビットコイン下落=FOMCがインフレ再燃示唆、金利据え置き</strong>」が現状を端的に表現、<strong>FOMCの「インフレ高水準・原油急騰反映」声明＋4人反対のタカ派色</strong>でリスク資産全般に短期売り圧力。しかしAlphabet（Google Cloud +63%）、Microsoft（Azure +40%）、Meta、Amazon（AWS +28%）の4社全社が予想超えのクラウド成長を示し、AI構造需要への信認が回復、暗号資産にもポジティブ波及。BTC市場支配率は依然60%台、機関投資家のBTC偏重と<strong>BlackRock IBIT 80万BTC、Strategy MSTR、Tesla 11,509BTC HODL</strong>の構造的サポートは継続。$76,000の節目維持で次は$78K再トライ視野、ただし$75K割れなら$72-73Kへの調整リスク。本日Apple決算次第で短期方向性が決まる局面。
+    </div>
+    <div class="news-source">出典: TradingView, <a href="https://beincrypto.com/" target="_blank" rel="noopener">Beincrypto（4/30 03:08 FOMCインフレ再燃示唆でBTC下落）</a>, <a href="https://cryptoquant.com/asset/btc/chart/exchange-flows/exchange-netflow-total" target="_blank" rel="noopener">CryptoQuant</a>, <a href="https://www.ishares.com/us/products/333011/ishares-bitcoin-trust-etf" target="_blank" rel="noopener">BlackRock IBIT</a> — 2026年4月29-30日</div>
+  </div>
+
+  <div class="news-card purple">
+    <div class="news-head">
+      <span class="news-badge badge-crypto">ETH +0.92%</span>
+      <span class="news-badge badge-crypto">クラウド+63%好材料</span>
+    </div>
+    <div class="news-title">ETH $2,272.50（+0.92%）でBTCをアウトパフォーム — Alphabet Google Cloud +63%等のAIインフラ需要好材料がL2/分散インフラ需要にも波及、$2,300再接近</div>
+    <div class="news-body">
+      ETHは<strong>$2,272.50（+0.92%、+$20.65）</strong>とBTC（+0.72%）をアウトパフォーム。$2,300の節目に再接近する動きで、4/29 Big Tech 4社引け後決算の好結果が追い風。<strong>Alphabet Google Cloud +63%（市場予想28%を倍以上超え）、Microsoft Azure +40%（予想39.7%超）、Amazon AWS +28%（予想27%超、AI run rate $15B超）</strong>と、クラウドインフラ需要が予想を大きく上回ったことで「AI capex $645Bの正当化」シナリオが裏付けられ、ETHを基盤とするL2エコシステム・分散インフラ・トークン化資産への中期需要にもポジティブ波及。Meta通期Capex $115-135B→$125-145Bへ上方修正もAIインフラ拡張の確信を強めました。本日4/30米時間引け後にAppleの決算が控え、ハードウェア側の最後の試金石。$2,300回復には追加の触媒が必要だが、$2,250のサポートは底堅く維持される地合い。
+    </div>
+    <div class="news-source">出典: TradingView, <a href="https://www.cnbc.com/2026/04/29/alphabet-googl-q1-2026-earnings.html" target="_blank" rel="noopener">CNBC（Alphabet Q1・Cloud +63%）</a>, <a href="https://www.cnbc.com/2026/04/29/aws-earnings-q1-2026.html" target="_blank" rel="noopener">CNBC（AWS Q1 +28%）</a>, <a href="https://www.coindesk.com/price/ethereum" target="_blank" rel="noopener">CoinDesk</a>, <a href="https://beincrypto.com/" target="_blank" rel="noopener">Beincrypto</a> — 2026年4月29-30日</div>
+  </div>
+</section>
+
+<!-- ===== 株式 ===== -->
+<section id="stocks" class="section fade-in">
+  <h2 class="section-header">📈 株式指数</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">S&P 500</div>
+      <div class="price-value">7,135.95</div>
+      <div class="price-change down">-0.04%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">NASDAQ</div>
+      <div class="price-value">24,673.24</div>
+      <div class="price-change up">+0.04%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">日経225</div>
+      <div class="price-value">59,356.54</div>
+      <div class="price-change down">-0.94%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">Big Tech AH</div>
+      <div class="price-value" style="color:var(--accent-green);">全社好決算</div>
+      <div class="price-change up">クラウド予想超え</div>
+    </div>
+  </div>
+
+  <div class="news-card green">
+    <div class="news-head">
+      <span class="news-badge alert">Big Tech全社好決算</span>
+      <span class="news-badge alert">クラウド予想超え</span>
+    </div>
+    <div class="news-title">米Big Tech 4社全社引け後決算で予想超え — Alphabet純利益+81%・Cloud+63%、MSFT EPS$4.27/Azure+40%、AWS+28%・AI run rate $15B、Meta通期Capex $125-145Bに上方修正</div>
+    <div class="news-body">
+      4/29米時間引け後に発表されたBig Tech 4社の決算は<strong>全社が市場予想を上回る</strong>歴史的な内容となりました。<strong>Alphabet（GOOGL）</strong>: 純利益$62.57B（+81% YoY）、EPS $5.11、<strong>Google Cloud +63%（市場予想28%を倍以上超え）</strong>、Cloudバックログ$460B、Q1 Capex $35.7B（CNBC）。<strong>Microsoft（MSFT）</strong>: 売上$82.9B（予想$81.4B超）、EPS $4.27（予想$4.05超）、<strong>Azure +40%（予想39.7%超）</strong>、Intelligent Cloud（Azure+server）$34.7B（+30% YoY）。<strong>Amazon（AMZN）</strong>: <strong>AWS +28%（予想27%超、AI run rate $15B超）</strong>、AWS過去3年で最高成長率（CNBC）。<strong>Meta（META）</strong>: 純利益$26.8B vs 前年$16.6B、EPS $10.44（前年$6.43）、<strong>通期Capex ガイダンスを$115-135B→$125-145Bへ上方修正</strong>（CNBC）。これは「AI投資$600B+の正当化」シナリオを完全に裏付ける内容で、ハイテクラリー再加速のシグナル。米時間4/30の取引（特にApple決算後）でNASDAQの新高値再トライが視野。S&P500は<strong>7,135.95（-2.85、-0.04%）</strong>、NASDAQは<strong>24,673.24（+9.44、+0.04%）</strong>でほぼ横ばいの引け（決算前）でしたが、引け後のAH取引は反発が予想されます。Reuters（4/30 05:19）「<strong>乱高下した取引の末、S&Pとナスダックは横ばい。パウエル議長は辞任しない意向を示唆</strong>」が現状を表現。
+    </div>
+    <div class="news-source">出典: <a href="https://www.cnbc.com/2026/04/29/alphabet-googl-q1-2026-earnings.html" target="_blank" rel="noopener">CNBC（Alphabet Q1・Cloud +63%）</a>, <a href="https://www.cnbc.com/2026/04/29/aws-earnings-q1-2026.html" target="_blank" rel="noopener">CNBC（AWS Q1 +28%）</a>, <a href="https://www.cnbc.com/2026/04/29/meta-q1-earnings-report-2026.html" target="_blank" rel="noopener">CNBC（Meta Q1）</a>, <a href="https://247wallst.com/investing/2026/04/29/live-microsoft-amazon-alphabet-meta-all-report-minutes-after-the-bell-tonight/" target="_blank" rel="noopener">24/7 Wall St.（Big Tech 4社速報）</a>, <a href="https://sherwood.news/markets/amazon-q1-2026-earnings-report-guidance-aws-cloud-ai-boom/" target="_blank" rel="noopener">Sherwood News（Amazon Q1 AWS）</a>, Reuters（4/30 05:01 / 05:19 / 05:34 FRB決定後・米株引け） — 2026年4月29-30日</div>
+  </div>
+
+  <div class="news-card red">
+    <div class="news-head">
+      <span class="news-badge alert">日経-560円</span>
+      <span class="news-badge badge-stock">59,356円</span>
+    </div>
+    <div class="news-title">日経225 59,356.54円（-560.70、-0.94%）でGW中の2日間取引で続落 — 日銀タカ派・USD/JPY 160円突破・原油急騰の三重ショック、5/2-6の5連休前の調整加速</div>
+    <div class="news-body">
+      日経225は<strong>59,356.54円（-560.70、-0.94%）</strong>と続落、4/27の終値最高値60,537円から3営業日で-1,180円の調整となりました。日銀タカ派決定後の反落（4/28: -619円）に続いて、<strong>4/30は前日休場明けで取引再開</strong>後も売り優勢。要因は ①<strong>日銀タカ派据置（植田体制初3人反対）の6月利上げ観測継続</strong>、②<strong>USD/JPY 160円突破による介入警戒・輸出株のリスクオン剥落</strong>、③<strong>原油WTI $107急騰のスタグフ連想</strong>、の三重ショック。SBG・アドバンテスト・ファナックなどフィジカルAI主役級が連続で利益確定売りに押される展開。<strong>明日5/1は2026年4月最終営業日</strong>、その後<strong>5/2-6 (土)-6(水)は5連休</strong>（5/2土・5/3憲法記念日・5/4みどりの日・5/5こどもの日・5/6振替休日）でGW中盤の長期休場。連休中に米時間で<strong>Apple決算（4/30 米時間引け後）、雇用統計（5/2米時間）</strong>と材料が目白押しのため、本日と明日のロング持ち越しは慎重さ要求。<strong>5/7再開時のギャップリスク</strong>に最大警戒、ヘッジコストも高水準で推移。
+    </div>
+    <div class="news-source">出典: TradingView, FISCO（4/28-30 日経平均関連）, <a href="https://www.bloomberg.com/jp/news/articles/2026-04-28/T4VHQXGP9VCW00" target="_blank" rel="noopener">Bloomberg（日銀政策維持・植田体制初3人反対）</a>, <a href="https://www.bloomberg.com/news/articles/2026-04-29/yen-hits-key-160-per-dollar-level-as-traders-eye-boj-next-steps" target="_blank" rel="noopener">Bloomberg（USD/JPY 160突破）</a>, Reuters（4/30 06:32 原油急騰） — 2026年4月29-30日</div>
+  </div>
+</section>
+
+<!-- ===== 日本テック ===== -->
+<section id="japan-tech" class="section fade-in">
+  <h2 class="section-header">🇯🇵 日本テクノロジー</h2>
+
+  <div class="news-card orange">
+    <div class="news-head">
+      <span class="news-badge alert">Apple決算今夜</span>
+      <span class="news-badge badge-tech">日本サプライヤー注目</span>
+    </div>
+    <div class="news-title">本日4/30米時間引け後にApple Q1決算 — Tim Cook→John Ternus新CEO移行体制での最後の決算、ソニー・村田・TDK・キオクシアなど日本サプライヤーへの影響注目</div>
+    <div class="news-body">
+      本日4/30米時間引け後（日本時間5/1早朝）にAppleのQ1 2026決算が発表されます。これは<strong>Tim Cook→John Ternus新CEO移行（9/1発効）が決定した後の初の四半期決算</strong>であり、Cook体制終盤の通信簿としての意味合いが強い注目イベント。CNBC等によれば、注目点は ①iPhone販売動向（中国市場の回復含む）、②サービス事業の伸び、③Apple Intelligence（AI）の収益化進捗、④インド・ベトナム生産移管の進捗、⑤関税環境への対応、と多岐にわたります。日本サプライヤーへの影響として、<strong>ソニーグループ（CMOSセンサー）、村田製作所（MLCC）、TDK（リチウムイオン電池）、キオクシア（NAND）、太陽誘電（電子部品）</strong>等の業績連動が注目されます。前日のBig Tech 4社全社好決算でAIインフラ需要が裏付けられたなか、Appleがハードウェア軸で同様のサプライズを出せるかが焦点。サプライズなら米株最高値更新の最後のピース、失望なら反落リスク。本日は日本市場ではGW中の貴重な営業日でもあり、決算前の警戒で動きにくい局面。
+    </div>
+    <div class="news-source">出典: <a href="https://www.cnbc.com/2026/04/22/boeing-ba-q1-2026-earnings.html" target="_blank" rel="noopener">CNBC（決算プレビュー）</a>, <a href="https://livenewschat.eu/mag-7-earnings-week-big-tech-ai-spending-microsoft-apple-amazon-meta-alphabet-2026/" target="_blank" rel="noopener">LiveNews（Mag 7 AI capex）</a>, <a href="https://finance.yahoo.com/markets/stocks/articles/mag-7-earnings-gauntlet-begins-111120851.html" target="_blank" rel="noopener">Yahoo Finance（Mag 7決算ガントレット）</a> — 2026年4月29-30日</div>
+  </div>
+
+  <div class="news-card orange">
+    <div class="news-head">
+      <span class="news-badge alert">フィジカルAI調整継続</span>
+      <span class="news-badge badge-tech">日銀6月利上げ観測</span>
+    </div>
+    <div class="news-title">SBG・アドバンテスト・ファナックなどフィジカルAI主役級の利益確定売り続く、日銀6月利上げ観測継続で輸出株に二重圧迫 — 5/7再開時のApple決算反応・雇用統計を経たギャップリスク</div>
+    <div class="news-body">
+      日経の続落（4/30: -560円）の主犯は引き続き<strong>SBG・アドバンテスト・ファナックなどフィジカルAI主役級銘柄</strong>の利益確定売り。4/27の終値最高値60,537円達成後の典型的な過熱反動局面で、TOPIX乖離・NT倍率歪みの解消が進行中。<strong>日銀タカ派据置・植田体制初3人反対の6月利上げ観測</strong>が継続し、円高シナリオが意識される輸出セクター（自動車・機械・電機）には二重の圧迫。一方で<strong>USD/JPY 160円突破は逆に輸出株にとって追い風</strong>でもあり、原油急騰でエネルギーコスト圧迫＋円安採算改善の綱引き。<strong>本日Apple決算と5/2米雇用統計</strong>がGW中の重要材料で、5/7再開時の<strong>窓開けリスク</strong>が最大の警戒事項。フィジカルAIラリーが再開すれば61,000円試し、調整深化なら58,000円台前半までの下落リスクも視野。日銀の6月会合（6/16-17）まで利上げ織り込み度合いが緩やかに進行する見通しで、長期投資家はGW中もポジション調整を進める展開。
+    </div>
+    <div class="news-source">出典: TradingView, FISCO（4/28-30 日経関連）, <a href="https://www.bloomberg.com/jp/news/articles/2026-04-28/T4VHQXGP9VCW00" target="_blank" rel="noopener">Bloomberg（日銀タカ派据置）</a>, <a href="https://www.bloomberg.com/news/articles/2026-04-29/yen-hits-key-160-per-dollar-level-as-traders-eye-boj-next-steps" target="_blank" rel="noopener">Bloomberg（USD/JPY 160突破）</a>, <a href="https://www.dlri.co.jp/report/macro/593227.html" target="_blank" rel="noopener">第一ライフ資産運用経済研究所（植田総裁・利上げは夏か）</a> — 2026年4月29-30日</div>
+  </div>
+</section>
+
+<!-- ===== 考察 ===== -->
+<section id="analysis" class="section fade-in">
+  <h2 class="section-header">🔮 考察</h2>
+  <div class="analysis-box">
+
+    <div class="analysis-pair">
+      <div class="pair-name">USD/JPY</div>
+      <span class="pair-direction dir-up">▲ 160.26円で160円大台定着、年初来高値160.46円 — 介入警戒水域、本日Apple決算・5/2雇用統計次第で160.50円突破か介入トリガー</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>FOMC据置(4人反対のタカ派)＋パウエル残留示唆＋WTI $107急騰＋Big Tech全社好決算の<strong>四重材料</strong>でドル買い加速。日米金利差の優位性継続、原油高でエネルギー輸入国通貨売り強化。DZH（4/30 06:04）「<strong>NY概況・29日、3日続伸</strong>」のモメンタム健在。本日Apple決算サプライズなら一気に161円試し。<br><br>
+        <strong>下落要因：</strong>4/30 06:22の<strong>160.50円売り・ストップロス、OP30日NYカット大きめ</strong>が短期的な天井。<strong>片山さつき財務相の介入準備再表明</strong>で前回介入実績水準（160円台）に強烈な警戒。160.50円突破時の介入リスクが最大、実施なら-2~3円急落も。米時間Apple決算がIBM・ServiceNow型失望なら米株急落＋リスクオフ円買いに。<br><br>
+        <strong>結論：</strong>158.50-161.00円。<strong>本日Apple決算と5/2雇用統計、介入リスク</strong>が三大材料。①Apple好決算＋雇用統計堅調→161円トライ、②介入実施→158-159円急落、③ミックスシナリオ→160円台中盤レンジ。GW中の薄商いで±2円程度のボラは想定範囲。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">AUD/JPY</div>
+      <span class="pair-direction dir-down">▼ 114.21円で5日線前後まで失速 — RSI過熱巻き戻し、114.00円ストップが重要分岐点</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>UAE OPEC離脱発効＋WTI $107・Brent $111急騰の<strong>原油超高値</strong>が資源国通貨豪ドルにファンダメンタル追い風。豪州LNG・鉄鉱石・石炭輸出への波及期待。米Big Tech全社好決算でリスクオン局面ならコモディティ通貨も底堅い。DZH（4/29 18:56）「<strong>114.00円 買い・ストップ</strong>」が下値サポート。<br><br>
+        <strong>下落要因：</strong>DZH（4/30 02:50）「<strong>豪テクニカル一覧=5日線前後まで失速</strong>」、04:27「<strong>豪 20日線かい離、+1σ水準から中立水準へ</strong>」と過熱感巻き戻しが進行中。NZドルもDZH（4/30 02:55）「<strong>NZテクニカル一覧=5日線を下回って推移</strong>」と弱含み。USD/JPY 160円突破での介入実施シナリオならクロス円全般が連れ安。<br><br>
+        <strong>結論：</strong>113.50-114.80円。<strong>114.00円のストップロスライン</strong>が最重要分岐点。割れれば113円台前半までの調整、上抜ければ114.50円再トライ。USD/JPYの介入リスクと連動性高く、神経質な展開継続。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">NASDAQ</div>
+      <span class="pair-direction dir-up">▲ 24,673でほぼ横ばいだが引け後Big Tech全社好決算で反発確実視 — AI懸念払拭、$25,000の節目視野</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>引け後の<strong>Big Tech 4社全社決算で予想超え</strong>(Alphabet Cloud +63%、Azure +40%、AWS +28%、Meta通期Capex上方修正)が「AI懸念」を完全払拭。Reuters「<strong>S&Pとナスダックは横ばい</strong>、パウエル議長は辞任しない意向を示唆」（4/30 05:19）の引け値は決算前のため、<strong>AHでは大幅反発</strong>が予想される。本日Apple決算で同様にサプライズあれば一気に$25,000試し。<br><br>
+        <strong>下落要因：</strong>FOMC据置・4人反対のタカ派色＋パウエル後任ウォーシュ氏との並行体制への不透明感。WTI $107急騰のインフレ連想で米長期金利上昇要因継続。BofA顧客は米国株売り継続（Reuters 4/30 01:11）と短期ヘッジファンドの売り基調も。Apple決算がIBM・ServiceNow型失望なら-3~5%調整リスク。<br><br>
+        <strong>結論：</strong>24,500-25,200。<strong>$25,000の心理節目</strong>がメインシナリオの上値ターゲット。Big Tech決算後のAH反発で寄り付き高、Apple決算サプライズなら大台達成可能。$24,500割れは2-3%の調整リスクだが、AI構造需要正当化で下値は限定的。GW明けの5/7再開時に窓開け上昇シナリオも視野。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">日経225</div>
+      <span class="pair-direction dir-down">▼ 59,356円で続落 — USD/JPY 160円突破でも日銀タカ派・原油急騰の二重ショックで反発限定、5/7再開時の窓開けリスク</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>米Big Tech 4社全社好決算でAI構造需要が完全に裏付けられた点が日本AI半導体・装置（アドバンテスト・東京エレクトロン・SCREEN HD・ディスコ）への中期追い風。USD/JPY 160円突破で<strong>輸出株の採算改善</strong>。フィジカルAI（ファナック・安川電機）の中期成長ストーリーは不変。59,000円の心理サポートで押し目買い意欲。<br><br>
+        <strong>下落要因：</strong>日銀タカ派据置（植田体制初3人反対・6月利上げ観測）の継続的圧迫。<strong>WTI $107急騰でエネルギーコスト直撃</strong>、自動車・機械・化学のマージン圧迫。SBG・アドバンテスト・ファナックの<strong>過熱反動売り継続</strong>。明日5/1営業日後の<strong>5/2-6 5連休</strong>でApple決算・米雇用統計を消化できず、5/7再開時の<strong>窓開けリスク</strong>。<br><br>
+        <strong>結論：</strong>58,500-60,200円。明日5/1がGW前最後の営業日でポジション調整加速、<strong>59,000円のサポート維持</strong>が焦点。Apple決算＋雇用統計の組み合わせ次第で5/7再開時のギャップは±1,000円程度想定。日銀の6月会合（6/16-17）まで利上げ織り込みの段階的進行で、輸出株は方向感に乏しい展開継続。
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== コラムCTA ===== -->
+<div class="cta-banner fade-in">
+  <div class="cta-banner-content">
+    <div class="cta-label">📝 COLUMN — 解説記事</div>
+    <div class="cta-title">ボラティリティ相場を乗り越える知識を身につけませんか？</div>
+    <div class="cta-desc">地政学リスクの読み方、FX口座の選び方、NISAポートフォリオの組み方など、投資判断の基盤となるコラムを公開中。</div>
+    <div class="cta-links">
+      <a href="20260405-column.html" class="cta-link primary">地政学リスクと投資 →</a>
+      <a href="20260330-column.html" class="cta-link secondary">FX口座比較ガイド</a>
+      <a href="20260402-column.html" class="cta-link secondary">NISAポートフォリオ</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PR ===== -->
+<div class="news-card gold fade-in" style="border-left-color:var(--accent-gold);margin:2rem 0;padding:1.5rem;">
+  <div class="news-head"><span class="news-badge badge-commodity" style="background:rgba(255,224,102,0.25);color:var(--accent-gold);border:1px solid rgba(212,136,15,0.3);">PR — 広告</span></div>
+  <div class="news-title" style="margin-top:0.5rem;">FX取引を始めるなら</div>
+  <div class="news-body">当サイトの為替分析を参考に実際の取引をお考えの方へ。FX取引高3年連続世界第1位のDMM FXなら、最短即日で口座開設が可能です。</div>
+  <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:0.8rem;">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:var(--accent-gold);color:#f8f7f4;font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;">【PR】DMM FX の詳細を見る →</a>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:transparent;color:var(--accent-gold);font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;border:1px solid var(--accent-gold);">【PR】DMM CFD の詳細を見る →</a>
+  </div>
+  <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" alt="">
+  <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" alt="">
+  <div class="news-source" style="margin-top:0.8rem;">※ 投資にはリスクが伴います。FX取引は元本を超える損失が発生する可能性があります。</div>
+</div>
+
+
+<!-- ===== 著者情報 ===== -->
+<div class="author-box fade-in">
+  <div class="author-avatar">M</div>
+  <div class="author-info">
+    <div class="author-name">MARKETZ 編集部</div>
+    <div class="author-title">IT CONSULTANT × DATA-DRIVEN TRADER</div>
+    <div class="author-bio">現役ITコンサルタント・元エンジニアが運営。複雑なグローバル市場をシステム思考で俯瞰し、テクニカル分析とファンダメンタルズ分析を組み合わせたデータドリブンな市場解説をお届けしています。</div>
+  </div>
+</div>
+
+<!-- ===== 免責事項 ===== -->
+<div class="disclaimer fade-in">
+  <div class="disclaimer-title">⚠️ 免責事項・ディスクレーマー</div>
+  本記事は情報提供のみを目的としており、金融商品の売買の勧誘や投資助言を目的とするものではありません。掲載されている情報は作成時点のものであり、正確性、完全性、適時性を保証するものではありません。投資判断は必ずご自身の責任において行ってください。本記事に基づく投資行動による損失について、筆者・サイト運営者は一切の責任を負いません。<br><br>
+  本記事に記載されているニュースは、CNBC、Bloomberg、Reuters、CNN、Al Jazeera、Trading Economics、Yahoo Finance、Investing.com、The Japan Times、EIA等の公開情報を参照し、筆者が独自に再構成したものです。各出典元の著作物をそのまま転載・翻訳したものではありません。<br><br>
+  金融商品取引法に基づく表記：本記事は金融商品取引法第2条に定める金融商品取引業に該当する行為を行うものではありません。
+</div>
+
+
+<!-- ===== 前後記事ナビ + 関連記事 ===== -->
+<nav class="article-nav" id="article-nav"></nav>
+<div class="related-section" id="related-articles"></div>
+
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>MARKETZ — <a href="https://marketpulse-daily.com/">ホームに戻る</a></p>
+  <p>© 2026 MARKETZ. All rights reserved.</p>
+</footer>
+
+<!-- FAB BUTTONS -->
+<div class="fab-group">
+  <a href="https://marketpulse-daily.com/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
+  <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
+</div>
+
+<script>
+// Fade-in Observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); }});
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Sticky nav highlight
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.sticky-nav a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id');
+  });
+  navLinks.forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+  // FAB group
+  const fabGroup = document.querySelector('.fab-group');
+  if (fabGroup) {
+    if (window.scrollY > 600) { fabGroup.style.display = 'flex'; } else { fabGroup.style.display = 'none'; }
+  }
+});
+
+// Article navigation & related articles
+(function(){
+  const slug = location.pathname.split('/').pop().replace('.html','');
+  fetch('../data/posts.json').then(r=>r.json()).then(data=>{
+    const posts = data.posts;
+    const idx = posts.findIndex(p=>p.slug===slug);
+    // Next/Prev nav
+    const nav = document.getElementById('article-nav');
+    if(nav && idx!==-1){
+      let html='';
+      if(idx<posts.length-1){
+        const prev=posts[idx+1];
+        html+='<a href="'+prev.slug+'.html"><div class="nav-label">← 前の記事</div><div class="nav-title">'+prev.title+'</div></a>';
+      }
+      if(idx>0){
+        const next=posts[idx-1];
+        html+='<a href="'+next.slug+'.html" class="nav-next"><div class="nav-label">次の記事 →</div><div class="nav-title">'+next.title+'</div></a>';
+      }
+      nav.innerHTML=html;
+    }
+    // Related articles (same tags, excluding self, max 3)
+    const rel = document.getElementById('related-articles');
+    if(rel && idx!==-1){
+      const myTags=new Set(posts[idx].tags||[]);
+      const scored=posts.filter((_,i)=>i!==idx).map(p=>{
+        const common=(p.tags||[]).filter(t=>myTags.has(t)).length;
+        return{...p,score:common};
+      }).filter(p=>p.score>0).sort((a,b)=>b.score-a.score).slice(0,3);
+      if(scored.length){
+        let html='<div class="related-heading">📰 関連記事</div><div class="related-list">';
+        scored.forEach(p=>{
+          html+='<a href="'+p.slug+'.html" class="related-card"><div class="rc-date">'+p.date+'</div><div class="rc-title">'+p.title+'</div><div class="rc-tags">'+(p.tags||[]).slice(0,4).map(t=>'<span class="rc-tag">'+t+'</span>').join('')+'</div></a>';
+        });
+        html+='</div>';
+        rel.innerHTML=html;
+      }
+    }
+  }).catch(()=>{});
+})();
+
+</script>
+</body>
+</html>
