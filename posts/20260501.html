@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- A8.net Link Manager -->
+<script src="//statics.a8.net/a8link/a8linkmgr.js"></script>
+<script>
+  a8linkmgr({
+    "config_id": "3FffsI9Y9VCBqU9ikTQJ"
+  });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KFT35KZZVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KFT35KZZVC');
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MARKETZ — 2026.05.01 マーケットニュースダイジェスト｜日本2年ぶり円買い介入でUSD/JPY 160→155.5円急落、Apple Q1全項目record・米株4月は2020年以来最大月間上昇率</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #f8f7f4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0efe8;
+  --text-primary: #1a1a2e;
+  --text-secondary: #3d3d56;
+  --text-muted: #7a7a8e;
+  --accent-red: #e63946;
+  --accent-green: #06a77d;
+  --accent-gold: #d4880f;
+  --accent-blue: #2176ff;
+  --accent-purple: #7b61ff;
+  --accent-orange: #e07b39;
+  --border: rgba(0,0,0,0.08);
+  --border-accent: rgba(0,0,0,0.12);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Meiryo', 'Yu Gothic UI', 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.2rem; }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridSlide 20s linear infinite;
+}
+@keyframes gridSlide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(60px, 60px); }
+}
+.hero-content { position: relative; z-index: 1; padding: 2rem 1rem; }
+.hero-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: #d4880f;
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
+}
+.hero-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+.hero-subtitle {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto; margin-right: auto;
+}
+.hero-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+.hero-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: #ffffff;
+  background: rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.15);
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+}
+.hero-tag.alert {
+  border-color: rgba(255,100,120,0.6);
+  background: rgba(255,100,120,0.2);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+/* ===== STICKY NAV ===== */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.sticky-nav ul {
+  display: flex; list-style: none;
+  max-width: 900px; margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+  gap: 0;
+}
+.sticky-nav a {
+  display: block;
+  padding: 0.75rem 0.8rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.sticky-nav a:hover, .sticky-nav a.active {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+  background: rgba(0,0,0,0.04);
+}
+
+/* ===== SECTION ===== */
+.section { padding: 3rem 0; }
+.section-header {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-accent);
+}
+
+/* ===== PRICE STRIP ===== */
+.price-strip {
+  display: flex; flex-wrap: wrap; gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.price-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  flex: 1 1 140px;
+  min-width: 130px;
+}
+.price-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+.price-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+.price-change {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 0.15rem;
+}
+.price-change.up { color: var(--accent-green); }
+.price-change.down { color: var(--accent-red); }
+
+/* ===== NEWS CARD ===== */
+.news-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+  border-left: 3px solid transparent;
+}
+.news-card:hover { background: var(--bg-card-hover); }
+.news-card.blue { border-left-color: var(--accent-blue); }
+.news-card.red { border-left-color: var(--accent-red); }
+.news-card.gold { border-left-color: var(--accent-gold); }
+.news-card.green { border-left-color: var(--accent-green); }
+.news-card.purple { border-left-color: var(--accent-purple); }
+.news-card.orange { border-left-color: var(--accent-orange); }
+
+.news-head { margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.news-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+}
+.badge-fx { background: rgba(33,118,255,0.1); color: var(--accent-blue); border: 1px solid rgba(33,118,255,0.2); }
+.badge-commodity { background: rgba(212,136,15,0.1); color: var(--accent-gold); border: 1px solid rgba(212,136,15,0.2); }
+.badge-crypto { background: rgba(123,97,255,0.1); color: var(--accent-purple); border: 1px solid rgba(123,97,255,0.2); }
+.badge-stock { background: rgba(6,167,125,0.1); color: var(--accent-green); border: 1px solid rgba(6,167,125,0.2); }
+.badge-geo { background: rgba(230,57,70,0.1); color: var(--accent-red); border: 1px solid rgba(230,57,70,0.2); }
+.badge-tech { background: rgba(224,123,57,0.1); color: var(--accent-orange); border: 1px solid rgba(224,123,57,0.2); }
+
+.news-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+.news-body {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.news-source {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+.news-source a{color:var(--accent-gold);text-decoration:none;transition:color 0.2s}
+.news-source a:hover{color:var(--text-primary);text-decoration:underline}
+
+/* ===== ANALYSIS ===== */
+.analysis-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.analysis-pair { margin-bottom: 1.5rem; }
+.analysis-pair:last-child { margin-bottom: 0; }
+.pair-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+.pair-direction {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+.dir-up { background: rgba(6,167,125,0.1); color: var(--accent-green); border: 1px solid rgba(6,167,125,0.2); }
+.dir-down { background: rgba(230,57,70,0.1); color: var(--accent-red); border: 1px solid rgba(230,57,70,0.2); }
+.dir-neutral { background: rgba(212,136,15,0.1); color: var(--accent-gold); border: 1px solid rgba(212,136,15,0.2); }
+.pair-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.pair-text strong { color: var(--text-primary); }
+
+/* ===== DISCLAIMER ===== */
+.disclaimer {
+  background: var(--bg-card);
+  border: 2px solid var(--accent-red);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin: 2rem 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.disclaimer-title {
+  color: var(--accent-red);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== FADE IN ===== */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+.footer a { color: var(--accent-gold); text-decoration: none; }
+
+/* ===== FAB BUTTONS ===== */
+.fab-group {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  display: none; flex-direction: column; gap: 0.5rem;
+  z-index: 99;
+}
+.fab-btn {
+  width: 44px; height: 44px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.fab-btn:hover { background: var(--bg-card-hover); }
+.fab-home { font-size: 1rem; }
+
+@media (max-width: 600px) {
+  .price-card { flex: 1 1 100%; }
+  .sticky-nav a { font-size: 0.75rem; padding: 0.6rem 0.5rem; }
+}
+
+
+/* ===== AUTHOR BOX ===== */
+.author-box{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.5rem;margin:2rem 0;display:flex;gap:1.2rem;align-items:flex-start;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+.author-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#1a1a2e,#0f3460);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.5rem;color:#ffe066;font-family:'JetBrains Mono',monospace;font-weight:700}
+.author-info{flex:1;min-width:0}
+.author-name{font-weight:700;font-size:0.95rem;color:var(--text-primary);margin-bottom:0.2rem}
+.author-title{font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--accent-gold);letter-spacing:0.03em;margin-bottom:0.5rem}
+.author-bio{font-size:0.82rem;color:var(--text-secondary);line-height:1.7}
+@media(max-width:600px){.author-box{flex-direction:column;align-items:center;text-align:center}.author-avatar{width:56px;height:56px;font-size:1.3rem}}
+
+/* ===== CTA BANNER ===== */
+.cta-banner{background:linear-gradient(135deg,#1a1a2e 0%,#0f3460 100%);border-radius:10px;padding:1.5rem;margin:2rem 0;position:relative;overflow:hidden}
+.cta-banner::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:40px 40px}
+.cta-banner-content{position:relative;z-index:1}
+.cta-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:#ffe066;letter-spacing:0.1em;margin-bottom:0.4rem}
+.cta-title{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:#fff;margin-bottom:0.5rem}
+.cta-desc{font-size:0.85rem;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:1rem}
+.cta-links{display:flex;flex-wrap:wrap;gap:0.6rem}
+.cta-link{display:inline-block;padding:0.5rem 1rem;border-radius:6px;font-size:0.82rem;font-weight:700;text-decoration:none;transition:all 0.2s}
+.cta-link.primary{background:var(--accent-gold);color:#0a0a0f}
+.cta-link.primary:hover{background:#ffe066}
+.cta-link.secondary{background:transparent;color:var(--accent-gold);border:1px solid rgba(240,165,0,0.4)}
+.cta-link.secondary:hover{border-color:var(--accent-gold);background:rgba(240,165,0,0.1)}
+
+/* ===== ARTICLE NAV (Next/Prev) ===== */
+.article-nav{display:flex;gap:1rem;margin:2rem 0;flex-wrap:wrap}
+.article-nav a{flex:1;min-width:200px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.article-nav a:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.article-nav .nav-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--text-muted);letter-spacing:0.05em;margin-bottom:0.3rem}
+.article-nav .nav-title{font-size:0.85rem;font-weight:700;color:var(--text-primary);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.article-nav .nav-next{text-align:right;margin-left:auto}
+/* ===== RELATED ARTICLES ===== */
+.related-section{margin:2rem 0}
+.related-heading{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:var(--text-primary);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--border-accent)}
+.related-list{display:flex;flex-direction:column;gap:0.6rem}
+.related-card{display:block;background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--accent-gold);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.related-card:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.related-card .rc-date{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--accent-gold);letter-spacing:0.05em}
+.related-card .rc-title{font-size:0.9rem;font-weight:700;color:var(--text-primary);margin-top:0.2rem;line-height:1.5}
+.related-card .rc-tags{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.4rem}
+.related-card .rc-tag{font-family:'JetBrains Mono',monospace;font-size:0.62rem;padding:0.15rem 0.4rem;border-radius:3px;background:rgba(0,0,0,0.04);color:var(--text-muted)}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb{max-width:900px;margin:0 auto;padding:0.6rem 1.2rem;font-size:0.75rem;color:var(--text-muted)}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.2s}
+.breadcrumb a:hover{color:var(--text-primary);text-decoration:none}
+.breadcrumb .sep{margin:0 0.4rem;opacity:0.5}
+.breadcrumb .current{color:var(--text-secondary)}
+</style>
+<meta name="description" content="日本当局が2年ぶり円買い介入実施、USD/JPY 160.46円→一時155.5円台→現156.70円。円1日最大3%急騰(3年超ぶり)。Apple Q1売上$111.2B(+16.6%)・iPhone $85.3B・Services $30B全項目record、Q2ガイダンス+14-17%。S&P/NASDAQ 4月の月間上昇率2020年以来最大、S&P+1.02%。日経4/30は-632円で59,284円 — 2026年5月1日">
+<link rel="canonical" href="https://marketpulse-daily.com/posts/20260501.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MARKETZ — 2026.05.01 マーケットニュースダイジェスト｜日本2年ぶり円買い介入160→155.5円、Apple全項目record、米株4月最大月間上昇">
+<meta property="og:description" content="日本当局が2年ぶり円買い介入実施でUSD/JPY 160.46円→155.5円台急落、円1日最大3%急騰。Apple Q1売上$111.2B(+16.6%)・iPhone/Services record・Q2+14-17%ガイダンス。S&P/NASDAQ 4月の月間上昇率2020年以来最大、S&P+1.02%。日経-632円で59,284円">
+<meta property="og:url" content="https://marketpulse-daily.com/posts/20260501.html">
+<meta property="og:site_name" content="MARKETZ">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://marketpulse-daily.com/images/og-default.svg">
+<meta property="article:published_time" content="2026-05-01T00:00:00+09:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MARKETZ — 2026.05.01 マーケットニュースダイジェスト｜2年ぶり円買い介入・Apple全record・米株4月最大月間上昇">
+<meta name="twitter:description" content="日本2年ぶり円買い介入で160→155.5円急落、Apple Q1全項目record(売上$111B+16.6%)、S&P/NASDAQ 4月の月間上昇率2020年以来最大。日経-632円で59,284円、本日GW前最後の営業日">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NewsArticle","headline":"MARKETZ — 2026.05.01 マーケットニュースダイジェスト｜日本2年ぶり円買い介入で160→155.5円急落、Apple Q1全項目record、米株4月の月間上昇率2020年以来最大","datePublished":"2026-05-01T00:00:00+09:00","publisher":{"@type":"Organization","name":"MARKETZ","logo":{"@type":"ImageObject","url":"https://marketpulse-daily.com/images/og-default.svg"}},"mainEntityOfPage":"https://marketpulse-daily.com/posts/20260501.html","author":{"@type":"Organization","name":"MARKETZ","description":"ITコンサルタント×データドリブントレーダーによるマーケット分析メディア"},"image":"https://marketpulse-daily.com/images/og-default.svg"}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://marketpulse-daily.com/"},{"@type":"ListItem","position":2,"name":"アーカイブ","item":"https://marketpulse-daily.com/archive.html"},{"@type":"ListItem","position":3,"name":"2026.05.01 マーケットニュースダイジェスト"}]}</script>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-date">2026.05.01 — FRIDAY（GW中・本日休場前最終営業日）</div>
+    <h1 class="hero-title">マーケットニュースダイジェスト</h1>
+    <p class="hero-subtitle"><strong>日本当局が2年ぶり円買い介入実施</strong> — USD/JPY 160.46円→一時155.5円台へ急落（円1日最大3%急騰、3年超ぶり）→現156.70円。<strong>Apple Q1売上$111.2B（+16.6%）・iPhone $85.3B・Services $30Bで全項目record</strong>、Q2ガイダンス+14-17%。S&P 500 +1.02%・NASDAQ +0.89%で<strong>4月の月間上昇率2020年以来最大</strong>。日経4/30は-632円で59,284円。本日GW前最後の営業日</p>
+    <div class="hero-tags">
+      <span class="hero-tag alert">2年ぶり円買い介入</span>
+      <span class="hero-tag alert">Apple全record決算</span>
+      <span class="hero-tag alert">米株4月最大月間上昇</span>
+      <span class="hero-tag">USD/JPY 156円台</span>
+      <span class="hero-tag">日経-632円</span>
+      <span class="hero-tag">5/2米雇用統計</span>
+      <span class="hero-tag">GW最終営業日</span>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb" aria-label="パンくずリスト">
+  <a href="https://marketpulse-daily.com/">ホーム</a>
+  <span class="sep">›</span>
+  <a href="https://marketpulse-daily.com/archive.html">アーカイブ</a>
+  <span class="sep">›</span>
+  <span class="current">2026.05.01 マーケットニュースダイジェスト</span>
+</div>
+
+<!-- STICKY NAV -->
+<nav class="sticky-nav">
+  <ul>
+    <li><a href="#geopolitics">🌍地政学</a></li>
+    <li><a href="#fx">💱為替</a></li>
+    <li><a href="#commodities">🛢コモディティ</a></li>
+    <li><a href="#crypto">₿暗号資産</a></li>
+    <li><a href="#stocks">📈株式</a></li>
+    <li><a href="#japan-tech">🇯🇵日本テック</a></li>
+    <li><a href="#analysis">🔮考察</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+<!-- ===== 地政学 ===== -->
+<section id="geopolitics" class="section fade-in">
+  <h2 class="section-header">🌍 地政学・社会情勢</h2>
+
+  <div class="news-card red">
+    <div class="news-head">
+      <span class="news-badge alert">2年ぶり円買い介入</span>
+      <span class="news-badge alert">USD/JPY 160→155.5円</span>
+    </div>
+    <div class="news-title">日本当局が2年ぶり円買い介入を実施、USD/JPY 160.46円→一時155.5円台に急落 — 円が1日で約3%急騰（3年超ぶり）、片山さつき財務相「決定的な行動の時期が近づいている」と事前警告</div>
+    <div class="news-body">
+      <strong>日本の財務省・日銀が4/30に2年ぶりの円買い介入</strong>を実施しました。Reuters「<strong>NY外為市場=ドル対円で急落、一時155.5円台 日本当局が円買い介入実施</strong>」（5/1 06:00）、Yahoo Finance/Reuters「<strong>Japan yen surges 2%; officials issue strongest intervention warning yet</strong>」、FXStreet「<strong>Japan reportedly conducts first FX intervention since 2024 on Yen</strong>」が一斉に速報しました。USD/JPYは前日4/29に<strong>年初来高値160.46円を記録</strong>後、4/30東京時間からじわじわと売り圧力（FISCO 4/30 18:51「<strong>ドル・円は続落、日本の円安牽制で</strong>」）。NY時間20:12 Reuters「<strong>円が2%急騰、当局が過去最強の介入警告を発する</strong>」、20:42「<strong>156.05円まで一段安</strong>」、20:57「<strong>日本、2年ぶり為替介入で円高誘導=情報筋</strong>」と段階的に介入観測が高まり、22:29 FISCO「<strong>【速報】日銀は円買い介入を実施=日経</strong>」で確定的に。<strong>片山さつき財務相は4/30朝に「決定的な行動の時期が近づいている」</strong>と最大級の警告を発した直後の介入で、Bloomberg「<strong>Japan's Katayama Warns 'Nearing' Time to Take Bold FX Steps</strong>」と完全に整合。<strong>円は1日で最大3%急騰（3年超ぶり最大の上昇率）</strong>、USD/JPYは160.46円→<strong>一時155.5円台</strong>まで-4.96円の歴史的急落。現在は156.70円付近で推移。介入額は前回（2024年）の$100B規模を参照すれば数兆円規模と推定されますが正式発表は財務省の月末データ待ち。
+    </div>
+    <div class="news-source">出典: <a href="https://www.cnbc.com/2026/04/30/yen-surges-as-japan-reportedly-intervenes-to-counter-currency-weakness.html" target="_blank" rel="noopener">CNBC（円急騰・日本介入）</a>, <a href="https://finance.yahoo.com/markets/currencies/articles/japan-yen-surges-2-officials-111446734.html" target="_blank" rel="noopener">Yahoo Finance/Reuters（円2%急騰・過去最強介入警告）</a>, <a href="https://www.bloomberg.com/news/articles/2026-04-30/japan-s-katayama-warns-nearing-timing-to-take-bold-fx-steps" target="_blank" rel="noopener">Bloomberg（片山財務相 決定的行動近づく）</a>, <a href="https://www.fxstreet.com/news/japan-reportedly-conducts-first-fx-intervention-since-2024-to-counter-speculative-moves-202604301358" target="_blank" rel="noopener">FXStreet（2024年以来初の介入）</a>, <a href="https://www.businessday.co.za/markets/2026-04-30-yen-jumps-3-after-ministers-final-warning-about-intervention/" target="_blank" rel="noopener">Business Day（円3%急騰）</a>, Reuters（5/1 06:00 NY外為・155.5円台介入）, FISCO（4/30 18:11 / 18:51 / 20:05 / 20:06 / 22:29 速報日銀介入）, DZH（4/30 18:11 / 19:46 / 20:42） — 2026年4月30日-5月1日</div>
+  </div>
+
+  <div class="news-card alert">
+    <div class="news-head">
+      <span class="news-badge alert">Apple Q1全項目record</span>
+      <span class="news-badge alert">米株4月最大月間上昇</span>
+    </div>
+    <div class="news-title">Apple Q1売上$111.2B(+16.6%)・iPhone $85.3B・Services $30Bで全項目record、Q2ガイダンス+14-17% — S&P 500 +1.02%・NASDAQ +0.89%、4月の月間上昇率は2020年以来最大</div>
+    <div class="news-body">
+      4/30米時間引け後に発表されたAppleのQ1（CY2026）決算は<strong>全項目でrecord・予想超え</strong>の歴史的な内容となりました。Yahoo Finance/Apple Newsroom: <strong>売上$111.2B（+16.6% YoY、予想超え）、iPhone売上$85.3B（前年$69.1Bから過去最高）、Services売上$30B（+14%、過去最高）</strong>。<strong>粗利率49.3%（前年47.1%）</strong>、<strong>営業利益率32.3%（前年31%）</strong>と全マージン項目も改善。さらに<strong>Q2（現四半期）売上ガイダンスは+14-17% YoY</strong>と、市場予想10%を大きく上回る強気見通し。Tim Cook→John Ternus新CEO移行（9/1発効）が決定した後の最初の決算で、Cook体制終盤の通信簿として完璧な内容でした。これによりMag 7の4月決算ラッシュ（Alphabet・MSFT・Meta・Amazon・Apple）は<strong>5社全社が予想超え</strong>でAI＋ハードウェアの構造需要が完全に裏付けられた形。Reuters（5/1 03:30）「<strong>S&P 500とナスダック、2020年以来最大の月間上昇率を記録する見通し</strong>」、5/1 05:29「<strong>S&P 500とナスダックはここ数年で最大の月間上昇率</strong>」、5/1 05:26「<strong>米国株式市場、好調な4月を華々しく締めくくる</strong>」と相次ぎ報道。S&Pは<strong>7,209.01（+73.06、+1.02%）</strong>、NASDAQは<strong>24,892.30（+219.06、+0.89%）</strong>で4月最終営業日に大幅上昇引け。
+    </div>
+    <div class="news-source">出典: <a href="https://finance.yahoo.com/markets/stocks/articles/apple-q1-fy2026-earnings-record-210144735.html" target="_blank" rel="noopener">Yahoo Finance（Apple Q1 record）</a>, <a href="https://qz.com/apple-record-revenue-earnings-fiscal-q1-2026-012926" target="_blank" rel="noopener">Quartz（Apple record revenue・EPS beat）</a>, <a href="https://stockstory.org/us/stocks/nasdaq/aapl/news/earnings/apple-nasdaqaapl-posts-better-than-expected-sales-in-q1-cy2026" target="_blank" rel="noopener">StockStory（AAPL Q1売上+16.6%）</a>, <a href="https://investor.apple.com/investor-relations/default.aspx" target="_blank" rel="noopener">Apple IR</a>, Reuters（5/1 01:26 中東リスクでも2020年以来最高月間 / 03:30 S&P/NASDAQ 2020年以来最大月間上昇 / 05:26 4月華々しく締めくくる / 05:29 ここ数年で最大月間上昇率）, TradingView — 2026年4月30日-5月1日</div>
+  </div>
+</section>
+
+<!-- ===== 為替 ===== -->
+<section id="fx" class="section fade-in">
+  <h2 class="section-header">💱 為替</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">USD/JPY</div>
+      <div class="price-value">156.70</div>
+      <div class="price-change up">+0.05%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">EUR/JPY</div>
+      <div class="price-value">183.84</div>
+      <div class="price-change up">+0.05%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">GBP/JPY</div>
+      <div class="price-value">213.18</div>
+      <div class="price-change up">+0.06%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">AUD/JPY</div>
+      <div class="price-value">112.80</div>
+      <div class="price-change up">+0.01%</div>
+    </div>
+  </div>
+
+  <div class="news-card alert">
+    <div class="news-head">
+      <span class="news-badge alert">介入後の反動</span>
+      <span class="news-badge alert">USD/JPY -3.5円</span>
+    </div>
+    <div class="news-title">USD/JPY 156.70円で介入後の落ち着き、4日ぶり大幅反落でNY概況「30日、4日ぶり大幅反落」 — 介入から1日で約-3.76円の歴史的下落、5/2米雇用統計で再評価へ</div>
+    <div class="news-body">
+      USD/JPYは<strong>156.703円（+0.05%、+0.079円）</strong>と介入後の落ち着きを取り戻す動き。前日4/29の年初来高値160.46円から<strong>一時155.5円台へ-4.96円急落</strong>後、現在156.70円付近で推移。DZH（5/1 06:04）「<strong>NY外国為替市場概況・30日、4日ぶり大幅反落</strong>」、Reuters（5/1 06:00）「<strong>NY外為市場=ドル対円で急落、一時155.5円台 日本当局が円買い介入実施</strong>」が現状を端的に表現。Reuters（5/1 04:15）「<strong>乖離1=5・20日線かい離、中立水準から-2σ水準へ</strong>」、04:23「<strong>豪・NZ 5日線かい離、中立水準から-2σ水準へ</strong>」とテクニカル指標は急速にオーバーソールド領域へ。DZH（5/1 02:15）「<strong>テクニカル一覧=RSIは36%台まで急低下</strong>」、02:35「<strong>テクニカル一覧=ボリバン下限を下回る</strong>」、02:55「<strong>豪テクニカル一覧=MACDかい離、マイナスに転換</strong>」と総じて売られすぎ局面入り。クロス円も総崩れで<strong>EUR/JPY 183.84円（前日187円台から-3円）、GBP/JPY 213.18円（前日216円台から-3円）、AUD/JPY 112.80円（前日114円台から-1.4円）</strong>と全面的な円高が進行。本日5/1はGW前最後の営業日、本日米時間は<strong>5/2米雇用統計</strong>を控えて再評価が始まる局面。介入の本気度が確認された後はファンダメンタル（日米金利差・原油・米雇用）次第で再上昇シナリオも視野ですが、介入第二弾警戒で短期的な戻りは限定的。
+    </div>
+    <div class="news-source">出典: Reuters（5/1 06:00 NY外為・155.5円台介入）, DZH Financial Research（5/1 02:15 / 02:35 / 02:55 / 03:05 / 04:04 / 04:15 / 04:23 / 06:04 4日ぶり大幅反落）, FISCO（4/30 19:46 / 20:05 / 20:42） — 2026年4月30日-5月1日</div>
+  </div>
+
+  <div class="news-card blue">
+    <div class="news-head">
+      <span class="news-badge badge-fx">EUR/JPY 183円台</span>
+      <span class="news-badge badge-fx">クロス円総崩れ</span>
+    </div>
+    <div class="news-title">EUR/JPY 183.84円・GBP/JPY 213.18円・AUD/JPY 112.80円でクロス円総崩れ — 介入連動の円高で全通貨ペア-2σ水準のオーバーソールド領域、押し目買い狙う局面か</div>
+    <div class="news-body">
+      クロス円は介入の連鎖反応で全面的な調整を強いられました。<strong>EUR/JPY 183.838円（+0.05%）</strong>は前日4/30夕方の187円台から<strong>-3円超の急落</strong>、DZH（4/30 18:11）「<strong>介入警戒感から円は買い継続、ユーロ円は186.14円まで下値広げる</strong>」を経て介入実施で急落加速、4/30 18:23「<strong>186.00円買いやや小さめ・ストップ</strong>」のサポートも維持できず183円台へ。<strong>GBP/JPY 213.176円（+0.06%）</strong>は216円台→213円、<strong>AUD/JPY 112.804円（+0.01%）</strong>は114.65円→112.80円と続落。Reuters（5/1 04:23）「<strong>豪・NZ 5日線かい離、中立水準から-2σ水準へ</strong>」、DZH（5/1 02:55）「<strong>豪テクニカル一覧=MACDかい離、マイナスに転換</strong>」、03:05「<strong>NZテクニカル一覧=すう勢を示す5日線は低下</strong>」と全面的にテクニカル売られすぎ。<strong>本日5/1の東京時間は介入第二弾警戒で売り優勢</strong>、ただし-2σ水準まで売られた後はファンダメンタル材料（日米金利差不変・原油$105台で日本のエネルギーコスト圧迫継続）で押し目買いも入りやすい地合い。介入の有効期間は1〜2週間が目安、5/7 GW明けの日経動向次第では再びクロス円上昇シナリオも。
+    </div>
+    <div class="news-source">出典: TradingView, DZH Financial Research（4/30 18:11 / 18:23 / 5/1 02:55 / 03:05 / 04:23）, FISCO（4/30 18:11 / 18:51 強い円安牽制） — 2026年4月30日-5月1日</div>
+  </div>
+</section>
+
+
+<!-- ===== コモディティ ===== -->
+<section id="commodities" class="section fade-in">
+  <h2 class="section-header">🛢 コモディティ</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">GOLD (XAU/USD)</div>
+      <div class="price-value">$4,628.69</div>
+      <div class="price-change up">+0.14%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">BRENT</div>
+      <div class="price-value">$110.40</div>
+      <div class="price-change down">-0.04%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">WTI</div>
+      <div class="price-value">$105.54</div>
+      <div class="price-change up">+0.45%</div>
+    </div>
+  </div>
+
+  <div class="news-card gold">
+    <div class="news-head">
+      <span class="news-badge alert">原油4年高値から下落</span>
+      <span class="news-badge badge-commodity">WTI $105・Brent $110</span>
+    </div>
+    <div class="news-title">原油は4年高値から下落、WTI $105.54・Brent $110.40 — Reuters「市場急変、原油下落・円高・債券利回り低下」、介入連動リスクオフでも$105台維持</div>
+    <div class="news-body">
+      原油先物は4年高値から反落しました。WTI（CL1）は<strong>$105.54（+0.45%、+$0.47）</strong>、Brentは<strong>$110.40（-0.04%、-$0.04）</strong>で前日のWTI $107.55・Brent $111.16からそれぞれ下落、ただし<strong>$105台・$110台の高値圏は維持</strong>。Reuters（4/30 23:27）「<strong>市場急変、原油4年高値から下落、円高・債券利回り低下</strong>」、Reuters（4/30 23:35）「<strong>市場急反転、原油下落・円高・債券利回り低下</strong>」が現状を端的に表現。<strong>日本の円買い介入をきっかけにリスク資産全体のセンチメントが変化</strong>、原油も利益確定売りに押される展開。ただし<strong>UAE OPEC離脱（4/30発効）・ペルシャ湾14.5百万B/D生産停止・Citi Brent最大$150シナリオ</strong>のファンダメンタルは不変で、$100割れには相当の反落が必要。WTI-Brentスプレッドは$4.86で安定的に推移し、両油種が同方向で動く構造継続。<strong>本日米時間5/1の在庫統計、5/2米雇用統計</strong>がGW中の重要材料で、需給バランスと米景気の同時織り込みが焦点。
+    </div>
+    <div class="news-source">出典: Reuters（4/30 23:27 市場急変・原油4年高値から下落 / 23:35 市場急反転・原油下落円高 / 23:41 米国株経済指標と決算で序盤まちまち / 5/1 06:32 原油下落）, <a href="https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis" target="_blank" rel="noopener">Wikipedia: 2026 Strait of Hormuz crisis</a>, <a href="https://www.iea.org/reports/oil-market-report-april-2026" target="_blank" rel="noopener">IEA Oil Market Report</a>, TradingView — 2026年4月30日-5月1日</div>
+  </div>
+
+  <div class="news-card gold">
+    <div class="news-head">
+      <span class="news-badge badge-commodity">GOLD反発</span>
+      <span class="news-badge badge-commodity">$4,628</span>
+    </div>
+    <div class="news-title">金$4,628.69（+0.14%、+$6.63）で続伸 — 円買い介入後の安全資産需要・債券利回り低下・Apple決算後のドル安継続で反発、$4,650視野</div>
+    <div class="news-body">
+      金価格（XAU/USD）は<strong>$4,628.69（+0.14%、+$6.63）</strong>と続伸、前日$4,578から$4,628に持ち直し<strong>$4,600の節目を回復</strong>しました。日本の円買い介入による<strong>ドル安・債券利回り低下</strong>（Reuters「市場急反転、原油下落・円高・債券利回り低下」）の流れが、ドル建てインフレヘッジ資産の金にとっては追い風。Apple Q1全項目record決算後のリスクオン局面でも金が底堅さを示している点は注目に値します。<strong>FRBがインフレ高水準を声明で明記</strong>＋<strong>UAE OPEC離脱で原油構造的高止まり</strong>のインフレ・ヘッジ需要は継続中で、金の中期上昇トレンドは健在。新興国中央銀行の構造的買いも変わらず。$4,500のサポートと$4,700のレジスタンスを意識したレンジ推移が当面続く見通し。本日米雇用統計次第ではドル一段安シナリオで$4,700試しの可能性も。
+    </div>
+    <div class="news-source">出典: TradingView, <a href="https://www.investing.com/currencies/xau-usd" target="_blank" rel="noopener">Investing.com</a>, Reuters（4/30 23:27 / 23:35 市場急反転・円高・債券利回り低下）, <a href="https://www.kitco.com/news/" target="_blank" rel="noopener">Kitco News</a> — 2026年4月30日-5月1日</div>
+  </div>
+</section>
+
+<!-- ===== 暗号資産 ===== -->
+<section id="crypto" class="section fade-in">
+  <h2 class="section-header">₿ 暗号資産</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">BTC/USD</div>
+      <div class="price-value">$76,318</div>
+      <div class="price-change up">+0.75%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">ETH/USD</div>
+      <div class="price-value">$2,257.31</div>
+      <div class="price-change up">+0.24%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">Fear & Greed</div>
+      <div class="price-value" style="color:var(--text-muted);">—</div>
+      <div class="price-change">介入消化中</div>
+    </div>
+  </div>
+
+  <div class="news-card purple">
+    <div class="news-head">
+      <span class="news-badge badge-crypto">BTC $76K台維持</span>
+      <span class="news-badge badge-crypto">介入で円建てBTC急騰</span>
+    </div>
+    <div class="news-title">BTC $76,318.13（+0.75%）で底堅さ維持 — 円買い介入連動でドル安・リスク資産選好やや改善、円建てBTCは介入で-2.5%調整も米株最高値で支援</div>
+    <div class="news-body">
+      BTCは<strong>$76,318.13（+0.75%、+$565.25）</strong>と$76K台で底堅い動き。日本の円買い介入による<strong>ドル安局面でドル建てBTCには追い風</strong>、米株最高値・Apple Q1全項目record・S&P/NASDAQ 4月最大月間上昇率の<strong>強烈なリスクオン環境</strong>もBTC支援。一方、<strong>円建てBTC（BTC/JPY）は介入で-2.5%程度調整</strong>（USD/JPY 160→156円の影響）したものの、ドル建ての+0.75%上昇でほぼ相殺される構造。BTCドミナンスは依然60%台、機関投資家のBTC偏重と<strong>BlackRock IBIT 80万BTC、Strategy MSTR、Tesla 11,509BTC HODL</strong>の構造的サポートは継続。Beincrypto（4/30 23:55）「<strong>MegaETHとは何か MEGAトークンが注目される理由</strong>」でEthereum L2系の話題も浮上。本日5/1米時間と5/2米雇用統計でドル動向が決まると、BTCも$78K再トライor$74K調整の二極化シナリオへ。
+    </div>
+    <div class="news-source">出典: TradingView, <a href="https://beincrypto.com/" target="_blank" rel="noopener">Beincrypto（4/30 23:55 MegaETH）</a>, <a href="https://cryptoquant.com/asset/btc/chart/exchange-flows/exchange-netflow-total" target="_blank" rel="noopener">CryptoQuant</a>, <a href="https://www.ishares.com/us/products/333011/ishares-bitcoin-trust-etf" target="_blank" rel="noopener">BlackRock IBIT</a> — 2026年4月30日-5月1日</div>
+  </div>
+
+  <div class="news-card purple">
+    <div class="news-head">
+      <span class="news-badge badge-crypto">ETH +0.24%</span>
+      <span class="news-badge badge-crypto">$2,257台</span>
+    </div>
+    <div class="news-title">ETH $2,257.31（+0.24%）で小幅高 — Apple決算後のリスクオン継続もBTC支配率高位で上値重く、本日5/2雇用統計待ち</div>
+    <div class="news-body">
+      ETHは<strong>$2,257.31（+0.24%、+$5.46）</strong>と小幅高で底堅い動き。BTC（+0.75%）に対してアンダーパフォーム継続、$2,250-2,300ゾーンでの攻防が続いています。<strong>米Big Tech 5社全社決算予想超え（Alphabet/MSFT/Meta/Amazon/Apple）</strong>でAIインフラ需要が完全裏付け、ETHエコシステム（L2、ステーブルコイン、RWAトークン化）の中期成長ストーリーも強化されました。MegaETHなどL2ナラティブも一部で再注目。ただし<strong>BTC市場支配率60%台継続</strong>でアルトコインへの本格回帰には至らず、本日5/1米時間以降の<strong>5/2米雇用統計</strong>でリスク資産全体の方向性が決まる局面。$2,300回復には追加の触媒が必要だが、$2,200のサポートは底堅く維持される地合い。
+    </div>
+    <div class="news-source">出典: TradingView, <a href="https://www.coindesk.com/price/ethereum" target="_blank" rel="noopener">CoinDesk</a>, <a href="https://beincrypto.com/" target="_blank" rel="noopener">Beincrypto（4/30 23:55 MegaETH）</a> — 2026年4月30日-5月1日</div>
+  </div>
+</section>
+
+
+<!-- ===== 株式 ===== -->
+<section id="stocks" class="section fade-in">
+  <h2 class="section-header">📈 株式指数</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">S&P 500</div>
+      <div class="price-value">7,209.01</div>
+      <div class="price-change up">+1.02%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">NASDAQ</div>
+      <div class="price-value">24,892.30</div>
+      <div class="price-change up">+0.89%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">日経225</div>
+      <div class="price-value">59,284.70</div>
+      <div class="price-change down">-1.06%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">4月月間</div>
+      <div class="price-value" style="color:var(--accent-green);">2020年以来最大</div>
+      <div class="price-change up">米株月間上昇率</div>
+    </div>
+  </div>
+
+  <div class="news-card green">
+    <div class="news-head">
+      <span class="news-badge alert">米株4月最大月間上昇</span>
+      <span class="news-badge alert">2020年以来</span>
+    </div>
+    <div class="news-title">S&P 500 +1.02%・NASDAQ +0.89%で4月最終営業日に大幅上昇引け — 4月の月間上昇率はS&P/NASDAQともに2020年以来最大、Apple Q1全項目record決算が華々しい締めくくり</div>
+    <div class="news-body">
+      4/30米国株式市場は4月最終営業日に<strong>大幅上昇引け</strong>。S&P 500は<strong>7,209.01（+73.06、+1.02%）</strong>、NASDAQは<strong>24,892.30（+219.06、+0.89%）</strong>でともに史上最高値圏での引け。Reuters（5/1 03:30）「<strong>S&P 500とナスダック、2020年以来最大の月間上昇率を記録する見通し</strong>」、5/1 05:29「<strong>ウォール街は上昇して取引を終え、S&P 500種指数とナスダック総合指数はここ数年で最大の月間上昇率を記録した</strong>」、5/1 05:26「<strong>米国株式市場、好調な4月を華々しく締めくくる</strong>」と相次ぎ報道。Reuters（5/1 01:26）「<strong>中東情勢のリスクがあるにもかかわらず、S&P 500とナスダックは2020年以来の最高月間パフォーマンスを記録する見通し</strong>」と、地政学リスクを乗り越えた驚異的なパフォーマンス。<strong>4月の主要トピック</strong>: イラン戦争停戦延長＋ホルムズ再封鎖の混乱、UAE OPEC離脱、Intel +24%(1987年以来)、フィジカルAI相場号砲、日経史上初6万円台、FOMC据置4人反対(1992年以来)、パウエル残留、Apple/MSFT/Meta/Amazon/Alphabet全社決算予想超え、日本2年ぶり円買い介入と歴史的な月。<strong>本日5/1米時間にはGDP・PCE・新規失業保険申請件数</strong>(Reuters「データ総まとめ」)、<strong>5/2米雇用統計</strong>でリスク資産の方向性が決まる局面。
+    </div>
+    <div class="news-source">出典: Reuters（5/1 01:26 中東リスクでも2020年以来最高月間 / 03:30 S&P/NASDAQ 2020年以来最大月間上昇 / 05:26 4月華々しく締めくくる / 05:29 ここ数年で最大月間上昇率 / 00:33 GDP/PCE/失業保険データ）, <a href="https://finance.yahoo.com/markets/stocks/articles/apple-q1-fy2026-earnings-record-210144735.html" target="_blank" rel="noopener">Yahoo Finance（Apple Q1 record）</a>, TradingView — 2026年4月30日-5月1日</div>
+  </div>
+
+  <div class="news-card red">
+    <div class="news-head">
+      <span class="news-badge alert">日経-632円</span>
+      <span class="news-badge badge-stock">59,284円</span>
+    </div>
+    <div class="news-title">日経225 4/30引け59,284.70円（-632.54、-1.06%）でフィジカルAI主役級の連続反落、25日線乖離は4/13以来の-5%割れ — 介入で円高加速し輸出株にもダブル圧迫</div>
+    <div class="news-body">
+      4/30の日経平均株価は<strong>59,284.70円（-632.54、-1.06%）で続落</strong>、4/27の終値最高値60,537円から3営業日連続で下落。FISCO（4/30 18:15）「<strong>日経平均テクニカル: 続落、25日線乖離は4/13以来の-5%割れ</strong>」と、テクニカル指標が4月13日以来の売られすぎ領域に到達。SBG・アドバンテスト・ファナックなど<strong>フィジカルAI主役級銘柄の連続反落</strong>が主因で、FISCO（4/30 18:51）「<strong>ドル・円は続落、日本の円安牽制で</strong>」と、午後には日本当局の介入警戒で円高が加速、輸出株にもダブル圧迫。<strong>4/30夜の介入実施（USD/JPY 160→156円）</strong>で5/1朝の東京市場には<strong>輸出採算悪化＋介入後の調整</strong>のダブルパンチが想定されます。<strong>本日5/1はGW前最後の営業日</strong>、ロング持ち越しのリスクが極めて高い局面。<strong>5/2-6 5連休</strong>中に米時間で雇用統計・ISM製造業・原油在庫・各種ハイテク決算と材料が目白押しのため、<strong>5/7再開時のギャップリスク</strong>に最大警戒。59,000円のサポートが本日割れるかどうかが第一段階の焦点で、割れれば58,000円試しの調整余地。
+    </div>
+    <div class="news-source">出典: TradingView, FISCO（4/30 18:15 日経テクニカル続落 / 18:51 ドル円続落・円安牽制）, DZH Financial Research（4/30 18:11 / 18:23 介入警戒）, <a href="https://www.bloomberg.com/news/articles/2026-04-30/japan-s-katayama-warns-nearing-timing-to-take-bold-fx-steps" target="_blank" rel="noopener">Bloomberg（片山財務相 介入警告）</a> — 2026年4月30日</div>
+  </div>
+</section>
+
+
+<!-- ===== 日本テック ===== -->
+<section id="japan-tech" class="section fade-in">
+  <h2 class="section-header">🇯🇵 日本テクノロジー</h2>
+
+  <div class="news-card orange">
+    <div class="news-head">
+      <span class="news-badge alert">Apple Q1全項目record</span>
+      <span class="news-badge badge-tech">日本サプライヤー追い風</span>
+    </div>
+    <div class="news-title">Apple Q1売上$111.2B(+16.6%)・iPhone $85.3B・Services $30Bで全項目record、Q2ガイダンス+14-17% — 日本サプライヤー（ソニーCMOS・村田MLCC・TDK電池）に追い風、Cook→Ternus移行体制の好スタート</div>
+    <div class="news-body">
+      4/30米時間引け後発表のAppleのQ1（CY2026）決算は<strong>全項目でrecord・予想超え</strong>の歴史的な内容となりました。<strong>売上$111.2B（+16.6% YoY）、iPhone売上$85.3B（前年$69.1Bから過去最高）、Services売上$30B（+14%、過去最高）</strong>、<strong>粗利率49.3%（前年47.1%）、営業利益率32.3%（前年31%）</strong>と全マージン項目が改善、<strong>Q2ガイダンスは+14-17% YoY（市場予想10%大幅超え）</strong>。Yahoo Finance「Apple Q1 FY2026 earnings: Record revenue, EPS beat」、Quartz「Apple record revenue earnings fiscal Q1 2026」と一斉報道。<strong>Tim Cook→John Ternus新CEO移行（9/1発効）が決定した後の初の四半期決算でCook体制終盤の通信簿として完璧な内容</strong>。日本サプライヤーへの波及効果は明確で、<strong>ソニーグループ（CMOSイメージセンサー）、村田製作所（MLCC）、TDK（リチウムイオン電池）、キオクシア（NAND）、太陽誘電・ローム（電子部品）</strong>等の業績連動が中期的に追い風となります。これにより<strong>Mag 7全社（Alphabet・MSFT・Meta・Amazon・Apple）が4月決算で予想超え</strong>を達成、AI＋ハードウェアの二軸成長が完全に裏付けられた形。
+    </div>
+    <div class="news-source">出典: <a href="https://finance.yahoo.com/markets/stocks/articles/apple-q1-fy2026-earnings-record-210144735.html" target="_blank" rel="noopener">Yahoo Finance（Apple Q1 record）</a>, <a href="https://qz.com/apple-record-revenue-earnings-fiscal-q1-2026-012926" target="_blank" rel="noopener">Quartz（Apple record revenue・EPS beat）</a>, <a href="https://stockstory.org/us/stocks/nasdaq/aapl/news/earnings/apple-nasdaqaapl-posts-better-than-expected-sales-in-q1-cy2026" target="_blank" rel="noopener">StockStory（AAPL Q1売上+16.6%）</a>, <a href="https://investor.apple.com/investor-relations/default.aspx" target="_blank" rel="noopener">Apple IR</a>, <a href="https://variety.com/2026/digital/news/apple-earnings-march-2026-quarter-services-revenue-1236734606/" target="_blank" rel="noopener">Variety（Apple Services record）</a> — 2026年4月30日-5月1日</div>
+  </div>
+
+  <div class="news-card orange">
+    <div class="news-head">
+      <span class="news-badge alert">2年ぶり円買い介入</span>
+      <span class="news-badge badge-tech">輸出株への影響</span>
+    </div>
+    <div class="news-title">日本2年ぶり円買い介入で輸出株（自動車・機械）に短期逆風、フィジカルAI（ファナック・安川電機）は中期成長変わらず — 介入後の戻り局面で押し目買いチャンス</div>
+    <div class="news-body">
+      日本当局の<strong>2年ぶり円買い介入</strong>はUSD/JPY 160→156円の-3.8円急落をもたらし、輸出セクターには短期的に逆風となります。トヨタ・ホンダ・日産などの<strong>自動車</strong>、ファナック・安川電機・SMC・ナブテスコなどの<strong>産業機械</strong>、ソニー・村田製作所・TDKなどの<strong>電子部品</strong>が円高直撃で、為替前提を160円に置いていた企業の決算ガイダンスが下方修正される可能性も。一方で<strong>原油WTI $105台のエネルギーコスト</strong>は全業種に圧迫、<strong>日経VI急上昇でヘッジコスト負担増</strong>、25日線乖離-5%割れ（FISCO 4/30 18:15）でテクニカル的にはオーバーソールドの局面。<strong>フィジカルAI（ファナック・安川電機・ナブテスコ・ハーモニック・ドライブ）</strong>はApple Q1のハードウェア需要強化＋Mag 7全社AI投資正当化で<strong>中期成長ストーリーは不変</strong>、Tesla Optimus 100万台/年量産との連動も継続。<strong>介入後の調整局面では押し目買いの機会</strong>、ただし5/7再開時のギャップが下方なら58,000円台前半までの下落リスク、上方なら60,000円再トライの両シナリオを意識する局面。
+    </div>
+    <div class="news-source">出典: TradingView, FISCO（4/30 18:15 日経テクニカル続落・25日線乖離-5%）, <a href="https://www.cnbc.com/2026/04/30/yen-surges-as-japan-reportedly-intervenes-to-counter-currency-weakness.html" target="_blank" rel="noopener">CNBC（円買い介入）</a>, <a href="https://finance.yahoo.com/markets/stocks/articles/apple-q1-fy2026-earnings-record-210144735.html" target="_blank" rel="noopener">Yahoo Finance（Apple Q1 record）</a> — 2026年4月30日-5月1日</div>
+  </div>
+</section>
+
+<!-- ===== 考察 ===== -->
+<section id="analysis" class="section fade-in">
+  <h2 class="section-header">🔮 考察</h2>
+  <div class="analysis-box">
+
+    <div class="analysis-pair">
+      <div class="pair-name">USD/JPY</div>
+      <span class="pair-direction dir-down">▼ 156.70円で介入後の調整局面 — RSI 36%急低下のオーバーソールド、第2弾介入警戒で戻り限定的</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>RSI 36%・ボリバン下限割れの<strong>テクニカル的売られすぎ</strong>でショートカバーの反発余地。日米金利差（FOMC 3.5-3.75%・日銀 0.75%）の優位性は不変、ファンダメンタルは依然ドル円高い。WTI $105台継続の<strong>エネルギーコスト圧迫＋日本貿易赤字構造</strong>は中期円安要因。Apple Q1全項目record＋Mag 7全社好決算でリスクオン継続。<br><br>
+        <strong>下落要因：</strong><strong>2年ぶりの介入実施</strong>で当局の本気度が証明され、第2弾介入警戒が継続。Reuters「<strong>市場急変、原油下落・円高・債券利回り低下</strong>」（4/30 23:27）の流れ継続。本日5/1米時間以降の<strong>5/2米雇用統計</strong>が下振れなら米国景気減速懸念でドル安加速、158円割れリスク。介入後の海外当局協調観測も。<br><br>
+        <strong>結論：</strong>155.00-158.00円。<strong>当面は介入後の調整局面で156-158円のレンジ</strong>、上抜けには相当の触媒（雇用統計強・米長期金利上昇・新たな地政学リスク）が必要。158円突破で再上昇シナリオ、155円割れで連休中の薄商いで一段安リスクも。GW明け5/7に向けてポジション調整加速。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">AUD/JPY</div>
+      <span class="pair-direction dir-down">▼ 112.80円で介入連動の急落、-2σ水準のオーバーソールド — 中期サポート再構築の局面</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>WTI $105・Brent $110台の<strong>原油高止まり</strong>が資源国通貨豪ドルにファンダメンタル追い風。米Big Tech全社好決算＋S&P/NASDAQ 4月最大月間上昇率のリスクオン環境。<strong>テクニカル的-2σ水準</strong>のオーバーソールドからの自律反発期待。Reuters（5/1 04:23）「<strong>豪・NZ 5日線かい離、中立水準から-2σ水準へ</strong>」。<br><br>
+        <strong>下落要因：</strong>USD/JPYの介入連動で<strong>114.65円→112.80円の-1.85円急落</strong>。DZH（5/1 02:55）「<strong>豪テクニカル一覧=MACDかい離、マイナスに転換</strong>」、03:05「<strong>NZ 5日線は低下</strong>」と全面的にテクニカル悪化。介入第2弾警戒で短期的な戻りは限定的。GW中の薄商いでさらに下押される可能性も。<br><br>
+        <strong>結論：</strong>112.00-114.00円。<strong>介入後の調整局面</strong>で112円台での攻防が続く展開。113円台回復には米雇用統計の強気サプライズが必要、112円割れなら110円台前半までの調整リスク。RBA次回会合（5月）の利上げ姿勢次第で底打ちも視野。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">NASDAQ</div>
+      <span class="pair-direction dir-up">▲ 24,892で4月最大月間上昇引け、AppleAH+で$25,000視野 — Mag 7全社record、5/2雇用統計次第で本格ブレイク</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>4/30に<strong>+0.89%で大幅上昇引け</strong>、4月の月間上昇率は<strong>2020年以来最大</strong>（Reuters）。Apple Q1全項目record（売上$111B+16.6%、iPhone/Services record、Q2ガイダンス+14-17%）でMag 7全社決算予想超え達成、AI＋ハードウェアの二軸成長が完全裏付け。日本円買い介入後のドル安局面でグロース株バリュエーションに追い風。<br><br>
+        <strong>下落要因：</strong>$24,892は史上最高値圏で<strong>未踏領域</strong>、追加買いには新規触媒が必要。BofA顧客は米国株売り継続（Reuters 4/30 01:11）の機関投資家の警戒姿勢。原油$105台のインフレ要因で米長期金利上昇圧力継続。本日米時間にGDP・PCE、5/2雇用統計の重要指標で予想下振れなら米景気減速懸念で調整リスク。<br><br>
+        <strong>結論：</strong>24,700-25,300。<strong>$25,000の心理節目突破</strong>がメインシナリオ。Apple AH反発で寄り付き高、5/2雇用統計が予想通りor強気なら大台達成可能。雇用統計弱気なら-2-3%の調整リスク、ただしMag 7全社record決算で下値は限定的。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">日経225</div>
+      <span class="pair-direction dir-down">▼ 59,284円で続落、25日線乖離-5%のオーバーソールド — 介入で輸出株にダブル圧迫も中期フィジカルAI不変、5/7再開時のギャップ最大警戒</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>Apple Q1全項目record＋Mag 7全社決算予想超えで<strong>日本サプライヤー（ソニー・村田・TDK・キオクシア等）に追い風</strong>、フィジカルAI（ファナック・安川電機・ナブテスコ）の中期成長ストーリー不変。25日線乖離-5%割れ（FISCO 4/30 18:15）の<strong>テクニカル的売られすぎ</strong>からの自律反発期待。59,000円の心理サポートで押し目買い意欲。<br><br>
+        <strong>下落要因：</strong>日銀タカ派据置（植田体制初3人反対・6月利上げ観測）＋<strong>2年ぶり円買い介入で輸出株にダブル圧迫</strong>。為替前提160円で組まれたガイダンスの下方修正リスク。WTI $105台のエネルギーコスト圧迫継続。<strong>本日5/1がGW前最後の営業日</strong>、5/2-6 5連休でApple決算・米雇用統計・各種ハイテク決算を消化できず、5/7再開時の<strong>窓開けリスク</strong>が最大警戒。<br><br>
+        <strong>結論：</strong>58,000-60,000円。本日5/1の59,000円攻防が第一段階の焦点。Apple AH反発と米株最高値追随なら反発、介入連動の円高継続なら一段安リスク。<strong>5/7再開時のギャップ</strong>は±1,000-1,500円規模想定、長期投資家はGW中もポジション調整を進める展開。日銀6月会合（6/16-17）まで方向感に乏しい局面継続。
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== コラムCTA ===== -->
+<div class="cta-banner fade-in">
+  <div class="cta-banner-content">
+    <div class="cta-label">📝 COLUMN — 解説記事</div>
+    <div class="cta-title">ボラティリティ相場を乗り越える知識を身につけませんか？</div>
+    <div class="cta-desc">地政学リスクの読み方、FX口座の選び方、NISAポートフォリオの組み方など、投資判断の基盤となるコラムを公開中。</div>
+    <div class="cta-links">
+      <a href="20260405-column.html" class="cta-link primary">地政学リスクと投資 →</a>
+      <a href="20260330-column.html" class="cta-link secondary">FX口座比較ガイド</a>
+      <a href="20260402-column.html" class="cta-link secondary">NISAポートフォリオ</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PR ===== -->
+<div class="news-card gold fade-in" style="border-left-color:var(--accent-gold);margin:2rem 0;padding:1.5rem;">
+  <div class="news-head"><span class="news-badge badge-commodity" style="background:rgba(255,224,102,0.25);color:var(--accent-gold);border:1px solid rgba(212,136,15,0.3);">PR — 広告</span></div>
+  <div class="news-title" style="margin-top:0.5rem;">FX取引を始めるなら</div>
+  <div class="news-body">当サイトの為替分析を参考に実際の取引をお考えの方へ。FX取引高3年連続世界第1位のDMM FXなら、最短即日で口座開設が可能です。</div>
+  <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:0.8rem;">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:var(--accent-gold);color:#f8f7f4;font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;">【PR】DMM FX の詳細を見る →</a>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:transparent;color:var(--accent-gold);font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;border:1px solid var(--accent-gold);">【PR】DMM CFD の詳細を見る →</a>
+  </div>
+  <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" alt="">
+  <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" alt="">
+  <div class="news-source" style="margin-top:0.8rem;">※ 投資にはリスクが伴います。FX取引は元本を超える損失が発生する可能性があります。</div>
+</div>
+
+
+<!-- ===== 著者情報 ===== -->
+<div class="author-box fade-in">
+  <div class="author-avatar">M</div>
+  <div class="author-info">
+    <div class="author-name">MARKETZ 編集部</div>
+    <div class="author-title">IT CONSULTANT × DATA-DRIVEN TRADER</div>
+    <div class="author-bio">現役ITコンサルタント・元エンジニアが運営。複雑なグローバル市場をシステム思考で俯瞰し、テクニカル分析とファンダメンタルズ分析を組み合わせたデータドリブンな市場解説をお届けしています。</div>
+  </div>
+</div>
+
+<!-- ===== 免責事項 ===== -->
+<div class="disclaimer fade-in">
+  <div class="disclaimer-title">⚠️ 免責事項・ディスクレーマー</div>
+  本記事は情報提供のみを目的としており、金融商品の売買の勧誘や投資助言を目的とするものではありません。掲載されている情報は作成時点のものであり、正確性、完全性、適時性を保証するものではありません。投資判断は必ずご自身の責任において行ってください。本記事に基づく投資行動による損失について、筆者・サイト運営者は一切の責任を負いません。<br><br>
+  本記事に記載されているニュースは、CNBC、Bloomberg、Reuters、CNN、Al Jazeera、Trading Economics、Yahoo Finance、Investing.com、The Japan Times、EIA等の公開情報を参照し、筆者が独自に再構成したものです。各出典元の著作物をそのまま転載・翻訳したものではありません。<br><br>
+  金融商品取引法に基づく表記：本記事は金融商品取引法第2条に定める金融商品取引業に該当する行為を行うものではありません。
+</div>
+
+
+<!-- ===== 前後記事ナビ + 関連記事 ===== -->
+<nav class="article-nav" id="article-nav"></nav>
+<div class="related-section" id="related-articles"></div>
+
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>MARKETZ — <a href="https://marketpulse-daily.com/">ホームに戻る</a></p>
+  <p>© 2026 MARKETZ. All rights reserved.</p>
+</footer>
+
+<!-- FAB BUTTONS -->
+<div class="fab-group">
+  <a href="https://marketpulse-daily.com/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
+  <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
+</div>
+
+<script>
+// Fade-in Observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); }});
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Sticky nav highlight
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.sticky-nav a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id');
+  });
+  navLinks.forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+  // FAB group
+  const fabGroup = document.querySelector('.fab-group');
+  if (fabGroup) {
+    if (window.scrollY > 600) { fabGroup.style.display = 'flex'; } else { fabGroup.style.display = 'none'; }
+  }
+});
+
+// Article navigation & related articles
+(function(){
+  const slug = location.pathname.split('/').pop().replace('.html','');
+  fetch('../data/posts.json').then(r=>r.json()).then(data=>{
+    const posts = data.posts;
+    const idx = posts.findIndex(p=>p.slug===slug);
+    // Next/Prev nav
+    const nav = document.getElementById('article-nav');
+    if(nav && idx!==-1){
+      let html='';
+      if(idx<posts.length-1){
+        const prev=posts[idx+1];
+        html+='<a href="'+prev.slug+'.html"><div class="nav-label">← 前の記事</div><div class="nav-title">'+prev.title+'</div></a>';
+      }
+      if(idx>0){
+        const next=posts[idx-1];
+        html+='<a href="'+next.slug+'.html" class="nav-next"><div class="nav-label">次の記事 →</div><div class="nav-title">'+next.title+'</div></a>';
+      }
+      nav.innerHTML=html;
+    }
+    // Related articles (same tags, excluding self, max 3)
+    const rel = document.getElementById('related-articles');
+    if(rel && idx!==-1){
+      const myTags=new Set(posts[idx].tags||[]);
+      const scored=posts.filter((_,i)=>i!==idx).map(p=>{
+        const common=(p.tags||[]).filter(t=>myTags.has(t)).length;
+        return{...p,score:common};
+      }).filter(p=>p.score>0).sort((a,b)=>b.score-a.score).slice(0,3);
+      if(scored.length){
+        let html='<div class="related-heading">📰 関連記事</div><div class="related-list">';
+        scored.forEach(p=>{
+          html+='<a href="'+p.slug+'.html" class="related-card"><div class="rc-date">'+p.date+'</div><div class="rc-title">'+p.title+'</div><div class="rc-tags">'+(p.tags||[]).slice(0,4).map(t=>'<span class="rc-tag">'+t+'</span>').join('')+'</div></a>';
+        });
+        html+='</div>';
+        rel.innerHTML=html;
+      }
+    }
+  }).catch(()=>{});
+})();
+
+</script>
+</body>
+</html>
