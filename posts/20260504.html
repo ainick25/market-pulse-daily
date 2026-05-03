@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- A8.net Link Manager -->
+<script src="//statics.a8.net/a8link/a8linkmgr.js"></script>
+<script>
+  a8linkmgr({
+    "config_id": "3FffsI9Y9VCBqU9ikTQJ"
+  });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KFT35KZZVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KFT35KZZVC');
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MARKETZ — 2026.05.04 マーケットニュースダイジェスト｜NASDAQ史上初25,000突破、米株4月+15.3%(2020年4月以来最大)、ストラテジーBTC購入停止、バフェット「Abel後継成功」、本日みどりの日</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #f8f7f4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0efe8;
+  --text-primary: #1a1a2e;
+  --text-secondary: #3d3d56;
+  --text-muted: #7a7a8e;
+  --accent-red: #e63946;
+  --accent-green: #06a77d;
+  --accent-gold: #d4880f;
+  --accent-blue: #2176ff;
+  --accent-purple: #7b61ff;
+  --accent-orange: #e07b39;
+  --border: rgba(0,0,0,0.08);
+  --border-accent: rgba(0,0,0,0.12);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Meiryo', 'Yu Gothic UI', 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.2rem; }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridSlide 20s linear infinite;
+}
+@keyframes gridSlide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(60px, 60px); }
+}
+.hero-content { position: relative; z-index: 1; padding: 2rem 1rem; }
+.hero-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: #d4880f;
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
+}
+.hero-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+.hero-subtitle {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto; margin-right: auto;
+}
+.hero-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+.hero-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: #ffffff;
+  background: rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.15);
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+}
+.hero-tag.alert {
+  border-color: rgba(255,100,120,0.6);
+  background: rgba(255,100,120,0.2);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+/* ===== STICKY NAV ===== */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.sticky-nav ul {
+  display: flex; list-style: none;
+  max-width: 900px; margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+  gap: 0;
+}
+.sticky-nav a {
+  display: block;
+  padding: 0.75rem 0.8rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.sticky-nav a:hover, .sticky-nav a.active {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+  background: rgba(0,0,0,0.04);
+}
+
+/* ===== SECTION ===== */
+.section { padding: 3rem 0; }
+.section-header {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-accent);
+}
+
+/* ===== PRICE STRIP ===== */
+.price-strip {
+  display: flex; flex-wrap: wrap; gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.price-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  flex: 1 1 140px;
+  min-width: 130px;
+}
+.price-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+.price-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+.price-change {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 0.15rem;
+}
+.price-change.up { color: var(--accent-green); }
+.price-change.down { color: var(--accent-red); }
+
+/* ===== NEWS CARD ===== */
+.news-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+  border-left: 3px solid transparent;
+}
+.news-card:hover { background: var(--bg-card-hover); }
+.news-card.blue { border-left-color: var(--accent-blue); }
+.news-card.red { border-left-color: var(--accent-red); }
+.news-card.gold { border-left-color: var(--accent-gold); }
+.news-card.green { border-left-color: var(--accent-green); }
+.news-card.purple { border-left-color: var(--accent-purple); }
+.news-card.orange { border-left-color: var(--accent-orange); }
+
+.news-head { margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.news-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+}
+.badge-fx { background: rgba(33,118,255,0.1); color: var(--accent-blue); border: 1px solid rgba(33,118,255,0.2); }
+.badge-commodity { background: rgba(212,136,15,0.1); color: var(--accent-gold); border: 1px solid rgba(212,136,15,0.2); }
+.badge-crypto { background: rgba(123,97,255,0.1); color: var(--accent-purple); border: 1px solid rgba(123,97,255,0.2); }
+.badge-stock { background: rgba(6,167,125,0.1); color: var(--accent-green); border: 1px solid rgba(6,167,125,0.2); }
+.badge-geo { background: rgba(230,57,70,0.1); color: var(--accent-red); border: 1px solid rgba(230,57,70,0.2); }
+.badge-tech { background: rgba(224,123,57,0.1); color: var(--accent-orange); border: 1px solid rgba(224,123,57,0.2); }
+
+.news-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+.news-body {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.news-source {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+.news-source a{color:var(--accent-gold);text-decoration:none;transition:color 0.2s}
+.news-source a:hover{color:var(--text-primary);text-decoration:underline}
+
+/* ===== ANALYSIS ===== */
+.analysis-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.analysis-pair { margin-bottom: 1.5rem; }
+.analysis-pair:last-child { margin-bottom: 0; }
+.pair-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+.pair-direction {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+.dir-up { background: rgba(6,167,125,0.1); color: var(--accent-green); border: 1px solid rgba(6,167,125,0.2); }
+.dir-down { background: rgba(230,57,70,0.1); color: var(--accent-red); border: 1px solid rgba(230,57,70,0.2); }
+.dir-neutral { background: rgba(212,136,15,0.1); color: var(--accent-gold); border: 1px solid rgba(212,136,15,0.2); }
+.pair-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.pair-text strong { color: var(--text-primary); }
+
+/* ===== DISCLAIMER ===== */
+.disclaimer {
+  background: var(--bg-card);
+  border: 2px solid var(--accent-red);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin: 2rem 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.disclaimer-title {
+  color: var(--accent-red);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== FADE IN ===== */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+.footer a { color: var(--accent-gold); text-decoration: none; }
+
+/* ===== FAB BUTTONS ===== */
+.fab-group {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  display: none; flex-direction: column; gap: 0.5rem;
+  z-index: 99;
+}
+.fab-btn {
+  width: 44px; height: 44px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.fab-btn:hover { background: var(--bg-card-hover); }
+.fab-home { font-size: 1rem; }
+
+@media (max-width: 600px) {
+  .price-card { flex: 1 1 100%; }
+  .sticky-nav a { font-size: 0.75rem; padding: 0.6rem 0.5rem; }
+}
+
+
+/* ===== AUTHOR BOX ===== */
+.author-box{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.5rem;margin:2rem 0;display:flex;gap:1.2rem;align-items:flex-start;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+.author-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#1a1a2e,#0f3460);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.5rem;color:#ffe066;font-family:'JetBrains Mono',monospace;font-weight:700}
+.author-info{flex:1;min-width:0}
+.author-name{font-weight:700;font-size:0.95rem;color:var(--text-primary);margin-bottom:0.2rem}
+.author-title{font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--accent-gold);letter-spacing:0.03em;margin-bottom:0.5rem}
+.author-bio{font-size:0.82rem;color:var(--text-secondary);line-height:1.7}
+@media(max-width:600px){.author-box{flex-direction:column;align-items:center;text-align:center}.author-avatar{width:56px;height:56px;font-size:1.3rem}}
+
+/* ===== CTA BANNER ===== */
+.cta-banner{background:linear-gradient(135deg,#1a1a2e 0%,#0f3460 100%);border-radius:10px;padding:1.5rem;margin:2rem 0;position:relative;overflow:hidden}
+.cta-banner::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:40px 40px}
+.cta-banner-content{position:relative;z-index:1}
+.cta-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:#ffe066;letter-spacing:0.1em;margin-bottom:0.4rem}
+.cta-title{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:#fff;margin-bottom:0.5rem}
+.cta-desc{font-size:0.85rem;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:1rem}
+.cta-links{display:flex;flex-wrap:wrap;gap:0.6rem}
+.cta-link{display:inline-block;padding:0.5rem 1rem;border-radius:6px;font-size:0.82rem;font-weight:700;text-decoration:none;transition:all 0.2s}
+.cta-link.primary{background:var(--accent-gold);color:#0a0a0f}
+.cta-link.primary:hover{background:#ffe066}
+.cta-link.secondary{background:transparent;color:var(--accent-gold);border:1px solid rgba(240,165,0,0.4)}
+.cta-link.secondary:hover{border-color:var(--accent-gold);background:rgba(240,165,0,0.1)}
+
+/* ===== ARTICLE NAV (Next/Prev) ===== */
+.article-nav{display:flex;gap:1rem;margin:2rem 0;flex-wrap:wrap}
+.article-nav a{flex:1;min-width:200px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.article-nav a:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.article-nav .nav-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--text-muted);letter-spacing:0.05em;margin-bottom:0.3rem}
+.article-nav .nav-title{font-size:0.85rem;font-weight:700;color:var(--text-primary);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.article-nav .nav-next{text-align:right;margin-left:auto}
+/* ===== RELATED ARTICLES ===== */
+.related-section{margin:2rem 0}
+.related-heading{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:var(--text-primary);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--border-accent)}
+.related-list{display:flex;flex-direction:column;gap:0.6rem}
+.related-card{display:block;background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--accent-gold);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.related-card:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.related-card .rc-date{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--accent-gold);letter-spacing:0.05em}
+.related-card .rc-title{font-size:0.9rem;font-weight:700;color:var(--text-primary);margin-top:0.2rem;line-height:1.5}
+.related-card .rc-tags{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.4rem}
+.related-card .rc-tag{font-family:'JetBrains Mono',monospace;font-size:0.62rem;padding:0.15rem 0.4rem;border-radius:3px;background:rgba(0,0,0,0.04);color:var(--text-muted)}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb{max-width:900px;margin:0 auto;padding:0.6rem 1.2rem;font-size:0.75rem;color:var(--text-muted)}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.2s}
+.breadcrumb a:hover{color:var(--text-primary);text-decoration:none}
+.breadcrumb .sep{margin:0 0.4rem;opacity:0.5}
+.breadcrumb .current{color:var(--text-secondary)}
+</style>
+<meta name="description" content="NASDAQ史上初25,000突破(25,114.44)、S&P 7,230で過去最高値継続。NASDAQ 4月+15.3%(2020年4月以来最大)、S&P+10.4%(2020年11月以来)。ストラテジー(MSTR)が5/5決算前にBTC購入停止(818,334BTC保有$64.4B)、BTC$79K目前。バフェットが「Abel後継成功」発言、Berkshire Q1営業利益+18%。USD/JPY 156.80円で介入第2弾警戒、本日みどりの日 — 2026年5月4日">
+<link rel="canonical" href="https://marketpulse-daily.com/posts/20260504.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MARKETZ — 2026.05.04 マーケットニュースダイジェスト｜NASDAQ史上初25,000突破、ストラテジーBTC購入停止、バフェット「Abel後継成功」、本日みどりの日">
+<meta property="og:description" content="NASDAQ史上初25,000突破、米株4月+15.3%(2020年4月以来最大月間上昇)。ストラテジー5/5決算前にBTC購入停止(818,334BTC)、BTC $79K目前。バフェット「Abel後継成功」発言、Berkshire Q1+18%。USD/JPY 156.80円で介入第2弾警戒、本日みどりの日でGW中">
+<meta property="og:url" content="https://marketpulse-daily.com/posts/20260504.html">
+<meta property="og:site_name" content="MARKETZ">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://marketpulse-daily.com/images/og-default.svg">
+<meta property="article:published_time" content="2026-05-04T00:00:00+09:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MARKETZ — 2026.05.04 マーケットニュースダイジェスト｜NASDAQ初25,000・ストラテジーBTC停止・バフェット「Abel成功」">
+<meta name="twitter:description" content="NASDAQ史上初25,000突破、米株4月+15.3%。ストラテジー5/5決算前BTC購入停止(818,334BTC)、BTC$79K目前。バフェット「Abel後継成功」、USD/JPY 156.80円介入第2弾警戒、本日みどりの日">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NewsArticle","headline":"MARKETZ — 2026.05.04 マーケットニュースダイジェスト｜NASDAQ史上初25,000突破、ストラテジーBTC購入停止、バフェット「Abel後継成功」、本日みどりの日","datePublished":"2026-05-04T00:00:00+09:00","publisher":{"@type":"Organization","name":"MARKETZ","logo":{"@type":"ImageObject","url":"https://marketpulse-daily.com/images/og-default.svg"}},"mainEntityOfPage":"https://marketpulse-daily.com/posts/20260504.html","author":{"@type":"Organization","name":"MARKETZ","description":"ITコンサルタント×データドリブントレーダーによるマーケット分析メディア"},"image":"https://marketpulse-daily.com/images/og-default.svg"}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://marketpulse-daily.com/"},{"@type":"ListItem","position":2,"name":"アーカイブ","item":"https://marketpulse-daily.com/archive.html"},{"@type":"ListItem","position":3,"name":"2026.05.04 マーケットニュースダイジェスト"}]}</script>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-date">2026.05.04 — MONDAY（みどりの日／日本休場・GW中）</div>
+    <h1 class="hero-title">マーケットニュースダイジェスト</h1>
+    <p class="hero-subtitle"><strong>NASDAQ史上初の25,000突破</strong>（25,114.44、+0.89%）・S&P 7,230で過去最高値継続。NASDAQ 4月<strong>+15.3%（2020年4月以来最大の月間上昇）</strong>・S&P+10.4%（2020年11月以来最強）。<strong>ストラテジー(MSTR)が5/5 Q1決算前にBTC購入停止</strong>（818,334BTC保有で$64.4B、平均$75,532）、BTC $79,064で$80K目前。<strong>バフェット「Abel後継は100%成功」</strong>発言、Berkshire Q1営業利益+18%。USD/JPY 156.80円で介入第2弾警戒、本日みどりの日で日本休場</p>
+    <div class="hero-tags">
+      <span class="hero-tag alert">NASDAQ史上初25,000</span>
+      <span class="hero-tag alert">米株4月+15.3%(2020年以来)</span>
+      <span class="hero-tag alert">ストラテジーBTC購入停止</span>
+      <span class="hero-tag">バフェット後継成功</span>
+      <span class="hero-tag">BTC $79K</span>
+      <span class="hero-tag">介入第2弾警戒</span>
+      <span class="hero-tag">みどりの日</span>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb" aria-label="パンくずリスト">
+  <a href="https://marketpulse-daily.com/">ホーム</a>
+  <span class="sep">›</span>
+  <a href="https://marketpulse-daily.com/archive.html">アーカイブ</a>
+  <span class="sep">›</span>
+  <span class="current">2026.05.04 マーケットニュースダイジェスト</span>
+</div>
+
+<!-- STICKY NAV -->
+<nav class="sticky-nav">
+  <ul>
+    <li><a href="#geopolitics">🌍地政学</a></li>
+    <li><a href="#fx">💱為替</a></li>
+    <li><a href="#commodities">🛢コモディティ</a></li>
+    <li><a href="#crypto">₿暗号資産</a></li>
+    <li><a href="#stocks">📈株式</a></li>
+    <li><a href="#japan-tech">🇯🇵日本テック</a></li>
+    <li><a href="#analysis">🔮考察</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+<!-- ===== 地政学 ===== -->
+<section id="geopolitics" class="section fade-in">
+  <h2 class="section-header">🌍 地政学・社会情勢</h2>
+
+  <div class="news-card red">
+    <div class="news-head">
+      <span class="news-badge alert">NASDAQ史上初25,000突破</span>
+      <span class="news-badge alert">米株4月+15.3%</span>
+    </div>
+    <div class="news-title">NASDAQが史上初の25,000突破（25,114.44、+0.89%）・S&P 7,230で過去最高値継続 — NASDAQ 4月+15.3%は2020年4月以来最大、S&P+10.4%は2020年11月以来最強の月間上昇率</div>
+    <div class="news-body">
+      5/1の米国株式市場で<strong>NASDAQ総合指数が史上初の25,000を突破</strong>、終値<strong>25,114.44（+222.13、+0.89%）</strong>と歴史的なマイルストーンを達成しました（GuruFocus「<strong>Nasdaq Composite Reaches Milestone of 25,000 Amid Strong Tech Earnings</strong>」、TheStreet「<strong>Nasdaq, S&P 500 add to banner rally with another record close to end the week</strong>」）。S&P 500も<strong>7,230.12（+21.11、+0.29%）</strong>で過去最高値を継続。NASDAQの<strong>4月月間上昇率は+15.3%で2020年4月（コロナショックからの戻り）以来最大</strong>、S&P 500も<strong>+10.4%で2020年11月（ワクチン承認発表の月）以来最強の月間パフォーマンス</strong>。背景は ①Mag 7全社決算予想超え（Apple Q1売上$111B+16.6%、Alphabet Cloud +63%、Azure +40%、AWS +28%、Meta通期Capex上方修正）、②S&P 500企業のearnings growth +27.1%（4年以上ぶり最高）、③米イラン戦争・ホルムズ封鎖を「shrug off（無視）」する強烈なリスクオン、の三重要因。Reuters（5/2 03:33）「<strong>S&P 500とナスダックが上昇、決算発表が相次いだ1週間を経て週間でプラスとなる見通し</strong>」、5/2 05:34「<strong>S&P 500種指数とナスダック総合指数は上昇して取引を終え、決算発表が相次いだ1週間を経て週間で上昇した</strong>」と週間プラス引け。Reuters（5/1 23:29）「<strong>4月の好調な推移を受け、米国株式市場は5月を堅調なスタートで迎えた</strong>」と5月入りも好調。
+    </div>
+    <div class="news-source">出典: <a href="https://www.gurufocus.com/news/8837798/nasdaq-composite-reaches-milestone-of-25000-amid-strong-tech-earnings" target="_blank" rel="noopener">GuruFocus（NASDAQ 25,000マイルストーン達成）</a>, <a href="https://www.thestreet.com/latest-news/stock-market-today-may-1-2026-updates" target="_blank" rel="noopener">TheStreet（5/1 NASDAQ・S&P record close）</a>, <a href="https://www.gurufocus.com/news/8838218/us-markets-mixed-as-nasdaq-hits-25000-sandisk-stock-surges" target="_blank" rel="noopener">GuruFocus（NASDAQ 25,000・SanDisk急騰）</a>, <a href="https://www.drmattlynch.com/the-unbelievable-nasdaq-surge-25000-milestone-shattered-what-you-need-to-know-now/" target="_blank" rel="noopener">Dr. Matthew Lynch（NASDAQ 25,000突破）</a>, Reuters（5/1 21:49 / 23:29 / 5/2 01:42 / 03:33 / 05:24 / 05:34）, <a href="https://insight.factset.com/sp-500-earnings-season-update-may-1-2026" target="_blank" rel="noopener">FactSet（S&P 500決算+27.1%）</a> — 2026年5月1-2日</div>
+  </div>
+
+  <div class="news-card alert">
+    <div class="news-head">
+      <span class="news-badge alert">バフェット「Abel後継成功」</span>
+      <span class="news-badge alert">Berkshire Q1+18%</span>
+    </div>
+    <div class="news-title">Berkshire Hathaway年次総会5/2-3、ウォーレン・バフェットが新CEO Greg Abel後継を「100%成功」と評価 — Q1営業利益+18%・保険引受+28%、$1.02兆ドルの巨大コングロマリット第二章</div>
+    <div class="news-body">
+      <strong>Berkshire Hathawayの2026年次総会</strong>が5/2-3にネブラスカ州オマハで開催されました。これは<strong>年初にウォーレン・バフェット氏（94）からGreg Abel氏（63）にCEO職が移譲された後の初の年次総会</strong>です。CNBC「<strong>Greg Abel rules out Berkshire break-up, stresses continuity with Buffett's legacy at annual meeting</strong>」（5/3）、Bloomberg「<strong>Berkshire Hathaway Meeting Marks New Era as Greg Abel Steps Into CEO Role</strong>」（5/2）が一斉報道。<strong>バフェットは会場でAbelの後継を「100%成功した」と発言</strong>、「<strong>Gregは私がやってきたことを全てやっていて、しかも全てにおいてより上手くやっている</strong>」と最大級の賛辞。Abel新CEOは「<strong>$1.02兆ドルのコングロマリットの巨額キャッシュを賢明に投資する</strong>」「<strong>Berkshireの分割（break-up）はない</strong>」と継続性を強調。総会前の発表では<strong>Q1営業利益+18% YoY、保険引受+28%</strong>と好調な業績を示しました。シンボリックな演出として、<strong>Buffettの「ジャージ#60（CEO在任60年）」を会場ラフターに掲揚</strong>。バフェット時代の終焉とAbel体制への完全移行を象徴する歴史的な総会となりました。Berkshire株主たちはAbelを評価しつつも「<strong>バフェットに追随するのは難しい</strong>」（Reuters 5/3 19:00）との見方も。
+    </div>
+    <div class="news-source">出典: <a href="https://www.cnbc.com/2026/05/03/berkshire-annual-meeting-greg-abel-rules-out-break-up-stressing-continuity-with-buffett.html" target="_blank" rel="noopener">CNBC（Abel・分割なし・継続性強調）</a>, <a href="https://www.cnbc.com/2026/05/02/warren-buffett-berkshire-hathaway-annual-meeting-2026-live-updates.html" target="_blank" rel="noopener">CNBC（バフェット年次総会ライブ）</a>, <a href="https://www.bloomberg.com/news/articles/2026-05-02/berkshire-meeting-highlights-tough-balancing-act-for-greg-abel" target="_blank" rel="noopener">Bloomberg（Abel新CEO体制）</a>, <a href="https://www.business-standard.com/world-news/berkshire-hathaway-greg-abel-first-ceo-meeting-warren-buffett-cash-126050300130_1.html" target="_blank" rel="noopener">Business Standard（Abel初のCEO総会）</a>, <a href="https://www.japantimes.co.jp/business/2026/05/03/companies/berkshire-hathaway-abel-ceo/" target="_blank" rel="noopener">Japan Times（Abel post-Buffett）</a>, Reuters（5/3 19:00 株主の見方） — 2026年5月2-3日</div>
+  </div>
+</section>
+
+<!-- ===== 為替 ===== -->
+<section id="fx" class="section fade-in">
+  <h2 class="section-header">💱 為替</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">USD/JPY</div>
+      <div class="price-value">156.81</div>
+      <div class="price-change down">-0.18%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">EUR/JPY</div>
+      <div class="price-value">183.99</div>
+      <div class="price-change down">-0.09%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">GBP/JPY</div>
+      <div class="price-value">213.07</div>
+      <div class="price-change down">-0.08%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">AUD/JPY</div>
+      <div class="price-value">113.10</div>
+      <div class="price-change down">-0.04%</div>
+    </div>
+  </div>
+
+  <div class="news-card alert">
+    <div class="news-head">
+      <span class="news-badge alert">介入後の反動</span>
+      <span class="news-badge alert">USD/JPY -3.5円</span>
+    </div>
+    <div class="news-title">USD/JPY 156.81円で介入後3日経過、156円後半で売り先行も底堅く始まる — 5/1 NY終値157.01円から下落、本日東京為替見通し「介入第2弾に要警戒」</div>
+    <div class="news-body">
+      USD/JPYは<strong>156.808円（-0.18%、-0.280円）</strong>と156円後半で底堅く推移。介入実施（4/30）から3営業日経過し、市場は新たな水準で安定しつつあります。5/1のNY時間は<strong>反発して終値157.01円</strong>（DZH 5/2 07:21「NY為替・1日=ドル円が反発、終値は157.01円」）、1日レンジは<strong>155.50-157.33円</strong>（DZH 5/2 06:20）と荒い動きを記録。5/1 23:17 DZH「<strong>弱含み、全般にドル売りが強まる中で156.30円台まで下押し</strong>」と週末にかけて再下落、現在156.80円。本日5/4は<strong>みどりの日で日本休場</strong>、DZH（5/4 06:11）「<strong>156円後半で売り先行も底堅く始まる</strong>」、08:00「<strong>東京為替見通し=、イラン情勢と円買い介入第2弾に要警戒か</strong>」、08:08「<strong>東京外国為替市場概況・8時、上値重い</strong>」と早朝の動き。<strong>5/4 06:23 DZHオーダー「156.50円買いやや小さめ・ストップロス売りやや小さめ」</strong>と156.50円が分岐点。クロス円も連動的に下押しで、<strong>EUR/JPY 183.99円・GBP/JPY 213.07円・AUD/JPY 113.10円</strong>と全面的な円買い継続。Reuters（5/2 03:54 DZH）「<strong>週間為替展望（ドル/ユーロ）、イラン情勢や介入に警戒</strong>」と、当面はイラン関連ヘッドラインと介入第2弾観測の二大材料が為替を動かす展開。
+    </div>
+    <div class="news-source">出典: DZH Financial Research（5/1 23:17 弱含み156.30円台 / 5/2 06:20 1日レンジ / 5/2 07:21 終値157.01円 / 5/2 03:54 週間為替展望 / 5/4 06:11 / 06:23 / 08:00 東京為替見通し / 08:08）, Reuters（5/3 19:00 バークシャー） — 2026年5月1-4日</div>
+  </div>
+
+  <div class="news-card blue">
+    <div class="news-head">
+      <span class="news-badge badge-fx">EUR/JPY 183円台</span>
+      <span class="news-badge badge-fx">クロス円総崩れ</span>
+    </div>
+    <div class="news-title">EUR/JPY 183.99円・AUD/JPY 113.10円で乖離は-2σから-1σ水準へ持ち直し — 90日線付近で推移、5/4 オーダーは183.80円買いやや小さめ・113.40円豪売り</div>
+    <div class="news-body">
+      クロス円は介入後のオーバーソールドから持ち直しの段階。<strong>EUR/JPY 183.989円（-0.09%、-0.160円）</strong>はDZH（5/2 02:35）「<strong>テクニカル一覧=90日線付近で推移</strong>」、02:15「<strong>ボリバン下限を下回って推移</strong>」と中期サポート水準。5/2 04:12「<strong>乖離1=5・20日線かい離、-2σ水準から-1σ水準へ</strong>」と介入後の急落から持ち直し基調。<strong>5/4 06:53 オーダー「183.80円買いやや小さめ」</strong>が下値の指し値。<strong>GBP/JPY 213.073円（-0.08%、-0.175円）</strong>は213円台で底堅く推移。<strong>AUD/JPY 113.096円（-0.04%、-0.044円）</strong>はDZH（5/2 02:55）「<strong>豪テクニカル一覧=すう勢を示す5日線は低下</strong>」、03:05「<strong>NZテクニカル一覧=21日線手前まで買い戻し</strong>」、04:20「<strong>豪・NZ 5日線かい離、-2σ水準から-1σ水準へ</strong>」と過熱反動からの自律反発。<strong>5/4 07:17 豪オーダー「113.40円売り」、5/1 21:52「113.70円売り」</strong>と上値抵抗が形成。原油WTI $101台への下落でコモディティ通貨への支援は減退、当面は介入後のレンジ相場が続く見通し。
+    </div>
+    <div class="news-source">出典: TradingView, DZH Financial Research（5/1 21:52 豪113.70円 / 5/2 02:15 / 02:35 / 02:55 / 03:05 / 04:12 / 04:20 / 5/4 06:53 / 07:17） — 2026年5月1-4日</div>
+  </div>
+</section>
+
+
+<!-- ===== コモディティ ===== -->
+<section id="commodities" class="section fade-in">
+  <h2 class="section-header">🛢 コモディティ</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">GOLD (XAU/USD)</div>
+      <div class="price-value">$4,614.81</div>
+      <div class="price-change up">+0.02%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">BRENT</div>
+      <div class="price-value">$107.54</div>
+      <div class="price-change down">-0.58%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">WTI</div>
+      <div class="price-value">$101.11</div>
+      <div class="price-change down">-0.81%</div>
+    </div>
+  </div>
+
+  <div class="news-card gold">
+    <div class="news-head">
+      <span class="news-badge alert">原油4年高値から下落</span>
+      <span class="news-badge badge-commodity">WTI $105・Brent $110</span>
+    </div>
+    <div class="news-title">原油はWTI $101.11・Brent $107.54で4年高値から続落 — 介入連動の円高＋米株好調のリスクオン環境で利益確定継続、$100ライン攻防</div>
+    <div class="news-body">
+      原油先物は4年高値からの調整が継続。WTI（CL1）は<strong>$101.11（-0.81%、-$0.83）</strong>で<strong>$100ラインの攻防</strong>に突入、Brentは<strong>$107.54（-0.58%、-$0.63）</strong>で$107台に下落。前週のWTI $107.55・Brent $111.16から数日で-$6相当の調整となりました。背景は ①日本の円買い介入をきっかけにリスク資産全体のセンチメント変化、②NASDAQ 25,000突破・S&P史上最高値継続のリスクオンで「インフレヘッジ需要」一服、③米PMI製造業4月拡大継続（Reuters 5/2 00:25「対立するPMI: 物価高騰の中、4月の製造業活動は拡大を継続」）の堅調指標で景気減速懸念後退、の三重要因。ただし<strong>UAE OPEC離脱（5/1正式発効）・ペルシャ湾14.5百万B/D生産停止・Citi Brent最大$150シナリオ</strong>のファンダメンタルは不変で、$100割れには相当の追加材料が必要。WTI-Brentスプレッドは$6.43で再拡大、両油種で構造的差異も再観測。<strong>本日5/4はみどりの日で日本休場</strong>、米時間以降の中東情勢ヘッドラインが当面の材料。
+    </div>
+    <div class="news-source">出典: Reuters（5/2 00:25 米PMI製造業4月拡大継続）, <a href="https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis" target="_blank" rel="noopener">Wikipedia: 2026 Strait of Hormuz crisis</a>, <a href="https://www.iea.org/reports/oil-market-report-april-2026" target="_blank" rel="noopener">IEA Oil Market Report</a>, TradingView — 2026年5月1-4日</div>
+  </div>
+
+  <div class="news-card gold">
+    <div class="news-head">
+      <span class="news-badge badge-commodity">GOLD反発</span>
+      <span class="news-badge badge-commodity">$4,628</span>
+    </div>
+    <div class="news-title">金$4,614.81（+0.02%）でほぼ横ばい — 米株最高値・原油調整・介入後の落ち着きで安全資産需要は中立、$4,500-4,700のレンジ継続</div>
+    <div class="news-body">
+      金価格（XAU/USD）は<strong>$4,614.81（+0.02%、+$0.98）</strong>とほぼ横ばい。前週末$4,628から$4,614へ若干軟化、<strong>$4,600付近で安定的に推移</strong>。NASDAQ 25,000突破・S&P最高値継続の強烈なリスクオン環境にもかかわらず金が底堅さを保っている点は注目に値します。一方で①原油WTI $100ラインまで下落でインフレヘッジ需要やや後退、②介入後の円高でドル建て資産の魅力が相対的に低下、③Mag 7全社record決算でリスクマネーが株式に集中、の要因で上値も重い状況。<strong>FRBの「インフレ高水準」声明、UAE OPEC離脱の構造変化、新興国中央銀行の継続買い</strong>の中期サポートは健在で、$4,500-4,700のレンジでの推移が当面続く見通し。$4,500割れなら$4,400試しの調整、$4,700突破なら年初来高値$4,830再トライの二極化シナリオ。
+    </div>
+    <div class="news-source">出典: TradingView, <a href="https://www.investing.com/currencies/xau-usd" target="_blank" rel="noopener">Investing.com</a>, Reuters（5/2 米PMI拡大継続）, <a href="https://www.kitco.com/news/" target="_blank" rel="noopener">Kitco News</a> — 2026年5月1-4日</div>
+  </div>
+</section>
+
+<!-- ===== 暗号資産 ===== -->
+<section id="crypto" class="section fade-in">
+  <h2 class="section-header">₿ 暗号資産</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">BTC/USD</div>
+      <div class="price-value">$79,064</div>
+      <div class="price-change up">+0.49%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">ETH/USD</div>
+      <div class="price-value">$2,337.59</div>
+      <div class="price-change up">+0.89%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">MSTR保有BTC</div>
+      <div class="price-value" style="color:var(--accent-amber);">818,334</div>
+      <div class="price-change">$64.4B・購入停止</div>
+    </div>
+  </div>
+
+  <div class="news-card purple">
+    <div class="news-head">
+      <span class="news-badge alert">ストラテジーBTC購入停止</span>
+      <span class="news-badge alert">5/5 Q1決算前</span>
+    </div>
+    <div class="news-title">Strategy(MSTR、旧MicroStrategy)が5/5 Q1決算前にBTC購入を一時停止 — 818,334BTC保有($64.44B、平均$75,532、含み益+4.23%)、Q1で89,600BTC追加(過去2番目の規模)</div>
+    <div class="news-body">
+      Beincrypto（5/4 03:08）「<strong>ストラテジー、決算前にBTC購入停止=資金戦略を転換</strong>」、Yahoo Finance「<strong>MicroStrategy Pauses Bitcoin Buys Ahead of May 5 Q1 Earnings</strong>」が一斉速報しました。Michael Saylor会長は「<strong>今週はBitcoin購入を行わない</strong>」と明言、<strong>明日5/5（火）米時間17:00 ETに開催されるQ1 2026決算カンファレンスコール</strong>を前にした静観姿勢。CoinDesk・Beincryptoによれば、<strong>ストラテジーは現在818,334 BTCを保有（$64.44B時価、平均取得コスト$75,532/BTC、含み益+4.23%）</strong>。Q1で<strong>89,600 BTCを$5.5Bで追加購入（同社史上2番目に大規模な四半期積み増し）</strong>と歴史的な蓄積ペースを記録。資金調達戦略を<strong>普通株増発から優先株（STRC）にシフト</strong>しており、希薄化を抑えつつ蓄積を続ける構造に移行。BTCは<strong>$79,064.45（+0.49%、+$382.14）で$80K目前</strong>、ストラテジー保有の単独企業としてはBlackRock IBIT（80万6,700BTC）に並ぶ規模で、両者で世界BTC供給量の約8%を保有する構造的サポートは継続。本日5/4は米時間にFOMC明けの方向性確認、明日のMSTR決算が次の起爆剤に。
+    </div>
+    <div class="news-source">出典: <a href="https://finance.yahoo.com/markets/crypto/articles/microstrategy-pauses-bitcoin-buys-ahead-180837543.html" target="_blank" rel="noopener">Yahoo Finance（MSTR購入停止5/5決算前）</a>, <a href="https://beincrypto.com/strategy-bitcoin-buying-pause-q1-earnings/" target="_blank" rel="noopener">Beincrypto（Strategy Q1決算）</a>, <a href="https://www.coindesk.com/markets/2026/04/27/michael-saylor-s-strategy-buys-3-273-bitcoin-as-it-inches-closer-to-its-1-million-target" target="_blank" rel="noopener">CoinDesk（818,334BTC・$64.44B）</a>, <a href="https://coinfomania.com/michael-saylor-strategy-pauses-bitcoin-buying-may-2026/" target="_blank" rel="noopener">Coinfomania（Saylor BTC購入停止）</a>, <a href="https://www.strategy.com/purchases" target="_blank" rel="noopener">Strategy 公式 Bitcoin Purchases</a>, Beincrypto（5/4 03:08 速報）, TradingView — 2026年5月3-4日</div>
+  </div>
+
+  <div class="news-card purple">
+    <div class="news-head">
+      <span class="news-badge badge-crypto">ETH +0.89%</span>
+      <span class="news-badge badge-crypto">$2,337台</span>
+    </div>
+    <div class="news-title">ETH $2,337.59（+0.89%）でBTC（+0.49%）をアウトパフォーム — NASDAQ 25,000突破の強烈なリスクオンで$2,300回復、BTC支配率高位もアルトに資金回帰の兆し</div>
+    <div class="news-body">
+      ETHは<strong>$2,337.59（+0.89%、+$20.70）</strong>とBTCの+0.49%をアウトパフォーム、$2,300の節目を回復。<strong>NASDAQ史上初25,000突破・S&P最高値継続の強烈なリスクオン環境</strong>でリスク資産全体への資金流入が継続、ETHにも追い風となりました。Mag 7全社決算予想超え（特にAlphabet Google Cloud +63%、Azure +40%、AWS +28%）でAIインフラ需要が完全裏付けられたことは、ETHを基盤とするL2エコシステム・分散インフラ・RWAトークン化への中期需要にもポジティブ波及。<strong>BTC市場支配率は依然60%台で高水準</strong>ながら、ETHが+0.89%とBTCをアウトパフォームしたことで、本格的なアルトコインシーズン到来の兆しも観測されつつあります。$2,300の節目を上抜けたことで次の抵抗は$2,400、上抜ければ$2,500試しの展開も視野。
+    </div>
+    <div class="news-source">出典: TradingView, <a href="https://www.coindesk.com/price/ethereum" target="_blank" rel="noopener">CoinDesk</a>, <a href="https://beincrypto.com/" target="_blank" rel="noopener">Beincrypto</a> — 2026年5月3-4日</div>
+  </div>
+</section>
+
+
+<!-- ===== 株式 ===== -->
+<section id="stocks" class="section fade-in">
+  <h2 class="section-header">📈 株式指数</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">S&P 500</div>
+      <div class="price-value">7,230.12</div>
+      <div class="price-change up">+0.29%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">NASDAQ</div>
+      <div class="price-value">25,114.44</div>
+      <div class="price-change up">+0.89%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">日経225</div>
+      <div class="price-value">59,512.90</div>
+      <div class="price-change up">+0.38%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">NASDAQ大台</div>
+      <div class="price-value" style="color:var(--accent-green);">史上初25,000</div>
+      <div class="price-change up">突破</div>
+    </div>
+  </div>
+
+  <div class="news-card green">
+    <div class="news-head">
+      <span class="news-badge alert">NASDAQ史上初25,000</span>
+      <span class="news-badge alert">S&P最高値継続</span>
+    </div>
+    <div class="news-title">NASDAQが史上初の25,000突破(25,114.44)、S&P 7,230で過去最高値継続 — Reuters「S&P/NASDAQ過去最高値で引けた、ダウはアムジェンの影響で押し下げ」、決算+27.1%で4年以上ぶり最高</div>
+    <div class="news-body">
+      5/1の米国株式市場で<strong>NASDAQ総合指数が史上初の25,000の節目を突破</strong>、終値<strong>25,114.44（+222.13、+0.89%）</strong>と歴史的なマイルストーンを達成。S&P 500も<strong>7,230.12（+21.11、+0.29%）</strong>で過去最高値を継続更新しました。Reuters（5/2 05:24）「<strong>S&Pとナスダックは過去最高値で引けたが、ダウはアムジェンの影響で押し下げられた</strong>」、Reuters（5/2 01:42）「<strong>決算発表が相次ぐ一週間が終わりに近づく中、S&P 500種指数とナスダックが過去最高値を更新</strong>」が現状を報じています。S&P 500企業の<strong>earnings growth は+27.1%で4年以上ぶり最高</strong>（FactSet）、Mag 7全社（Apple Q1売上$111B+16.6%、Alphabet Cloud +63%、Azure +40%、AWS +28%、Meta通期Capex上方修正）の予想超え決算が裏付け。Reuters（5/2 00:25）「<strong>対立するPMI: 物価高騰の中、4月の製造業活動は拡大を継続</strong>」と米景気の堅調さも継続的支援。SanDisk（DRAM/NAND関連）も急騰でメモリセクター全般に波及。<strong>NASDAQ 4月+15.3%は2020年4月以来、S&P+10.4%は2020年11月以来</strong>の最大月間パフォーマンス。本日5/4米時間以降の動向では、5/5にストラテジー(MSTR)・5/6に多数のハイテク決算を控え、AIラリー継続の試金石が続きます。
+    </div>
+    <div class="news-source">出典: <a href="https://www.thestreet.com/latest-news/stock-market-today-may-1-2026-updates" target="_blank" rel="noopener">TheStreet（5/1 NASDAQ・S&P record close）</a>, <a href="https://www.gurufocus.com/news/8837798/nasdaq-composite-reaches-milestone-of-25000-amid-strong-tech-earnings" target="_blank" rel="noopener">GuruFocus（NASDAQ 25,000マイルストーン）</a>, <a href="https://www.bssnews.net/business/383350" target="_blank" rel="noopener">BSS News（S&P/NASDAQ最高値）</a>, <a href="https://insight.factset.com/sp-500-earnings-season-update-may-1-2026" target="_blank" rel="noopener">FactSet（S&P 500決算+27.1%）</a>, Reuters（5/1 23:29 / 5/2 00:25 PMI / 01:42 / 03:33 / 05:24 / 05:34）, TradingView — 2026年5月1-2日</div>
+  </div>
+
+  <div class="news-card green">
+    <div class="news-head">
+      <span class="news-badge badge-stock">日経5/1引け+228円</span>
+      <span class="news-badge badge-stock">59,512円</span>
+    </div>
+    <div class="news-title">日経225 5/1引け59,512.90円（+228.20、+0.38%）で反発 — 介入後の落ち着きとMag 7決算追い風で押し目買い、本日みどりの日で休場・5/7再開時の窓注視</div>
+    <div class="news-body">
+      5/1の日経平均株価は<strong>59,512.90円（+228.20、+0.38%）で反発</strong>、4/30の-632円急落から落ち着きを取り戻しました。背景は ①4/30夜の円買い介入後にUSD/JPYが156-157円台で安定したこと、②米Big Tech全社決算予想超えで日本AI半導体・装置（アドバンテスト・東京エレクトロン・SCREEN HD・ディスコ）への中期追い風、③日経VIの低下でヘッジコスト負担減、の三重要因。25日線乖離-5%割れのテクニカル的売られすぎからの自律反発の側面も。本日5/4は<strong>みどりの日で日本休場</strong>、明日5/5こどもの日・5/6振替休日も休場で、<strong>3連休が続く形</strong>。5/7（木）の再開時は <strong>NASDAQ史上初25,000突破・S&P最高値・MSTR Q1決算（5/5）・米時間FOMC明けの方向性</strong>を一気に織り込む形となり、<strong>窓開けリスクが最大警戒事項</strong>。59,500円台維持なら5/7寄り付きは60,000円再トライの可能性、米株が大幅調整するシナリオなら58,000円台前半までの下落リスク。日銀6月会合（6/16-17）まで利上げ織り込みの段階的進行で、為替動向と連動した方向感に乏しい展開も継続。
+    </div>
+    <div class="news-source">出典: TradingView, FISCO（5/1 日経平均関連）, <a href="https://finance.yahoo.com/markets/crypto/articles/microstrategy-pauses-bitcoin-buys-ahead-180837543.html" target="_blank" rel="noopener">Yahoo Finance（MSTR 5/5決算）</a>, Reuters（5/1-2 米株最高値報道） — 2026年5月1日</div>
+  </div>
+</section>
+
+
+<!-- ===== 日本テック ===== -->
+<section id="japan-tech" class="section fade-in">
+  <h2 class="section-header">🇯🇵 日本テクノロジー</h2>
+
+  <div class="news-card orange">
+    <div class="news-head">
+      <span class="news-badge alert">SanDisk急騰</span>
+      <span class="news-badge badge-tech">日本メモリ波及</span>
+    </div>
+    <div class="news-title">NASDAQ 25,000突破でSanDisk急騰、メモリセクター全般に資金流入 — キオクシア・ウィンボンド・サムスン依存の日本装置（東京エレクトロン・SCREEN HD・ディスコ）にも追い風</div>
+    <div class="news-body">
+      5/1のNASDAQ史上初25,000突破に伴い、米メモリ関連の<strong>SanDisk（旧WDC分割）が急騰</strong>（GuruFocus「<strong>U.S. Markets Mixed as Nasdaq Hits 25,000, SanDisk Stock Surges</strong>」）。これは ①Mag 7のクラウド成長率全社予想超え（Azure +40%、Google Cloud +63%、AWS +28%）でAIデータセンター向けNAND・DRAM需要が確定的、②Reuters「<strong>AIがメモリーサイクルを手なずける</strong>」（4/22）の構造変化シナリオが裏付け、③ストラテジー(MSTR)のBTC購入停止でも市場全体のリスクオン基調は不変、の組み合わせで日本のメモリ・装置関連にも明確な追い風となる構造。波及銘柄は<strong>キオクシア（NAND）、ウィンボンドエレクトロニクス、東京エレクトロン（製造装置）、SCREEN HD（露光装置）、ディスコ（ダイサー）、アドバンテスト（テスター）、ローム（電子部品）</strong>など。Apple Q1の好決算（売上$111.2B+16.6%、iPhone過去最高、Services過去最高）で<strong>ソニーグループ（CMOS）、村田製作所（MLCC）、TDK（電池）</strong>などApple日本サプライヤーへの追い風も継続。GW明け5/7（木）の日本市場再開時には、これら米テック関連銘柄への買い戻しが寄与する可能性。
+    </div>
+    <div class="news-source">出典: <a href="https://www.gurufocus.com/news/8838218/us-markets-mixed-as-nasdaq-hits-25000-sandisk-stock-surges" target="_blank" rel="noopener">GuruFocus（SanDisk急騰・NASDAQ 25,000）</a>, <a href="https://www.reuters.com/technology/artificial-intelligence/taming-boom-lessening-bust-ai-tames-memory-cycle-2026-04-21/" target="_blank" rel="noopener">Reuters（AIメモリサイクル）</a>, <a href="https://finance.yahoo.com/markets/stocks/articles/apple-q1-fy2026-earnings-record-210144735.html" target="_blank" rel="noopener">Yahoo Finance（Apple Q1 record）</a> — 2026年5月1-4日</div>
+  </div>
+
+  <div class="news-card orange">
+    <div class="news-head">
+      <span class="news-badge alert">バフェット「Abel成功」</span>
+      <span class="news-badge badge-tech">日本商社への影響</span>
+    </div>
+    <div class="news-title">Berkshire Greg Abel新体制で日本5大商社（伊藤忠・三菱・三井・住友・丸紅）への投資継続観測 — Q1営業利益+18%好調、$1.02兆ドルの巨額キャッシュをAbelがどう投じるかが日本市場の中期テーマ</div>
+    <div class="news-body">
+      Berkshire Hathawayの年次総会（5/2-3）で<strong>Greg Abel新CEOがバフェットの遺産を継承する姿勢を明確化</strong>したことは、日本市場にとっても重要な意味を持ちます。バフェットは2020年から<strong>日本5大商社（伊藤忠・三菱商事・三井物産・住友商事・丸紅）への大規模投資</strong>を継続しており、これは「日本企業への外資長期マネー流入」の象徴的存在。Abel新CEOは年次総会で「<strong>Berkshireの分割（break-up）はない</strong>」「<strong>$1.02兆ドルのコングロマリットの巨額キャッシュを賢明に投資する</strong>」と継続性を強調、<strong>日本5大商社への投資ポジションも維持・拡大される観測</strong>が支配的です。Q1営業利益+18%・保険引受+28%という好調な業績がAbel体制への信認を裏付け。日本商社株は<strong>原油$100台継続のエネルギー価格高止まり、UAE OPEC離脱の構造変化で資源トレーディング収益拡大</strong>が見込める環境にあり、Abel体制が今後も買い増しすればさらなる株価押し上げ効果も。GW中の日本市場では、5/7再開時に商社株の動きが日経平均の下支え要因として注目される可能性。
+    </div>
+    <div class="news-source">出典: <a href="https://www.cnbc.com/2026/05/03/berkshire-annual-meeting-greg-abel-rules-out-break-up-stressing-continuity-with-buffett.html" target="_blank" rel="noopener">CNBC（Abel・分割なし・継続性）</a>, <a href="https://www.business-standard.com/world-news/berkshire-hathaway-greg-abel-first-ceo-meeting-warren-buffett-cash-126050300130_1.html" target="_blank" rel="noopener">Business Standard（Abel初CEO総会・キャッシュ$1.02T）</a>, <a href="https://www.japantimes.co.jp/business/2026/05/03/companies/berkshire-hathaway-abel-ceo/" target="_blank" rel="noopener">Japan Times（Abel post-Buffett）</a> — 2026年5月2-3日</div>
+  </div>
+</section>
+
+<!-- ===== 考察 ===== -->
+<section id="analysis" class="section fade-in">
+  <h2 class="section-header">🔮 考察</h2>
+  <div class="analysis-box">
+
+    <div class="analysis-pair">
+      <div class="pair-name">USD/JPY</div>
+      <span class="pair-direction dir-neutral">◆ 156.81円で介入後3日経過、156-157円レンジで推移 — 本日東京為替見通し「介入第2弾に要警戒」、5/7 GW明けに向け攻防</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>日米金利差（FRB 3.5-3.75% vs 日銀 0.75%）の優位性は不変、ファンダメンタルは依然ドル買い継続要因。WTI $101台でもエネルギー輸入国通貨売り構造は維持、5/1 NY終値157.01円への反発（DZH 5/2 07:21）は介入効果の限界を示唆。NASDAQ 25,000突破・S&P最高値継続の強烈なリスクオン環境。<br><br>
+        <strong>下落要因：</strong>DZH（5/4 08:00）「<strong>東京為替見通し=、イラン情勢と円買い介入第2弾に要警戒か</strong>」と当局の本気度が継続的圧力。156.50円のオーダーラインが分岐点（DZH 5/4 06:23「156.50円 買いやや小さめ・ストップロス売りやや小さめ」）、5/1 23:17「<strong>156.30円台まで下押し</strong>」の安値も意識される。GW中の薄商い局面で第2弾介入なら一気に155円割れリスク。<br><br>
+        <strong>結論：</strong>155.50-157.50円。<strong>介入後の156-157円レンジが当面のメインシナリオ</strong>。157円突破で再上昇試みも介入第2弾警戒で限定的、156円割れなら155円台の中期サポート試し。GW明け5/7（木）の日経動向と米時間FOMC明けの材料を一気に消化する形で大きく動く可能性。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">AUD/JPY</div>
+      <span class="pair-direction dir-neutral">◆ 113.10円で介入後の自律反発、-2σから-1σへ持ち直し — 113.40円豪売りライン、原油下落でコモディティサポート減退</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>NASDAQ 25,000突破・S&P最高値継続の強烈なリスクオン環境で商品通貨に追い風。DZH（5/2 04:20）「<strong>豪・NZ 5日線かい離、-2σ水準から-1σ水準へ</strong>」、03:05「<strong>NZテクニカル一覧=21日線手前まで買い戻し</strong>」と過熱反動からの自律反発が進行中。Berkshireが日本5大商社継続投資の観測も間接的に商品通貨を支援。<br><br>
+        <strong>下落要因：</strong>原油WTI $101・Brent $107への調整継続でコモディティ通貨支援は減退。DZH（5/2 02:55）「<strong>豪テクニカル一覧=すう勢を示す5日線は低下</strong>」と中期トレンド未回復。<strong>5/4 07:17 豪オーダー「113.40円売り」、5/1 21:52「113.70円売り」</strong>と上値抵抗が複数階層。USD/JPYの介入第2弾シナリオならクロス円全般が連れ安。<br><br>
+        <strong>結論：</strong>112.50-114.00円。<strong>113-114円レンジ</strong>での攻防継続が当面のメインシナリオ。113.40円突破には米景気指標の強気サプライズか原油再上昇が必要、112.50円割れなら111円台への調整リスク。RBA次回会合（5月20日）まで独自材料は乏しい。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">NASDAQ</div>
+      <span class="pair-direction dir-up">▲ 25,114で史上初25,000突破達成、4月+15.3%は2020年以来最大 — 本日5/4米時間以降のFOMC明け方向感、5/5 MSTR決算が次の試金石</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong><strong>NASDAQ史上初の25,000の節目を突破</strong>（25,114.44）で歴史的マイルストーン達成。4月+15.3%は2020年4月以来最大の月間上昇率。Mag 7全社決算予想超え（Apple Q1売上$111B+16.6%、Alphabet Cloud +63%、Azure +40%、AWS +28%、Meta通期Capex上方修正）でAI＋ハードウェアの二軸成長が完全裏付け。S&P 500企業のearnings growth +27.1%（4年以上ぶり最高）、米PMI製造業4月拡大継続も支援。<br><br>
+        <strong>下落要因：</strong>$25,114は史上最高値で<strong>完全な未踏領域</strong>、追加買いには新規触媒が必要。原油$101台でも依然インフレ要因継続、米長期金利上昇圧力。明日5/5の<strong>ストラテジー(MSTR) Q1決算</strong>でBTC関連企業のセンチメントが揺らぐ可能性、想定外の損失計上やガイダンス下方修正なら一過性の売り。Reuters「<strong>S&Pとナスダックは過去最高値で引けたが、ダウはアムジェンの影響で押し下げ</strong>」（5/2 05:24）と個別銘柄ノイズも。<br><br>
+        <strong>結論：</strong>24,800-25,500。<strong>$25,000上抜け定着＋$25,500試し</strong>がメインシナリオ。MSTR決算（5/5）、本格決算ラッシュの最終週、5/14のFOMC明けの方向性確認で大幅な動きが想定。$24,800割れは2-3%の調整リスクだが、Mag 7全社record決算で下値は限定的。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">日経225</div>
+      <span class="pair-direction dir-up">▲ 59,512円で5/1反発引け、本日休場 — 米NASDAQ 25,000突破の追い風で5/7再開時に60,000円再トライ視野、為替動向次第</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>5/1引けは<strong>+228円(+0.38%)で59,512円に反発</strong>、4/30の-632円急落から自律反発局面入り。米Mag 7全社決算予想超え＋NASDAQ史上初25,000突破でAI半導体・装置（アドバンテスト・東京エレクトロン・SCREEN HD・ディスコ）への中期追い風。SanDisk急騰でメモリ関連にも資金流入。Apple Q1全項目record（iPhone過去最高・Services過去最高）でApple日本サプライヤー（ソニー・村田・TDK）にも好材料。Berkshire Abel新体制で日本5大商社（伊藤忠・三菱・三井・住友・丸紅）への投資継続観測も支援。<br><br>
+        <strong>下落要因：</strong>日銀タカ派据置（植田体制初3人反対・6月利上げ観測）の継続的圧迫。<strong>USD/JPY 156円台での円高継続</strong>で輸出株（自動車・機械）の採算悪化リスク、為替前提160円のガイダンス下方修正リスク。WTI $101台と原油は調整も依然$100台でエネルギーコスト圧迫継続。<strong>5/4-6で3連休</strong>のため5/7再開時に米時間の動き（MSTR決算・FOMC明け方向性）を一気に消化する形で<strong>窓開けリスク</strong>が最大警戒事項。<br><br>
+        <strong>結論：</strong>58,500-60,500円。本日休場後の<strong>5/7再開時に60,000円再トライ</strong>がメインシナリオ。米株最高値継続なら反発、MSTR決算サプライズ・FOMC明けタカ派色再燃なら-1,000円規模の調整リスク。日銀6月会合（6/16-17）まで方向感に乏しい局面継続、フィジカルAI主役級（ファナック・安川電機・SBG・アドバンテスト）の動きが日経全体の方向を決定。
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== コラムCTA ===== -->
+<div class="cta-banner fade-in">
+  <div class="cta-banner-content">
+    <div class="cta-label">📝 COLUMN — 解説記事</div>
+    <div class="cta-title">ボラティリティ相場を乗り越える知識を身につけませんか？</div>
+    <div class="cta-desc">地政学リスクの読み方、FX口座の選び方、NISAポートフォリオの組み方など、投資判断の基盤となるコラムを公開中。</div>
+    <div class="cta-links">
+      <a href="20260405-column.html" class="cta-link primary">地政学リスクと投資 →</a>
+      <a href="20260330-column.html" class="cta-link secondary">FX口座比較ガイド</a>
+      <a href="20260402-column.html" class="cta-link secondary">NISAポートフォリオ</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PR ===== -->
+<div class="news-card gold fade-in" style="border-left-color:var(--accent-gold);margin:2rem 0;padding:1.5rem;">
+  <div class="news-head"><span class="news-badge badge-commodity" style="background:rgba(255,224,102,0.25);color:var(--accent-gold);border:1px solid rgba(212,136,15,0.3);">PR — 広告</span></div>
+  <div class="news-title" style="margin-top:0.5rem;">FX取引を始めるなら</div>
+  <div class="news-body">当サイトの為替分析を参考に実際の取引をお考えの方へ。FX取引高3年連続世界第1位のDMM FXなら、最短即日で口座開設が可能です。</div>
+  <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:0.8rem;">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:var(--accent-gold);color:#f8f7f4;font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;">【PR】DMM FX の詳細を見る →</a>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:transparent;color:var(--accent-gold);font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;border:1px solid var(--accent-gold);">【PR】DMM CFD の詳細を見る →</a>
+  </div>
+  <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" alt="">
+  <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" alt="">
+  <div class="news-source" style="margin-top:0.8rem;">※ 投資にはリスクが伴います。FX取引は元本を超える損失が発生する可能性があります。</div>
+</div>
+
+
+<!-- ===== 著者情報 ===== -->
+<div class="author-box fade-in">
+  <div class="author-avatar">M</div>
+  <div class="author-info">
+    <div class="author-name">MARKETZ 編集部</div>
+    <div class="author-title">IT CONSULTANT × DATA-DRIVEN TRADER</div>
+    <div class="author-bio">現役ITコンサルタント・元エンジニアが運営。複雑なグローバル市場をシステム思考で俯瞰し、テクニカル分析とファンダメンタルズ分析を組み合わせたデータドリブンな市場解説をお届けしています。</div>
+  </div>
+</div>
+
+<!-- ===== 免責事項 ===== -->
+<div class="disclaimer fade-in">
+  <div class="disclaimer-title">⚠️ 免責事項・ディスクレーマー</div>
+  本記事は情報提供のみを目的としており、金融商品の売買の勧誘や投資助言を目的とするものではありません。掲載されている情報は作成時点のものであり、正確性、完全性、適時性を保証するものではありません。投資判断は必ずご自身の責任において行ってください。本記事に基づく投資行動による損失について、筆者・サイト運営者は一切の責任を負いません。<br><br>
+  本記事に記載されているニュースは、CNBC、Bloomberg、Reuters、CNN、Al Jazeera、Trading Economics、Yahoo Finance、Investing.com、The Japan Times、EIA等の公開情報を参照し、筆者が独自に再構成したものです。各出典元の著作物をそのまま転載・翻訳したものではありません。<br><br>
+  金融商品取引法に基づく表記：本記事は金融商品取引法第2条に定める金融商品取引業に該当する行為を行うものではありません。
+</div>
+
+
+<!-- ===== 前後記事ナビ + 関連記事 ===== -->
+<nav class="article-nav" id="article-nav"></nav>
+<div class="related-section" id="related-articles"></div>
+
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>MARKETZ — <a href="https://marketpulse-daily.com/">ホームに戻る</a></p>
+  <p>© 2026 MARKETZ. All rights reserved.</p>
+</footer>
+
+<!-- FAB BUTTONS -->
+<div class="fab-group">
+  <a href="https://marketpulse-daily.com/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
+  <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
+</div>
+
+<script>
+// Fade-in Observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); }});
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Sticky nav highlight
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.sticky-nav a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id');
+  });
+  navLinks.forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+  // FAB group
+  const fabGroup = document.querySelector('.fab-group');
+  if (fabGroup) {
+    if (window.scrollY > 600) { fabGroup.style.display = 'flex'; } else { fabGroup.style.display = 'none'; }
+  }
+});
+
+// Article navigation & related articles
+(function(){
+  const slug = location.pathname.split('/').pop().replace('.html','');
+  fetch('../data/posts.json').then(r=>r.json()).then(data=>{
+    const posts = data.posts;
+    const idx = posts.findIndex(p=>p.slug===slug);
+    // Next/Prev nav
+    const nav = document.getElementById('article-nav');
+    if(nav && idx!==-1){
+      let html='';
+      if(idx<posts.length-1){
+        const prev=posts[idx+1];
+        html+='<a href="'+prev.slug+'.html"><div class="nav-label">← 前の記事</div><div class="nav-title">'+prev.title+'</div></a>';
+      }
+      if(idx>0){
+        const next=posts[idx-1];
+        html+='<a href="'+next.slug+'.html" class="nav-next"><div class="nav-label">次の記事 →</div><div class="nav-title">'+next.title+'</div></a>';
+      }
+      nav.innerHTML=html;
+    }
+    // Related articles (same tags, excluding self, max 3)
+    const rel = document.getElementById('related-articles');
+    if(rel && idx!==-1){
+      const myTags=new Set(posts[idx].tags||[]);
+      const scored=posts.filter((_,i)=>i!==idx).map(p=>{
+        const common=(p.tags||[]).filter(t=>myTags.has(t)).length;
+        return{...p,score:common};
+      }).filter(p=>p.score>0).sort((a,b)=>b.score-a.score).slice(0,3);
+      if(scored.length){
+        let html='<div class="related-heading">📰 関連記事</div><div class="related-list">';
+        scored.forEach(p=>{
+          html+='<a href="'+p.slug+'.html" class="related-card"><div class="rc-date">'+p.date+'</div><div class="rc-title">'+p.title+'</div><div class="rc-tags">'+(p.tags||[]).slice(0,4).map(t=>'<span class="rc-tag">'+t+'</span>').join('')+'</div></a>';
+        });
+        html+='</div>';
+        rel.innerHTML=html;
+      }
+    }
+  }).catch(()=>{});
+})();
+
+</script>
+</body>
+</html>
