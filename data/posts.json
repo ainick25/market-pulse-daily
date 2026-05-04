@@ -1,6 +1,35 @@
 {
   "posts": [
     {
+      "date": "2026-05-05",
+      "slug": "20260505",
+      "dayOfWeek": "TUE",
+      "title": "イランがUAE Fujairah港・ホルムズ通航船舶を攻撃",
+      "excerpt": "イランがUAE Fujairah港・ホルムズ通航船舶を攻撃",
+      "tags": [
+        "イランUAE攻撃",
+        "Brent +5.80%",
+        "本日RBA決定",
+        "ストラテジー優先株停止",
+        "本日MSTR Q1決算",
+        "Goldman AI×インフレ",
+        "こどもの日"
+      ],
+      "prices": {
+        "usdjpy": "157.22",
+        "gbpjpy": "212.73",
+        "audjpy": "112.70",
+        "gold": "4521.25",
+        "brent": "114.44",
+        "wti": "104.92",
+        "btc": "79879",
+        "sp500": "7200.75",
+        "nasdaq": "25067.80",
+        "nikkei": "59512.90"
+      },
+      "isColumn": false
+    },
+    {
       "date": "2026-05-04",
       "slug": "20260504",
       "dayOfWeek": "MON",
