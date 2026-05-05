@@ -1,6 +1,35 @@
 {
   "posts": [
     {
+      "date": "2026-05-06",
+      "slug": "20260506",
+      "dayOfWeek": "WED",
+      "title": "米Pentagon Hegseth長官「米イラン停戦は維持されている",
+      "excerpt": "米Pentagon Hegseth長官「米イラン停戦は維持されている",
+      "tags": [
+        "米イラン停戦維持",
+        "Brent -3.99%",
+        "S&P/NASDAQ最高値",
+        "Lumentum +90%record",
+        "MSTR Q1損失$12.54B",
+        "BTC $81K突破",
+        "振替休日"
+      ],
+      "prices": {
+        "usdjpy": "157.88",
+        "gbpjpy": "213.80",
+        "audjpy": "113.40",
+        "gold": "4549.17",
+        "brent": "109.87",
+        "wti": "102.58",
+        "btc": "818334",
+        "sp500": "7259.22",
+        "nasdaq": "25326.12",
+        "nikkei": "59512.90"
+      },
+      "isColumn": false
+    },
+    {
       "date": "2026-05-05",
       "slug": "20260505",
       "dayOfWeek": "TUE",
