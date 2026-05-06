@@ -1,6 +1,35 @@
 {
   "posts": [
     {
+      "date": "2026-05-07",
+      "slug": "20260507",
+      "dayOfWeek": "THU",
+      "title": "米イランが1ページ14項目MOU(覚書)で戦争終結合意間近",
+      "excerpt": "米イランが1ページ14項目MOU(覚書)で戦争終結合意間近",
+      "tags": [
+        "米イラン和平MOU",
+        "Brent -7.83%歴史的暴落",
+        "AMD Q1 +57%data center",
+        "S&P/NASDAQ大幅最高値",
+        "USD/JPY 156円台に下落",
+        "ETF流入過去最高",
+        "日経GW明け再開"
+      ],
+      "prices": {
+        "usdjpy": "156.43",
+        "gbpjpy": "212.66",
+        "audjpy": "113.21",
+        "gold": "4696.67",
+        "brent": "101.27",
+        "wti": "95.91",
+        "btc": "81297",
+        "sp500": "7365.12",
+        "nasdaq": "25838.93",
+        "nikkei": "59512.90"
+      },
+      "isColumn": false
+    },
+    {
       "date": "2026-05-06",
       "slug": "20260506",
       "dayOfWeek": "WED",
