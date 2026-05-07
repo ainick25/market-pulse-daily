@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- A8.net Link Manager -->
+<script src="//statics.a8.net/a8link/a8linkmgr.js"></script>
+<script>
+  a8linkmgr({
+    "config_id": "3FffsI9Y9VCBqU9ikTQJ"
+  });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KFT35KZZVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KFT35KZZVC');
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MARKETZ — 2026.05.08 マーケットニュースダイジェスト｜日経+3,320円(+5.58%)歴史的record・62,833円で史上初62,000円台、米株は半導体反落で足踏み、本日21:30 米4月雇用統計発表</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #f8f7f4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0efe8;
+  --text-primary: #1a1a2e;
+  --text-secondary: #3d3d56;
+  --text-muted: #7a7a8e;
+  --accent-red: #e63946;
+  --accent-green: #06a77d;
+  --accent-gold: #d4880f;
+  --accent-blue: #2176ff;
+  --accent-purple: #7b61ff;
+  --accent-orange: #e07b39;
+  --border: rgba(0,0,0,0.08);
+  --border-accent: rgba(0,0,0,0.12);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Meiryo', 'Yu Gothic UI', 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.2rem; }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridSlide 20s linear infinite;
+}
+@keyframes gridSlide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(60px, 60px); }
+}
+.hero-content { position: relative; z-index: 1; padding: 2rem 1rem; }
+.hero-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: #d4880f;
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
+}
+.hero-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+.hero-subtitle {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto; margin-right: auto;
+}
+.hero-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+.hero-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: #ffffff;
+  background: rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.15);
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+}
+.hero-tag.alert {
+  border-color: rgba(255,100,120,0.6);
+  background: rgba(255,100,120,0.2);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+/* ===== STICKY NAV ===== */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.sticky-nav ul {
+  display: flex; list-style: none;
+  max-width: 900px; margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+  gap: 0;
+}
+.sticky-nav a {
+  display: block;
+  padding: 0.75rem 0.8rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.sticky-nav a:hover, .sticky-nav a.active {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+  background: rgba(0,0,0,0.04);
+}
+
+/* ===== SECTION ===== */
+.section { padding: 3rem 0; }
+.section-header {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-accent);
+}
+
+/* ===== PRICE STRIP ===== */
+.price-strip {
+  display: flex; flex-wrap: wrap; gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.price-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  flex: 1 1 140px;
+  min-width: 130px;
+}
+.price-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+.price-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+.price-change {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 0.15rem;
+}
+.price-change.up { color: var(--accent-green); }
+.price-change.down { color: var(--accent-red); }
+
+/* ===== NEWS CARD ===== */
+.news-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+  border-left: 3px solid transparent;
+}
+.news-card:hover { background: var(--bg-card-hover); }
+.news-card.blue { border-left-color: var(--accent-blue); }
+.news-card.red { border-left-color: var(--accent-red); }
+.news-card.gold { border-left-color: var(--accent-gold); }
+.news-card.green { border-left-color: var(--accent-green); }
+.news-card.purple { border-left-color: var(--accent-purple); }
+.news-card.orange { border-left-color: var(--accent-orange); }
+
+.news-head { margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.news-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+}
+.badge-fx { background: rgba(33,118,255,0.1); color: var(--accent-blue); border: 1px solid rgba(33,118,255,0.2); }
+.badge-commodity { background: rgba(212,136,15,0.1); color: var(--accent-gold); border: 1px solid rgba(212,136,15,0.2); }
+.badge-crypto { background: rgba(123,97,255,0.1); color: var(--accent-purple); border: 1px solid rgba(123,97,255,0.2); }
+.badge-stock { background: rgba(6,167,125,0.1); color: var(--accent-green); border: 1px solid rgba(6,167,125,0.2); }
+.badge-geo { background: rgba(230,57,70,0.1); color: var(--accent-red); border: 1px solid rgba(230,57,70,0.2); }
+.badge-tech { background: rgba(224,123,57,0.1); color: var(--accent-orange); border: 1px solid rgba(224,123,57,0.2); }
+
+.news-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+.news-body {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.news-source {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+.news-source a{color:var(--accent-gold);text-decoration:none;transition:color 0.2s}
+.news-source a:hover{color:var(--text-primary);text-decoration:underline}
+
+/* ===== ANALYSIS ===== */
+.analysis-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.analysis-pair { margin-bottom: 1.5rem; }
+.analysis-pair:last-child { margin-bottom: 0; }
+.pair-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+.pair-direction {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+.dir-up { background: rgba(6,167,125,0.1); color: var(--accent-green); border: 1px solid rgba(6,167,125,0.2); }
+.dir-down { background: rgba(230,57,70,0.1); color: var(--accent-red); border: 1px solid rgba(230,57,70,0.2); }
+.dir-neutral { background: rgba(212,136,15,0.1); color: var(--accent-gold); border: 1px solid rgba(212,136,15,0.2); }
+.pair-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.pair-text strong { color: var(--text-primary); }
+
+/* ===== DISCLAIMER ===== */
+.disclaimer {
+  background: var(--bg-card);
+  border: 2px solid var(--accent-red);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin: 2rem 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.disclaimer-title {
+  color: var(--accent-red);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== FADE IN ===== */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+.footer a { color: var(--accent-gold); text-decoration: none; }
+
+/* ===== FAB BUTTONS ===== */
+.fab-group {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  display: none; flex-direction: column; gap: 0.5rem;
+  z-index: 99;
+}
+.fab-btn {
+  width: 44px; height: 44px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.fab-btn:hover { background: var(--bg-card-hover); }
+.fab-home { font-size: 1rem; }
+
+@media (max-width: 600px) {
+  .price-card { flex: 1 1 100%; }
+  .sticky-nav a { font-size: 0.75rem; padding: 0.6rem 0.5rem; }
+}
+
+
+/* ===== AUTHOR BOX ===== */
+.author-box{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.5rem;margin:2rem 0;display:flex;gap:1.2rem;align-items:flex-start;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+.author-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#1a1a2e,#0f3460);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.5rem;color:#ffe066;font-family:'JetBrains Mono',monospace;font-weight:700}
+.author-info{flex:1;min-width:0}
+.author-name{font-weight:700;font-size:0.95rem;color:var(--text-primary);margin-bottom:0.2rem}
+.author-title{font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--accent-gold);letter-spacing:0.03em;margin-bottom:0.5rem}
+.author-bio{font-size:0.82rem;color:var(--text-secondary);line-height:1.7}
+@media(max-width:600px){.author-box{flex-direction:column;align-items:center;text-align:center}.author-avatar{width:56px;height:56px;font-size:1.3rem}}
+
+/* ===== CTA BANNER ===== */
+.cta-banner{background:linear-gradient(135deg,#1a1a2e 0%,#0f3460 100%);border-radius:10px;padding:1.5rem;margin:2rem 0;position:relative;overflow:hidden}
+.cta-banner::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:40px 40px}
+.cta-banner-content{position:relative;z-index:1}
+.cta-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:#ffe066;letter-spacing:0.1em;margin-bottom:0.4rem}
+.cta-title{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:#fff;margin-bottom:0.5rem}
+.cta-desc{font-size:0.85rem;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:1rem}
+.cta-links{display:flex;flex-wrap:wrap;gap:0.6rem}
+.cta-link{display:inline-block;padding:0.5rem 1rem;border-radius:6px;font-size:0.82rem;font-weight:700;text-decoration:none;transition:all 0.2s}
+.cta-link.primary{background:var(--accent-gold);color:#0a0a0f}
+.cta-link.primary:hover{background:#ffe066}
+.cta-link.secondary{background:transparent;color:var(--accent-gold);border:1px solid rgba(240,165,0,0.4)}
+.cta-link.secondary:hover{border-color:var(--accent-gold);background:rgba(240,165,0,0.1)}
+
+/* ===== ARTICLE NAV (Next/Prev) ===== */
+.article-nav{display:flex;gap:1rem;margin:2rem 0;flex-wrap:wrap}
+.article-nav a{flex:1;min-width:200px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.article-nav a:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.article-nav .nav-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--text-muted);letter-spacing:0.05em;margin-bottom:0.3rem}
+.article-nav .nav-title{font-size:0.85rem;font-weight:700;color:var(--text-primary);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.article-nav .nav-next{text-align:right;margin-left:auto}
+/* ===== RELATED ARTICLES ===== */
+.related-section{margin:2rem 0}
+.related-heading{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:var(--text-primary);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--border-accent)}
+.related-list{display:flex;flex-direction:column;gap:0.6rem}
+.related-card{display:block;background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--accent-gold);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.related-card:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.related-card .rc-date{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--accent-gold);letter-spacing:0.05em}
+.related-card .rc-title{font-size:0.9rem;font-weight:700;color:var(--text-primary);margin-top:0.2rem;line-height:1.5}
+.related-card .rc-tags{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.4rem}
+.related-card .rc-tag{font-family:'JetBrains Mono',monospace;font-size:0.62rem;padding:0.15rem 0.4rem;border-radius:3px;background:rgba(0,0,0,0.04);color:var(--text-muted)}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb{max-width:900px;margin:0 auto;padding:0.6rem 1.2rem;font-size:0.75rem;color:var(--text-muted)}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.2s}
+.breadcrumb a:hover{color:var(--text-primary);text-decoration:none}
+.breadcrumb .sep{margin:0 0.4rem;opacity:0.5}
+.breadcrumb .current{color:var(--text-secondary)}
+</style>
+<meta name="description" content="日経平均が+3,320円(+5.58%)歴史的大幅高で62,833円・史上初の62,000円台終値、単日point gainは2024年8月の3,217超えで過去最大。NASDAQ ATH・米イラン和平・AMD決算でAI半導体・装置に強烈な買い集中、intraday高値63,091円(+3,578)。米株は反落足踏み、SPX 7,337(-0.38%)・NDX 25,806(-0.13%)で半導体上げ幅縮小。Brent $100.06で$100ライン攻防、WTI $97台にリバウンド。BTC $79K台で$80K割れ。本日21:30米4月雇用統計発表、市場予想+55-70K(3月+178Kから減速)・失業率4.3%維持予想、USD/JPY 156.90円で雇用統計待ち — 2026年5月8日">
+<link rel="canonical" href="https://marketpulse-daily.com/posts/20260508.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MARKETZ — 2026.05.08 マーケットニュースダイジェスト｜日経+3,320円(+5.58%)歴史的record・62,833円で史上初62,000円台、米株は半導体反落で足踏み、本日21:30米4月雇用統計発表">
+<meta property="og:description" content="日経平均+3,320円(+5.58%)歴史的記録更新で62,833円・史上初62,000円台、単日point gainは過去最大(2024年8月3,217超え)。米イラン和平・AMD決算・NASDAQ ATHでAI半導体に買い集中。米株は半導体上げ幅縮小で反落、SPX -0.38%・NDX -0.13%。Brent $100ライン攻防・WTI $97台。本日21:30米4月雇用統計(予想+55-70K)・失業率4.3%維持、USD/JPY 156.90円">
+<meta property="og:url" content="https://marketpulse-daily.com/posts/20260508.html">
+<meta property="og:site_name" content="MARKETZ">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://marketpulse-daily.com/images/og-default.svg">
+<meta property="article:published_time" content="2026-05-08T00:00:00+09:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MARKETZ — 2026.05.08 マーケットニュースダイジェスト｜日経+3,320円(+5.58%)歴史的record・62,833円で史上初62,000円台・米株は反落足踏み・本日米雇用統計">
+<meta name="twitter:description" content="日経+3,320円(+5.58%)歴史的record更新で62,833円・史上初62,000円台、単日point gain過去最大。米株は半導体反落で足踏み、SPX -0.38%・NDX -0.13%。Brent $100ライン攻防・WTI $97。本日21:30米4月雇用統計(予想+55-70K)、USD/JPY 156.90円">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NewsArticle","headline":"MARKETZ — 2026.05.08 マーケットニュースダイジェスト｜日経+3,320円(+5.58%)歴史的record・62,833円で史上初62,000円台、米株は半導体反落で足踏み、本日21:30米4月雇用統計発表","datePublished":"2026-05-08T00:00:00+09:00","publisher":{"@type":"Organization","name":"MARKETZ","logo":{"@type":"ImageObject","url":"https://marketpulse-daily.com/images/og-default.svg"}},"mainEntityOfPage":"https://marketpulse-daily.com/posts/20260508.html","author":{"@type":"Organization","name":"MARKETZ","description":"ITコンサルタント×データドリブントレーダーによるマーケット分析メディア"},"image":"https://marketpulse-daily.com/images/og-default.svg"}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://marketpulse-daily.com/"},{"@type":"ListItem","position":2,"name":"アーカイブ","item":"https://marketpulse-daily.com/archive.html"},{"@type":"ListItem","position":3,"name":"2026.05.08 マーケットニュースダイジェスト"}]}</script>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-date">2026.05.08 — FRIDAY（米4月雇用統計発表日）</div>
+    <h1 class="hero-title">マーケットニュースダイジェスト</h1>
+    <p class="hero-subtitle"><strong>日経平均が+3,320.87円(+5.58%)歴史的record更新</strong>で<strong>62,833.77円・史上初の62,000円台</strong>終値、単日point gainは2024年8月の3,217超えで<strong>過去最大記録</strong>、intraday高値63,091.14円(+3,578)。NASDAQ ATH・米イラン和平・AMD決算でAI半導体・装置に強烈な買い集中、5.58%は1年超ぶりの大幅高。一方<strong>米株は反落・足踏み</strong>、SPX <strong>7,337.10(-0.38%)・NDX 25,806.19(-0.13%)</strong>で半導体上げ幅縮小、米イラン和平交渉「小幅な進展」で乱高下。Brent $100.06で$100ライン攻防、WTI $97.42(+2.75%)にリバウンド。BTC $79K台で$80K割れ。<strong>本日日本時間21:30 米4月雇用統計発表</strong>、市場予想+55-70K(3月+178Kから減速)・失業率4.3%維持、USD/JPY 156.90円で雇用統計待ち</p>
+    <div class="hero-tags">
+      <span class="hero-tag alert">日経+3,320円record</span>
+      <span class="hero-tag alert">62,833円史上初62K台</span>
+      <span class="hero-tag alert">本日21:30 米雇用統計</span>
+      <span class="hero-tag">米株反落足踏み</span>
+      <span class="hero-tag">Brent $100攻防</span>
+      <span class="hero-tag">BTC $80K割れ</span>
+      <span class="hero-tag">USD/JPY 156.90円</span>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb" aria-label="パンくずリスト">
+  <a href="https://marketpulse-daily.com/">ホーム</a>
+  <span class="sep">›</span>
+  <a href="https://marketpulse-daily.com/archive.html">アーカイブ</a>
+  <span class="sep">›</span>
+  <span class="current">2026.05.08 マーケットニュースダイジェスト</span>
+</div>
+
+<!-- STICKY NAV -->
+<nav class="sticky-nav">
+  <ul>
+    <li><a href="#geopolitics">🌍地政学</a></li>
+    <li><a href="#fx">💱為替</a></li>
+    <li><a href="#commodities">🛢コモディティ</a></li>
+    <li><a href="#crypto">₿暗号資産</a></li>
+    <li><a href="#stocks">📈株式</a></li>
+    <li><a href="#japan-tech">🇯🇵日本テック</a></li>
+    <li><a href="#analysis">🔮考察</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+<!-- ===== 地政学 ===== -->
+<section id="geopolitics" class="section fade-in">
+  <h2 class="section-header">🌍 地政学・社会情勢</h2>
+
+  <div class="news-card red">
+    <div class="news-head">
+      <span class="news-badge alert">日経+3,320円record</span>
+      <span class="news-badge alert">62,833円史上初62K台</span>
+    </div>
+    <div class="news-title">日経平均が+3,320.87円(+5.58%)歴史的record更新で62,833.77円・史上初の62,000円台終値、単日point gainは2024年8月3,217超えで過去最大 — Japan Times「米イラン和平合意の楽観論で過去最高値」、intraday高値63,091円</div>
+    <div class="news-body">
+      日経平均株価は<strong>62,833.77円（+3,320.87、+5.58%）</strong>と<strong>歴史的なrecord更新</strong>を達成、<strong>史上初の62,000円台終値</strong>でGW明け再開取引を飾りました。<strong>+3,320.87円の単日point gainは過去最大記録</strong>（2024年8月5日の+3,217円を超える）、<strong>+5.58%は1年超ぶりの大幅高</strong>。Japan Times（5/7）「<strong>Japan's Nikkei soars to a record on U.S.-Iran deal optimism</strong>」、BigGo Finance「<strong>Nikkei 225 Surges Past 62,000 for First Time, Posts Record Single-Day Point Gain of 3,320</strong>」、US News Money「<strong>Japan's Nikkei Blazes Past 63,000 on Earnings, Iran Peace Optimism</strong>」が一斉速報。<strong>Intraday高値は63,091.14円（+3,578.02pt）</strong>と63,000円台にも到達した後、終値ベースで62,833円で引けました。背景は ①<strong>NASDAQ +2.02%・S&P +1.46%大幅最高値更新</strong>でAI半導体・装置（アドバンテスト・東京エレクトロン・SCREEN HD・ディスコ・レーザーテック）に強烈な買い集中、②<strong>AMD Q1データセンター+57%サプライズ</strong>で日本AI関連の業績裏付け、③<strong>米イラン1ページMOU報道</strong>でリスクオン全面回帰、④<strong>Brent -7.83%歴史的暴落</strong>でエネルギー輸入国コスト劇的改善、の四重要因。GW中の4日間休場分を寄り付き一気に消化する形で、機関投資家の戻り買いに加えAI関連の踏み上げ的な急騰が連鎖。<strong>米国NASDAQに連動した日本AIラリー</strong>が世界のリスクオンの中心テーマに浮上した瞬間。
+    </div>
+    <div class="news-source">出典: <a href="https://www.japantimes.co.jp/business/2026/05/07/markets/nikkei-surge-iran-deal/" target="_blank" rel="noopener">Japan Times（Nikkei record・US-Iran deal optimism）</a>, <a href="https://finance.biggo.com/news/KcZrAZ4B-PfaobXfxiuJ" target="_blank" rel="noopener">BigGo Finance（62,000突破・record point gain 3,320）</a>, <a href="https://money.usnews.com/investing/news/articles/2026-05-06/japans-nikkei-surges-past-61-000-for-first-time-on-earnings-mideast-optimism" target="_blank" rel="noopener">US News Money（Nikkei 63,000・Earnings・Iran Peace）</a>, <a href="https://www.thefinance360.com/japans-nikkei-hits-62000-ai-rally-boosts-markets-nikkei-hits-62/" target="_blank" rel="noopener">TheFinance360（Nikkei 62,000・AI Rally）</a>, <a href="https://indexes.nikkei.co.jp/en/nkave" target="_blank" rel="noopener">日経指数公式</a>, TradingView — 2026年5月7日</div>
+  </div>
+
+  <div class="news-card alert">
+    <div class="news-head">
+      <span class="news-badge alert">本日21:30 米4月雇用統計</span>
+      <span class="news-badge alert">予想+55-70K減速</span>
+    </div>
+    <div class="news-title">本日5/8 日本時間21:30に米4月雇用統計発表、市場予想+55-70K(3月+178Kから減速)・失業率4.3%維持予想 — ADP +109K(予想超え)で堅調示唆も「low-hire, low-fire」経済継続、FRB利下げ織り込みの試金石</div>
+    <div class="news-body">
+      本日5/8（金）<strong>日本時間21:30（米東部時間8:30 ET）</strong>、米労働省統計局（BLS）が<strong>4月雇用統計</strong>を発表します。Reuters（5/8 05:18）「<strong>ウォール街は一息つく：米イラン和平交渉は小幅な進展、4月の雇用統計発表を控えて</strong>」、5/8 01:51「<strong>ウォール街は、半導体株が過去最高値更新後の反落で足踏み状態。雇用統計に注目が集まる</strong>」と市場の最大注目イベント。<strong>市場予想</strong>は ①<strong>非農業部門雇用者数+55-70K</strong>（FactSet +70K、Wells Fargo +70K、ウォール街中央値+55K）— 3月+178Kから大幅減速、②<strong>失業率4.3%維持</strong>、③<strong>平均時給+0.3% MoM・+3.8% YoY</strong>。先行指標の<strong>ADP民間雇用が+109K</strong>（予想+90Kを上回る、CNBC 5/6）でEducation・Health Services +61K、Trade・Transport・Utilities +25K、Construction +10Kと教育・医療セクター主導で堅調。Morningstar「<strong>April Jobs Report Seen Showing a Continued Low-Hire, Low-Fire Economy</strong>」とlow-hire / low-fire経済の継続が想定される構造。サプライズは ①<strong>+100K超なら6月利下げ確率低下→ドル高・株式短期調整</strong>、②<strong>+30K以下なら景気減速懸念→FRB積極利下げ→株式・債券二重買い</strong>、の二極シナリオ。Trump政権の関税政策が労働市場に及ぼす影響は依然限定的とBLSは認識しつつ、5月以降のデータで顕在化のリスク。本日発表後の市場反応で、5/14 FOMCの利下げ確率（現在約60%）が大きく動く可能性。
+    </div>
+    <div class="news-source">出典: <a href="https://www.cnbc.com/2026/05/06/private-payrolls-rose-by-109000-in-april-topping-expectations-adp-says.html" target="_blank" rel="noopener">CNBC（ADP +109K April）</a>, <a href="https://www.morningstar.com/economy/april-jobs-report-seen-showing-continued-low-hire-low-fire-economy" target="_blank" rel="noopener">Morningstar（low-hire low-fire経済）</a>, <a href="https://www.kiplinger.com/investing/economy/jobs-report-april-2026-what-to-expect" target="_blank" rel="noopener">Kiplinger（4月雇用統計プレビュー）</a>, <a href="https://www.bls.gov/news.release/empsit.nr0.htm" target="_blank" rel="noopener">米労働省統計局（雇用統計公式）</a>, <a href="https://tradingeconomics.com/united-states/non-farm-payrolls" target="_blank" rel="noopener">Trading Economics（NFP+55K consensus）</a>, Reuters（5/8 05:18 ウォール街一息つく・雇用統計控えて / 5/8 01:51 半導体反落・雇用統計注目） — 2026年5月6-8日</div>
+  </div>
+</section>
+
+<!-- ===== 為替 ===== -->
+<section id="fx" class="section fade-in">
+  <h2 class="section-header">💱 為替</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">USD/JPY</div>
+      <div class="price-value">156.90</div>
+      <div class="price-change down">-0.02%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">EUR/JPY</div>
+      <div class="price-value">183.99</div>
+      <div class="price-change">0.00%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">GBP/JPY</div>
+      <div class="price-value">212.57</div>
+      <div class="price-change down">-0.04%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">AUD/JPY</div>
+      <div class="price-value">113.04</div>
+      <div class="price-change down">-0.04%</div>
+    </div>
+  </div>
+
+  <div class="news-card alert">
+    <div class="news-head">
+      <span class="news-badge alert">USD/JPY 156.90円</span>
+      <span class="news-badge alert">本日21:30雇用統計待ち</span>
+    </div>
+    <div class="news-title">USD/JPY 156.90円で本日米雇用統計待ちの様子見、5/7 NYは反発で156円台後半まで戻し — 157.00円OP8日NYカット・OP13日NYカット大きめ、156.00円OP複数で底堅く</div>
+    <div class="news-body">
+      USD/JPYは<strong>156.904円（-0.034、-0.02%）</strong>と<strong>本日21:30の米4月雇用統計発表待ち</strong>でほぼ動かず、<strong>5/7 NY時間で156円台後半まで反発</strong>。DZH（5/8 06:03）「<strong>NY概況・7日、反発</strong>」、5/8 04:06「<strong>NY概況・4時、堅調</strong>」、5/8 02:06「<strong>NY概況・2時、強含み</strong>」、5/8 01:03「<strong>じり高 米長期金利が上昇に転じる</strong>」と段階的にドル買い・円売りが進行。背景は ①Reuters（5/8 00:41）「<strong>米国企業の利益急増がウォール街の最大の疑問に答えを出す</strong>」とQ1 EPS+28%の業績裏付けでドル買い継続、②米長期金利が上昇に転じ実質金利優位再確認、③Reuters（5/8 05:18）「<strong>ウォール街は一息つく：米イラン和平交渉は小幅な進展、4月の雇用統計発表を控えて</strong>」と和平交渉の小幅進展で原油下落も限界に、の3要因。DZH（5/8 06:24）「<strong>オーダー=157.00円 売り、OP8日NYカット/OP13日NYカット大きめ</strong>」と157円ラインに大きなOP保護＝強力な上値抵抗。DZH（5/7 21:06）「<strong>リアルタイムオーダー=156.00円 複数OP観測</strong>」と156.00円下にもOP大量で下値固い構造。<strong>本日21:30雇用統計</strong>のサプライズで方向決定、+100K超なら157.50円試しのドル高・円安、+30K以下なら155円台前半まで急落シナリオ。
+    </div>
+    <div class="news-source">出典: TradingView, DZH Financial Research（5/7 21:06 156.00円複数OP / 5/8 01:03 じり高・米長期金利上昇 / 5/8 02:06 NY概況・2時強含み / 5/8 04:06 NY概況・4時堅調 / 5/8 06:03 NY概況・7日反発 / 5/8 06:24 157.00円売り・OP8/13日NYカット大きめ）, Reuters（5/8 00:41 米企業利益急増・Q1 EPS+28% / 5/8 05:18 ウォール街一息・雇用統計控えて） — 2026年5月7-8日</div>
+  </div>
+
+  <div class="news-card blue">
+    <div class="news-head">
+      <span class="news-badge badge-fx">AUD/JPY 113.04円</span>
+      <span class="news-badge badge-fx">EUR/JPY 184円ライン</span>
+    </div>
+    <div class="news-title">AUD/JPY 113.04円・EUR/JPY 183.99円・GBP/JPY 212.57円で前日からほぼ横ばい — 雇用統計前のポジション軽量化、184.40円オーダー売り小さめ・豪オーダー乏しい</div>
+    <div class="news-body">
+      クロス円は<strong>本日米雇用統計待ち</strong>でほぼ動かず、ポジション軽量化が進行。<strong>AUD/JPY 113.041円（-0.049、-0.04%）</strong>は前日の113.21円からほぼ変わらず、<strong>113円台前半で推移</strong>。DZH（5/8 02:50）「<strong>豪テクニカル一覧=RSIは54%台に上昇</strong>」、5/8 04:24「<strong>乖離2=豪・NZ、20日線マイナスかい離が縮小</strong>」、5/8 04:15「<strong>乖離1=、5日線かい離はマイナスからプラスへ</strong>」と中期テクニカルが回復方向。一方DZH（5/8 07:02）「<strong>豪オーダー=しっかりしたオーダー現水準付近に乏しい</strong>」と方向性が定まらない構造、5/7 21:47「<strong>豪リアルタイムオーダー=114.00円 売り小さめ</strong>」が次の上値ターゲット。<strong>EUR/JPY 183.990円（0.000、0.00%）</strong>は<strong>184円ラインで完全停止</strong>、DZH（5/8 06:40）「<strong>オーダー=184.40円 売り小さめ</strong>」、5/7 21:23「<strong>リアルタイムオーダー=183.50円 買い小さめ</strong>」と183.50-184.40円の40銭レンジで膠着。DZH（5/8 02:35）「<strong>テクニカル一覧=90日線に接近</strong>」と中期サポートライン到達で底堅さ。<strong>GBP/JPY 212.572円（-0.076、-0.04%）</strong>は212円台中盤で落ち着き。本日21:30米雇用統計後の値動きが当面の方向決定、サプライズ+100K超ならクロス円全般+0.5-1円の円安、+30K以下なら-1円規模の円高ショックリスク。
+    </div>
+    <div class="news-source">出典: TradingView, DZH Financial Research（5/7 21:23 ユーロ183.50円買い小さめ / 5/7 21:47 豪114.00円売り小さめ / 5/8 02:35 ユーロテクニカル90日線接近 / 5/8 02:50 豪RSI 54%台上昇 / 5/8 03:35 NZ 5日線サポート / 5/8 04:15 5日線マイナスからプラス / 5/8 04:24 豪・NZ 20日線マイナスかい離縮小 / 5/8 06:40 184.40円売り小さめ / 5/8 07:02 豪オーダー乏しい） — 2026年5月7-8日</div>
+  </div>
+</section>
+
+
+<!-- ===== コモディティ ===== -->
+<section id="commodities" class="section fade-in">
+  <h2 class="section-header">🛢 コモディティ</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">GOLD (XAU/USD)</div>
+      <div class="price-value">$4,683.46</div>
+      <div class="price-change down">-0.08%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">BRENT</div>
+      <div class="price-value">$100.06</div>
+      <div class="price-change down">-1.19%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">WTI</div>
+      <div class="price-value">$97.42</div>
+      <div class="price-change up">+2.75%</div>
+    </div>
+  </div>
+
+  <div class="news-card gold">
+    <div class="news-head">
+      <span class="news-badge alert">Brent $100.06ライン攻防</span>
+      <span class="news-badge alert">WTI $97台にリバウンド</span>
+    </div>
+    <div class="news-title">Brent $100.06で$100ライン攻防、月初来累計-12%・歴史的下落幅 — WTI $97.42(+2.75%)にリバウンド、Reuters「中東和平期待で原油1バレル100ドル割り込む」、米イラン交渉「小幅な進展」で乱高下</div>
+    <div class="news-body">
+      原油市場は<strong>Brent $100.06（-1.19%、-$1.21）</strong>と<strong>$100ラインの攻防</strong>に突入、前々日のフィアプレミアム$114台から実に<strong>-$14・-12%の月初来累計下落</strong>。Reuters（5/7 22:34）「<strong>中東和平への期待から原油価格が1バレル100ドルを割り込む</strong>」と$100割れがメイン見出しに。一方<strong>WTI $97.42（+2.75%、+$2.61）</strong>は前日$95台から急反発、<strong>Brent-WTIスプレッドは$2.64に大幅縮小</strong>（5/5の$9.52から-$6.88、ほぼ正常化）。Reuters（5/8 05:31）「<strong>米イラン和平合意の行方が不透明な中、株価は反落、原油相場は乱高下</strong>」、Reuters（5/7 22:06）「<strong>原油安が続く中、ウォール街は過去最高値近くで取引を開始する見通し</strong>」、5/7 23:08「<strong>原油価格の下落が安堵感をもたらし、S&P 500とナスダックが過去最高値を更新</strong>」と原油安と米株の関係は明確。原油下落の<strong>Q1経済への波及効果</strong>として ①世界インフレ期待の劇的後退、②FRB早期利下げ観測再点火（5/14 FOMC）、③エネルギー輸入国（日本・EU・中国・韓国）の貿易収支改善、④米AAAレギュラーガソリン$3.80/ガロン台への下落見込み、が4本柱。当面の支持線は<strong>Brent $98・WTI $93</strong>、MOU調印確定なら$95試しの可能性、調印失敗または再エスカレーションなら$110戻しのリスク。日本のエネルギー輸入国経済には大型恩恵で、電力・ガス・運輸・素材・化学・空運企業の業績改善期待が継続。
+    </div>
+    <div class="news-source">出典: Reuters（5/7 22:34 中東和平で原油100ドル割れ / 5/7 22:06 原油安・ウォール街最高値近く / 5/7 23:08 原油下落で安堵感・S&P/NASDAQ最高値 / 5/7 20:32 原油安・S&P/NASDAQ先物最高値 / 5/8 05:31 米イラン不透明・株反落・原油乱高下）, <a href="https://www.cnn.com/2026/05/06/world/live-news/iran-war-trump-strait-of-hormuz" target="_blank" rel="noopener">CNN（MOU・ホルムズ通航制限解除）</a>, TradingView — 2026年5月7-8日</div>
+  </div>
+
+  <div class="news-card gold">
+    <div class="news-head">
+      <span class="news-badge badge-commodity">GOLD $4,683</span>
+      <span class="news-badge badge-commodity">高値圏で揉み合い</span>
+    </div>
+    <div class="news-title">金$4,683.46（-0.08%）で$4,700手前の高値圏揉み合い、米長期金利上昇でやや軟化も底堅く — 本日米雇用統計サプライズ次第で大幅変動、$4,800試しシナリオも視野</div>
+    <div class="news-body">
+      金価格（XAU/USD）は<strong>$4,683.46（-0.08%、-$3.72）</strong>と<strong>$4,700手前の高値圏で揉み合い</strong>。前日の$4,696から$13軟化したものの、5/5の$4,549から実に<strong>+$134（+2.9%）の上昇</strong>を維持。一方でDZH（5/8 01:03）「<strong>じり高 米長期金利が上昇に転じる</strong>」と米長期金利上昇でやや軟化。背景は ①<strong>Brent $100ライン攻防でディスインフレ期待維持</strong>、②米10年金利上昇でやや機会費用悪化、③<strong>米イラン和平交渉「小幅な進展」</strong>で完全な合意確定までのテールヘッジ需要、④<strong>本日21:30米雇用統計</strong>—弱含みなら一気にFRB利下げ織り込みで金は急騰、強気サプライズなら一過性の調整、の四要因が拮抗。テクニカル的に<strong>$4,700ラインが当面の上値抵抗、$4,650が下値サポート</strong>。本日雇用統計+30K以下のサプライズで<strong>$4,800試し</strong>がメインシナリオ、+100K超なら一過性の利益確定で$4,600試しのリスク。新興国中央銀行・中国人民銀行の継続的買いと、<strong>3兆ドル超のフィスカル赤字</strong>へのドル価値ヘッジ需要が中期サポート。年初来高値$4,830再トライまでの距離は$150弱、雇用統計次第で本日中の到達も視野。
+    </div>
+    <div class="news-source">出典: TradingView, DZH Financial Research（5/8 01:03 じり高・米長期金利上昇）, <a href="https://www.investing.com/currencies/xau-usd" target="_blank" rel="noopener">Investing.com</a>, <a href="https://www.kitco.com/news/" target="_blank" rel="noopener">Kitco News</a> — 2026年5月7-8日</div>
+  </div>
+</section>
+
+<!-- ===== 暗号資産 ===== -->
+<section id="crypto" class="section fade-in">
+  <h2 class="section-header">₿ 暗号資産</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">BTC/USD</div>
+      <div class="price-value">$79,875</div>
+      <div class="price-change down">-1.92%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">ETH/USD</div>
+      <div class="price-value">$2,286.17</div>
+      <div class="price-change down">-2.74%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">$80K割れ</div>
+      <div class="price-value" style="color:var(--accent-red);">BTC -1.92%</div>
+      <div class="price-change down">ETH -2.74%</div>
+    </div>
+  </div>
+
+  <div class="news-card purple">
+    <div class="news-head">
+      <span class="news-badge alert">BTC $80K割れ</span>
+      <span class="news-badge alert">-1.92%</span>
+    </div>
+    <div class="news-title">BTC $79,875(-1.92%)で$80K割れ、ETH $2,286(-2.74%)も軟調 — 米株反落・原油$100攻防・雇用統計待ちのリスクオフで暗号資産は調整局面、米長期金利上昇でリスク資産から資金流出</div>
+    <div class="news-body">
+      暗号資産は<strong>BTC $79,875.32（-1.92%、-$1,562.78）で$80K割れ</strong>、<strong>ETH $2,286.17（-2.74%、-$64.49）</strong>も大幅軟調。前日$81K台から-$1,500の急落で、<strong>$80Kの心理的サポートを割り込みました</strong>。下落要因は ①<strong>米株反落（SPX -0.38%、NDX -0.13%）</strong>で半導体株上げ幅縮小のリスクオフ、②<strong>米長期金利上昇に転じ</strong>（DZH 5/8 01:03）リスク資産全般の機会費用上昇、③<strong>本日21:30米4月雇用統計</strong>のサプライズ警戒でポジション軽量化、④<strong>米イラン和平交渉「小幅な進展」</strong>（Reuters 5/8 05:18）で和平MOU調印確定が遅れる懸念、⑤Beincrypto（5/6）で繰り返し指摘される「BTC弱気相場継続」（Cowen氏）の警告、の五要因。<strong>ETHが-2.74%でBTCを大きくアンダーパフォーム</strong>している点も警戒シグナル—アルトコインシーズン期待は引き続き後退、L2エコシステム・RWAトークン化への中期需要も足踏み。MSTR保有の818,334 BTC + BlackRock IBITの構造サポートは健在ながら、<strong>ETF流入のメインが米株指数への分散投資に集中</strong>している構造的変化が暗号資産の上値を抑える要因。テクニカル的に<strong>BTC $78K割れなら$75K（MSTR平均取得コスト$75,532）試し</strong>の調整リスク、$80K奪還なら$83K再トライがシナリオ。本日雇用統計次第—弱含みでFRB利下げ織り込みなら$80K奪還、強気サプライズなら$77K試しの二極化。
+    </div>
+    <div class="news-source">出典: TradingView, DZH Financial Research（5/8 01:03 じり高・米長期金利上昇）, Reuters（5/8 05:18 ウォール街一息・雇用統計控えて）, <a href="https://beincrypto.com/" target="_blank" rel="noopener">Beincrypto（5/6 BTC弱気継続・Cowen）</a>, <a href="https://www.coindesk.com/price/bitcoin" target="_blank" rel="noopener">CoinDesk BTC</a>, <a href="https://www.coindesk.com/price/ethereum" target="_blank" rel="noopener">CoinDesk ETH</a> — 2026年5月7-8日</div>
+  </div>
+
+  <div class="news-card purple">
+    <div class="news-head">
+      <span class="news-badge badge-crypto">米企業利益+28%</span>
+      <span class="news-badge badge-crypto">欧州+3年ぶり高水準</span>
+    </div>
+    <div class="news-title">Reuters「米国企業の利益急増がウォール街の最大の疑問に答えを出す」、Q1 EPS+28%は2021年以来最強 — 欧州企業利益成長率も3年ぶり高水準、ファンダメンタル裏付けで米株最高値更新を支える構造</div>
+    <div class="news-body">
+      Reuters（5/8 00:41）「<strong>米国企業の利益急増がウォール街の最大の疑問に答えを出す</strong>」が公開、<strong>米企業のQ1 EPS成長率+28% YoY</strong>（LSEG、2021年以来最強の四半期利益成長）が市場の最大の疑問—「米株最高値の正当性」—に明確に答えを出した、と報じています。S&P 500企業のQ1業績では ①<strong>Mag 7全社record決算</strong>（Apple Q1売上$111.2B+16.6%、Alphabet Cloud +63%、Azure +40%、AWS +28%、Meta通期Capex上方修正）、②<strong>AMD Q1データセンター+57%</strong>でAI半導体加速、③<strong>Lumentum Q3売上+90% YoY record</strong>でAI光通信完全裏付け、④米CSP4社の2026 Capex合計$725B（+77% YoY）、の組み合わせでファンダメンタルがcompletelyに完全裏付けられました。さらにReuters（5/8 00:10）「<strong>欧州企業の利益成長率は3年ぶりの高水準に向かっている</strong>」と<strong>欧州企業もQ1 EPS+8% YoY（3年ぶり高水準）</strong>でグローバル業績回復が同時進行。<strong>米株（S&P 500、NASDAQ）と欧州株（Euro Stoxx 600）が同時に最高値圏</strong>を維持する構造的サポートが鮮明。一方Reuters（5/8 02:10）「<strong>4月、投資家の姿勢は慎重になった：シュワブ</strong>」と4月の投資家慎重姿勢からの一転リスクオン回帰のスピード自体への警戒も。本日米雇用統計のサプライズ次第で短期反動は想定されるも、<strong>業績ファンダメンタルが完全裏付けられている限り、押し目買い継続</strong>の地合いがメインシナリオ。
+    </div>
+    <div class="news-source">出典: Reuters（5/8 00:41 米企業利益急増・Q1 EPS+28% / 5/8 00:10 欧州企業利益+3年ぶり高水準 / 5/8 02:10 シュワブ4月慎重）, <a href="https://insight.factset.com/sp-500-earnings-season-update-may-1-2026" target="_blank" rel="noopener">FactSet（S&P 500決算）</a> — 2026年5月7-8日</div>
+  </div>
+</section>
+
+
+<!-- ===== 株式 ===== -->
+<section id="stocks" class="section fade-in">
+  <h2 class="section-header">📈 株式指数</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">S&P 500</div>
+      <div class="price-value">7,337.10</div>
+      <div class="price-change down">-0.38%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">NASDAQ</div>
+      <div class="price-value">25,806.19</div>
+      <div class="price-change down">-0.13%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">日経225</div>
+      <div class="price-value">62,833.77</div>
+      <div class="price-change up">+5.58%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">日経record</div>
+      <div class="price-value" style="color:var(--accent-green);">+3,320円</div>
+      <div class="price-change up">過去最大</div>
+    </div>
+  </div>
+
+  <div class="news-card red">
+    <div class="news-head">
+      <span class="news-badge alert">米株反落足踏み</span>
+      <span class="news-badge alert">半導体上げ幅縮小</span>
+    </div>
+    <div class="news-title">米株は半導体反落で足踏み、SPX 7,337.10(-0.38%)・NDX 25,806.19(-0.13%) — Reuters「半導体株が過去最高値更新後の反落」「米イラン交渉小幅進展、4月雇用統計待ちで一息」</div>
+    <div class="news-body">
+      5/7の米国株式市場は<strong>3日連続最高値更新後の反落・足踏み</strong>。S&P 500は<strong>7,337.10（-28.02、-0.38%）</strong>、NASDAQは<strong>25,806.19（-32.76、-0.13%）</strong>と利益確定とポジション軽量化が進行。Reuters（5/8 05:01）「<strong>半導体株が上げ幅を縮小したため、S&P 500種指数は下落して取引を終えた</strong>」、5/8 05:25「<strong>半導体株の上げ幅縮小で、S&P 500は下落</strong>」、5/8 05:31「<strong>米イラン和平合意の行方が不透明な中、株価は反落、原油相場は乱高下</strong>」、5/8 05:18「<strong>ウォール街は一息つく：米イラン和平交渉は小幅な進展、4月の雇用統計発表を控えて</strong>」、5/8 01:51「<strong>ウォール街は、半導体株が過去最高値更新後の反落で足踏み状態。雇用統計に注目が集まる</strong>」と一斉に「足踏み・一息つく」のトーン。背景は ①<strong>米イラン和平MOU調印が「小幅な進展」</strong>で確定が遅れる懸念、②<strong>本日21:30米4月雇用統計</strong>—市場予想+55-70K（3月+178Kから減速）の弱含みリスク、③半導体株のNASDAQ +2.02%record後の自然な反動、の三要因。一方<strong>大型ファンダメンタル支援</strong>—Reuters（5/8 00:41）「<strong>米国企業の利益急増がウォール街の最大の疑問に答えを出す</strong>」とQ1 EPS+28%（2021年以来最強）の業績裏付け、Reuters（5/8 00:10）「<strong>欧州企業の利益成長率は3年ぶりの高水準</strong>」とグローバル業績回復—は健在で、<strong>本日雇用統計通過後の方向性確認</strong>がメイン。+30K以下なら一気にFRB利下げ織り込みで反発、+100K超ならドル高・株式短期調整の二極化シナリオ。
+    </div>
+    <div class="news-source">出典: Reuters（5/8 05:01 半導体上げ幅縮小・S&P下落 / 5/8 05:25 半導体縮小・S&P下落 / 5/8 05:31 米イラン不透明・株反落・原油乱高下 / 5/8 05:18 ウォール街一息・雇用統計控え / 5/8 01:51 半導体最高値後の反落・雇用統計注目 / 5/8 03:54 半導体縮小・S&P下落 / 5/8 00:41 米企業利益急増・Q1 EPS+28% / 5/8 00:10 欧州企業利益+3年ぶり高水準）, TradingView — 2026年5月7-8日</div>
+  </div>
+
+  <div class="news-card green">
+    <div class="news-head">
+      <span class="news-badge alert">日経+3,320円record</span>
+      <span class="news-badge badge-stock">62,833円史上初62K台</span>
+    </div>
+    <div class="news-title">日経225 5/7 GW明け再開で+3,320.87円(+5.58%)歴史的record・62,833.77円終値、intraday高値63,091円 — 単日point gain過去最大、米NASDAQ ATH連動でAI半導体に買い集中、4日休場分を一気に消化</div>
+    <div class="news-body">
+      日経平均株価は5/7 GW明け再開で<strong>62,833.77円（+3,320.87、+5.58%）</strong>と<strong>歴史的record</strong>を達成、<strong>史上初の62,000円台</strong>での終値。<strong>+3,320.87円の単日point gainは2024年8月5日の3,217円を超える過去最大記録</strong>、<strong>+5.58%は1年超ぶりの大幅高</strong>、<strong>intraday高値は63,091.14円（+3,578.02pt）</strong>に到達後利益確定で押し戻される動き。Japan Times「<strong>Japan's Nikkei soars to a record on U.S.-Iran deal optimism</strong>」、BigGo Finance「<strong>Nikkei 225 Surges Past 62,000 for First Time, Posts Record Single-Day Point Gain of 3,320</strong>」が一斉速報。<strong>4日連続休場（5/4-5/6 GW中）の分を寄り付きで一気に消化</strong>する形で、<strong>米NASDAQ +2.02%大幅最高値・米イラン和平MOU・AMD Q1 +57% DCサプライズ・Brent -7.83%歴史的暴落</strong>の四大材料を完全織り込み。買いが特に集中したセクターは ①<strong>AI半導体・装置</strong>（アドバンテスト・東京エレクトロン・SCREEN HD・ディスコ・レーザーテック・信越化学・SUMCO）— AMD決算でDC需要+57%確認、②<strong>AI光通信</strong>（古河電工・住友電工・Anritsu・フジクラ）— Lumentum +90% record裏付け、③<strong>エネルギー消費業種</strong>（電力・ガス・運輸・素材・化学）— 原油-12%下落の業績改善期待、④<strong>銀行株</strong>— USD/JPY 156-157円維持と日銀6月利上げ観測、の四大カテゴリ。本日5/8の日経は前日のrecord後の調整圧力＋米雇用統計前のポジション軽量化で<strong>62,500-63,500円のレンジ</strong>での攻防が想定、サプライズ材料なら63,500円試しの可能性も。
+    </div>
+    <div class="news-source">出典: <a href="https://www.japantimes.co.jp/business/2026/05/07/markets/nikkei-surge-iran-deal/" target="_blank" rel="noopener">Japan Times（Nikkei record・US-Iran deal optimism）</a>, <a href="https://finance.biggo.com/news/KcZrAZ4B-PfaobXfxiuJ" target="_blank" rel="noopener">BigGo Finance（62,000突破・record point gain 3,320）</a>, <a href="https://money.usnews.com/investing/news/articles/2026-05-06/japans-nikkei-surges-past-61-000-for-first-time-on-earnings-mideast-optimism" target="_blank" rel="noopener">US News Money（Nikkei・Iran Peace）</a>, TradingView — 2026年5月7日</div>
+  </div>
+</section>
+
+
+<!-- ===== 日本テック ===== -->
+<section id="japan-tech" class="section fade-in">
+  <h2 class="section-header">🇯🇵 日本テクノロジー</h2>
+
+  <div class="news-card orange">
+    <div class="news-head">
+      <span class="news-badge alert">日経record牽引AI半導体</span>
+      <span class="news-badge badge-tech">アドバンテスト・東エレ急騰</span>
+    </div>
+    <div class="news-title">日経record+3,320円を牽引したAI半導体・装置セクター — アドバンテスト・東エレ・SCREEN HD・ディスコ・レーザーテックが+5-15%急騰、AMD Q1 DC+57%・Lumentum +90%サプライズが業績裏付け</div>
+    <div class="news-body">
+      日経平均+3,320円（+5.58%）の歴史的recordラリーを牽引したのは<strong>AI半導体・装置セクター</strong>でした。米AMD Q1データセンター+57%（$5.8B）、Lumentum Q3売上+90% YoY recordの二大サプライズを織り込み、<strong>主要AI関連銘柄が+5-15%の大幅高</strong>を記録。①<strong>アドバンテスト</strong>（テスター、AMD/NVIDIA直接サプライヤー、世界シェア60%超）、②<strong>東京エレクトロン</strong>（製造装置、最先端ロジック）、③<strong>SCREEN HD</strong>（露光装置・洗浄装置）、④<strong>ディスコ</strong>（ダイサー、AIチップ細密加工世界独占）、⑤<strong>レーザーテック</strong>（EUVマスク検査、ASML向け世界独占）、⑥<strong>信越化学・SUMCO</strong>（300mmシリコンウエハ、世界2強）、⑦<strong>キオクシア・ウィンボンド</strong>（NAND・DRAM）、⑧<strong>古河電工・住友電工・Anritsu・フジクラ</strong>（AI光通信、Lumentum +90%裏付け）の<strong>8主要カテゴリが揃って急騰</strong>。Lisa Su AMD CEO「<strong>来年DC AI売上は数百億ドル規模に到達確信</strong>」発言が中期成長見通しを完全に裏付け。米CSP4社2026 Capex合計$725B（+77% YoY）の追い風も継続。本日5/8は前日のrecord後の<strong>利益確定圧力</strong>＋米雇用統計前のポジション軽量化で<strong>調整局面</strong>が想定されるが、業績ファンダメンタルが完全裏付けられているため<strong>押し目は限定的、買い継続の地合い</strong>。日経全体としては62,500-63,500円のレンジで攻防、雇用統計+30K以下のサプライズなら63,500円試し、+100K超なら62,000円試しの調整リスクの二極化。
+    </div>
+    <div class="news-source">出典: <a href="https://www.japantimes.co.jp/business/2026/05/07/markets/nikkei-surge-iran-deal/" target="_blank" rel="noopener">Japan Times（Nikkei record・AI semiconductor）</a>, <a href="https://www.cnbc.com/2026/05/05/amd-q1-2026-earnings-report.html" target="_blank" rel="noopener">CNBC（AMD +16% data center）</a>, <a href="https://ir.amd.com/news-events/press-releases/detail/1284/amd-reports-first-quarter-2026-financial-results" target="_blank" rel="noopener">AMD公式IR</a>, <a href="https://www.taipeitimes.com/News/front/archives/2026/05/05/2003856767" target="_blank" rel="noopener">Taipei Times（CSP $725B）</a>, TradingView — 2026年5月7-8日</div>
+  </div>
+
+  <div class="news-card orange">
+    <div class="news-head">
+      <span class="news-badge alert">エネルギー輸入国大型恩恵</span>
+      <span class="news-badge badge-tech">電力・ガス・運輸急騰</span>
+    </div>
+    <div class="news-title">Brent $100ライン攻防・原油月初来-12%歴史的下落で日本のエネルギー輸入国経済に大型恩恵 — 電力・ガス・運輸・素材・化学・空運が日経record牽引、貿易赤字2-3兆円規模改善効果</div>
+    <div class="news-body">
+      Brent $100.06ライン攻防、月初来累計-12%（$114→$100）の<strong>歴史的下落</strong>は、世界最大級のエネルギー輸入国である<strong>日本に対し劇的な恩恵</strong>。日本は原油消費の<strong>99%を輸入に依存</strong>（経済産業省2026年データ）、原油-12%の月初来下落幅は年換算で<strong>貿易赤字を約2-3兆円規模で改善</strong>させる効果。日経record+3,320円の中核を占めた<strong>エネルギー輸入国恩恵セクター</strong>は ①<strong>電力会社</strong>（東京電力、関西電力、中部電力、九州電力）— LNG・原油発電比率の高い東電・関電が特に恩恵、②<strong>都市ガス</strong>（東京ガス、大阪ガス、東邦ガス）— LNG連動価格の調達コスト改善、③<strong>運輸・空運</strong>（JR東日本、JAL、ANA、商船三井、川崎汽船、日本郵船）— 燃料コスト軽減、④<strong>素材・化学</strong>（三菱ケミカル、住友化学、三井化学、東レ）— ナフサ原料コスト改善、⑤<strong>セメント・紙パ</strong>（太平洋セメント、王子HD、日本製紙）— エネルギー集約産業、の5大カテゴリ。一方<strong>商社株（伊藤忠、三菱商事、三井物産、住友商事、丸紅）</strong>はエネルギートレーディング収益圧迫で短期調整も、Berkshire Abel新体制の継続投資観測と中長期の資源開発益で下値は限定的。Reuters（5/8 05:31）「<strong>米イラン和平合意の行方が不透明な中、株価は反落、原油相場は乱高下</strong>」と原油はMOU調印確定有無で大幅変動、本日21:30米雇用統計と組み合わせ短期ボラティリティ拡大も。
+    </div>
+    <div class="news-source">出典: TradingView（Brent $100.06）, <a href="https://www.cnn.com/2026/05/06/world/live-news/iran-war-trump-strait-of-hormuz" target="_blank" rel="noopener">CNN（MOU・ホルムズ通航再開）</a>, Reuters（5/7 22:34 中東和平で原油100ドル割れ / 5/8 05:31 米イラン不透明・原油乱高下）, <a href="https://www.meti.go.jp/" target="_blank" rel="noopener">経済産業省（原油輸入依存度99%）</a> — 2026年5月7-8日</div>
+  </div>
+</section>
+
+<!-- ===== 考察 ===== -->
+<section id="analysis" class="section fade-in">
+  <h2 class="section-header">🔮 考察</h2>
+  <div class="analysis-box">
+
+    <div class="analysis-pair">
+      <div class="pair-name">USD/JPY</div>
+      <span class="pair-direction dir-neutral">◆ 156.90円で本日米雇用統計待ちの様子見、5/7 NYは反発で156円台後半まで戻し — 157.00円OP8/13日NYカット大きめが上値抵抗、156.00円複数OPで底堅く</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>日米金利差（FRB 3.5-3.75% vs 日銀 0.75%）の優位性は不変。Reuters（5/8 00:41）「<strong>米国企業の利益急増がウォール街の最大の疑問に答えを出す</strong>」とQ1 EPS+28%（2021年以来最強）で米経済ファンダメンタル裏付け継続。DZH（5/8 01:03）「<strong>じり高 米長期金利が上昇に転じる</strong>」と米長期金利上昇でドル買い再点火。本日雇用統計+100K超のサプライズなら6月利下げ確率低下→ドル高で157.50円試し。<br><br>
+        <strong>下落要因：</strong>DZH（5/8 06:24）「<strong>オーダー=157.00円 売り、OP8日NYカット/OP13日NYカット大きめ</strong>」と<strong>157円ラインに大型OP保護で強力な上値抵抗</strong>。Brent $100ライン攻防継続でディスインフレ期待維持→FRB早期利下げ観測。本日雇用統計+30K以下なら一気に155円台前半まで急落、特にRecession懸念の織り込みなら154円試しも。<br><br>
+        <strong>結論：</strong>155.50-157.50円。<strong>本日21:30米雇用統計のサプライズで方向決定</strong>。+30K以下なら155円試し、+100K超なら157.50円試しの二極化シナリオ。156-157円レンジ維持なら本日中の動きは限定的、米時間後の動きが本格化。当局介入第2弾警戒は依然残存も、現状ドル下落基調なので発動余地は限定的。来週5/14 FOMCの利下げ確率（現在約60%）が雇用統計次第で大きく動く可能性。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">AUD/JPY</div>
+      <span class="pair-direction dir-neutral">◆ 113.04円で113円台前半に軟化、雇用統計待ちの様子見 — DZH「豪オーダー現水準付近に乏しい」、113.50-114円が当面の抵抗、5日線かい離プラスで底堅く</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>DZH（5/8 04:15）「<strong>5日線かい離はマイナスからプラスへ</strong>」、5/8 04:24「<strong>乖離2=豪・NZ、20日線マイナスかい離が縮小</strong>」、5/8 02:50「<strong>豪テクニカル一覧=RSIは54%台に上昇</strong>」と<strong>中期テクニカルが完全に上向きに転換</strong>。米企業利益+28%・欧州+3年ぶり高水準のグローバル業績回復でリスクオン基調継続、原油下落でも資源国通貨ファンダ底堅さ。日経record+3,320円ラリーでアジアリスクオンも追い風。<br><br>
+        <strong>下落要因：</strong>DZH（5/8 07:02）「<strong>豪オーダー=しっかりしたオーダー現水準付近に乏しい</strong>」と方向性が定まらない構造、5/7 21:47「<strong>豪リアルタイムオーダー=114.00円 売り小さめ</strong>」が上値抵抗。原油$100ライン攻防継続でコモディティ通貨支援は限定的、ホルムズ通航再開で世界エネルギーフロー正常化なら豪LNG輸出ポジションには逆風。雇用統計+30K以下のサプライズならクロス円全般円高ショックで112円台試し。<br><br>
+        <strong>結論：</strong>112.50-114.00円。<strong>113-114円レンジが当面のメインシナリオ</strong>。本日雇用統計サプライズで方向決定—弱含みなら112円試し、強気なら114円突破。RBA次回会合（5/27）まで独自材料は限定的、米雇用統計と日銀6月会合（6/16-17）の組み合わせで6月以降の方向性が決まる構造。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">NASDAQ</div>
+      <span class="pair-direction dir-neutral">◆ 25,806で前日のATH+2.02%から反落・足踏み、半導体上げ幅縮小 — 雇用統計後の方向確認、業績ファンダ完全裏付けで押し目買い継続の地合い</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>Reuters（5/8 00:41）「<strong>米国企業の利益急増がウォール街の最大の疑問に答えを出す</strong>」と<strong>Q1 EPS+28%（2021年以来最強）</strong>でファンダメンタル完全裏付け。AMD Q1 DC+57%・Lumentum +90% YoY recordのAIラリー継続、米CSP4社2026 Capex合計$725B（+77%）でAIインフラ投資加速。<strong>米イラン1ページMOU</strong>で地政学プレミアム剥落、Brent $100攻防でディスインフレ期待→FRB早期利下げ観測。日経record+3,320円のグローバルAIラリー連鎖。<br><br>
+        <strong>下落要因：</strong>Reuters（5/8 05:01 / 03:54 / 05:25）「<strong>半導体株が上げ幅を縮小したため、S&P 500種指数は下落して取引を終えた</strong>」と<strong>連続最高値更新後の自然な反動</strong>、半導体株主導の調整。Reuters（5/8 05:18）「<strong>ウォール街は一息つく：米イラン和平交渉は小幅な進展、4月の雇用統計発表を控えて</strong>」とMOU調印確定遅延・雇用統計待ちの様子見。本日雇用統計+100K超なら6月利下げ確率低下で短期調整リスク。<br><br>
+        <strong>結論：</strong>25,500-26,200。<strong>本日21:30米雇用統計後の方向性確認</strong>がメイン。+30K以下なら一気に26,000試しのリスクオン、+100K超なら25,500試しの調整。Mag 7全社record決算＋AMD・Lumentum裏付け＋業績ファンダ完全裏付けで<strong>下値は限定的、押し目買い継続の地合い</strong>。5/14 FOMCの利下げシグナル次第で26,500試しの上値追いも視野。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">日経225</div>
+      <span class="pair-direction dir-up">▲ 62,833円で前日+5.58%歴史的record後の調整局面、intraday高値63,091円 — 米雇用統計前のポジション軽量化、62,500-63,500円のレンジ攻防</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>5/7 GW明け再開で<strong>+3,320円(+5.58%)歴史的record・62,833円・史上初62,000円台</strong>、単日point gainは過去最大記録。AMD Q1 DC+57%・Lumentum +90% YoY record・米イラン1ページMOU・Brent -7.83%歴史的暴落の四大材料完全織り込みでAI半導体・装置（アドバンテスト・東エレ・SCREEN HD・ディスコ・レーザーテック）が+5-15%急騰、エネルギー輸入国恩恵セクター（電力・ガス・運輸・素材・化学）も大幅高。米CSP4社Capex $725B（+77%）の構造的サポート健在、米企業利益+28%・欧州+3年ぶり高水準のグローバル業績回復。<br><br>
+        <strong>下落要因：</strong><strong>前日+3,320円record後の利益確定圧力</strong>と本日米雇用統計前のポジション軽量化で調整局面入り。USD/JPY 156-157円の円安戻り限定で輸出株採算改善は限定的、商社株（伊藤忠・三菱・三井・住友・丸紅）はエネルギー収益圧迫で軟調。米株が反落（SPX -0.38%、NDX -0.13%）の波及で東京時間も上値重い展開。雇用統計+30K以下のサプライズで一気にFRB積極利下げ織り込みなら円高加速で63,000円試しもあるが、+100K超なら62,000円試しのリスク。<br><br>
+        <strong>結論：</strong>62,000-63,500円。<strong>62,500-63,500円レンジでの攻防がメインシナリオ</strong>。本日雇用統計サプライズで方向決定—弱含みなら63,500円試し、強気なら62,000円試しの調整。来週以降は5/14 FOMCの利下げシグナル、Mag 7続報、日銀6月会合の組み合わせで方向性が決まる構造。AI半導体・装置主導で底堅い推移を維持、フィジカルAI（ファナック・安川電機・SBG・アドバンテスト）が日経全体の方向を決定。
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== コラムCTA ===== -->
+<div class="cta-banner fade-in">
+  <div class="cta-banner-content">
+    <div class="cta-label">📝 COLUMN — 解説記事</div>
+    <div class="cta-title">ボラティリティ相場を乗り越える知識を身につけませんか？</div>
+    <div class="cta-desc">地政学リスクの読み方、FX口座の選び方、NISAポートフォリオの組み方など、投資判断の基盤となるコラムを公開中。</div>
+    <div class="cta-links">
+      <a href="20260405-column.html" class="cta-link primary">地政学リスクと投資 →</a>
+      <a href="20260330-column.html" class="cta-link secondary">FX口座比較ガイド</a>
+      <a href="20260402-column.html" class="cta-link secondary">NISAポートフォリオ</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PR ===== -->
+<div class="news-card gold fade-in" style="border-left-color:var(--accent-gold);margin:2rem 0;padding:1.5rem;">
+  <div class="news-head"><span class="news-badge badge-commodity" style="background:rgba(255,224,102,0.25);color:var(--accent-gold);border:1px solid rgba(212,136,15,0.3);">PR — 広告</span></div>
+  <div class="news-title" style="margin-top:0.5rem;">FX取引を始めるなら</div>
+  <div class="news-body">当サイトの為替分析を参考に実際の取引をお考えの方へ。FX取引高3年連続世界第1位のDMM FXなら、最短即日で口座開設が可能です。</div>
+  <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:0.8rem;">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:var(--accent-gold);color:#f8f7f4;font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;">【PR】DMM FX の詳細を見る →</a>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:transparent;color:var(--accent-gold);font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;border:1px solid var(--accent-gold);">【PR】DMM CFD の詳細を見る →</a>
+  </div>
+  <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" alt="">
+  <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" alt="">
+  <div class="news-source" style="margin-top:0.8rem;">※ 投資にはリスクが伴います。FX取引は元本を超える損失が発生する可能性があります。</div>
+</div>
+
+
+<!-- ===== 著者情報 ===== -->
+<div class="author-box fade-in">
+  <div class="author-avatar">M</div>
+  <div class="author-info">
+    <div class="author-name">MARKETZ 編集部</div>
+    <div class="author-title">IT CONSULTANT × DATA-DRIVEN TRADER</div>
+    <div class="author-bio">現役ITコンサルタント・元エンジニアが運営。複雑なグローバル市場をシステム思考で俯瞰し、テクニカル分析とファンダメンタルズ分析を組み合わせたデータドリブンな市場解説をお届けしています。</div>
+  </div>
+</div>
+
+<!-- ===== 免責事項 ===== -->
+<div class="disclaimer fade-in">
+  <div class="disclaimer-title">⚠️ 免責事項・ディスクレーマー</div>
+  本記事は情報提供のみを目的としており、金融商品の売買の勧誘や投資助言を目的とするものではありません。掲載されている情報は作成時点のものであり、正確性、完全性、適時性を保証するものではありません。投資判断は必ずご自身の責任において行ってください。本記事に基づく投資行動による損失について、筆者・サイト運営者は一切の責任を負いません。<br><br>
+  本記事に記載されているニュースは、CNBC、Bloomberg、Reuters、CNN、Al Jazeera、Trading Economics、Yahoo Finance、Investing.com、The Japan Times、EIA等の公開情報を参照し、筆者が独自に再構成したものです。各出典元の著作物をそのまま転載・翻訳したものではありません。<br><br>
+  金融商品取引法に基づく表記：本記事は金融商品取引法第2条に定める金融商品取引業に該当する行為を行うものではありません。
+</div>
+
+
+<!-- ===== 前後記事ナビ + 関連記事 ===== -->
+<nav class="article-nav" id="article-nav"></nav>
+<div class="related-section" id="related-articles"></div>
+
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>MARKETZ — <a href="https://marketpulse-daily.com/">ホームに戻る</a></p>
+  <p>© 2026 MARKETZ. All rights reserved.</p>
+</footer>
+
+<!-- FAB BUTTONS -->
+<div class="fab-group">
+  <a href="https://marketpulse-daily.com/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
+  <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
+</div>
+
+<script>
+// Fade-in Observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); }});
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Sticky nav highlight
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.sticky-nav a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id');
+  });
+  navLinks.forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+  // FAB group
+  const fabGroup = document.querySelector('.fab-group');
+  if (fabGroup) {
+    if (window.scrollY > 600) { fabGroup.style.display = 'flex'; } else { fabGroup.style.display = 'none'; }
+  }
+});
+
+// Article navigation & related articles
+(function(){
+  const slug = location.pathname.split('/').pop().replace('.html','');
+  fetch('../data/posts.json').then(r=>r.json()).then(data=>{
+    const posts = data.posts;
+    const idx = posts.findIndex(p=>p.slug===slug);
+    // Next/Prev nav
+    const nav = document.getElementById('article-nav');
+    if(nav && idx!==-1){
+      let html='';
+      if(idx<posts.length-1){
+        const prev=posts[idx+1];
+        html+='<a href="'+prev.slug+'.html"><div class="nav-label">← 前の記事</div><div class="nav-title">'+prev.title+'</div></a>';
+      }
+      if(idx>0){
+        const next=posts[idx-1];
+        html+='<a href="'+next.slug+'.html" class="nav-next"><div class="nav-label">次の記事 →</div><div class="nav-title">'+next.title+'</div></a>';
+      }
+      nav.innerHTML=html;
+    }
+    // Related articles (same tags, excluding self, max 3)
+    const rel = document.getElementById('related-articles');
+    if(rel && idx!==-1){
+      const myTags=new Set(posts[idx].tags||[]);
+      const scored=posts.filter((_,i)=>i!==idx).map(p=>{
+        const common=(p.tags||[]).filter(t=>myTags.has(t)).length;
+        return{...p,score:common};
+      }).filter(p=>p.score>0).sort((a,b)=>b.score-a.score).slice(0,3);
+      if(scored.length){
+        let html='<div class="related-heading">📰 関連記事</div><div class="related-list">';
+        scored.forEach(p=>{
+          html+='<a href="'+p.slug+'.html" class="related-card"><div class="rc-date">'+p.date+'</div><div class="rc-title">'+p.title+'</div><div class="rc-tags">'+(p.tags||[]).slice(0,4).map(t=>'<span class="rc-tag">'+t+'</span>').join('')+'</div></a>';
+        });
+        html+='</div>';
+        rel.innerHTML=html;
+      }
+    }
+  }).catch(()=>{});
+})();
+
+</script>
+</body>
+</html>
