@@ -1,6 +1,35 @@
 {
   "posts": [
     {
+      "date": "2026-05-11",
+      "slug": "20260511",
+      "dayOfWeek": "MON",
+      "title": "Trump大統領が5/10(日)にIranの和平回答を「TOTALLY UNACCEPTABLE」と一蹴",
+      "excerpt": "Trump大統領が5/10(日)にIranの和平回答を「TOTALLY UNACCEPTABLE」と一蹴",
+      "tags": [
+        "Trump「Iran回答unacceptable」",
+        "NASDAQ史上初26K突破",
+        "4月NFP+115K予想超え",
+        "6週連続上昇",
+        "SOXX +5.67%",
+        "Q1 EPS+29%",
+        "原油反発で再緊張"
+      ],
+      "prices": {
+        "usdjpy": "156.86",
+        "gbpjpy": "213.01",
+        "audjpy": "113.41",
+        "gold": "4689.44",
+        "brent": "103.86",
+        "wti": "97.75",
+        "btc": "80K奪還",
+        "sp500": "7398.92",
+        "nasdaq": "26247.08",
+        "nikkei": "62713.43"
+      },
+      "isColumn": false
+    },
+    {
       "date": "2026-05-08",
       "slug": "20260508",
       "dayOfWeek": "FRI",
