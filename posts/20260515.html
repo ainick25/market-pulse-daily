@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- A8.net Link Manager -->
+<script src="//statics.a8.net/a8link/a8linkmgr.js"></script>
+<script>
+  a8linkmgr({
+    "config_id": "3FffsI9Y9VCBqU9ikTQJ"
+  });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KFT35KZZVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KFT35KZZVC');
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MARKETZ — 2026.05.15 マーケットニュースダイジェスト｜S&P 7,500突破・NVIDIA過去最高値、Trump-Xi北京会談開催・10年ぶり米大統領訪中、イランHormuz通過発表でWTI -3.77%急落、USD/JPY 158.38円で4日続伸</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #f8f7f4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0efe8;
+  --text-primary: #1a1a2e;
+  --text-secondary: #3d3d56;
+  --text-muted: #7a7a8e;
+  --accent-red: #e63946;
+  --accent-green: #06a77d;
+  --accent-gold: #d4880f;
+  --accent-blue: #2176ff;
+  --accent-purple: #7b61ff;
+  --accent-orange: #e07b39;
+  --border: rgba(0,0,0,0.08);
+  --border-accent: rgba(0,0,0,0.12);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Meiryo', 'Yu Gothic UI', 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.2rem; }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridSlide 20s linear infinite;
+}
+@keyframes gridSlide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(60px, 60px); }
+}
+.hero-content { position: relative; z-index: 1; padding: 2rem 1rem; }
+.hero-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: #d4880f;
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
+}
+.hero-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+.hero-subtitle {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto; margin-right: auto;
+}
+.hero-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+.hero-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: #ffffff;
+  background: rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.15);
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+}
+.hero-tag.alert {
+  border-color: rgba(255,100,120,0.6);
+  background: rgba(255,100,120,0.2);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+/* ===== STICKY NAV ===== */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.sticky-nav ul {
+  display: flex; list-style: none;
+  max-width: 900px; margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+  gap: 0;
+}
+.sticky-nav a {
+  display: block;
+  padding: 0.75rem 0.8rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.sticky-nav a:hover, .sticky-nav a.active {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+  background: rgba(0,0,0,0.04);
+}
+
+/* ===== SECTION ===== */
+.section { padding: 3rem 0; }
+.section-header {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-accent);
+}
+
+/* ===== PRICE STRIP ===== */
+.price-strip {
+  display: flex; flex-wrap: wrap; gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.price-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  flex: 1 1 140px;
+  min-width: 130px;
+}
+.price-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+.price-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+.price-change {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 0.15rem;
+}
+.price-change.up { color: var(--accent-green); }
+.price-change.down { color: var(--accent-red); }
+
+/* ===== NEWS CARD ===== */
+.news-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+  border-left: 3px solid transparent;
+}
+.news-card:hover { background: var(--bg-card-hover); }
+.news-card.blue { border-left-color: var(--accent-blue); }
+.news-card.red { border-left-color: var(--accent-red); }
+.news-card.gold { border-left-color: var(--accent-gold); }
+.news-card.green { border-left-color: var(--accent-green); }
+.news-card.purple { border-left-color: var(--accent-purple); }
+.news-card.orange { border-left-color: var(--accent-orange); }
+
+.news-head { margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.news-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+}
+.badge-fx { background: rgba(33,118,255,0.1); color: var(--accent-blue); border: 1px solid rgba(33,118,255,0.2); }
+.badge-commodity { background: rgba(212,136,15,0.1); color: var(--accent-gold); border: 1px solid rgba(212,136,15,0.2); }
+.badge-crypto { background: rgba(123,97,255,0.1); color: var(--accent-purple); border: 1px solid rgba(123,97,255,0.2); }
+.badge-stock { background: rgba(6,167,125,0.1); color: var(--accent-green); border: 1px solid rgba(6,167,125,0.2); }
+.badge-geo { background: rgba(230,57,70,0.1); color: var(--accent-red); border: 1px solid rgba(230,57,70,0.2); }
+.badge-tech { background: rgba(224,123,57,0.1); color: var(--accent-orange); border: 1px solid rgba(224,123,57,0.2); }
+
+.news-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+.news-body {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.news-source {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+.news-source a{color:var(--accent-gold);text-decoration:none;transition:color 0.2s}
+.news-source a:hover{color:var(--text-primary);text-decoration:underline}
+
+/* ===== ANALYSIS ===== */
+.analysis-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.analysis-pair { margin-bottom: 1.5rem; }
+.analysis-pair:last-child { margin-bottom: 0; }
+.pair-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+.pair-direction {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+.dir-up { background: rgba(6,167,125,0.1); color: var(--accent-green); border: 1px solid rgba(6,167,125,0.2); }
+.dir-down { background: rgba(230,57,70,0.1); color: var(--accent-red); border: 1px solid rgba(230,57,70,0.2); }
+.dir-neutral { background: rgba(212,136,15,0.1); color: var(--accent-gold); border: 1px solid rgba(212,136,15,0.2); }
+.pair-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.pair-text strong { color: var(--text-primary); }
+
+/* ===== DISCLAIMER ===== */
+.disclaimer {
+  background: var(--bg-card);
+  border: 2px solid var(--accent-red);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin: 2rem 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.disclaimer-title {
+  color: var(--accent-red);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== FADE IN ===== */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+.footer a { color: var(--accent-gold); text-decoration: none; }
+
+/* ===== FAB BUTTONS ===== */
+.fab-group {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  display: none; flex-direction: column; gap: 0.5rem;
+  z-index: 99;
+}
+.fab-btn {
+  width: 44px; height: 44px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.fab-btn:hover { background: var(--bg-card-hover); }
+.fab-home { font-size: 1rem; }
+
+@media (max-width: 600px) {
+  .price-card { flex: 1 1 100%; }
+  .sticky-nav a { font-size: 0.75rem; padding: 0.6rem 0.5rem; }
+}
+
+
+/* ===== AUTHOR BOX ===== */
+.author-box{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.5rem;margin:2rem 0;display:flex;gap:1.2rem;align-items:flex-start;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+.author-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#1a1a2e,#0f3460);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.5rem;color:#ffe066;font-family:'JetBrains Mono',monospace;font-weight:700}
+.author-info{flex:1;min-width:0}
+.author-name{font-weight:700;font-size:0.95rem;color:var(--text-primary);margin-bottom:0.2rem}
+.author-title{font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--accent-gold);letter-spacing:0.03em;margin-bottom:0.5rem}
+.author-bio{font-size:0.82rem;color:var(--text-secondary);line-height:1.7}
+@media(max-width:600px){.author-box{flex-direction:column;align-items:center;text-align:center}.author-avatar{width:56px;height:56px;font-size:1.3rem}}
+
+/* ===== CTA BANNER ===== */
+.cta-banner{background:linear-gradient(135deg,#1a1a2e 0%,#0f3460 100%);border-radius:10px;padding:1.5rem;margin:2rem 0;position:relative;overflow:hidden}
+.cta-banner::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:40px 40px}
+.cta-banner-content{position:relative;z-index:1}
+.cta-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:#ffe066;letter-spacing:0.1em;margin-bottom:0.4rem}
+.cta-title{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:#fff;margin-bottom:0.5rem}
+.cta-desc{font-size:0.85rem;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:1rem}
+.cta-links{display:flex;flex-wrap:wrap;gap:0.6rem}
+.cta-link{display:inline-block;padding:0.5rem 1rem;border-radius:6px;font-size:0.82rem;font-weight:700;text-decoration:none;transition:all 0.2s}
+.cta-link.primary{background:var(--accent-gold);color:#0a0a0f}
+.cta-link.primary:hover{background:#ffe066}
+.cta-link.secondary{background:transparent;color:var(--accent-gold);border:1px solid rgba(240,165,0,0.4)}
+.cta-link.secondary:hover{border-color:var(--accent-gold);background:rgba(240,165,0,0.1)}
+
+/* ===== ARTICLE NAV (Next/Prev) ===== */
+.article-nav{display:flex;gap:1rem;margin:2rem 0;flex-wrap:wrap}
+.article-nav a{flex:1;min-width:200px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.article-nav a:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.article-nav .nav-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--text-muted);letter-spacing:0.05em;margin-bottom:0.3rem}
+.article-nav .nav-title{font-size:0.85rem;font-weight:700;color:var(--text-primary);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.article-nav .nav-next{text-align:right;margin-left:auto}
+/* ===== RELATED ARTICLES ===== */
+.related-section{margin:2rem 0}
+.related-heading{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:var(--text-primary);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--border-accent)}
+.related-list{display:flex;flex-direction:column;gap:0.6rem}
+.related-card{display:block;background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--accent-gold);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.related-card:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.related-card .rc-date{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--accent-gold);letter-spacing:0.05em}
+.related-card .rc-title{font-size:0.9rem;font-weight:700;color:var(--text-primary);margin-top:0.2rem;line-height:1.5}
+.related-card .rc-tags{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.4rem}
+.related-card .rc-tag{font-family:'JetBrains Mono',monospace;font-size:0.62rem;padding:0.15rem 0.4rem;border-radius:3px;background:rgba(0,0,0,0.04);color:var(--text-muted)}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb{max-width:900px;margin:0 auto;padding:0.6rem 1.2rem;font-size:0.75rem;color:var(--text-muted)}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.2s}
+.breadcrumb a:hover{color:var(--text-primary);text-decoration:none}
+.breadcrumb .sep{margin:0 0.4rem;opacity:0.5}
+.breadcrumb .current{color:var(--text-secondary)}
+</style>
+<meta name="description" content="Trump-Xi北京会談開始(10年ぶり米大統領訪中)、Tim Cook・Musk・Larry Fink・Boeing CEO同行で貿易・関税・台湾・Iran・AI・Rare earth議題。Xi「台湾誤対処で大きな危機」警告。NVIDIA過去最高値$233.08($236.54記録)でS&P 7,501.25(+0.77%)突破・NASDAQ 26,635.21(+0.88%)新ATH。米4月小売売上+0.5%(エネルギー押し上げ)・失業保険+12K(予想超え)・輸入物価+1.9%(multi-year high)。イランがHormuz数十隻通過発表でWTI $97.36(-3.77%)急落、Brent +0.09%で乖離。USD/JPY 158.38円・4日続伸、158.50円OP大型保護、介入警戒感高まる。BTC $81,517(+2.81%)大幅反発、日経62,654円(-0.98%)反落 — 2026年5月15日">
+<link rel="canonical" href="https://marketpulse-daily.com/posts/20260515.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MARKETZ — 2026.05.15 マーケットニュースダイジェスト｜Trump-Xi北京会談・10年ぶり米大統領訪中、NVIDIA過去最高値でS&P 7,500突破・NASDAQ新ATH、イランHormuz通過でWTI -3.77%急落、USD/JPY 158.38円">
+<meta property="og:description" content="Trump-Xi北京会談開始(10年ぶり米大統領訪中)、Tim Cook・Musk・Larry Fink同行で貿易・台湾・Iran議題、Xi「台湾誤対処で大きな危機」警告。NVIDIA過去最高値・S&P 7,501.25(+0.77%)突破・NASDAQ 26,635.21(+0.88%)。米4月小売+0.5%・失業保険+12K・輸入物価+1.9%。イラン Hormuz通過発表でWTI -3.77%急落・Brent +0.09%乖離。USD/JPY 158.38円(4日続伸)・158.50円OP大型・介入警戒、BTC $81K(+2.81%)反発">
+<meta property="og:url" content="https://marketpulse-daily.com/posts/20260515.html">
+<meta property="og:site_name" content="MARKETZ">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://marketpulse-daily.com/images/og-default.svg">
+<meta property="article:published_time" content="2026-05-15T00:00:00+09:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MARKETZ — 2026.05.15 マーケットニュースダイジェスト｜Trump-Xi北京会談・NVIDIA過去最高値でS&P 7,500突破・イランHormuz通過でWTI -3.77%急落・USD/JPY 158円台">
+<meta name="twitter:description" content="Trump-Xi北京会談(10年ぶり米大統領訪中)、Xi「台湾誤対処で大きな危機」警告。NVIDIA過去最高値・S&P 7,501突破・NASDAQ新ATH。米4月小売+0.5%・失業保険+12K・輸入物価+1.9%。イランHormuz通過でWTI -3.77%急落、USD/JPY 158.38円・介入警戒、BTC +2.81%反発">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NewsArticle","headline":"MARKETZ — 2026.05.15 マーケットニュースダイジェスト｜S&P 7,500突破・NVIDIA過去最高値、Trump-Xi北京会談開催・10年ぶり米大統領訪中、イランHormuz通過発表でWTI -3.77%急落、USD/JPY 158.38円で4日続伸","datePublished":"2026-05-15T00:00:00+09:00","publisher":{"@type":"Organization","name":"MARKETZ","logo":{"@type":"ImageObject","url":"https://marketpulse-daily.com/images/og-default.svg"}},"mainEntityOfPage":"https://marketpulse-daily.com/posts/20260515.html","author":{"@type":"Organization","name":"MARKETZ","description":"ITコンサルタント×データドリブントレーダーによるマーケット分析メディア"},"image":"https://marketpulse-daily.com/images/og-default.svg"}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://marketpulse-daily.com/"},{"@type":"ListItem","position":2,"name":"アーカイブ","item":"https://marketpulse-daily.com/archive.html"},{"@type":"ListItem","position":3,"name":"2026.05.15 マーケットニュースダイジェスト"}]}</script>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-date">2026.05.15 — FRIDAY</div>
+    <h1 class="hero-title">マーケットニュースダイジェスト</h1>
+    <p class="hero-subtitle"><strong>Trump-Xi北京会談開始</strong>（10年ぶり米大統領訪中）、Tim Cook・Elon Musk・Larry Fink・Boeing CEO同行で<strong>貿易・関税・台湾・Iran・AI・Rare earth議題</strong>、Xi「<strong>台湾問題誤対処なら大きな危機</strong>」警告。<strong>NVIDIA過去最高値$233.08更新</strong>（intraday $236.54）でS&P <strong>7,501.25(+0.77%)で7,500突破</strong>・NASDAQ <strong>26,635.21(+0.88%)新ATH</strong>。米4月小売売上<strong>+0.5%</strong>（エネルギー価格押し上げ）・失業保険申請<strong>+12K → 211K</strong>（予想205K超え）・<strong>輸入物価+1.9%</strong>（multi-year high）。<strong>イランがHormuz数十隻通過発表</strong>で供給懸念和らぎ、WTI <strong>$97.36(-3.77%)急落</strong>・Brent $105.72(+0.09%)で乖離。USD/JPY <strong>158.38円・4日続伸</strong>、<strong>158.50円OP大型保護</strong>・介入警戒感高まる。BTC <strong>$81,517(+2.81%)大幅反発</strong>、日経62,654.05円(-0.98%)反落</p>
+    <div class="hero-tags">
+      <span class="hero-tag alert">Trump-Xi北京会談開始</span>
+      <span class="hero-tag alert">NVIDIA過去最高値</span>
+      <span class="hero-tag alert">S&P 7,500突破・NASDAQ新ATH</span>
+      <span class="hero-tag">米4月小売+0.5%失業保険上昇</span>
+      <span class="hero-tag">イランHormuz通過・WTI-3.77%</span>
+      <span class="hero-tag">USD/JPY 158円台・介入警戒</span>
+      <span class="hero-tag">BTC $81K +2.81%反発</span>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb" aria-label="パンくずリスト">
+  <a href="https://marketpulse-daily.com/">ホーム</a>
+  <span class="sep">›</span>
+  <a href="https://marketpulse-daily.com/archive.html">アーカイブ</a>
+  <span class="sep">›</span>
+  <span class="current">2026.05.15 マーケットニュースダイジェスト</span>
+</div>
+
+<!-- STICKY NAV -->
+<nav class="sticky-nav">
+  <ul>
+    <li><a href="#geopolitics">🌍地政学</a></li>
+    <li><a href="#fx">💱為替</a></li>
+    <li><a href="#commodities">🛢コモディティ</a></li>
+    <li><a href="#crypto">₿暗号資産</a></li>
+    <li><a href="#stocks">📈株式</a></li>
+    <li><a href="#japan-tech">🇯🇵日本テック</a></li>
+    <li><a href="#analysis">🔮考察</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+<!-- ===== 地政学 ===== -->
+<section id="geopolitics" class="section fade-in">
+  <h2 class="section-header">🌍 地政学・社会情勢</h2>
+
+  <div class="news-card red">
+    <div class="news-head">
+      <span class="news-badge alert">Trump-Xi北京会談開始</span>
+      <span class="news-badge alert">10年ぶり米大統領訪中</span>
+    </div>
+    <div class="news-title">Trump-Xi北京会談開始(10年ぶり米大統領訪中)、Tim Cook・Musk・Larry Fink・Boeing CEO同行・貿易/関税/台湾/Iran/AI/Rare earth議題 — Xi「台湾誤対処で大きな危機」警告、市場「stabilization」期待で米株最高値</div>
+    <div class="news-body">
+      Trump大統領が5/14に北京に到着、Xi習近平国家主席と<strong>2日間の北京会談</strong>を開始しました。CNBC（5/14）「<strong>Trump, Xi begin summit in first U.S. presidential trip to Beijing in nearly a decade</strong>」、Reuters（5/15 21:36）「<strong>トランプ・習氏会談、株価最高値、英ポンド警戒</strong>」、Al Jazeera「<strong>Trump and Xi to meet in Beijing: The key issues shaping the China summit</strong>」が一斉報道。<strong>10年ぶりの現職米大統領による訪中</strong>で、Trump大統領は<strong>Tim Cook（Apple CEO）、Elon Musk（Tesla CEO）、Larry Fink（BlackRock CEO）、Kelly Ortberg（Boeing CEO）</strong>ら米国主要企業CEO一行を同行。議題は ①<strong>貿易・関税</strong>—延長された一時休戦の正式合意化、②<strong>台湾</strong>—Xi「台湾問題が適切に処理されなければ衝突や紛争が起こる」（CBS News）と強い警告、③<strong>Iran情勢</strong>—中国の仲介役、④<strong>AI・半導体</strong>—H200チップ販売、⑤<strong>レアアース</strong>、の5大テーマ。CNBC「<strong>The 'big word will be stabilization'</strong>」とアナリスト見通し、市場は「<strong>関税戦争から長期休戦への移行</strong>」期待で完全リスクオン。Trump政権はNVIDIA H200チップの中国販売承認（Benzinga 5/14）も発表、NVIDIAは過去最高値$233.08更新。Reuters（5/15 01:08）「<strong>トランプ・習会談で株価上昇、原油小幅安</strong>」、5/15 05:22「<strong>ウォール街、ハイテク株高で上昇。北京会談に注目</strong>」と完全リスクオン。一方Xi主席の<strong>台湾警告</strong>は5/15以降も尾を引く可能性、本日5/15は<strong>会談2日目の続報</strong>と共同声明の有無が最大の市場材料に。
+    </div>
+    <div class="news-source">出典: <a href="https://www.cnbc.com/2026/05/14/trump-xi-beijing-summit-trade-taiwan-ai-iran-rare-earths-tariffs.html" target="_blank" rel="noopener">CNBC（Xi warns Trump Taiwan・great jeopardy）</a>, <a href="https://www.cbsnews.com/news/trump-xi-jinping-meeting-china-beijing-trade-tariffs-taiwan-iran/" target="_blank" rel="noopener">CBS News（Xi「衝突や紛争」警告）</a>, <a href="https://www.cnbc.com/2026/05/14/trump-xi-summit-us-china-trade-taiwan-iran-nvidia.html" target="_blank" rel="noopener">CNBC（Trade wars→extended truce・stabilization）</a>, <a href="https://www.aljazeera.com/economy/2026/5/13/trump-and-xi-to-meet-in-beijing-the-key-issues-shaping-the-china-summit" target="_blank" rel="noopener">Al Jazeera（Beijing summit key issues）</a>, <a href="https://www.cnbc.com/2026/05/13/trump-china-xi-beijing-meeting-ceos.html" target="_blank" rel="noopener">CNBC（CEOs accompanying Trump・Tim Cook・Musk・Fink）</a>, <a href="https://www.benzinga.com/markets/equities/26/05/52551920/stock-market-today-sp-500-dow-jones-futures-gain-as-trump-clears-nvdas-h200-sales-to-china-cisco-systems-doximity-grocery-outlet-in-focus" target="_blank" rel="noopener">Benzinga（Trump Clears NVDA H200 China）</a>, Reuters（5/15 21:36 トランプ・習会談・株価最高値・ポンド警戒 / 5/15 01:08 会談で株価上昇・原油小幅安 / 5/15 05:22 / 05:01 ハイテク株高で北京会談注目 / 5/15 03:33 ハイテク株好調・北京会談注目） — 2026年5月14-15日</div>
+  </div>
+
+  <div class="news-card alert">
+    <div class="news-head">
+      <span class="news-badge alert">NVIDIA過去最高値$233</span>
+      <span class="news-badge alert">S&P 7,500突破・NASDAQ新ATH</span>
+    </div>
+    <div class="news-title">NVIDIA過去最高値$233.08(intraday $236.54)・H200中国販売Trump承認、S&P 7,501.25(+0.77%)で7,500突破・NASDAQ 26,635.21(+0.88%)新ATH — 米4月小売+0.5%・失業保険+12K(予想超え)・輸入物価+1.9%(multi-year high)も株式買い継続</div>
+    <div class="news-body">
+      5/13の米国株式市場は<strong>PPIインフレショックを半導体株主導で完全に上回り</strong>、<strong>S&P/NASDAQが過去最高値で取引を終了・3日続伸</strong>。S&P 500は<strong>7,444.26（+43.29、+0.58%）</strong>、NASDAQは<strong>26,402.33（+314.13、+1.20%）</strong>でいずれも最高値復帰。Reuters（5/14 05:26 / 05:01）「<strong>半導体株に支えられ、S&P 500とナスダックが過去最高値で取引を終えた</strong>」、5/14 00:35「<strong>S&P 500は、ハイテク株の上昇が急激なインフレ指標の影響を相殺し、過去最高値近辺で推移している</strong>」と完全リスクオン回帰。象徴的だったのは<strong>モルガン・スタンレーのS&P 500目標引き上げ</strong>—Bloomberg「<strong>Morgan Stanley Hikes S&P 500 Target to 8,300 on Earnings Boom</strong>」、Reuters（5/13 22:57）「<strong>米モルガンS、S&Pの年末目標引き上げ 企業決算好調で上昇余地</strong>」と<strong>Mike Wilson率いるチームが年末目標7,800→8,000・12ヶ月先8,300へ引き上げ</strong>。S&P 500の<strong>2026年EPS予想を$339（+23% YoY成長）</strong>と設定、<strong>Q1企業利益は+27%超え（予想12%の倍以上）</strong>と業績裏付けが完全。Wilson氏は「<strong>Our bullish index view is an earnings story, not a multiple expansion one（強気見方は業績ストーリーであって倍率拡大ではない）</strong>」と発言、利下げ期待が後退してもバリュエーション圧縮を業績成長で相殺できる構造を主張。Reuters（5/13 21:04）「<strong>S&P 500とナスダック先物は、重要指標の発表やトランプ大統領の中国訪問を控え上昇</strong>」とTrump中国訪問への期待も後押し、Reuters（5/14 03:58）「<strong>欧州株式市場=反発、鉱業株などに買い</strong>」とグローバルにリスクオン回帰。
+    </div>
+    <div class="news-source">出典: Reuters（5/14 06:15 米インフレ急上昇でも世界株式上昇 / 5/14 05:26 / 05:01 半導体株支え・S&P/NASDAQ最高値・利下げ期待打ち砕き / 5/14 03:29 半導体堅調でS&P/NASDAQ上昇・インフレ高止まり / 5/14 00:35 S&P 500・ハイテク上昇がインフレ影響相殺・最高値近辺 / 5/13 22:57 米モルガンS S&P年末目標引き上げ・企業決算好調 / 5/13 21:04 S&P/NASDAQ先物上昇・トランプ中国訪問控え / 5/14 03:58 欧州株式反発・鉱業株買い）, <a href="https://www.bloomberg.com/news/articles/2026-05-13/morgan-stanley-hikes-s-p-500-target-to-8-300-on-earnings-boom" target="_blank" rel="noopener">Bloomberg（Morgan Stanley S&P 500 Target 8,300 Earnings Boom）</a>, <a href="https://www.tipranks.com/news/sp-500-price-target-boosted-to-8000-by-morgan-stanley-on-strong-earnings-environment" target="_blank" rel="noopener">TipRanks（S&P 500 Target Boosted to 8,000・Strong Earnings）</a>, <a href="https://www.investing.com/news/stock-market-news/morgan-stanley-ups-sp-500-price-target-to-8300-on-robust-earnings-4683562" target="_blank" rel="noopener">Investing.com（Morgan Stanley S&P 8,300・robust earnings）</a>, <a href="https://money.usnews.com/investing/news/articles/2026-05-13/morgan-stanley-lifts-s-p-500s-annual-target-on-hopes-of-earnings-driven-rallies" target="_blank" rel="noopener">US News（Morgan Stanley・earnings-driven rallies）</a>, TradingView — 2026年5月13-14日</div>
+  </div>
+</section>
+
+<!-- ===== 為替 ===== -->
+<section id="fx" class="section fade-in">
+  <h2 class="section-header">💱 為替</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">USD/JPY</div>
+      <div class="price-value">158.38</div>
+      <div class="price-change">0.00%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">EUR/JPY</div>
+      <div class="price-value">184.84</div>
+      <div class="price-change">0.00%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">GBP/JPY</div>
+      <div class="price-value">212.21</div>
+      <div class="price-change down">-0.02%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">AUD/JPY</div>
+      <div class="price-value">114.38</div>
+      <div class="price-change up">+0.02%</div>
+    </div>
+  </div>
+
+  <div class="news-card alert">
+    <div class="news-head">
+      <span class="news-badge alert">USD/JPY 158.38円</span>
+      <span class="news-badge alert">158円突破・介入警戒最高潮</span>
+    </div>
+    <div class="news-title">USD/JPY 158.38円で158円突破・4日続伸、Reuters「NY外為=ドル4日続伸、指標受けFRB利下げ期待後退続く」 — DZH「158.50円OP18日・20日NYカット大きめ」、介入第2弾警戒最高潮、DZH「荒い値動き 介入警戒感高まる」</div>
+    <div class="news-body">
+      USD/JPYは<strong>158.380円（-0.004、0.00%）</strong>と本日朝ほぼ横ばいながら、<strong>5/14 NY時間で158円台明確突破・4日続伸</strong>を継続。DZH（5/14 21:05）「<strong>リアルタイムオーダー=158.00円 売り・超えるとストップロス買い</strong>」を突破した瞬間に上昇加速、5/14 22:50 DZH「<strong>荒い値動き 介入警戒感高まる</strong>」と介入警戒最高潮。DZH（5/15 06:03）「<strong>NY概況・14日、4日続伸</strong>」、5/15 06:09「<strong>オーダー=158.50円 OP18日NYカット/OP20日NYカット大きめ</strong>」と<strong>158.50円ラインに大型OP保護</strong>—介入実施ラインとOP保護線が重なる構造。Reuters（5/15 06:01）「<strong>NY外為市場=ドル4日続伸、指標受けFRB利下げ期待後退続く</strong>」、5/15 06:19「<strong>ハイテク株の好調で株式市場が上昇、経済指標を受けドル高に</strong>」と全面的なドル買い継続。背景は ①<strong>米4月小売売上+0.5%</strong>・<strong>失業保険+12K（予想超え）</strong>・<strong>輸入物価+1.9%でmulti-year high</strong>のスタグフレーション気味の指標でも<strong>FRB利下げ期待後退</strong>がドル買いを優位に、②<strong>米長期金利4日続伸</strong>でドル金利優位再強化、③<strong>NVIDIA過去最高値・S&P 7,500突破</strong>のリスクオンで円キャリー復活、④<strong>Trump-Xi会談の関税緩和期待</strong>で米中通貨も底堅い、の四要因。<strong>本日5/15東京時間は158.30-158.70円レンジ</strong>がメイン、<strong>158.50円OP超えで一気に159円試し</strong>のテクニカルが構築されたが、<strong>158.50円ラインで介入第2弾発動シナリオ</strong>が現実味、当局牽制発言→介入順次警戒が最高潮。
+    </div>
+    <div class="news-source">出典: TradingView, DZH Financial Research（5/14 21:05 158.00円売り・ストップロス買い / 5/14 22:50 荒い値動き・介入警戒感高まる / 5/15 02:04 NY概況2時高止まり / 5/15 06:03 NY概況・14日4日続伸 / 5/15 06:09 158.50円OP18・20日NYカット大きめ）, Reuters（5/15 06:01 NY外為ドル4日続伸・FRB利下げ期待後退続く / 5/15 06:19 ハイテク株好調・株式上昇・指標受けドル高 / 5/14 23:37 ガソリン・小売売上・失業保険・輸入物価）, <a href="https://invezz.com/news/2026/05/14/us-jobless-claims-rise-while-retail-sales-in-april-grow-on-higher-gasoline-prices/" target="_blank" rel="noopener">Invezz（US jobless claims rise・retail sales grow on gas）</a> — 2026年5月14-15日</div>
+  </div>
+
+  <div class="news-card blue">
+    <div class="news-head">
+      <span class="news-badge badge-fx">AUD/JPY 114.38円</span>
+      <span class="news-badge badge-fx">EUR/JPY 184.84円</span>
+    </div>
+    <div class="news-title">AUD/JPY 114.38円・EUR/JPY 184.84円・GBP/JPY 212.21円でクロス円調整、114.20円割り込むとストップロス売り — Reuters「トランプ・習氏会談、株価最高値、英ポンド警戒」、GBP/JPY大幅下落</div>
+    <div class="news-body">
+      クロス円はUSD/JPY 158円台の上昇を受けて<strong>横ばい〜小幅軟化</strong>、円安加速の中でクロス円の上値は重い構造。<strong>AUD/JPY 114.382円（+0.024、+0.02%）</strong>は<strong>114円台前半</strong>、DZH（5/14 21:46）「<strong>豪リアルタイムオーダー=114.20円 割り込むとストップロス売り</strong>」と114.20円が当面の重要サポート、5/15 03:05「<strong>NZテクニカル一覧=RSIは54%台</strong>」、5/15 02:55「<strong>豪テクニカル一覧=21日移動平均線近辺で下値支えられる</strong>」と<strong>中期サポート確認も短期過熱感剥落</strong>。<strong>EUR/JPY 184.840円（+0.008、0.00%）</strong>は<strong>184円台後半</strong>、DZH（5/14 21:21）「<strong>リアルタイムオーダー=184.60円 買いやや小さめ</strong>」、5/14 21:55「<strong>昨日安値1.1696ドルに並ぶ 小じっかり</strong>」とユーロドルが安値圏で底堅さ。<strong>GBP/JPY 212.214円（-0.039、-0.02%）</strong>は<strong>大幅下落</strong>、Reuters（5/14 21:36）「<strong>トランプ・習氏会談、株価最高値、英ポンド警戒</strong>」と英ポンドへの警戒感が継続、5/14の213円台から212円台へ転落。背景は ①<strong>USD/JPY 158円突破で円買いが再活性化</strong>—介入警戒で円安一辺倒に修正、②<strong>米中Trump-Xi会談</strong>で英ポンド・欧州通貨はリスクオフ、③<strong>イランHormuz通過発表</strong>でリスクオン→コモディティ通貨やや調整、④米株最高値継続でドル全面高、の四要因。<strong>本日5/15東京時間は114.00-114.80円・184.50-185.30円のレンジ</strong>がメイン、Trump-Xi会談2日目の共同声明と介入動向次第で大幅変動。
+    </div>
+    <div class="news-source">出典: TradingView, DZH Financial Research（5/14 21:21 ユーロ184.60円買いやや小さめ / 5/14 21:46 豪114.20円割り込むとストップロス売り / 5/14 21:55 ユーロ昨日安値1.1696ドル小じっかり / 5/14 22:10 欧州為替22時小高い / 5/15 02:35 ユーロ5日線上昇 / 5/15 02:55 豪21日線近辺下値支え / 5/15 03:05 NZ RSI 54%台）, Reuters（5/14 21:36 トランプ・習会談・株価最高値・英ポンド警戒） — 2026年5月14-15日</div>
+  </div>
+</section>
+
+
+<!-- ===== コモディティ ===== -->
+<section id="commodities" class="section fade-in">
+  <h2 class="section-header">🛢 コモディティ</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">GOLD (XAU/USD)</div>
+      <div class="price-value">$4,662.33</div>
+      <div class="price-change up">+0.22%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">BRENT</div>
+      <div class="price-value">$105.72</div>
+      <div class="price-change up">+0.09%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">WTI</div>
+      <div class="price-value">$97.36</div>
+      <div class="price-change down">-3.77%</div>
+    </div>
+  </div>
+
+  <div class="news-card gold">
+    <div class="news-head">
+      <span class="news-badge alert">WTI $97.36 -3.77%急落</span>
+      <span class="news-badge alert">イランHormuz通過発表</span>
+    </div>
+    <div class="news-title">WTI $97.36で-3.77%急落・$100割れ、イランが「数十隻の船舶がホルムズ海峡を通過」と発表で供給懸念和らぎ — Brent $105.72(+0.09%)で乖離、Brent-WTIスプレッド$8.36に急拡大</div>
+    <div class="news-body">
+      原油市場は<strong>WTI $97.36（-3.81、-3.77%）で$100割れ・大幅急落</strong>、一方<strong>Brent $105.72（+0.09、+0.09%）で横ばい</strong>と<strong>Brent-WTIスプレッドが$8.36に急拡大</strong>（前日$4.80から+$3.56）。決定的だったのはReuters（5/14 22:29）「<strong>イランが数十隻の船舶がホルムズ海峡を通過していると発表したことを受け、原油価格が下落した</strong>」—イランが「<strong>ホルムズ海峡を数十隻の船舶が通過している</strong>」と発表、5/15 00:56「<strong>ホルムズ海峡通過で供給懸念和らぎ、原油横ばい</strong>」と<strong>世界20%原油供給ルートの正常化</strong>確認で<strong>地政学プレミアム剥落</strong>。Reuters（5/15 01:08）「<strong>トランプ・習会談で株価上昇、原油小幅安</strong>」とTrump-Xi会談の中国仲介期待もIran情勢の沈静化を支援。<strong>WTIとBrentの乖離</strong>はテクニカルな理由—①WTIは米国Cushing基準でホルムズ海峡からの距離大、需給バランスでより米国指標、②Brentは北海・中東混合の海上輸送原油、③WTIの方が投機資金多くポジション解消が一気に進んだ、の三要因。当面の支持線は<strong>WTI $95・Brent $103</strong>、抵抗線は$100・$108、Trump-Xi会談の追加合意（Iran核問題で中国仲介・rare earth開放）なら一気にBrent $100割れ→Iran新規制裁緩和シナリオ、決裂なら$110戻しのリスク。日本のエネルギー輸入国経済には大型恩恵—商社株は調整も電力・ガス・運輸・素材・化学・空運企業の業績改善期待が強い。
+    </div>
+    <div class="news-source">出典: TradingView, Reuters（5/14 22:29 イラン数十隻ホルムズ通過発表・原油下落 / 5/15 00:56 Hormuz通過で供給懸念和らぎ・原油横ばい / 5/15 01:08 トランプ・習会談で株価上昇・原油小幅安）, <a href="https://www.cnbc.com/2026/05/14/trump-xi-beijing-summit-trade-taiwan-ai-iran-rare-earths-tariffs.html" target="_blank" rel="noopener">CNBC（Trump-Xi summit Beijing・Iran議題）</a> — 2026年5月14-15日</div>
+  </div>
+
+  <div class="news-card gold">
+    <div class="news-head">
+      <span class="news-badge alert">Gold $4,662</span>
+      <span class="news-badge badge-commodity">+0.22%</span>
+    </div>
+    <div class="news-title">Gold $4,662.33(+0.22%)で$4,700割れ・調整局面、Iran情勢沈静化(Hormuz通過)とドル4日続伸で安全資産需要後退 — Trump-Xi会談での米中協力期待・米株最高値継続でリスクオン優勢、$4,600下値サポート試し</div>
+    <div class="news-body">
+      金価格（XAU/USD）は<strong>$4,662.33（+10.06、+0.22%）</strong>と本日朝小幅上昇も、前日$4,698から<strong>$4,700割れ・$36軟化</strong>で<strong>調整局面入り</strong>。下落要因は ①<strong>Iran情勢沈静化</strong>—イランHormuz数十隻通過発表で「世界20%原油供給」のテールリスク剥落、安全資産需要急減、②<strong>ドル4日続伸</strong>—DXY上昇でドル建て金には逆風、③<strong>米株最高値継続のリスクオン</strong>でGold relative weakness、④<strong>Trump-Xi会談の米中協力期待</strong>—中国がIran仲介役として動けば地政学プレミアム更に剥落、の四要因。Reuters（5/15 00:56）「<strong>ホルムズ海峡通過で供給懸念和らぎ、原油横ばい</strong>」が決定打、5/15 01:08「<strong>トランプ・習会談で株価上昇、原油小幅安</strong>」とリスクオンが金にもネガティブ。背景の中期サポートは健在—①<strong>中央銀行（中国人民銀行・新興国）の継続的買い</strong>、②<strong>米3兆ドル超のフィスカル赤字</strong>へのドル価値ヘッジ需要、③<strong>CPI/PPIダブルサプライズで実質金利懸念</strong>—FRB据置長期化シナリオ、の三要因。テクニカル的に<strong>$4,600ラインが当面の下値サポート</strong>、$4,600割れなら$4,500試し→$4,400試しの調整リスク、$4,750突破なら年初来高値$4,830再トライのシナリオ。本日5/15以降は<strong>Trump-Xi共同声明・5/29 PCE</strong>で方向決定—米中協力進展なら一過性の利益確定で$4,600試し、Iran情勢再燃なら$4,750反発の二極化。
+    </div>
+    <div class="news-source">出典: TradingView, Reuters（5/14 22:29 イラン数十隻Hormuz通過発表・原油下落 / 5/15 00:56 Hormuz通過で供給懸念和らぎ・原油横ばい / 5/15 06:01 NY外為ドル4日続伸）, <a href="https://www.investing.com/currencies/xau-usd" target="_blank" rel="noopener">Investing.com</a>, <a href="https://www.kitco.com/news/" target="_blank" rel="noopener">Kitco News</a> — 2026年5月14-15日</div>
+  </div>
+</section>
+
+<!-- ===== 暗号資産 ===== -->
+<section id="crypto" class="section fade-in">
+  <h2 class="section-header">₿ 暗号資産</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">BTC/USD</div>
+      <div class="price-value">$81,517</div>
+      <div class="price-change up">+2.81%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">ETH/USD</div>
+      <div class="price-value">$2,299.53</div>
+      <div class="price-change up">+1.85%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">BTC反発</div>
+      <div class="price-value" style="color:var(--accent-green);">$81K奪還</div>
+      <div class="price-change up">+2.81%急騰</div>
+    </div>
+  </div>
+
+  <div class="news-card purple">
+    <div class="news-head">
+      <span class="news-badge alert">BTC $81K奪還+2.81%</span>
+      <span class="news-badge alert">大幅反発</span>
+    </div>
+    <div class="news-title">BTC $81,517.69(+2.81%)で$80K奪還・大幅反発、ETH $2,299(+1.85%)も連れ高 — NVIDIA過去最高値・S&P 7,500突破のリスクオンで暗号資産も買い回帰、米株とのデカップリング解消</div>
+    <div class="news-body">
+      暗号資産は<strong>BTC $81,517.69（+2,229.43、+2.81%）で大幅反発・$81K奪還</strong>、<strong>ETH $2,299.53（+41.68、+1.85%）</strong>もBTC連動で上昇。前日$79,246から$2,229急騰で、<strong>$80K心理的サポート回復→$82K壁試し</strong>の展開。上昇要因は<strong>NVIDIA過去最高値+S&P 7,500突破+Trump-Xi北京会談+イランHormuz通過の四重ポジティブ</strong>。具体的に ①<strong>NVIDIA過去最高値$233.08更新</strong>—AI半導体ラリーが暗号資産にも波及（テック・AI同調買い）、②<strong>S&P 7,500突破・NASDAQ 26,635新ATH</strong>のリスクオン全面回帰でクリプトにも資金流入再開、③<strong>Trump-Xi北京会談</strong>—米中協力期待+H200チップ中国販売承認で半導体・AI関連の強気センチメント連鎖、④<strong>イランHormuz通過発表</strong>で地政学リスク剥落、リスクオフからリスクオンへの完全シフト、の四要因。Beincrypto（5/14 05:14）「<strong>ビットコイン、8万2000ドル突破で清算爆発の瀬戸際</strong>」の警告水準に再接近、もし$82K明確突破なら<strong>大規模ショートスクイーズ（清算爆発）</strong>でさらなる上昇加速の可能性。テクニカル的に<strong>$82K壁（200日EMA $82,020）を突破できるか</strong>が当面の最大焦点—突破できれば$85K-90K試しの新展開、再rejection なら$78K試しの調整。米国機関投資家の買い回帰（Coinbase Premium緑色転換）が続けば中期上昇トレンド復活、Claude AIで11年ぶり5BTC復元のAI×暗号資産クロスオーバーも継続テーマ。
+    </div>
+    <div class="news-source">出典: TradingView, <a href="https://www.coindesk.com/price/bitcoin" target="_blank" rel="noopener">CoinDesk BTC</a>, <a href="https://www.coindesk.com/price/ethereum" target="_blank" rel="noopener">CoinDesk ETH</a>, <a href="https://beincrypto.com/" target="_blank" rel="noopener">Beincrypto（5/14 05:14 BTC$82K突破で清算爆発の瀬戸際）</a>, <a href="https://www.fool.com/investing/2026/05/14/why-nvidia-stock-hit-a-new-all-time-high-today-and/" target="_blank" rel="noopener">Motley Fool（NVIDIA new all-time high）</a>, Reuters（5/15 05:33 S&P/NASDAQ最高値・Nvidia過去最高値 / 5/15 01:36 NVIDIA急騰でハイテク牽引・S&P/NASDAQ最高値） — 2026年5月14-15日</div>
+  </div>
+
+  <div class="news-card purple">
+    <div class="news-head">
+      <span class="news-badge badge-crypto">米4月小売+0.5%</span>
+      <span class="news-badge badge-crypto">失業保険+12K・輸入物価+1.9%</span>
+    </div>
+    <div class="news-title">米4月小売売上+0.5%(エネルギー押し上げ)・失業保険申請+12K → 211K(予想205K超)・継続申請+24K・輸入物価+1.9%(multi-year high) — Iran石油ショックで指標は「スタグフレーション気味」、Reuters「ガソリン・アレー」</div>
+    <div class="news-body">
+      5/14発表の<strong>米国経済指標トリプル</strong>がいずれも<strong>スタグフレーション気味</strong>のシグナル。Reuters（5/14 23:37）「<strong>ガソリン・アレー：小売売上高、失業保険申請件数、輸入物価</strong>」が要約報道。具体的内容は ①<strong>4月小売売上高+0.5% MoM</strong>—予想+0.4%超え、自動車除く+1.9%で堅調、ただしガソリンスタンド+2.8%・燃料輸入価格+16.3%・石油+19%でエネルギー価格押し上げが主因、本格的な消費需要回復ではない、②<strong>5/9週失業保険申請+12K → 211K</strong>—予想205K超え、③<strong>継続申請+24K → 1.782M</strong>—失業者の再就職が困難化、雇用市場の緩み確認、④<strong>4月輸入物価+1.9% MoM</strong>—複数年来高水準、Iran石油ショックでエネルギー輸入価格急騰が直接的影響。これら指標は<strong>「Iran戦争影響色濃い」（Reuters 5/13 00:31）</strong>のパターン継続で、CPI・PPIサプライズと整合的なスタグフレーション軌道。Invezz「<strong>US jobless claims rise while retail sales in April grow on higher gasoline prices</strong>」と分析。<strong>FRBの政策ジレンマ</strong>—インフレ高止まり（CPI +3.8%、PPI +4.9%）の中で雇用が緩むスタグフレーション気味のシグナルで、利下げも利上げも難しい構造。Reuters（5/15 06:01）「<strong>NY外為市場=ドル4日続伸、指標受けFRB利下げ期待後退続く</strong>」と、市場は「FRB据置長期化」を完全に織り込み中。本日5/15以降は<strong>5/29 PCE・6/18 FOMC</strong>で利下げ後倒し論の確定が期待される。
+    </div>
+    <div class="news-source">出典: Reuters（5/14 23:37 ガソリン・アレー：小売売上高・失業保険申請件数・輸入物価 / 5/15 06:01 NY外為ドル4日続伸・FRB利下げ期待後退続く / 5/15 06:19 ハイテク株好調・株式上昇・指標受けドル高）, <a href="https://invezz.com/news/2026/05/14/us-jobless-claims-rise-while-retail-sales-in-april-grow-on-higher-gasoline-prices/" target="_blank" rel="noopener">Invezz（US jobless claims rise・retail sales grow on gas）</a>, <a href="https://tradingeconomics.com/united-states/jobless-claims" target="_blank" rel="noopener">Trading Economics（US Initial Jobless Claims）</a>, <a href="https://www.investing.com/news/stock-market-news/retail-sales-jobless-claims-among-economic-data-due-thursday-93CH-4685820" target="_blank" rel="noopener">Investing.com（Retail sales・jobless claims economic data）</a> — 2026年5月14-15日</div>
+  </div>
+</section>
+
+
+<!-- ===== 株式 ===== -->
+<section id="stocks" class="section fade-in">
+  <h2 class="section-header">📈 株式指数</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">S&P 500</div>
+      <div class="price-value">7,501.25</div>
+      <div class="price-change up">+0.77%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">NASDAQ</div>
+      <div class="price-value">26,635.21</div>
+      <div class="price-change up">+0.88%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">日経225</div>
+      <div class="price-value">62,654.05</div>
+      <div class="price-change down">-0.98%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">S&P 7,500突破</div>
+      <div class="price-value" style="color:var(--accent-green);">史上初</div>
+      <div class="price-change up">NVIDIA牽引</div>
+    </div>
+  </div>
+
+  <div class="news-card green">
+    <div class="news-head">
+      <span class="news-badge alert">S&P 7,500突破・史上初</span>
+      <span class="news-badge alert">NVIDIA過去最高値$233</span>
+    </div>
+    <div class="news-title">S&P 7,501.25(+0.77%)で7,500突破・史上初、NASDAQ 26,635.21(+0.88%)新ATH、NVIDIA過去最高値$233.08更新 — Trump政権H200チップ中国販売承認、Trump-Xi北京会談+ハイテク株主導の四日続伸</div>
+    <div class="news-body">
+      5/14の米国株式市場は<strong>Trump-Xi北京会談+NVIDIA過去最高値の二大触媒</strong>で<strong>S&P 7,500突破・NASDAQ新ATH</strong>を達成。S&P 500は<strong>7,501.25（+56.99、+0.77%）</strong>、NASDAQは<strong>26,635.21（+232.87、+0.88%）</strong>で揃って最高値更新、<strong>S&P 500の7,500突破は史上初</strong>。<strong>NVIDIA株は$233.08で過去最高値更新</strong>（intraday高値$236.54）、Trump政権が<strong>H200チップの中国販売を承認</strong>（Benzinga 5/14）した直接効果。Reuters（5/15 05:33）「<strong>S&P 500とナスダックが史上最高値で取引を終え、Nvidiaも過去最高値を更新した</strong>」、5/15 01:36「<strong>NVIDIA株の急騰がハイテク株の上昇を牽引し、S&P 500種指数とナスダック総合指数が過去最高値を更新</strong>」、5/14 23:16「<strong>NVIDIA株の上昇を受け、ウォール街の株価上昇が続く</strong>」と一斉報道。並行発表の<strong>米経済指標</strong>: ①<strong>4月小売売上+0.5%</strong>（ガソリンスタンド+2.8%、燃料輸入価格+16.3%でエネルギー押し上げ）、②<strong>失業保険申請+12K → 211K</strong>（予想205K超え）、③<strong>継続申請+24K → 1.782M</strong>で「雇用市場の緩み」、④<strong>輸入物価+1.9%でmulti-year high</strong>—いずれも<strong>インフレ高止まり+雇用軟化</strong>のスタグフレーション警告だが、NVIDIA急騰のリスクオンが完全に上回り。<strong>FRB利下げ期待後退続く</strong>—Reuters（5/15 06:01）「<strong>NY外為市場=ドル4日続伸、指標受けFRB利下げ期待後退続く</strong>」、5/15 06:19「<strong>ハイテク株の好調で株式市場が上昇、経済指標を受けドル高に</strong>」。<strong>NASDAQ 27,000試し</strong>がメインシナリオ、Trump-Xi会談の追加合意（関税緩和・H200拡大・rare earth）で更なる上昇余地。
+    </div>
+    <div class="news-source">出典: TradingView, Reuters（5/15 06:19 ハイテク株好調・株式上昇・指標受けドル高 / 5/15 06:01 NY外為ドル4日続伸・FRB利下げ期待後退 / 5/15 05:33 S&P/NASDAQ最高値・Nvidia過去最高値 / 5/15 01:36 NVIDIA急騰でハイテク牽引・S&P/NASDAQ最高値 / 5/14 23:16 NVIDIA上昇でウォール街上昇継続 / 5/14 22:16 NVIDIA上昇・ウォール街高値寄り付き）, <a href="https://www.fool.com/investing/2026/05/14/why-nvidia-stock-hit-a-new-all-time-high-today-and/" target="_blank" rel="noopener">Motley Fool（NVIDIA Stock Hit New All-Time High May 14）</a>, <a href="https://invezz.com/news/2026/05/14/us-jobless-claims-rise-while-retail-sales-in-april-grow-on-higher-gasoline-prices/" target="_blank" rel="noopener">Invezz（US jobless claims rise・retail sales grow on higher gas）</a>, <a href="https://www.benzinga.com/markets/equities/26/05/52551920/stock-market-today-sp-500-dow-jones-futures-gain-as-trump-clears-nvdas-h200-sales-to-china-cisco-systems-doximity-grocery-outlet-in-focus" target="_blank" rel="noopener">Benzinga（Trump Clears NVDA H200 China）</a> — 2026年5月14-15日</div>
+  </div>
+
+  <div class="news-card alert">
+    <div class="news-head">
+      <span class="news-badge alert">日経62,654円(-0.98%)</span>
+      <span class="news-badge badge-stock">5/14反落も米株最高値続伸</span>
+    </div>
+    <div class="news-title">日経225 5/14引け62,654.05円(-617.84、-0.98%)で反落・前日のrecord高値63,271円から-617円調整 — 本日5/15は米株最高値+NVIDIA過去最高値+Trump-Xi会談の三重リスクオン継続で63,500円試しシナリオ</div>
+    <div class="news-body">
+      日経平均株価は5/14引け<strong>62,654.05円（-617.84、-0.98%）</strong>と反落、前日5/13のrecord高値63,271円から<strong>-617円調整</strong>。短期過熱解消の健全なpullbackで、本日5/15は<strong>強烈な反発材料が揃う</strong>—①<strong>米株最高値更新・4日続伸（S&P 7,501突破、NASDAQ 26,635新ATH）</strong>、②<strong>NVIDIA過去最高値$233.08更新</strong>（intraday $236.54）でAI半導体に強烈追い風—Trump政権H200チップ中国販売承認、③<strong>Trump-Xi北京会談2日目</strong>—Tim Cook・Musk・Larry Fink・Boeing CEO同行で米中協力期待、④<strong>USD/JPY 158円突破で円安加速</strong>—輸出株（トヨタ・ホンダ・SBG）採算改善期待、⑤<strong>BTC $81K奪還(+2.81%)</strong>のクリプト関連改善、⑥<strong>イランHormuz通過発表でWTI -3.77%急落</strong>—エネルギーコスト緩和で電力・ガス・運輸・素材・化学・空運に追い風、の六大プラス。一方<strong>マイナス材料</strong>は ①<strong>USD/JPY 158.50円OP大型保護で介入第2弾警戒最高潮</strong>、②<strong>米CPI/PPIサプライズの余韻</strong>でFRB利下げ後倒しの中長期テーマ、③Xi「<strong>台湾誤対処で大きな危機</strong>」警告で米中対立リスク残存、の三点。総合判断として本日寄り付きは<strong>+200〜500円</strong>の反発、<strong>63,000-63,500円のレンジ試し</strong>がメインシナリオ。AI半導体・装置（アドバンテスト・東エレ・SCREEN HD・ディスコ・レーザーテック）が本日の最大の牽引役、Trump-Xi共同声明次第で64,000円試しも視野。日銀6月会合（6/16-17）まで方向感に乏しい局面続くも、米株最高値+NVIDIA牽引で底堅さ維持。
+    </div>
+    <div class="news-source">出典: TradingView（5/14 終値62,654.05円）, Reuters（5/15 05:33 S&P/NASDAQ最高値・Nvidia過去最高値 / 5/15 01:08 トランプ・習会談で株価上昇 / 5/14 22:29 イラン数十隻Hormuz通過発表・原油下落 / 5/14 23:16 NVIDIA上昇でウォール街上昇継続）, <a href="https://www.cnbc.com/2026/05/14/trump-xi-beijing-summit-trade-taiwan-ai-iran-rare-earths-tariffs.html" target="_blank" rel="noopener">CNBC（Trump-Xi summit Beijing）</a>, <a href="https://www.fool.com/investing/2026/05/14/why-nvidia-stock-hit-a-new-all-time-high-today-and/" target="_blank" rel="noopener">Motley Fool（NVIDIA all-time high）</a> — 2026年5月14-15日</div>
+  </div>
+</section>
+
+
+<!-- ===== 日本テック ===== -->
+<section id="japan-tech" class="section fade-in">
+  <h2 class="section-header">🇯🇵 日本テクノロジー</h2>
+
+  <div class="news-card orange">
+    <div class="news-head">
+      <span class="news-badge alert">NVIDIA過去最高値で日本AI半導体続伸</span>
+      <span class="news-badge badge-tech">H200中国販売Trump承認</span>
+    </div>
+    <div class="news-title">NVIDIA過去最高値$233.08・H200チップ中国販売Trump承認で日本AI半導体・装置に強烈追い風 — アドバンテスト・東エレ・SCREEN HD・ディスコ・レーザーテックが本日寄り付きで反発・63,500円試しシナリオ</div>
+    <div class="news-body">
+      5/14の米国市場で<strong>NVIDIA過去最高値$233.08更新（intraday $236.54）</strong>+<strong>S&P 7,500突破・NASDAQ新ATH</strong>を達成、日本AI半導体・装置セクターに本日5/15は<strong>強烈な追い風</strong>。決定打は<strong>Trump政権がNVIDIA H200チップの中国販売を承認</strong>（Benzinga 5/14）—NVIDIA売上の中国向け加速期待でAI半導体ラリーが再点火。Reuters（5/15 01:36）「<strong>NVIDIA株の急騰がハイテク株の上昇を牽引し、S&P 500種指数とナスダック総合指数が過去最高値を更新</strong>」、5/15 05:33「<strong>S&P 500とナスダックが史上最高値で取引を終え、Nvidiaも過去最高値を更新した</strong>」と一斉報道。<strong>恩恵が大きい主要銘柄</strong>は ①<strong>アドバンテスト</strong>（テスター、AMD/NVIDIA直接サプライヤー、世界シェア60%超）—H200量産でテスター需要急増、②<strong>東京エレクトロン</strong>（製造装置、最先端ロジック）、③<strong>SCREEN HD</strong>（露光装置・洗浄装置）、④<strong>ディスコ</strong>（ダイサー、AIチップ細密加工世界独占）、⑤<strong>レーザーテック</strong>（EUVマスク検査、ASML向け世界独占）、⑥<strong>信越化学・SUMCO</strong>（300mmシリコンウエハ、世界2強）、⑦<strong>キオクシア・ウィンボンド</strong>（NAND・DRAM）、⑧<strong>古河電工・住友電工・Anritsu・フジクラ</strong>（AI光通信）の8主要カテゴリが<strong>本日寄り付きで反発・+2〜4%の上昇余地</strong>。Trump-Xi北京会談での米中協力期待、Trump同行のTim Cook（Apple）・Musk（Tesla）・Larry Fink（BlackRock）・Boeing CEOが米中ビジネス拡大期待を象徴、<strong>日経63,000-63,500円試し</strong>がメインシナリオ。輸出株（トヨタ・ホンダ・SBG）もUSD/JPY 158円台の円安加速で採算改善、フィジカルAI（ファナック・安川電機・キーエンス）も米CSP4社2026 Capex $725B（+77%）の構造的サポート健在。
+    </div>
+    <div class="news-source">出典: Reuters（5/15 05:33 S&P/NASDAQ最高値・Nvidia過去最高値 / 5/15 01:36 NVIDIA急騰でハイテク牽引・S&P/NASDAQ最高値 / 5/14 23:16 NVIDIA上昇でウォール街上昇継続）, <a href="https://www.benzinga.com/markets/equities/26/05/52551920/stock-market-today-sp-500-dow-jones-futures-gain-as-trump-clears-nvdas-h200-sales-to-china-cisco-systems-doximity-grocery-outlet-in-focus" target="_blank" rel="noopener">Benzinga（Trump Clears NVDA H200 China）</a>, <a href="https://www.fool.com/investing/2026/05/14/why-nvidia-stock-hit-a-new-all-time-high-today-and/" target="_blank" rel="noopener">Motley Fool（NVIDIA Stock new all-time high）</a>, <a href="https://www.cnbc.com/2026/05/14/trump-xi-beijing-summit-trade-taiwan-ai-iran-rare-earths-tariffs.html" target="_blank" rel="noopener">CNBC（Trump-Xi summit Beijing）</a>, TradingView — 2026年5月14-15日</div>
+  </div>
+
+  <div class="news-card orange">
+    <div class="news-head">
+      <span class="news-badge alert">Trump-Xi会談で日本企業恩恵</span>
+      <span class="news-badge badge-tech">米中関税緩和+rare earth開放期待</span>
+    </div>
+    <div class="news-title">Trump-Xi北京会談での米中協力期待で日本企業のグローバル収益見通しに追い風 — Tim Cook・Musk・Larry Fink同行で関税緩和+rare earth開放シナリオ、SBG・キーエンス・コマツ・ファナック・トヨタ・商社株に多角的恩恵</div>
+    <div class="news-body">
+      Trump大統領が5/14に北京到着、Xi習近平国家主席との<strong>2日間の北京会談</strong>を開始（10年ぶり米大統領訪中）。Trump大統領は<strong>Tim Cook（Apple）、Elon Musk（Tesla）、Larry Fink（BlackRock）、Kelly Ortberg（Boeing）</strong>ら米国主要企業CEO一行を同行、米中ビジネス拡大期待を強烈にシグナル発信。CNBC「<strong>Trade wars to extended truce: Analysts expect 'stabilization' in U.S.-China ties</strong>」と<strong>「stabilization」期待</strong>がメインテーマ。日本企業への恩恵経路は ①<strong>関税緩和シナリオ</strong>—トヨタ・ホンダ・SBG・パナソニックHD等の対中事業組み立て製品の関税減、②<strong>rare earth開放</strong>—Toyota・パナソニックEV用磁石、SUMCOウエハ等中国rare earth依存の日本企業に追い風、③<strong>AI半導体H200承認の波及</strong>—アドバンテスト・東エレ・ディスコ等の中国向け装置需要回復、④<strong>FA・自動化</strong>（ファナック・安川電機・キーエンス）—中国製造業の設備投資回復、⑤<strong>建機（コマツ・日立建機）</strong>—中国インフラ復活、⑥<strong>商社（伊藤忠・三菱・三井）</strong>—米中貿易仲介役、の六大カテゴリ。一方<strong>テールリスク</strong>はXi主席「<strong>台湾問題誤対処なら大きな危機</strong>」警告で、5/15以降の共同声明次第で台湾リスクが顕在化する可能性。Reuters（5/15 21:36）「<strong>トランプ・習氏会談、株価最高値、英ポンド警戒</strong>」と欧州通貨も警戒、日本企業の対中事業は<strong>関税緩和の恩恵 vs 台湾リスク</strong>の両面で5/15の共同声明が試金石。
+    </div>
+    <div class="news-source">出典: <a href="https://www.cnbc.com/2026/05/14/trump-xi-summit-us-china-trade-taiwan-iran-nvidia.html" target="_blank" rel="noopener">CNBC（Trade wars→extended truce・stabilization）</a>, <a href="https://www.cnbc.com/2026/05/13/trump-china-xi-beijing-meeting-ceos.html" target="_blank" rel="noopener">CNBC（CEOs accompanying Trump・Tim Cook・Musk・Fink）</a>, <a href="https://www.cnbc.com/2026/05/14/trump-xi-beijing-summit-trade-taiwan-ai-iran-rare-earths-tariffs.html" target="_blank" rel="noopener">CNBC（Xi warns Trump Taiwan・great jeopardy）</a>, <a href="https://www.cbsnews.com/news/trump-xi-jinping-meeting-china-beijing-trade-tariffs-taiwan-iran/" target="_blank" rel="noopener">CBS News（Xi「衝突や紛争」警告）</a>, Reuters（5/15 21:36 トランプ・習会談・株価最高値・ポンド警戒 / 5/15 01:08 トランプ・習会談で株価上昇・原油小幅安） — 2026年5月14-15日</div>
+  </div>
+</section>
+
+<!-- ===== 考察 ===== -->
+<section id="analysis" class="section fade-in">
+  <h2 class="section-header">🔮 考察</h2>
+  <div class="analysis-box">
+
+    <div class="analysis-pair">
+      <div class="pair-name">USD/JPY</div>
+      <span class="pair-direction dir-up">▲ 158.38円で158円突破・4日続伸、米経済指標+FRB利下げ後退でドル買い継続 — 158.50円OP18・20日NYカット大型保護、介入第2弾警戒最高潮、DZH「荒い値動き・介入警戒感高まる」</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>日米金利差（FRB 3.5-3.75% vs 日銀 0.75%）の優位性継続、<strong>米4月小売+0.5%・失業保険+12K・輸入物価+1.9% multi-year highの指標</strong>でFRB利下げ期待が完全に後退、Reuters（5/15 06:01）「<strong>NY外為市場=ドル4日続伸、指標受けFRB利下げ期待後退続く</strong>」と継続的ドル買い。<strong>NVIDIA過去最高値・S&P 7,500突破</strong>のリスクオンで円キャリー復活、Trump-Xi北京会談で米中協力期待も米ドル支援。<br><br>
+        <strong>下落要因：</strong>DZH（5/15 06:09）「<strong>オーダー=158.50円 OP18日NYカット/OP20日NYカット大きめ</strong>」と<strong>158.50円ラインに大型OP保護</strong>—介入第2弾発動シナリオが現実味。DZH（5/14 22:50）「<strong>荒い値動き 介入警戒感高まる</strong>」と介入警戒最高潮、158.50円接近で当局牽制発言→介入順次警戒。米CPI+PPIサプライズの余韻でスタグフレーション懸念顕在化、長期的にはドル軟化リスクも。<br><br>
+        <strong>結論：</strong>157.80-159.00円。<strong>158.30-158.70円レンジ攻防がメインシナリオ</strong>、158.50円明確突破なら一気に159円試し→介入第2弾発動シナリオが現実化、当局介入なら一過性で157円試しの大幅下落。Trump-Xi会談の共同声明・米中貿易合意で米ドルがどちらに動くかも重要、5/29 PCE次第で利下げ後倒し論が更に強まる構造。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">AUD/JPY</div>
+      <span class="pair-direction dir-neutral">◆ 114.38円で114円台前半・USD/JPY 158円突破でクロス円横ばい、114.20円ストップロス売りライン — DZH「豪テクニカル21日線近辺で下値支えられる」、RSI 54%台で中立</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>DZH（5/15 02:55）「<strong>豪テクニカル一覧=21日移動平均線近辺で下値支えられる</strong>」、5/15 03:05「<strong>NZテクニカル一覧=RSIは54%台</strong>」と中期サポート確認、過熱感剥落で健全なレンジ。<strong>NVIDIA過去最高値・S&P 7,500突破のリスクオン環境</strong>で商品通貨支援、Trump-Xi北京会談での米中協力期待がアジア商品通貨を支援、豪RBA利上げ方向性継続（4.35%水準）の構造的サポート健在。<br><br>
+        <strong>下落要因：</strong>DZH（5/14 21:46）「<strong>豪リアルタイムオーダー=114.20円 割り込むとストップロス売り</strong>」と<strong>114.20円が当面の重要サポート</strong>—割れればストップロス売り加速で113円台試し。USD/JPY 158円突破で<strong>ドル全面高・クロス円のドル換算圧縮</strong>、Iran情勢沈静化（Hormuz通過）でコモディティ通貨の地政学プレミアム剥落、Reuters（5/14 22:29）「<strong>イラン数十隻Hormuz通過発表・原油下落</strong>」でWTI -3.77%急落の波及。<br><br>
+        <strong>結論：</strong>113.50-115.00円。<strong>114.00-114.80円レンジ</strong>がメインシナリオ、114.20円明確割れなら113.50円試しの調整、115円突破には新規触媒（米中追加合意・RBA予想外タカ派）が必要。RBA次回会合（5/27）まで独自材料は限定的、Trump-Xi会談共同声明と米株動向で方向決定。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">NASDAQ</div>
+      <span class="pair-direction dir-up">▲ 26,635で4日続伸・新ATH+0.88%、NVIDIA過去最高値$233・H200中国販売Trump承認 — Trump-Xi北京会談+ハイテク株主導の組み合わせ、27,000試し視野</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>NASDAQ <strong>26,635.21（+0.88%）で4日続伸・新ATH</strong>、S&P 500も<strong>7,501.25（+0.77%）で史上初の7,500突破</strong>。<strong>NVIDIA過去最高値$233.08更新</strong>—Trump政権H200チップ中国販売承認（Benzinga 5/14）で売上見通し急改善、AI半導体ラリー継続のメインエンジン。<strong>Trump-Xi北京会談（10年ぶり米大統領訪中）</strong>でTim Cook・Musk・Larry Fink・Boeing CEO同行、米中協力「stabilization」期待で関税緩和・rare earth開放・H200拡大シナリオ。Q1米企業EPS +29%（2021年以来最強）の業績ストーリー、モルガン・スタンレー S&P目標8,000・12ヶ月先8,300の強気センチメント、米CSP4社2026 Capex $725B（+77%）の構造的サポート全て健在。<br><br>
+        <strong>下落要因：</strong>米経済指標群（小売+0.5%・失業保険+12K・輸入物価+1.9%）が<strong>スタグフレーション気味のシグナル</strong>、FRB利下げ後倒しの中長期懸念。Xi主席「<strong>台湾問題誤対処なら大きな危機</strong>」警告で米中対立リスク残存、Trump-Xi共同声明が予想外にネガティブなら反動。NVIDIA $233.08は短期過熱感、26,635も史上最高値で利益確定圧力。<br><br>
+        <strong>結論：</strong>26,200-27,500。<strong>27,000試しがメインシナリオ</strong>、Trump-Xi共同声明での米中追加合意・H200拡大・rare earth開放なら一気に27,500突破→Dan Ives「30,000予測」視野。26,200割れは2-3%調整リスクだが、NVIDIA牽引+業績ストーリー+Trump-Xi期待の三重支援で<strong>下値は限定的、押し目買い継続</strong>。5/29 PCEまで方向性確認の局面。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">日経225</div>
+      <span class="pair-direction dir-up">▲ 62,654円で5/14反落・前日record後の調整、本日5/15は米株最高値+NVIDIA過去最高値+Trump-Xi会談の三重リスクオン継続で63,500円試しシナリオ</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>5/14引け<strong>62,654円（-0.98%）で反落も短期過熱解消の健全なpullback</strong>、本日5/15は強烈な反発材料が揃う。①<strong>米株最高値更新・4日続伸（S&P 7,501突破、NASDAQ 26,635新ATH）</strong>、②<strong>NVIDIA過去最高値$233.08更新</strong>でAI半導体に強烈追い風—Trump政権H200チップ中国販売承認、③<strong>Trump-Xi北京会談2日目</strong>で米中協力期待、④<strong>USD/JPY 158円突破で円安加速</strong>—輸出株（トヨタ・ホンダ・SBG）採算改善期待、⑤<strong>BTC $81K奪還(+2.81%)</strong>のクリプト関連改善、⑥<strong>イランHormuz通過発表でWTI -3.77%急落</strong>—エネルギーコスト緩和で電力・ガス・運輸・素材・化学・空運に追い風、の六大プラス。<br><br>
+        <strong>下落要因：</strong>USD/JPY 158.50円OP大型保護で<strong>介入第2弾警戒最高潮</strong>—介入発動なら一気に円高→輸出株採算悪化リスク、米CPI+PPIサプライズの余韻でFRB利下げ後倒しの中長期テーマ、Xi「台湾誤対処で大きな危機」警告で米中対立リスク残存。<br><br>
+        <strong>結論：</strong>62,500-64,000円。<strong>本日寄り付き+200〜500円の反発で63,000-63,500円試しがメインシナリオ</strong>、Trump-Xi共同声明での追加合意・NVIDIA H200拡大続報なら一気に64,000円試し、介入第2弾発動なら一過性で62,000円試しの調整リスク。日銀6月会合（6/16-17）まで方向感に乏しい局面続くも、AI半導体・装置主導で底堅さ維持、フィジカルAI（ファナック・安川電機・SBG・アドバンテスト・キーエンス）が中期方向を決定。
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== コラムCTA ===== -->
+<div class="cta-banner fade-in">
+  <div class="cta-banner-content">
+    <div class="cta-label">📝 COLUMN — 解説記事</div>
+    <div class="cta-title">ボラティリティ相場を乗り越える知識を身につけませんか？</div>
+    <div class="cta-desc">地政学リスクの読み方、FX口座の選び方、NISAポートフォリオの組み方など、投資判断の基盤となるコラムを公開中。</div>
+    <div class="cta-links">
+      <a href="20260405-column.html" class="cta-link primary">地政学リスクと投資 →</a>
+      <a href="20260330-column.html" class="cta-link secondary">FX口座比較ガイド</a>
+      <a href="20260402-column.html" class="cta-link secondary">NISAポートフォリオ</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PR ===== -->
+<div class="news-card gold fade-in" style="border-left-color:var(--accent-gold);margin:2rem 0;padding:1.5rem;">
+  <div class="news-head"><span class="news-badge badge-commodity" style="background:rgba(255,224,102,0.25);color:var(--accent-gold);border:1px solid rgba(212,136,15,0.3);">PR — 広告</span></div>
+  <div class="news-title" style="margin-top:0.5rem;">FX取引を始めるなら</div>
+  <div class="news-body">当サイトの為替分析を参考に実際の取引をお考えの方へ。FX取引高3年連続世界第1位のDMM FXなら、最短即日で口座開設が可能です。</div>
+  <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:0.8rem;">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:var(--accent-gold);color:#f8f7f4;font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;">【PR】DMM FX の詳細を見る →</a>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:transparent;color:var(--accent-gold);font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;border:1px solid var(--accent-gold);">【PR】DMM CFD の詳細を見る →</a>
+  </div>
+  <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" alt="">
+  <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" alt="">
+  <div class="news-source" style="margin-top:0.8rem;">※ 投資にはリスクが伴います。FX取引は元本を超える損失が発生する可能性があります。</div>
+</div>
+
+
+<!-- ===== 著者情報 ===== -->
+<div class="author-box fade-in">
+  <div class="author-avatar">M</div>
+  <div class="author-info">
+    <div class="author-name">MARKETZ 編集部</div>
+    <div class="author-title">IT CONSULTANT × DATA-DRIVEN TRADER</div>
+    <div class="author-bio">現役ITコンサルタント・元エンジニアが運営。複雑なグローバル市場をシステム思考で俯瞰し、テクニカル分析とファンダメンタルズ分析を組み合わせたデータドリブンな市場解説をお届けしています。</div>
+  </div>
+</div>
+
+<!-- ===== 免責事項 ===== -->
+<div class="disclaimer fade-in">
+  <div class="disclaimer-title">⚠️ 免責事項・ディスクレーマー</div>
+  本記事は情報提供のみを目的としており、金融商品の売買の勧誘や投資助言を目的とするものではありません。掲載されている情報は作成時点のものであり、正確性、完全性、適時性を保証するものではありません。投資判断は必ずご自身の責任において行ってください。本記事に基づく投資行動による損失について、筆者・サイト運営者は一切の責任を負いません。<br><br>
+  本記事に記載されているニュースは、CNBC、Bloomberg、Reuters、CNN、Al Jazeera、Trading Economics、Yahoo Finance、Investing.com、The Japan Times、EIA等の公開情報を参照し、筆者が独自に再構成したものです。各出典元の著作物をそのまま転載・翻訳したものではありません。<br><br>
+  金融商品取引法に基づく表記：本記事は金融商品取引法第2条に定める金融商品取引業に該当する行為を行うものではありません。
+</div>
+
+
+<!-- ===== 前後記事ナビ + 関連記事 ===== -->
+<nav class="article-nav" id="article-nav"></nav>
+<div class="related-section" id="related-articles"></div>
+
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>MARKETZ — <a href="https://marketpulse-daily.com/">ホームに戻る</a></p>
+  <p>© 2026 MARKETZ. All rights reserved.</p>
+</footer>
+
+<!-- FAB BUTTONS -->
+<div class="fab-group">
+  <a href="https://marketpulse-daily.com/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
+  <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
+</div>
+
+<script>
+// Fade-in Observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); }});
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Sticky nav highlight
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.sticky-nav a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id');
+  });
+  navLinks.forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+  // FAB group
+  const fabGroup = document.querySelector('.fab-group');
+  if (fabGroup) {
+    if (window.scrollY > 600) { fabGroup.style.display = 'flex'; } else { fabGroup.style.display = 'none'; }
+  }
+});
+
+// Article navigation & related articles
+(function(){
+  const slug = location.pathname.split('/').pop().replace('.html','');
+  fetch('../data/posts.json').then(r=>r.json()).then(data=>{
+    const posts = data.posts;
+    const idx = posts.findIndex(p=>p.slug===slug);
+    // Next/Prev nav
+    const nav = document.getElementById('article-nav');
+    if(nav && idx!==-1){
+      let html='';
+      if(idx<posts.length-1){
+        const prev=posts[idx+1];
+        html+='<a href="'+prev.slug+'.html"><div class="nav-label">← 前の記事</div><div class="nav-title">'+prev.title+'</div></a>';
+      }
+      if(idx>0){
+        const next=posts[idx-1];
+        html+='<a href="'+next.slug+'.html" class="nav-next"><div class="nav-label">次の記事 →</div><div class="nav-title">'+next.title+'</div></a>';
+      }
+      nav.innerHTML=html;
+    }
+    // Related articles (same tags, excluding self, max 3)
+    const rel = document.getElementById('related-articles');
+    if(rel && idx!==-1){
+      const myTags=new Set(posts[idx].tags||[]);
+      const scored=posts.filter((_,i)=>i!==idx).map(p=>{
+        const common=(p.tags||[]).filter(t=>myTags.has(t)).length;
+        return{...p,score:common};
+      }).filter(p=>p.score>0).sort((a,b)=>b.score-a.score).slice(0,3);
+      if(scored.length){
+        let html='<div class="related-heading">📰 関連記事</div><div class="related-list">';
+        scored.forEach(p=>{
+          html+='<a href="'+p.slug+'.html" class="related-card"><div class="rc-date">'+p.date+'</div><div class="rc-title">'+p.title+'</div><div class="rc-tags">'+(p.tags||[]).slice(0,4).map(t=>'<span class="rc-tag">'+t+'</span>').join('')+'</div></a>';
+        });
+        html+='</div>';
+        rel.innerHTML=html;
+      }
+    }
+  }).catch(()=>{});
+})();
+
+</script>
+</body>
+</html>

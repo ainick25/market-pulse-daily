@@ -1,6 +1,35 @@
 {
   "posts": [
     {
+      "date": "2026-05-15",
+      "slug": "20260515",
+      "dayOfWeek": "FRI",
+      "title": "Trump-Xi北京会談開始",
+      "excerpt": "Trump-Xi北京会談開始",
+      "tags": [
+        "Trump-Xi北京会談開始",
+        "NVIDIA過去最高値",
+        "S&P 7,500突破・NASDAQ新ATH",
+        "米4月小売+0.5%失業保険上昇",
+        "イランHormuz通過・WTI-3.77%",
+        "USD/JPY 158円台・介入警戒",
+        "BTC $81K +2.81%反発"
+      ],
+      "prices": {
+        "usdjpy": "158.38",
+        "gbpjpy": "212.21",
+        "audjpy": "114.38",
+        "gold": "4662.33",
+        "brent": "105.72",
+        "wti": "97.36",
+        "btc": "81K奪還",
+        "sp500": "史上初",
+        "nasdaq": "26635.21",
+        "nikkei": "62654.05"
+      },
+      "isColumn": false
+    },
+    {
       "date": "2026-05-14",
       "slug": "20260514",
       "dayOfWeek": "THU",
