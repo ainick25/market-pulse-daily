@@ -1,6 +1,35 @@
 {
   "posts": [
     {
+      "date": "2026-05-20",
+      "slug": "20260520",
+      "dayOfWeek": "WED",
+      "title": "NVIDIA決算当日(5/20 NY引け後発表)",
+      "excerpt": "NVIDIA決算当日(5/20 NY引け後発表)",
+      "tags": [
+        "NVIDIA決算当日NY引け後",
+        "米10年金利4.65%過去最高",
+        "NASDAQ -0.84%下落加速",
+        "日経4日連続下落-265pt",
+        "USD/JPY 7日続伸・159.19円高値",
+        "Gold -$90急落",
+        "FOMC議事要旨5/20本日"
+      ],
+      "prices": {
+        "usdjpy": "159.03",
+        "gbpjpy": "213.10",
+        "audjpy": "113.04",
+        "gold": "4487.07",
+        "brent": "111.28",
+        "wti": "104.23",
+        "btc": "76795",
+        "sp500": "7353.62",
+        "nasdaq": "25870.72",
+        "nikkei": "-265円"
+      },
+      "isColumn": false
+    },
+    {
       "date": "2026-05-19",
       "slug": "20260519",
       "dayOfWeek": "TUE",
