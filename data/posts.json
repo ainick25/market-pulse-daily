@@ -1,6 +1,35 @@
 {
   "posts": [
     {
+      "date": "2026-05-19",
+      "slug": "20260519",
+      "dayOfWeek": "TUE",
+      "title": "NVIDIA決算発表を控え半導体株が急落",
+      "excerpt": "NVIDIA決算発表を控え半導体株が急落",
+      "tags": [
+        "NVIDIA決算控え半導体急落",
+        "Brent +2.60%2週ぶり高値",
+        "WTI/Brentダイバージェンス",
+        "日経61,000円割れ-593pt",
+        "USD/JPY 159円OP2日連続",
+        "Iranホルムズ向けBTC保険",
+        "BTC10万ドル説に壁"
+      ],
+      "prices": {
+        "usdjpy": "158.83",
+        "gbpjpy": "213.38",
+        "audjpy": "113.93",
+        "gold": "4577.01",
+        "brent": "112.10",
+        "wti": "102.46",
+        "btc": "77024",
+        "sp500": "7403.04",
+        "nasdaq": "26090.72",
+        "nikkei": "-593円"
+      },
+      "isColumn": false
+    },
+    {
       "date": "2026-05-18",
       "slug": "20260518",
       "dayOfWeek": "MON",

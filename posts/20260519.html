@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- A8.net Link Manager -->
+<script src="//statics.a8.net/a8link/a8linkmgr.js"></script>
+<script>
+  a8linkmgr({
+    "config_id": "3FffsI9Y9VCBqU9ikTQJ"
+  });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KFT35KZZVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KFT35KZZVC');
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MARKETZ — 2026.05.19 マーケットニュースダイジェスト｜NVIDIA決算控えで半導体株急落・NASDAQ -0.51%、Brent$112(+2.60%)2週ぶり高値・WTI反落でダイバージェンス、日経61,000円割れ60,815円・-593pt、USD/JPY 158.83円6日続伸・159円OP19/22日NYカット、Iranがホルムズ向けBTC保険導入</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #f8f7f4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0efe8;
+  --text-primary: #1a1a2e;
+  --text-secondary: #3d3d56;
+  --text-muted: #7a7a8e;
+  --accent-red: #e63946;
+  --accent-green: #06a77d;
+  --accent-gold: #d4880f;
+  --accent-blue: #2176ff;
+  --accent-purple: #7b61ff;
+  --accent-orange: #e07b39;
+  --border: rgba(0,0,0,0.08);
+  --border-accent: rgba(0,0,0,0.12);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Meiryo', 'Yu Gothic UI', 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.2rem; }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridSlide 20s linear infinite;
+}
+@keyframes gridSlide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(60px, 60px); }
+}
+.hero-content { position: relative; z-index: 1; padding: 2rem 1rem; }
+.hero-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: #d4880f;
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
+}
+.hero-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+.hero-subtitle {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto; margin-right: auto;
+}
+.hero-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+.hero-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: #ffffff;
+  background: rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.15);
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+}
+.hero-tag.alert {
+  border-color: rgba(255,100,120,0.6);
+  background: rgba(255,100,120,0.2);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+/* ===== STICKY NAV ===== */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.sticky-nav ul {
+  display: flex; list-style: none;
+  max-width: 900px; margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+  gap: 0;
+}
+.sticky-nav a {
+  display: block;
+  padding: 0.75rem 0.8rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.sticky-nav a:hover, .sticky-nav a.active {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+  background: rgba(0,0,0,0.04);
+}
+
+/* ===== SECTION ===== */
+.section { padding: 3rem 0; }
+.section-header {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-accent);
+}
+
+/* ===== PRICE STRIP ===== */
+.price-strip {
+  display: flex; flex-wrap: wrap; gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.price-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  flex: 1 1 140px;
+  min-width: 130px;
+}
+.price-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+.price-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+.price-change {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 0.15rem;
+}
+.price-change.up { color: var(--accent-green); }
+.price-change.down { color: var(--accent-red); }
+
+/* ===== NEWS CARD ===== */
+.news-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+  border-left: 3px solid transparent;
+}
+.news-card:hover { background: var(--bg-card-hover); }
+.news-card.blue { border-left-color: var(--accent-blue); }
+.news-card.red { border-left-color: var(--accent-red); }
+.news-card.gold { border-left-color: var(--accent-gold); }
+.news-card.green { border-left-color: var(--accent-green); }
+.news-card.purple { border-left-color: var(--accent-purple); }
+.news-card.orange { border-left-color: var(--accent-orange); }
+
+.news-head { margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.news-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+}
+.badge-fx { background: rgba(33,118,255,0.1); color: var(--accent-blue); border: 1px solid rgba(33,118,255,0.2); }
+.badge-commodity { background: rgba(212,136,15,0.1); color: var(--accent-gold); border: 1px solid rgba(212,136,15,0.2); }
+.badge-crypto { background: rgba(123,97,255,0.1); color: var(--accent-purple); border: 1px solid rgba(123,97,255,0.2); }
+.badge-stock { background: rgba(6,167,125,0.1); color: var(--accent-green); border: 1px solid rgba(6,167,125,0.2); }
+.badge-geo { background: rgba(230,57,70,0.1); color: var(--accent-red); border: 1px solid rgba(230,57,70,0.2); }
+.badge-tech { background: rgba(224,123,57,0.1); color: var(--accent-orange); border: 1px solid rgba(224,123,57,0.2); }
+
+.news-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+.news-body {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.news-source {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+.news-source a{color:var(--accent-gold);text-decoration:none;transition:color 0.2s}
+.news-source a:hover{color:var(--text-primary);text-decoration:underline}
+
+/* ===== ANALYSIS ===== */
+.analysis-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.analysis-pair { margin-bottom: 1.5rem; }
+.analysis-pair:last-child { margin-bottom: 0; }
+.pair-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+.pair-direction {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+.dir-up { background: rgba(6,167,125,0.1); color: var(--accent-green); border: 1px solid rgba(6,167,125,0.2); }
+.dir-down { background: rgba(230,57,70,0.1); color: var(--accent-red); border: 1px solid rgba(230,57,70,0.2); }
+.dir-neutral { background: rgba(212,136,15,0.1); color: var(--accent-gold); border: 1px solid rgba(212,136,15,0.2); }
+.pair-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.pair-text strong { color: var(--text-primary); }
+
+/* ===== DISCLAIMER ===== */
+.disclaimer {
+  background: var(--bg-card);
+  border: 2px solid var(--accent-red);
+  border-radius: 8px;
+  padding: 1.3rem;
+  margin: 2rem 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.disclaimer-title {
+  color: var(--accent-red);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== FADE IN ===== */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+.footer a { color: var(--accent-gold); text-decoration: none; }
+
+/* ===== FAB BUTTONS ===== */
+.fab-group {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  display: none; flex-direction: column; gap: 0.5rem;
+  z-index: 99;
+}
+.fab-btn {
+  width: 44px; height: 44px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.fab-btn:hover { background: var(--bg-card-hover); }
+.fab-home { font-size: 1rem; }
+
+@media (max-width: 600px) {
+  .price-card { flex: 1 1 100%; }
+  .sticky-nav a { font-size: 0.75rem; padding: 0.6rem 0.5rem; }
+}
+
+
+/* ===== AUTHOR BOX ===== */
+.author-box{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.5rem;margin:2rem 0;display:flex;gap:1.2rem;align-items:flex-start;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+.author-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#1a1a2e,#0f3460);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.5rem;color:#ffe066;font-family:'JetBrains Mono',monospace;font-weight:700}
+.author-info{flex:1;min-width:0}
+.author-name{font-weight:700;font-size:0.95rem;color:var(--text-primary);margin-bottom:0.2rem}
+.author-title{font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--accent-gold);letter-spacing:0.03em;margin-bottom:0.5rem}
+.author-bio{font-size:0.82rem;color:var(--text-secondary);line-height:1.7}
+@media(max-width:600px){.author-box{flex-direction:column;align-items:center;text-align:center}.author-avatar{width:56px;height:56px;font-size:1.3rem}}
+
+/* ===== CTA BANNER ===== */
+.cta-banner{background:linear-gradient(135deg,#1a1a2e 0%,#0f3460 100%);border-radius:10px;padding:1.5rem;margin:2rem 0;position:relative;overflow:hidden}
+.cta-banner::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:40px 40px}
+.cta-banner-content{position:relative;z-index:1}
+.cta-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:#ffe066;letter-spacing:0.1em;margin-bottom:0.4rem}
+.cta-title{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:#fff;margin-bottom:0.5rem}
+.cta-desc{font-size:0.85rem;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:1rem}
+.cta-links{display:flex;flex-wrap:wrap;gap:0.6rem}
+.cta-link{display:inline-block;padding:0.5rem 1rem;border-radius:6px;font-size:0.82rem;font-weight:700;text-decoration:none;transition:all 0.2s}
+.cta-link.primary{background:var(--accent-gold);color:#0a0a0f}
+.cta-link.primary:hover{background:#ffe066}
+.cta-link.secondary{background:transparent;color:var(--accent-gold);border:1px solid rgba(240,165,0,0.4)}
+.cta-link.secondary:hover{border-color:var(--accent-gold);background:rgba(240,165,0,0.1)}
+
+/* ===== ARTICLE NAV (Next/Prev) ===== */
+.article-nav{display:flex;gap:1rem;margin:2rem 0;flex-wrap:wrap}
+.article-nav a{flex:1;min-width:200px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.article-nav a:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.article-nav .nav-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--text-muted);letter-spacing:0.05em;margin-bottom:0.3rem}
+.article-nav .nav-title{font-size:0.85rem;font-weight:700;color:var(--text-primary);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.article-nav .nav-next{text-align:right;margin-left:auto}
+/* ===== RELATED ARTICLES ===== */
+.related-section{margin:2rem 0}
+.related-heading{font-family:'Noto Serif JP',serif;font-weight:700;font-size:1.1rem;color:var(--text-primary);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--border-accent)}
+.related-list{display:flex;flex-direction:column;gap:0.6rem}
+.related-card{display:block;background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--accent-gold);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;transition:all 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.related-card:hover{background:var(--bg-card-hover);box-shadow:0 4px 12px rgba(0,0,0,0.08);text-decoration:none}
+.related-card .rc-date{font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--accent-gold);letter-spacing:0.05em}
+.related-card .rc-title{font-size:0.9rem;font-weight:700;color:var(--text-primary);margin-top:0.2rem;line-height:1.5}
+.related-card .rc-tags{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.4rem}
+.related-card .rc-tag{font-family:'JetBrains Mono',monospace;font-size:0.62rem;padding:0.15rem 0.4rem;border-radius:3px;background:rgba(0,0,0,0.04);color:var(--text-muted)}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb{max-width:900px;margin:0 auto;padding:0.6rem 1.2rem;font-size:0.75rem;color:var(--text-muted)}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.2s}
+.breadcrumb a:hover{color:var(--text-primary);text-decoration:none}
+.breadcrumb .sep{margin:0 0.4rem;opacity:0.5}
+.breadcrumb .current{color:var(--text-secondary)}
+</style>
+<meta name="description" content="NVIDIA決算発表を控え半導体株が急落、NASDAQ 26,090.72(-0.51%)・S&P 7,403.04(-0.07%)・米利回り上昇継続でハイテク株圧迫。Brent $112.10(+2.60%)が2週間ぶり高値・WTI $102.46(-1.84%)反落でWTI/Brentダイバージェンス、Iran情勢継続。Iranがホルムズ海峡の船舶向けビットコイン保険導入(Beincrypto)。日経60,815.73円(-593.34、-0.97%)で61,000円割れ・5/13のrecord高値63,271円から-2,455円(-3.9%)調整深化。USD/JPY 158.83円・6日続伸、159.00円OP19日・22日NYカット2日連続巨大OPで介入警戒継続。AUD/JPY 113.10円割れストップロス売り警戒。BTC $77,024(-0.50%)・売り圧力沈静化(クジラ動向注目)、ビットコイン10万ドル説に壁。FOMC議事要旨5/20公表 — 2026年5月19日">
+<link rel="canonical" href="https://marketpulse-daily.com/posts/20260519.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MARKETZ — 2026.05.19 マーケットニュースダイジェスト｜NVIDIA決算控えで半導体株急落・NASDAQ -0.51%、Brent +2.60%2週ぶり高値・WTIダイバージェンス、日経61,000円割れ-593pt、USD/JPY 158.83円6日続伸、Iranがホルムズ向けBTC保険導入">
+<meta property="og:description" content="NVIDIA決算発表を控え半導体株急落、NASDAQ 26,090.72(-0.51%)・S&P 7,403.04(-0.07%)。Brent $112.10(+2.60%)2週ぶり高値・WTI $102.46(-1.84%)反落でWTI/Brentダイバージェンス、Iran情勢継続。Iranがホルムズ向けBTC保険導入。日経60,815円(-593pt、-0.97%)で61,000円割れ。USD/JPY 158.83円・6日続伸、159.00円OP19日・22日NY 2日連続巨大OPで介入警戒継続。BTC $77,024(-0.50%)・売り圧力沈静化、10万ドル説に壁。FOMC議事要旨5/20公表">
+<meta property="og:url" content="https://marketpulse-daily.com/posts/20260519.html">
+<meta property="og:site_name" content="MARKETZ">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://marketpulse-daily.com/images/og-default.svg">
+<meta property="article:published_time" content="2026-05-19T00:00:00+09:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MARKETZ — 2026.05.19 マーケットニュースダイジェスト｜NVIDIA決算控えで半導体急落・NASDAQ -0.51%、Brent +2.60%2週ぶり高値・WTIダイバージェンス、日経61,000円割れ-593pt、USD/JPY 158.83円6日続伸、Iranホルムズ向けBTC保険導入">
+<meta name="twitter:description" content="NVIDIA決算控えで半導体急落、NASDAQ 26,090(-0.51%)・S&P 7,403(-0.07%)。Brent $112(+2.60%)2週ぶり高値・WTI $102(-1.84%)反落でダイバージェンス、Iran情勢継続。Iranホルムズ向けBTC保険導入。日経60,815円(-593pt)で61,000円割れ。USD/JPY 158.83円6日続伸、159円OP19日22日連続巨大OP。BTC $77,024売り圧力沈静化、10万ドル説に壁">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NewsArticle","headline":"MARKETZ — 2026.05.19 マーケットニュースダイジェスト｜NVIDIA決算控えで半導体株急落・NASDAQ -0.51%、Brent$112(+2.60%)2週ぶり高値・WTIダイバージェンス、日経61,000円割れ60,815円・-593pt、USD/JPY 158.83円6日続伸、Iranがホルムズ向けBTC保険導入","datePublished":"2026-05-19T00:00:00+09:00","publisher":{"@type":"Organization","name":"MARKETZ","logo":{"@type":"ImageObject","url":"https://marketpulse-daily.com/images/og-default.svg"}},"mainEntityOfPage":"https://marketpulse-daily.com/posts/20260519.html","author":{"@type":"Organization","name":"MARKETZ","description":"ITコンサルタント×データドリブントレーダーによるマーケット分析メディア"},"image":"https://marketpulse-daily.com/images/og-default.svg"}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://marketpulse-daily.com/"},{"@type":"ListItem","position":2,"name":"アーカイブ","item":"https://marketpulse-daily.com/archive.html"},{"@type":"ListItem","position":3,"name":"2026.05.19 マーケットニュースダイジェスト"}]}</script>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-date">2026.05.19 — TUESDAY</div>
+    <h1 class="hero-title">マーケットニュースダイジェスト</h1>
+    <p class="hero-subtitle"><strong>NVIDIA決算発表を控え半導体株が急落</strong>—NASDAQ <strong>26,090.72(-0.51%)</strong>・S&P <strong>7,403.04(-0.07%)</strong>、米利回り上昇継続でハイテク株圧迫。<strong>Brent $112.10(+2.60%)が2週間ぶり高値</strong>・WTI $102.46(<strong>-1.84%</strong>)反落で<strong>WTI/Brentダイバージェンス</strong>、Iran情勢継続でホルムズ海峡リスク再燃。<strong>イラン、ホルムズ海峡の船舶向けビットコイン保険導入</strong>(Beincrypto)—制裁回避×暗号資産の新展開。日経<strong>60,815.73円(-593.34、-0.97%)で61,000円割れ</strong>、5/13のrecord高値63,271円から<strong>-2,455円(-3.9%)</strong>調整深化。USD/JPY <strong>158.83円・6日続伸</strong>、<strong>159.00円OP19日・22日NYカット2日連続巨大OP</strong>で介入警戒継続。BTC <strong>$77,024(-0.50%)・売り圧力沈静化</strong>(クジラ動向注目)、<strong>10万ドル説に壁</strong>。FOMC議事要旨5/20公表</p>
+    <div class="hero-tags">
+      <span class="hero-tag alert">NVIDIA決算控え半導体急落</span>
+      <span class="hero-tag alert">Brent +2.60%2週ぶり高値</span>
+      <span class="hero-tag alert">WTI/Brentダイバージェンス</span>
+      <span class="hero-tag">日経61,000円割れ-593pt</span>
+      <span class="hero-tag">USD/JPY 159円OP2日連続</span>
+      <span class="hero-tag">Iranホルムズ向けBTC保険</span>
+      <span class="hero-tag">BTC10万ドル説に壁</span>
+    </div>
+  </div>
+</section>
+
+<div class="breadcrumb" aria-label="パンくずリスト">
+  <a href="https://marketpulse-daily.com/">ホーム</a>
+  <span class="sep">›</span>
+  <a href="https://marketpulse-daily.com/archive.html">アーカイブ</a>
+  <span class="sep">›</span>
+  <span class="current">2026.05.19 マーケットニュースダイジェスト</span>
+</div>
+
+<!-- STICKY NAV -->
+<nav class="sticky-nav">
+  <ul>
+    <li><a href="#geopolitics">🌍地政学</a></li>
+    <li><a href="#fx">💱為替</a></li>
+    <li><a href="#commodities">🛢コモディティ</a></li>
+    <li><a href="#crypto">₿暗号資産</a></li>
+    <li><a href="#stocks">📈株式</a></li>
+    <li><a href="#japan-tech">🇯🇵日本テック</a></li>
+    <li><a href="#analysis">🔮考察</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+<!-- ===== 地政学 ===== -->
+<section id="geopolitics" class="section fade-in">
+  <h2 class="section-header">🌍 地政学・社会情勢</h2>
+
+  <div class="news-card red">
+    <div class="news-head">
+      <span class="news-badge alert">NVIDIA決算控え半導体急落</span>
+      <span class="news-badge alert">米利回り上昇でハイテク圧迫</span>
+    </div>
+    <div class="news-title">NVIDIA決算発表を控え半導体株が急落、ハイテク株の下落+米国債利回り上昇でナスダック続落 — Reuters「NVIDIAの決算発表を控え、半導体株が急落」「半導体株の下落や米国債利回りの上昇を受け、ウォール街は下落幅を広げた」、ナスダックが下落主導・原油と借入コストが焦点</div>
+    <div class="news-body">
+      5/18の米国市場は<strong>NVIDIA決算発表を控えた半導体株急落</strong>と<strong>米国債利回り上昇継続</strong>のダブルパンチでハイテク主導の下落が深化、Reuters（5/19 01:58）「<strong>NVIDIAの決算発表を控え、半導体株が急落</strong>」、5/19 01:38「<strong>半導体株の下落や米国債利回りの上昇を受け、ウォール街は下落幅を広げた</strong>」、5/19 03:39「<strong>半導体株の下落や米国債利回りの上昇を受け、S&P 500種指数とナスダック総合指数が下落した</strong>」、5/19 05:01「<strong>ハイテク株の下落や米国債利回りの上昇を受け、ナスダックが下落</strong>」、5/19 05:11「<strong>インフレ懸念が重しとなり、石油株は上昇、半導体メーカー株は下落</strong>」、5/19 05:56「<strong>ナスダックが株式市場の下落を主導、原油と借入コストが焦点に</strong>」、5/19 06:01「<strong>利回りの上昇が株価を圧迫</strong>」、5/19 07:11「<strong>ハイテク株を中心に株価は概ね軟調な動きを見せる一方、原油価格は2週間ぶりの高値に上昇した</strong>」と一斉に「<strong>NVIDIA決算控え+利回り上昇+原油2週ぶり高値</strong>」テーマで報道。S&P 500は<strong>7,403.04（-5.45、-0.07%）</strong>と小幅安ながら、NASDAQは<strong>26,090.72（-134.42、-0.51%）</strong>と続落、5/13のrecord（NASDAQ 26,402.33）から<strong>2営業日連続の調整</strong>。背景は ①<strong>NVIDIA決算（Q1）発表を直近に控え</strong>—高バリュエーション銘柄に利益確定売り、AMD・Broadcom・Intelも連れ安、②<strong>米10年金利4.60%水準の高止まり継続</strong>でテック株割引率圧迫、③<strong>Brent $112.10(+2.60%)が2週間ぶり高値</strong>—Iran情勢継続+ホルムズ海峡リスク再燃でインフレ懸念深化、④<strong>WTI $102.46(-1.84%)</strong>と<strong>WTI/Brentダイバージェンス</strong>—米国シェール供給増 vs 中東地政学リスクの構造的乖離、⑤<strong>FOMC議事要旨5/20公表</strong>でWarsh新議長下のタカ派シフト警戒、の五要因。一方Reuters（5/18 22:20）「<strong>ウォール街、半導体株反発・利回り低下で高寄りへ</strong>」と寄り付きは反発で始まったが、Reuters（5/18 23:39）「<strong>米国債利回り低下・原油安で株まちまち</strong>」を経て、午後にNVIDIA決算警戒で半導体株が急落へ転じる劇的展開。本日5/19東京時間以降も<strong>NASDAQ続落+日経-593pt</strong>のリスクオフ継続警戒、5/20 FOMC議事要旨が次の方向決定材料。
+    </div>
+    <div class="news-source">出典: Reuters（5/19 01:58 NVIDIA決算控え・半導体株急落 / 5/19 01:38 半導体下落・利回り上昇・ウォール街下落幅拡大 / 5/19 03:39 半導体下落・S&P/NASDAQ下落 / 5/19 03:54 債券利回り上昇・成長株注目・レイモンドジェームズオートン氏 / 5/19 05:01 ハイテク下落・利回り上昇・NASDAQ下落 / 5/19 05:11 インフレ懸念・石油株上昇・半導体下落 / 5/19 05:56 NASDAQが下落主導・原油と借入コスト焦点 / 5/19 06:01 利回り上昇が株価圧迫 / 5/19 07:11 ハイテク軟調・原油2週ぶり高値 / 5/18 22:20 半導体反発・利回り低下・高寄り / 5/18 23:39 米国債利回り低下・原油安で株まちまち） — 2026年5月18-19日</div>
+  </div>
+
+  <div class="news-card alert">
+    <div class="news-head">
+      <span class="news-badge alert">Iranホルムズ向けBTC保険導入</span>
+      <span class="news-badge alert">Brent2週ぶり高値+2.60%</span>
+    </div>
+    <div class="news-title">イラン、ホルムズ海峡の船舶向けビットコイン保険導入(Beincrypto 5/18 21:50) — 制裁回避×暗号資産の新展開、Brent $112.10で2週間ぶり高値+2.60%、ホルムズ海峡リスク継続でWTI/Brentダイバージェンス深化</div>
+    <div class="news-body">
+      地政学リスク市場の新展開—Beincrypto（5/18 21:50）「<strong>イラン、ホルムズ海峡の船舶向けビットコイン保険導入</strong>」が報道、Iran政府が<strong>米欧制裁下でホルムズ海峡通航船舶向けにビットコイン建ての海運保険を正式に導入</strong>。背景は ①<strong>米欧の対Iran制裁強化</strong>—5月の制裁強化で従来のドル建て・ユーロ建て海運保険（Lloyd's of London等）が利用不可、②<strong>Trump-Xi北京会談「進展なし」</strong>でHormuz再開合意できず、Iran側が独自の制裁回避手段を必要、③<strong>ビットコイン$77K水準</strong>での流動性・国際決済利便性、④<strong>ロシア・北朝鮮の暗号資産制裁回避モデル</strong>を踏襲、の四要因。<strong>マーケットへのインプリケーション</strong>は深刻—a) <strong>ホルムズ海峡リスクの長期化を制度的に追認</strong>—Iran側が「制裁下でも海運を継続する意思」を構造化、b) <strong>Brent Crude Futures $112.10（+2.84、+2.60%）が2週間ぶり高値</strong>—Reuters（5/19 07:11）「<strong>原油価格は2週間ぶりの高値に上昇</strong>」、Trump-Xi進展なし→Iran情勢継続→Hormuz狙撃リスク継続のサイクル固定化、c) <strong>WTI $102.46(-1.92、-1.84%)</strong>と<strong>WTI/Brentダイバージェンス</strong>—WTIは米シェール供給増で軟調、Brentは中東地政学プレミアム拡大で強含み、d) <strong>暗号資産が「制裁回避通貨」として制度化</strong>—FATF・OFAC等の追加規制リスク、e) <strong>BTCのストア・オブ・バリュー特性が国家レベルで認知</strong>—中長期の構造的買い手として新興市場政府が浮上。一方<strong>下落シナリオ</strong>は米財務省OFAC追加制裁・米SEC緊急対応リスクで短期的にBTC$77K割れ・$75K試しの可能性。本日5/19以降は<strong>Brent $115試しシナリオ</strong>と<strong>米財務省Iran制裁追加発表</strong>の二極化リスクが中心、Iran情勢×暗号資産の新次元市場テーマが定着。
+    </div>
+    <div class="news-source">出典: <a href="https://beincrypto.com/" target="_blank" rel="noopener">Beincrypto（5/18 21:50 イラン・ホルムズ海峡船舶向けビットコイン保険導入）</a>, Reuters（5/19 07:11 原油2週間ぶり高値 / 5/19 05:11 インフレ懸念・石油株上昇・半導体下落 / 5/19 05:56 NASDAQ下落主導・原油と借入コスト焦点）, TradingView — 2026年5月18-19日</div>
+  </div>
+</section>
+
+<!-- ===== 為替 ===== -->
+<section id="fx" class="section fade-in">
+  <h2 class="section-header">💱 為替</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">USD/JPY</div>
+      <div class="price-value">158.83</div>
+      <div class="price-change down">-0.01%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">EUR/JPY</div>
+      <div class="price-value">185.16</div>
+      <div class="price-change down">0.00%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">GBP/JPY</div>
+      <div class="price-value">213.38</div>
+      <div class="price-change down">-0.01%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">AUD/JPY</div>
+      <div class="price-value">113.93</div>
+      <div class="price-change up">+0.05%</div>
+    </div>
+  </div>
+
+  <div class="news-card alert">
+    <div class="news-head">
+      <span class="news-badge alert">USD/JPY 158.83円・6日続伸</span>
+      <span class="news-badge alert">159円OP19日・22日NY連続</span>
+    </div>
+    <div class="news-title">USD/JPY 158.83円で6日続伸、5/18 NY引け「じり高」DZH 5/19 04:10/07:03、159.00円OP19日・22日NYカット2日連続巨大OPで介入第2弾警戒継続 — DZH 5/18 21:05「158.90円OP22日NY」、テクニカル一覧「低下の21日線が目先のレジスタンス」</div>
+    <div class="news-body">
+      USD/JPYは<strong>158.836円（-0.022、-0.01%）</strong>と本日朝ほぼ横ばい、<strong>5/18 NYは6日続伸でじり高</strong>。DZH（5/19 06:06）「<strong>ニューヨーク外国為替市場概況・18日、6日続伸</strong>」、5/19 07:03「<strong>ニューヨーク外国為替市場概況・4時(18日)、じり高</strong>」、5/19 04:10「<strong>NY外為市場概況・4時 じり高</strong>」、5/19 00:06「<strong>NY外為市場概況・24時、下値堅い</strong>」と<strong>5/18 NY時間も終始下値堅く堅調推移</strong>、158.30-158.90円レンジで6日続伸を確定。今朝のオーダー状況はDZH（5/19 06:21）「<strong>オーダー=159.00円 OP19・22日NYカット</strong>」と<strong>159.00円ラインに19日NYカット+22日NYカットの2日連続巨大OP保護</strong>、前日18日NYカット決着を回避した後も介入リスク継続の最重要価格帯。DZH（5/18 21:05）「<strong>リアルタイムオーダー=158.90円 OP22日NY</strong>」、5/19 02:40「<strong>テクニカル一覧=低下の21日線が目先のレジスタンス</strong>」、5/19 04:48「<strong>乖離ランク=首位の プラス幅拡大</strong>」と<strong>移動平均線からの乖離が首位</strong>—テクニカル的にも過熱感継続。背景は ①<strong>米10年金利4.60%水準の高止まり</strong>でドル金利優位継続、②<strong>Brent $112.10（+2.60%）2週ぶり高値</strong>でJPY輸入コスト悪化、③<strong>Iranホルムズ向けBTC保険導入</strong>でIran情勢長期化・原油高サイクル固定化、④<strong>FOMC議事要旨5/20公表</strong>でWarsh新議長下タカ派確認期待、の四要因。一方<strong>下落要因</strong>は<strong>159.00円OP19日・22日NY 2日連続巨大OPで介入第2弾発動シナリオ最高潮継続</strong>—4/30介入時(155.50円安値)から+3.34円の水準で当局の許容範囲限界、6日続伸の過熱感で当局牽制発言→介入リスクが日を追って高まる構造。<strong>本日5/19東京時間は158.50-159.00円レンジ</strong>がメイン、19日NYカット決着+ 5/20 FOMC議事要旨でのタカ派確認で大幅変動シナリオ、22日NYカットまで介入警戒継続。
+    </div>
+    <div class="news-source">出典: TradingView, DZH Financial Research（5/18 21:05 158.90円OP22日NY / 5/19 00:06 NY外為概況・24時下値堅い / 5/19 02:40 テクニカル一覧・21日線レジスタンス / 5/19 04:10 NY外為概況・4時じり高 / 5/19 04:48 乖離ランク首位プラス幅拡大 / 5/19 06:06 NY外為概況・18日6日続伸 / 5/19 06:21 159.00円OP19・22日NYカット / 5/19 07:03 NY外為概況・4時(18日)じり高） — 2026年5月18-19日</div>
+  </div>
+
+  <div class="news-card blue">
+    <div class="news-head">
+      <span class="news-badge badge-fx">AUD/JPY 113.93円・反発</span>
+      <span class="news-badge badge-fx">EUR/JPY 185.16円・回復</span>
+    </div>
+    <div class="news-title">AUD/JPY 113.93円(+0.05%)・EUR/JPY 185.16円・GBP/JPY 213.38円でクロス円が5/18から反発、米利回り上昇でドル買い継続もクロス円キャリー再開 — DZH「豪オーダー=114.00円売り小さめ」「185.40-50円売りやや小さめ」、113.10円割れストップロス売り警戒</div>
+    <div class="news-body">
+      クロス円は<strong>5/18 NY時間でクロス円キャリー再開</strong>—5/15の急落から大幅反発、米10年金利4.60%水準でのドル買い継続もリスクオフ一服でクロス円のショートカバーが進行。<strong>AUD/JPY 113.936円（+0.054、+0.05%）</strong>は本日朝<strong>続伸</strong>、5/18の113.52円から<strong>+0.42円の反発</strong>、DZH（5/19 07:01）「<strong>豪オーダー=114.00円 売り小さめ</strong>」と上値の売りが薄く、5/18 21:50「<strong>豪リアルタイムオーダー=113.10円 割り込むとストップロス売り</strong>」が下値の重要警戒ライン。5/19 03:00「<strong>豪テクニカル一覧=5日線を回復できず、伸び悩む</strong>」、5/19 04:28「<strong>乖離2=豪、5日線 -1σから中立へ</strong>」と<strong>テクニカル的に中立シフト</strong>、本格反発か再下落かの分岐点。<strong>EUR/JPY 185.162円（-0.002、0.00%）</strong>は<strong>185円台に乗せ大幅反発</strong>、5/18の184.55円から<strong>+0.61円の急回復</strong>、DZH（5/19 06:37）「<strong>オーダー=185.40-50円 売りやや小さめ</strong>」と<strong>185.40-50円ラインに薄い売り</strong>—この水準を抜けると185円台後半試しが視野、5/18 21:22「<strong>リアルタイムオーダー=185.20円 売り</strong>」も既に上抜けで売り勢の手仕舞いが進行中。<strong>GBP/JPY 213.386円（-0.018、-0.01%）</strong>は<strong>213円台に大幅戻し</strong>、5/18の211.51円から<strong>+1.87円の急回復</strong>—英ポンド警戒からの巻き戻しが顕著。5/19 03:35「<strong>NZテクニカル一覧=21日線回復が視野に</strong>」、5/19 02:20「<strong>テクニカル一覧=5・21日線の上昇に沿ってしっかり</strong>」と<strong>クロス円全般で短期テクニカル改善</strong>。背景は ①<strong>米株反発（5/18 NY寄り付き高寄り、Reuters 22:20）→引けで半導体急落</strong>の混戦展開、②<strong>米10年金利4.60%でドル金利優位継続も日本側もインフレ加速</strong>、③<strong>Brent $112(+2.60%)2週ぶり高値</strong>でJPY輸入コスト悪化要因、④<strong>FOMC議事要旨5/20待ち</strong>の調整局面、の四要因。<strong>本日5/19東京時間はAUD/JPY 113.10-114.00円・EUR/JPY 185.00-185.50円・GBP/JPY 213.00-214.00円のレンジ</strong>がメイン、113.10円割れでストップロス売り発動なら112円台試しの急落、185.50円突破なら186円台試しの上方ブレイクのシナリオ。
+    </div>
+    <div class="news-source">出典: TradingView, DZH Financial Research（5/18 21:22 ユーロ185.20円売り / 5/18 21:50 豪113.10円割れストップロス売り / 5/19 02:20 テクニカル一覧・5/21日線しっかり / 5/19 03:00 豪テクニカル・5日線伸び悩み / 5/19 03:35 NZテクニカル・21日線回復視野 / 5/19 04:28 乖離2 豪5日線中立へ / 5/19 06:37 EUR/JPY 185.40-50円売りやや小さめ / 5/19 07:01 豪114.00円売り小さめ） — 2026年5月18-19日</div>
+  </div>
+</section>
+
+
+<!-- ===== コモディティ ===== -->
+<section id="commodities" class="section fade-in">
+  <h2 class="section-header">🛢 コモディティ</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">GOLD (XAU/USD)</div>
+      <div class="price-value">$4,577.01</div>
+      <div class="price-change up">+0.24%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">BRENT</div>
+      <div class="price-value">$112.10</div>
+      <div class="price-change up">+2.60%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">WTI</div>
+      <div class="price-value">$102.46</div>
+      <div class="price-change down">-1.84%</div>
+    </div>
+  </div>
+
+  <div class="news-card gold">
+    <div class="news-head">
+      <span class="news-badge alert">Brent $112(+2.60%)2週ぶり高値</span>
+      <span class="news-badge alert">WTI/Brentダイバージェンス</span>
+    </div>
+    <div class="news-title">Brent $112.10(+2.60%)で2週間ぶり高値、WTI $102.46(-1.84%)で反落、WTI/Brentダイバージェンス深化 — Reuters「原油価格は2週間ぶりの高値に上昇」、Iranホルムズ向けBTC保険導入でホルムズ海峡リスク継続を制度的に追認、石油株上昇・半導体株下落の対比</div>
+    <div class="news-body">
+      原油市場は<strong>WTI/Brentダイバージェンスの構造的乖離</strong>が深化—<strong>Brent Crude Futures $112.10（+2.84、+2.60%）が2週間ぶり高値</strong>、Reuters（5/19 07:11）「<strong>原油価格は2週間ぶりの高値に上昇</strong>」が報道。一方<strong>WTI $102.46（-1.92、-1.84%）</strong>で反落、Brent-WTIスプレッドが<strong>+$9.64まで拡大</strong>—5月初週のスプレッド$5前後から倍近い拡大で<strong>地政学プレミアムが完全にBrent側に集中</strong>する構造変化。背景は ①<strong>Iranホルムズ海峡向けBTC保険導入（Beincrypto 5/18 21:50）</strong>—Iran側が制裁下での海運継続を制度化、Hormuz海峡リスク長期化を市場が追認、②<strong>Trump-Xi北京会談「進展なし」継続効果</strong>—Iran和平交渉ストール、Hormuz再開合意できず、③<strong>米シェール供給増・WTI軟調</strong>—Permian/Bakken生産は前年比+8%継続、米国エネルギー独立がWTI側に下方圧力、④<strong>Reuters 5/19 05:11「インフレ懸念が重しとなり、石油株は上昇、半導体メーカー株は下落」</strong>—Exxon・Chevronなど石油株が大幅買いで原油先物に再帰的フィードバック、の四要因。<strong>マーケットへの影響</strong>: a) <strong>米10年金利4.60%水準を維持</strong>—Brent急騰でインフレ期待再上昇、b) <strong>NASDAQハイテク・半導体に圧迫継続</strong>—Reuters「ハイテク軟調・原油2週ぶり高値」、c) <strong>USD/JPY 6日続伸の燃料</strong>—JPY輸入コスト悪化、d) <strong>日本商社・資源株支援</strong>—伊藤忠・三菱・三井・住友・丸紅、住友金属鉱山、e) <strong>日本電力・ガス・空運・化学に逆風</strong>—コスト圧迫拡大、CPI再加速→日銀タカ派観測強化。当面の支持線は<strong>Brent $108・WTI $99</strong>、抵抗線はBrent $115・WTI $105、<strong>Iran情勢悪化シナリオならBrent $120試し</strong>、米財務省Iran追加制裁発動なら更にBrent上方ブレイクの可能性。
+    </div>
+    <div class="news-source">出典: TradingView, Reuters（5/19 07:11 原油2週間ぶり高値・ハイテク軟調 / 5/19 05:11 インフレ懸念・石油株上昇・半導体株下落 / 5/19 05:56 NASDAQ下落主導・原油と借入コスト焦点）, <a href="https://beincrypto.com/" target="_blank" rel="noopener">Beincrypto（5/18 21:50 Iranホルムズ海峡船舶向けビットコイン保険導入）</a> — 2026年5月18-19日</div>
+  </div>
+
+  <div class="news-card gold">
+    <div class="news-head">
+      <span class="news-badge alert">Gold $4,577・反発</span>
+      <span class="news-badge badge-commodity">+0.24%で$4,600試し</span>
+    </div>
+    <div class="news-title">Gold $4,577.01(+0.24%)で5/18から+$36反発、Brent急騰+2.60%でインフレヘッジ需要回帰、$4,500下値サポート堅持で$4,600試しシナリオ — 米10年金利4.60%水準も実質金利上昇圧力一服、FOMC議事要旨5/20待ちのレンジ取引継続</div>
+    <div class="news-body">
+      金価格（XAU/USD）は<strong>$4,577.01（+10.85、+0.24%）</strong>と<strong>5/18から+$36の反発</strong>、5/18時点の$4,541から$4,500下値サポートを堅持して回復軌道に乗る。反発要因は ①<strong>Brent $112.10(+2.60%)2週ぶり高値</strong>でインフレヘッジ需要回帰、②<strong>Iranホルムズ向けBTC保険導入</strong>で地政学リスク再認識—Iran情勢長期化シナリオが制度的に確認され、安全資産需要の地合い改善、③<strong>米10年金利4.60%水準で高止まりも更なる上昇は一服</strong>—実質金利上昇圧力が小休止、④<strong>NVIDIA決算控えのリスクオフ</strong>でハイテクから安全資産へ資金シフト、⑤<strong>中央銀行買い（中国人民銀行・新興国）</strong>の構造的需要継続、の五要因。背景の中期サポートは依然健在—中央銀行の継続的買い、米3兆ドル超フィスカル赤字へのドル価値ヘッジ需要、CPI/PPIダブルサプライズの構造的インフレ要因。一方<strong>上値圧迫要因</strong>は ①<strong>USD/JPY 6日続伸</strong>—全面ドル高でドル建て金に逆風、②<strong>Brent高は通常インフレヘッジで金支援だが、米金利4.60%維持でリアル金利効果が圧迫</strong>、③<strong>FOMC議事要旨5/20待ち</strong>でWarsh新議長下タカ派シフト確認なら実質金利再上昇リスク、の三要因。テクニカル的に<strong>$4,500ラインが堅実な下値サポート</strong>、$4,600突破なら$4,700-4,750戻し、$4,500割れなら$4,400試しの調整リスク。本日5/19以降は<strong>5/20 FOMC議事要旨</strong>での方向決定—タカ派なら$4,500試し、ハト派なら$4,650-4,700戻し、Iran情勢悪化（米財務省追加制裁等）なら$4,700-4,800試しのシナリオ。
+    </div>
+    <div class="news-source">出典: TradingView, Reuters（5/19 07:11 原油2週間ぶり高値 / 5/19 05:11 インフレ懸念・石油株上昇・半導体下落 / 5/19 06:01 利回り上昇が株価圧迫）, <a href="https://www.investing.com/currencies/xau-usd" target="_blank" rel="noopener">Investing.com</a>, <a href="https://beincrypto.com/" target="_blank" rel="noopener">Beincrypto（5/18 21:50 Iranホルムズ・BTC保険導入）</a> — 2026年5月18-19日</div>
+  </div>
+</section>
+
+<!-- ===== 暗号資産 ===== -->
+<section id="crypto" class="section fade-in">
+  <h2 class="section-header">₿ 暗号資産</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">BTC/USD</div>
+      <div class="price-value">$77,024</div>
+      <div class="price-change down">-0.50%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">ETH/USD</div>
+      <div class="price-value">$2,134.34</div>
+      <div class="price-change up">+0.22%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">Iranホルムズ向け</div>
+      <div class="price-value" style="color:var(--accent-purple);">BTC保険導入</div>
+      <div class="price-change up">制度化</div>
+    </div>
+  </div>
+
+  <div class="news-card purple">
+    <div class="news-head">
+      <span class="news-badge alert">BTC売り圧力沈静化・クジラ動向注目</span>
+      <span class="news-badge alert">10万ドル説に壁</span>
+    </div>
+    <div class="news-title">BTC $77,024(-0.50%)で続落も売り圧力沈静化、Beincrypto「クジラの動向に注目」「ビットコイン10万ドル説に壁、市場現実が強気要因を下押し」 — Iranがホルムズ海峡向けBTC保険導入で国家レベルの実需出現、ETH $2,134(+0.22%)で小幅反発</div>
+    <div class="news-body">
+      暗号資産は<strong>BTC $77,024.08（-383.51、-0.50%）で続落</strong>も、<strong>売り圧力の沈静化シグナル</strong>が観測—Beincrypto（5/18 23:11）「<strong>ビットコイン売り圧力沈静化 クジラの動向に注目</strong>」が報道、$77K水準での売り圧力が一服しクジラの動向が次の方向決定要因に。一方Beincrypto（5/18 21:08）「<strong>ビットコイン10万ドル説に壁、市場現実が強気要因を下押し</strong>」と<strong>$100K強気シナリオに対する現実の壁</strong>—2025年Q4からの強気バリュエーション・FOMO買いが、5月の米10年金利4.60%・原油2週ぶり高値・米株反落の現実下で大きく後退、$77K水準での膠着が続く。<strong>ETH $2,134.34（+4.60、+0.22%）</strong>で小幅反発、BTCが続落する中でETHのみ反発した形で<strong>クロスアセット間ローテーション</strong>の兆し。<strong>最大の構造変化はIran国家レベルのBTC実需出現</strong>—Beincrypto（5/18 21:50）「<strong>イラン、ホルムズ海峡の船舶向けビットコイン保険導入</strong>」、Iran政府が制裁回避手段としてBTC建ての海運保険を制度化、ロシア・北朝鮮に続く<strong>主権国家レベルのBTC実需第3国</strong>誕生でBTCの中長期的需給構造が変化。テクニカル的に<strong>BTC $77K堅持なら$80K奪還→$82K壁の再試し</strong>、$77K割れなら$75K（MSTR平均取得コスト・心理的サポート）試しのシナリオ、ETHは<strong>$2,100下値サポート堅持なら$2,200試し</strong>、$2,100割れなら$2,000試しの調整リスク。<strong>5/20 FOMC議事要旨</strong>がBTC・ETHの短期方向決定の最重要イベント—Warsh新議長下タカ派色強ならBTC$75K試し、ハト派色ならBTC$80K奪還の二極化シナリオ。一方Iranホルムズ保険導入の制度化・LTH 1526万BTCの史上最高水準維持といった<strong>中長期ファンダメンタル支援</strong>は健在で、5月の現実調整は中期上昇相場の押し目との見方も。
+    </div>
+    <div class="news-source">出典: TradingView, <a href="https://beincrypto.com/" target="_blank" rel="noopener">Beincrypto（5/18 21:08 BTC 10万ドル説に壁・市場現実が強気要因下押し / 5/18 21:50 Iranホルムズ・BTC保険導入 / 5/18 23:11 BTC売り圧力沈静化・クジラ動向注目）</a>, <a href="https://www.coindesk.com/price/bitcoin" target="_blank" rel="noopener">CoinDesk BTC</a> — 2026年5月18-19日</div>
+  </div>
+
+  <div class="news-card purple">
+    <div class="news-head">
+      <span class="news-badge badge-crypto">FOMC議事要旨5/20公表</span>
+      <span class="news-badge badge-crypto">Powell最後のFOMC・Warsh新時代</span>
+    </div>
+    <div class="news-title">FOMC議事要旨が5/20公表予定、Powell議長最後のFOMC(4/28-29)で1992年以来最大の4名分裂・Kevin Warsh新FRB議長下のタカ派シフト確認の場 — Reuters「債券利回り上昇、成長株に注目を=レイモンド・ジェームズのオートン氏」、市場の年内利下げ期待は完全に消失</div>
+    <div class="news-body">
+      本日5/19週の最大マクロイベントは<strong>5/20公表のFOMC議事要旨（4/28-29 FOMC）</strong>—<strong>Powell議長最後のFOMC議事要旨</strong>で、5/15に退任したPowell時代の最終的なタカ派色を確認する歴史的タイミング。4/28-29 FOMCでは政策金利を3.50-3.75%に<strong>3回連続据置</strong>、<strong>4名の理事が反対</strong>で<strong>1992年以来最大の分裂</strong>を記録—Powell時代末期のFRB内部の混乱と政策ジレンマが顕著。<strong>新FRB議長 Kevin Warsh（5/15就任、Senate 54-45承認）</strong>は元FRB理事（2006-2011）・元Wall Street銀行家でタカ派色が強く、Powell路線からの完全転換が予想される。<strong>市場の年内利下げ期待は完全に消失</strong>—Reuters（5/19 03:54）「<strong>債券利回り上昇、成長株に注目を=レイモンド・ジェームズのオートン氏</strong>」と利回り上昇環境下での成長株選別が市場テーマ化、<strong>NVIDIA決算（直近予定）</strong>がその試金石。Reuters（5/19 06:01）「<strong>利回りの上昇が株価を圧迫</strong>」、5/19 05:01「<strong>ハイテク株の下落や米国債利回りの上昇を受け、ナスダックが下落</strong>」と、米10年金利4.60%水準維持→ハイテク株割引率圧迫→NVIDIA決算警戒の連鎖が市場全体を支配。<strong>本日5/19以降の主要イベント</strong>: 5/20 FOMC議事要旨・5/21週NVIDIA決算（Q1）・5/29 PCE・6/18 Warsh新議長下初のFOMC、と<strong>4週連続の重要マクロ/ミクロイベント</strong>—FRBタカ派確認とNVIDIA決算の二大イベントが米株・米金利・USD/JPY・暗号資産すべての方向性を決定する4-5月最大の山場。
+    </div>
+    <div class="news-source">出典: Reuters（5/19 03:54 債券利回り上昇・成長株注目・レイモンドジェームズオートン氏 / 5/19 06:01 利回り上昇が株価圧迫 / 5/19 05:01 ハイテク下落・利回り上昇でNASDAQ下落 / 5/19 01:58 NVIDIA決算控え半導体急落）, <a href="https://beincrypto.com/" target="_blank" rel="noopener">Beincrypto（BTC long-term holders・FOMC minutes 5/20・Kevin Warsh）</a> — 2026年5月19日</div>
+  </div>
+</section>
+
+
+<!-- ===== 株式 ===== -->
+<section id="stocks" class="section fade-in">
+  <h2 class="section-header">📈 株式指数</h2>
+  <div class="price-strip">
+    <div class="price-card">
+      <div class="price-label">S&P 500</div>
+      <div class="price-value">7,403.04</div>
+      <div class="price-change down">-0.07%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">NASDAQ</div>
+      <div class="price-value">26,090.72</div>
+      <div class="price-change down">-0.51%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">日経225</div>
+      <div class="price-value">60,815.73</div>
+      <div class="price-change down">-0.97%</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">日経61,000円割れ</div>
+      <div class="price-value" style="color:var(--accent-red);">-593円</div>
+      <div class="price-change down">NVIDIA決算控え</div>
+    </div>
+  </div>
+
+  <div class="news-card green">
+    <div class="news-head">
+      <span class="news-badge alert">NVIDIA決算控えで半導体急落</span>
+      <span class="news-badge alert">NASDAQ 26,090(-0.51%)続落</span>
+    </div>
+    <div class="news-title">NASDAQ 26,090.72(-0.51%)で続落、S&P 7,403.04(-0.07%)で小幅安、NVIDIA決算発表を控え半導体株が急落 — Reuters「NVIDIAの決算発表を控え、半導体株が急落」「ナスダックが株式市場の下落を主導、原油と借入コストが焦点に」、米10年金利4.60%水準高止まり継続</div>
+    <div class="news-body">
+      5/18の米国株式市場は<strong>NVIDIA決算控えの半導体株急落+米10年金利上昇継続</strong>でハイテク主導の続落、S&P 500は<strong>7,403.04（-5.45、-0.07%）</strong>で小幅安、NASDAQは<strong>26,090.72（-134.42、-0.51%）</strong>で続落、5/13のrecord（NASDAQ 26,402.33）から<strong>-311pt(-1.18%)</strong>の2営業日連続調整。Reuters（5/19 01:58）「<strong>NVIDIAの決算発表を控え、半導体株が急落</strong>」、5/19 01:38「<strong>半導体株の下落や米国債利回りの上昇を受け、ウォール街は下落幅を広げた</strong>」、5/19 03:39「<strong>半導体株の下落や米国債利回りの上昇を受け、S&P 500種指数とナスダック総合指数が下落した</strong>」、5/19 05:11「<strong>インフレ懸念が重しとなり、石油株は上昇、半導体メーカー株は下落</strong>」、5/19 05:56「<strong>ナスダックが株式市場の下落を主導、原油と借入コストが焦点に</strong>」と<strong>「NVIDIA決算控え+利回り上昇+石油株上昇・半導体下落」</strong>テーマで一斉報道。<strong>背景の主要要因</strong>: ①<strong>NVIDIA決算（Q1）発表を直近に控え</strong>—高バリュエーション銘柄に利益確定売り、AMD/Broadcom/Intel/Microns連れ安、②<strong>米10年金利4.60%水準の高止まり継続</strong>—テック株割引率圧迫、③<strong>Brent $112.10(+2.60%)2週ぶり高値</strong>—Iran情勢+ホルムズ向けBTC保険導入でインフレ期待再上昇、④<strong>FOMC議事要旨5/20公表</strong>でWarsh新議長下タカ派シフト警戒、⑤<strong>WTI/Brentダイバージェンス深化</strong>で原油構造変化、の五要因。一方S&Pは石油株の上昇（Exxon・Chevron）で半導体下落を一部相殺、S&P -0.07% vs NASDAQ -0.51%の<strong>セクター明暗</strong>が鮮明。Reuters（5/19 03:54）「<strong>債券利回り上昇、成長株に注目を=レイモンド・ジェームズのオートン氏</strong>」と<strong>利回り上昇下での成長株選別</strong>が市場テーマ化—NVIDIA決算がその試金石。<strong>本日5/19東京時間以降も継続的なリスクオフ警戒</strong>、NASDAQの<strong>25,800-26,200レンジ攻防</strong>がメインシナリオ、5/20 FOMC議事要旨でタカ派確認なら一気にNASDAQ 25,500試しのリスク、NVIDIA決算でビート＆ガイダンス強なら26,500奪還の二極化。
+    </div>
+    <div class="news-source">出典: TradingView, Reuters（5/19 01:58 NVIDIA決算控え・半導体株急落 / 5/19 01:38 半導体下落・利回り上昇・ウォール街下落幅拡大 / 5/19 03:39 半導体下落・S&P/NASDAQ下落 / 5/19 03:54 債券利回り上昇・成長株注目・レイモンドジェームズオートン氏 / 5/19 05:01 ハイテク下落・利回り上昇・NASDAQ下落 / 5/19 05:11 インフレ懸念・石油株上昇・半導体下落 / 5/19 05:56 NASDAQ下落主導・原油と借入コスト焦点 / 5/19 06:01 利回り上昇が株価圧迫 / 5/19 07:11 ハイテク軟調・原油2週ぶり高値 / 5/18 22:20 半導体反発・利回り低下・高寄り） — 2026年5月18-19日</div>
+  </div>
+
+  <div class="news-card alert">
+    <div class="news-head">
+      <span class="news-badge alert">日経60,815円(-0.97%)61,000円割れ</span>
+      <span class="news-badge badge-stock">record高値63,271円から-3.9%調整</span>
+    </div>
+    <div class="news-title">日経225 5/19引け60,815.73円(-593.34、-0.97%)で61,000円割れ・5/13のrecord高値63,271円から-2,455円(-3.9%)調整深化 — NVIDIA決算控えの半導体続落+米利回り4.60%維持+Brent2週ぶり高値の三重リスクオフ、60,000円下値試しシナリオ現実味</div>
+    <div class="news-body">
+      日経平均株価は5/19引け<strong>60,815.73円（-593.34、-0.97%）で61,000円割れ</strong>、5/13のrecord高値63,271円から<strong>-2,455円(-3.9%)の調整深化</strong>、5/16の-1,244pt急落に続き<strong>2営業日連続マイナス・累計-1,838pt(-2.9%)</strong>。<strong>本日5/19の織り込み材料</strong>は引き続き強烈にネガティブ—①<strong>米株続落</strong>（S&P -0.07%、NASDAQ -0.51%）でリスクオフ継続、②<strong>米10年金利4.60%水準の高止まり</strong>でグローバル金融環境引き締まり継続、③<strong>NVIDIA決算（Q1）発表控え+半導体急落</strong>—Reuters 5/19 01:58「NVIDIAの決算発表を控え、半導体株が急落」、アドバンテスト・東エレ・SCREEN HD・ディスコ・レーザーテック等の日本AI関連にも続落圧力、④<strong>Brent $112.10(+2.60%)2週ぶり高値</strong>のエネルギーコスト圧迫—電力・ガス・運輸・化学・空運のコスト悪化、⑤<strong>Iranホルムズ向けBTC保険導入</strong>でIran情勢長期化を制度的に追認、⑥<strong>FOMC議事要旨5/20公表</strong>でWarshタカ派シフト警戒、⑦<strong>USD/JPY 158.83円・6日続伸+159円OP19日/22日NY連続巨大OP</strong>で介入第2弾発動なら円高加速→輸出株採算悪化リスク、の七大マイナス。<strong>セクター対比</strong>は ①<strong>商社株・資源株</strong>（伊藤忠・三菱・三井・住友・丸紅、住友金属鉱山）—Brent 2週ぶり高値+Gold反発で支援、②<strong>銀行株</strong>—日銀タカ派観測+米長期金利4.60%で金利上昇恩恵、③<strong>AI半導体・装置・ハイテク</strong>—NVIDIA決算警戒+NASDAQ続落で続落圧力、④<strong>輸出株</strong>—USD/JPY 158円台維持で採算改善も介入リスクで上値重い、の対立構造。総合判断として本日5/19引け<strong>-593pt続落</strong>を受け、<strong>本日以降は60,500-61,000円のレンジ攻防</strong>がメインシナリオ。5/20 FOMC議事要旨でWarshタカ派シフト確認なら一気に60,000円試し→59,500円試しの本格的調整、NVIDIA決算でビート＆ガイダンス強なら61,500円戻しの反発、ハト派+ビート両立なら62,000円試しの二極化シナリオ。日銀6月会合（6/16-17）まで方向感に乏しい局面続くが、NVIDIA決算とFOMC議事要旨の二大イベントが短期方向を完全に決定。
+    </div>
+    <div class="news-source">出典: TradingView（5/19 60,815.73円-593.34円）, Reuters（5/19 01:58 NVIDIA決算控え・半導体株急落 / 5/19 05:01 ハイテク下落・利回り上昇でNASDAQ下落 / 5/19 05:56 NASDAQ下落主導・原油と借入コスト焦点 / 5/19 07:11 ハイテク軟調・原油2週間ぶり高値）, <a href="https://beincrypto.com/" target="_blank" rel="noopener">Beincrypto（5/18 21:50 Iranホルムズ・BTC保険導入）</a>, DZH（5/19 06:21 159.00円OP19・22日NYカット） — 2026年5月18-19日</div>
+  </div>
+</section>
+
+
+<!-- ===== 日本テック ===== -->
+<section id="japan-tech" class="section fade-in">
+  <h2 class="section-header">🇯🇵 日本テクノロジー</h2>
+
+  <div class="news-card orange">
+    <div class="news-head">
+      <span class="news-badge alert">日本AI半導体にNVIDIA決算リスク</span>
+      <span class="news-badge badge-tech">アドバンテスト・東エレに続落圧力</span>
+    </div>
+    <div class="news-title">NVIDIA決算発表を控え米半導体株急落、日本AI半導体・装置に続落圧力 — アドバンテスト・東エレ・SCREEN HD・ディスコ・レーザーテックがNVIDIA決算ビートまでは続落リスク、商社・銀行・資源株への資金シフト継続、日経60,000円試しシナリオ</div>
+    <div class="news-body">
+      5/18の米国市場で<strong>NVIDIA決算控えの半導体株急落</strong>—Reuters（5/19 01:58）「<strong>NVIDIAの決算発表を控え、半導体株が急落</strong>」、5/19 05:11「<strong>インフレ懸念が重しとなり、石油株は上昇、半導体メーカー株は下落</strong>」と<strong>NVIDIA決算ビートまでは半導体続落</strong>のテーマ確立。日本AI半導体・装置セクターは<strong>5/16の-1,244pt急落+5/19の-593pt続落の二重打撃</strong>、本日5/19引け日経60,815円の61,000円割れに反映済。<strong>NVIDIA決算次第で大幅変動が予想される日本主要銘柄</strong>は ①<strong>アドバンテスト</strong>（テスター、AMD/NVIDIA直接サプライヤー、世界シェア60%超）—NVIDIA決算ビート＆ガイダンス強なら一気に+5%反発、ミスなら-5%調整の二極化、②<strong>東京エレクトロン</strong>（製造装置、最先端ロジック）、③<strong>SCREEN HD</strong>（露光装置・洗浄装置）、④<strong>ディスコ</strong>（ダイサー、AIチップ細密加工世界独占）、⑤<strong>レーザーテック</strong>（EUVマスク検査、ASML向け世界独占）、⑥<strong>信越化学・SUMCO</strong>（300mmシリコンウエハ、世界2強）、⑦<strong>キオクシア・ウィンボンド</strong>（NAND・DRAM）、⑧<strong>古河電工・住友電工・Anritsu・フジクラ</strong>（AI光通信）の8主要カテゴリが<strong>NVIDIA決算最大の関連株</strong>。<strong>NVIDIA Q1の市場予想</strong>: 売上 $52B（前年比+78%）、EPS $1.25、Data Centre売上 $42B超のコンセンサス—ビートしてもガイダンスの2026下半期見通しが鍵、AI Capex継続の有無で日本半導体株の方向が決定。一方<strong>中長期支援材料</strong>—NVIDIA H200チップ中国販売Trump承認、米CSP4社2026 Capex $725B（+77%）、AMD Q1 DC+57%、Lumentum +90% recordのファンダメンタル裏付けは健在。<strong>日経のセクターローテーション</strong>として、本日はAI半導体から ①<strong>商社株・資源株</strong>（伊藤忠・三菱・三井・住友・丸紅）—Brent 2週ぶり高値+Gold反発のエネルギートレーディング収益期待、②<strong>金鉱株・住友金属鉱山</strong>—Gold $4,577反発で中期サポート再確認、③<strong>銀行株</strong>（三菱UFJ・三井住友・みずほ）—米長期金利4.60%維持+日銀利上げ観測で金利上昇恩恵、への資金シフトが急速に進行。<strong>5/20 FOMC議事要旨でWarshタカ派シフト確認+NVIDIA決算ミス</strong>のダブルネガティブシナリオなら日経60,000円→59,500円試しの本格的調整リスク顕在化。
+    </div>
+    <div class="news-source">出典: Reuters（5/19 01:58 NVIDIA決算控え・半導体株急落 / 5/19 05:11 インフレ懸念・石油株上昇・半導体下落 / 5/19 01:38 半導体下落・利回り上昇・ウォール街下落幅拡大 / 5/19 05:56 NASDAQ下落主導・原油と借入コスト焦点 / 5/19 07:11 ハイテク軟調・原油2週ぶり高値）, TradingView — 2026年5月18-19日</div>
+  </div>
+
+  <div class="news-card orange">
+    <div class="news-head">
+      <span class="news-badge alert">日本企業にBrent急騰逆風</span>
+      <span class="news-badge badge-tech">Iranホルムズ向けBTC保険導入</span>
+    </div>
+    <div class="news-title">Brent $112(+2.60%)2週ぶり高値+Iranホルムズ向けBTC保険導入で日本エネルギー輸入企業に逆風 — 電力・ガス・空運・化学・運輸のコスト悪化、商社・資源・銀行への資金シフト継続、CPI再加速→日銀タカ派観測強化、輸出株は介入リスク警戒</div>
+    <div class="news-body">
+      Iranホルムズ向けBTC保険導入（Beincrypto 5/18 21:50）で<strong>Iran情勢長期化が制度的に追認</strong>、Brent $112.10(+2.60%)が2週ぶり高値、日本のエネルギー輸入国経済には<strong>強烈な逆風</strong>。Reuters（5/19 07:11）「<strong>ハイテク株を中心に株価は概ね軟調な動きを見せる一方、原油価格は2週間ぶりの高値に上昇した</strong>」、5/19 05:11「<strong>インフレ懸念が重しとなり、石油株は上昇、半導体メーカー株は下落</strong>」と<strong>「石油株上昇・半導体下落」のセクターローテーション</strong>がグローバルに進行—日本市場でも同テーマがメインドライバーに。日本企業への影響経路は ①<strong>電力・ガス（東京電力・関西電力・東京ガス・大阪ガス）</strong>—Brent高で燃料調達コスト悪化、規制料金改定で時間差調整も短期収益圧迫、②<strong>空運（ANA・JAL）</strong>—燃料費が運航コストの30-40%、Brent $112水準でジェット燃料市況高騰、③<strong>化学（三菱ケミカル・住友化学・三井化学）</strong>—ナフサ高で原料コスト悪化、製品価格転嫁ラグで短期マージン圧迫、④<strong>運輸（日本郵船・商船三井・川崎汽船）</strong>—Hormuz海峡リスクで保険料・運賃高騰、一方タンカー運賃上昇のプラスも、⑤<strong>商社（伊藤忠・三菱・三井・住友・丸紅）</strong>—原油・コモディティ高で支援継続、Iran情勢悪化シナリオでも安全資産同様の防衛セクターとして買われ、⑥<strong>住友金属鉱山</strong>—Gold $4,577反発+Iran地政学リスク再認識で中期支援、⑦<strong>銀行株（三菱UFJ・三井住友・みずほ）</strong>—米長期金利4.60%維持+日銀タカ派観測でNIM拡大期待、の七大経路で<strong>セクター明暗</strong>がさらに鮮明。<strong>勝ち組</strong>=商社・資源・銀行・住友金属鉱山、<strong>負け組</strong>=電力・ガス・空運・化学・AI半導体・輸出株。<strong>CPI再加速</strong>—日本5月CPI見通しに対する上方リスクが拡大、日銀6月会合（6/16-17）での利上げ観測強化が同時進行。本日5/19以降の日経<strong>60,500-61,000円のレンジ攻防</strong>はこのセクター対比の急速な進行が支える構造、NVIDIA決算+FOMC議事要旨の二大イベントが次の方向決定材料。
+    </div>
+    <div class="news-source">出典: <a href="https://beincrypto.com/" target="_blank" rel="noopener">Beincrypto（5/18 21:50 Iranホルムズ・BTC保険導入）</a>, Reuters（5/19 07:11 原油2週ぶり高値・ハイテク軟調 / 5/19 05:11 インフレ懸念・石油株上昇・半導体下落 / 5/19 05:56 NASDAQ下落主導・原油と借入コスト焦点）, TradingView — 2026年5月18-19日</div>
+  </div>
+</section>
+
+<!-- ===== 考察 ===== -->
+<section id="analysis" class="section fade-in">
+  <h2 class="section-header">🔮 考察</h2>
+  <div class="analysis-box">
+
+    <div class="analysis-pair">
+      <div class="pair-name">USD/JPY</div>
+      <span class="pair-direction dir-up">▲ 158.83円・6日続伸、5/18 NYじり高 — 159.00円OP19日・22日NYカット2日連続巨大OPで介入第2弾警戒最高潮継続、テクニカル「乖離ランク首位」で過熱感</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>日米金利差（FRB 3.5-3.75% vs 日銀 0.75%）の優位性継続、<strong>米10年金利4.60%水準維持</strong>でドル金利優位最強化。DZH（5/19 06:06）「<strong>NY外為市場概況・18日、6日続伸</strong>」、5/19 07:03/04:10「<strong>じり高</strong>」とNY時間も終始堅調推移。<strong>Brent $112.10(+2.60%)2週ぶり高値</strong>でJPY輸入コスト悪化、<strong>Iranホルムズ向けBTC保険導入</strong>でIran情勢長期化・原油高サイクル固定化、<strong>FOMC議事要旨5/20公表</strong>でWarsh新議長下タカ派確認期待。<br><br>
+        <strong>下落要因：</strong>DZH（5/19 06:21）「<strong>オーダー=159.00円 OP19・22日NYカット</strong>」と<strong>159円ラインに19日・22日NYの2日連続巨大OP保護</strong>—19日NYカット決着回避後も22日まで介入リスク継続。DZH（5/19 02:40）「<strong>テクニカル一覧=低下の21日線が目先のレジスタンス</strong>」、5/19 04:48「<strong>乖離ランク=首位の プラス幅拡大</strong>」と<strong>移動平均線からの乖離が首位</strong>—テクニカル的に過熱感継続、当局牽制発言・実弾介入リスク最高潮、4/30 介入時(155.50円安値)から+3.34円の水準で当局の許容範囲限界。<br><br>
+        <strong>結論：</strong>158.30-159.30円。<strong>158.50-159.00円レンジ攻防がメインシナリオ</strong>、19日NYカット決着+22日NYカットまで介入警戒継続、159.00円明確突破なら一気に159.50-160円試し→介入第2弾発動シナリオが現実化、当局介入なら一過性で157円台前半まで急落。5/20 FOMC議事要旨でWarshタカ派シフト確認なら更なる上昇加速、ハト派なら一過性のドル軟化。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">AUD/JPY</div>
+      <span class="pair-direction dir-up">▲ 113.93円・5/18から反発(+0.42円)、クロス円キャリー再開 — 113.10円割れストップロス売り警戒、114.00円売り小さめで上値の壁が薄い</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>DZH（5/19 07:01）「<strong>豪オーダー=114.00円 売り小さめ</strong>」と<strong>上値の売りが薄い</strong>—この水準を抜けると114円台後半試しが視野。<strong>Brent $112.10(+2.60%)2週ぶり高値</strong>+<strong>Gold $4,577反発</strong>で資源国通貨ファンダ支援、豪RBA利上げ方向性継続（4.35%水準）の構造的サポート健在、5/19 03:35「<strong>NZテクニカル一覧=21日線回復が視野に</strong>」、5/19 02:20「<strong>テクニカル一覧=5・21日線の上昇に沿ってしっかり</strong>」とクロス円全般のテクニカル改善。<br><br>
+        <strong>下落要因：</strong>DZH（5/18 21:50）「<strong>豪リアルタイムオーダー=113.10円 割り込むとストップロス売り</strong>」と<strong>113.10円が決定的な下値ライン</strong>—この水準割れでストップロス売り発動なら112円台試しの急落リスク。5/19 03:00「<strong>豪テクニカル一覧=5日線を回復できず、伸び悩む</strong>」、5/19 04:28「<strong>乖離2=豪、5日線 -1σから中立へ</strong>」と<strong>テクニカル的に本格反発か再下落かの分岐点</strong>、米株NASDAQ続落で再びリスクオフ転換なら急反落リスク。<br><br>
+        <strong>結論：</strong>112.50-114.50円。<strong>113.10-114.00円レンジ攻防がメインシナリオ</strong>、113.10円明確割れならストップロス売り発動で112円試しの調整、114.00円突破には米株反発+NVIDIA決算ビートが必要。RBA次回会合（5/27）まで独自材料は限定的、5/20 FOMC議事要旨・NVIDIA決算で方向決定。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">NASDAQ</div>
+      <span class="pair-direction dir-down">▼ 26,090で-0.51%続落、NVIDIA決算控えで半導体株急落 — 米10年金利4.60%維持+Brent2週ぶり高値のインフレ再燃、5/20 FOMC議事要旨でタカ派確認+NVIDIA決算ミスなら25,500試し</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong>NVIDIA H200チップ中国販売Trump承認、米CSP4社2026 Capex $725B（+77%）、AMD Q1 DC+57%・Lumentum +90% recordの中長期成長見通しは健在で、押し目買いの好機との見方も。Reuters（5/19 03:54）「<strong>債券利回り上昇、成長株に注目を=レイモンド・ジェームズのオートン氏</strong>」と利回り上昇下での成長株選別が市場テーマ化、NVIDIA決算ビート＆ガイダンス強なら<strong>「成長株選別」テーマで一気に26,500-27,000試しの反発</strong>。<br><br>
+        <strong>下落要因：</strong>NASDAQ <strong>26,090.72（-0.51%）で続落</strong>、5/13のrecord（26,402）から-311pt(-1.18%)の2営業日連続調整。Reuters（5/19 01:58）「<strong>NVIDIAの決算発表を控え、半導体株が急落</strong>」、5/19 05:56「<strong>ナスダックが株式市場の下落を主導、原油と借入コストが焦点に</strong>」、5/19 07:11「<strong>ハイテク株を中心に株価は概ね軟調な動きを見せる一方、原油価格は2週間ぶりの高値に上昇した</strong>」と一斉報道。<strong>米10年金利4.60%水準維持</strong>でテック株割引率圧迫、<strong>Brent $112.10(+2.60%)2週ぶり高値</strong>でインフレ期待再上昇、<strong>FOMC議事要旨5/20公表</strong>でWarshタカ派シフト警戒、NVIDIA決算ミスシナリオの利益確定売り。<br><br>
+        <strong>結論：</strong>25,500-26,500。<strong>25,800-26,200レンジ攻防がメインシナリオ</strong>、5/20 FOMC議事要旨でWarshタカ派シフト確認+NVIDIA決算ミスのダブルネガティブなら一気に25,500試し→25,000試しの本格調整、NVIDIA決算ビート+ガイダンス強なら26,500奪還、ハト派+ビート両立なら27,000試しの三極化。NVIDIA決算とFOMC議事要旨の二大イベントが完全に方向決定。
+      </div>
+    </div>
+
+    <div class="analysis-pair">
+      <div class="pair-name">日経225</div>
+      <span class="pair-direction dir-down">▼ 60,815円・5/19引け-593pt(-0.97%)で61,000円割れ、5/13 record 63,271円から-3.9%調整深化 — 60,000円下値試しシナリオ現実味、商社・銀行・資源株への急速ローテーション継続</span>
+      <div class="pair-text">
+        <strong>上昇要因：</strong><strong>USD/JPY 158.83円・6日続伸</strong>で円安加速—輸出株（トヨタ・ホンダ・SBG）の採算改善期待、<strong>Brent $112(+2.60%)2週ぶり高値+Gold $4,577反発</strong>で商社・資源株（伊藤忠・三菱・三井・住友・丸紅、住友金属鉱山）が支援継続、<strong>米長期金利4.60%・日銀利上げ観測</strong>で銀行株（三菱UFJ・三井住友・みずほ）のNIM拡大期待。NVIDIA H200承認・AMD Q1+57%・Lumentum +90%の中長期AI半導体ファンダは健在で、NVIDIA決算ビートなら一気にアドバンテスト+5%反発。<br><br>
+        <strong>下落要因：</strong>5/19引け<strong>60,815円（-593円、-0.97%）で61,000円割れ</strong>、5/13のrecord高値63,271円から-2,455円(-3.9%)調整、5/16の-1,244pt+5/19の-593pt累計-1,838pt(-2.9%)の2連続マイナス。<strong>NVIDIA決算控えで米半導体急落</strong>—Reuters「NVIDIAの決算発表を控え、半導体株が急落」、アドバンテスト・東エレ・SCREEN HD・ディスコ・レーザーテック等の日本AI関連に続落圧力。<strong>Brent $112で電力・ガス・空運・化学にコスト圧迫</strong>、<strong>Iranホルムズ向けBTC保険導入</strong>でIran情勢長期化、<strong>USD/JPY 159.00円OP19日・22日NY連続</strong>で介入第2弾発動なら一気に円高加速→輸出株採算悪化。<br><br>
+        <strong>結論：</strong>59,500-62,000円。<strong>本日以降は60,500-61,000円のレンジ攻防がメインシナリオ</strong>、5/20 FOMC議事要旨でWarshタカ派シフト確認+NVIDIA決算ミスのダブルネガティブなら一気に60,000円→59,500円試しの本格的調整、NVIDIA決算ビート+ガイダンス強なら61,500円戻し、ハト派+ビート両立なら62,000円試しの三極化。商社・銀行・資源株 vs AI半導体・自動車のシャープなセクターローテーションが日経全体を支える、日銀6月会合（6/16-17）まで方向感に乏しい局面続くが短期的な調整圧力強い。
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== コラムCTA ===== -->
+<div class="cta-banner fade-in">
+  <div class="cta-banner-content">
+    <div class="cta-label">📝 COLUMN — 解説記事</div>
+    <div class="cta-title">ボラティリティ相場を乗り越える知識を身につけませんか？</div>
+    <div class="cta-desc">地政学リスクの読み方、FX口座の選び方、NISAポートフォリオの組み方など、投資判断の基盤となるコラムを公開中。</div>
+    <div class="cta-links">
+      <a href="20260405-column.html" class="cta-link primary">地政学リスクと投資 →</a>
+      <a href="20260330-column.html" class="cta-link secondary">FX口座比較ガイド</a>
+      <a href="20260402-column.html" class="cta-link secondary">NISAポートフォリオ</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PR ===== -->
+<div class="news-card gold fade-in" style="border-left-color:var(--accent-gold);margin:2rem 0;padding:1.5rem;">
+  <div class="news-head"><span class="news-badge badge-commodity" style="background:rgba(255,224,102,0.25);color:var(--accent-gold);border:1px solid rgba(212,136,15,0.3);">PR — 広告</span></div>
+  <div class="news-title" style="margin-top:0.5rem;">FX取引を始めるなら</div>
+  <div class="news-body">当サイトの為替分析を参考に実際の取引をお考えの方へ。FX取引高3年連続世界第1位のDMM FXなら、最短即日で口座開設が可能です。</div>
+  <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:0.8rem;">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:var(--accent-gold);color:#f8f7f4;font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;">【PR】DMM FX の詳細を見る →</a>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" rel="nofollow sponsored noopener" target="_blank" style="display:inline-block;padding:0.6rem 1.2rem;background:transparent;color:var(--accent-gold);font-weight:700;border-radius:6px;text-decoration:none;font-size:0.9rem;border:1px solid var(--accent-gold);">【PR】DMM CFD の詳細を見る →</a>
+  </div>
+  <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AZS0T+3B2PRM+1WP2+6BU5U" alt="">
+  <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZS0T+9IC9MA+1WP2+NTRMQ" alt="">
+  <div class="news-source" style="margin-top:0.8rem;">※ 投資にはリスクが伴います。FX取引は元本を超える損失が発生する可能性があります。</div>
+</div>
+
+
+<!-- ===== 著者情報 ===== -->
+<div class="author-box fade-in">
+  <div class="author-avatar">M</div>
+  <div class="author-info">
+    <div class="author-name">MARKETZ 編集部</div>
+    <div class="author-title">IT CONSULTANT × DATA-DRIVEN TRADER</div>
+    <div class="author-bio">現役ITコンサルタント・元エンジニアが運営。複雑なグローバル市場をシステム思考で俯瞰し、テクニカル分析とファンダメンタルズ分析を組み合わせたデータドリブンな市場解説をお届けしています。</div>
+  </div>
+</div>
+
+<!-- ===== 免責事項 ===== -->
+<div class="disclaimer fade-in">
+  <div class="disclaimer-title">⚠️ 免責事項・ディスクレーマー</div>
+  本記事は情報提供のみを目的としており、金融商品の売買の勧誘や投資助言を目的とするものではありません。掲載されている情報は作成時点のものであり、正確性、完全性、適時性を保証するものではありません。投資判断は必ずご自身の責任において行ってください。本記事に基づく投資行動による損失について、筆者・サイト運営者は一切の責任を負いません。<br><br>
+  本記事に記載されているニュースは、CNBC、Bloomberg、Reuters、CNN、Al Jazeera、Trading Economics、Yahoo Finance、Investing.com、The Japan Times、EIA等の公開情報を参照し、筆者が独自に再構成したものです。各出典元の著作物をそのまま転載・翻訳したものではありません。<br><br>
+  金融商品取引法に基づく表記：本記事は金融商品取引法第2条に定める金融商品取引業に該当する行為を行うものではありません。
+</div>
+
+
+<!-- ===== 前後記事ナビ + 関連記事 ===== -->
+<nav class="article-nav" id="article-nav"></nav>
+<div class="related-section" id="related-articles"></div>
+
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>MARKETZ — <a href="https://marketpulse-daily.com/">ホームに戻る</a></p>
+  <p>© 2026 MARKETZ. All rights reserved.</p>
+</footer>
+
+<!-- FAB BUTTONS -->
+<div class="fab-group">
+  <a href="https://marketpulse-daily.com/" class="fab-btn fab-home" title="ホームへ戻る">🏠</a>
+  <button class="fab-btn fab-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ戻る">↑</button>
+</div>
+
+<script>
+// Fade-in Observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); }});
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Sticky nav highlight
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.sticky-nav a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id');
+  });
+  navLinks.forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+  // FAB group
+  const fabGroup = document.querySelector('.fab-group');
+  if (fabGroup) {
+    if (window.scrollY > 600) { fabGroup.style.display = 'flex'; } else { fabGroup.style.display = 'none'; }
+  }
+});
+
+// Article navigation & related articles
+(function(){
+  const slug = location.pathname.split('/').pop().replace('.html','');
+  fetch('../data/posts.json').then(r=>r.json()).then(data=>{
+    const posts = data.posts;
+    const idx = posts.findIndex(p=>p.slug===slug);
+    // Next/Prev nav
+    const nav = document.getElementById('article-nav');
+    if(nav && idx!==-1){
+      let html='';
+      if(idx<posts.length-1){
+        const prev=posts[idx+1];
+        html+='<a href="'+prev.slug+'.html"><div class="nav-label">← 前の記事</div><div class="nav-title">'+prev.title+'</div></a>';
+      }
+      if(idx>0){
+        const next=posts[idx-1];
+        html+='<a href="'+next.slug+'.html" class="nav-next"><div class="nav-label">次の記事 →</div><div class="nav-title">'+next.title+'</div></a>';
+      }
+      nav.innerHTML=html;
+    }
+    // Related articles (same tags, excluding self, max 3)
+    const rel = document.getElementById('related-articles');
+    if(rel && idx!==-1){
+      const myTags=new Set(posts[idx].tags||[]);
+      const scored=posts.filter((_,i)=>i!==idx).map(p=>{
+        const common=(p.tags||[]).filter(t=>myTags.has(t)).length;
+        return{...p,score:common};
+      }).filter(p=>p.score>0).sort((a,b)=>b.score-a.score).slice(0,3);
+      if(scored.length){
+        let html='<div class="related-heading">📰 関連記事</div><div class="related-list">';
+        scored.forEach(p=>{
+          html+='<a href="'+p.slug+'.html" class="related-card"><div class="rc-date">'+p.date+'</div><div class="rc-title">'+p.title+'</div><div class="rc-tags">'+(p.tags||[]).slice(0,4).map(t=>'<span class="rc-tag">'+t+'</span>').join('')+'</div></a>';
+        });
+        html+='</div>';
+        rel.innerHTML=html;
+      }
+    }
+  }).catch(()=>{});
+})();
+
+</script>
+</body>
+</html>
